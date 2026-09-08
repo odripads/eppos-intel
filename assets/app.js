@@ -2,16 +2,30 @@
 (async function () {
   const E = window.EPPOS, $ = s => document.querySelector(s);
   const load = n => window.EPPOS_DATA ? Promise.resolve(window.EPPOS_DATA[n]) : fetch(`data/${n}.json`).then(r => r.json());
-  const [manifest, regime, topo, outlet, metrik, peristiwa, liputan, kontrak, pejabat, perusahaan, relasi, tender, a1, domhist, hapus] = await Promise.all([
+  const [manifest, regime, topo, outlet, metrik, peristiwa, liputan, kontrak, pejabat, perusahaan, relasi, tender, a1, domhist, hapus, artikel, klaster] = await Promise.all([
     load('manifest'), load('regime'), (window.EPPOS_DATA ? Promise.resolve(window.EPPOS_DATA.topo) : fetch('assets/indonesia.topo.json').then(r => r.json())), load('outlet'), load('metrik_mingguan'), load('peristiwa'),
     load('liputan_peristiwa'), load('kontrak_media'), load('pejabat'), load('perusahaan'), load('relasi'), load('tender'), load('info_a1'),
-    load('outlet_domain_history'), load('peristiwa_penghapusan')]);
+    load('outlet_domain_history'), load('peristiwa_penghapusan'), load('artikel'), load('klaster_duplikat')]);
 
   ['#data-ver', '#foot-ver'].forEach(sel => { const e = $(sel); if (e) e.textContent = manifest.version; }); const nv = $('#nav-ver'); if (nv) nv.textContent = 'v0.1';
   if (manifest.fixture) $('#fixture-banner').hidden = false;
   const rp = n => Number(n).toLocaleString('id-ID');
   const link = (u, t = 'sumber') => u ? `<a href="${u}" target="_blank" rel="noopener">${t}</a>` : '<span class="muted">—</span>';
   const fx = r => r.fiktif ? ' <span class="badge fiktif">fiktif</span>' : '';
+  const artById = new Map(artikel.map(a => [a.artikel_id, a])), klById = new Map(klaster.map(k => [k.klaster_id, k]));
+  const outName = new Map(outlet.map(o => [o.outlet_id, o.nama_outlet])), evById = new Map(peristiwa.map(p => [p.peristiwa_id, p]));
+
+  /* One article, with its category, lead summary, and the other outlets that ran a near-identical text. */
+  function artHtml(a, opts = {}) {
+    const k = a.klaster_id ? klById.get(a.klaster_id) : null;
+    const others = k ? k.anggota.filter(m => m.artikel_id !== a.artikel_id) : [];
+    const ev = a.peristiwa_id ? evById.get(a.peristiwa_id) : null;
+    return `<article class="art"><div class="when"><b>${a.tanggal_terbit}</b><span>${outName.get(a.outlet_id) || a.outlet_id}</span><span>${a.outlet_id}</span></div>
+      <div><h4><a href="${a.url}" target="_blank" rel="noopener">${a.judul}</a></h4>
+      <div class="tags"><span class="pill kat">${a.kategori}</span>${ev && !opts.noEvent ? `<span class="pill prw" title="${ev.ringkasan_satu_kalimat}">liputan peristiwa ${ev.peristiwa_id} · ${ev.jenis}</span>` : ''}${k ? `<span class="pill accent">${k.jumlah_outlet} outlet memuat serupa</span>` : ''}${fx(a)}</div>
+      <p>${a.ringkasan}</p><div class="topik">${(a.topik || []).join(' · ')}${a.kecamatan ? ' · ' + a.kecamatan : ''} · ${link(a.source_url, 'sumber')}${a.archive_url ? ' · ' + link(a.archive_url, 'arsip') : ''}</div>
+      ${others.length ? `<div class="serupa"><span class="lbl">dimuat serupa oleh</span>${others.map(m => `<a href="${m.url}" target="_blank" rel="noopener">${outName.get(m.outlet_id) || m.outlet_id} <small>${m.tanggal_terbit}${m.jaccard != null ? ' · ' + Math.round(m.jaccard * 100) + '%' : ''}</small></a>`).join('')}</div>` : ''}</div></article>`;
+  }
 
   // city cards
   const cards = $('#city-cards');
@@ -58,8 +72,25 @@
     const dp = E.weeklyChart($('#dup'), r, rows, 'bagian_duplikasi', { height: 240, numbers: false });
     $('#dup-cap').innerHTML = `<span>${dp.outlets} outlet</span><span>${fixNote ? 'FIKTIF.' : ''}</span><span>data: ${link('data/metrik_mingguan.json', 'metrik_mingguan.json')}</span>`;
     const fixOuts = outs.filter(o => rows.some(m => m.outlet_id === o.outlet_id) || liputan.some(l => l.outlet_id === o.outlet_id));
-    E.permeability($('#perm'), $('#perm-legend'), fixOuts, evs, liputan.filter(l => outIds.has(l.outlet_id)), kontrak.filter(k => k.kota === kota));
+    $('#perm-detail').innerHTML = '<span class="muted small">Klik sel untuk melihat berita yang memuat peristiwa itu.</span>';
+    E.permeability($('#perm'), $('#perm-legend'), fixOuts, evs, liputan.filter(l => outIds.has(l.outlet_id)), kontrak.filter(k => k.kota === kota), ({ outlet: o, event: e, cov: c }) => {
+      const arts = (c.artikel_ids || []).map(id => artById.get(id)).filter(Boolean);
+      $('#perm-detail').innerHTML = `<h4>${o.nama_outlet} × ${e.tanggal} · ${e.jenis}</h4><div class="small muted">${e.ringkasan_satu_kalimat} · ${link(e.bukti_independen_url, 'bukti independen')} · ${link(c.source_url, 'baris liputan')}</div>` +
+        (c.covered ? (arts.length ? arts.map(a => artHtml(a, { noEvent: true })).join('') : `<div class="muted">${c.jumlah_artikel} artikel tercatat, teks belum diikutkan dalam rilis ini.</div>`)
+                   : `<div><b>DIAM.</b> Outlet ini tidak memuat peristiwa tersebut dalam jendela pengamatan. Ketiadaan liputan adalah datum, bukan kekosongan data.</div>`);
+      $('#perm-detail').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
     $('#perm-cap').innerHTML = `<span>${evs.length} peristiwa · ${fixOuts.length} outlet</span><span>Peristiwa dan liputan FIKTIF bila bertanda.</span><span>data: ${link('data/peristiwa.json', 'peristiwa.json')} · ${link('data/liputan_peristiwa.json', 'liputan_peristiwa.json')} · ${link('data/kontrak_media.json', 'kontrak_media.json')}</span>`;
+
+    // articles: filter chips by category, newest first, similar copies linked
+    const arts = artikel.filter(a => outIds.has(a.outlet_id)).sort((a, b) => a.tanggal_terbit < b.tanggal_terbit ? 1 : -1);
+    const kats = Array.from(new Set(arts.map(a => a.kategori))).sort();
+    let kat = 'semua';
+    const drawArts = () => { const sel = arts.filter(a => kat === 'semua' || a.kategori === kat); $('#artikel').innerHTML = sel.length ? sel.map(a => artHtml(a)).join('') : '<div class="empty">Tidak ada artikel.</div>';
+      $('#artikel-cap').innerHTML = `<span>${sel.length} dari ${arts.length} artikel · ${klaster.filter(k => k.kota === kota).length} klaster salinan</span><span>${arts.every(a => a.fiktif) ? 'Teks artikel FIKTIF pada domain .example.' : ''}</span><span>data: ${link('data/artikel.json', 'artikel.json')} · ${link('data/klaster_duplikat.json', 'klaster_duplikat.json')}</span>`; };
+    $('#artikel-filter').innerHTML = ['semua', ...kats].map(k => `<button class="chip" data-kat="${k}" aria-pressed="${k === kat}">${k}${k !== 'semua' ? ` <span class="mono">${arts.filter(a => a.kategori === k).length}</span>` : ''}</button>`).join('');
+    $('#artikel-filter').querySelectorAll('.chip').forEach(b => b.onclick = () => { kat = b.dataset.kat; $('#artikel-filter').querySelectorAll('.chip').forEach(x => x.setAttribute('aria-pressed', x.dataset.kat === kat)); drawArts(); });
+    drawArts();
 
     // outlet registry + domain history + deletion events
     const dh = d3.group(domhist, d => d.outlet_id), del = d3.group(hapus, d => d.outlet_id), ky = d3.rollup(kontrak, v => v.map(c => c.tahun), c => c.outlet_id);

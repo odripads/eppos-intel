@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse, datetime as dt, hashlib, json, re, sys
 from collections import defaultdict
 from regimes import REGIONS
+from summarize import enrich
 
 INCUMBENT = {  # aliases by region; extend from the pejabat sheet when it lands
     "Makassar": [r"wali\s*kota", r"walikota", r"danny\s+pomanto", r"\bdanny\b", r"ramdhan\s+pomanto", r"\bappi\b", r"munafri"],
@@ -47,7 +48,7 @@ def near_duplicates(arts, bands=16):
     for a in arts:
         for b in range(bands):
             buckets[(b, tuple(sig[a["url"]][b * rows:(b + 1) * rows]))].append(a)
-    dup = set()
+    dup, pairs = set(), []
     for group in buckets.values():
         if len(group) < 2: continue
         for i in range(len(group)):
@@ -56,8 +57,34 @@ def near_duplicates(arts, bands=16):
                 if x["outlet_id"] == y["outlet_id"] or not x["tanggal_terbit"] or not y["tanggal_terbit"]: continue
                 if abs((dt.date.fromisoformat(x["tanggal_terbit"]) - dt.date.fromisoformat(y["tanggal_terbit"])).days) > 3: continue
                 sx, sy = sig[x["url"]], sig[y["url"]]
-                if sum(p == q for p, q in zip(sx, sy)) / len(sx) >= 0.5: dup.add(x["url"]); dup.add(y["url"])
-    return dup
+                sim = sum(p == q for p, q in zip(sx, sy)) / len(sx)
+                if sim >= 0.5: dup.add(x["url"]); dup.add(y["url"]); pairs.append((x["url"], y["url"], round(sim, 2)))
+    return dup, pairs
+
+def clusters(arts, pairs, kota_of):
+    """Union-find over duplicate pairs → klaster_duplikat rows with member links."""
+    parent = {}
+    def find(u):
+        parent.setdefault(u, u)
+        while parent[u] != u: parent[u] = parent[parent[u]]; u = parent[u]
+        return u
+    for a, b, _ in pairs: parent[find(a)] = find(b)
+    sim = {}
+    for a, b, s in pairs: sim[a] = max(sim.get(a, 0), s); sim[b] = max(sim.get(b, 0), s)
+    by_url = {a["url"]: a for a in arts}
+    groups = defaultdict(list)
+    for u in parent: groups[find(u)].append(by_url[u])
+    out = []
+    for i, members in enumerate(sorted(groups.values(), key=lambda m: min(x["tanggal_terbit"] for x in m)), 1):
+        members.sort(key=lambda x: x["tanggal_terbit"]); head = members[0]
+        kid = f"KLS-{head['tanggal_terbit'][:4]}-{i:04d}"
+        for m in members: m["klaster_id"] = kid
+        out.append({"klaster_id": kid, "kota": kota_of.get(head["outlet_id"], ""), "tanggal": head["tanggal_terbit"], "judul_representatif": head.get("judul"),
+                    "ringkasan": head.get("ringkasan"), "kategori": head.get("kategori"), "jumlah_outlet": len({m["outlet_id"] for m in members}), "jenis": "salinan lintas outlet",
+                    "anggota": [{"artikel_id": m.get("artikel_id"), "outlet_id": m["outlet_id"], "url": m["url"], "tanggal_terbit": m["tanggal_terbit"], "jaccard": sim.get(m["url"])} for m in members],
+                    "fiktif": False, "source_url": head["url"], "archive_url": head.get("archive_url", ""), "retrieved_at": head["tanggal_terbit"],
+                    "first_seen": dt.date.today().isoformat(), "last_checked": dt.date.today().isoformat()})
+    return out
 
 def week_of(day): d = dt.date.fromisoformat(day); return (d - dt.timedelta(days=d.weekday())).isoformat()
 
@@ -75,7 +102,13 @@ def main():
     arts = [json.loads(l) for f in a.jsonl for l in open(f) if l.strip()]
     arts = [x for x in arts if x.get("tanggal_terbit")]
     print(f"{len(arts)} artikel bertanggal", file=sys.stderr)
-    dup = near_duplicates(arts)
+    for i, x in enumerate(arts, 1):
+        x.setdefault("artikel_id", f"ART-{i:06d}"); enrich(x)
+    dup, pairs = near_duplicates(arts)
+    kl = clusters(arts, pairs, kota_of)
+    json.dump(kl, open(a.out.replace("metrik_mingguan", "klaster_duplikat"), "w"), ensure_ascii=False, indent=0)
+    json.dump(arts, open(a.out.replace("metrik_mingguan", "artikel"), "w"), ensure_ascii=False, indent=0)
+    print(f"{len(kl)} klaster duplikat", file=sys.stderr)
     agg = defaultdict(lambda: {"n": 0, "dup": 0, "a_inc": 0, "a_inst": 0})
     for x in arts:
         kota = kota_of.get(x["outlet_id"], "Makassar")

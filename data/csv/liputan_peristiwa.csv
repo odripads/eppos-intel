@@ -1,29 +1,29 @@
-peristiwa_id,outlet_id,covered,lag_jam,jumlah_artikel,source_url,archive_url,retrieved_at,first_seen,last_checked,fiktif
-MKS-PRW-F01,harian-losari.example,True,61,1,https://harian-losari.example/fixture/liputan/MKS-PRW-F01,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F01,suara-tamalanrea.example,False,,0,https://suara-tamalanrea.example/fixture/liputan/MKS-PRW-F01,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F01,sulsel-kini.example,True,38,2,https://sulsel-kini.example/fixture/liputan/MKS-PRW-F01,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F01,kabar-pelabuhan.example,True,15,2,https://kabar-pelabuhan.example/fixture/liputan/MKS-PRW-F01,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F02,harian-losari.example,False,,0,https://harian-losari.example/fixture/liputan/MKS-PRW-F02,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F02,suara-tamalanrea.example,True,64,2,https://suara-tamalanrea.example/fixture/liputan/MKS-PRW-F02,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F02,sulsel-kini.example,True,13,1,https://sulsel-kini.example/fixture/liputan/MKS-PRW-F02,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F02,kabar-pelabuhan.example,True,11,3,https://kabar-pelabuhan.example/fixture/liputan/MKS-PRW-F02,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F03,harian-losari.example,False,,0,https://harian-losari.example/fixture/liputan/MKS-PRW-F03,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F03,suara-tamalanrea.example,True,71,1,https://suara-tamalanrea.example/fixture/liputan/MKS-PRW-F03,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F03,sulsel-kini.example,True,40,2,https://sulsel-kini.example/fixture/liputan/MKS-PRW-F03,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F03,kabar-pelabuhan.example,True,13,3,https://kabar-pelabuhan.example/fixture/liputan/MKS-PRW-F03,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F04,harian-losari.example,False,,0,https://harian-losari.example/fixture/liputan/MKS-PRW-F04,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F04,suara-tamalanrea.example,False,,0,https://suara-tamalanrea.example/fixture/liputan/MKS-PRW-F04,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F04,sulsel-kini.example,True,9,3,https://sulsel-kini.example/fixture/liputan/MKS-PRW-F04,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F04,kabar-pelabuhan.example,True,5,3,https://kabar-pelabuhan.example/fixture/liputan/MKS-PRW-F04,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F05,harian-losari.example,False,,0,https://harian-losari.example/fixture/liputan/MKS-PRW-F05,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F05,suara-tamalanrea.example,False,,0,https://suara-tamalanrea.example/fixture/liputan/MKS-PRW-F05,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F05,sulsel-kini.example,False,,0,https://sulsel-kini.example/fixture/liputan/MKS-PRW-F05,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F05,kabar-pelabuhan.example,True,11,2,https://kabar-pelabuhan.example/fixture/liputan/MKS-PRW-F05,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F06,harian-losari.example,False,,0,https://harian-losari.example/fixture/liputan/MKS-PRW-F06,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F06,suara-tamalanrea.example,False,,0,https://suara-tamalanrea.example/fixture/liputan/MKS-PRW-F06,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F06,sulsel-kini.example,True,40,1,https://sulsel-kini.example/fixture/liputan/MKS-PRW-F06,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-MKS-PRW-F06,kabar-pelabuhan.example,True,28,1,https://kabar-pelabuhan.example/fixture/liputan/MKS-PRW-F06,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-KPG-PRW-F01,timor-pagi.example,False,,0,https://timor-pagi.example/fixture/liputan/KPG-PRW-F01,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-KPG-PRW-F01,kupang-kini.example,True,6,3,https://kupang-kini.example/fixture/liputan/KPG-PRW-F01,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-KPG-PRW-F02,timor-pagi.example,True,52,1,https://timor-pagi.example/fixture/liputan/KPG-PRW-F02,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
-KPG-PRW-F02,kupang-kini.example,True,1,3,https://kupang-kini.example/fixture/liputan/KPG-PRW-F02,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+peristiwa_id,outlet_id,covered,lag_jam,jumlah_artikel,artikel_ids,source_url,archive_url,retrieved_at,first_seen,last_checked,fiktif
+MKS-PRW-F01,harian-losari.example,True,77,3,"['ART-F020', 'ART-F021', 'ART-F022']",https://harian-losari.example/fixture/liputan/MKS-PRW-F01,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F01,suara-tamalanrea.example,False,,0,[],https://suara-tamalanrea.example/fixture/liputan/MKS-PRW-F01,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F01,sulsel-kini.example,True,25,3,"['ART-F023', 'ART-F024', 'ART-F025']",https://sulsel-kini.example/fixture/liputan/MKS-PRW-F01,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F01,kabar-pelabuhan.example,True,15,1,['ART-F026'],https://kabar-pelabuhan.example/fixture/liputan/MKS-PRW-F01,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F02,harian-losari.example,False,,0,[],https://harian-losari.example/fixture/liputan/MKS-PRW-F02,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F02,suara-tamalanrea.example,False,,0,[],https://suara-tamalanrea.example/fixture/liputan/MKS-PRW-F02,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F02,sulsel-kini.example,True,25,3,"['ART-F027', 'ART-F028', 'ART-F029']",https://sulsel-kini.example/fixture/liputan/MKS-PRW-F02,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F02,kabar-pelabuhan.example,True,31,3,"['ART-F030', 'ART-F031', 'ART-F032']",https://kabar-pelabuhan.example/fixture/liputan/MKS-PRW-F02,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F03,harian-losari.example,False,,0,[],https://harian-losari.example/fixture/liputan/MKS-PRW-F03,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F03,suara-tamalanrea.example,True,46,1,['ART-F033'],https://suara-tamalanrea.example/fixture/liputan/MKS-PRW-F03,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F03,sulsel-kini.example,False,,0,[],https://sulsel-kini.example/fixture/liputan/MKS-PRW-F03,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F03,kabar-pelabuhan.example,True,11,4,"['ART-F034', 'ART-F035', 'ART-F036', 'ART-F037']",https://kabar-pelabuhan.example/fixture/liputan/MKS-PRW-F03,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F04,harian-losari.example,True,71,1,['ART-F038'],https://harian-losari.example/fixture/liputan/MKS-PRW-F04,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F04,suara-tamalanrea.example,False,,0,[],https://suara-tamalanrea.example/fixture/liputan/MKS-PRW-F04,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F04,sulsel-kini.example,True,33,1,['ART-F039'],https://sulsel-kini.example/fixture/liputan/MKS-PRW-F04,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F04,kabar-pelabuhan.example,True,1,1,['ART-F040'],https://kabar-pelabuhan.example/fixture/liputan/MKS-PRW-F04,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F05,harian-losari.example,False,,0,[],https://harian-losari.example/fixture/liputan/MKS-PRW-F05,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F05,suara-tamalanrea.example,False,,0,[],https://suara-tamalanrea.example/fixture/liputan/MKS-PRW-F05,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F05,sulsel-kini.example,True,40,1,['ART-F041'],https://sulsel-kini.example/fixture/liputan/MKS-PRW-F05,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F05,kabar-pelabuhan.example,True,10,2,"['ART-F042', 'ART-F043']",https://kabar-pelabuhan.example/fixture/liputan/MKS-PRW-F05,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F06,harian-losari.example,False,,0,[],https://harian-losari.example/fixture/liputan/MKS-PRW-F06,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F06,suara-tamalanrea.example,True,61,2,"['ART-F044', 'ART-F045']",https://suara-tamalanrea.example/fixture/liputan/MKS-PRW-F06,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F06,sulsel-kini.example,False,,0,[],https://sulsel-kini.example/fixture/liputan/MKS-PRW-F06,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRW-F06,kabar-pelabuhan.example,True,8,3,"['ART-F046', 'ART-F047', 'ART-F048']",https://kabar-pelabuhan.example/fixture/liputan/MKS-PRW-F06,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+KPG-PRW-F01,timor-pagi.example,False,,0,[],https://timor-pagi.example/fixture/liputan/KPG-PRW-F01,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+KPG-PRW-F01,kupang-kini.example,True,20,2,"['ART-F049', 'ART-F050']",https://kupang-kini.example/fixture/liputan/KPG-PRW-F01,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+KPG-PRW-F02,timor-pagi.example,True,50,1,['ART-F051'],https://timor-pagi.example/fixture/liputan/KPG-PRW-F02,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+KPG-PRW-F02,kupang-kini.example,False,,0,[],https://kupang-kini.example/fixture/liputan/KPG-PRW-F02,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True

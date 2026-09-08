@@ -114,7 +114,7 @@ window.EPPOS = window.EPPOS || {};
   };
 
   /* Scandal permeability matrix: outlets × events; cell = lag (sequential) or silence (hatched). */
-  E.permeability = function (el, legendEl, outlets, events, coverage, contracts) {
+  E.permeability = function (el, legendEl, outlets, events, coverage, contracts, onCell) {
     el.innerHTML = ''; legendEl.innerHTML = ''; el.className = 'perm';
     if (!events.length) { el.innerHTML = '<div class="empty">Belum ada peristiwa untuk kota ini.</div>'; return; }
     const ev = events.slice().sort((a, b) => a.tanggal < b.tanggal ? -1 : 1);
@@ -139,8 +139,9 @@ window.EPPOS = window.EPPOS || {};
         const c = cov.get(e.peristiwa_id + '|' + o.outlet_id);
         const d = document.createElement('div'); d.className = 'c';
         if (!c) { d.classList.add('silent'); d.textContent = '?'; d.title = 'belum diperiksa'; }
-        else if (!c.covered) { d.classList.add('silent'); d.textContent = 'DIAM'; d.title = `${o.nama_outlet} tidak memuat peristiwa ${e.peristiwa_id}`; d.innerHTML += `<a href="${c.source_url}" target="_blank" rel="noopener" aria-label="sumber"></a>`; }
-        else { d.style.background = scale(c.lag_jam); d.style.color = c.lag_jam < scale.domain()[1] * .45 ? '#f3eee4' : '#171613'; d.textContent = `${c.lag_jam} j`; d.title = `${o.nama_outlet}: ${c.jumlah_artikel} artikel, ${c.lag_jam} jam setelah peristiwa`; d.innerHTML += `<a href="${c.source_url}" target="_blank" rel="noopener" aria-label="sumber"></a>`; }
+        else if (!c.covered) { d.classList.add('silent'); d.textContent = 'DIAM'; d.title = `${o.nama_outlet} tidak memuat peristiwa ${e.peristiwa_id}`; }
+        else { d.style.background = scale(c.lag_jam); d.style.color = c.lag_jam < scale.domain()[1] * .45 ? '#f3eee4' : '#171613'; d.textContent = `${c.lag_jam} j`; d.title = `${o.nama_outlet}: ${c.jumlah_artikel} artikel, ${c.lag_jam} jam setelah peristiwa`; }
+        if (c && onCell) { d.style.cursor = 'pointer'; d.tabIndex = 0; d.setAttribute('role', 'button'); d.onclick = () => { el.querySelectorAll('.c.sel').forEach(x => x.classList.remove('sel')); d.classList.add('sel'); onCell({ outlet: o, event: e, cov: c }); }; d.onkeydown = ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); d.click(); } }; }
         el.appendChild(d);
       });
     });

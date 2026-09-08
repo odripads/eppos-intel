@@ -58,7 +58,7 @@
     "last_checked",
     "fiktif"
    ],
-   "sha256": "032e3e415a85c625",
+   "sha256": "907abce744dc81f2",
    "fixture_rows": 28
   },
   {
@@ -214,7 +214,7 @@
   },
   {
    "table": "artikel",
-   "rows": 5,
+   "rows": 51,
    "columns": [
     "artikel_id",
     "outlet_id",
@@ -225,6 +225,35 @@
     "hash_shingle",
     "kecamatan",
     "sumber_koleksi",
+    "ringkasan",
+    "kategori",
+    "topik",
+    "peristiwa_id",
+    "klaster_id",
+    "source_url",
+    "archive_url",
+    "retrieved_at",
+    "first_seen",
+    "last_checked",
+    "fiktif",
+    "jaccard_klaster"
+   ],
+   "sha256": "b37c4838b051aab9",
+   "fixture_rows": 51
+  },
+  {
+   "table": "klaster_duplikat",
+   "rows": 7,
+   "columns": [
+    "klaster_id",
+    "kota",
+    "tanggal",
+    "judul_representatif",
+    "ringkasan",
+    "kategori",
+    "jumlah_outlet",
+    "jenis",
+    "anggota",
     "source_url",
     "archive_url",
     "retrieved_at",
@@ -232,8 +261,8 @@
     "last_checked",
     "fiktif"
    ],
-   "sha256": "c18bae4dbf3df260",
-   "fixture_rows": 5
+   "sha256": "3340f89c39bed332",
+   "fixture_rows": 7
   },
   {
    "table": "metrik_mingguan",
@@ -254,7 +283,7 @@
     "regime_id",
     "fiktif"
    ],
-   "sha256": "5621d53506e0671c",
+   "sha256": "2b43f7a2624501e3",
    "fixture_rows": 3756
   },
   {
@@ -266,6 +295,7 @@
     "covered",
     "lag_jam",
     "jumlah_artikel",
+    "artikel_ids",
     "source_url",
     "archive_url",
     "retrieved_at",
@@ -273,7 +303,7 @@
     "last_checked",
     "fiktif"
    ],
-   "sha256": "9f91e86d750e0c41",
+   "sha256": "28196a81426c7455",
    "fixture_rows": 28
   },
   {

@@ -66,7 +66,14 @@
         <div class="fig-head"><h3>Permeabilitas skandal</h3><p>Untuk tiap peristiwa negatif yang terjadi <em>terlepas dari pemberitaan</em>: outlet mana yang memuat, seberapa cepat. Kami tidak menilai tuduhannya; kami mengukur siapa yang memuat. Diam adalah datum.</p></div>
         <div id="perm"></div>
         <div class="perm-legend" id="perm-legend"></div>
+        <div class="perm-detail" id="perm-detail"><span class="muted small">Klik sel untuk melihat berita yang memuat peristiwa itu.</span></div>
         <figcaption id="perm-cap"></figcaption>
+      </figure>
+      <figure id="fig-artikel">
+        <div class="fig-head"><h3>Berita yang dimuat</h3><p>Tiap artikel: tentang apa (kategori dari aturan kata kunci), ringkasan (kutipan awal, bukan hasil model), dan outlet lain yang memuat teks nyaris sama. Angka kemiripan = Jaccard 5-gram terhadap salinan pertama.</p></div>
+        <div class="artikel-filter" id="artikel-filter"></div>
+        <div id="artikel"></div>
+        <figcaption id="artikel-cap"></figcaption>
       </figure>
       <figure id="fig-outlets">
         <div class="fig-head"><h3>Kerangka outlet</h3><p>Dewan Pers terverifikasi + ditautkan/dikreditkan Diskominfo + penerima kontrak kerja sama media. Bukan hasil merayapi web terbuka: korpus tanpa kerangka sampel tidak punya penyebut.</p></div>

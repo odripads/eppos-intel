@@ -93,10 +93,11 @@ PROVENANCE = ["source_url", "archive_url", "retrieved_at", "first_seen", "last_c
 # Pipeline-generated tables (spec §Data model) plus two the recall test showed we need.
 PIPELINE_TABLES: dict[str, list[str]] = {
     "artikel": ["artikel_id", "outlet_id", "url", "judul", "tanggal_terbit", "teks", "hash_shingle", "kecamatan",
-                "sumber_koleksi"],  # sumber_koleksi: wp_json | sitemap | wayback
+                "sumber_koleksi", "ringkasan", "kategori", "topik", "peristiwa_id", "klaster_id"],  # ringkasan = lead, extractive; kategori = rule-based
+    "klaster_duplikat": ["klaster_id", "kota", "tanggal", "judul_representatif", "ringkasan", "kategori", "jumlah_outlet", "jenis", "anggota"],
     "metrik_mingguan": ["outlet_id", "kota", "minggu", "jumlah_artikel", "indeks_personalisasi",
                         "bagian_duplikasi", "hari_ke_penetapan"],
-    "liputan_peristiwa": ["peristiwa_id", "outlet_id", "covered", "lag_jam", "jumlah_artikel"],
+    "liputan_peristiwa": ["peristiwa_id", "outlet_id", "covered", "lag_jam", "jumlah_artikel", "artikel_ids"],
     "outlet_domain_history": ["outlet_id", "domain", "berlaku_dari", "berlaku_sampai"],
     "peristiwa_penghapusan": ["outlet_id", "url", "terakhir_terlihat", "pertama_hilang", "jenis"],  # jenis: artikel | situs
 }

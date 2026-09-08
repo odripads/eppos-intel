@@ -10,10 +10,12 @@ Rules (spec §Non-negotiables):
 Usage: python3 pipeline/make_fixtures.py   -> writes data/*.json, data/csv/*.csv, data/manifest.json
 """
 from __future__ import annotations
-import csv, hashlib, json, math, random, datetime as dt
+import csv, hashlib, json, math, random, re, datetime as dt
 from pathlib import Path
 from regimes import REGIONS, WINDOW
 from schema import INTAKE_SHEETS, PIPELINE_TABLES, PROVENANCE
+from summarize import enrich
+from metrics import shingles
 
 random.seed(20260909)
 ROOT = Path(__file__).resolve().parent.parent
@@ -131,21 +133,6 @@ def peristiwa():
              "bukti_jenis": bj, "diisi_oleh": "fixture", "tanggal_isi": TODAY, "fiktif": True,
              **prov(f"https://bukti.example/{pid}")} for pid, kota, tgl, jenis, ring, kec, aktor, bj in PERISTIWA]
 
-def liputan_peristiwa():
-    rows = []
-    for pid, kota, tgl, jenis, *_ in PERISTIWA:
-        for oid, nama, okota, profil, *_ in FIX_OUTLETS:
-            if okota != kota: continue
-            # contracted outlets tend to stay silent on enforcement; independents cover fast
-            p_cover = {"kontrak": 0.25, "campuran": 0.6, "independen": 0.95}[profil]
-            if jenis == "mobilisasi": p_cover = min(1, p_cover + 0.25)
-            covered = random.random() < p_cover
-            lag = None if not covered else int(abs(random.gauss({"kontrak": 60, "campuran": 30, "independen": 6}[profil], 12)))
-            n = 0 if not covered else max(1, int(random.gauss(3 if profil == "independen" else 1.5, 1)))
-            rows.append({"peristiwa_id": pid, "outlet_id": oid, "covered": covered, "lag_jam": lag, "jumlah_artikel": n,
-                         "fiktif": True, **prov(f"https://{oid}/fixture/liputan/{pid}")})
-    return rows
-
 # ---------------------------------------------------------------- contracts, officials, network
 def kontrak_media():
     rows, k = [], 0
@@ -219,19 +206,85 @@ def info_a1():
              "source_url": "", "archive_url": "", "retrieved_at": t, "first_seen": NOW, "last_checked": NOW}
             for a, k, t, p, r, tk, bd, sv in A]
 
-def artikel():
-    """A small annotated sample to exercise the personalization rules. Fictional text on .example outlets."""
-    S = [("harian-losari.example", "2024-08-12", "Bantuan dari Bapak Wali Kota tiba di Tallo", "Bantuan sembako dari Bapak Wali Kota Danny Pomanto tiba di Kecamatan Tallo, Senin. Wali Kota berpesan agar warga menjaga kebersihan.", "Tallo"),
-         ("kabar-pelabuhan.example", "2024-08-12", "Dinas Sosial salurkan sembako di Tallo", "Program bantuan Dinas Sosial Kota Makassar menyalurkan sembako kepada 200 keluarga di Kecamatan Tallo.", "Tallo"),
-         ("suara-tamalanrea.example", "2020-08-03", "Pj Wali Kota tinjau posko bantuan", "Pj Wali Kota meninjau posko bantuan Dinas Sosial di Tamalanrea. Penyaluran dilakukan oleh petugas dinas.", "Tamalanrea"),
-         ("harian-losari.example", "2016-02-15", "Danny resmikan lorong garden di Rappocini", "Wali Kota Makassar Danny Pomanto meresmikan lorong garden yang dibangun atas inisiatifnya di Rappocini.", "Rappocini"),
-         ("sulsel-kini.example", "2019-11-04", "Pemkot cabut perwali retribusi parkir", "Pemerintah Kota Makassar mencabut peraturan wali kota tentang retribusi parkir setelah tiga bulan berlaku.", "")]
-    rows = []
-    for i, (oid, tgl, judul, teks, kec) in enumerate(S, 1):
-        rows.append({"artikel_id": f"ART-F{i:03d}", "outlet_id": oid, "url": f"https://{oid}/{tgl.replace('-', '/')}/artikel-{i}",
-                     "judul": judul, "tanggal_terbit": tgl, "teks": teks, "hash_shingle": hashlib.sha1(teks.encode()).hexdigest()[:16],
-                     "kecamatan": kec, "sumber_koleksi": "fixture", "fiktif": True, **prov(f"https://{oid}/{tgl.replace('-', '/')}/artikel-{i}")})
-    return rows
+# ---------------------------------------------------------------- articles, clusters, coverage links (fictional text)
+RILIS = [  # press releases: one text, republished with light edits by contracted outlets (agentive framing)
+    ("2016-02-15", "Wali Kota resmikan lorong garden ke-100 di Rappocini",
+     "Wali Kota Makassar Danny Pomanto meresmikan lorong garden ke-100 di Kecamatan Rappocini, Senin. Program lorong garden yang digagas Wali Kota itu menyulap lorong sempit menjadi ruang hijau produktif. Danny berpesan agar warga menjaga tanaman yang sudah ditanam. Peresmian dihadiri camat, lurah, dan tokoh masyarakat setempat."),
+    ("2020-01-20", "Pj Wali Kota pastikan penyaluran bantuan sesuai data", 
+     "Pj Wali Kota Makassar memastikan penyaluran bantuan pangan Dinas Sosial berjalan sesuai data terpadu. Dinas Sosial menyalurkan bantuan kepada 1.200 keluarga di lima kecamatan. Penyaluran dilakukan petugas dinas bersama kelurahan. Pj Wali Kota meminta pengawasan berlapis agar bantuan tepat sasaran."),
+    ("2020-08-24", "Bantuan dari Bapak Wali Kota tiba di Tamalanrea",
+     "Bantuan sembako dari Bapak Wali Kota tiba di Kecamatan Tamalanrea, Senin, dan langsung dibagikan kepada 500 keluarga. Wali Kota Danny Pomanto menyerahkan bantuan secara simbolis dan berpesan agar warga tetap menjaga protokol kesehatan. Warga menyampaikan terima kasih atas perhatian Wali Kota."),
+    ("2024-08-12", "Danny serahkan 2.000 paket bantuan di Tallo",
+     "Wali Kota Makassar Danny Pomanto menyerahkan 2.000 paket bantuan sembako kepada warga Kecamatan Tallo, Senin. Bantuan dari Wali Kota itu merupakan bagian dari program peduli warga menjelang akhir masa jabatan. Danny mengatakan bantuan akan berlanjut ke kecamatan lain. Warga berterima kasih kepada Bapak Wali Kota."),
+    ("2024-09-02", "Wali Kota luncurkan perbaikan 40 ruas jalan lingkungan",
+     "Wali Kota Makassar meluncurkan perbaikan 40 ruas jalan lingkungan di enam kecamatan, Senin. Program perbaikan jalan atas arahan Wali Kota itu menelan anggaran Rp 18 miliar dari APBD. Danny meninjau langsung lokasi pengerjaan di Manggala dan Biringkanaya. Ia berpesan agar kontraktor menjaga mutu pekerjaan."),
+    ("2025-05-19", "Appi tinjau posko bantuan banjir di Manggala",
+     "Wali Kota Makassar Munafri Arifuddin meninjau posko bantuan banjir di Kecamatan Manggala, Senin. Bantuan dari Wali Kota berupa makanan siap saji dan selimut dibagikan kepada 300 keluarga terdampak. Appi meminta Dinas Sosial mempercepat pendataan warga."),
+]
+RILIS_KUPANG = [
+    ("2024-03-11", "Pemkot Kupang salurkan bantuan air bersih ke Kelapa Lima",
+     "Pemerintah Kota Kupang melalui Dinas Sosial menyalurkan bantuan air bersih ke Kecamatan Kelapa Lima, Senin. Penyaluran dilakukan petugas dinas bersama kelurahan kepada 200 keluarga. Dinas Sosial menyatakan penyaluran akan berlanjut selama musim kemarau."),
+]
+VARIAN = [lambda t: t, lambda t: t.replace("Senin", "Senin (siang)").replace("Wali Kota Makassar", "Walikota Makassar"),
+          lambda t: "MAKASSAR — " + t.replace("berpesan", "mengimbau"), lambda t: t.replace("Kecamatan ", "Kec. ").replace("sembako", "sembako dan kebutuhan pokok")]
+LIPUTAN_TEKS = {  # independent coverage of the fixture events, by jenis
+    "mobilisasi": "Ratusan {siapa} menggelar unjuk rasa {ringkas} pada {tgl}. Massa menuntut {tuntutan}. Aksi berlangsung sekitar tiga jam dan dijaga aparat kepolisian. Pemerintah Kota belum memberikan tanggapan resmi hingga berita ini diturunkan.",
+    "penindakan": "{lembaga} {ringkas}, menurut dokumen yang diperoleh redaksi pada {tgl}. Dokumen itu mencatat sejumlah temuan yang harus ditindaklanjuti dalam 60 hari. Kepala dinas terkait mengatakan pihaknya akan mempelajari temuan tersebut. Pemerintah Kota menyatakan menghormati proses yang berjalan.",
+    "pembatalan kebijakan": "Pemerintah Kota {ringkas} pada {tgl}. Pencabutan dilakukan setelah gelombang keberatan dari warga dan pelaku usaha. Bagian Hukum menyatakan aturan pengganti sedang disusun. Anggota DPRD meminta pemerintah kota lebih cermat sebelum menerbitkan aturan.",
+}
+FOLLOWUP = " Pada hari berikutnya, sejumlah warga masih mendatangi kantor kecamatan untuk menanyakan kelanjutan persoalan itu."
+
+def _art(i, oid, tgl, judul, teks, **extra):
+    url = f"https://{oid}/{tgl.replace('-', '/')}/{re.sub(r'[^a-z0-9]+', '-', judul.lower()).strip('-')[:60]}"
+    a = {"artikel_id": f"ART-F{i:03d}", "outlet_id": oid, "url": url, "judul": judul, "tanggal_terbit": tgl, "teks": teks,
+         "hash_shingle": hashlib.sha1(teks.encode()).hexdigest()[:16], "kecamatan": extra.pop("kecamatan", ""), "sumber_koleksi": "fixture",
+         "peristiwa_id": extra.pop("peristiwa_id", None), "klaster_id": None, "fiktif": True, **prov(url)}
+    return enrich(a)
+
+def artikel_and_links():
+    """Returns (artikel rows, klaster rows, liputan rows). Liputan rows carry artikel_ids so the matrix can list them."""
+    arts, klaster, lip = [], [], []
+    n = 0
+    # 1. press releases republished across contracted/mixed outlets
+    for kota, releases in (("Makassar", RILIS), ("Kupang", RILIS_KUPANG)):
+        copiers = [o for o in FIX_OUTLETS if o[2] == kota and o[3] != "independen"]
+        for k, (tgl, judul, teks) in enumerate(releases, 1):
+            members = []
+            for j, (oid, *_r) in enumerate(copiers):
+                n += 1
+                t2 = VARIAN[j % len(VARIAN)](teks)
+                d2 = (d(tgl) + dt.timedelta(days=j % 2)).isoformat()
+                a = _art(n, oid, d2, judul if j == 0 else judul.replace("Wali Kota", "Walikota"), t2, kecamatan=next((kc for kc in ["Rappocini", "Tamalanrea", "Tallo", "Manggala", "Kelapa Lima"] if kc in teks), ""))
+                members.append(a); arts.append(a)
+            kid = f"{'MKS' if kota == 'Makassar' else 'KPG'}-KLS-F{k:02d}"
+            base = shingles(members[0]["teks"])
+            for a in members:
+                a["klaster_id"] = kid
+                sh = shingles(a["teks"]); a["jaccard_klaster"] = round(len(base & sh) / len(base | sh), 2) if base | sh else 1.0
+            klaster.append({"klaster_id": kid, "kota": kota, "tanggal": tgl, "judul_representatif": judul, "ringkasan": members[0]["ringkasan"],
+                            "kategori": members[0]["kategori"], "jumlah_outlet": len(members), "jenis": "salinan lintas outlet",
+                            "anggota": [{"artikel_id": a["artikel_id"], "outlet_id": a["outlet_id"], "url": a["url"], "tanggal_terbit": a["tanggal_terbit"], "jaccard": a["jaccard_klaster"]} for a in members],
+                            "fiktif": True, **prov(members[0]["url"])})
+    # 2. event coverage, consistent with the permeability matrix
+    for pid, kota, tgl, jenis, ring, kec, aktor, bj in PERISTIWA:
+        for oid, nama, okota, profil, *_r in FIX_OUTLETS:
+            if okota != kota: continue
+            p_cover = {"kontrak": 0.25, "campuran": 0.6, "independen": 0.95}[profil]
+            if jenis == "mobilisasi": p_cover = min(1, p_cover + 0.25)
+            covered = random.random() < p_cover
+            lag = None if not covered else int(abs(random.gauss({"kontrak": 60, "campuran": 30, "independen": 6}[profil], 12)))
+            cnt = 0 if not covered else max(1, int(random.gauss(3 if profil == "independen" else 1.5, 1)))
+            ids = []
+            for c in range(cnt):
+                n += 1
+                day = (d(tgl) + dt.timedelta(hours=lag) + dt.timedelta(days=c)).date().isoformat() if False else (d(tgl) + dt.timedelta(days=(lag // 24) + c)).isoformat()
+                teks = LIPUTAN_TEKS[jenis].format(siapa="warga" if "warga" in ring.lower() else "mahasiswa" if "mahasiswa" in ring.lower() else "pedagang",
+                                                  ringkas=ring[0].lower() + ring[1:], tgl=tgl, tuntutan="pembatalan kebijakan itu", lembaga=aktor if jenis != "penindakan" else ring.split(" ")[0]) + (FOLLOWUP if c else "")
+                judul = ring if c == 0 else f"Lanjutan: {ring[0].lower() + ring[1:]}"
+                a = _art(n, oid, day, judul, teks, kecamatan=kec, peristiwa_id=pid); arts.append(a); ids.append(a["artikel_id"])
+            lip.append({"peristiwa_id": pid, "outlet_id": oid, "covered": covered, "lag_jam": lag, "jumlah_artikel": cnt, "artikel_ids": ids,
+                        "fiktif": True, **prov(f"https://{oid}/fixture/liputan/{pid}")})
+    return arts, klaster, lip
 
 def outlet_domain_history():
     H = [("rakyatsulsel.co", "rakyatsulsel.com", None, None, "Wayback 2014–2017 hanya di domain lama"),
@@ -261,10 +314,11 @@ def write(name, rows, columns):
             "fixture_rows": sum(1 for r in rows if r.get("fiktif"))}
 
 def main():
+    arts, klaster, lip = artikel_and_links()
     tables = {
         "outlet": outlets(), "kontrak_media": kontrak_media(), "pejabat": pejabat(), "perusahaan": perusahaan(),
         "relasi": relasi(), "tender": tender(), "peristiwa": peristiwa(), "info_a1": info_a1(),
-        "artikel": artikel(), "metrik_mingguan": metrik_mingguan(), "liputan_peristiwa": liputan_peristiwa(),
+        "artikel": arts, "klaster_duplikat": klaster, "metrik_mingguan": metrik_mingguan(), "liputan_peristiwa": lip,
         "outlet_domain_history": outlet_domain_history(), "peristiwa_penghapusan": peristiwa_penghapusan(),
     }
     manifest = {"version": VERSION, "generated_at": NOW, "fixture": True,
