@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Koreksi — EPPOS Electoral Intelligence</title><link rel="stylesheet" href="assets/style.css"></head>
+<body>
+<header class="topbar"><div class="wrap"><a class="brand" href="./">EPPOS GROUP <span>DPP UGM</span></a>
+<nav><a href="./#peta">Peta</a><a href="metodologi.html">Metodologi <span class="mono">v0.1</span></a><a href="koreksi.html" aria-current="page">Koreksi</a><a href="data/manifest.json">Data</a></nav></div></header>
+<main class="wrap">
+  <section class="hero"><div class="hero-anim"><div class="kicker">Mekanisme koreksi</div><h1>Ada yang keliru? Beri tahu kami.</h1>
+  <p class="lede">Setiap angka di situs ini menaut ke baris sumbernya. Bila baris itu salah, hilang, atau berubah, laporkan. Koreksi yang diterima dicatat di log di bawah dengan versi data yang terdampak; baris yang dikoreksi tidak dihapus, melainkan diberi status dan tautan ke koreksinya.</p></div>
+  <dl class="meta hero-anim"><dt>Apa yang bisa dikoreksi</dt><dd>nilai, tanggal, atribusi outlet, status relasi, peristiwa yang tidak terjadi</dd><dt>Yang tidak kami terima</dt><dd>tuduhan baru tanpa bukti independen; nama narasumber lapangan</dd><dt>Tenggat jawab</dt><dd>14 hari kerja</dd></dl></section>
+  <hr>
+  <div class="two" style="padding:40px 0">
+    <form class="koreksi" id="f" onsubmit="return false">
+      <label>Halaman atau tabel<select name="tabel"><option>metrik_mingguan</option><option>outlet</option><option>kontrak_media</option><option>pejabat</option><option>perusahaan</option><option>relasi</option><option>tender</option><option>peristiwa</option><option>liputan_peristiwa</option><option>regime</option><option>lainnya</option></select></label>
+      <label>ID baris atau URL yang salah<input name="id" placeholder="mis. MKS-PRW-F02 atau https://…"></label>
+      <label>Apa yang salah, dan apa yang benar<textarea name="isi" rows="5" required></textarea></label>
+      <label>Tautan bukti (wajib untuk perubahan nilai)<input name="bukti" placeholder="https://…"></label>
+      <label>Kontak (opsional, tidak dipublikasikan)<input name="kontak" placeholder="surel"></label>
+      <div style="display:flex;gap:10px"><button class="btn" id="mk">Susun laporan</button><button class="btn ghost" id="cp" hidden>Salin</button></div>
+      <pre class="out" id="out" hidden></pre>
+      <p class="small muted">Situs ini statis dan tidak menyimpan kiriman. Tombol di atas menyusun teks laporan; kirim ke alamat surel tim EPPOS (dicantumkan saat publikasi) atau buka isu di repositori data.</p>
+    </form>
+    <div><h3>Log koreksi</h3><div id="log" class="small muted" style="margin-top:10px">Memuat…</div></div>
+  </div>
+</main>
+<footer><div class="wrap"><div><b>EPPOS GROUP DPP UGM</b><p>Departemen Politik dan Pemerintahan, Universitas Gadjah Mada.</p></div><div><b>Data</b><p><a href="data/manifest.json">manifest.json</a></p></div><div><b>Metodologi</b><p><a href="metodologi.html">v0.1</a></p></div></div></footer>
+<script>
+document.getElementById('mk').onclick = () => {
+  const f = new FormData(document.getElementById('f'));
+  const txt = `KOREKSI EPPOS — ${new Date().toISOString().slice(0,10)}\nTabel: ${f.get('tabel')}\nBaris/URL: ${f.get('id')}\nBukti: ${f.get('bukti') || '(tidak ada)'}\n\n${f.get('isi')}\n\nKontak: ${f.get('kontak') || '(tidak ada)'}`;
+  const o = document.getElementById('out'); o.textContent = txt; o.hidden = false; document.getElementById('cp').hidden = false;
+};
+document.getElementById('cp').onclick = () => navigator.clipboard.writeText(document.getElementById('out').textContent);
+fetch('data/koreksi.json').then(r => r.json()).then(rows => {
+  const el = document.getElementById('log');
+  el.innerHTML = rows.length ? '<table class="data"><thead><tr><th>Tanggal</th><th>Tabel</th><th>Baris</th><th>Perubahan</th><th>Versi</th></tr></thead><tbody>' +
+    rows.map(r => `<tr><td class="mono">${r.tanggal}</td><td class="mono">${r.tabel}</td><td class="mono">${r.baris}</td><td>${r.perubahan}</td><td class="mono">${r.versi}</td></tr>`).join('') + '</tbody></table>' : 'Belum ada koreksi tercatat.';
+}).catch(() => document.getElementById('log').textContent = 'Log belum tersedia.');
+</script>
+</body></html>

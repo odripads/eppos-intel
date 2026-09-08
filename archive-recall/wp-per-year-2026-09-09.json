@@ -1,0 +1,38 @@
+{
+ "fajar.co.id": {
+  "2014": "0",
+  "2015": "0",
+  "2016": "0",
+  "2017": "15081",
+  "2018": "38551",
+  "2019": "36271",
+  "2020": "40384"
+ },
+ "upeks.co.id": {
+  "2014": "err HTTP Error 403: Forbidden",
+  "2015": "err HTTP Error 403: Forbidden",
+  "2016": "err HTTP Error 403: Forbidden",
+  "2017": "err HTTP Error 403: Forbidden",
+  "2018": "err HTTP Error 403: Forbidden",
+  "2019": "err HTTP Error 403: Forbidden",
+  "2020": "err HTTP Error 403: Forbidden"
+ },
+ "sulselsatu.com": {
+  "2014": "no-header:",
+  "2015": "no-header:",
+  "2016": "no-header:",
+  "2017": "no-header:",
+  "2018": "no-header:",
+  "2019": "no-header:",
+  "2020": "no-header:"
+ },
+ "makassar.terkini.id": {
+  "2014": "no-header:",
+  "2015": "no-header:",
+  "2016": "no-header:",
+  "2017": "no-header:",
+  "2018": "no-header:",
+  "2019": "no-header:",
+  "2020": "no-header:"
+ }
+}

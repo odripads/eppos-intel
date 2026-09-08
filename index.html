@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EPPOS Electoral Intelligence — deteksi intervensi eksekutif</title>
+<meta name="description" content="Lapisan media sistem intelijen elektoral EPPOS GROUP DPP UGM: indeks personalisasi, duplikasi siaran pers, permeabilitas skandal, jaringan kekerabatan. Kota Makassar dan Kota Kupang, 2014–2025.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="./">EPPOS GROUP <span>DPP UGM</span></a>
+  <nav><a href="#peta" aria-current="page">Peta</a><a href="metodologi.html">Metodologi <span class="mono" id="nav-ver"></span></a><a href="koreksi.html">Koreksi</a><a href="data/manifest.json">Data</a></nav>
+</div></header>
+<div class="banner" id="fixture-banner" hidden><b>DATA FIKTIF</b> — situs sedang dibangun dengan baris rekaan. Outlet nyata hanya membawa fakta publik; semua angka rekaan menempel pada domain <b>.example</b>.</div>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="hero-anim">
+      <div class="kicker">Intelijen elektoral · lapisan media</div>
+      <h1>Siapa yang bicara atas nama program kota?</h1>
+      <p class="lede">Mendeteksi intervensi eksekutif petahana dalam pilkada dari cara media lokal membingkai program pemerintah: siapa agennya, seberapa banyak yang salinan siaran pers, dan siapa yang diam saat ada peristiwa negatif.</p>
+    </div>
+    <dl class="meta hero-anim">
+      <dt>Jendela</dt><dd>2014-01-01 → 2025-12-31</dd>
+      <dt>Kasus</dt><dd>Kota Makassar (identifikasi kausal) · Kota Kupang (validitas eksternal)</dd>
+      <dt>Versi data</dt><dd class="mono" id="data-ver">…</dd>
+      <dt>Status temuan</dt><dd>Skor anomali dan penanda untuk ditelusuri, bukan tuduhan.</dd>
+    </dl>
+  </section>
+
+  <hr>
+  <section class="section" id="peta">
+    <div class="section-head"><h2>Peta kasus</h2><p>Hanya dua kota yang dapat dibuka. Klik untuk membuka panel empat lapis: Media, Anggaran, Regulasi, Info A1.</p></div>
+    <div class="map-grid">
+      <div class="map-wrap"><svg id="map" viewBox="0 0 900 420" role="img" aria-label="Peta Indonesia dengan Makassar dan Kupang"></svg></div>
+      <div class="city-cards" id="city-cards"></div>
+    </div>
+  </section>
+
+  <section class="section panel" id="panel" hidden>
+    <div class="panel-head">
+      <div><div class="kicker" id="panel-kicker"></div><h2 id="panel-title"></h2></div>
+      <div id="panel-status"></div>
+    </div>
+    <div class="tabs" role="tablist" id="tabs">
+      <button class="tab" role="tab" data-tab="media" aria-selected="true">Media</button>
+      <button class="tab" role="tab" data-tab="anggaran">Anggaran</button>
+      <button class="tab" role="tab" data-tab="regulasi">Regulasi</button>
+      <button class="tab" role="tab" data-tab="a1">Info A1</button>
+    </div>
+    <div role="tabpanel" id="tab-media">
+      <figure class="chart" id="fig-timeline">
+        <div class="fig-head"><h3>Garis waktu rezim dan indeks personalisasi</h3><p>Bagian kalimat liputan program yang menempatkan petahana — bukan lembaga — sebagai agen atau pemberi. Sumbu waktu dipancang pada peristiwa elektoral, bukan bulan kalender. Masa Pj/Plt adalah kondisi nol: tidak ada insentif elektoral.</p></div>
+        <div class="legend"><span><i></i>median outlet</span><span><i class="gray"></i>tiap outlet</span><span><i class="accent"></i>pancang waktu</span><span><i class="reg"></i>petahana terpilih</span><span><i class="null"></i>Pj/Plt — kondisi nol</span></div>
+        <div id="timeline"></div>
+        <ol class="anchor-list" id="anchor-list"></ol>
+        <figcaption id="timeline-cap"></figcaption>
+      </figure>
+      <figure class="chart" id="fig-dup">
+        <div class="fig-head"><h3>Bagian duplikasi siaran pers</h3><p>Per outlet per minggu: bagian artikel yang nyaris identik dengan artikel outlet lain dalam ±3 hari (MinHash, 5-gram). Mengukur berapa banyak “jurnalisme” yang sebenarnya salinan Diskominfo.</p></div>
+        <div id="dup"></div>
+        <figcaption id="dup-cap"></figcaption>
+      </figure>
+      <figure class="chart" id="fig-perm">
+        <div class="fig-head"><h3>Permeabilitas skandal</h3><p>Untuk tiap peristiwa negatif yang terjadi <em>terlepas dari pemberitaan</em>: outlet mana yang memuat, seberapa cepat. Kami tidak menilai tuduhannya; kami mengukur siapa yang memuat. Diam adalah datum.</p></div>
+        <div id="perm"></div>
+        <div class="perm-legend" id="perm-legend"></div>
+        <figcaption id="perm-cap"></figcaption>
+      </figure>
+      <figure id="fig-outlets">
+        <div class="fig-head"><h3>Kerangka outlet</h3><p>Dewan Pers terverifikasi + ditautkan/dikreditkan Diskominfo + penerima kontrak kerja sama media. Bukan hasil merayapi web terbuka: korpus tanpa kerangka sampel tidak punya penyebut.</p></div>
+        <div class="scroll-x" id="outlets"></div>
+        <figcaption id="outlets-cap"></figcaption>
+      </figure>
+      <figure id="fig-net">
+        <div class="fig-head"><h3>Jaringan kekerabatan dan tender</h3><p>Hanya baris berstatus <code>terkonfirmasi</code> (dua sumber berbeda jenis) yang terbit. Kemiripan nama bukan bukti.</p></div>
+        <div id="net"></div>
+        <figcaption id="net-cap"></figcaption>
+      </figure>
+    </div>
+    <div role="tabpanel" id="tab-anggaran" hidden></div>
+    <div role="tabpanel" id="tab-regulasi" hidden></div>
+    <div role="tabpanel" id="tab-a1" hidden></div>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  <div><b>EPPOS GROUP DPP UGM</b><p>Kelompok studi Departemen Politik dan Pemerintahan, Universitas Gadjah Mada. Temuan dibingkai sebagai skor anomali dan penanda yang memerlukan penelusuran, bukan tuduhan. Identitas penerima bansos dihapus saat ingesti (UU 27/2022). Info A1 tidak pernah masuk indeks.</p></div>
+  <div><b>Data</b><p>Rilis <span class="mono" id="foot-ver"></span><br><a href="data/manifest.json">manifest.json</a> · <a href="data/csv/">CSV</a><br>Setiap baris membawa <code>source_url</code>, <code>archive_url</code>, <code>retrieved_at</code>.</p></div>
+  <div><b>Koreksi</b><p><a href="koreksi.html">Ajukan koreksi</a> · <a href="metodologi.html">Metodologi</a><br>Artikel yang hilang dari situs dicatat sebagai peristiwa, bukan nilai kosong.</p></div>
+</div></footer>
+
+<div class="tooltip" id="tooltip"></div>
+<script src="assets/d3.v7.min.js"></script>
+<script src="assets/topojson-client.min.js"></script>
+<script src="assets/charts.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

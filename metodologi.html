@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metodologi v0.1 — EPPOS Electoral Intelligence</title><link rel="stylesheet" href="assets/style.css"></head>
+<body>
+<header class="topbar"><div class="wrap"><a class="brand" href="./">EPPOS GROUP <span>DPP UGM</span></a>
+<nav><a href="./#peta">Peta</a><a href="metodologi.html" aria-current="page">Metodologi <span class="mono">v0.1</span></a><a href="koreksi.html">Koreksi</a><a href="data/manifest.json">Data</a></nav></div></header>
+<main class="wrap prose">
+  <section class="hero" style="grid-template-columns:1fr"><div class="hero-anim"><div class="kicker">Metodologi · versi 0.1 · 2026-09-09</div><h1>Bagaimana angka-angka ini dibuat</h1>
+  <p class="lede">Halaman ini berversi. Setiap perubahan definisi, kerangka sampel, atau aturan ekstraksi menaikkan nomor versi dan dicatat di log perubahan di bawah. Angka pada situs selalu merujuk versi metodologi yang membuatnya.</p></div></section>
+  <hr>
+  <h2>1. Pertanyaan dan desain</h2>
+  <p>Sistem ini mendeteksi intervensi eksekutif petahana dalam pilkada dari tiga lapisan: regulasi, anggaran, dan media. Lapisan media adalah kunci gabung: data anggaran punya besaran dan waktu tetapi tidak punya aktor; media satu-satunya sumber yang memuat aktor, tanggal, tempat, dan bingkai sekaligus.</p>
+  <p><b>Kota Makassar</b> memuat kontrafaktualnya sendiri dalam empat rezim: dua periode Danny Pomanto (petahana terpilih), masa Pj/Plt 2019-05-08 → 2021-02-26 (<b>kondisi nol</b>: tidak ada insentif elektoral), dan Munafri Arifuddin sejak 2025-02-20. <b>Kota Kupang</b> hanya untuk validitas eksternal; struktur rezimnya belum diverifikasi dan tidak diasumsikan simetris.</p>
+  <p>Karena pilkada berikutnya baru sekitar 2031, sistem peringatan dini tidak bisa divalidasi prospektif. Ia <b>di-backtest</b> terhadap 2018, 2020, dan 2024 dengan kebenaran dasar dari temuan Bawaslu, putusan DKPP, dan putusan MK PHPU. Putusan MA 2018 yang menguatkan diskualifikasi pasangan petahana menjadi definisi operasional intervensi.</p>
+  <h2>2. Konstruk</h2>
+  <h3>2.1 Indeks personalisasi (ukuran utama)</h3>
+  <p>Bagian kalimat liputan program yang menempatkan petahana sebagai agen/pemberi (“bantuan dari Bapak Wali Kota”) alih-alih lembaga (“program bantuan Dinas Sosial”). Prediksi: di lantai pada masa Pj, naik menjelang penetapan calon 2020 dan 2024. Bila tidak, konstruknya salah dan kami ingin tahu lebih awal.</p>
+  <p>Prosedur: 300–500 kalimat dikode tangan, distratifikasi lintas empat rezim, sebagai standar emas. Ekstraksi berbasis aturan untuk massal; model hanya pada irisan yang ambigu. Seluruh korpus <b>tidak</b> diklasifikasi dengan LLM. Aturan versi 0 (<code>pipeline/metrics.py</code>): kalimat program = mengandung kata kunci program; agen petahana = alias petahana + konstruksi agentif; Pj/Plt dihitung sebagai lembaga.</p>
+  <h3>2.2 Bagian duplikasi siaran pers</h3>
+  <p>Deteksi nyaris-duplikat lintas outlet (MinHash 64 permutasi atas 5-gram kata, LSH 16 pita, Jaccard ≥ 0,5, jendela ±3 hari), per outlet per minggu. Mengukur berapa banyak “jurnalisme” yang sebenarnya salinan Diskominfo.</p>
+  <h3>2.3 Permeabilitas skandal</h3>
+  <p>Untuk tiap peristiwa negatif yang terjadi <i>terlepas dari pemberitaan</i> (mobilisasi, penindakan, pembatalan kebijakan; bukti independen wajib), outlet mana yang memuat, seberapa cepat, seberapa lama; ditabulasi silang dengan kontrak kerja sama media. Kami tidak pernah menegaskan tuduhan yang mendasari; kami mengukur siapa yang memuat. Diam adalah datum. Skandal pribadi di luar cakupan.</p>
+  <h3>2.4 Jaringan kekerabatan / tender</h3>
+  <p>Pejabat × keluarga × perusahaan × pemenang tender dari LHKPN, AHU Kemenkumham, LPSE. Roster ≤ 10 pejabat per kota. <b>Aturan dua sumber</b>: hubungan tidak pernah disimpulkan dari kemiripan nama; <code>terkonfirmasi</code> butuh dua sumber berbeda jenis; hanya baris terkonfirmasi yang terbit.</p>
+  <p>Tidak ada klasifikasi sentimen/valensi: liputan lokal atas program pemerintah hampir tanpa variansi valensi karena sebagian besar adalah siaran pers yang ditulis ulang.</p>
+  <h2>3. Kerangka sampel dan pengumpulan</h2>
+  <p>Tidak merayapi web terbuka: korpus tanpa kerangka sampel tidak punya penyebut. Kerangka = outlet terverifikasi Dewan Pers di provinsi + outlet yang ditautkan/dikreditkan Diskominfo/Pemkot + outlet penerima kontrak kerja sama media; 15–40 outlet per kota.</p>
+  <p>Pengumpulan: WordPress JSON API untuk situs yang menyediakannya, sitemap sebagai cadangan, Wayback Machine CDX untuk tahun yang tidak lagi dilayani situs hidup. <b>Uji recall arsip 2026-09-09</b>: tidak ada situs hidup yang menjangkau 2014; 2014–2017 hanya ada di Wayback (Tribun Timur, Fajar, Rakyat Sulsel di domain lama, Berita Kota Makassar), sehingga pengumpul bekerja Wayback-dulu untuk tahun awal. Riwayat domain outlet disimpan sebagai tabel tersendiri. HTML mentah diarsipkan bersama teks hasil ekstraksi. Batas laju sopan, user-agent jujur, patuh robots.txt.</p>
+  <h2>4. Provenans dan penghapusan</h2>
+  <p>Setiap baris pada setiap tabel membawa <code>source_url</code>, <code>archive_url</code>, <code>retrieved_at</code>, <code>first_seen</code>, <code>last_checked</code>. Provenans tidak bisa dipasang belakangan. Artikel yang hilang dari situs dicatat sebagai peristiwa (<code>peristiwa_penghapusan</code>), bukan nilai kosong: penghapusan adalah temuan. Reset situs utuh (mis. Gosulsel, pos aktif mulai 2025-01 padahal arsip 2016–2017 >10 000 halaman) dicatat dengan jenis <code>situs</code>.</p>
+  <h2>5. Model data</h2>
+  <table class="data"><thead><tr><th>Tabel</th><th>Asal</th><th>Isi</th></tr></thead><tbody>
+  <tr><td class="mono">outlet, kontrak_media, pejabat, perusahaan, relasi, tender, peristiwa, info_a1</td><td>isian tangan (xlsx)</td><td>nama sheet dan judul kolom adalah skema, verbatim</td></tr>
+  <tr><td class="mono">artikel</td><td>pipeline</td><td>outlet_id, url, judul, tanggal_terbit, teks, hash_shingle, kecamatan</td></tr>
+  <tr><td class="mono">metrik_mingguan</td><td>pipeline</td><td>outlet_id, minggu, jumlah_artikel, indeks_personalisasi, bagian_duplikasi, hari_ke_penetapan (bertanda)</td></tr>
+  <tr><td class="mono">liputan_peristiwa</td><td>pipeline</td><td>peristiwa_id, outlet_id, covered, lag_jam, jumlah_artikel</td></tr>
+  <tr><td class="mono">outlet_domain_history, peristiwa_penghapusan</td><td>pipeline</td><td>riwayat domain; artikel/situs yang hilang</td></tr></tbody></table>
+  <p>Kunci gabung: <code>outlet_id</code> = domain telanjang; <code>region_id</code> lintas tiga lapisan (Makassar ID-7371, Kupang ID-5371); tanggal ISO <code>YYYY-MM-DD</code>. Baris isian tanpa tautan sumber ditolak, bukan diperbaiki (<code>pipeline/validate_intake.py</code>).</p>
+  <h2>6. Etika dan batas</h2>
+  <ul><li>Terbit atas nama EPPOS GROUP DPP UGM. Temuan = skor anomali dan penanda untuk ditelusuri, bukan tuduhan.</li>
+  <li>Identitas penerima bansos dihapus saat ingesti (UU 27/2022 PDP). Info A1 menyimpan peran narasumber, tidak pernah nama, dan tidak pernah masuk indeks.</li>
+  <li>Skandal pribadi di luar cakupan: tidak ada pancang independen, dan paparan hukumnya jatuh pada kami.</li>
+  <li>Dalam data fixture, outlet nyata hanya membawa fakta publik; semua angka rekaan menempel pada domain <code>.example</code>.</li></ul>
+  <h2>7. Log perubahan</h2>
+  <table class="data"><thead><tr><th>Versi</th><th>Tanggal</th><th>Perubahan</th></tr></thead><tbody>
+  <tr><td class="mono">0.1</td><td class="mono">2026-09-09</td><td>Versi awal: desain empat rezim, empat konstruk, kerangka sampel, aturan provenans; uji recall arsip pass 1; situs dibangun atas data fixture.</td></tr></tbody></table>
+</main>
+<footer><div class="wrap"><div><b>EPPOS GROUP DPP UGM</b><p>Departemen Politik dan Pemerintahan, Universitas Gadjah Mada.</p></div><div><b>Data</b><p><a href="data/manifest.json">manifest.json</a></p></div><div><b>Koreksi</b><p><a href="koreksi.html">Ajukan koreksi</a></p></div></div></footer>
+</body></html>

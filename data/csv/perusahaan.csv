@@ -1,0 +1,4 @@
+perusahaan_id,nama_perusahaan,bentuk,kota_terdaftar,direksi_komisaris,sumber_url,catatan,diisi_oleh,tanggal_isi,source_url,archive_url,retrieved_at,first_seen,last_checked,fiktif
+MKS-PRS-F01,PT Contoh Karya Losari,PT,Makassar,Kerabat Fiktif A; Kerabat Fiktif B,https://ahu.example/MKS-PRS-F01,FIKTIF,fixture,2026-09-09,https://ahu.example/MKS-PRS-F01,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+MKS-PRS-F02,PT Contoh Media Pantai,PT,Makassar,Kerabat Fiktif C,https://ahu.example/MKS-PRS-F02,FIKTIF,fixture,2026-09-09,https://ahu.example/MKS-PRS-F02,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True
+KPG-PRS-F01,PT Contoh Timor Jaya,PT,Kupang,Kerabat Fiktif D,https://ahu.example/KPG-PRS-F01,FIKTIF,fixture,2026-09-09,https://ahu.example/KPG-PRS-F01,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,True

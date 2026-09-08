@@ -1,0 +1,54 @@
+[
+{
+"outlet_id": "rakyatsulsel.co",
+"domain": "rakyatsulsel.com",
+"berlaku_dari": null,
+"berlaku_sampai": null,
+"catatan": "Wayback 2014–2017 hanya di domain lama",
+"fiktif": false,
+"source_url": "archive-recall/results-2026-09-09.json",
+"archive_url": "",
+"retrieved_at": "2026-09-09",
+"first_seen": "2026-09-09T00:00:00+07:00",
+"last_checked": "2026-09-09T00:00:00+07:00"
+},
+{
+"outlet_id": "makassar.antaranews.com",
+"domain": "antarasulsel.com",
+"berlaku_dari": null,
+"berlaku_sampai": null,
+"catatan": "kedua domain terarsip 2014–2017",
+"fiktif": false,
+"source_url": "archive-recall/results-2026-09-09.json",
+"archive_url": "",
+"retrieved_at": "2026-09-09",
+"first_seen": "2026-09-09T00:00:00+07:00",
+"last_checked": "2026-09-09T00:00:00+07:00"
+},
+{
+"outlet_id": "makassar.terkini.id",
+"domain": "terkini.id",
+"berlaku_dari": null,
+"berlaku_sampai": null,
+"catatan": "domain induk terarsip sejak 2015",
+"fiktif": false,
+"source_url": "archive-recall/results-2026-09-09.json",
+"archive_url": "",
+"retrieved_at": "2026-09-09",
+"first_seen": "2026-09-09T00:00:00+07:00",
+"last_checked": "2026-09-09T00:00:00+07:00"
+},
+{
+"outlet_id": "makassar.tribunnews.com",
+"domain": "tribun-timur.com",
+"berlaku_dari": null,
+"berlaku_sampai": null,
+"catatan": "domain lama; tidak ada arsip 2014–2017",
+"fiktif": false,
+"source_url": "archive-recall/results-2026-09-09.json",
+"archive_url": "",
+"retrieved_at": "2026-09-09",
+"first_seen": "2026-09-09T00:00:00+07:00",
+"last_checked": "2026-09-09T00:00:00+07:00"
+}
+]

@@ -1,0 +1,5 @@
+outlet_id,domain,berlaku_dari,berlaku_sampai,source_url,archive_url,retrieved_at,first_seen,last_checked,catatan,fiktif
+rakyatsulsel.co,rakyatsulsel.com,,,archive-recall/results-2026-09-09.json,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,Wayback 2014–2017 hanya di domain lama,False
+makassar.antaranews.com,antarasulsel.com,,,archive-recall/results-2026-09-09.json,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,kedua domain terarsip 2014–2017,False
+makassar.terkini.id,terkini.id,,,archive-recall/results-2026-09-09.json,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,domain induk terarsip sejak 2015,False
+makassar.tribunnews.com,tribun-timur.com,,,archive-recall/results-2026-09-09.json,,2026-09-09,2026-09-09T00:00:00+07:00,2026-09-09T00:00:00+07:00,domain lama; tidak ada arsip 2014–2017,False

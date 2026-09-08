@@ -1,0 +1,53 @@
+[
+{
+"perusahaan_id": "MKS-PRS-F01",
+"nama_perusahaan": "PT Contoh Karya Losari",
+"bentuk": "PT",
+"kota_terdaftar": "Makassar",
+"direksi_komisaris": "Kerabat Fiktif A; Kerabat Fiktif B",
+"sumber_url": "https://ahu.example/MKS-PRS-F01",
+"catatan": "FIKTIF",
+"diisi_oleh": "fixture",
+"tanggal_isi": "2026-09-09",
+"fiktif": true,
+"source_url": "https://ahu.example/MKS-PRS-F01",
+"archive_url": "",
+"retrieved_at": "2026-09-09",
+"first_seen": "2026-09-09T00:00:00+07:00",
+"last_checked": "2026-09-09T00:00:00+07:00"
+},
+{
+"perusahaan_id": "MKS-PRS-F02",
+"nama_perusahaan": "PT Contoh Media Pantai",
+"bentuk": "PT",
+"kota_terdaftar": "Makassar",
+"direksi_komisaris": "Kerabat Fiktif C",
+"sumber_url": "https://ahu.example/MKS-PRS-F02",
+"catatan": "FIKTIF",
+"diisi_oleh": "fixture",
+"tanggal_isi": "2026-09-09",
+"fiktif": true,
+"source_url": "https://ahu.example/MKS-PRS-F02",
+"archive_url": "",
+"retrieved_at": "2026-09-09",
+"first_seen": "2026-09-09T00:00:00+07:00",
+"last_checked": "2026-09-09T00:00:00+07:00"
+},
+{
+"perusahaan_id": "KPG-PRS-F01",
+"nama_perusahaan": "PT Contoh Timor Jaya",
+"bentuk": "PT",
+"kota_terdaftar": "Kupang",
+"direksi_komisaris": "Kerabat Fiktif D",
+"sumber_url": "https://ahu.example/KPG-PRS-F01",
+"catatan": "FIKTIF",
+"diisi_oleh": "fixture",
+"tanggal_isi": "2026-09-09",
+"fiktif": true,
+"source_url": "https://ahu.example/KPG-PRS-F01",
+"archive_url": "",
+"retrieved_at": "2026-09-09",
+"first_seen": "2026-09-09T00:00:00+07:00",
+"last_checked": "2026-09-09T00:00:00+07:00"
+}
+]

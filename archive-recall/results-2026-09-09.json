@@ -1,0 +1,528 @@
+{
+ "Tribun Timur": {
+  "makassar.tribunnews.com": {
+   "wp": {
+    "wp_json": false,
+    "note": "HTTP 403"
+   },
+   "cdx": {
+    "2014": {
+     "urls": 20000,
+     "year_in_path": 18116,
+     "capped": true
+    },
+    "2015": {
+     "urls": 20000,
+     "year_in_path": 16894,
+     "capped": true
+    },
+    "2016": {
+     "urls": 20000,
+     "year_in_path": 16651,
+     "capped": true
+    },
+    "2017": {
+     "urls": 20000,
+     "year_in_path": 9728,
+     "capped": true
+    }
+   }
+  },
+  "tribun-timur.com": {
+   "wp": {
+    "wp_json": false,
+    "note": "HTTP 403"
+   },
+   "cdx": {
+    "2014": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2015": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2016": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2017": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    }
+   }
+  }
+ },
+ "Harian Fajar": {
+  "fajar.co.id": {
+   "wp": {
+    "wp_json": true,
+    "earliest_post": "2017-03-22T09:07:28",
+    "total_posts": null,
+    "per_year": {
+     "2014": null,
+     "2015": null,
+     "2016": null,
+     "2017": null,
+     "2018": null,
+     "2019": null
+    }
+   },
+   "cdx": {
+    "2014": {
+     "urls": 12321,
+     "year_in_path": 1708,
+     "capped": false
+    },
+    "2015": {
+     "urls": 8718,
+     "year_in_path": 7853,
+     "capped": false
+    },
+    "2016": {
+     "urls": 20000,
+     "year_in_path": 16503,
+     "capped": true
+    },
+    "2017": {
+     "urls": 20000,
+     "year_in_path": 12376,
+     "capped": true
+    }
+   }
+  }
+ },
+ "Rakyat Sulsel": {
+  "rakyatsulsel.co": {
+   "wp": {
+    "wp_json": false,
+    "note": "Expecting value: line 1 column 1 (char 0)"
+   },
+   "cdx": {
+    "2014": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2015": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2016": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2017": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    }
+   }
+  },
+  "rakyatsulsel.com": {
+   "wp": {
+    "wp_json": false,
+    "note": "Expecting value: line 1 column 1 (char 0)"
+   },
+   "cdx": {
+    "2014": {
+     "urls": 6345,
+     "year_in_path": 26,
+     "capped": false
+    },
+    "2015": {
+     "urls": 7017,
+     "year_in_path": 22,
+     "capped": false
+    },
+    "2016": {
+     "urls": 8029,
+     "year_in_path": 29,
+     "capped": false
+    },
+    "2017": {
+     "urls": 13027,
+     "year_in_path": 57,
+     "capped": false
+    }
+   }
+  }
+ },
+ "Antara Sulsel": {
+  "makassar.antaranews.com": {
+   "wp": {
+    "wp_json": false,
+    "note": "HTTP 404"
+   },
+   "cdx": {
+    "2014": {
+     "urls": 2313,
+     "year_in_path": 13,
+     "capped": false
+    },
+    "2015": {
+     "urls": 1398,
+     "year_in_path": 8,
+     "capped": false
+    },
+    "2016": {
+     "urls": 2229,
+     "year_in_path": 7,
+     "capped": false
+    },
+    "2017": {
+     "urls": 4151,
+     "year_in_path": 12,
+     "capped": false
+    }
+   }
+  },
+  "antarasulsel.com": {
+   "wp": {
+    "wp_json": false,
+    "note": "HTTP 404"
+   },
+   "cdx": {
+    "2014": {
+     "urls": 1116,
+     "year_in_path": 8,
+     "capped": false
+    },
+    "2015": {
+     "urls": 1708,
+     "year_in_path": 18,
+     "capped": false
+    },
+    "2016": {
+     "urls": 2549,
+     "year_in_path": 3,
+     "capped": false
+    },
+    "2017": {
+     "urls": 8829,
+     "year_in_path": 25,
+     "capped": false
+    }
+   }
+  }
+ },
+ "Kabar Makassar": {
+  "kabarmakassar.com": {
+   "wp": {
+    "wp_json": true,
+    "earliest_post": "-0001-11-30T00:00:00",
+    "total_posts": "67499",
+    "per_year": {
+     "2014": "1",
+     "2015": "1",
+     "2016": "0",
+     "2017": "108",
+     "2018": "4799",
+     "2019": "5859"
+    }
+   },
+   "cdx": {
+    "2014": {
+     "urls": 2365,
+     "year_in_path": 26,
+     "capped": false
+    },
+    "2015": {
+     "urls": 1748,
+     "year_in_path": 13,
+     "capped": false
+    },
+    "2016": {
+     "urls": 4527,
+     "year_in_path": 38,
+     "capped": false
+    },
+    "2017": {
+     "urls": 2192,
+     "year_in_path": 35,
+     "capped": false
+    }
+   }
+  }
+ },
+ "Ujung Pandang Ekspres": {
+  "upeks.co.id": {
+   "wp": {
+    "wp_json": true,
+    "earliest_post": "2019-01-01T00:00:25",
+    "total_posts": null,
+    "per_year": {
+     "2014": null,
+     "2015": null,
+     "2016": null,
+     "2017": null,
+     "2018": null,
+     "2019": null
+    }
+   },
+   "cdx": {
+    "2014": {
+     "urls": 2528,
+     "year_in_path": 21,
+     "capped": false
+    },
+    "2015": {
+     "urls": 1707,
+     "year_in_path": 136,
+     "capped": false
+    },
+    "2016": {
+     "urls": 304,
+     "year_in_path": 35,
+     "capped": false
+    },
+    "2017": {
+     "urls": 107,
+     "year_in_path": 76,
+     "capped": false
+    }
+   }
+  }
+ },
+ "Berita Kota Makassar": {
+  "beritakotamakassar.com": {
+   "wp": {
+    "wp_json": false,
+    "note": "HTTP 403"
+   },
+   "cdx": {
+    "2014": {
+     "urls": 13994,
+     "year_in_path": 115,
+     "capped": false
+    },
+    "2015": {
+     "urls": 2436,
+     "year_in_path": 423,
+     "capped": false
+    },
+    "2016": {
+     "urls": 799,
+     "year_in_path": 537,
+     "capped": false
+    },
+    "2017": {
+     "urls": 6,
+     "year_in_path": 0,
+     "capped": false
+    }
+   }
+  }
+ },
+ "Sulsel Satu": {
+  "sulselsatu.com": {
+   "wp": {
+    "wp_json": true,
+    "earliest_post": "2015-08-10T09:10:24",
+    "total_posts": null,
+    "per_year": {
+     "2014": null,
+     "2015": null,
+     "2016": null,
+     "2017": null,
+     "2018": null,
+     "2019": null
+    }
+   },
+   "cdx": {
+    "2014": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2015": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2016": {
+     "urls": 37,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2017": {
+     "urls": 1550,
+     "year_in_path": 1143,
+     "capped": false
+    }
+   }
+  }
+ },
+ "Terkini.id": {
+  "makassar.terkini.id": {
+   "wp": {
+    "wp_json": true,
+    "earliest_post": "2019-01-01T02:23:43",
+    "total_posts": null,
+    "per_year": {
+     "2014": null,
+     "2015": null,
+     "2016": null,
+     "2017": null,
+     "2018": null,
+     "2019": null
+    }
+   },
+   "cdx": {
+    "2014": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2015": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2016": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2017": {
+     "urls": 192,
+     "year_in_path": 0,
+     "capped": false
+    }
+   }
+  },
+  "terkini.id": {
+   "wp": {
+    "wp_json": false,
+    "note": "Expecting value: line 1 column 1 (char 0)"
+   },
+   "cdx": {
+    "2014": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2015": {
+     "urls": 64,
+     "year_in_path": 1,
+     "capped": false
+    },
+    "2016": {
+     "urls": 87,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2017": {
+     "urls": 330,
+     "year_in_path": 0,
+     "capped": false
+    }
+   }
+  }
+ },
+ "Gosulsel": {
+  "gosulsel.com": {
+   "wp": {
+    "wp_json": true,
+    "earliest_post": "2025-01-06T21:25:00",
+    "total_posts": "3911",
+    "per_year": {
+     "2014": "0",
+     "2015": "0",
+     "2016": "0",
+     "2017": "0",
+     "2018": "0",
+     "2019": "0"
+    }
+   },
+   "cdx": {
+    "2014": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2015": {
+     "urls": 3730,
+     "year_in_path": 308,
+     "capped": false
+    },
+    "2016": {
+     "urls": 14843,
+     "year_in_path": 196,
+     "capped": false
+    },
+    "2017": {
+     "urls": 11860,
+     "year_in_path": 4172,
+     "capped": false
+    }
+   }
+  }
+ },
+ "Inikata": {
+  "inikata.com": {
+   "wp": {
+    "wp_json": false,
+    "note": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occur"
+   },
+   "cdx": {
+    "2014": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2015": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2016": {
+     "urls": 5130,
+     "year_in_path": 4318,
+     "capped": false
+    },
+    "2017": {
+     "urls": 10091,
+     "year_in_path": 7225,
+     "capped": false
+    }
+   }
+  }
+ },
+ "Sindo Makassar": {
+  "makassar.sindonews.com": {
+   "wp": {
+    "wp_json": false,
+    "note": "Expecting value: line 1 column 1 (char 0)"
+   },
+   "cdx": {
+    "2014": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2015": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2016": {
+     "urls": 0,
+     "year_in_path": 0,
+     "capped": false
+    },
+    "2017": {
+     "urls": 3,
+     "year_in_path": 0,
+     "capped": false
+    }
+   }
+  }
+ }
+}
