@@ -1,13 +1,13 @@
 /* App shell: load versioned data, map, city panel with four tabs. No backend. */
 (async function () {
   const E = window.EPPOS, $ = s => document.querySelector(s);
-  const load = n => fetch(`data/${n}.json`).then(r => r.json());
+  const load = n => window.EPPOS_DATA ? Promise.resolve(window.EPPOS_DATA[n]) : fetch(`data/${n}.json`).then(r => r.json());
   const [manifest, regime, topo, outlet, metrik, peristiwa, liputan, kontrak, pejabat, perusahaan, relasi, tender, a1, domhist, hapus] = await Promise.all([
-    load('manifest'), load('regime'), fetch('assets/indonesia.topo.json').then(r => r.json()), load('outlet'), load('metrik_mingguan'), load('peristiwa'),
+    load('manifest'), load('regime'), (window.EPPOS_DATA ? Promise.resolve(window.EPPOS_DATA.topo) : fetch('assets/indonesia.topo.json').then(r => r.json())), load('outlet'), load('metrik_mingguan'), load('peristiwa'),
     load('liputan_peristiwa'), load('kontrak_media'), load('pejabat'), load('perusahaan'), load('relasi'), load('tender'), load('info_a1'),
     load('outlet_domain_history'), load('peristiwa_penghapusan')]);
 
-  $('#data-ver').textContent = manifest.version; $('#foot-ver').textContent = manifest.version; $('#nav-ver').textContent = 'v0.1';
+  ['#data-ver', '#foot-ver'].forEach(sel => { const e = $(sel); if (e) e.textContent = manifest.version; }); const nv = $('#nav-ver'); if (nv) nv.textContent = 'v0.1';
   if (manifest.fixture) $('#fixture-banner').hidden = false;
   const rp = n => Number(n).toLocaleString('id-ID');
   const link = (u, t = 'sumber') => u ? `<a href="${u}" target="_blank" rel="noopener">${t}</a>` : '<span class="muted">—</span>';
