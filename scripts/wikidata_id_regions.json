@@ -1,0 +1,4394 @@
+[
+{
+"qid": "Q14195",
+"label": "Murung Raya",
+"type": "kabupaten",
+"lat": -1.40833333,
+"lon": 115.13333333,
+"bps": "62.12"
+},
+{
+"qid": "Q14209",
+"label": "Barito Utara",
+"type": "kabupaten",
+"lat": -0.98333,
+"lon": 115.1,
+"bps": "62.05"
+},
+{
+"qid": "Q14385",
+"label": "Pulang Pisau",
+"type": "kabupaten",
+"lat": -3.11858,
+"lon": 113.8623,
+"bps": "62.11"
+},
+{
+"qid": "Q14386",
+"label": "Sukamara",
+"type": "kabupaten",
+"lat": -2.62675,
+"lon": 111.23681,
+"bps": "62.08"
+},
+{
+"qid": "Q14389",
+"label": "Seruyan",
+"type": "kabupaten",
+"lat": -2.33333,
+"lon": 112.25,
+"bps": "62.07"
+},
+{
+"qid": "Q14391",
+"label": "Barito Selatan",
+"type": "kabupaten",
+"lat": -1.86667,
+"lon": 114.73333,
+"bps": "62.04"
+},
+{
+"qid": "Q14393",
+"label": "Kotawaringin Barat",
+"type": "kabupaten",
+"lat": -2.4,
+"lon": 111.73333,
+"bps": "62.01"
+},
+{
+"qid": "Q14395",
+"label": "Berau",
+"type": "kabupaten",
+"lat": 2.0,
+"lon": 117.3,
+"bps": "64.03"
+},
+{
+"qid": "Q14404",
+"label": "Bulungan",
+"type": "kabupaten",
+"lat": 3.0,
+"lon": 117.16667,
+"bps": "65.01"
+},
+{
+"qid": "Q14468",
+"label": "Kutai Timur",
+"type": "kabupaten",
+"lat": 1.03769,
+"lon": 117.83112,
+"bps": "64.08"
+},
+{
+"qid": "Q14473",
+"label": "Kutai Kartanegara",
+"type": "kabupaten",
+"lat": -0.44019,
+"lon": 116.98139,
+"bps": "64.02"
+},
+{
+"qid": "Q14476",
+"label": "Malinau",
+"type": "kabupaten",
+"lat": 2.45,
+"lon": 115.683333333,
+"bps": "65.02"
+},
+{
+"qid": "Q14479",
+"label": "Penajam Paser Utara",
+"type": "kabupaten",
+"lat": -1.291709,
+"lon": 116.513796,
+"bps": "64.09"
+},
+{
+"qid": "Q14481",
+"label": "Nunukan",
+"type": "kabupaten",
+"lat": 4.133333333,
+"lon": 116.7,
+"bps": "65.03"
+},
+{
+"qid": "Q14485",
+"label": "Paser",
+"type": "kabupaten",
+"lat": -1.43517,
+"lon": 116.23535,
+"bps": "64.01"
+},
+{
+"qid": "Q14487",
+"label": "Tana Tidung",
+"type": "kabupaten",
+"lat": 3.55,
+"lon": 117.25,
+"bps": "65.04"
+},
+{
+"qid": "Q14489",
+"label": "Kutai Barat",
+"type": "kabupaten",
+"lat": -0.511666666,
+"lon": 115.777222222,
+"bps": "64.07"
+},
+{
+"qid": "Q14508",
+"label": "Boalemo",
+"type": "kabupaten",
+"lat": 0.65,
+"lon": 122.31666667,
+"bps": "75.02"
+},
+{
+"qid": "Q14519",
+"label": "Bone Bolango",
+"type": "kabupaten",
+"lat": 0.55,
+"lon": 123.2,
+"bps": "75.03"
+},
+{
+"qid": "Q14521",
+"label": "Gorontalo",
+"type": "kabupaten",
+"lat": 0.5728,
+"lon": 122.2337,
+"bps": "75.01"
+},
+{
+"qid": "Q14522",
+"label": "Gorontalo Utara",
+"type": "kabupaten",
+"lat": 0.7909577,
+"lon": 122.8686597,
+"bps": "75.05"
+},
+{
+"qid": "Q14523",
+"label": "Pohuwato",
+"type": "kabupaten",
+"lat": 0.7098,
+"lon": 121.59582,
+"bps": "75.04"
+},
+{
+"qid": "Q14590",
+"label": "Bantaeng",
+"type": "kabupaten",
+"lat": -5.53333,
+"lon": 119.933,
+"bps": "73.03"
+},
+{
+"qid": "Q14593",
+"label": "Barru",
+"type": "kabupaten",
+"lat": -3.24333,
+"lon": 119.681,
+"bps": "73.11"
+},
+{
+"qid": "Q14595",
+"label": "Bone",
+"type": "kabupaten",
+"lat": -4.53861111,
+"lon": 120.32972222,
+"bps": "73.08"
+},
+{
+"qid": "Q14596",
+"label": "Bulukumba",
+"type": "kabupaten",
+"lat": -5.416666666,
+"lon": 120.233333333,
+"bps": "73.02"
+},
+{
+"qid": "Q14597",
+"label": "Luwu Timur",
+"type": "kabupaten",
+"lat": -2.531944444,
+"lon": 121.123055555,
+"bps": "73.24"
+},
+{
+"qid": "Q14599",
+"label": "Enrekang",
+"type": "kabupaten",
+"lat": -3.5,
+"lon": 119.866666666,
+"bps": "73.16"
+},
+{
+"qid": "Q14601",
+"label": "Gowa",
+"type": "kabupaten",
+"lat": -5.33333333,
+"lon": 119.66666667,
+"bps": "73.06"
+},
+{
+"qid": "Q14602",
+"label": "Jeneponto",
+"type": "kabupaten",
+"lat": -5.63333,
+"lon": 119.73333,
+"bps": "73.04"
+},
+{
+"qid": "Q14604",
+"label": "Luwu",
+"type": "kabupaten",
+"lat": -3.348333333,
+"lon": 120.221111111,
+"bps": "73.17"
+},
+{
+"qid": "Q14606",
+"label": "Luwu Utara",
+"type": "kabupaten",
+"lat": -2.6,
+"lon": 120.25,
+"bps": "73.22"
+},
+{
+"qid": "Q14609",
+"label": "Toraja Utara",
+"type": "kabupaten",
+"lat": -2.927222222,
+"lon": 119.791944444,
+"bps": "73.26"
+},
+{
+"qid": "Q14611",
+"label": "Maros",
+"type": "kabupaten",
+"lat": -5.016494444,
+"lon": 119.574466666,
+"bps": "73.09"
+},
+{
+"qid": "Q14613",
+"label": "Pangkajene dan Kepulauan",
+"type": "kabupaten",
+"lat": -4.75,
+"lon": 119.5,
+"bps": "73.10"
+},
+{
+"qid": "Q14615",
+"label": "Pinrang",
+"type": "kabupaten",
+"lat": -3.78333,
+"lon": 119.633,
+"bps": "73.15"
+},
+{
+"qid": "Q14619",
+"label": "Kepulauan Selayar",
+"type": "kabupaten",
+"lat": -6.81667,
+"lon": 120.8,
+"bps": "73.01"
+},
+{
+"qid": "Q14622",
+"label": "Sinjai",
+"type": "kabupaten",
+"lat": -5.1993,
+"lon": 120.1544,
+"bps": "73.07"
+},
+{
+"qid": "Q14629",
+"label": "Soppeng",
+"type": "kabupaten",
+"lat": -4.34861111,
+"lon": 119.8825,
+"bps": "73.12"
+},
+{
+"qid": "Q14630",
+"label": "Takalar",
+"type": "kabupaten",
+"lat": -5.41666667,
+"lon": 119.58333333,
+"bps": "73.05"
+},
+{
+"qid": "Q14632",
+"label": "Tana Toraja",
+"type": "kabupaten",
+"lat": -3.16666667,
+"lon": 119.75,
+"bps": "73.18"
+},
+{
+"qid": "Q14633",
+"label": "Wajo",
+"type": "kabupaten",
+"lat": -4.12638889,
+"lon": 120.0319444,
+"bps": "73.13"
+},
+{
+"qid": "Q15344",
+"label": "Majene",
+"type": "kabupaten",
+"lat": -3.547545,
+"lon": 118.957853,
+"bps": "76.05"
+},
+{
+"qid": "Q15347",
+"label": "Mamasa",
+"type": "kabupaten",
+"lat": -3.11306,
+"lon": 119.383,
+"bps": "76.03"
+},
+{
+"qid": "Q15349",
+"label": "Mamuju",
+"type": "kabupaten",
+"lat": -2.68333333,
+"lon": 118.9,
+"bps": "76.02"
+},
+{
+"qid": "Q15350",
+"label": "Pasangkayu",
+"type": "kabupaten",
+"lat": -1.3180615,
+"lon": 119.37507,
+"bps": "76.01"
+},
+{
+"qid": "Q15353",
+"label": "Polewali Mandar",
+"type": "kabupaten",
+"lat": -3.41333,
+"lon": 119.325,
+"bps": "76.04"
+},
+{
+"qid": "Q15356",
+"label": "Bombana",
+"type": "kabupaten",
+"lat": -4.625555555,
+"lon": 121.816388888,
+"bps": "74.06"
+},
+{
+"qid": "Q15357",
+"label": "Buton",
+"type": "kabupaten",
+"lat": -5.31667,
+"lon": 122.58333,
+"bps": "74.04"
+},
+{
+"qid": "Q15358",
+"label": "Kolaka",
+"type": "kabupaten",
+"lat": -4.04917,
+"lon": 121.616,
+"bps": "74.01"
+},
+{
+"qid": "Q15359",
+"label": "Konawe",
+"type": "kabupaten",
+"lat": -3.91717,
+"lon": 122.08823,
+"bps": "74.02"
+},
+{
+"qid": "Q15363",
+"label": "Muna",
+"type": "kabupaten",
+"lat": -4.8425,
+"lon": 122.648,
+"bps": "74.03"
+},
+{
+"qid": "Q15366",
+"label": "Buton Utara",
+"type": "kabupaten",
+"lat": -5.01457,
+"lon": 122.93015,
+"bps": "74.10"
+},
+{
+"qid": "Q15369",
+"label": "Kolaka Utara",
+"type": "kabupaten",
+"lat": -3.33722,
+"lon": 121.044,
+"bps": "74.08"
+},
+{
+"qid": "Q15370",
+"label": "Konawe Utara",
+"type": "kabupaten",
+"lat": -3.4114145,
+"lon": 122.0199645,
+"bps": "74.09"
+},
+{
+"qid": "Q15372",
+"label": "Konawe Selatan",
+"type": "kabupaten",
+"lat": -3.4114145,
+"lon": 122.0199645,
+"bps": "74.05"
+},
+{
+"qid": "Q15375",
+"label": "Wakatobi",
+"type": "kabupaten",
+"lat": -5.31934,
+"lon": 123.5948,
+"bps": "74.07"
+},
+{
+"qid": "Q15810",
+"label": "Banggai",
+"type": "kabupaten",
+"lat": -0.957091,
+"lon": 122.558593,
+"bps": "72.01"
+},
+{
+"qid": "Q15812",
+"label": "Banggai Kepulauan",
+"type": "kabupaten",
+"lat": -1.408619,
+"lon": 123.206363,
+"bps": "72.07"
+},
+{
+"qid": "Q15813",
+"label": "Buol",
+"type": "kabupaten",
+"lat": 1.010469,
+"lon": 121.35425,
+"bps": "72.05"
+},
+{
+"qid": "Q15814",
+"label": "Donggala",
+"type": "kabupaten",
+"lat": -0.694444444,
+"lon": 119.730555555,
+"bps": "72.03"
+},
+{
+"qid": "Q15815",
+"label": "Morowali",
+"type": "kabupaten",
+"lat": -2.818536,
+"lon": 121.860786,
+"bps": "72.06"
+},
+{
+"qid": "Q15816",
+"label": "Parigi Moutong",
+"type": "kabupaten",
+"lat": 0.3368,
+"lon": 120.17841,
+"bps": "72.08"
+},
+{
+"qid": "Q15817",
+"label": "Poso",
+"type": "kabupaten",
+"lat": -1.4,
+"lon": 120.75,
+"bps": "72.02"
+},
+{
+"qid": "Q15822",
+"label": "Sigi",
+"type": "kabupaten",
+"lat": -1.385,
+"lon": 119.967,
+"bps": "72.10"
+},
+{
+"qid": "Q15823",
+"label": "Tojo Una-Una",
+"type": "kabupaten",
+"lat": -0.875556,
+"lon": 121.63,
+"bps": "72.09"
+},
+{
+"qid": "Q15824",
+"label": "Toli-Toli",
+"type": "kabupaten",
+"lat": 1.03861,
+"lon": 120.818,
+"bps": "72.04"
+},
+{
+"qid": "Q15833",
+"label": "Bolaang Mongondow",
+"type": "kabupaten",
+"lat": 0.75,
+"lon": 124.08333,
+"bps": "71.01"
+},
+{
+"qid": "Q15834",
+"label": "Bolaang Mongondow Timur",
+"type": "kabupaten",
+"lat": 0.77,
+"lon": 124.61388889,
+"bps": "71.10"
+},
+{
+"qid": "Q15836",
+"label": "Minahasa",
+"type": "kabupaten",
+"lat": 1.2537,
+"lon": 124.83,
+"bps": "71.02"
+},
+{
+"qid": "Q15837",
+"label": "Bolaang Mongondow Utara",
+"type": "kabupaten",
+"lat": 0.78527,
+"lon": 123.41766,
+"bps": "71.08"
+},
+{
+"qid": "Q15838",
+"label": "Minahasa Utara",
+"type": "kabupaten",
+"lat": 1.4025,
+"lon": 124.96,
+"bps": "71.06"
+},
+{
+"qid": "Q15839",
+"label": "Kepulauan Sangihe",
+"type": "kabupaten",
+"lat": 3.0,
+"lon": 125.5,
+"bps": "71.03"
+},
+{
+"qid": "Q15840",
+"label": "Kepulauan Siau Tagulandang Biaro",
+"type": "kabupaten",
+"lat": 2.35,
+"lon": 125.416666666,
+"bps": "71.09"
+},
+{
+"qid": "Q15841",
+"label": "Bolaang Mongondow Selatan",
+"type": "kabupaten",
+"lat": 0.35277778,
+"lon": 123.79916667,
+"bps": "71.11"
+},
+{
+"qid": "Q15842",
+"label": "Minahasa Selatan",
+"type": "kabupaten",
+"lat": 0.58333333,
+"lon": 124.3,
+"bps": "71.05"
+},
+{
+"qid": "Q15843",
+"label": "Minahasa Tenggara",
+"type": "kabupaten",
+"lat": 1.05633,
+"lon": 124.7925,
+"bps": "71.07"
+},
+{
+"qid": "Q16561",
+"label": "Kepulauan Aru",
+"type": "kabupaten",
+"lat": -6.2,
+"lon": 134.5,
+"bps": "81.07"
+},
+{
+"qid": "Q16564",
+"label": "Buru",
+"type": "kabupaten",
+"lat": -3.25983,
+"lon": 127.10289,
+"bps": "81.04"
+},
+{
+"qid": "Q16569",
+"label": "Seram Bagian Timur",
+"type": "kabupaten",
+"lat": -3.103132956,
+"lon": 130.490832165,
+"bps": "81.05"
+},
+{
+"qid": "Q16583",
+"label": "Buru Selatan",
+"type": "kabupaten",
+"lat": -3.8380966,
+"lon": 126.7345922,
+"bps": "81.09"
+},
+{
+"qid": "Q18849",
+"label": "Maluku Tenggara",
+"type": "kabupaten",
+"lat": -5.655972222,
+"lon": 132.7439869,
+"bps": "81.02"
+},
+{
+"qid": "Q18935",
+"label": "Maluku Barat Daya",
+"type": "kabupaten",
+"lat": -8.17024,
+"lon": 127.788938,
+"bps": "81.08"
+},
+{
+"qid": "Q18942",
+"label": "Seram Bagian Barat",
+"type": "kabupaten",
+"lat": -3.069100739,
+"lon": 128.20290785,
+"bps": "81.06"
+},
+{
+"qid": "Q18961",
+"label": "Kepulauan Tanimbar",
+"type": "kabupaten",
+"lat": -7.9849042,
+"lon": 131.3043958,
+"bps": "81.03"
+},
+{
+"qid": "Q19144",
+"label": "Halmahera Tengah",
+"type": "kabupaten",
+"lat": 0.48056,
+"lon": 128.25,
+"bps": "82.02"
+},
+{
+"qid": "Q19145",
+"label": "Halmahera Timur",
+"type": "kabupaten",
+"lat": 1.33517,
+"lon": 128.48627,
+"bps": "82.06"
+},
+{
+"qid": "Q19147",
+"label": "Halmahera Utara",
+"type": "kabupaten",
+"lat": 1.73194444,
+"lon": 128.00777778,
+"bps": "82.03"
+},
+{
+"qid": "Q19148",
+"label": "Halmahera Selatan",
+"type": "kabupaten",
+"lat": -0.3955,
+"lon": 127.90833,
+"bps": "82.04"
+},
+{
+"qid": "Q19149",
+"label": "Kepulauan Sula",
+"type": "kabupaten",
+"lat": -1.84916667,
+"lon": 125.31444444,
+"bps": "82.05"
+},
+{
+"qid": "Q19150",
+"label": "Halmahera Barat",
+"type": "kabupaten",
+"lat": 1.41709,
+"lon": 127.55264,
+"bps": "82.01"
+},
+{
+"qid": "Q26727",
+"label": "Fakfak",
+"type": "kabupaten",
+"lat": -2.9167,
+"lon": 132.3,
+"bps": "92.03"
+},
+{
+"qid": "Q26739",
+"label": "Kaimana",
+"type": "kabupaten",
+"lat": -3.66093,
+"lon": 133.77451,
+"bps": "92.08"
+},
+{
+"qid": "Q26748",
+"label": "Manokwari",
+"type": "kabupaten",
+"lat": -0.86291,
+"lon": 134.06402,
+"bps": "92.02"
+},
+{
+"qid": "Q26759",
+"label": "Maybrat",
+"type": "kabupaten",
+"lat": -1.2155,
+"lon": 132.35092,
+"bps": "96.05"
+},
+{
+"qid": "Q26785",
+"label": "Raja Ampat",
+"type": "kabupaten",
+"lat": -0.5,
+"lon": 130.0,
+"bps": "96.03"
+},
+{
+"qid": "Q26792",
+"label": "Sorong",
+"type": "kabupaten",
+"lat": -1.1,
+"lon": 131.51667,
+"bps": "96.01"
+},
+{
+"qid": "Q26802",
+"label": "Sorong Selatan",
+"type": "kabupaten",
+"lat": -1.50495,
+"lon": 132.28638,
+"bps": "96.02"
+},
+{
+"qid": "Q26810",
+"label": "Tambrauw",
+"type": "kabupaten",
+"lat": -0.60515,
+"lon": 132.48962,
+"bps": "96.04"
+},
+{
+"qid": "Q26819",
+"label": "Teluk Bintuni",
+"type": "kabupaten",
+"lat": -1.88037,
+"lon": 133.33105,
+"bps": "92.06"
+},
+{
+"qid": "Q10979",
+"label": "Temanggung",
+"type": "kabupaten",
+"lat": -7.3,
+"lon": 110.166666666,
+"bps": "33.23"
+},
+{
+"qid": "Q10981",
+"label": "Wonogiri",
+"type": "kabupaten",
+"lat": -7.91667,
+"lon": 111.0,
+"bps": "33.12"
+},
+{
+"qid": "Q11013",
+"label": "Wonosobo",
+"type": "kabupaten",
+"lat": -7.361388888,
+"lon": 109.926669444,
+"bps": "33.07"
+},
+{
+"qid": "Q11066",
+"label": "Bangkalan",
+"type": "kabupaten",
+"lat": -7.029193591,
+"lon": 112.746131568,
+"bps": "35.26"
+},
+{
+"qid": "Q11067",
+"label": "Banyuwangi",
+"type": "kabupaten",
+"lat": -8.226666666,
+"lon": 114.366388888,
+"bps": "35.10"
+},
+{
+"qid": "Q11069",
+"label": "Blitar",
+"type": "kabupaten",
+"lat": -8.13333,
+"lon": 112.25,
+"bps": "35.05"
+},
+{
+"qid": "Q11071",
+"label": "Bojonegoro",
+"type": "kabupaten",
+"lat": -7.275,
+"lon": 111.795,
+"bps": "35.22"
+},
+{
+"qid": "Q11076",
+"label": "Bondowoso",
+"type": "kabupaten",
+"lat": -7.9404,
+"lon": 113.9834,
+"bps": "35.11"
+},
+{
+"qid": "Q11077",
+"label": "Gresik",
+"type": "kabupaten",
+"lat": -7.1933,
+"lon": 112.553,
+"bps": "35.25"
+},
+{
+"qid": "Q11080",
+"label": "Jember",
+"type": "kabupaten",
+"lat": -8.168888888,
+"lon": 113.702222222,
+"bps": "35.09"
+},
+{
+"qid": "Q11082",
+"label": "Jombang",
+"type": "kabupaten",
+"lat": -7.466666666,
+"lon": 112.233333333,
+"bps": "35.17"
+},
+{
+"qid": "Q11084",
+"label": "Kediri",
+"type": "kabupaten",
+"lat": -7.83333,
+"lon": 112.16667,
+"bps": "35.06"
+},
+{
+"qid": "Q11086",
+"label": "Lamongan",
+"type": "kabupaten",
+"lat": -7.116666666,
+"lon": 112.416666666,
+"bps": "35.24"
+},
+{
+"qid": "Q11087",
+"label": "Lumajang",
+"type": "kabupaten",
+"lat": -8.13333333,
+"lon": 113.21666667,
+"bps": "35.08"
+},
+{
+"qid": "Q11091",
+"label": "Madiun",
+"type": "kabupaten",
+"lat": -7.61667,
+"lon": 111.65,
+"bps": "35.19"
+},
+{
+"qid": "Q11092",
+"label": "Magetan",
+"type": "kabupaten",
+"lat": -7.65,
+"lon": 111.366666666,
+"bps": "35.20"
+},
+{
+"qid": "Q11095",
+"label": "Malang",
+"type": "kabupaten",
+"lat": -7.9797,
+"lon": 112.6304,
+"bps": "35.07"
+},
+{
+"qid": "Q11096",
+"label": "Mojokerto",
+"type": "kabupaten",
+"lat": -7.55,
+"lon": 112.5,
+"bps": "35.16"
+},
+{
+"qid": "Q11098",
+"label": "Nganjuk",
+"type": "kabupaten",
+"lat": -7.6,
+"lon": 111.933333333,
+"bps": "35.18"
+},
+{
+"qid": "Q11108",
+"label": "Ngawi",
+"type": "kabupaten",
+"lat": -7.463611111,
+"lon": 111.298333333,
+"bps": "35.21"
+},
+{
+"qid": "Q11111",
+"label": "Pacitan",
+"type": "kabupaten",
+"lat": -8.13333,
+"lon": 111.16667,
+"bps": "35.01"
+},
+{
+"qid": "Q11112",
+"label": "Pamekasan",
+"type": "kabupaten",
+"lat": -7.066666666,
+"lon": 113.5,
+"bps": "35.28"
+},
+{
+"qid": "Q11115",
+"label": "Pasuruan",
+"type": "kabupaten",
+"lat": -7.73333,
+"lon": 112.83333,
+"bps": "35.14"
+},
+{
+"qid": "Q11118",
+"label": "Ponorogo",
+"type": "kabupaten",
+"lat": -7.868611111,
+"lon": 111.461944444,
+"bps": "35.02"
+},
+{
+"qid": "Q11121",
+"label": "Probolinggo",
+"type": "kabupaten",
+"lat": -7.73527778,
+"lon": 113.47166667,
+"bps": "35.13"
+},
+{
+"qid": "Q11127",
+"label": "Sampang",
+"type": "kabupaten",
+"lat": -7.05,
+"lon": 113.25,
+"bps": "35.27"
+},
+{
+"qid": "Q11129",
+"label": "Sidoarjo",
+"type": "kabupaten",
+"lat": -7.453028,
+"lon": 112.717333,
+"bps": "35.15"
+},
+{
+"qid": "Q11134",
+"label": "Situbondo",
+"type": "kabupaten",
+"lat": -7.71667,
+"lon": 114.05,
+"bps": "35.12"
+},
+{
+"qid": "Q11137",
+"label": "Sumenep",
+"type": "kabupaten",
+"lat": -7.016666666,
+"lon": 113.866666666,
+"bps": "35.29"
+},
+{
+"qid": "Q11139",
+"label": "Trenggalek",
+"type": "kabupaten",
+"lat": -8.05,
+"lon": 111.716666666,
+"bps": "35.03"
+},
+{
+"qid": "Q11141",
+"label": "Tuban",
+"type": "kabupaten",
+"lat": -6.88333,
+"lon": 112.05,
+"bps": "35.23"
+},
+{
+"qid": "Q11143",
+"label": "Tulungagung",
+"type": "kabupaten",
+"lat": -8.066666666,
+"lon": 111.9,
+"bps": "35.04"
+},
+{
+"qid": "Q11477",
+"label": "Bantul",
+"type": "kabupaten",
+"lat": -7.884611,
+"lon": 110.334111,
+"bps": "34.02"
+},
+{
+"qid": "Q11478",
+"label": "Gunungkidul",
+"type": "kabupaten",
+"lat": -7.965,
+"lon": 110.6,
+"bps": "34.03"
+},
+{
+"qid": "Q11479",
+"label": "Kulon Progo",
+"type": "kabupaten",
+"lat": -7.8596,
+"lon": 110.1579,
+"bps": "34.01"
+},
+{
+"qid": "Q11480",
+"label": "Sleman",
+"type": "kabupaten",
+"lat": -7.68167,
+"lon": 110.32333,
+"bps": "34.04"
+},
+{
+"qid": "Q11482",
+"label": "Badung",
+"type": "kabupaten",
+"lat": -8.58333333,
+"lon": 115.18333333,
+"bps": "51.03"
+},
+{
+"qid": "Q11491",
+"label": "Bangli",
+"type": "kabupaten",
+"lat": -8.28325,
+"lon": 115.33278,
+"bps": "51.06"
+},
+{
+"qid": "Q11495",
+"label": "Buleleng",
+"type": "kabupaten",
+"lat": -8.2,
+"lon": 114.95,
+"bps": "51.08"
+},
+{
+"qid": "Q11496",
+"label": "Gianyar",
+"type": "kabupaten",
+"lat": -8.466666666,
+"lon": 115.283333333,
+"bps": "51.04"
+},
+{
+"qid": "Q11499",
+"label": "Jembrana",
+"type": "kabupaten",
+"lat": -8.3,
+"lon": 114.66666667,
+"bps": "51.01"
+},
+{
+"qid": "Q11501",
+"label": "Karangasem",
+"type": "kabupaten",
+"lat": -8.36666667,
+"lon": 115.51666667,
+"bps": "51.07"
+},
+{
+"qid": "Q11503",
+"label": "Klungkung",
+"type": "kabupaten",
+"lat": -8.538922222,
+"lon": 115.404511111,
+"bps": "51.05"
+},
+{
+"qid": "Q11505",
+"label": "Tabanan",
+"type": "kabupaten",
+"lat": -8.551147222,
+"lon": 115.121613888,
+"bps": "51.02"
+},
+{
+"qid": "Q14114",
+"label": "Bima",
+"type": "kabupaten",
+"lat": -8.57444444,
+"lon": 119.0375,
+"bps": "52.06"
+},
+{
+"qid": "Q14115",
+"label": "Lombok Timur",
+"type": "kabupaten",
+"lat": -8.65,
+"lon": 116.53333333,
+"bps": "52.03"
+},
+{
+"qid": "Q14117",
+"label": "Dompu",
+"type": "kabupaten",
+"lat": -8.53333333,
+"lon": 118.46666667,
+"bps": "52.05"
+},
+{
+"qid": "Q14119",
+"label": "Lombok Tengah",
+"type": "kabupaten",
+"lat": -8.7,
+"lon": 116.26666667,
+"bps": "52.02"
+},
+{
+"qid": "Q14121",
+"label": "Lombok Utara",
+"type": "kabupaten",
+"lat": -8.35,
+"lon": 116.15,
+"bps": "52.08"
+},
+{
+"qid": "Q14122",
+"label": "Sumbawa",
+"type": "kabupaten",
+"lat": -8.744805555,
+"lon": 117.671527777,
+"bps": "52.04"
+},
+{
+"qid": "Q14123",
+"label": "Lombok Barat",
+"type": "kabupaten",
+"lat": -8.71666667,
+"lon": 116.1166667,
+"bps": "52.01"
+},
+{
+"qid": "Q14124",
+"label": "Sumbawa Barat",
+"type": "kabupaten",
+"lat": -8.78737,
+"lon": 116.926,
+"bps": "52.07"
+},
+{
+"qid": "Q14131",
+"label": "Alor",
+"type": "kabupaten",
+"lat": -8.25,
+"lon": 124.75,
+"bps": "53.05"
+},
+{
+"qid": "Q14133",
+"label": "Belu",
+"type": "kabupaten",
+"lat": -9.1,
+"lon": 124.9,
+"bps": "53.04"
+},
+{
+"qid": "Q14134",
+"label": "Sumba Tengah",
+"type": "kabupaten",
+"lat": -9.62941,
+"lon": 119.61914,
+"bps": "53.17"
+},
+{
+"qid": "Q14136",
+"label": "Flores Timur",
+"type": "kabupaten",
+"lat": -8.341208303,
+"lon": 122.988115175,
+"bps": "53.06"
+},
+{
+"qid": "Q14137",
+"label": "Manggarai Timur",
+"type": "kabupaten",
+"lat": -8.75,
+"lon": 120.608611111,
+"bps": "53.19"
+},
+{
+"qid": "Q14139",
+"label": "Sumba Timur",
+"type": "kabupaten",
+"lat": -9.88333,
+"lon": 120.25,
+"bps": "53.11"
+},
+{
+"qid": "Q14140",
+"label": "Ende",
+"type": "kabupaten",
+"lat": -8.840555555,
+"lon": 121.663888888,
+"bps": "53.08"
+},
+{
+"qid": "Q14141",
+"label": "Kupang",
+"type": "kabupaten",
+"lat": -10.163611,
+"lon": 123.590278,
+"bps": "53.01"
+},
+{
+"qid": "Q14142",
+"label": "Lembata",
+"type": "kabupaten",
+"lat": -8.41396,
+"lon": 123.55225,
+"bps": "53.13"
+},
+{
+"qid": "Q14143",
+"label": "Manggarai",
+"type": "kabupaten",
+"lat": -8.612651,
+"lon": 120.462584,
+"bps": "53.10"
+},
+{
+"qid": "Q14144",
+"label": "Nagekeo",
+"type": "kabupaten",
+"lat": -8.8721,
+"lon": 121.20963,
+"bps": "53.16"
+},
+{
+"qid": "Q14145",
+"label": "Ngada",
+"type": "kabupaten",
+"lat": -8.66667,
+"lon": 121.0,
+"bps": "53.09"
+},
+{
+"qid": "Q14146",
+"label": "Timor Tengah Utara",
+"type": "kabupaten",
+"lat": -9.446666666,
+"lon": 124.478055555,
+"bps": "53.03"
+},
+{
+"qid": "Q14147",
+"label": "Rote Ndao",
+"type": "kabupaten",
+"lat": -10.46666667,
+"lon": 123.38333333,
+"bps": "53.14"
+},
+{
+"qid": "Q14148",
+"label": "Sabu Raijua",
+"type": "kabupaten",
+"lat": -10.56286,
+"lon": 121.78894,
+"bps": "53.20"
+},
+{
+"qid": "Q14150",
+"label": "Sikka",
+"type": "kabupaten",
+"lat": -8.616388888,
+"lon": 122.208055555,
+"bps": "53.07"
+},
+{
+"qid": "Q14151",
+"label": "Timor Tengah Selatan",
+"type": "kabupaten",
+"lat": -9.471666666,
+"lon": 124.804722222,
+"bps": "53.02"
+},
+{
+"qid": "Q14152",
+"label": "Sumba Barat Daya",
+"type": "kabupaten",
+"lat": -9.56216,
+"lon": 119.08905,
+"bps": "53.18"
+},
+{
+"qid": "Q14153",
+"label": "Manggarai Barat",
+"type": "kabupaten",
+"lat": -8.64484,
+"lon": 119.88281,
+"bps": "53.15"
+},
+{
+"qid": "Q14154",
+"label": "Sumba Barat",
+"type": "kabupaten",
+"lat": -9.56667,
+"lon": 119.45,
+"bps": "53.12"
+},
+{
+"qid": "Q14156",
+"label": "Bengkayang",
+"type": "kabupaten",
+"lat": 1.06911,
+"lon": 109.66393,
+"bps": "61.07"
+},
+{
+"qid": "Q14157",
+"label": "Kapuas Hulu",
+"type": "kabupaten",
+"lat": 0.81667,
+"lon": 112.76667,
+"bps": "61.06"
+},
+{
+"qid": "Q14158",
+"label": "Kayong Utara",
+"type": "kabupaten",
+"lat": -1.43711,
+"lon": 110.79781,
+"bps": "61.11"
+},
+{
+"qid": "Q14159",
+"label": "Ketapang",
+"type": "kabupaten",
+"lat": -1.58333,
+"lon": 110.5,
+"bps": "61.04"
+},
+{
+"qid": "Q14160",
+"label": "Kubu Raya",
+"type": "kabupaten",
+"lat": 0.01637,
+"lon": 109.33731,
+"bps": "61.12"
+},
+{
+"qid": "Q14161",
+"label": "Landak",
+"type": "kabupaten",
+"lat": 0.42373,
+"lon": 109.75917,
+"bps": "61.08"
+},
+{
+"qid": "Q14162",
+"label": "Melawi",
+"type": "kabupaten",
+"lat": -0.336111111,
+"lon": 111.698055555,
+"bps": "61.10"
+},
+{
+"qid": "Q14163",
+"label": "Mempawah",
+"type": "kabupaten",
+"lat": 0.25,
+"lon": 109.16667,
+"bps": "61.02"
+},
+{
+"qid": "Q14164",
+"label": "Sambas",
+"type": "kabupaten",
+"lat": 1.41667,
+"lon": 109.33333,
+"bps": "61.01"
+},
+{
+"qid": "Q14165",
+"label": "Sanggau",
+"type": "kabupaten",
+"lat": 0.123424,
+"lon": 110.597,
+"bps": "61.03"
+},
+{
+"qid": "Q14166",
+"label": "Sekadau",
+"type": "kabupaten",
+"lat": 0.03485,
+"lon": 110.95066,
+"bps": "61.09"
+},
+{
+"qid": "Q14167",
+"label": "Sintang",
+"type": "kabupaten",
+"lat": -0.083333333,
+"lon": 112.083333333,
+"bps": "61.05"
+},
+{
+"qid": "Q14170",
+"label": "Balangan",
+"type": "kabupaten",
+"lat": -2.364000766,
+"lon": 115.470513594,
+"bps": "63.11"
+},
+{
+"qid": "Q14171",
+"label": "Banjar",
+"type": "kabupaten",
+"lat": -3.408131341,
+"lon": 114.848541656,
+"bps": "63.03"
+},
+{
+"qid": "Q14172",
+"label": "Barito Kuala",
+"type": "kabupaten",
+"lat": -2.981143052,
+"lon": 114.766778772,
+"bps": "63.04"
+},
+{
+"qid": "Q14173",
+"label": "Hulu Sungai Tengah",
+"type": "kabupaten",
+"lat": -2.584655749,
+"lon": 115.38517139,
+"bps": "63.07"
+},
+{
+"qid": "Q14174",
+"label": "Kotabaru",
+"type": "kabupaten",
+"lat": -3.0,
+"lon": 116.0,
+"bps": "63.02"
+},
+{
+"qid": "Q14175",
+"label": "Hulu Sungai Utara",
+"type": "kabupaten",
+"lat": -2.419284393,
+"lon": 115.254279665,
+"bps": "63.08"
+},
+{
+"qid": "Q14176",
+"label": "Hulu Sungai Selatan",
+"type": "kabupaten",
+"lat": -2.786670057,
+"lon": 115.265919764,
+"bps": "63.06"
+},
+{
+"qid": "Q14177",
+"label": "Tabalong",
+"type": "kabupaten",
+"lat": -2.164735675,
+"lon": 115.382213269,
+"bps": "63.09"
+},
+{
+"qid": "Q14178",
+"label": "Tanah Laut",
+"type": "kabupaten",
+"lat": -3.799739239,
+"lon": 114.782593377,
+"bps": "63.01"
+},
+{
+"qid": "Q14179",
+"label": "Tanah Bumbu",
+"type": "kabupaten",
+"lat": -3.483633907,
+"lon": 115.947938395,
+"bps": "63.10"
+},
+{
+"qid": "Q14180",
+"label": "Tapin",
+"type": "kabupaten",
+"lat": -2.930897396,
+"lon": 115.156682378,
+"bps": "63.05"
+},
+{
+"qid": "Q14190",
+"label": "Barito Timur",
+"type": "kabupaten",
+"lat": -1.93333,
+"lon": 115.1,
+"bps": "62.13"
+},
+{
+"qid": "Q14191",
+"label": "Kotawaringin Timur",
+"type": "kabupaten",
+"lat": -2.08333,
+"lon": 112.75,
+"bps": "62.02"
+},
+{
+"qid": "Q14192",
+"label": "Gunung Mas",
+"type": "kabupaten",
+"lat": -0.95,
+"lon": 113.5,
+"bps": "62.10"
+},
+{
+"qid": "Q14193",
+"label": "Kapuas",
+"type": "kabupaten",
+"lat": -3.0,
+"lon": 114.38,
+"bps": "62.03"
+},
+{
+"qid": "Q14194",
+"label": "Lamandau",
+"type": "kabupaten",
+"lat": -1.83828,
+"lon": 111.2869,
+"bps": "62.09"
+},
+{
+"qid": "Q10126",
+"label": "Serang",
+"type": "kota di Indonesia",
+"lat": -6.12,
+"lon": 106.150277777,
+"bps": "36.73"
+},
+{
+"qid": "Q10127",
+"label": "Tangerang",
+"type": "kota di Indonesia",
+"lat": -6.170277777,
+"lon": 106.640277777,
+"bps": "36.71"
+},
+{
+"qid": "Q10128",
+"label": "Tangerang Selatan",
+"type": "kota di Indonesia",
+"lat": -6.288888888,
+"lon": 106.718055555,
+"bps": "36.74"
+},
+{
+"qid": "Q10389",
+"label": "Bandung",
+"type": "kota di Indonesia",
+"lat": -6.921944444,
+"lon": 107.606944444,
+"bps": "32.73"
+},
+{
+"qid": "Q10391",
+"label": "Banjar",
+"type": "kota di Indonesia",
+"lat": -7.366666666,
+"lon": 108.533333333,
+"bps": "32.79"
+},
+{
+"qid": "Q10392",
+"label": "Bekasi",
+"type": "kota di Indonesia",
+"lat": -6.233333333,
+"lon": 107.0,
+"bps": "32.75"
+},
+{
+"qid": "Q10393",
+"label": "Bogor",
+"type": "kota di Indonesia",
+"lat": -6.597802777,
+"lon": 106.799263333,
+"bps": "32.71"
+},
+{
+"qid": "Q10394",
+"label": "Cimahi",
+"type": "kota di Indonesia",
+"lat": -6.8800382,
+"lon": 107.5385202,
+"bps": "32.77"
+},
+{
+"qid": "Q10395",
+"label": "Cirebon",
+"type": "kota di Indonesia",
+"lat": -6.7396903,
+"lon": 108.5529678,
+"bps": "32.74"
+},
+{
+"qid": "Q10396",
+"label": "Depok",
+"type": "kota di Indonesia",
+"lat": -6.405031,
+"lon": 106.8173077,
+"bps": "32.76"
+},
+{
+"qid": "Q10397",
+"label": "Sukabumi",
+"type": "kota di Indonesia",
+"lat": -6.9320004,
+"lon": 106.9185638,
+"bps": "32.72"
+},
+{
+"qid": "Q10399",
+"label": "Tasikmalaya",
+"type": "kota di Indonesia",
+"lat": -7.3258023,
+"lon": 108.2201805,
+"bps": "32.78"
+},
+{
+"qid": "Q11017",
+"label": "Magelang",
+"type": "kota di Indonesia",
+"lat": -7.470555555,
+"lon": 110.217777777,
+"bps": "33.71"
+},
+{
+"qid": "Q11021",
+"label": "Salatiga",
+"type": "kota di Indonesia",
+"lat": -7.338888888,
+"lon": 110.502222222,
+"bps": "33.73"
+},
+{
+"qid": "Q11025",
+"label": "Semarang",
+"type": "kota di Indonesia",
+"lat": -6.99,
+"lon": 110.4225,
+"bps": "33.74"
+},
+{
+"qid": "Q11026",
+"label": "Pekalongan",
+"type": "kota di Indonesia",
+"lat": -6.888333333,
+"lon": 109.675277777,
+"bps": "33.75"
+},
+{
+"qid": "Q11027",
+"label": "Tegal",
+"type": "kota di Indonesia",
+"lat": -6.8675,
+"lon": 109.1375,
+"bps": "33.76"
+},
+{
+"qid": "Q11434",
+"label": "Batu",
+"type": "kota di Indonesia",
+"lat": -7.8672,
+"lon": 112.5239,
+"bps": "35.79"
+},
+{
+"qid": "Q11441",
+"label": "Blitar",
+"type": "kota di Indonesia",
+"lat": -8.1,
+"lon": 112.166666666,
+"bps": "35.72"
+},
+{
+"qid": "Q11443",
+"label": "Kediri",
+"type": "kota di Indonesia",
+"lat": -7.811111111,
+"lon": 112.004722222,
+"bps": "35.71"
+},
+{
+"qid": "Q11444",
+"label": "Madiun",
+"type": "kota di Indonesia",
+"lat": -7.63,
+"lon": 111.523055555,
+"bps": "35.77"
+},
+{
+"qid": "Q11445",
+"label": "Malang",
+"type": "kota di Indonesia",
+"lat": -7.96893041,
+"lon": 112.632727716,
+"bps": "35.73"
+},
+{
+"qid": "Q11447",
+"label": "Mojokerto",
+"type": "kota di Indonesia",
+"lat": -7.472222222,
+"lon": 112.433611111,
+"bps": "35.76"
+},
+{
+"qid": "Q11449",
+"label": "Pasuruan",
+"type": "kota di Indonesia",
+"lat": -7.640622222,
+"lon": 112.906477777,
+"bps": "35.75"
+},
+{
+"qid": "Q11450",
+"label": "Probolinggo",
+"type": "kota di Indonesia",
+"lat": -7.75,
+"lon": 113.216666666,
+"bps": "35.74"
+},
+{
+"qid": "Q11462",
+"label": "Surabaya",
+"type": "kota di Indonesia",
+"lat": -7.246283611,
+"lon": 112.737767222,
+"bps": "35.78"
+},
+{
+"qid": "Q11506",
+"label": "Denpasar",
+"type": "kota di Indonesia",
+"lat": -8.671666666,
+"lon": 115.233888888,
+"bps": "51.71"
+},
+{
+"qid": "Q14126",
+"label": "Mataram",
+"type": "kota di Indonesia",
+"lat": -8.583333333,
+"lon": 116.116666666,
+"bps": "52.71"
+},
+{
+"qid": "Q14128",
+"label": "Bima",
+"type": "kota di Indonesia",
+"lat": -8.46,
+"lon": 118.726666666,
+"bps": "52.72"
+},
+{
+"qid": "Q14155",
+"label": "Kupang",
+"type": "kota di Indonesia",
+"lat": -10.163333333,
+"lon": 123.577777777,
+"bps": "53.71"
+},
+{
+"qid": "Q14168",
+"label": "Pontianak",
+"type": "kota di Indonesia",
+"lat": -0.083333333,
+"lon": 109.366666666,
+"bps": "61.71"
+},
+{
+"qid": "Q14168",
+"label": "Pontianak",
+"type": "kota di Indonesia",
+"lat": -0.020555555,
+"lon": 109.341388888,
+"bps": "61.71"
+},
+{
+"qid": "Q14169",
+"label": "Singkawang",
+"type": "kota di Indonesia",
+"lat": 0.9,
+"lon": 108.983333333,
+"bps": "61.72"
+},
+{
+"qid": "Q14181",
+"label": "Banjarbaru",
+"type": "kota di Indonesia",
+"lat": -3.438903059,
+"lon": 114.830880915,
+"bps": "63.72"
+},
+{
+"qid": "Q14182",
+"label": "Banjarmasin",
+"type": "kota di Indonesia",
+"lat": -3.314429472,
+"lon": 114.592253736,
+"bps": "63.71"
+},
+{
+"qid": "Q14409",
+"label": "Palangka Raya",
+"type": "kota di Indonesia",
+"lat": -2.21,
+"lon": 113.92,
+"bps": "62.71"
+},
+{
+"qid": "Q14492",
+"label": "Balikpapan",
+"type": "kota di Indonesia",
+"lat": -1.237926111,
+"lon": 116.856251111,
+"bps": "64.71"
+},
+{
+"qid": "Q14495",
+"label": "Bontang",
+"type": "kota di Indonesia",
+"lat": 0.133333333,
+"lon": 117.5,
+"bps": "64.74"
+},
+{
+"qid": "Q14499",
+"label": "Samarinda",
+"type": "kota di Indonesia",
+"lat": -0.502222222,
+"lon": 117.153611111,
+"bps": "64.72"
+},
+{
+"qid": "Q14501",
+"label": "Tarakan",
+"type": "kota di Indonesia",
+"lat": 3.3,
+"lon": 117.633333333,
+"bps": "65.71"
+},
+{
+"qid": "Q14525",
+"label": "Gorontalo",
+"type": "kota di Indonesia",
+"lat": 0.542222222,
+"lon": 123.061388888,
+"bps": "75.71"
+},
+{
+"qid": "Q14634",
+"label": "Makassar",
+"type": "kota di Indonesia",
+"lat": -5.133055555,
+"lon": 119.413611111,
+"bps": "73.71"
+},
+{
+"qid": "Q14635",
+"label": "Palopo",
+"type": "kota di Indonesia",
+"lat": -3.0,
+"lon": 120.2,
+"bps": "73.73"
+},
+{
+"qid": "Q14636",
+"label": "Parepare",
+"type": "kota di Indonesia",
+"lat": -4.016666666,
+"lon": 119.623611111,
+"bps": "73.72"
+},
+{
+"qid": "Q15378",
+"label": "Bau Bau",
+"type": "kota di Indonesia",
+"lat": -5.462222222,
+"lon": 122.605833333,
+"bps": "74.72"
+},
+{
+"qid": "Q15379",
+"label": "Kendari",
+"type": "kota di Indonesia",
+"lat": -3.9675,
+"lon": 122.594722222,
+"bps": "74.71"
+},
+{
+"qid": "Q15826",
+"label": "Palu",
+"type": "kota di Indonesia",
+"lat": -0.895,
+"lon": 119.859444444,
+"bps": "72.71"
+},
+{
+"qid": "Q15845",
+"label": "Bitung",
+"type": "kota di Indonesia",
+"lat": 1.447222222,
+"lon": 125.197777777,
+"bps": "71.72"
+},
+{
+"qid": "Q15846",
+"label": "Kotamobagu",
+"type": "kota di Indonesia",
+"lat": 0.73333333,
+"lon": 124.31666667,
+"bps": "71.74"
+},
+{
+"qid": "Q15847",
+"label": "Manado",
+"type": "kota di Indonesia",
+"lat": 1.493055555,
+"lon": 124.841261111,
+"bps": "71.71"
+},
+{
+"qid": "Q15848",
+"label": "Tomohon",
+"type": "kota di Indonesia",
+"lat": 1.324421,
+"lon": 124.82254,
+"bps": "71.73"
+},
+{
+"qid": "Q18970",
+"label": "Ambon",
+"type": "kota di Indonesia",
+"lat": -3.696666666,
+"lon": 128.178333333,
+"bps": "81.71"
+},
+{
+"qid": "Q18975",
+"label": "Tual",
+"type": "kota di Indonesia",
+"lat": -5.64257741,
+"lon": 132.742992993,
+"bps": "81.72"
+},
+{
+"qid": "Q19151",
+"label": "Ternate",
+"type": "kota di Indonesia",
+"lat": 0.783333333,
+"lon": 127.366666666,
+"bps": "82.71"
+},
+{
+"qid": "Q19153",
+"label": "Tidore Kepulauan",
+"type": "kota di Indonesia",
+"lat": 0.609444444,
+"lon": 127.569722222,
+"bps": "82.72"
+},
+{
+"qid": "Q26837",
+"label": "Sorong",
+"type": "kota di Indonesia",
+"lat": -0.87956,
+"lon": 131.26104,
+"bps": "96.71"
+},
+{
+"qid": "Q27860",
+"label": "Jayapura",
+"type": "kota di Indonesia",
+"lat": -2.5425,
+"lon": 140.704478888,
+"bps": "91.71"
+},
+{
+"qid": "Q7388",
+"label": "Tanjung Jabung Barat",
+"type": "kabupaten",
+"lat": -0.826341,
+"lon": 103.4614765,
+"bps": "15.06"
+},
+{
+"qid": "Q7389",
+"label": "Tebo",
+"type": "kabupaten",
+"lat": -1.38333,
+"lon": 102.317,
+"bps": "15.09"
+},
+{
+"qid": "Q7594",
+"label": "Bengkalis",
+"type": "kabupaten",
+"lat": 1.489722222,
+"lon": 102.079722222,
+"bps": "14.03"
+},
+{
+"qid": "Q7599",
+"label": "Indragiri Hilir",
+"type": "kabupaten",
+"lat": -0.315555555,
+"lon": 103.158055555,
+"bps": "14.04"
+},
+{
+"qid": "Q7605",
+"label": "Indragiri Hulu",
+"type": "kabupaten",
+"lat": -0.55,
+"lon": 102.316666666,
+"bps": "14.02"
+},
+{
+"qid": "Q7613",
+"label": "Kampar",
+"type": "kabupaten",
+"lat": 0.313609,
+"lon": 101.0185247,
+"bps": "14.01"
+},
+{
+"qid": "Q7626",
+"label": "Kuantan Singingi",
+"type": "kabupaten",
+"lat": -0.47532,
+"lon": 101.45857,
+"bps": "14.09"
+},
+{
+"qid": "Q7630",
+"label": "Kepulauan Meranti",
+"type": "kabupaten",
+"lat": 0.97488,
+"lon": 102.69539,
+"bps": "14.10"
+},
+{
+"qid": "Q7641",
+"label": "Pelalawan",
+"type": "kabupaten",
+"lat": 0.20822,
+"lon": 102.18607,
+"bps": "14.05"
+},
+{
+"qid": "Q7744",
+"label": "Rokan Hulu",
+"type": "kabupaten",
+"lat": 0.933333333,
+"lon": 100.5,
+"bps": "14.06"
+},
+{
+"qid": "Q7759",
+"label": "Rokan Hilir",
+"type": "kabupaten",
+"lat": 2.16599,
+"lon": 100.82514,
+"bps": "14.07"
+},
+{
+"qid": "Q7777",
+"label": "Siak",
+"type": "kabupaten",
+"lat": 0.974444444,
+"lon": 102.013333333,
+"bps": "14.08"
+},
+{
+"qid": "Q7796",
+"label": "Bengkulu Tengah",
+"type": "kabupaten",
+"lat": -3.20679,
+"lon": 102.12616,
+"bps": "17.09"
+},
+{
+"qid": "Q7940",
+"label": "Kepahiang",
+"type": "kabupaten",
+"lat": -3.601944444,
+"lon": 102.564166666,
+"bps": "17.08"
+},
+{
+"qid": "Q8031",
+"label": "Lebong",
+"type": "kabupaten",
+"lat": -3.24278,
+"lon": 102.3349,
+"bps": "17.07"
+},
+{
+"qid": "Q8033",
+"label": "Mukomuko",
+"type": "kabupaten",
+"lat": -2.552914648,
+"lon": 101.104217567,
+"bps": "17.06"
+},
+{
+"qid": "Q8034",
+"label": "Bengkulu Utara",
+"type": "kabupaten",
+"lat": -3.33333,
+"lon": 102.05,
+"bps": "17.03"
+},
+{
+"qid": "Q8035",
+"label": "Rejang Lebong",
+"type": "kabupaten",
+"lat": -3.433333333,
+"lon": 102.716666666,
+"bps": "17.02"
+},
+{
+"qid": "Q8037",
+"label": "Seluma",
+"type": "kabupaten",
+"lat": -3.96644,
+"lon": 102.47429,
+"bps": "17.05"
+},
+{
+"qid": "Q8040",
+"label": "Bengkulu Selatan",
+"type": "kabupaten",
+"lat": -4.463481566,
+"lon": 102.917003379,
+"bps": "17.01"
+},
+{
+"qid": "Q8107",
+"label": "Banyuasin",
+"type": "kabupaten",
+"lat": -2.88333333,
+"lon": 104.38305556,
+"bps": "16.07"
+},
+{
+"qid": "Q8110",
+"label": "Ogan Komering Ulu Timur",
+"type": "kabupaten",
+"lat": -3.85679,
+"lon": 104.75209,
+"bps": "16.08"
+},
+{
+"qid": "Q8112",
+"label": "Empat Lawang",
+"type": "kabupaten",
+"lat": -3.75,
+"lon": 103.0,
+"bps": "16.11"
+},
+{
+"qid": "Q8117",
+"label": "Lahat",
+"type": "kabupaten",
+"lat": -3.786389,
+"lon": 103.542778,
+"bps": "16.04"
+},
+{
+"qid": "Q8119",
+"label": "Muara Enim",
+"type": "kabupaten",
+"lat": -4.2327,
+"lon": 103.6141,
+"bps": "16.03"
+},
+{
+"qid": "Q8120",
+"label": "Musi Banyuasin",
+"type": "kabupaten",
+"lat": -2.89388889,
+"lon": 103.8125,
+"bps": "16.06"
+},
+{
+"qid": "Q8121",
+"label": "Musi Rawas",
+"type": "kabupaten",
+"lat": -3.08333,
+"lon": 103.2,
+"bps": "16.05"
+},
+{
+"qid": "Q8122",
+"label": "Ogan Ilir",
+"type": "kabupaten",
+"lat": -3.43186,
+"lon": 104.62727,
+"bps": "16.10"
+},
+{
+"qid": "Q8125",
+"label": "Ogan Komering Ilir",
+"type": "kabupaten",
+"lat": -3.36667,
+"lon": 105.36667,
+"bps": "16.02"
+},
+{
+"qid": "Q8126",
+"label": "Ogan Komering Ulu",
+"type": "kabupaten",
+"lat": -4.13333,
+"lon": 104.03333,
+"bps": "16.01"
+},
+{
+"qid": "Q8127",
+"label": "Ogan Komering Ulu Selatan",
+"type": "kabupaten",
+"lat": -4.65728,
+"lon": 104.00659,
+"bps": "16.09"
+},
+{
+"qid": "Q8135",
+"label": "Lampung Tengah",
+"type": "kabupaten",
+"lat": -4.86667,
+"lon": 105.26667,
+"bps": "18.02"
+},
+{
+"qid": "Q8136",
+"label": "Lampung Timur",
+"type": "kabupaten",
+"lat": -5.10273,
+"lon": 105.68003,
+"bps": "18.07"
+},
+{
+"qid": "Q8139",
+"label": "Mesuji",
+"type": "kabupaten",
+"lat": -4.0439,
+"lon": 105.4013,
+"bps": "18.11"
+},
+{
+"qid": "Q8140",
+"label": "Lampung Utara",
+"type": "kabupaten",
+"lat": -4.81667,
+"lon": 104.8,
+"bps": "18.03"
+},
+{
+"qid": "Q8144",
+"label": "Pesawaran",
+"type": "kabupaten",
+"lat": -5.4298,
+"lon": 105.17899,
+"bps": "18.09"
+},
+{
+"qid": "Q8145",
+"label": "Pringsewu",
+"type": "kabupaten",
+"lat": -5.42211,
+"lon": 104.93454,
+"bps": "18.10"
+},
+{
+"qid": "Q8147",
+"label": "Lampung Selatan",
+"type": "kabupaten",
+"lat": -5.5624299,
+"lon": 105.5475311,
+"bps": "18.01"
+},
+{
+"qid": "Q8149",
+"label": "Tanggamus",
+"type": "kabupaten",
+"lat": -5.481456,
+"lon": 104.6824048,
+"bps": "18.06"
+},
+{
+"qid": "Q8151",
+"label": "Tulang Bawang",
+"type": "kabupaten",
+"lat": -4.20604,
+"lon": 105.57999,
+"bps": "18.05"
+},
+{
+"qid": "Q8152",
+"label": "Way Kanan",
+"type": "kabupaten",
+"lat": -4.44705,
+"lon": 104.52753,
+"bps": "18.08"
+},
+{
+"qid": "Q8153",
+"label": "Lampung Barat",
+"type": "kabupaten",
+"lat": -5.14904,
+"lon": 104.19309,
+"bps": "18.04"
+},
+{
+"qid": "Q8154",
+"label": "Tulang Bawang Barat",
+"type": "kabupaten",
+"lat": -4.43975,
+"lon": 105.0444,
+"bps": "18.12"
+},
+{
+"qid": "Q8163",
+"label": "Bangka",
+"type": "kabupaten",
+"lat": -1.9,
+"lon": 105.883333333,
+"bps": "19.01"
+},
+{
+"qid": "Q8164",
+"label": "Belitung",
+"type": "kabupaten",
+"lat": -2.866666666,
+"lon": 107.7,
+"bps": "19.02"
+},
+{
+"qid": "Q8166",
+"label": "Bangka Tengah",
+"type": "kabupaten",
+"lat": -2.416666666,
+"lon": 106.233333333,
+"bps": "19.04"
+},
+{
+"qid": "Q8169",
+"label": "Belitung Timur",
+"type": "kabupaten",
+"lat": -2.9,
+"lon": 108.05,
+"bps": "19.06"
+},
+{
+"qid": "Q8173",
+"label": "Bangka Selatan",
+"type": "kabupaten",
+"lat": -2.766666666,
+"lon": 106.333333333,
+"bps": "19.03"
+},
+{
+"qid": "Q8176",
+"label": "Bangka Barat",
+"type": "kabupaten",
+"lat": -1.95839,
+"lon": 105.53741,
+"bps": "19.05"
+},
+{
+"qid": "Q10097",
+"label": "Bintan",
+"type": "kabupaten",
+"lat": 0.95,
+"lon": 104.61944,
+"bps": "21.01"
+},
+{
+"qid": "Q10098",
+"label": "Karimun",
+"type": "kabupaten",
+"lat": 0.80764,
+"lon": 103.41911,
+"bps": "21.02"
+},
+{
+"qid": "Q10099",
+"label": "Lingga",
+"type": "kabupaten",
+"lat": -0.266666666,
+"lon": 104.483333333,
+"bps": "21.04"
+},
+{
+"qid": "Q10100",
+"label": "Natuna",
+"type": "kabupaten",
+"lat": 4.0,
+"lon": 108.25,
+"bps": "21.03"
+},
+{
+"qid": "Q10119",
+"label": "Lebak",
+"type": "kabupaten",
+"lat": -6.65,
+"lon": 106.21667,
+"bps": "36.02"
+},
+{
+"qid": "Q10121",
+"label": "Pandeglang",
+"type": "kabupaten",
+"lat": -6.309166666,
+"lon": 106.104722222,
+"bps": "36.01"
+},
+{
+"qid": "Q10122",
+"label": "Serang",
+"type": "kabupaten",
+"lat": -6.15,
+"lon": 106.0,
+"bps": "36.04"
+},
+{
+"qid": "Q10123",
+"label": "Tangerang",
+"type": "kabupaten",
+"lat": -6.2,
+"lon": 106.49,
+"bps": "36.03"
+},
+{
+"qid": "Q10332",
+"label": "Bandung",
+"type": "kabupaten",
+"lat": -7.021935402,
+"lon": 107.528074678,
+"bps": "32.04"
+},
+{
+"qid": "Q10340",
+"label": "Bekasi",
+"type": "kabupaten",
+"lat": -6.3659088,
+"lon": 107.1730863,
+"bps": "32.16"
+},
+{
+"qid": "Q10363",
+"label": "Bogor",
+"type": "kabupaten",
+"lat": -6.4803,
+"lon": 106.8247,
+"bps": "32.01"
+},
+{
+"qid": "Q10365",
+"label": "Ciamis",
+"type": "kabupaten",
+"lat": -7.326664181,
+"lon": 108.353107319,
+"bps": "32.07"
+},
+{
+"qid": "Q10367",
+"label": "Cianjur",
+"type": "kabupaten",
+"lat": -6.821222211,
+"lon": 107.140101112,
+"bps": "32.03"
+},
+{
+"qid": "Q10368",
+"label": "Cirebon",
+"type": "kabupaten",
+"lat": -6.7578369,
+"lon": 108.4804624,
+"bps": "32.09"
+},
+{
+"qid": "Q10371",
+"label": "Garut",
+"type": "kabupaten",
+"lat": -7.204694066,
+"lon": 107.887589935,
+"bps": "32.05"
+},
+{
+"qid": "Q10374",
+"label": "Indramayu",
+"type": "kabupaten",
+"lat": -6.326944444,
+"lon": 108.322222222,
+"bps": "32.12"
+},
+{
+"qid": "Q10375",
+"label": "Karawang",
+"type": "kabupaten",
+"lat": -6.3050853,
+"lon": 107.3002579,
+"bps": "32.15"
+},
+{
+"qid": "Q10376",
+"label": "Kuningan",
+"type": "kabupaten",
+"lat": -6.9766048,
+"lon": 108.4849021,
+"bps": "32.08"
+},
+{
+"qid": "Q10377",
+"label": "Majalengka",
+"type": "kabupaten",
+"lat": -6.8352731,
+"lon": 108.2276548,
+"bps": "32.10"
+},
+{
+"qid": "Q10378",
+"label": "Purwakarta",
+"type": "kabupaten",
+"lat": -6.538564,
+"lon": 107.4435572,
+"bps": "32.14"
+},
+{
+"qid": "Q10380",
+"label": "Subang",
+"type": "kabupaten",
+"lat": -6.56985,
+"lon": 107.7628313,
+"bps": "32.13"
+},
+{
+"qid": "Q10381",
+"label": "Sukabumi",
+"type": "kabupaten",
+"lat": -6.9872757,
+"lon": 106.5510934,
+"bps": "32.02"
+},
+{
+"qid": "Q10382",
+"label": "Sumedang",
+"type": "kabupaten",
+"lat": -6.85,
+"lon": 107.916666666,
+"bps": "32.11"
+},
+{
+"qid": "Q10385",
+"label": "Tasikmalaya",
+"type": "kabupaten",
+"lat": -7.365833333,
+"lon": 108.101944444,
+"bps": "32.06"
+},
+{
+"qid": "Q10388",
+"label": "Bandung Barat",
+"type": "kabupaten",
+"lat": -6.841117137,
+"lon": 107.512583203,
+"bps": "32.17"
+},
+{
+"qid": "Q10604",
+"label": "Banjarnegara",
+"type": "kabupaten",
+"lat": -7.39611,
+"lon": 109.757,
+"bps": "33.04"
+},
+{
+"qid": "Q10605",
+"label": "Banyumas",
+"type": "kabupaten",
+"lat": -7.425,
+"lon": 109.23,
+"bps": "33.02"
+},
+{
+"qid": "Q10607",
+"label": "Batang",
+"type": "kabupaten",
+"lat": -6.908111626,
+"lon": 109.730418769,
+"bps": "33.25"
+},
+{
+"qid": "Q10608",
+"label": "Blora",
+"type": "kabupaten",
+"lat": -7.06667,
+"lon": 111.38333,
+"bps": "33.16"
+},
+{
+"qid": "Q10609",
+"label": "Boyolali",
+"type": "kabupaten",
+"lat": -7.532222222,
+"lon": 110.6025,
+"bps": "33.09"
+},
+{
+"qid": "Q10610",
+"label": "Brebes",
+"type": "kabupaten",
+"lat": -7.05,
+"lon": 108.9,
+"bps": "33.29"
+},
+{
+"qid": "Q10612",
+"label": "Cilacap",
+"type": "kabupaten",
+"lat": -7.733333333,
+"lon": 109.0,
+"bps": "33.01"
+},
+{
+"qid": "Q10613",
+"label": "Demak",
+"type": "kabupaten",
+"lat": -6.88333333,
+"lon": 110.66666667,
+"bps": "33.21"
+},
+{
+"qid": "Q10614",
+"label": "Grobogan",
+"type": "kabupaten",
+"lat": -7.03,
+"lon": 110.921111111,
+"bps": "33.15"
+},
+{
+"qid": "Q10615",
+"label": "Jepara",
+"type": "kabupaten",
+"lat": -6.533333333,
+"lon": 110.666666666,
+"bps": "33.20"
+},
+{
+"qid": "Q10616",
+"label": "Karanganyar",
+"type": "kabupaten",
+"lat": -7.596111111,
+"lon": 110.950833333,
+"bps": "33.13"
+},
+{
+"qid": "Q10617",
+"label": "Kebumen",
+"type": "kabupaten",
+"lat": -7.629444444,
+"lon": 109.570555555,
+"bps": "33.05"
+},
+{
+"qid": "Q10618",
+"label": "Kendal",
+"type": "kabupaten",
+"lat": -7.0256,
+"lon": 110.1685,
+"bps": "33.24"
+},
+{
+"qid": "Q10619",
+"label": "Klaten",
+"type": "kabupaten",
+"lat": -7.683333333,
+"lon": 110.616666666,
+"bps": "33.10"
+},
+{
+"qid": "Q10620",
+"label": "Kudus",
+"type": "kabupaten",
+"lat": -6.8,
+"lon": 110.866666666,
+"bps": "33.19"
+},
+{
+"qid": "Q10621",
+"label": "Magelang",
+"type": "kabupaten",
+"lat": -7.6575,
+"lon": 110.273055555,
+"bps": "33.08"
+},
+{
+"qid": "Q10622",
+"label": "Pati",
+"type": "kabupaten",
+"lat": -6.76667,
+"lon": 111.1,
+"bps": "33.18"
+},
+{
+"qid": "Q10623",
+"label": "Pekalongan",
+"type": "kabupaten",
+"lat": -6.8825,
+"lon": 109.67,
+"bps": "33.26"
+},
+{
+"qid": "Q10624",
+"label": "Pemalang",
+"type": "kabupaten",
+"lat": -7.033333333,
+"lon": 109.4,
+"bps": "33.27"
+},
+{
+"qid": "Q10625",
+"label": "Purbalingga",
+"type": "kabupaten",
+"lat": -7.28333333,
+"lon": 109.35,
+"bps": "33.03"
+},
+{
+"qid": "Q10674",
+"label": "Purworejo",
+"type": "kabupaten",
+"lat": -7.716666666,
+"lon": 110.016666666,
+"bps": "33.06"
+},
+{
+"qid": "Q10684",
+"label": "Rembang",
+"type": "kabupaten",
+"lat": -6.71666667,
+"lon": 111.35,
+"bps": "33.17"
+},
+{
+"qid": "Q10687",
+"label": "Semarang",
+"type": "kabupaten",
+"lat": -7.265555555,
+"lon": 110.335833333,
+"bps": "33.22"
+},
+{
+"qid": "Q10688",
+"label": "Sragen",
+"type": "kabupaten",
+"lat": -7.41278,
+"lon": 110.935,
+"bps": "33.14"
+},
+{
+"qid": "Q10692",
+"label": "Sukoharjo",
+"type": "kabupaten",
+"lat": -7.68333,
+"lon": 110.83333,
+"bps": "33.11"
+},
+{
+"qid": "Q10705",
+"label": "Tegal",
+"type": "kabupaten",
+"lat": -6.86666667,
+"lon": 109.15,
+"bps": "33.28"
+},
+{
+"qid": "Q4803",
+"label": "Surakarta",
+"type": "kota di Indonesia",
+"lat": -7.566666666,
+"lon": 110.816666666,
+"bps": "33.72"
+},
+{
+"qid": "Q5779",
+"label": "Banda Aceh",
+"type": "kota di Indonesia",
+"lat": 5.55,
+"lon": 95.3175,
+"bps": "11.71"
+},
+{
+"qid": "Q5781",
+"label": "Langsa",
+"type": "kota di Indonesia",
+"lat": 4.466666666,
+"lon": 97.95,
+"bps": "11.74"
+},
+{
+"qid": "Q5784",
+"label": "Lhokseumawe",
+"type": "kota di Indonesia",
+"lat": 5.18,
+"lon": 97.150555555,
+"bps": "11.73"
+},
+{
+"qid": "Q5787",
+"label": "Sabang",
+"type": "kota di Indonesia",
+"lat": 5.893055555,
+"lon": 95.32,
+"bps": "11.72"
+},
+{
+"qid": "Q5789",
+"label": "Subulussalam",
+"type": "kota di Indonesia",
+"lat": 2.642222222,
+"lon": 98.004166666,
+"bps": "11.75"
+},
+{
+"qid": "Q5954",
+"label": "Binjai",
+"type": "kota di Indonesia",
+"lat": 3.6,
+"lon": 98.485277777,
+"bps": "12.75"
+},
+{
+"qid": "Q5967",
+"label": "Gunungsitoli",
+"type": "kota di Indonesia",
+"lat": 1.116666666,
+"lon": 97.566666666,
+"bps": "12.78"
+},
+{
+"qid": "Q5972",
+"label": "Medan",
+"type": "kota di Indonesia",
+"lat": 3.589444444,
+"lon": 98.673888888,
+"bps": "12.71"
+},
+{
+"qid": "Q5974",
+"label": "Padangsidimpuan",
+"type": "kota di Indonesia",
+"lat": 1.366666666,
+"lon": 99.266666666,
+"bps": "12.77"
+},
+{
+"qid": "Q5979",
+"label": "Pematang Siantar",
+"type": "kota di Indonesia",
+"lat": 2.96,
+"lon": 99.06,
+"bps": "12.72"
+},
+{
+"qid": "Q5984",
+"label": "Sibolga",
+"type": "kota di Indonesia",
+"lat": 1.7425,
+"lon": 98.779166666,
+"bps": "12.73"
+},
+{
+"qid": "Q5987",
+"label": "Tanjung Balai",
+"type": "kota di Indonesia",
+"lat": 2.966666666,
+"lon": 99.8,
+"bps": "12.74"
+},
+{
+"qid": "Q5989",
+"label": "Tebing Tinggi",
+"type": "kota di Indonesia",
+"lat": 3.328333333,
+"lon": 99.1625,
+"bps": "12.76"
+},
+{
+"qid": "Q7248",
+"label": "Bukittinggi",
+"type": "kota di Indonesia",
+"lat": -0.309722222,
+"lon": 100.375277777,
+"bps": "13.75"
+},
+{
+"qid": "Q7253",
+"label": "Padang",
+"type": "kota di Indonesia",
+"lat": -0.955556,
+"lon": 100.360556,
+"bps": "13.71"
+},
+{
+"qid": "Q7256",
+"label": "Padang Panjang",
+"type": "kota di Indonesia",
+"lat": -0.464444444,
+"lon": 100.400833333,
+"bps": "13.74"
+},
+{
+"qid": "Q7258",
+"label": "Pariaman",
+"type": "kota di Indonesia",
+"lat": -0.626111111,
+"lon": 100.120555555,
+"bps": "13.77"
+},
+{
+"qid": "Q7261",
+"label": "Payakumbuh",
+"type": "kota di Indonesia",
+"lat": -0.224444444,
+"lon": 100.6325,
+"bps": "13.76"
+},
+{
+"qid": "Q7263",
+"label": "Kota Sawahlunto",
+"type": "kota di Indonesia",
+"lat": -0.682777777,
+"lon": 100.778333333,
+"bps": "13.73"
+},
+{
+"qid": "Q7266",
+"label": "Solok",
+"type": "kota di Indonesia",
+"lat": -0.788333333,
+"lon": 100.654166666,
+"bps": "13.72"
+},
+{
+"qid": "Q7568",
+"label": "Yogyakarta",
+"type": "kota di Indonesia",
+"lat": -7.800456766,
+"lon": 110.391280229,
+"bps": "34.71"
+},
+{
+"qid": "Q7578",
+"label": "Jambi",
+"type": "kota di Indonesia",
+"lat": -1.628794452,
+"lon": 103.608227492,
+"bps": "15.71"
+},
+{
+"qid": "Q7592",
+"label": "Sungai Penuh",
+"type": "kota di Indonesia",
+"lat": -2.063611111,
+"lon": 101.396111111,
+"bps": "15.72"
+},
+{
+"qid": "Q7782",
+"label": "Dumai",
+"type": "kota di Indonesia",
+"lat": 1.666666666,
+"lon": 101.45,
+"bps": "14.72"
+},
+{
+"qid": "Q7786",
+"label": "Pekanbaru",
+"type": "kota di Indonesia",
+"lat": 0.533333333,
+"lon": 101.45,
+"bps": "14.71"
+},
+{
+"qid": "Q8042",
+"label": "Bengkulu",
+"type": "kota di Indonesia",
+"lat": -3.795555555,
+"lon": 102.259166666,
+"bps": "17.71"
+},
+{
+"qid": "Q8129",
+"label": "Lubuk Linggau",
+"type": "kota di Indonesia",
+"lat": -3.296666666,
+"lon": 102.861666666,
+"bps": "16.73"
+},
+{
+"qid": "Q8130",
+"label": "Pagar Alam",
+"type": "kota di Indonesia",
+"lat": -4.021666666,
+"lon": 103.252222222,
+"bps": "16.72"
+},
+{
+"qid": "Q8131",
+"label": "Palembang",
+"type": "kota di Indonesia",
+"lat": -2.983333333,
+"lon": 104.764444444,
+"bps": "16.71"
+},
+{
+"qid": "Q8133",
+"label": "Prabumulih",
+"type": "kota di Indonesia",
+"lat": -3.432777777,
+"lon": 104.235555555,
+"bps": "16.74"
+},
+{
+"qid": "Q8156",
+"label": "Bandar Lampung",
+"type": "kota di Indonesia",
+"lat": -5.429444444,
+"lon": 105.2625,
+"bps": "18.71"
+},
+{
+"qid": "Q8158",
+"label": "Metro",
+"type": "kota di Indonesia",
+"lat": -5.116666666,
+"lon": 105.3,
+"bps": "18.72"
+},
+{
+"qid": "Q8179",
+"label": "Pangkal Pinang",
+"type": "kota di Indonesia",
+"lat": -2.1,
+"lon": 106.1,
+"bps": "19.71"
+},
+{
+"qid": "Q10103",
+"label": "Batam",
+"type": "kota di Indonesia",
+"lat": 1.13,
+"lon": 104.053055555,
+"bps": "21.71"
+},
+{
+"qid": "Q10104",
+"label": "Tanjungpinang",
+"type": "kota di Indonesia",
+"lat": 0.918777777,
+"lon": 104.455416666,
+"bps": "21.72"
+},
+{
+"qid": "Q10124",
+"label": "Cilegon",
+"type": "kota di Indonesia",
+"lat": -6.016666666,
+"lon": 106.016666666,
+"bps": "36.72"
+},
+{
+"qid": "Q26827",
+"label": "Teluk Wondama",
+"type": "kabupaten",
+"lat": -2.7,
+"lon": 134.5,
+"bps": "92.07"
+},
+{
+"qid": "Q27228",
+"label": "Asmat",
+"type": "kabupaten",
+"lat": -5.3795,
+"lon": 138.46344,
+"bps": "93.04"
+},
+{
+"qid": "Q27246",
+"label": "Biak Numfor",
+"type": "kabupaten",
+"lat": -1.03333,
+"lon": 136.0,
+"bps": "91.06"
+},
+{
+"qid": "Q27262",
+"label": "Boven Digoel",
+"type": "kabupaten",
+"lat": -6.0,
+"lon": 140.0,
+"bps": "93.02"
+},
+{
+"qid": "Q27316",
+"label": "Mamberamo Tengah",
+"type": "kabupaten",
+"lat": -3.88333,
+"lon": 139.16667,
+"bps": "95.05"
+},
+{
+"qid": "Q27386",
+"label": "Deiyai",
+"type": "kabupaten",
+"lat": -4.100318,
+"lon": 136.435068,
+"bps": "94.08"
+},
+{
+"qid": "Q27413",
+"label": "Dogiyai",
+"type": "kabupaten",
+"lat": -4.057,
+"lon": 135.709,
+"bps": "94.06"
+},
+{
+"qid": "Q27458",
+"label": "Intan Jaya",
+"type": "kabupaten",
+"lat": -3.41016,
+"lon": 136.70837,
+"bps": "94.07"
+},
+{
+"qid": "Q27477",
+"label": "Jayapura",
+"type": "kabupaten",
+"lat": -3.0,
+"lon": 139.95,
+"bps": "91.03"
+},
+{
+"qid": "Q27529",
+"label": "Jayawijaya",
+"type": "kabupaten",
+"lat": -4.08333,
+"lon": 139.08333,
+"bps": "95.01"
+},
+{
+"qid": "Q27573",
+"label": "Keerom",
+"type": "kabupaten",
+"lat": -2.883693975,
+"lon": 140.743570085,
+"bps": "91.11"
+},
+{
+"qid": "Q27594",
+"label": "Lanny Jaya",
+"type": "kabupaten",
+"lat": -3.9125,
+"lon": 138.287777777,
+"bps": "95.07"
+},
+{
+"qid": "Q27668",
+"label": "Mamberamo Raya",
+"type": "kabupaten",
+"lat": -2.23561,
+"lon": 137.78229,
+"bps": "91.20"
+},
+{
+"qid": "Q27679",
+"label": "Mappi",
+"type": "kabupaten",
+"lat": -6.49971,
+"lon": 139.34441,
+"bps": "93.03"
+},
+{
+"qid": "Q27693",
+"label": "Merauke",
+"type": "kabupaten",
+"lat": -7.66667,
+"lon": 139.66667,
+"bps": "93.01"
+},
+{
+"qid": "Q27700",
+"label": "Mimika",
+"type": "kabupaten",
+"lat": -4.54357,
+"lon": 136.56555,
+"bps": "94.04"
+},
+{
+"qid": "Q27708",
+"label": "Nabire",
+"type": "kabupaten",
+"lat": -3.54016,
+"lon": 135.55511,
+"bps": "94.01"
+},
+{
+"qid": "Q27724",
+"label": "Nduga",
+"type": "kabupaten",
+"lat": -4.45093,
+"lon": 138.10089,
+"bps": "95.08"
+},
+{
+"qid": "Q27738",
+"label": "Paniai",
+"type": "kabupaten",
+"lat": -3.9,
+"lon": 136.6,
+"bps": "94.03"
+},
+{
+"qid": "Q27750",
+"label": "Pegunungan Bintang",
+"type": "kabupaten",
+"lat": -4.52167,
+"lon": 140.29541,
+"bps": "95.02"
+},
+{
+"qid": "Q27761",
+"label": "Puncak",
+"type": "kabupaten",
+"lat": -4.14204,
+"lon": 137.09702,
+"bps": "94.05"
+},
+{
+"qid": "Q27771",
+"label": "Puncak Jaya",
+"type": "kabupaten",
+"lat": -3.5107,
+"lon": 137.8661,
+"bps": "94.02"
+},
+{
+"qid": "Q27784",
+"label": "Sarmi",
+"type": "kabupaten",
+"lat": -2.41667,
+"lon": 139.08333,
+"bps": "91.10"
+},
+{
+"qid": "Q27793",
+"label": "Supiori",
+"type": "kabupaten",
+"lat": -0.733333,
+"lon": 135.583,
+"bps": "91.19"
+},
+{
+"qid": "Q27802",
+"label": "Tolikara",
+"type": "kabupaten",
+"lat": -3.46667,
+"lon": 138.61667,
+"bps": "95.04"
+},
+{
+"qid": "Q27815",
+"label": "Waropen",
+"type": "kabupaten",
+"lat": -2.286,
+"lon": 137.01837,
+"bps": "91.15"
+},
+{
+"qid": "Q27825",
+"label": "Yahukimo",
+"type": "kabupaten",
+"lat": -4.886998993,
+"lon": 139.520008078,
+"bps": "95.03"
+},
+{
+"qid": "Q27838",
+"label": "Yalimo",
+"type": "kabupaten",
+"lat": -3.785,
+"lon": 139.447,
+"bps": "95.06"
+},
+{
+"qid": "Q27848",
+"label": "Kepulauan Yapen",
+"type": "kabupaten",
+"lat": -1.78773,
+"lon": 136.27716,
+"bps": "91.05"
+},
+{
+"qid": "Q46481",
+"label": "Pesisir Barat",
+"type": "kabupaten",
+"lat": -5.1888355,
+"lon": 103.9358518,
+"bps": "18.13"
+},
+{
+"qid": "Q46483",
+"label": "Pangandaran",
+"type": "kabupaten",
+"lat": -7.7016552,
+"lon": 108.4942204,
+"bps": "32.18"
+},
+{
+"qid": "Q676084",
+"label": "Pulau Taliabu",
+"type": "kabupaten",
+"lat": -1.8,
+"lon": 124.8,
+"bps": "82.08"
+},
+{
+"qid": "Q3182322",
+"label": "Kaur",
+"type": "kabupaten",
+"lat": -4.589298,
+"lon": 103.4167585,
+"bps": "17.04"
+},
+{
+"qid": "Q4069046",
+"label": "Malaka",
+"type": "kabupaten",
+"lat": -9.56722222,
+"lon": 124.9075,
+"bps": "53.21"
+},
+{
+"qid": "Q4201768",
+"label": "Maluku Tengah",
+"type": "kabupaten",
+"lat": -3.2996704,
+"lon": 128.9565238,
+"bps": "81.01"
+},
+{
+"qid": "Q4201892",
+"label": "Katingan",
+"type": "kabupaten",
+"lat": -2.06667,
+"lon": 113.4,
+"bps": "62.06"
+},
+{
+"qid": "Q11214749",
+"label": "Sidenreng Rappang",
+"type": "kabupaten",
+"lat": -3.92694,
+"lon": 119.796,
+"bps": "73.14"
+},
+{
+"qid": "Q12488339",
+"label": "Banggai Laut",
+"type": "kabupaten",
+"lat": -1.5888,
+"lon": 123.5008,
+"bps": "72.11"
+},
+{
+"qid": "Q12488347",
+"label": "Mahakam Ulu",
+"type": "kabupaten",
+"lat": 0.5,
+"lon": 115.28,
+"bps": "64.11"
+},
+{
+"qid": "Q12488349",
+"label": "Mamuju Tengah",
+"type": "kabupaten",
+"lat": -2.0901046,
+"lon": 119.4880718,
+"bps": "76.06"
+},
+{
+"qid": "Q12488351",
+"label": "Manokwari Selatan",
+"type": "kabupaten",
+"lat": -1.0798,
+"lon": 133.96729,
+"bps": "92.11"
+},
+{
+"qid": "Q12488353",
+"label": "Morowali Utara",
+"type": "kabupaten",
+"lat": -1.7207,
+"lon": 121.24649,
+"bps": "72.12"
+},
+{
+"qid": "Q15729116",
+"label": "Penukal Abab Lematang Ilir",
+"type": "kabupaten",
+"lat": -3.21342,
+"lon": 104.08722,
+"bps": "16.12"
+},
+{
+"qid": "Q15730145",
+"label": "Konawe Kepulauan",
+"type": "kabupaten",
+"lat": -4.11656,
+"lon": 123.10181,
+"bps": "74.12"
+},
+{
+"qid": "Q15960838",
+"label": "Kolaka Timur",
+"type": "kabupaten",
+"lat": -4.01807,
+"lon": 121.86172,
+"bps": "74.11"
+},
+{
+"qid": "Q16251650",
+"label": "Pegunungan Arfak",
+"type": "kabupaten",
+"lat": -0.93523,
+"lon": 133.89587,
+"bps": "92.12"
+},
+{
+"qid": "Q17053892",
+"label": "Pulau Morotai",
+"type": "kabupaten",
+"lat": 2.3,
+"lon": 128.4,
+"bps": "82.07"
+},
+{
+"qid": "Q17056608",
+"label": "Kepulauan Talaud",
+"type": "kabupaten",
+"lat": 4.31178,
+"lon": 126.78085,
+"bps": "71.04"
+},
+{
+"qid": "Q18511812",
+"label": "Musi Rawas Utara",
+"type": "kabupaten",
+"lat": -2.7351502,
+"lon": 102.9014652,
+"bps": "16.13"
+},
+{
+"qid": "Q19727023",
+"label": "Kendari",
+"type": "kabupaten",
+"lat": -3.983333333,
+"lon": 122.5,
+"bps": null
+},
+{
+"qid": "Q19745487",
+"label": "Buton Tengah",
+"type": "kabupaten",
+"lat": -5.31667,
+"lon": 122.33333,
+"bps": "74.14"
+},
+{
+"qid": "Q19745612",
+"label": "Buton Selatan",
+"type": "kabupaten",
+"lat": -5.56667,
+"lon": 122.7,
+"bps": "74.15"
+},
+{
+"qid": "Q19746428",
+"label": "Muna Barat",
+"type": "kabupaten",
+"lat": -4.83333,
+"lon": 122.48333,
+"bps": "74.13"
+},
+{
+"qid": "Q24847536",
+"label": "Pontianak",
+"type": "kabupaten",
+"lat": 0.25,
+"lon": 109.16667,
+"bps": null
+},
+{
+"qid": "Q26759674",
+"label": "Kepulauan Anambas",
+"type": "kabupaten",
+"lat": 3.0,
+"lon": 106.0,
+"bps": "21.05"
+},
+{
+"qid": "Q1795",
+"label": "Asahan",
+"type": "kabupaten",
+"lat": 3.0,
+"lon": 99.1667,
+"bps": "12.09"
+},
+{
+"qid": "Q1823",
+"label": "Aceh",
+"type": "provinsi di Indonesia",
+"lat": 5.570277777,
+"lon": 95.340777777,
+"bps": "11"
+},
+{
+"qid": "Q1866",
+"label": "Kepulauan Bangka Belitung",
+"type": "provinsi di Indonesia",
+"lat": -2.1,
+"lon": 106.1,
+"bps": "19"
+},
+{
+"qid": "Q1890",
+"label": "Bengkulu",
+"type": "provinsi di Indonesia",
+"lat": -3.820916666,
+"lon": 102.284083333,
+"bps": "17"
+},
+{
+"qid": "Q2051",
+"label": "Jambi",
+"type": "provinsi di Indonesia",
+"lat": -1.603333333,
+"lon": 103.583333333,
+"bps": "15"
+},
+{
+"qid": "Q2110",
+"label": "Lampung",
+"type": "provinsi di Indonesia",
+"lat": -5.440833333,
+"lon": 105.258333333,
+"bps": "18"
+},
+{
+"qid": "Q2140",
+"label": "Sumatera Utara",
+"type": "provinsi di Indonesia",
+"lat": 2.0,
+"lon": 99.0,
+"bps": "12"
+},
+{
+"qid": "Q2175",
+"label": "Riau",
+"type": "provinsi di Indonesia",
+"lat": 0.54,
+"lon": 101.45,
+"bps": "14"
+},
+{
+"qid": "Q2223",
+"label": "Kepulauan Riau",
+"type": "provinsi di Indonesia",
+"lat": 0.9,
+"lon": 104.45,
+"bps": "21"
+},
+{
+"qid": "Q2271",
+"label": "Sumatera Selatan",
+"type": "provinsi di Indonesia",
+"lat": -2.75,
+"lon": 103.833333333,
+"bps": "16"
+},
+{
+"qid": "Q2772",
+"label": "Sumatera Barat",
+"type": "provinsi di Indonesia",
+"lat": -1.0,
+"lon": 100.5,
+"bps": "13"
+},
+{
+"qid": "Q3540",
+"label": "Banten",
+"type": "provinsi di Indonesia",
+"lat": -6.5,
+"lon": 106.25,
+"bps": "36"
+},
+{
+"qid": "Q3557",
+"label": "Jawa Tengah",
+"type": "provinsi di Indonesia",
+"lat": -7.5,
+"lon": 110.0,
+"bps": "33"
+},
+{
+"qid": "Q3586",
+"label": "Jawa Timur",
+"type": "provinsi di Indonesia",
+"lat": -7.7,
+"lon": 112.5,
+"bps": "35"
+},
+{
+"qid": "Q3630",
+"label": "Jakarta",
+"type": "provinsi di Indonesia",
+"lat": -6.175277777,
+"lon": 106.826944444,
+"bps": "31"
+},
+{
+"qid": "Q3724",
+"label": "Jawa Barat",
+"type": "provinsi di Indonesia",
+"lat": -6.75,
+"lon": 107.5,
+"bps": "32"
+},
+{
+"qid": "Q3741",
+"label": "Yogyakarta",
+"type": "provinsi di Indonesia",
+"lat": -7.801388888,
+"lon": 110.364444444,
+"bps": "34"
+},
+{
+"qid": "Q3891",
+"label": "Kalimantan Tengah",
+"type": "provinsi di Indonesia",
+"lat": -2.216666666,
+"lon": 113.916666666,
+"bps": "62"
+},
+{
+"qid": "Q3899",
+"label": "Kalimantan Timur",
+"type": "provinsi di Indonesia",
+"lat": 1.05,
+"lon": 116.316666666,
+"bps": "64"
+},
+{
+"qid": "Q3903",
+"label": "Kalimantan Utara",
+"type": "provinsi di Indonesia",
+"lat": 3.415083333,
+"lon": 116.463333333,
+"bps": "65"
+},
+{
+"qid": "Q3906",
+"label": "Kalimantan Selatan",
+"type": "provinsi di Indonesia",
+"lat": -2.5,
+"lon": 115.5,
+"bps": "63"
+},
+{
+"qid": "Q3916",
+"label": "Kalimantan Barat",
+"type": "provinsi di Indonesia",
+"lat": 0.0,
+"lon": 110.5,
+"bps": "61"
+},
+{
+"qid": "Q5061",
+"label": "Nusa Tenggara Timur",
+"type": "provinsi di Indonesia",
+"lat": -10.183333333,
+"lon": 123.583333333,
+"bps": "53"
+},
+{
+"qid": "Q5062",
+"label": "Nusa Tenggara Barat",
+"type": "provinsi di Indonesia",
+"lat": -8.583333333,
+"lon": 116.116666666,
+"bps": "52"
+},
+{
+"qid": "Q5065",
+"label": "Sulawesi Tengah",
+"type": "provinsi di Indonesia",
+"lat": -1.4,
+"lon": 120.75,
+"bps": "72"
+},
+{
+"qid": "Q5067",
+"label": "Gorontalo",
+"type": "provinsi di Indonesia",
+"lat": 0.666667,
+"lon": 123.0,
+"bps": "75"
+},
+{
+"qid": "Q5068",
+"label": "Sulawesi Utara",
+"type": "provinsi di Indonesia",
+"lat": 1.25,
+"lon": 124.833333333,
+"bps": "71"
+},
+{
+"qid": "Q5075",
+"label": "Sulawesi Tenggara",
+"type": "provinsi di Indonesia",
+"lat": -3.95,
+"lon": 122.5,
+"bps": "74"
+},
+{
+"qid": "Q5078",
+"label": "Sulawesi Selatan",
+"type": "provinsi di Indonesia",
+"lat": -3.75,
+"lon": 120.0,
+"bps": "73"
+},
+{
+"qid": "Q5082",
+"label": "Sulawesi Barat",
+"type": "provinsi di Indonesia",
+"lat": -2.683333333,
+"lon": 118.9,
+"bps": "76"
+},
+{
+"qid": "Q5093",
+"label": "Maluku",
+"type": "provinsi di Indonesia",
+"lat": -3.705,
+"lon": 128.17,
+"bps": "81"
+},
+{
+"qid": "Q5094",
+"label": "Maluku Utara",
+"type": "provinsi di Indonesia",
+"lat": 0.783333333,
+"lon": 127.366666666,
+"bps": "82"
+},
+{
+"qid": "Q5095",
+"label": "Papua",
+"type": "provinsi di Indonesia",
+"lat": -2.536858233,
+"lon": 140.714618202,
+"bps": "91"
+},
+{
+"qid": "Q5096",
+"label": "Papua Barat",
+"type": "provinsi di Indonesia",
+"lat": -1.801389,
+"lon": 133.670556,
+"bps": "92"
+},
+{
+"qid": "Q5662",
+"label": "Aceh Besar",
+"type": "kabupaten",
+"lat": 5.366666666,
+"lon": 95.533333333,
+"bps": "11.06"
+},
+{
+"qid": "Q5666",
+"label": "Gayo Lues",
+"type": "kabupaten",
+"lat": 4.0,
+"lon": 97.0,
+"bps": "11.13"
+},
+{
+"qid": "Q5667",
+"label": "Aceh Jaya",
+"type": "kabupaten",
+"lat": 4.816666666,
+"lon": 95.666666666,
+"bps": "11.14"
+},
+{
+"qid": "Q5672",
+"label": "Aceh Singkil",
+"type": "kabupaten",
+"lat": 2.333333333,
+"lon": 97.666666666,
+"bps": "11.10"
+},
+{
+"qid": "Q5674",
+"label": "Aceh Timur",
+"type": "kabupaten",
+"lat": 4.616666666,
+"lon": 97.616666666,
+"bps": "11.03"
+},
+{
+"qid": "Q5675",
+"label": "Aceh Tengah",
+"type": "kabupaten",
+"lat": 4.333333333,
+"lon": 96.333333333,
+"bps": "11.04"
+},
+{
+"qid": "Q5678",
+"label": "Aceh Tamiang",
+"type": "kabupaten",
+"lat": 4.274905555,
+"lon": 97.872161111,
+"bps": "11.16"
+},
+{
+"qid": "Q5719",
+"label": "Bener Meriah",
+"type": "kabupaten",
+"lat": 4.75,
+"lon": 97.0,
+"bps": "11.17"
+},
+{
+"qid": "Q5722",
+"label": "Bireuen",
+"type": "kabupaten",
+"lat": 5.083333333,
+"lon": 96.6,
+"bps": "11.11"
+},
+{
+"qid": "Q5746",
+"label": "Nagan Raya",
+"type": "kabupaten",
+"lat": 4.16887999,
+"lon": 96.32438,
+"bps": "11.15"
+},
+{
+"qid": "Q5750",
+"label": "Aceh Utara",
+"type": "kabupaten",
+"lat": 4.916666666,
+"lon": 97.0,
+"bps": "11.08"
+},
+{
+"qid": "Q5751",
+"label": "Pidie",
+"type": "kabupaten",
+"lat": 5.08,
+"lon": 96.11,
+"bps": "11.07"
+},
+{
+"qid": "Q5754",
+"label": "Pidie Jaya",
+"type": "kabupaten",
+"lat": 5.15,
+"lon": 96.21667,
+"bps": "11.18"
+},
+{
+"qid": "Q5757",
+"label": "Simeulue",
+"type": "kabupaten",
+"lat": 2.61667,
+"lon": 96.08333,
+"bps": "11.09"
+},
+{
+"qid": "Q5759",
+"label": "Aceh Selatan",
+"type": "kabupaten",
+"lat": 3.133333333,
+"lon": 97.45,
+"bps": "11.01"
+},
+{
+"qid": "Q5763",
+"label": "Aceh Tenggara",
+"type": "kabupaten",
+"lat": 3.47307993,
+"lon": 97.819210378,
+"bps": "11.02"
+},
+{
+"qid": "Q5775",
+"label": "Aceh Barat Daya",
+"type": "kabupaten",
+"lat": 3.791111111,
+"lon": 95.916666666,
+"bps": "11.12"
+},
+{
+"qid": "Q5778",
+"label": "Aceh Barat",
+"type": "kabupaten",
+"lat": 4.45,
+"lon": 96.183333333,
+"bps": "11.05"
+},
+{
+"qid": "Q5797",
+"label": "Batu Bara",
+"type": "kabupaten",
+"lat": 3.16166,
+"lon": 99.52652,
+"bps": "12.19"
+},
+{
+"qid": "Q5800",
+"label": "Tapanuli Tengah",
+"type": "kabupaten",
+"lat": 1.9,
+"lon": 98.66667,
+"bps": "12.01"
+},
+{
+"qid": "Q5801",
+"label": "Dairi",
+"type": "kabupaten",
+"lat": 2.86667,
+"lon": 98.23333,
+"bps": "12.11"
+},
+{
+"qid": "Q5804",
+"label": "Deli Serdang",
+"type": "kabupaten",
+"lat": 3.55,
+"lon": 98.85,
+"bps": "12.07"
+},
+{
+"qid": "Q5808",
+"label": "Humbang Hasundutan",
+"type": "kabupaten",
+"lat": 2.26551,
+"lon": 98.50376,
+"bps": "12.16"
+},
+{
+"qid": "Q5810",
+"label": "Karo",
+"type": "kabupaten",
+"lat": 3.11667,
+"lon": 98.3,
+"bps": "12.06"
+},
+{
+"qid": "Q5814",
+"label": "Labuhanbatu",
+"type": "kabupaten",
+"lat": 2.26667,
+"lon": 100.1,
+"bps": "12.10"
+},
+{
+"qid": "Q5833",
+"label": "Langkat",
+"type": "kabupaten",
+"lat": 3.766666666,
+"lon": 98.216666666,
+"bps": "12.05"
+},
+{
+"qid": "Q5837",
+"label": "Mandailing Natal",
+"type": "kabupaten",
+"lat": 0.78378,
+"lon": 99.25495,
+"bps": "12.13"
+},
+{
+"qid": "Q5841",
+"label": "Nias",
+"type": "kabupaten",
+"lat": 1.03333,
+"lon": 97.76667,
+"bps": "12.04"
+},
+{
+"qid": "Q5842",
+"label": "Labuhanbatu Utara",
+"type": "kabupaten",
+"lat": 2.333333333,
+"lon": 99.6375,
+"bps": "12.23"
+},
+{
+"qid": "Q5853",
+"label": "Nias Utara",
+"type": "kabupaten",
+"lat": 1.3875,
+"lon": 97.36,
+"bps": "12.24"
+},
+{
+"qid": "Q5857",
+"label": "Padang Lawas Utara",
+"type": "kabupaten",
+"lat": 1.46011,
+"lon": 99.67346,
+"bps": "12.20"
+},
+{
+"qid": "Q5863",
+"label": "Tapanuli Utara",
+"type": "kabupaten",
+"lat": 2.0028,
+"lon": 99.0707,
+"bps": "12.02"
+},
+{
+"qid": "Q5866",
+"label": "Padang Lawas",
+"type": "kabupaten",
+"lat": 1.126026,
+"lon": 99.813309,
+"bps": "12.21"
+},
+{
+"qid": "Q5872",
+"label": "Pakpak Bharat",
+"type": "kabupaten",
+"lat": 2.56667,
+"lon": 98.28333,
+"bps": "12.15"
+},
+{
+"qid": "Q5888",
+"label": "Samosir",
+"type": "kabupaten",
+"lat": 2.64025,
+"lon": 98.71525,
+"bps": "12.17"
+},
+{
+"qid": "Q5899",
+"label": "Serdang Bedagai",
+"type": "kabupaten",
+"lat": 3.36667,
+"lon": 99.03333,
+"bps": "12.18"
+},
+{
+"qid": "Q5903",
+"label": "Simalungun",
+"type": "kabupaten",
+"lat": 2.9,
+"lon": 99.0,
+"bps": "12.08"
+},
+{
+"qid": "Q5905",
+"label": "Labuhanbatu Selatan",
+"type": "kabupaten",
+"lat": 1.982777777,
+"lon": 100.0975,
+"bps": "12.22"
+},
+{
+"qid": "Q5909",
+"label": "Nias Barat",
+"type": "kabupaten",
+"lat": 1.05966,
+"lon": 97.58606,
+"bps": "12.25"
+},
+{
+"qid": "Q5911",
+"label": "Toba",
+"type": "kabupaten",
+"lat": 2.39793,
+"lon": 99.21678,
+"bps": "12.12"
+},
+{
+"qid": "Q5914",
+"label": "Tapanuli Selatan",
+"type": "kabupaten",
+"lat": 1.517652,
+"lon": 99.30107,
+"bps": "12.03"
+},
+{
+"qid": "Q5918",
+"label": "Nias Selatan",
+"type": "kabupaten",
+"lat": 0.583352913,
+"lon": 97.77766689,
+"bps": "12.14"
+},
+{
+"qid": "Q6019",
+"label": "Agam",
+"type": "kabupaten",
+"lat": -0.266666666,
+"lon": 100.0,
+"bps": "13.06"
+},
+{
+"qid": "Q6024",
+"label": "Dharmasraya",
+"type": "kabupaten",
+"lat": -1.05,
+"lon": 101.367,
+"bps": "13.10"
+},
+{
+"qid": "Q6032",
+"label": "Lima Puluh Kota",
+"type": "kabupaten",
+"lat": -0.0168,
+"lon": 100.5872,
+"bps": "13.07"
+},
+{
+"qid": "Q6038",
+"label": "Kepulauan Mentawai",
+"type": "kabupaten",
+"lat": -2.183333333,
+"lon": 99.65,
+"bps": "13.09"
+},
+{
+"qid": "Q6042",
+"label": "Padang Pariaman",
+"type": "kabupaten",
+"lat": -0.6,
+"lon": 100.28333,
+"bps": "13.05"
+},
+{
+"qid": "Q6048",
+"label": "Pasaman",
+"type": "kabupaten",
+"lat": 0.166666666,
+"lon": 100.117,
+"bps": "13.08"
+},
+{
+"qid": "Q6055",
+"label": "Sijunjung",
+"type": "kabupaten",
+"lat": -0.700555555,
+"lon": 100.9775,
+"bps": "13.03"
+},
+{
+"qid": "Q6058",
+"label": "Solok",
+"type": "kabupaten",
+"lat": -0.96667,
+"lon": 100.81667,
+"bps": "13.02"
+},
+{
+"qid": "Q6065",
+"label": "Pesisir Selatan",
+"type": "kabupaten",
+"lat": -1.35,
+"lon": 100.567,
+"bps": "13.01"
+},
+{
+"qid": "Q6083",
+"label": "Solok Selatan",
+"type": "kabupaten",
+"lat": -1.233330555,
+"lon": 101.417,
+"bps": "13.11"
+},
+{
+"qid": "Q6093",
+"label": "Tanah Datar",
+"type": "kabupaten",
+"lat": -0.45,
+"lon": 100.583,
+"bps": "13.04"
+},
+{
+"qid": "Q6103",
+"label": "Pasaman Barat",
+"type": "kabupaten",
+"lat": 0.28152,
+"lon": 99.51965,
+"bps": "13.12"
+},
+{
+"qid": "Q7370",
+"label": "Batang Hari",
+"type": "kabupaten",
+"lat": -1.7137948,
+"lon": 103.2616673,
+"bps": "15.04"
+},
+{
+"qid": "Q7373",
+"label": "Bungo",
+"type": "kabupaten",
+"lat": -1.5160595,
+"lon": 102.1187566,
+"bps": "15.08"
+},
+{
+"qid": "Q7376",
+"label": "Kerinci",
+"type": "kabupaten",
+"lat": -1.936083333,
+"lon": 101.342527777,
+"bps": "15.01"
+},
+{
+"qid": "Q7379",
+"label": "Merangin",
+"type": "kabupaten",
+"lat": -2.069166666,
+"lon": 102.132777777,
+"bps": "15.02"
+},
+{
+"qid": "Q7381",
+"label": "Muaro Jambi",
+"type": "kabupaten",
+"lat": -1.4495102,
+"lon": 103.5160995,
+"bps": "15.05"
+},
+{
+"qid": "Q7383",
+"label": "Sarolangun",
+"type": "kabupaten",
+"lat": -2.3,
+"lon": 102.65,
+"bps": "15.03"
+},
+{
+"qid": "Q7384",
+"label": "Tanjung Jabung Timur",
+"type": "kabupaten",
+"lat": -1.13198,
+"lon": 103.61755,
+"bps": "15.07"
+},
+{
+"qid": "Q3125978",
+"label": "Bali",
+"type": "provinsi di Indonesia",
+"lat": -8.5,
+"lon": 115.0,
+"bps": "51"
+},
+{
+"qid": "Q12486766",
+"label": "Papua Tengah",
+"type": "provinsi di Indonesia",
+"lat": -4.0,
+"lon": 136.0,
+"bps": "94"
+},
+{
+"qid": "Q61439296",
+"label": "Papua Selatan",
+"type": "provinsi di Indonesia",
+"lat": -6.5,
+"lon": 139.5,
+"bps": "93"
+},
+{
+"qid": "Q112810104",
+"label": "Papua Pegunungan",
+"type": "provinsi di Indonesia",
+"lat": -4.0,
+"lon": 139.5,
+"bps": "95"
+},
+{
+"qid": "Q115253263",
+"label": "Papua Barat Daya",
+"type": "provinsi di Indonesia",
+"lat": -0.86,
+"lon": 131.39,
+"bps": "96"
+}
+]

@@ -1,0 +1,492 @@
+{
+ "Aceh|Banda Aceh, Aceh Barat, Aceh Barat Daya, Nagan Raya, Aceh Tengah, Bireuen, Langsa, Lhokseumawe, Aceh Tenggara": {
+  "lat": 5.570277777,
+  "lon": 95.340777777,
+  "tingkat": "provinsi",
+  "alasan": "multi kab/kota, ditempatkan di centroid provinsi: “Banda Aceh, Aceh Barat, Aceh Barat Daya, Nagan Raya, Aceh Tengah, Bireuen, Langsa, Lhokseumawe, Aceh Tenggara”",
+  "sumber": "wikidata:Q1823 (Aceh)"
+ },
+ "Banten|Kabupaten Lebak": {
+  "lat": -6.65,
+  "lon": 106.21667,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10119 (Lebak)"
+ },
+ "Banten|Kabupaten Pandeglang": {
+  "lat": -6.309166666,
+  "lon": 106.104722222,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10121 (Pandeglang)"
+ },
+ "Banten|Kabupaten Serang": {
+  "lat": -6.15,
+  "lon": 106.0,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10122 (Serang)"
+ },
+ "Banten|Kota Cilegon": {
+  "lat": -6.016666666,
+  "lon": 106.016666666,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10124 (Cilegon)"
+ },
+ "Banten|Kota Cilegon 2, Pandeglang 2, Kab. Tangerang 2, Provinsi 1": {
+  "lat": -6.5,
+  "lon": 106.25,
+  "tingkat": "provinsi",
+  "alasan": "multi kab/kota, ditempatkan di centroid provinsi: “Kota Cilegon 2, Pandeglang 2, Kab. Tangerang 2, Provinsi 1”",
+  "sumber": "wikidata:Q3540 (Banten)"
+ },
+ "Banten|Kota Tangerang": {
+  "lat": -6.170277777,
+  "lon": 106.640277777,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10127 (Tangerang)"
+ },
+ "Bengkulu|Lebong": {
+  "lat": -3.24278,
+  "lon": 102.3349,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q8031 (Lebong)"
+ },
+ "Bengkulu|Rejang Lebong": {
+  "lat": -3.433333333,
+  "lon": 102.716666666,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q8035 (Rejang Lebong)"
+ },
+ "DI Yogyakarta|Kabupaten Bantul": {
+  "lat": -7.884611,
+  "lon": 110.334111,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11477 (Bantul)"
+ },
+ "DI Yogyakarta|Kabupaten Sleman": {
+  "lat": -7.68167,
+  "lon": 110.32333,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11480 (Sleman)"
+ },
+ "DI Yogyakarta|Kota Yogyakarta": {
+  "lat": -7.800456766,
+  "lon": 110.391280229,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q7568 (Yogyakarta)"
+ },
+ "DI Yogyakarta|Kulon Progo": {
+  "lat": -7.8596,
+  "lon": 110.1579,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11479 (Kulon Progo)"
+ },
+ "DKI Jakarta|DKI Jakarta": {
+  "lat": -6.175277777,
+  "lon": 106.826944444,
+  "tingkat": "provinsi",
+  "alasan": "kab_kota sama dengan provinsi",
+  "sumber": "wikidata:Q3630 (Jakarta)"
+ },
+ "DKI Jakarta|Jakarta Utara": {
+  "lat": -6.1385,
+  "lon": 106.8637,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "manual: id.wikipedia.org/wiki/Jakarta_Utara (koordinat infobox)"
+ },
+ "Jawa Barat|ASN: Cianjur 1, Kota Tasikmalaya 1; kades: Ciamis 3, Indramayu 1, Kuningan 1": {
+  "lat": -6.75,
+  "lon": 107.5,
+  "tingkat": "provinsi",
+  "alasan": "multi kab/kota, ditempatkan di centroid provinsi: “ASN: Cianjur 1, Kota Tasikmalaya 1; kades: Ciamis 3, Indramayu 1, Kuningan 1”",
+  "sumber": "wikidata:Q3724 (Jawa Barat)"
+ },
+ "Jawa Barat|Ciamis 3, Cianjur 3, Subang 1, Indramayu 1, Karawang 1, Majalengka 1": {
+  "lat": -6.75,
+  "lon": 107.5,
+  "tingkat": "provinsi",
+  "alasan": "multi kab/kota, ditempatkan di centroid provinsi: “Ciamis 3, Cianjur 3, Subang 1, Indramayu 1, Karawang 1, Majalengka 1”",
+  "sumber": "wikidata:Q3724 (Jawa Barat)"
+ },
+ "Jawa Barat|Cianjur": {
+  "lat": -6.821222211,
+  "lon": 107.140101112,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10367 (Cianjur)"
+ },
+ "Jawa Barat|Garut": {
+  "lat": -7.204694066,
+  "lon": 107.887589935,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10371 (Garut)"
+ },
+ "Jawa Barat|Kabupaten Bandung": {
+  "lat": -7.021935402,
+  "lon": 107.528074678,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10332 (Bandung)"
+ },
+ "Jawa Barat|Kabupaten Bandung Barat": {
+  "lat": -6.841117137,
+  "lon": 107.512583203,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10388 (Bandung Barat)"
+ },
+ "Jawa Barat|Kabupaten Ciamis": {
+  "lat": -7.326664181,
+  "lon": 108.353107319,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10365 (Ciamis)"
+ },
+ "Jawa Barat|Kabupaten Cirebon": {
+  "lat": -6.7578369,
+  "lon": 108.4804624,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10368 (Cirebon)"
+ },
+ "Jawa Barat|Kabupaten Kuningan": {
+  "lat": -6.9766048,
+  "lon": 108.4849021,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10376 (Kuningan)"
+ },
+ "Jawa Barat|Kabupaten Majalengka": {
+  "lat": -6.8352731,
+  "lon": 108.2276548,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10377 (Majalengka)"
+ },
+ "Jawa Barat|Karawang": {
+  "lat": -6.3050853,
+  "lon": 107.3002579,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10375 (Karawang)"
+ },
+ "Jawa Barat|Kota Sukabumi": {
+  "lat": -6.9320004,
+  "lon": 106.9185638,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10397 (Sukabumi)"
+ },
+ "Jawa Barat|Sumedang": {
+  "lat": -6.85,
+  "lon": 107.916666666,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10382 (Sumedang)"
+ },
+ "Jawa Tengah|": {
+  "lat": -7.5,
+  "lon": 110.0,
+  "tingkat": "provinsi",
+  "alasan": "kab_kota kosong: agregat provinsi",
+  "sumber": "wikidata:Q3557 (Jawa Tengah)"
+ },
+ "Jawa Tengah|Batang, Kendal, Blora, Cilacap, Kebumen, Klaten, Purworejo, Kab. Tegal, Temanggung, Kota Semarang, Kota Salatiga": {
+  "lat": -7.5,
+  "lon": 110.0,
+  "tingkat": "provinsi",
+  "alasan": "multi kab/kota, ditempatkan di centroid provinsi: “Batang, Kendal, Blora, Cilacap, Kebumen, Klaten, Purworejo, Kab. Tegal, Temanggung, Kota Semarang, Kota Salatiga”",
+  "sumber": "wikidata:Q3557 (Jawa Tengah)"
+ },
+ "Jawa Tengah|Kabupaten Banyumas": {
+  "lat": -7.425,
+  "lon": 109.23,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10605 (Banyumas)"
+ },
+ "Jawa Tengah|Kabupaten Blora": {
+  "lat": -7.06667,
+  "lon": 111.38333,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10608 (Blora)"
+ },
+ "Jawa Tengah|Kabupaten Boyolali": {
+  "lat": -7.532222222,
+  "lon": 110.6025,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10609 (Boyolali)"
+ },
+ "Jawa Tengah|Kabupaten Kudus": {
+  "lat": -6.8,
+  "lon": 110.866666666,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10620 (Kudus)"
+ },
+ "Jawa Tengah|Kabupaten Pati": {
+  "lat": -6.76667,
+  "lon": 111.1,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10622 (Pati)"
+ },
+ "Jawa Tengah|Kabupaten Pekalongan": {
+  "lat": -6.8825,
+  "lon": 109.67,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10623 (Pekalongan)"
+ },
+ "Jawa Tengah|Kabupaten Pemalang": {
+  "lat": -7.033333333,
+  "lon": 109.4,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10624 (Pemalang)"
+ },
+ "Jawa Tengah|Kabupaten Purbalingga": {
+  "lat": -7.28333333,
+  "lon": 109.35,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10625 (Purbalingga)"
+ },
+ "Jawa Tengah|Kabupaten Semarang": {
+  "lat": -7.265555555,
+  "lon": 110.335833333,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10687 (Semarang)"
+ },
+ "Jawa Tengah|Karanganyar": {
+  "lat": -7.596111111,
+  "lon": 110.950833333,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10616 (Karanganyar)"
+ },
+ "Jawa Tengah|Kendal": {
+  "lat": -7.0256,
+  "lon": 110.1685,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10618 (Kendal)"
+ },
+ "Jawa Tengah|Kota Semarang": {
+  "lat": -6.99,
+  "lon": 110.4225,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11025 (Semarang)"
+ },
+ "Jawa Tengah|Sragen": {
+  "lat": -7.41278,
+  "lon": 110.935,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10688 (Sragen)"
+ },
+ "Jawa Timur|": {
+  "lat": -7.7,
+  "lon": 112.5,
+  "tingkat": "provinsi",
+  "alasan": "kab_kota kosong: agregat provinsi",
+  "sumber": "wikidata:Q3586 (Jawa Timur)"
+ },
+ "Jawa Timur|Kabupaten Bojonegoro": {
+  "lat": -7.275,
+  "lon": 111.795,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11071 (Bojonegoro)"
+ },
+ "Jawa Timur|Kabupaten Jember": {
+  "lat": -8.168888888,
+  "lon": 113.702222222,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11080 (Jember)"
+ },
+ "Jawa Timur|Kabupaten Kediri": {
+  "lat": -7.83333,
+  "lon": 112.16667,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11084 (Kediri)"
+ },
+ "Jawa Timur|Kabupaten Malang": {
+  "lat": -7.9797,
+  "lon": 112.6304,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11095 (Malang)"
+ },
+ "Jawa Timur|Kabupaten Mojokerto": {
+  "lat": -7.55,
+  "lon": 112.5,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11096 (Mojokerto)"
+ },
+ "Jawa Timur|Kabupaten Pacitan": {
+  "lat": -8.13333,
+  "lon": 111.16667,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11111 (Pacitan)"
+ },
+ "Jawa Timur|Kabupaten Ponorogo": {
+  "lat": -7.868611111,
+  "lon": 111.461944444,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11118 (Ponorogo)"
+ },
+ "Jawa Timur|Kabupaten Probolinggo": {
+  "lat": -7.73527778,
+  "lon": 113.47166667,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11121 (Probolinggo)"
+ },
+ "Jawa Timur|Kabupaten Sidoarjo": {
+  "lat": -7.453028,
+  "lon": 112.717333,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11129 (Sidoarjo)"
+ },
+ "Jawa Timur|Kabupaten Situbondo": {
+  "lat": -7.71667,
+  "lon": 114.05,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11134 (Situbondo)"
+ },
+ "Jawa Timur|Kabupaten Sumenep": {
+  "lat": -7.016666666,
+  "lon": 113.866666666,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11137 (Sumenep)"
+ },
+ "Jawa Timur|Kabupaten Tuban": {
+  "lat": -6.88333,
+  "lon": 112.05,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11141 (Tuban)"
+ },
+ "Jawa Timur|Kabupaten Tulungagung": {
+  "lat": -8.066666666,
+  "lon": 111.9,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11143 (Tulungagung)"
+ },
+ "Jawa Timur|Kota Surabaya": {
+  "lat": -7.246283611,
+  "lon": 112.737767222,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11462 (Surabaya)"
+ },
+ "Kalimantan Tengah|": {
+  "lat": -2.216666666,
+  "lon": 113.916666666,
+  "tingkat": "provinsi",
+  "alasan": "kab_kota kosong: agregat provinsi",
+  "sumber": "wikidata:Q3891 (Kalimantan Tengah)"
+ },
+ "Lampung|": {
+  "lat": -5.440833333,
+  "lon": 105.258333333,
+  "tingkat": "provinsi",
+  "alasan": "kab_kota kosong: agregat provinsi",
+  "sumber": "wikidata:Q2110 (Lampung)"
+ },
+ "Maluku Utara|Halmahera Selatan": {
+  "lat": -0.3955,
+  "lon": 127.90833,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q19148 (Halmahera Selatan)"
+ },
+ "Nusa Tenggara Timur|Flores Timur": {
+  "lat": -8.341208303,
+  "lon": 122.988115175,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q14136 (Flores Timur)"
+ },
+ "Nusa Tenggara Timur|Kota Kupang": {
+  "lat": -10.163333333,
+  "lon": 123.577777777,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q14155 (Kupang)"
+ },
+ "Papua|Kota Jayapura": {
+  "lat": -2.5425,
+  "lon": 140.704478888,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q27860 (Jayapura)"
+ },
+ "Sulawesi Selatan|Bantaeng": {
+  "lat": -5.53333,
+  "lon": 119.933,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q14590 (Bantaeng)"
+ },
+ "Sumatera Barat|Tanah Datar": {
+  "lat": -0.45,
+  "lon": 100.583,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q6093 (Tanah Datar)"
+ },
+ "Sumatera Selatan|7 kabupaten/kota": {
+  "lat": -2.75,
+  "lon": 103.833333333,
+  "tingkat": "provinsi",
+  "alasan": "multi kab/kota, ditempatkan di centroid provinsi: “7 kabupaten/kota”",
+  "sumber": "wikidata:Q2271 (Sumatera Selatan)"
+ },
+ "Sumatera Utara|": {
+  "lat": 2.0,
+  "lon": 99.0,
+  "tingkat": "provinsi",
+  "alasan": "kab_kota kosong: agregat provinsi",
+  "sumber": "wikidata:Q2140 (Sumatera Utara)"
+ },
+ "Sumatera Utara|Kabupaten Nias Selatan": {
+  "lat": 0.583352913,
+  "lon": 97.77766689,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q5918 (Nias Selatan)"
+ },
+ "Sumatera Utara|Kota Pematang Siantar": {
+  "lat": 2.96,
+  "lon": 99.06,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q5979 (Pematang Siantar)"
+ }
+}

@@ -1,0 +1,37 @@
+[
+ {
+  "provinsi": null,
+  "kab_kota": null,
+  "alasan": "baris nasional: tidak dipetakan"
+ },
+ {
+  "provinsi": "Aceh",
+  "kab_kota": "Banda Aceh, Aceh Barat, Aceh Barat Daya, Nagan Raya, Aceh Tengah, Bireuen, Langsa, Lhokseumawe, Aceh Tenggara",
+  "alasan": "beberapa kab/kota dalam satu sel; hanya centroid provinsi"
+ },
+ {
+  "provinsi": "Banten",
+  "kab_kota": "Kota Cilegon 2, Pandeglang 2, Kab. Tangerang 2, Provinsi 1",
+  "alasan": "beberapa kab/kota dalam satu sel; hanya centroid provinsi"
+ },
+ {
+  "provinsi": "Jawa Barat",
+  "kab_kota": "ASN: Cianjur 1, Kota Tasikmalaya 1; kades: Ciamis 3, Indramayu 1, Kuningan 1",
+  "alasan": "beberapa kab/kota dalam satu sel; hanya centroid provinsi"
+ },
+ {
+  "provinsi": "Jawa Barat",
+  "kab_kota": "Ciamis 3, Cianjur 3, Subang 1, Indramayu 1, Karawang 1, Majalengka 1",
+  "alasan": "beberapa kab/kota dalam satu sel; hanya centroid provinsi"
+ },
+ {
+  "provinsi": "Jawa Tengah",
+  "kab_kota": "Batang, Kendal, Blora, Cilacap, Kebumen, Klaten, Purworejo, Kab. Tegal, Temanggung, Kota Semarang, Kota Salatiga",
+  "alasan": "beberapa kab/kota dalam satu sel; hanya centroid provinsi"
+ },
+ {
+  "provinsi": "Sumatera Selatan",
+  "kab_kota": "7 kabupaten/kota",
+  "alasan": "beberapa kab/kota dalam satu sel; hanya centroid provinsi"
+ }
+]
