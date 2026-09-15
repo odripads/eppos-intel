@@ -1,0 +1,394 @@
+{
+ "paths": [
+  {
+   "path_index": 0,
+   "provinsi_wikidata": [
+    "Papua",
+    "Papua Selatan",
+    "Papua Pegunungan"
+   ],
+   "qid": [
+    "Q5095",
+    "Q61439296",
+    "Q112810104"
+   ],
+   "x": 993.8,
+   "y": 210.3
+  },
+  {
+   "path_index": 1,
+   "provinsi_wikidata": [
+    "Nusa Tenggara Barat"
+   ],
+   "qid": [
+    "Q5062"
+   ],
+   "x": 456.7,
+   "y": 342.3
+  },
+  {
+   "path_index": 2,
+   "provinsi_wikidata": [
+    "Gorontalo"
+   ],
+   "qid": [
+    "Q5067"
+   ],
+   "x": 607.0,
+   "y": 140.4
+  },
+  {
+   "path_index": 3,
+   "provinsi_wikidata": [
+    "Sulawesi Tenggara"
+   ],
+   "qid": [
+    "Q5075"
+   ],
+   "x": 596.1,
+   "y": 241.2
+  },
+  {
+   "path_index": 4,
+   "provinsi_wikidata": [
+    "Yogyakarta"
+   ],
+   "qid": [
+    "Q3741"
+   ],
+   "x": 331.2,
+   "y": 325.3
+  },
+  {
+   "path_index": 5,
+   "provinsi_wikidata": [
+    "Jawa Tengah"
+   ],
+   "qid": [
+    "Q3557"
+   ],
+   "x": 323.2,
+   "y": 318.7
+  },
+  {
+   "path_index": 6,
+   "provinsi_wikidata": [
+    "Banten"
+   ],
+   "qid": [
+    "Q3540"
+   ],
+   "x": 241.3,
+   "y": 296.9
+  },
+  {
+   "path_index": 7,
+   "provinsi_wikidata": [
+    "Jawa Timur"
+   ],
+   "qid": [
+    "Q3586"
+   ],
+   "x": 377.8,
+   "y": 323.1
+  },
+  {
+   "path_index": 8,
+   "provinsi_wikidata": [
+    "Maluku Utara"
+   ],
+   "qid": [
+    "Q5094"
+   ],
+   "x": 702.3,
+   "y": 137.9
+  },
+  {
+   "path_index": 9,
+   "provinsi_wikidata": [
+    "Maluku"
+   ],
+   "qid": [
+    "Q5093"
+   ],
+   "x": 719.9,
+   "y": 235.8
+  },
+  {
+   "path_index": 10,
+   "provinsi_wikidata": [
+    "Kalimantan Selatan"
+   ],
+   "qid": [
+    "Q3906"
+   ],
+   "x": 443.3,
+   "y": 209.5
+  },
+  {
+   "path_index": 11,
+   "provinsi_wikidata": [
+    "Kalimantan Barat"
+   ],
+   "qid": [
+    "Q3916"
+   ],
+   "x": 334.1,
+   "y": 155.0
+  },
+  {
+   "path_index": 12,
+   "provinsi_wikidata": [
+    "Sulawesi Selatan",
+    "Sulawesi Barat"
+   ],
+   "qid": [
+    "Q5078",
+    "Q5082"
+   ],
+   "x": 541.5,
+   "y": 236.8
+  },
+  {
+   "path_index": 13,
+   "provinsi_wikidata": [
+    "Jakarta"
+   ],
+   "qid": [
+    "Q3630"
+   ],
+   "x": 253.9,
+   "y": 289.8
+  },
+  {
+   "path_index": 14,
+   "provinsi_wikidata": [
+    "Jawa Barat"
+   ],
+   "qid": [
+    "Q3724"
+   ],
+   "x": 268.6,
+   "y": 302.3
+  },
+  {
+   "path_index": 15,
+   "provinsi_wikidata": [
+    "Papua Tengah"
+   ],
+   "qid": [
+    "Q12486766"
+   ],
+   "x": 890.8,
+   "y": 242.3
+  },
+  {
+   "path_index": 16,
+   "provinsi_wikidata": [
+    "Nusa Tenggara Timur"
+   ],
+   "qid": [
+    "Q5061"
+   ],
+   "x": 619.8,
+   "y": 377.3
+  },
+  {
+   "path_index": 17,
+   "provinsi_wikidata": [
+    "Bali"
+   ],
+   "qid": [
+    "Q3125978"
+   ],
+   "x": 432.4,
+   "y": 340.5
+  },
+  {
+   "path_index": 18,
+   "provinsi_wikidata": [
+    "Riau"
+   ],
+   "qid": [
+    "Q2175"
+   ],
+   "x": 136.6,
+   "y": 143.2
+  },
+  {
+   "path_index": 19,
+   "provinsi_wikidata": [
+    "Sulawesi Tengah"
+   ],
+   "qid": [
+    "Q5065"
+   ],
+   "x": 557.9,
+   "y": 185.5
+  },
+  {
+   "path_index": 20,
+   "provinsi_wikidata": [
+    "Kalimantan Timur",
+    "Kalimantan Utara"
+   ],
+   "qid": [
+    "Q3899",
+    "Q3903"
+   ],
+   "x": 461.1,
+   "y": 132.0
+  },
+  {
+   "path_index": 21,
+   "provinsi_wikidata": [
+    "Sulawesi Utara"
+   ],
+   "qid": [
+    "Q5068"
+   ],
+   "x": 647.0,
+   "y": 127.7
+  },
+  {
+   "path_index": 22,
+   "provinsi_wikidata": [
+    "Papua Barat",
+    "Papua Barat Daya"
+   ],
+   "qid": [
+    "Q5096",
+    "Q115253263"
+   ],
+   "x": 840.0,
+   "y": 194.3
+  },
+  {
+   "path_index": 23,
+   "provinsi_wikidata": [
+    "Sumatera Utara"
+   ],
+   "qid": [
+    "Q2140"
+   ],
+   "x": 83.1,
+   "y": 111.3
+  },
+  {
+   "path_index": 24,
+   "provinsi_wikidata": [
+    "Kepulauan Bangka Belitung"
+   ],
+   "qid": [
+    "Q1866"
+   ],
+   "x": 238.1,
+   "y": 200.8
+  },
+  {
+   "path_index": 25,
+   "provinsi_wikidata": [
+    "Sumatera Barat"
+   ],
+   "qid": [
+    "Q2772"
+   ],
+   "x": 115.8,
+   "y": 176.8
+  },
+  {
+   "path_index": 26,
+   "provinsi_wikidata": [
+    "Kalimantan Tengah"
+   ],
+   "qid": [
+    "Q3891"
+   ],
+   "x": 408.7,
+   "y": 203.4
+  },
+  {
+   "path_index": 27,
+   "provinsi_wikidata": [
+    "Sumatera Selatan"
+   ],
+   "qid": [
+    "Q2271"
+   ],
+   "x": 188.6,
+   "y": 215.0
+  },
+  {
+   "path_index": 28,
+   "provinsi_wikidata": [
+    "Jambi"
+   ],
+   "qid": [
+    "Q2051"
+   ],
+   "x": 183.1,
+   "y": 190.0
+  },
+  {
+   "path_index": 29,
+   "provinsi_wikidata": [
+    "Lampung"
+   ],
+   "qid": [
+    "Q2110"
+   ],
+   "x": 219.7,
+   "y": 273.7
+  },
+  {
+   "path_index": 30,
+   "provinsi_wikidata": [
+    "Bengkulu"
+   ],
+   "qid": [
+    "Q1890"
+   ],
+   "x": 154.8,
+   "y": 238.4
+  },
+  {
+   "path_index": 31,
+   "provinsi_wikidata": [
+    "Aceh"
+   ],
+   "qid": [
+    "Q1823"
+   ],
+   "x": 3.2,
+   "y": 33.4
+  }
+ ],
+ "provinsi_data": {
+  "Aceh": 31,
+  "Banten": 6,
+  "Bengkulu": 30,
+  "DI Yogyakarta": 4,
+  "DKI Jakarta": 13,
+  "Jawa Barat": 14,
+  "Jawa Tengah": 5,
+  "Jawa Timur": 7,
+  "Kalimantan Tengah": 26,
+  "Lampung": 29,
+  "Maluku Utara": 8,
+  "Nusa Tenggara Timur": 16,
+  "Papua": 0,
+  "Sulawesi Selatan": 12,
+  "Sumatera Barat": 25,
+  "Sumatera Selatan": 27,
+  "Sumatera Utara": 23
+ },
+ "tidak_cocok_wikidata": [
+  {
+   "provinsi": "Kepulauan Riau",
+   "qid": "Q2223",
+   "alasan": "0 path memuat centroid"
+  }
+ ],
+ "tidak_cocok_data": [],
+ "catatan": "Peta mockup memakai pembagian 32 provinsi lama; provinsi hasil pemekaran setelahnya berbagi satu path."
+}
