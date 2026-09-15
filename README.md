@@ -1,21 +1,27 @@
 # EPPOS Electoral Intelligence — lapisan media
 
-Static site + versioned dataset for detecting executive (incumbent) intervention in Indonesian local
-elections. EPPOS GROUP, Dept. of Politics and Government, UGM. Cases: Kota Makassar (primary), Kota Kupang.
+Sensus insiden intimidasi dan paksaan oleh eksekutif petahana untuk keuntungan elektoral, se-Indonesia.
+EPPOS GROUP, Departemen Politik dan Pemerintahan UGM. Spesifikasi: `PROJECT-SPEC.md` (v2, 10 Sep 2026).
 
-- `index.html`, `metodologi.html`, `koreksi.html`, `assets/` — the site (GitHub Pages, no backend).
-- `data/` — the citable dataset release: JSON + CSV + `manifest.json` (version, fixture flag, hashes).
-- `pipeline/` — `validate_intake.py` (xlsx → reject rows without a source), `collect_wp.py` (WordPress JSON
-  + sitemap), `collect_wayback.py` (CDX for years no live site serves), `metrics.py` (personalization v0,
-  duplication, days-to-penetapan), `make_fixtures.py` (fake rows on `.example` domains), `regimes.py`.
-- `archive-recall/` — the recall test that gates the four-regime design.
+Insiden disajikan sebagai **dilaporkan media**, dengan tautan sumber, bukan sebagai temuan yang diadili.
 
-```bash
-pip install -r pipeline/requirements.txt
-python3 pipeline/validate_intake.py ../eppos-media-intake.xlsx      # before ingesting anything
-python3 pipeline/make_fixtures.py                                   # regenerate fixture data/
-python3 -m http.server 8765                                         # open http://127.0.0.1:8765
+## Alur data
+
+```
+eppos-media-intake.xlsx  ──(scripts/build_data.py)──►  data/*.json  ──(fetch)──►  index.html
+                          scripts/verify_titles.py  ──►  data/judul_terverifikasi.json (digabung saat build)
 ```
 
-Non-negotiables live in `../PROJECT-SPEC.md`. Real outlets carry only public facts; every invented
-number attaches to a `.example` domain; every row carries provenance; deletion is a finding.
+- Browser tidak pernah membaca xlsx. `data/` adalah rilis dataset berversi (`data/manifest.json`).
+- Baris tanpa tautan sumber ditolak saat build dan dicatat di `data/validasi.json`.
+- Koordinat: `data/koordinat.json`, kunci `"provinsi|kab_kota"`, centroid dari Wikidata (P625); yang tidak terpetakan ada di `data/koordinat_gagal.json`.
+- Judul berita: `judul_status = dari URL` sampai `verify_titles.py` mengambil `<title>` aslinya.
+
+## Perintah
+
+```bash
+python3 scripts/build_data.py            # xlsx → data/*.json
+python3 scripts/verify_titles.py         # ambil judul asli, sekali per URL
+```
+
+`legacy-v1/` menyimpan situs dan pipeline spek v1 (studi dua kota) untuk arsip. `design/eppos-mockup.html` adalah acuan desain.
