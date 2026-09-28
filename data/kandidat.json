@@ -14788,5 +14788,53 @@
   "ditemukan_pada": "2026-09-29",
   "status_tinjau": null,
   "catatan_tinjau": null
+ },
+ {
+  "kandidat_id": "KAN-00926",
+  "judul": "Kursi Kosong Terlalu Lama, Ada Apa di Balik Mutasi ASN Dompu?",
+  "outlet": "dompubicara.com",
+  "tanggal_terbit": "2026-03-28",
+  "url": "https://www.dompubicara.com/2026/03/kursi-kosong-terlalu-lama-ada-apa-di-balik-mutasi-asn-dompu/",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2026",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "dompubicara.com search='rekomendasi KASN' 2026-01-01..2026-09-29",
+  "ditemukan_pada": "2026-09-29",
+  "status_tinjau": null,
+  "catatan_tinjau": null
+ },
+ {
+  "kandidat_id": "KAN-00927",
+  "judul": "Langgar Kode Etik ASN, Rahman Bando: Apa Pun Keputusan, Saya Patuhi",
+  "outlet": "fajar.co.id",
+  "tanggal_terbit": "2020-06-17",
+  "url": "https://fajar.co.id/2020/06/17/langgar-kode-etik-asn-rahman-bando-apapun-keputusan-saya-patuhi/",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2020",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "fajar.co.id search='rekomendasi KASN' 2020-06-09..2021-01-09",
+  "ditemukan_pada": "2026-09-29",
+  "status_tinjau": null,
+  "catatan_tinjau": null
+ },
+ {
+  "kandidat_id": "KAN-00928",
+  "judul": "Rahman Bando Terbukti Langgar Kode Etik ASN, Ini Sanksinya",
+  "outlet": "fajar.co.id",
+  "tanggal_terbit": "2020-06-13",
+  "url": "https://fajar.co.id/2020/06/13/rahman-bando-terbukti-langgar-kode-etik-asn-ini-sanksinya/",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2020",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "fajar.co.id search='rekomendasi KASN' 2020-06-09..2021-01-09",
+  "ditemukan_pada": "2026-09-29",
+  "status_tinjau": null,
+  "catatan_tinjau": null
  }
 ]

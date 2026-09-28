@@ -260,6 +260,7 @@
     var h = '<div class="pnl-hd"><div><h3>' + esc(state.periode) + '</h3><p class="sub">' + esc(p.presiden_terpilih || "") + " · " + esc(p.gelombang_pilkada_di_dalamnya || "") + "</p></div></div>" +
       '<div class="note"><b>' + tot.ins + " insiden dilaporkan media</b> dan <b>" + tot.kas + " kasus administratif</b> di " + names.length +
       " wilayah. Kedua deret punya bias arah berbeda: liputan mengikuti kehadiran pers, kasus resmi mengikuti pengawasan yang berfungsi. Perbedaan keduanya adalah temuannya, bukan hitungan mentahnya.</div>" +
+      bandingGelombang() +
       '<p class="pick">Pilih provinsi — di peta atau dari daftar ini:</p><div class="plist">';
     names.forEach(function (n) {
       var s = st[n];
