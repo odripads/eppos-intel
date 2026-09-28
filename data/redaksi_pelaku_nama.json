@@ -1,0 +1,52 @@
+{
+ "aturan": "pelaku_nama hanya terbit pada baris dua sumber + masuk (PROJECT-SPEC v2)",
+ "dipertahankan": [
+  {
+   "insiden_id": "INS-2024-J009",
+   "status_verifikasi": "dua sumber",
+   "status_kurasi": "masuk"
+  },
+  {
+   "insiden_id": "INS-2024-J010",
+   "status_verifikasi": "dua sumber",
+   "status_kurasi": "masuk"
+  },
+  {
+   "insiden_id": "INS-2024-K005",
+   "status_verifikasi": "dua sumber",
+   "status_kurasi": "masuk"
+  },
+  {
+   "insiden_id": "INS-2024-K006",
+   "status_verifikasi": "dua sumber",
+   "status_kurasi": "masuk"
+  }
+ ],
+ "dikosongkan": [
+  {
+   "insiden_id": "INS-2024-T008",
+   "status_verifikasi": "dua sumber",
+   "status_kurasi": "ragu"
+  },
+  {
+   "insiden_id": "INS-2024-T009",
+   "status_verifikasi": "satu sumber",
+   "status_kurasi": "ragu"
+  },
+  {
+   "insiden_id": "INS-2024-T010",
+   "status_verifikasi": "satu sumber",
+   "status_kurasi": "ragu"
+  },
+  {
+   "insiden_id": "INS-2024-B007",
+   "status_verifikasi": "dua sumber",
+   "status_kurasi": "ragu"
+  },
+  {
+   "insiden_id": "INS-2024-T011",
+   "status_verifikasi": "satu sumber",
+   "status_kurasi": "keluar"
+  }
+ ]
+}

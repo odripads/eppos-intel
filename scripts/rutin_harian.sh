@@ -10,11 +10,16 @@ PY="$(command -v python3 || echo /opt/homebrew/bin/python3)"
 
 {
   echo "════════ $(date '+%Y-%m-%d %H:%M:%S') · rutin harian ($CELLS sel) ════════"
-  "$PY" scripts/crawl_candidates.py --cells "$CELLS" 2>&1
+  echo "── sapuan arsip outlet (WordPress REST, tanpa batas laju bersama)"
+  "$PY" scripts/crawl_outlets.py --cells 150 2>&1 | tail -6
+  echo "── sapuan Google News (dibatasi laju; pelan)"
+  "$PY" scripts/crawl_candidates.py --cells "$CELLS" 2>&1 | tail -6
   echo "── selesaikan URL kandidat (bertahap, endpoint Google membatasi laju)"
   "$PY" scripts/resolve_urls.py --max 25 --gap 8 2>&1 | tail -3
   echo "── verifikasi judul sumber baru"
   "$PY" scripts/verify_titles.py 2>&1 | tail -3
+  echo "── masukkan temuan otomatis ke lapisan peta"
+  "$PY" scripts/promote_candidates.py 2>&1 | tail -3
   echo "── bangun ulang data dari xlsx"
   "$PY" scripts/build_data.py 2>&1 | grep -E '"(insiden|kasus_resmi|koordinat|judul_terverifikasi)"' || true
   echo "── bangun ulang bundel situs"

@@ -23,6 +23,21 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 HEADER_ROW, HINT_ROW, FIRST_DATA_ROW = 2, 3, 4
 
+# PROJECT-SPEC v2: "pelaku_nama may be blank and usually should be. Only rows with `dua sumber` publish."
+# The JSON never carries pelaku_nama at all; this gate governs the workbook copy committed to the repo.
+def gate_pelaku_nama(rows):
+    """Return (redacted rows, report). A name survives only on dua sumber + masuk."""
+    out, redacted = [], []
+    for r in rows:
+        r = dict(r)
+        if r.get("pelaku_nama") and not (r.get("status_verifikasi") == "dua sumber" and r.get("status_kurasi") == "masuk"):
+            redacted.append({"insiden_id": r.get("insiden_id"), "status_verifikasi": r.get("status_verifikasi"),
+                             "status_kurasi": r.get("status_kurasi")})
+            r["pelaku_nama"] = None
+        out.append(r)
+    return out, redacted
+
+
 INSIDEN_COLS = ["insiden_id", "tanggal", "provinsi", "kab_kota", "pelaku_jabatan", "sasaran_jenis", "mekanisme",
                 "ringkasan_satu_kalimat", "hasil", "sumber_1_url", "sumber_1_outlet", "sumber_2_url", "status_verifikasi",
                 "status_kurasi", "periode_pilpres", "judul_sumber_1", "judul_status", "diisi_oleh", "tanggal_isi"]

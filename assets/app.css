@@ -212,3 +212,20 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
   text-decoration:none;background:var(--red);color:#fff;border:2.5px solid var(--navy);border-radius:999px;
   padding:6px 13px;box-shadow:2px 2px 0 var(--navy);white-space:nowrap}
 .pipeline a.cta:hover{transform:translate(-1px,-1px)}
+
+/* automated retrieval layer — visually separate from the curated census at every level */
+.prov.cat-otomatis{fill:#3a4a78;stroke:var(--gold);stroke-width:1.2;stroke-dasharray:3 2}
+.dot.oto{fill:var(--gold);fill-opacity:.9}
+.dot.oto.on{fill:#fff;fill-opacity:1}
+.sw.oto{background:var(--gold);width:0;height:0;border:none;border-left:6px solid transparent;
+  border-right:6px solid transparent;border-bottom:10px solid var(--gold);border-radius:0}
+.pcat.cat-otomatis{background:#3a4a78;color:var(--cream)}
+.pill.oto{color:var(--gold-deep,#8a6510);background:var(--gold-soft);border-style:dashed}
+:root[data-theme="dark"] .pill.oto,:root:not([data-theme="light"]) .pill.oto{color:var(--gold)}
+.rec.oto{border-left:4px solid var(--gold);padding-left:12px;background:color-mix(in srgb,var(--gold-soft) 28%,transparent);
+  border-radius:0 10px 10px 0;margin-bottom:6px}
+.grp.oto{color:var(--gold-deep,#8a6510)}
+:root[data-theme="dark"] .grp.oto,:root:not([data-theme="light"]) .grp.oto{color:var(--gold)}
+.note.oto-note{border-left-color:var(--gold);font-size:12px;margin-bottom:10px}
+.lyr i.oto{background:none;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;
+  border-bottom:10px solid var(--gold)}

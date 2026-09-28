@@ -6,7 +6,7 @@
   var S = 1000 / (LON_MAX - LON_MIN), OY = (420 - (LAT_MAX - LAT_MIN) * S) / 2;
   function project(lon, lat) { return [(lon - LON_MIN) * S, 420 - ((lat - LAT_MIN) * S + OY)]; }
 
-  var D = {}, state = { periode: null, prov: null };
+  var D = {}, state = { periode: null, prov: null, layers: { oto: true } };
   var $ = function (s) { return document.querySelector(s); };
   var all = function (s) { return Array.prototype.slice.call(document.querySelectorAll(s)); };
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]; }); };
@@ -21,6 +21,10 @@
     });
   }
   function kasusAktif() { return D.kasus_resmi.filter(function (r) { return r.periode_pilpres === state.periode; }); }
+  function otoAktif() {
+    if (!state.layers.oto) return [];
+    return (D.otomatis || []).filter(function (r) { return r.periode_pilpres === state.periode; });
+  }
 
   /* ---------- per-province tallies ----------
      Fill encodes which of the two series is present, never how many rows there are: a raw-count
@@ -28,16 +32,19 @@
   var NASIONAL = "(tingkat nasional)";
   function stats() {
     var m = {};
-    var touch = function (p) { return (m[p] = m[p] || { ins: 0, kas: 0, dua: 0, kab: {} }); };
+    var touch = function (p) { return (m[p] = m[p] || { ins: 0, kas: 0, oto: 0, dua: 0, kab: {} }); };
     insidenAktif().forEach(function (r) {
       var s = touch(r.provinsi || NASIONAL); s.ins++;
       if (r.status_verifikasi === "dua sumber") s.dua++;
       s.kab[r.kab_kota || "(tingkat provinsi)"] = 1;
     });
     kasusAktif().forEach(function (r) { touch(r.provinsi || NASIONAL).kas++; });
+    otoAktif().forEach(function (r) { touch(r.provinsi || NASIONAL).oto++; });
     Object.keys(m).forEach(function (p) {
       var s = m[p];
-      s.cat = s.ins && s.kas ? "keduanya" : s.ins ? "media" : s.kas ? "resmi" : "kosong";
+      // fill encodes the CURATED series only; automated retrieval gets its own shade so the
+      // two-series reading is never muddied by un-curated rows
+      s.cat = s.ins && s.kas ? "keduanya" : s.ins ? "media" : s.kas ? "resmi" : s.oto ? "otomatis" : "kosong";
     });
     return m;
   }
@@ -75,6 +82,18 @@
       });
     }
     plot(insidenAktif(), "ins"); plot(kasusAktif(), "kas");
+    otoAktif().forEach(function (r) {
+      var c = r.kab_kota ? D.koordinat[(r.provinsi || "") + "|" + r.kab_kota] : null;
+      if (!c) c = D.koordinat[(r.provinsi || "") + "|"] || null;
+      if (!c && r.provinsi) { for (var k in D.koordinat) { if (k.indexOf(r.provinsi + "|") === 0) { c = D.koordinat[k]; break; } } }
+      if (!c) return;
+      var p = project(c.lon, c.lat), id = r.insiden_id;
+      var a2 = hash(id) * Math.PI * 2, rad = 2.6 + hash(id + "r") * 3.2;
+      var x = p[0] + Math.cos(a2) * rad, y = p[1] + Math.sin(a2) * rad;
+      var on = state.prov && r.provinsi === state.prov ? " on" : "";
+      pts += '<path class="dot oto' + on + '" d="M' + x.toFixed(1) + " " + (y - 2.6).toFixed(1) +
+        "L" + (x + 2.4).toFixed(1) + " " + (y + 1.8).toFixed(1) + "L" + (x - 2.4).toFixed(1) + " " + (y + 1.8).toFixed(1) + 'Z"/>';
+    });
     $("#pts").innerHTML = pts;
     $("#plabels").innerHTML = labels;
     paths.forEach(function (el) {
@@ -94,6 +113,26 @@
   function verifPill(r) {
     var v = r.status_verifikasi; if (!v) return "";
     return '<span class="pill ' + (v === "dua sumber" ? "dua" : v === "satu sumber" ? "satu" : "dugaan") + '">' + esc(v) + "</span>";
+  }
+
+  function autoHtml(r) {
+    var h = '<article class="rec oto"><h3><a href="' + esc(r.sumber_1_url) + '" target="_blank" rel="noopener">' + esc(r.judul_sumber_1) + " \u2197</a></h3>";
+    h += '<div class="tags"><span class="pill oto">penelusuran otomatis \u00b7 belum dikurasi</span>' +
+      '<span class="pill ' + (r.status_verifikasi === "dua sumber" ? "dua" : "satu") + '">' + esc(r.status_verifikasi) + "</span>" +
+      '<span class="pill lbg">' + esc(r.sumber_1_outlet || "") + "</span></div>";
+    h += '<dl class="meta">';
+    h += "<dt>Wilayah</dt><dd>" + (r.kab_kota ? esc(r.kab_kota) : (r.provinsi ? esc(r.provinsi) : blank)) +
+      (r.lokasi_dasar ? ' <span class="muted small">(' + esc(r.lokasi_dasar) + ")</span>" : "") + "</dd>";
+    h += "<dt>Tanggal kejadian</dt><dd>" + blank + ' <span class="muted small">tidak diturunkan dari tanggal berita</span></dd>';
+    h += "<dt>Tanggal berita</dt><dd>" + (r.tanggal_berita ? esc(fmtDate(r.tanggal_berita)) : blank) + "</dd>";
+    h += "<dt>Mekanisme</dt><dd>" + val(r.mekanisme) + ' <span class="muted small">dari kelompok kata kunci</span></dd>';
+    h += "<dt>Pelaku</dt><dd>" + blank + "</dd><dt>Sasaran</dt><dd>" + blank + "</dd><dt>Hasil</dt><dd>" + blank + "</dd>";
+    h += "</dl>";
+    h += '<div class="srcs"><a href="' + esc(r.sumber_1_url) + '" target="_blank" rel="noopener">sumber 1 \u00b7 ' + esc(r.sumber_1_outlet || "") + "</a>";
+    if (r.sumber_2_url) h += '<a href="' + esc(r.sumber_2_url) + '" target="_blank" rel="noopener">sumber 2</a>';
+    h += "</div>";
+    h += '<div class="attrib">' + esc(r.diisi_oleh) + " \u00b7 " + esc(r.tanggal_isi) + "</div></article>";
+    return h;
   }
 
   function recordHtml(r) {
@@ -142,7 +181,7 @@
   function selectProv(name) {
     state.prov = name === NASIONAL ? null : name; paintMap();
     var match = function (r) { return name === NASIONAL ? !r.provinsi : r.provinsi === name; };
-    var ins = insidenAktif().filter(match), kas = kasusAktif().filter(match);
+    var ins = insidenAktif().filter(match), kas = kasusAktif().filter(match), oto = otoAktif().filter(match);
     var dua = ins.filter(function (r) { return r.status_verifikasi === "dua sumber"; }).length;
     var cat = ins.length && kas.length ? "Keduanya hadir: liputan media dan kasus administratif." :
       ins.length ? "Hanya liputan media, tanpa kasus administratif di deret ini — periksa kemungkinan kegagalan penegakan." :
@@ -151,8 +190,15 @@
       '<p class="sub">' + ins.length + " insiden · " + kas.length + " kasus resmi · " + dua + " berstatus dua sumber</p></div>" +
       '<button class="btn-x" id="pnl-back">← semua provinsi</button></div>' +
       '<div class="note div-' + (ins.length && kas.length ? "keduanya" : ins.length ? "media" : "resmi") + '">' + cat + "</div>";
-    if (ins.length) h += '<h4 class="grp">Insiden dilaporkan media</h4>' + group(ins);
-    if (kas.length) h += '<h4 class="grp">Kasus administratif</h4>' + group(kas);
+    if (ins.length) h += '<h4 class="grp">Insiden dilaporkan media \u00b7 dikurasi</h4>' + group(ins);
+    if (kas.length) h += '<h4 class="grp">Kasus administratif \u00b7 dikurasi</h4>' + group(kas);
+    if (oto.length) {
+      h += '<h4 class="grp oto">Penelusuran otomatis \u00b7 ' + oto.length + " temuan, belum dikurasi</h4>" +
+        '<div class="note oto-note">Ditemukan otomatis dari arsip outlet. Hanya judul, tautan, outlet, tanggal terbit dan ' +
+        "kelompok mekanisme yang diturunkan; tanggal kejadian, pelaku, sasaran dan hasil dibiarkan kosong karena tidak bisa " +
+        "disimpulkan dari judul. Belum melewati kurasi, jadi jangan dikutip sebagai temuan.</div>" +
+        oto.map(autoHtml).join("");
+    }
     if (!ins.length && !kas.length) h += '<div class="pnl-empty"><b>Tidak ada catatan</b><p>Belum ada baris untuk provinsi ini pada ' + esc(state.periode) + ".</p></div>";
     $("#pnl").innerHTML = '<div class="scrolly">' + h + "</div>";
     $("#pnl-back").onclick = function () { state.prov = null; paintMap(); provinceList(); };
@@ -190,8 +236,10 @@
     names.forEach(function (n) {
       var s = st[n];
       h += '<button class="prow" data-prov="' + esc(n) + '"><span class="pn">' + esc(n) + "</span>" +
-        '<span class="pc"><i class="sw ins"></i>' + s.ins + '<i class="sw kas"></i>' + s.kas + "</span>" +
-        '<span class="pcat cat-' + s.cat + '">' + (s.cat === "keduanya" ? "keduanya" : s.cat === "media" ? "hanya media" : "hanya resmi") + "</span></button>";
+        '<span class="pc"><i class="sw ins"></i>' + s.ins + '<i class="sw kas"></i>' + s.kas +
+        (s.oto ? '<i class="sw oto"></i>' + s.oto : "") + "</span>" +
+        '<span class="pcat cat-' + s.cat + '">' + (s.cat === "keduanya" ? "keduanya" : s.cat === "media" ? "hanya media" :
+          s.cat === "resmi" ? "hanya resmi" : "otomatis") + "</span></button>";
     });
     $("#pnl").innerHTML = h + "</div>";
     all(".prow").forEach(function (b) { b.onclick = function () { selectProv(b.dataset.prov); }; });
@@ -201,7 +249,8 @@
   function drawPeriods() {
     $("#periods").innerHTML = D.periode.map(function (p) {
       var n = D.insiden.filter(function (r) { return r.periode_pilpres === p.periode && (r.status_kurasi === "masuk" || r.status_kurasi === "ragu"); }).length +
-        D.kasus_resmi.filter(function (r) { return r.periode_pilpres === p.periode; }).length;
+        D.kasus_resmi.filter(function (r) { return r.periode_pilpres === p.periode; }).length +
+        (D.otomatis || []).filter(function (r) { return r.periode_pilpres === p.periode; }).length;
       return '<button class="ptab' + (n ? "" : " kosong") + '" role="tab" data-p="' + esc(p.periode) + '" aria-selected="' + (p.periode === state.periode) + '">' +
         "<b>" + esc(p.periode) + "</b><span>" + esc(String(p.mulai || "").slice(0, 4)) + "–" + esc(String(p.selesai || "").slice(0, 4)) +
         " · " + (n ? n + " catatan" : "belum dikumpulkan") + "</span></button>";
@@ -214,40 +263,41 @@
   function updateStats() {
     var ins = insidenAktif(), kas = kasusAktif(), provs = {};
     ins.concat(kas).forEach(function (r) { if (r.provinsi) provs[r.provinsi] = 1; });
+    var oto = otoAktif();
+    oto.forEach(function (r) { if (r.provinsi) provs[r.provinsi] = 1; });
     $("#stats").innerHTML =
       '<div class="stat"><b>' + ins.length + "</b><span>insiden</span></div>" +
       '<div class="stat"><b>' + kas.length + "</b><span>kasus resmi</span></div>" +
+      '<div class="stat"><b>' + oto.length + "</b><span>temuan otomatis</span></div>" +
       '<div class="stat"><b>' + Object.keys(provs).length + "</b><span>provinsi</span></div>";
   }
 
-  /* candidates are a queue, never map points: they appear only as a progress strip and a link */
+  /* retrieval progress: automated finds now go straight onto the map as their own layer */
   function pipeline() {
-    Promise.all([
-      fetch("data/kandidat.json").then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }),
-      fetch("data/crawl_state.json").then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
-    ]).then(function (a) {
-      var kand = a[0] || [], cs = a[1];
-      if (!kand.length && !cs) return;
-      var belum = kand.filter(function (k) { return !k.status_tinjau; }).length;
-      var done = cs && cs.done ? cs.done.length : 0, total = 2340;
-      var pct = Math.min(100, Math.round(done / total * 100));
-      var last = cs && cs.runs && cs.runs.length ? cs.runs[cs.runs.length - 1].tanggal : null;
-      $("#pipeline").hidden = false;
-      $("#pipeline").innerHTML =
-        "<span>Penelusuran berkelanjutan \u00b7 <b>" + belum + "</b> kandidat menunggu tinjauan</span>" +
-        '<span class="grow"><span class="track"><i style="width:' + pct + '%"></i></span></span>' +
-        '<span class="mono muted">' + done + "/" + total + " petak grid \u00b7 " + pct + "%" + (last ? " \u00b7 terakhir " + last : "") + "</span>" +
-        '<a class="cta" href="tinjau.html">buka antrean</a>';
-    });
+    fetch("data/crawl_state.json").then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
+      .then(function (cs) {
+        var oto = (D.otomatis || []).length;
+        if (!oto && !cs) return;
+        var done = cs && cs.done ? cs.done.length : 0;
+        var last = cs && cs.runs && cs.runs.length ? cs.runs[cs.runs.length - 1].tanggal : null;
+        var dua = (D.otomatis || []).filter(function (r) { return r.status_verifikasi === "dua sumber"; }).length;
+        $("#pipeline").hidden = false;
+        $("#pipeline").innerHTML =
+          "<span>Penelusuran berkelanjutan \u00b7 <b>" + oto + "</b> temuan otomatis di peta, <b>" + dua + "</b> terkuatkan dua outlet</span>" +
+          '<span class="grow"></span>' +
+          '<span class="mono muted">' + done + " kueri dijalankan" + (last ? " \u00b7 terakhir " + last : "") + "</span>" +
+          '<a class="cta" href="tinjau.html">antrean mentah</a>';
+      });
   }
 
   fetch("data/manifest.json").then(function (r) { return r.json(); }).then(function (m) {
     D.manifest = m;
-    return Promise.all(["periode", "insiden", "kasus_resmi", "koordinat", "provinsi_path"].map(function (n) {
+    return Promise.all(["periode", "insiden", "kasus_resmi", "koordinat", "provinsi_path", "insiden_otomatis"].map(function (n) {
       return fetch("data/" + n + ".json").then(function (r) { return r.json(); });
     }));
   }).then(function (a) {
     D.periode = a[0]; D.insiden = a[1]; D.kasus_resmi = a[2]; D.koordinat = a[3];
+    D.otomatis = a[5] || [];
     var pp = a[4];
     D.pathProv = {}; D.pathXY = {};
     pp.paths.forEach(function (L) { D.pathXY[L.path_index] = [L.x, L.y]; });

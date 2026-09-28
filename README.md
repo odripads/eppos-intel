@@ -47,3 +47,36 @@ Batas laju: Google News membatasi per IP. 25 petak/hari dengan jeda 12 detik ama
 dalam satu waktu akan diblokir sementara. Petak yang gagal tidak ditandai selesai, jadi diulang besok.
 
 Lokal: `python3 -m http.server 8765` di akar repo, lalu buka `http://localhost:8765/`.
+
+### Dua jalur penelusuran
+
+| Jalur | Sumber | Batas | Hasil |
+|---|---|---|---|
+| `crawl_outlets.py` | arsip WordPress tiap outlet (`scripts/outlet_wp.json`) | tidak ada kuota bersama | URL, tanggal, dan judul asli langsung |
+| `crawl_candidates.py` | Google News RSS | dibatasi per IP, ±25 kueri/hari | tautan perlu diselesaikan `resolve_urls.py` |
+
+Jalur arsip outlet jauh lebih produktif dan dijalankan lebih dulu. Jalur Google News tetap dipakai
+karena jangkauannya nasional, sedangkan registri outlet baru mencakup sebagian provinsi.
+
+### Redaksi `pelaku_nama`
+
+`scripts/redact_workbook.py` menjaga aturan spek sendiri: nama pelaku hanya terbit pada baris
+`dua sumber` **dan** `masuk`. Baris lain dikosongkan namanya di salinan repo; berkas kerja lengkap
+disimpan di luar repo (`~/Documents/EPPOS-master/`). Laporan: `data/redaksi_pelaku_nama.json`.
+Tidak ada kerugian analitis: `pelaku_nama` tidak pernah masuk ke `data/*.json`, peta, atau indeks mana pun.
+
+### Lapisan penelusuran otomatis
+
+`scripts/promote_candidates.py` mengubah antrean penelusuran menjadi `data/insiden_otomatis.json`,
+lapisan terpisah di peta (segitiga emas). Sensus yang dikurasi tangan di `insiden.json` tidak disentuh.
+
+Yang **diturunkan**: URL, domain outlet, judul asli (dari API outlet sendiri), tanggal terbit,
+mekanisme (dari kelompok kata kunci kueri), dan kab/kota bila namanya muncul harfiah di judul.
+Yang **dibiarkan kosong**: tanggal kejadian, pelaku, sasaran, ringkasan, hasil — tidak bisa
+disimpulkan dari judul, dan spek melarang mengisi nilai dengan tebakan.
+
+`status_verifikasi` dihitung, bukan diklaim: dua outlet berbeda yang memberitakan tempat dan mekanisme
+sama dalam 7 hari dihitung `dua sumber`; selebihnya `satu sumber`.
+
+Bila judul tidak menyebut tempat, titik jatuh ke centroid provinsi wilayah edar outlet dan ditandai
+`lokasi_dasar = "wilayah edar outlet"` supaya tidak terbaca sebagai insiden yang sudah terlokalisasi.

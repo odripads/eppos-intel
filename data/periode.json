@@ -5,7 +5,7 @@
   "selesai": "2009-07-08",
   "presiden_terpilih": "Susilo Bambang Yudhoyono",
   "gelombang_pilkada_di_dalamnya": "Pilkada langsung mulai 2005; gelombang tersebar",
-  "jumlah_baris_insiden": 0
+  "jumlah_baris_insiden": null
  },
  {
   "periode": "Periode II",
@@ -13,7 +13,7 @@
   "selesai": "2014-07-09",
   "presiden_terpilih": "Susilo Bambang Yudhoyono",
   "gelombang_pilkada_di_dalamnya": "gelombang tersebar, belum serentak",
-  "jumlah_baris_insiden": 0
+  "jumlah_baris_insiden": null
  },
  {
   "periode": "Periode III",
@@ -21,7 +21,7 @@
   "selesai": "2019-04-17",
   "presiden_terpilih": "Joko Widodo",
   "gelombang_pilkada_di_dalamnya": "Pilkada serentak 2015, 2017, 2018",
-  "jumlah_baris_insiden": 0
+  "jumlah_baris_insiden": null
  },
  {
   "periode": "Periode IV",
@@ -29,7 +29,7 @@
   "selesai": "2024-02-14",
   "presiden_terpilih": "Joko Widodo",
   "gelombang_pilkada_di_dalamnya": "Pilkada serentak 2020",
-  "jumlah_baris_insiden": 0
+  "jumlah_baris_insiden": null
  },
  {
   "periode": "Periode V",
@@ -37,6 +37,6 @@
   "selesai": 2029,
   "presiden_terpilih": "Prabowo Subianto",
   "gelombang_pilkada_di_dalamnya": "Pilkada serentak 2024",
-  "jumlah_baris_insiden": 44
+  "jumlah_baris_insiden": null
  }
 ]
