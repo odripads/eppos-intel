@@ -278,7 +278,7 @@
       .then(function (cs) {
         var oto = (D.otomatis || []).length;
         if (!oto && !cs) return;
-        var done = cs && cs.done ? cs.done.length : 0;
+        var done = cs ? (cs.n_done != null ? cs.n_done : (cs.done ? cs.done.length : 0)) : 0;
         var last = cs && cs.runs && cs.runs.length ? cs.runs[cs.runs.length - 1].tanggal : null;
         var dua = (D.otomatis || []).filter(function (r) { return r.status_verifikasi === "dua sumber"; }).length;
         $("#pipeline").hidden = false;

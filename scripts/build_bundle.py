@@ -8,6 +8,17 @@ html = (ROOT / "index.html").read_text()
 css = (ROOT / "assets/app.css").read_text()
 js = (ROOT / "assets/app.js").read_text()
 data = {n: json.loads((ROOT / "data" / f"{n}.json").read_text()) for n in ("manifest", "periode", "insiden", "kasus_resmi", "koordinat", "provinsi_path", "insiden_otomatis", "crawl_state")}
+
+# the single-file bundle carries only what the page renders. The full rows, including the query that
+# found each one, stay in data/*.json in the repo — the bundle is a viewer, not the dataset release.
+def trim_auto(rows):
+    keep = ("insiden_id", "provinsi", "kab_kota", "lokasi_dasar", "mekanisme", "tanggal_berita",
+            "sumber_1_url", "sumber_1_outlet", "sumber_2_url", "status_verifikasi", "periode_pilpres",
+            "judul_sumber_1", "judul_status", "diisi_oleh", "tanggal_isi")
+    return [{k: r.get(k) for k in keep if r.get(k) is not None} for r in rows]
+data["insiden_otomatis"] = trim_auto(data["insiden_otomatis"])
+data["crawl_state"] = {"done": [], "runs": data["crawl_state"].get("runs", [])[-3:],
+                       "n_done": len(data["crawl_state"].get("done", []))}
 def b64(p): return "data:image/png;base64," + base64.b64encode((ROOT / p).read_bytes()).decode()
 logo, logo_inv = b64("assets/logo.png"), b64("assets/logo-inverse.png")
 css = css.replace('url("logo-inverse.png")', f'url("{logo_inv}")').replace('url("logo.png")', f'url("{logo}")')
