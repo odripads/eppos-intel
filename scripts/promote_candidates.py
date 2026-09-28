@@ -163,7 +163,10 @@ def main():
 
     # periode from the wave the query targeted (waves sit wholly inside one presidential period)
     WAVE_PERIODE = {"2024": "Periode V", "2020": "Periode IV", "2018": "Periode III",
-                    "2017": "Periode III", "2015": "Periode III"}
+                    "2017": "Periode III", "2015": "Periode III", "2026": "Periode V", "2025": "Periode V",
+                    "2023": "Periode IV", "2022": "Periode IV", "2021": "Periode IV", "2019b": "Periode III",
+                    "2016": "Periode III", "kontrol-2024": "Periode IV", "kontrol-2020": "Periode IV",
+                    "kontrol-2018": "Periode IV", "kontrol-2017": "Periode III"}
     for r in rows: r["periode_pilpres"] = WAVE_PERIODE.get(r["gelombang_pilkada"])
 
     # corroboration: same place + mechanism, different outlet domains, within 7 days

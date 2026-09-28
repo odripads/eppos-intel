@@ -60,12 +60,33 @@ CARI = {
 }
 
 
-def wp_search(domain, q, after, before, n=100):
-    u = f"https://{domain}/wp-json/wp/v2/posts?" + urllib.parse.urlencode({
-        "search": q, "after": f"{after}T00:00:00", "before": f"{before}T23:59:59",
-        "per_page": n, "orderby": "date", "_fields": "link,date,title"})
-    r = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": UA}), timeout=15, context=CTX)
-    return json.loads(r.read())
+def _one_page(domain, q, after, before, n, page):
+    for path in ("/wp-json/wp/v2/posts?", "/?rest_route=/wp/v2/posts&"):
+        qs = urllib.parse.urlencode({"search": q, "after": f"{after}T00:00:00", "before": f"{before}T23:59:59",
+                                     "per_page": n, "page": page, "orderby": "date", "_fields": "link,date,title"})
+        try:
+            r = urllib.request.urlopen(urllib.request.Request(f"https://{domain}{path}{qs}",
+                                                              headers={"User-Agent": UA}), timeout=15, context=CTX)
+            j = json.loads(r.read())
+            if isinstance(j, list): return j
+        except Exception as e:
+            last = e
+    raise last
+
+
+def wp_search(domain, q, after, before, n=100, max_pages=5):
+    """Page through results. A cell that fills its page is truncated otherwise, so the busiest
+    outlet/query pairs — exactly the ones most likely to hold incidents — were being cut off."""
+    out = []
+    for page in range(1, max_pages + 1):
+        try:
+            j = _one_page(domain, q, after, before, n, page)
+        except Exception:
+            if page == 1: raise
+            break
+        out += j
+        if len(j) < n: break
+    return out
 
 
 def clean(t):

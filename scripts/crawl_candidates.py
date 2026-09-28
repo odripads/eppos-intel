@@ -48,8 +48,16 @@ KONTROL = {
     "kontrol-2024": ("2023-05-27", "2023-12-27"), "kontrol-2020": ("2019-06-09", "2020-01-09"),
     "kontrol-2018": ("2019-12-27", "2020-05-27"), "kontrol-2017": ("2014-08-15", "2015-02-15"),
 }
-GELOMBANG.update(KONTROL)
-WAVE_ORDER = ["2024", "2020", "2018", "2017", "2015"] + list(KONTROL)
+# the waves alone leave 2021-2026 unsearched, yet Periode V runs to 2029: without these the current
+# presidential period is represented only by its 2024 pilkada window
+ANTARA = {
+    "2026": ("2026-01-01", "2026-09-29"), "2025": ("2025-01-01", "2025-12-31"),
+    "2023": ("2023-01-01", "2023-05-26"), "2022": ("2022-01-01", "2022-12-31"),
+    "2021": ("2021-01-10", "2021-12-31"), "2019b": ("2019-01-01", "2019-06-08"),
+    "2016": ("2016-01-10", "2016-08-14"),
+}
+GELOMBANG.update(KONTROL); GELOMBANG.update(ANTARA)
+WAVE_ORDER = ["2024", "2020", "2018", "2017", "2015"] + list(ANTARA) + list(KONTROL)
 PROVINSI = ["Aceh", "Sumatera Utara", "Sumatera Barat", "Riau", "Kepulauan Riau", "Jambi", "Sumatera Selatan",
     "Kepulauan Bangka Belitung", "Bengkulu", "Lampung", "Banten", "DKI Jakarta", "Jawa Barat", "Jawa Tengah",
     "DI Yogyakarta", "Jawa Timur", "Bali", "Nusa Tenggara Barat", "Nusa Tenggara Timur", "Kalimantan Barat",
