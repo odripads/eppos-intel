@@ -80,3 +80,19 @@ sama dalam 7 hari dihitung `dua sumber`; selebihnya `satu sumber`.
 
 Bila judul tidak menyebut tempat, titik jatuh ke centroid provinsi wilayah edar outlet dan ditandai
 `lokasi_dasar = "wilayah edar outlet"` supaya tidak terbaca sebagai insiden yang sudah terlokalisasi.
+
+### Registri outlet dan penyaringannya
+
+`scripts/outlet_wp.json` (65 outlet) adalah kerangka sampel jalur arsip. Domain masuk registri hanya
+setelah judul-judul terbarunya dilihat dan terbaca sebagai jurnalisme lokal Indonesia.
+
+`scripts/outlet_ditolak.json` mencatat yang ditolak beserta alasannya — 19 domain, antara lain domain
+yang dibajak jadi iklan kasino, pabrik konten SEO wisata dan lirik lagu, instalasi WordPress kosong,
+dan satu situs berbahasa Portugis tentang Angola. Penolakan dicatat, bukan dihapus diam-diam: kosong
+karena tidak ada dan kosong karena disaring adalah dua hal berbeda.
+
+**Bias kerangka yang harus diakui.** Dari ±1 400 domain yang diuji, hanya puluhan yang membuka
+`wp-json` atau `?rest_route=`. Media nasional besar hampir semuanya menutupnya, jadi registri ini
+condong ke koran daerah. Sebaran temuan otomatis mengikuti bias itu, bukan sebaran kejadian.
+Daftar resmi Dewan Pers akan lebih tepat sebagai kerangka, tetapi portalnya (`datapers.dewanpers.or.id`)
+berada di balik login sehingga belum bisa dipakai otomatis.

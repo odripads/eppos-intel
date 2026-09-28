@@ -43,7 +43,13 @@ GELOMBANG = {
     "2018": ("2017-12-27", "2018-07-27"), "2017": ("2016-08-15", "2017-03-15"),
     "2015": ("2015-02-24", "2016-01-09"),
 }
-WAVE_ORDER = ["2024", "2020", "2018", "2017", "2015"]
+# matched non-election windows, so a wave's rate has something to be compared against (SPEC v2)
+KONTROL = {
+    "kontrol-2024": ("2023-05-27", "2023-12-27"), "kontrol-2020": ("2019-06-09", "2020-01-09"),
+    "kontrol-2018": ("2019-12-27", "2020-05-27"), "kontrol-2017": ("2014-08-15", "2015-02-15"),
+}
+GELOMBANG.update(KONTROL)
+WAVE_ORDER = ["2024", "2020", "2018", "2017", "2015"] + list(KONTROL)
 PROVINSI = ["Aceh", "Sumatera Utara", "Sumatera Barat", "Riau", "Kepulauan Riau", "Jambi", "Sumatera Selatan",
     "Kepulauan Bangka Belitung", "Bengkulu", "Lampung", "Banten", "DKI Jakarta", "Jawa Barat", "Jawa Tengah",
     "DI Yogyakarta", "Jawa Timur", "Bali", "Nusa Tenggara Barat", "Nusa Tenggara Timur", "Kalimantan Barat",

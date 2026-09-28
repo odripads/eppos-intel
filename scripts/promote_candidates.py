@@ -70,6 +70,19 @@ OUTLET_PROV = {
 }
 
 
+PREFIX = re.compile(r"^(radar|kabar|info|berita|suara|harian|warta|media|tribun)")
+SUFFIX = re.compile(r"(pos|news|today|raya|terkini|ekspres|update|kita|post|hits|online|satu|net|id|co|com)$")
+
+
+def outlet_city(domain):
+    """Most regional outlets name their city in the domain (kabarnganjuk.com -> nganjuk).
+    Used only to place a point at province level when the headline names no place."""
+    base = domain.split(".")[0]
+    base = PREFIX.sub("", base)
+    base = SUFFIX.sub("", base)
+    return base if len(base) >= 4 else None
+
+
 def main():
     kand = json.loads((DATA / "kandidat.json").read_text())
     wd = json.loads((ROOT / "scripts" / "wikidata_id_regions.json").read_text())
@@ -113,6 +126,14 @@ def main():
         dasar = "nama kab/kota di judul" if p else None
         if not p:
             hp = OUTLET_PROV.get(k.get("outlet"))
+            if not hp and k.get("outlet"):
+                city = outlet_city(k["outlet"])
+                if city:
+                    for nm, gr in gaz:
+                        if nm == city or nm.replace(" ", "") == city:
+                            pv, _ix = province_of(gr)
+                            if pv: hp = pv
+                            break
             if hp:
                 pr = prov_centroid.get(PROV_ALIAS.get(norm(hp), norm(hp)))
                 if pr:
