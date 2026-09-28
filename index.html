@@ -20,6 +20,8 @@
     <div class="stats" id="stats"></div>
   </header>
 
+  <div class="pipeline" id="pipeline" hidden></div>
+
   <div class="periods" role="tablist" aria-label="Periode kepresidenan" id="periods"></div>
 
   <div class="grid">
@@ -58,6 +60,11 @@
       <h4>Status</h4>
       <p>Insiden disajikan sebagai <b>dilaporkan media</b>, dengan tautan sumber. Baris berstatus kurasi <code>keluar</code> tetap tersimpan di dataset untuk transparansi tetapi tidak pernah muncul di peta.</p>
       <p>Judul bertanda <em>belum diverifikasi</em> diturunkan dari slug URL, bukan dari halaman aslinya.</p>
+    </div>
+    <div>
+      <h4>Penelusuran berkelanjutan</h4>
+      <p>Rutin harian menjalankan satu petak grid penelusuran (gelombang × mekanisme × provinsi) dan memasukkan temuannya ke <a href="tinjau.html">antrean tinjauan</a>. Tidak ada kandidat yang muncul di peta sebelum dikurasi dan dipindahkan ke lembar isian.</p>
+      <p>Setiap kueri tercatat di <code>data/log_pencarian.json</code>, jadi prosedurnya bisa diulang. Yang kami klaim adalah sensus insiden <b>yang dapat ditemukan lewat prosedur yang dinyatakan</b>, bukan kelengkapan.</p>
     </div>
     <div>
       <h4>Data</h4>

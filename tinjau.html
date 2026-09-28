@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Antrean Tinjauan Kandidat</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+.kq{display:flex;flex-direction:column;gap:12px}
+.kc{background:var(--surface);border:3px solid var(--navy);border-radius:14px;padding:15px 17px;
+  box-shadow:var(--shadow);display:flex;flex-direction:column;gap:9px}
+.kc.done{opacity:.5}
+.kc h3{font-family:var(--sans);font-weight:600;font-size:15.5px;line-height:1.3;color:var(--ink)}
+.kc h3 a{color:var(--ink);text-decoration-color:var(--line-2)}
+.kc h3 a:hover{color:var(--red)}
+.kact{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.kbtn{appearance:none;font:inherit;cursor:pointer;font-family:var(--mono);font-size:11px;letter-spacing:.07em;
+  text-transform:uppercase;border:2.5px solid var(--navy);border-radius:999px;padding:6px 14px;
+  background:var(--surface-2);color:var(--ink);box-shadow:2px 2px 0 var(--navy)}
+.kbtn:hover{transform:translate(-1px,-1px)}
+.kbtn[aria-pressed="true"][data-v="masuk"]{background:var(--ok);color:#fff;border-color:var(--navy)}
+.kbtn[aria-pressed="true"][data-v="ragu"]{background:var(--gold);color:var(--navy)}
+.kbtn[aria-pressed="true"][data-v="keluar"]{background:var(--red);color:#fff}
+.bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;position:sticky;top:0;z-index:5;
+  background:var(--cream);padding:12px 0;border-bottom:3px solid var(--navy);margin-bottom:16px}
+.filt{appearance:none;font:inherit;cursor:pointer;font-family:var(--mono);font-size:11px;text-transform:uppercase;
+  letter-spacing:.06em;border:2.5px solid var(--navy);border-radius:999px;padding:6px 13px;background:var(--surface);color:var(--ink)}
+.filt[aria-pressed="true"]{background:var(--navy);color:var(--cream)}
+textarea.out{width:100%;min-height:150px;font-family:var(--mono);font-size:11px;border:3px solid var(--navy);
+  border-radius:12px;padding:12px;background:var(--surface-2);color:var(--ink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div>
+      <img src="assets/logo.png" alt="EPPOS GROUP">
+      <h1>Antrean Tinjauan</h1>
+      <p class="dek">Hasil penelusuran otomatis. <b>Tidak ada satu pun yang tampil di peta</b> sampai kamu memutuskannya dan memindahkannya ke <code>eppos-media-intake.xlsx</code>. Keputusan tersimpan di peramban ini saja.</p>
+    </div>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="bar">
+    <button class="filt" data-f="belum" aria-pressed="true">belum ditinjau</button>
+    <button class="filt" data-f="masuk" aria-pressed="false">masuk</button>
+    <button class="filt" data-f="ragu" aria-pressed="false">ragu</button>
+    <button class="filt" data-f="keluar" aria-pressed="false">keluar</button>
+    <button class="filt" data-f="semua" aria-pressed="false">semua</button>
+    <button class="btn-x" id="export" style="margin-left:auto">ekspor baris untuk xlsx</button>
+  </div>
+
+  <div class="kq" id="q"></div>
+
+  <section id="exp" hidden style="margin-top:20px">
+    <div class="note" style="margin-bottom:10px"><b>Tempel ke sheet <code>insiden</code></b> mulai baris kosong pertama. Kolom mengikuti urutan sheet. Kolom yang tidak bisa diisi otomatis dibiarkan kosong — isi sendiri, jangan ditebak.</div>
+    <p class="hint" id="expnote" style="margin:0 0 8px;color:var(--red)"></p>
+    <textarea class="out" id="tsv" readonly></textarea>
+  </section>
+</div>
+<script>
+(function(){
+  var K=[], filt="belum", KEY="eppos-tinjau-v1";
+  var st=JSON.parse(localStorage.getItem(KEY)||"{}");
+  var $=function(s){return document.querySelector(s)};
+  var esc=function(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c]})};
+  function save(){localStorage.setItem(KEY,JSON.stringify(st))}
+  function verdict(k){return st[k.kandidat_id]||null}
+  function stats(){
+    var n={masuk:0,ragu:0,keluar:0,belum:0};
+    K.forEach(function(k){var v=verdict(k); n[v||"belum"]++});
+    $("#stats").innerHTML='<div class="stat"><b>'+n.belum+'</b><span>belum</span></div>'+
+      '<div class="stat"><b>'+n.masuk+'</b><span>masuk</span></div>'+
+      '<div class="stat"><b>'+n.ragu+'</b><span>ragu</span></div>';
+  }
+  function draw(){
+    var rows=K.filter(function(k){var v=verdict(k); return filt==="semua"||(filt==="belum"?!v:v===filt)});
+    $("#q").innerHTML=rows.length?rows.map(function(k){
+      var v=verdict(k);
+      return '<article class="kc'+(v?" done":"")+'" data-id="'+esc(k.kandidat_id)+'">'+
+        '<h3><a href="'+esc(k.url)+'" target="_blank" rel="noopener">'+esc(k.judul)+' ↗</a></h3>'+
+        '<div class="tags"><span class="pill lbg">'+esc(k.kandidat_id)+'</span>'+
+        '<span class="pill lbg">'+esc(k.outlet||"?")+'</span>'+
+        '<span class="pill lbg">'+esc(k.tanggal_terbit||"tanpa tanggal")+'</span>'+
+        '<span class="pill satu">'+esc(k.mekanisme_dugaan)+'</span>'+
+        '<span class="pill lbg">gel. '+esc(k.gelombang_pilkada)+'</span>'+
+        '<span class="pill lbg">kueri: '+esc(k.provinsi_kueri)+'</span></div>'+
+        '<p class="hint" style="margin:0">Ditemukan '+esc(k.ditemukan_pada)+' lewat <code>'+esc(k.kueri)+'</code></p>'+
+        '<div class="kact">'+["masuk","ragu","keluar"].map(function(x){
+          return '<button class="kbtn" data-v="'+x+'" aria-pressed="'+(v===x)+'">'+x+'</button>'}).join("")+
+        '</div></article>'}).join(""):'<div class="empty" style="border:3px dashed var(--line-2);border-radius:14px;padding:30px;text-align:center;color:var(--ink-3)">Tidak ada kandidat pada saringan ini.</div>';
+    Array.prototype.forEach.call(document.querySelectorAll(".kbtn"),function(b){
+      b.onclick=function(){
+        var id=b.closest(".kc").dataset.id, v=b.dataset.v;
+        st[id]=st[id]===v?null:v; if(!st[id])delete st[id];
+        save(); draw(); stats();
+      }});
+  }
+  $("#export").onclick=function(){
+    var chosen=K.filter(function(k){var v=verdict(k); return v==="masuk"||v==="ragu"});
+    var sel=chosen.filter(function(k){return k.url});
+    var skipped=chosen.length-sel.length;
+    // urutan kolom = sheet `insiden`
+    var lines=sel.map(function(k,i){
+      return ["INS-"+k.gelombang_pilkada+"-X"+String(i+1).padStart(3,"0"), k.tanggal_terbit||"", "", "", "", "", "",
+        k.mekanisme_dugaan, "", k.gelombang_pilkada, "", "", "", k.url,
+        (k.url||"").replace(/^https?:\/\/(www\.)?/,"").split("/")[0], "", "", "satu sumber", "standar", "",
+        verdict(k), "Odri (rutin otomatis)", new Date().toISOString().slice(0,10), "", k.judul, "dari URL"].join("\t")});
+    $("#tsv").value=lines.join("\n"); $("#exp").hidden=false; $("#tsv").select();
+    $("#expnote").textContent = skipped ? skipped+" baris tidak diekspor karena URL sumbernya belum terselesaikan." : "";
+  };
+  Array.prototype.forEach.call(document.querySelectorAll(".filt"),function(b){
+    b.onclick=function(){filt=b.dataset.f;
+      Array.prototype.forEach.call(document.querySelectorAll(".filt"),function(o){o.setAttribute("aria-pressed",String(o===b))});
+      draw()}});
+  fetch("data/kandidat.json").then(function(r){return r.json()}).then(function(d){
+    K=d.slice().sort(function(a,b){return (b.tanggal_terbit||"").localeCompare(a.tanggal_terbit||"")});
+    draw(); stats();
+  }).catch(function(e){$("#q").innerHTML='<div class="empty">Belum ada data kandidat. Jalankan <code>python3 scripts/crawl_candidates.py</code>.</div>'});
+})();
+</script>
+</body>
+</html>

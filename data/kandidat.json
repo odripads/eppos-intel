@@ -1,0 +1,72 @@
+[
+ {
+  "kandidat_id": "KAN-00001",
+  "judul": "Satu Kadis di Aceh Jaya Diduga Terlibat Politik Praktis, Pj Bupati Harus Ambil Sikap Tegas",
+  "outlet": "KBA.ONE",
+  "tanggal_terbit": "2024-10-22",
+  "url": "https://www.kba.one/news/satu-kadis-di-aceh-jaya-diduga-terlibat-politik-praktis-pj-bupati-harus-ambil-sikap-tegas/index.html",
+  "gelombang_pilkada": "2024",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "Aceh",
+  "kueri": "netralitas ASN dilaporkan \"Aceh\" after:2024-05-27 before:2024-12-27",
+  "ditemukan_pada": "2026-09-28",
+  "status_tinjau": null,
+  "catatan_tinjau": null
+ },
+ {
+  "kandidat_id": "KAN-00002",
+  "judul": "Terlibat politik praktis, Sejumlah Keuchik di Kecamatan Madat dilaporkan ke Panwaslih",
+  "outlet": "satupena.co.id",
+  "tanggal_terbit": "2024-10-31",
+  "url": "https://satupena.co.id/2024/10/31/terlibat-politik-praktis-sejumlah-keuchik-di-kecamatan-madat-dilaporkan-ke-panwaslih/",
+  "gelombang_pilkada": "2024",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "Aceh",
+  "kueri": "\"kepala desa\" dukung paslon dilaporkan \"Aceh\" after:2024-05-27 before:2024-12-27",
+  "ditemukan_pada": "2026-09-28",
+  "status_tinjau": null,
+  "catatan_tinjau": null
+ },
+ {
+  "kandidat_id": "KAN-00003",
+  "judul": "Lurah Sei Pelunggut Terbukti Langgar Netralitas ASN, Pjs Wali Kota Batam Siapkan Sanksi",
+  "outlet": "Batamnews",
+  "tanggal_terbit": "2024-10-09",
+  "url": "https://www.batamnews.co.id/berita-114820-lurah-sei-pelunggut-terbukti-langgar-netralitas-asn-pjs-wali-kota-batam-siapkan-sanksi.html",
+  "gelombang_pilkada": "2024",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "Aceh",
+  "kueri": "lurah langgar netralitas \"Aceh\" after:2024-05-27 before:2024-12-27",
+  "ditemukan_pada": "2026-09-28",
+  "status_tinjau": null,
+  "catatan_tinjau": null
+ },
+ {
+  "kandidat_id": "KAN-00004",
+  "judul": "Bawaslu Limpahkan Pelanggaran Netralitas Camat Kubu ke BKN",
+  "outlet": "Warta Bali Online",
+  "tanggal_terbit": "2024-10-17",
+  "url": "https://wartabalionline.com/2024/10/17/bawaslu-limpahkan-pelanggaran-netralitas-camat-kubu-ke-bkn/",
+  "gelombang_pilkada": "2024",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "Bali",
+  "kueri": "netralitas ASN dilaporkan \"Bali\" after:2024-05-27 before:2024-12-27",
+  "ditemukan_pada": "2026-09-28",
+  "status_tinjau": null,
+  "catatan_tinjau": null
+ },
+ {
+  "kandidat_id": "KAN-00005",
+  "judul": "900 Peserta Ikuti Ikrar Netralitas Pilkada, Kepala Desa Terancam Sanksi Berat Jika Melanggar!",
+  "outlet": "Bali Express",
+  "tanggal_terbit": "2024-09-21",
+  "url": "https://baliexpress.jawapos.com/politik/2409210068/900-peserta-ikuti-ikrar-netralitas-pilkada-kepala-desa-terancam-sanksi-berat-jika-melanggar",
+  "gelombang_pilkada": "2024",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "Bali",
+  "kueri": "\"kepala desa\" dukung paslon dilaporkan \"Bali\" after:2024-05-27 before:2024-12-27",
+  "ditemukan_pada": "2026-09-28",
+  "status_tinjau": null,
+  "catatan_tinjau": null
+ }
+]

@@ -220,6 +220,27 @@
       '<div class="stat"><b>' + Object.keys(provs).length + "</b><span>provinsi</span></div>";
   }
 
+  /* candidates are a queue, never map points: they appear only as a progress strip and a link */
+  function pipeline() {
+    Promise.all([
+      fetch("data/kandidat.json").then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }),
+      fetch("data/crawl_state.json").then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
+    ]).then(function (a) {
+      var kand = a[0] || [], cs = a[1];
+      if (!kand.length && !cs) return;
+      var belum = kand.filter(function (k) { return !k.status_tinjau; }).length;
+      var done = cs && cs.done ? cs.done.length : 0, total = 2340;
+      var pct = Math.min(100, Math.round(done / total * 100));
+      var last = cs && cs.runs && cs.runs.length ? cs.runs[cs.runs.length - 1].tanggal : null;
+      $("#pipeline").hidden = false;
+      $("#pipeline").innerHTML =
+        "<span>Penelusuran berkelanjutan \u00b7 <b>" + belum + "</b> kandidat menunggu tinjauan</span>" +
+        '<span class="grow"><span class="track"><i style="width:' + pct + '%"></i></span></span>' +
+        '<span class="mono muted">' + done + "/" + total + " petak grid \u00b7 " + pct + "%" + (last ? " \u00b7 terakhir " + last : "") + "</span>" +
+        '<a class="cta" href="tinjau.html">buka antrean</a>';
+    });
+  }
+
   fetch("data/manifest.json").then(function (r) { return r.json(); }).then(function (m) {
     D.manifest = m;
     return Promise.all(["periode", "insiden", "kasus_resmi", "koordinat", "provinsi_path"].map(function (n) {
@@ -241,7 +262,7 @@
     $("#ver").textContent = "data " + D.manifest.version + " · " + D.manifest.insiden + " insiden · " + D.manifest.kasus_resmi + " kasus resmi";
     var ex = D.insiden.length - D.insiden.filter(function (r) { return r.status_kurasi === "masuk" || r.status_kurasi === "ragu"; }).length;
     $("#excl").textContent = ex ? ex + " baris berstatus kurasi 'keluar' tetap di dataset tetapi tidak dipetakan." : "";
-    drawPeriods(); provinceList(); updateStats();
+    drawPeriods(); provinceList(); updateStats(); pipeline();
   }).catch(function (e) {
     $("#pnl").innerHTML = '<div class="pnl-empty"><b>Data gagal dimuat</b><p>' + esc(e.message) + "</p></div>";
   });

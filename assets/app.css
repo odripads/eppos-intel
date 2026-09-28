@@ -200,3 +200,15 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .sw.ins{background:var(--red)}
 .sw.faint{background:color-mix(in srgb,var(--red) 42%,transparent)}
 .sw.prov{background:none;border-style:dashed;border-color:var(--red)}
+
+/* pipeline strip */
+.pipeline{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:var(--surface);
+  border:3px solid var(--navy);border-radius:12px;padding:10px 15px;box-shadow:var(--shadow);font-size:12.5px}
+.pipeline b{font-family:var(--mono);color:var(--red)}
+.pipeline .grow{flex:1 1 auto;min-width:120px}
+.pipeline .track{height:7px;background:var(--cream-3);border-radius:999px;overflow:hidden;border:1.5px solid var(--navy)}
+.pipeline .track i{display:block;height:100%;background:var(--gold)}
+.pipeline a.cta{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;
+  text-decoration:none;background:var(--red);color:#fff;border:2.5px solid var(--navy);border-radius:999px;
+  padding:6px 13px;box-shadow:2px 2px 0 var(--navy);white-space:nowrap}
+.pipeline a.cta:hover{transform:translate(-1px,-1px)}

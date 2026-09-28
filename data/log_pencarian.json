@@ -1,0 +1,569 @@
+[
+ {
+  "log_id": "LOG-0001",
+  "provinsi": "Aceh",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "netralitas ASN dilaporkan \"Aceh\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "3 hasil, 1 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0002",
+  "provinsi": "Aceh",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "ASN dimutasi jelang pilkada \"Aceh\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0003",
+  "provinsi": "Aceh",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "honorer diancam pilkada \"Aceh\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0004",
+  "provinsi": "Aceh",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "\"kepala desa\" dukung paslon dilaporkan \"Aceh\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "3 hasil, 1 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0005",
+  "provinsi": "Aceh",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "lurah langgar netralitas \"Aceh\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "1 hasil, 1 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0006",
+  "provinsi": "Aceh",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "kades dikumpulkan pilkada \"Aceh\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0007",
+  "provinsi": "Aceh",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "bansos syarat dukung pilkada \"Aceh\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0008",
+  "provinsi": "Aceh",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "bantuan sosial diancam dicabut pilkada \"Aceh\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0009",
+  "provinsi": "Aceh",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "wartawan diintimidasi pilkada \"Aceh\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0010",
+  "provinsi": "Aceh",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "aktivis dilaporkan polisi pilkada \"Aceh\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "2 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0011",
+  "provinsi": "Aceh",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "bansos dipercepat jelang pilkada \"Aceh\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0012",
+  "provinsi": "Aceh",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "peresmian proyek jelang pilkada petahana \"Aceh\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0013",
+  "provinsi": "Bali",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "netralitas ASN dilaporkan \"Bali\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "7 hasil, 1 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0014",
+  "provinsi": "Bali",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "ASN dimutasi jelang pilkada \"Bali\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0015",
+  "provinsi": "Bali",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "honorer diancam pilkada \"Bali\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0016",
+  "provinsi": "Bali",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "\"kepala desa\" dukung paslon dilaporkan \"Bali\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "1 hasil, 1 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0017",
+  "provinsi": "Bali",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "lurah langgar netralitas \"Bali\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "1 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0018",
+  "provinsi": "Bali",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "kades dikumpulkan pilkada \"Bali\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0019",
+  "provinsi": "Bali",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "bansos syarat dukung pilkada \"Bali\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0020",
+  "provinsi": "Bali",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "bantuan sosial diancam dicabut pilkada \"Bali\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0021",
+  "provinsi": "Bali",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "wartawan diintimidasi pilkada \"Bali\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0022",
+  "provinsi": "Bali",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "aktivis dilaporkan polisi pilkada \"Bali\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0023",
+  "provinsi": "Bali",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "bansos dipercepat jelang pilkada \"Bali\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0024",
+  "provinsi": "Bali",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "peresmian proyek jelang pilkada petahana \"Bali\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0025",
+  "provinsi": "Bengkulu",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "netralitas ASN dilaporkan \"Bengkulu\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "4 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0026",
+  "provinsi": "Bengkulu",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "ASN dimutasi jelang pilkada \"Bengkulu\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0027",
+  "provinsi": "Bengkulu",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "honorer diancam pilkada \"Bengkulu\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0028",
+  "provinsi": "Bengkulu",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "\"kepala desa\" dukung paslon dilaporkan \"Bengkulu\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0029",
+  "provinsi": "Bengkulu",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "lurah langgar netralitas \"Bengkulu\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0030",
+  "provinsi": "Bengkulu",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "kades dikumpulkan pilkada \"Bengkulu\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0031",
+  "provinsi": "Bengkulu",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "bansos syarat dukung pilkada \"Bengkulu\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "3 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0032",
+  "provinsi": "Bengkulu",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "bantuan sosial diancam dicabut pilkada \"Bengkulu\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0033",
+  "provinsi": "Bengkulu",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "wartawan diintimidasi pilkada \"Bengkulu\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0034",
+  "provinsi": "Bengkulu",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "aktivis dilaporkan polisi pilkada \"Bengkulu\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0035",
+  "provinsi": "Bengkulu",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "bansos dipercepat jelang pilkada \"Bengkulu\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0036",
+  "provinsi": "Bengkulu",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "peresmian proyek jelang pilkada petahana \"Bengkulu\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0037",
+  "provinsi": "Gorontalo",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "netralitas ASN dilaporkan \"Gorontalo\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "3 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0038",
+  "provinsi": "Gorontalo",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "ASN dimutasi jelang pilkada \"Gorontalo\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0039",
+  "provinsi": "Gorontalo",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "honorer diancam pilkada \"Gorontalo\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0040",
+  "provinsi": "Gorontalo",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "\"kepala desa\" dukung paslon dilaporkan \"Gorontalo\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0041",
+  "provinsi": "Gorontalo",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "lurah langgar netralitas \"Gorontalo\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0042",
+  "provinsi": "Gorontalo",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "kades dikumpulkan pilkada \"Gorontalo\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0043",
+  "provinsi": "Gorontalo",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "bansos syarat dukung pilkada \"Gorontalo\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0044",
+  "provinsi": "Gorontalo",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "bantuan sosial diancam dicabut pilkada \"Gorontalo\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0045",
+  "provinsi": "Gorontalo",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "wartawan diintimidasi pilkada \"Gorontalo\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0046",
+  "provinsi": "Gorontalo",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "aktivis dilaporkan polisi pilkada \"Gorontalo\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0047",
+  "provinsi": "Gorontalo",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "bansos dipercepat jelang pilkada \"Gorontalo\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0048",
+  "provinsi": "Gorontalo",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "peresmian proyek jelang pilkada petahana \"Gorontalo\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0049",
+  "provinsi": "Jambi",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "netralitas ASN dilaporkan \"Jambi\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "3 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0050",
+  "provinsi": "Jambi",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "ASN dimutasi jelang pilkada \"Jambi\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "2 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0051",
+  "provinsi": "Jambi",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "honorer diancam pilkada \"Jambi\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0052",
+  "provinsi": "Jambi",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "\"kepala desa\" dukung paslon dilaporkan \"Jambi\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0053",
+  "provinsi": "Jambi",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "lurah langgar netralitas \"Jambi\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "2 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0054",
+  "provinsi": "Jambi",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "kades dikumpulkan pilkada \"Jambi\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0055",
+  "provinsi": "Jambi",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "bansos syarat dukung pilkada \"Jambi\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "1 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0056",
+  "provinsi": "Jambi",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "bantuan sosial diancam dicabut pilkada \"Jambi\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0057",
+  "provinsi": "Jambi",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "wartawan diintimidasi pilkada \"Jambi\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0058",
+  "provinsi": "Jambi",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "aktivis dilaporkan polisi pilkada \"Jambi\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0059",
+  "provinsi": "Jambi",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "bansos dipercepat jelang pilkada \"Jambi\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0060",
+  "provinsi": "Jambi",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "peresmian proyek jelang pilkada petahana \"Jambi\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0061",
+  "provinsi": "Kalimantan Barat",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "netralitas ASN dilaporkan \"Kalimantan Barat\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0062",
+  "provinsi": "Kalimantan Barat",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "ASN dimutasi jelang pilkada \"Kalimantan Barat\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ },
+ {
+  "log_id": "LOG-0063",
+  "provinsi": "Kalimantan Barat",
+  "tanggal_pencarian": "2026-09-28",
+  "kueri": "honorer diancam pilkada \"Kalimantan Barat\" after:2024-05-27 before:2024-12-27",
+  "alat": "Google News RSS (skrip)",
+  "dijalankan_oleh": "rutin otomatis",
+  "catatan": "0 hasil, 0 masuk antrean tinjau"
+ }
+]
