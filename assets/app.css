@@ -229,3 +229,16 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .note.oto-note{border-left-color:var(--gold);font-size:12px;margin-bottom:10px}
 .lyr i.oto{background:none;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;
   border-bottom:10px solid var(--gold)}
+
+/* wave vs control readout */
+.banding{margin:4px 0 14px}
+.bandingtab{width:100%;border-collapse:collapse;font-size:12.5px}
+.bandingtab th{text-align:left;font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--ink-3);font-weight:500;padding:4px 8px 4px 0}
+.bandingtab th.r,.bandingtab td.r{text-align:right;font-family:var(--mono);font-weight:600;color:var(--red)}
+.bandingtab td{padding:5px 8px 5px 0;vertical-align:middle}
+.bandingtab td.bar{position:relative;min-width:110px}
+.bandingtab td.bar i{display:inline-block;height:11px;background:var(--red);border-radius:2px;
+  vertical-align:middle;margin-right:7px;min-width:2px}
+.bandingtab td.bar.k i{background:var(--null-soft);border:1px solid var(--null)}
+.bandingtab td.bar b{font-family:var(--mono);font-size:11.5px;color:var(--ink-2)}

@@ -213,6 +213,34 @@
     $("#pnl-back").onclick = provinceList;
   }
 
+  /* Wave window vs its matched non-election window, on the automated layer.
+     Windows are the same length and cover the same outlets, so the pair is comparable; what it is NOT
+     is a measure of incidence — both series still follow press attention, which itself rises at election
+     time. Read it as "how much more is reported", never as "how much more happens". */
+  var PASANGAN = [["2024", "kontrol-2024", "2024 vs 2023"], ["2020", "kontrol-2020", "2020 vs 2019"],
+                  ["2018", "kontrol-2018", "2018 vs 2019/20"]];
+  function bandingGelombang() {
+    var oto = (D.otomatis || []);
+    if (!oto.length) return "";
+    var rows = PASANGAN.map(function (p) {
+      var a = oto.filter(function (r) { return r.gelombang_pilkada === p[0]; }).length;
+      var b = oto.filter(function (r) { return r.gelombang_pilkada === p[1]; }).length;
+      if (!a && !b) return "";
+      var max = Math.max(a, b, 1);
+      return '<tr><td>' + esc(p[2]) + '</td>' +
+        '<td class="bar"><i style="width:' + (a / max * 100) + '%"></i><b>' + a + "</b></td>" +
+        '<td class="bar k"><i style="width:' + (b / max * 100) + '%"></i><b>' + b + "</b></td>" +
+        "<td class=\"r\">" + (b ? "\u00d7" + (a / b).toFixed(1) : "\u2014") + "</td></tr>";
+    }).join("");
+    if (!rows.replace(/\s/g, "")) return "";
+    return '<div class="banding"><h4 class="grp">Jendela pilkada vs jendela kontrol \u00b7 lapisan otomatis</h4>' +
+      '<table class="bandingtab"><thead><tr><th></th><th>jendela pilkada</th><th>jendela kontrol</th><th class="r">rasio</th></tr></thead><tbody>' +
+      rows + "</tbody></table>" +
+      '<p class="hint" style="margin:8px 0 0">Jendela sama panjang dan outlet sama, jadi pasangannya sebanding. ' +
+      "Ini mengukur <b>seberapa banyak yang diberitakan</b>, bukan seberapa banyak yang terjadi: liputan sendiri " +
+      "memang meningkat saat musim pemilu. Angka dari lapisan otomatis yang belum dikurasi.</p></div>";
+  }
+
   /* default panel: pick a province from a list, so nobody has to hunt for a dot */
   function provinceList() {
     state.prov = null; paintMap();
