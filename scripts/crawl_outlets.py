@@ -28,17 +28,35 @@ CTX = ssl.create_default_context(); CTX.check_hostname = False; CTX.verify_mode 
 
 # WP search matches whole words across the post, so terms are shorter than the Google News phrasings
 CARI = {
-    "paksaan aparat sipil": ["netralitas ASN", "mutasi pejabat pilkada", "ASN tidak netral", "ASN dilaporkan Bawaslu",
-                             "pegawai dimutasi pilkada", "ASN kampanye", "pelanggaran netralitas"],
-    "paksaan kepala desa dan lurah": ["kepala desa netralitas", "lurah netralitas", "kades dukung calon",
-                                      "kepala desa dilaporkan", "perangkat desa pilkada", "kades kampanye",
-                                      "camat netralitas", "kepala desa dikumpulkan"],
-    "paksaan warga penerima program": ["bansos pilkada", "bantuan sosial politik", "bansos dipolitisasi",
-                                       "penerima bantuan diarahkan"],
-    "tekanan terhadap kritik": ["wartawan intimidasi", "aktivis dilaporkan", "jurnalis diintimidasi",
-                                "kritik dilaporkan polisi"],
-    "pengalihan sumber daya": ["bansos jelang pilkada", "petahana bantuan sosial", "peresmian jelang pilkada",
-                               "program bupati jelang pilkada"],
+    "paksaan aparat sipil": [
+        "netralitas ASN", "mutasi pejabat pilkada", "ASN tidak netral", "ASN dilaporkan Bawaslu",
+        "pegawai dimutasi pilkada", "ASN kampanye", "pelanggaran netralitas", "ASN diperiksa Bawaslu",
+        "sanksi netralitas ASN", "ASN foto paslon", "ASN medsos paslon", "honorer diancam",
+        "pegawai diancam dipecat", "ASN dukung calon", "PNS tidak netral", "BKN netralitas",
+        "rekomendasi KASN", "teguran netralitas", "ASN hadiri kampanye", "mutasi jelang pilkada",
+    ],
+    "paksaan kepala desa dan lurah": [
+        "kepala desa netralitas", "lurah netralitas", "kades dukung calon", "kepala desa dilaporkan",
+        "perangkat desa pilkada", "kades kampanye", "camat netralitas", "kepala desa dikumpulkan",
+        "kades diperiksa Bawaslu", "kepala desa sanksi pilkada", "lurah dilaporkan", "camat dilaporkan",
+        "apdesi dukung", "paguyuban kades", "kepala desa deklarasi", "dana desa pilkada",
+        "kades diancam", "perangkat desa dimobilisasi", "musyawarah kades pilkada",
+    ],
+    "paksaan warga penerima program": [
+        "bansos pilkada", "bantuan sosial politik", "bansos dipolitisasi", "penerima bantuan diarahkan",
+        "bantuan syarat dukung", "sembako pilkada", "KTP dikumpulkan pilkada", "bansos diancam dicabut",
+        "penerima PKH pilkada", "bantuan sosial kampanye",
+    ],
+    "tekanan terhadap kritik": [
+        "wartawan intimidasi", "aktivis dilaporkan", "jurnalis diintimidasi", "kritik dilaporkan polisi",
+        "wartawan diancam", "aktivis diintimidasi", "akademisi ditekan", "pengunjuk rasa ditangkap",
+        "kebebasan pers pilkada", "wartawan dipolisikan",
+    ],
+    "pengalihan sumber daya": [
+        "bansos jelang pilkada", "petahana bantuan sosial", "peresmian jelang pilkada",
+        "program bupati jelang pilkada", "hibah jelang pilkada", "bantuan keuangan jelang pilkada",
+        "groundbreaking jelang pilkada", "anggaran dipercepat pilkada", "kunjungan kerja petahana",
+    ],
 }
 
 
