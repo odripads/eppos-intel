@@ -36,7 +36,11 @@ karimun bintan aceh banda lhokseumawe langsa sabang meulaboh bireuen""".split()
 POLA = ["radar{c}.com", "radar{c}.id", "{c}pos.com", "{c}pos.co.id", "{c}ekspres.com", "kabar{c}.com",
         "kabar{c}.id", "info{c}.com", "berita{c}.com", "berita{c}.id", "suara{c}.com", "suara{c}.id",
         "{c}terkini.com", "{c}today.com", "{c}raya.com", "{c}news.com", "harian{c}.com", "{c}update.com",
-        "tribun{c}.com", "{c}kita.com", "media{c}.com", "{c}post.com", "warta{c}.com", "{c}hits.com"]
+        "tribun{c}.com", "{c}kita.com", "media{c}.com", "{c}post.com", "warta{c}.com", "{c}hits.com",
+        "{c}satu.com", "{c}satu.id", "portal{c}.com", "rakyat{c}.com", "{c}ekspres.co.id", "{c}raya.co.id",
+        "{c}online.com", "{c}link.com", "{c}bicara.com", "{c}now.com", "fokus{c}.com", "lintas{c}.com",
+        "jurnal{c}.com", "{c}headline.com", "{c}inside.com", "{c}metro.com", "metro{c}.com", "{c}daily.com",
+        "{c}times.com", "times{c}.com", "{c}pedia.com", "{c}zone.com", "{c}corner.com", "{c}express.com"]
 
 # headline signatures of things that are not local journalism
 SPAM = re.compile(r"(casino|slot|judi|gacor|togel|poker|betting|bookmaker|crypto|bitcoin|forex|"
