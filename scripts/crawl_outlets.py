@@ -93,6 +93,24 @@ def clean(t):
     return html.unescape(re.sub(r"<[^>]+>", "", t or "")).strip()
 
 
+def _merge_save(path, rows):
+    """Union with whatever is on disk now, keyed by URL (falling back to id), then write once."""
+    import json as _j
+    try:
+        disk = _j.loads(path.read_text())
+    except Exception:
+        disk = []
+    seen, out = {}, []
+    for r in disk + rows:
+        k = (r.get("url") or r.get("url_google") or r.get("kandidat_id"))
+        if k in seen:
+            out[seen[k]].update({kk: vv for kk, vv in r.items() if vv is not None})
+            continue
+        seen[k] = len(out); out.append(dict(r))
+    path.write_text(_j.dumps(out, ensure_ascii=False, indent=1) + "\n")
+    return len(out)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cells", type=int, default=400)
@@ -164,7 +182,7 @@ def main():
                 if kept: print(f"  {wave} {dom[:22]:22s} {q[:26]:26s} {len(items):3d}\u2192{kept}", file=sys.stderr)
                 if counter["sel"] % 60 == 0:
                     state["done"] = sorted(done)
-                    (DATA / "kandidat.json").write_text(json.dumps(kand, ensure_ascii=False, indent=1) + "\n")
+                    _merge_save(DATA / "kandidat.json", kand)
                     (DATA / "crawl_state.json").write_text(json.dumps(state, ensure_ascii=False, indent=1) + "\n")
                     print(f"  ... {counter['sel']} sel, {counter['baru']} kandidat baru", file=sys.stderr)
             time.sleep(1.0)
@@ -175,7 +193,7 @@ def main():
     state["done"] = sorted(done)
 
     state.setdefault("runs", []).append({"tanggal": today, "sel": len(todo), "kandidat_baru": baru, "sumber": "wp"})
-    (DATA / "kandidat.json").write_text(json.dumps(kand, ensure_ascii=False, indent=1) + "\n")
+    _merge_save(DATA / "kandidat.json", kand)
     (DATA / "crawl_state.json").write_text(json.dumps(state, ensure_ascii=False, indent=1) + "\n")
     (DATA / "log_pencarian.json").write_text(json.dumps(logs, ensure_ascii=False, indent=1) + "\n")
     belum = len([k for k in kand if not k.get("status_tinjau")])
