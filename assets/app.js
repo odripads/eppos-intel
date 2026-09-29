@@ -276,6 +276,17 @@
   }
 
   /* ---------- chrome ---------- */
+  function wireLegendHelp() {
+    var b = $("#legend-toggle"), box = $("#legend-help");
+    if (!b || !box) return;
+    b.onclick = function () {
+      var open = box.hidden;
+      box.hidden = !open;
+      b.setAttribute("aria-expanded", String(open));
+      b.textContent = open ? "tutup penjelasan" : "apa arti tanda-tanda ini?";
+    };
+  }
+
   function drawPeriods() {
     $("#periods").innerHTML = D.periode.map(function (p) {
       var n = D.insiden.filter(function (r) { return r.periode_pilpres === p.periode && (r.status_kurasi === "masuk" || r.status_kurasi === "ragu"); }).length +
@@ -340,10 +351,10 @@
       return D.insiden.some(function (r) { return r.periode_pilpres === p.periode; }) || D.kasus_resmi.some(function (r) { return r.periode_pilpres === p.periode; });
     });
     state.periode = (withRows[withRows.length - 1] || D.periode[D.periode.length - 1]).periode;
-    $("#ver").textContent = "data " + D.manifest.version + " · " + D.manifest.insiden + " insiden · " + D.manifest.kasus_resmi + " kasus resmi";
+    var vEl = $("#ver"); if (vEl) vEl.textContent = "data " + D.manifest.version + " · " + D.manifest.insiden + " insiden · " + D.manifest.kasus_resmi + " kasus resmi";
     var ex = D.insiden.length - D.insiden.filter(function (r) { return r.status_kurasi === "masuk" || r.status_kurasi === "ragu"; }).length;
-    $("#excl").textContent = ex ? ex + " baris berstatus kurasi 'keluar' tetap di dataset tetapi tidak dipetakan." : "";
-    drawPeriods(); provinceList(); updateStats(); pipeline();
+    var xEl = $("#excl"); if (xEl) xEl.textContent = ex ? ex + " baris berstatus kurasi 'keluar' tetap di dataset tetapi tidak dipetakan." : "";
+    drawPeriods(); provinceList(); updateStats(); pipeline(); wireLegendHelp();
   }).catch(function (e) {
     $("#pnl").innerHTML = '<div class="pnl-empty"><b>Data gagal dimuat</b><p>' + esc(e.message) + "</p></div>";
   });

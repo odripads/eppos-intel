@@ -45,10 +45,36 @@
         <span style="margin-left:auto"><i class="sw ins"></i>insiden<i class="sw kas" style="margin-left:10px"></i>kasus resmi<i class="sw oto" style="margin-left:10px"></i>otomatis</span>
       </div>
       <div class="legend" style="border-top:0;padding-top:0;display:block">
-        <p class="hint" style="margin-bottom:6px"><b>Klik provinsi</b> untuk membuka seluruh catatannya, atau pilih dari daftar di samping. Titik gelap di dalam provinsi menunjukkan letak kab/kota, bukan sasaran klik.</p>
-        <p class="hint" id="excl" style="margin-bottom:6px"></p>
-        <p class="hint" style="margin-bottom:6px"><b>Dua lapis yang berbeda derajatnya.</b> Lingkaran dan belah ketupat adalah catatan yang sudah dikurasi tangan. Segitiga emas adalah temuan penelusuran otomatis dari arsip outlet: judul dan tautannya nyata, tetapi tanggal kejadian, pelaku, sasaran, dan hasilnya sengaja dibiarkan kosong karena tidak bisa disimpulkan dari judul. Seluruhnya sudah diterima ke peta, tetapi sumbernya belum diadu satu sama lain — jangan dikutip sebagai temuan sebelum diperiksa.</p>
-        <p class="hint">Warna provinsi menunjukkan <b>deret mana yang hadir</b>, bukan berapa banyak. Peta jumlah mentah akan memetakan kepadatan pers dan pengawasan, bukan kejadian. Provinsi yang kosong berarti belum ada yang ditemukan lewat prosedur pencarian, bukan berarti tidak ada kejadian.</p>
+        <p class="hint" id="excl" style="margin:0 0 8px"></p>
+        <button class="btn-x" id="legend-toggle" aria-expanded="false" style="margin-bottom:10px">apa arti tanda-tanda ini?</button>
+        <div id="legend-help" hidden>
+          <h4 class="lh">Warna provinsi &mdash; <em>deret mana yang ada di sana</em>, bukan berapa banyak</h4>
+          <dl class="lx">
+            <dt><i class="sw keduanya"></i>media &amp; kasus resmi</dt>
+            <dd>Ada liputan media <b>dan</b> kasus administratif. Keduanya saling menguatkan &mdash; di sinilah sinyalnya paling kuat.</dd>
+            <dt><i class="sw media"></i>hanya liputan media</dt>
+            <dd>Pers memberitakan, tetapi tidak ada kasus resmi yang tercatat. Periksa kemungkinan <b>kegagalan penegakan</b>: laporan tidak naik, atau pengawas tidak menindak.</dd>
+            <dt><i class="sw resmi"></i>hanya kasus resmi</dt>
+            <dd>Pengawas mencatat kasus, tetapi persnya sunyi. Periksa kemungkinan <b>ketiadaan atau tekanan terhadap pers</b> di wilayah itu.</dd>
+            <dt><i class="sw oto"></i>hanya penelusuran otomatis</dt>
+            <dd>Baru ditemukan mesin, belum ada baris terkurasi. Perlu diperiksa sebelum dipakai.</dd>
+            <dt><i class="sw kosong"></i>belum ada catatan</dt>
+            <dd>Belum ada yang ditemukan lewat prosedur pencarian kami. <b>Bukan berarti tidak ada kejadian</b> &mdash; bisa jadi kami belum mencari cukup dalam di sana.</dd>
+          </dl>
+          <h4 class="lh">Bentuk titik &mdash; <em>dari mana barisnya berasal</em></h4>
+          <dl class="lx">
+            <dt><i class="sw ins"></i>insiden</dt>
+            <dd>Satu peristiwa paksaan yang <b>dilaporkan media</b> dan sudah dikurasi tangan oleh tim.</dd>
+            <dt><i class="sw kas"></i>kasus resmi</dt>
+            <dd>Catatan administratif dari Bawaslu, DKPP, BKN, KPK atau MK. Dikurasi tangan.</dd>
+            <dt><i class="sw oto"></i>otomatis</dt>
+            <dd>Ditemukan penelusuran mesin dari arsip outlet. Judul dan tautannya nyata, tetapi tanggal kejadian, pelaku, sasaran dan hasil dibiarkan kosong, dan sumbernya belum diadu. <b>Jangan dikutip sebagai temuan.</b></dd>
+          </dl>
+          <p class="lnote">Mengapa warnanya tidak menunjukkan jumlah: menghitung insiden per wilayah lalu mewarnainya
+            akan menghasilkan <b>peta kepadatan pers</b>, bukan peta paksaan. Jawa memerah karena wartawannya banyak;
+            daerah terpencil tampak bersih karena tidak ada yang meliput. Karena itu yang diwarnai adalah
+            <b>deret mana yang hadir</b>, dan perbedaan antar-deret itulah temuannya.</p>
+        </div>
       </div>
     </section>
 
@@ -60,12 +86,12 @@
   <footer class="foot">
     <div>
       <h4>Status</h4>
-      <p>Insiden disajikan sebagai <b>dilaporkan media</b>, dengan tautan sumber. Baris berstatus kurasi <code>keluar</code> tetap tersimpan di dataset untuk transparansi tetapi tidak pernah muncul di peta.</p>
+      <p>Insiden disajikan sebagai <b>dilaporkan media</b>, dengan tautan sumber. Baris berstatus kurasi <code>keluar</code> tetap tersimpan untuk transparansi tetapi tidak pernah muncul di peta, begitu pula temuan otomatis yang di luar lingkup (tercatat di <code>data/otomatis_diluar_lingkup.json</code>).</p>
       <p>Judul bertanda <em>belum diverifikasi</em> diturunkan dari slug URL, bukan dari halaman aslinya.</p>
     </div>
     <div>
       <h4>Penelusuran berkelanjutan</h4>
-      <p>Rutin harian menjalankan satu petak grid penelusuran (gelombang × mekanisme × provinsi) dan memasukkan temuannya ke <a href="tinjau.html">antrean tinjauan</a>. Tidak ada kandidat yang muncul di peta sebelum dikurasi dan dipindahkan ke lembar isian.</p>
+      <p>Rutin harian menjalankan satu petak grid penelusuran (gelombang × mekanisme × provinsi atau arsip outlet). Temuannya langsung masuk ke lapisan otomatis di peta sebagai segitiga emas, terpisah dari sensus yang dikurasi tangan, dan ditandai belum diadu sumbernya.</p>
       <p>Setiap kueri tercatat di <code>data/log_pencarian.json</code>, jadi prosedurnya bisa diulang. Yang kami klaim adalah sensus insiden <b>yang dapat ditemukan lewat prosedur yang dinyatakan</b>, bukan kelengkapan.</p>
     </div>
     <div>

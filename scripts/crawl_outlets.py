@@ -29,6 +29,7 @@ CTX = ssl.create_default_context(); CTX.check_hostname = False; CTX.verify_mode 
 # WP search matches whole words across the post, so terms are shorter than the Google News phrasings
 CARI = {
     "paksaan aparat sipil": [
+        "ASN diperiksa netralitas", "pegawai dipanggil Bawaslu", "ASN terlibat politik praktis", "sanksi disiplin ASN pilkada", "ASN dukung paslon medsos", "aparatur tidak netral", "mutasi dibatalkan pilkada", "pelantikan jelang pilkada", "ASN diarahkan memilih",
         "netralitas ASN", "mutasi pejabat pilkada", "ASN tidak netral", "ASN dilaporkan Bawaslu",
         "pegawai dimutasi pilkada", "ASN kampanye", "pelanggaran netralitas", "ASN diperiksa Bawaslu",
         "sanksi netralitas ASN", "ASN foto paslon", "ASN medsos paslon", "honorer diancam",
@@ -36,6 +37,7 @@ CARI = {
         "rekomendasi KASN", "teguran netralitas", "ASN hadiri kampanye", "mutasi jelang pilkada",
     ],
     "paksaan kepala desa dan lurah": [
+        "kades terlibat politik praktis", "lurah diperiksa Bawaslu", "kepala desa diarahkan", "kades dukung petahana", "perangkat desa diarahkan", "kades dipanggil panwaslu", "kepala desa sanksi netralitas", "camat diduga tidak netral", "kades kampanye terselubung",
         "kepala desa netralitas", "lurah netralitas", "kades dukung calon", "kepala desa dilaporkan",
         "perangkat desa pilkada", "kades kampanye", "camat netralitas", "kepala desa dikumpulkan",
         "kades diperiksa Bawaslu", "kepala desa sanksi pilkada", "lurah dilaporkan", "camat dilaporkan",
@@ -43,16 +45,19 @@ CARI = {
         "kades diancam", "perangkat desa dimobilisasi", "musyawarah kades pilkada",
     ],
     "paksaan warga penerima program": [
+        "bantuan diarahkan memilih", "penerima bansos diarahkan", "sembako dibagikan calon", "bantuan sosial menjelang pencoblosan",
         "bansos pilkada", "bantuan sosial politik", "bansos dipolitisasi", "penerima bantuan diarahkan",
         "bantuan syarat dukung", "sembako pilkada", "KTP dikumpulkan pilkada", "bansos diancam dicabut",
         "penerima PKH pilkada", "bantuan sosial kampanye",
     ],
     "tekanan terhadap kritik": [
+        "wartawan dihalangi meliput", "kritikus dilaporkan", "pers dihalangi pilkada",
         "wartawan intimidasi", "aktivis dilaporkan", "jurnalis diintimidasi", "kritik dilaporkan polisi",
         "wartawan diancam", "aktivis diintimidasi", "akademisi ditekan", "pengunjuk rasa ditangkap",
         "kebebasan pers pilkada", "wartawan dipolisikan",
     ],
     "pengalihan sumber daya": [
+        "dana hibah jelang pemilihan", "bantuan keuangan desa jelang pilkada", "program pemerintah jelang pencoblosan", "peresmian proyek masa kampanye",
         "bansos jelang pilkada", "petahana bantuan sosial", "peresmian jelang pilkada",
         "program bupati jelang pilkada", "hibah jelang pilkada", "bantuan keuangan jelang pilkada",
         "groundbreaking jelang pilkada", "anggaran dipercepat pilkada", "kunjungan kerja petahana",

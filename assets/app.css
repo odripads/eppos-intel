@@ -242,3 +242,16 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
   vertical-align:middle;margin-right:7px;min-width:2px}
 .bandingtab td.bar.k i{background:var(--null-soft);border:1px solid var(--null)}
 .bandingtab td.bar b{font-family:var(--mono);font-size:11.5px;color:var(--ink-2)}
+
+/* legend explainer */
+#legend-help{border:2.5px solid var(--navy);border-radius:12px;background:var(--surface-2);padding:14px 16px;margin-bottom:10px}
+.lh{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--red);
+  margin:0 0 8px;font-weight:600}
+.lh em{font-style:normal;color:var(--ink-3);text-transform:none;letter-spacing:.02em}
+.lh:not(:first-child){margin-top:16px;padding-top:14px;border-top:2px solid var(--line)}
+.lx{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0;font-size:12.5px;align-items:baseline}
+.lx dt{display:flex;align-items:center;gap:8px;font-weight:600;color:var(--ink);white-space:nowrap}
+.lx dd{margin:0;color:var(--ink-2);line-height:1.5}
+.lnote{margin:14px 0 0;padding-top:12px;border-top:2px dashed var(--line-2);font-size:12px;color:var(--ink-2);line-height:1.55}
+#legend-toggle[aria-expanded="true"]{background:var(--navy);color:var(--cream)}
+@media (max-width:640px){.lx{grid-template-columns:1fr;gap:2px} .lx dd{margin-bottom:8px}}
