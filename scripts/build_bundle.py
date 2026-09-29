@@ -14,7 +14,7 @@ data = {n: json.loads((ROOT / "data" / f"{n}.json").read_text()) for n in ("mani
 def trim_auto(rows):
     keep = ("insiden_id", "provinsi", "kab_kota", "lokasi_dasar", "mekanisme", "tanggal_berita",
             "sumber_1_url", "sumber_1_outlet", "sumber_2_url", "status_verifikasi", "periode_pilpres",
-            "judul_sumber_1", "judul_status", "diisi_oleh", "tanggal_isi", "gelombang_pilkada")
+            "judul_sumber_1", "judul_status", "diisi_oleh", "tanggal_isi", "gelombang_pilkada", "lokasi_perkiraan")
     return [{k: r.get(k) for k in keep if r.get(k) is not None} for r in rows]
 data["insiden_otomatis"] = trim_auto(data["insiden_otomatis"])
 data["crawl_state"] = {"done": [], "runs": data["crawl_state"].get("runs", [])[-3:],

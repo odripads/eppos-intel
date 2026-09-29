@@ -34068,5 +34068,21 @@
   "ditemukan_pada": "2026-09-29",
   "status_tinjau": "diterima otomatis",
   "catatan_tinjau": "diterima massal 2026-09-29 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-01980",
+  "judul": "Bawaslu: Istri Gubernur Sumbar Tidak Terbukti Melakukan Pelanggaran Kampanye",
+  "outlet": "payakumbuhpos.id",
+  "tanggal_terbit": "2019-03-11",
+  "url": "https://payakumbuhpos.id/bawaslu-istri-gubernur-sumbar-tidak-terbukti-melakukan-pelanggaran-kampanye/sumbar/",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2019b",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "payakumbuhpos.id search='aparatur tidak netral' 2019-01-01..2019-06-08",
+  "ditemukan_pada": "2026-09-29",
+  "status_tinjau": null,
+  "catatan_tinjau": null
  }
 ]

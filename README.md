@@ -132,3 +132,19 @@ Topik di luar lingkup ditolak pada kedua jalur: skandal pribadi (eksplisit di sp
 `index.html` memuat pemantau kecil yang **hanya aktif di localhost**: ia menanyakan cap waktu berkas data
 dan aset tiap 2 detik, lalu memuat ulang halaman begitu ada yang berubah. Lencana kecil di pojok kanan bawah
 menunjukkan pemantauan sedang berjalan. Versi terbitan tidak menjalankannya.
+
+### Dasar lokasi, dan mana yang hanya perkiraan
+
+Tiap baris otomatis menyimpan `lokasi_dasar` dan bendera `lokasi_perkiraan`:
+
+| dasar | perkiraan? | arti |
+|---|---|---|
+| `nama kab/kota di judul` | tidak | ceritanya sendiri menyebut tempatnya |
+| `singkatan tempat di judul` | tidak | singkatan lokal (mis. "Kotim") dipetakan lewat tabel alias |
+| `nama kab/kota di tautan` | tidak | slug URL menyebut tempatnya |
+| `nama kota di domain outlet` | **ya** | dari nama outlet (mis. `beritamanado.com`), bukan dari ceritanya |
+| `wilayah edar outlet` | **ya** | centroid provinsi tempat outlet beredar |
+
+Yang bertanda perkiraan menandai **di mana outletnya berada, bukan di mana peristiwanya**. Outlet daerah
+kerap meliput seluruh provinsinya, jadi titik semacam ini bisa meleset satu kabupaten atau lebih.
+Panel catatan menampilkan dasarnya pada tiap baris supaya pembaca tahu seberapa kuat penempatannya.

@@ -122,7 +122,8 @@
       '<span class="pill lbg">' + esc(r.sumber_1_outlet || "") + "</span></div>";
     h += '<dl class="meta">';
     h += "<dt>Wilayah</dt><dd>" + (r.kab_kota ? esc(r.kab_kota) : (r.provinsi ? esc(r.provinsi) : blank)) +
-      (r.lokasi_dasar ? ' <span class="muted small">(' + esc(r.lokasi_dasar) + ")</span>" : "") + "</dd>";
+      (r.lokasi_dasar ? ' <span class="muted small">(' + esc(r.lokasi_dasar) +
+        (r.lokasi_perkiraan ? " \u00b7 perkiraan" : "") + ")</span>" : "") + "</dd>";
     h += "<dt>Tanggal kejadian</dt><dd>" + blank + ' <span class="muted small">tidak diturunkan dari tanggal berita</span></dd>';
     h += "<dt>Tanggal berita</dt><dd>" + (r.tanggal_berita ? esc(fmtDate(r.tanggal_berita)) : blank) + "</dd>";
     h += "<dt>Mekanisme</dt><dd>" + val(r.mekanisme) + ' <span class="muted small">dari kelompok kata kunci</span></dd>';

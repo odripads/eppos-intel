@@ -112,8 +112,40 @@ OUTLET_PROV = {
 }
 
 
-PREFIX = re.compile(r"^(radar|kabar|info|berita|suara|harian|warta|media|tribun)")
-SUFFIX = re.compile(r"(pos|news|today|raya|terkini|ekspres|update|kita|post|hits|online|satu|net|id|co|com)$")
+# Local shorthand and city names that are not themselves kab/kota entries in the gazetteer.
+# Each maps to the kab/kota it belongs to, so a headline saying "Bawaslu Kotim" still places.
+ALIAS_TEMPAT = {
+    "kotim": "Kotawaringin Timur", "sampit": "Kotawaringin Timur", "kobar": "Kotawaringin Barat",
+    "pangkalanbun": "Kotawaringin Barat", "luwuk": "Banggai", "kotabaru": "Kota Baru",
+    "madura": "Pamekasan", "bumiaji": "Kota Batu", "batu": "Kota Batu",
+    "inhu": "Indragiri Hulu", "inhil": "Indragiri Hilir", "pekanbaru": "Kota Pekanbaru",
+    "tanjungpinang": "Kota Tanjung Pinang", "batam": "Kota Batam", "lingga": "Lingga",
+    "halmahera": "Halmahera Tengah", "ternate": "Kota Ternate", "sofifi": "Tidore Kepulauan",
+    "banjarbaru": "Kota Banjar Baru", "martapura": "Banjar", "kendari": "Kota Kendari",
+    "baubau": "Kota Bau-Bau", "palu": "Kota Palu", "gorontalo": "Kota Gorontalo",
+    "jayapura": "Kota Jayapura", "sorong": "Kota Sorong", "ambon": "Kota Ambon",
+    "kupang": "Kota Kupang", "mataram": "Kota Mataram", "denpasar": "Kota Denpasar",
+    "makassar": "Kota Makassar", "parepare": "Kota Pare-Pare", "manado": "Kota Manado",
+    "bitung": "Kota Bitung", "tomohon": "Kota Tomohon", "minut": "Minahasa Utara",
+    "mitra": "Minahasa Tenggara", "bolmong": "Bolaang Mongondow", "jember": "Jember",
+    "gresik": "Gresik", "sidoarjo": "Sidoarjo", "bogor": "Kota Bogor", "depok": "Kota Depok",
+    "bekasi": "Kota Bekasi", "karawang": "Karawang", "cirebon": "Kota Cirebon",
+    "tasikmalaya": "Kota Tasikmalaya", "sukabumi": "Kota Sukabumi", "garut": "Garut",
+    "semarang": "Kota Semarang", "solo": "Kota Surakarta", "surakarta": "Kota Surakarta",
+    "jogja": "Kota Yogyakarta", "yogya": "Kota Yogyakarta", "magelang": "Kota Magelang",
+    "salatiga": "Kota Salatiga", "kudus": "Kudus", "jambi": "Kota Jambi",
+    "palembang": "Kota Palembang", "lampung": "Kota Bandar Lampung", "medan": "Kota Medan",
+    "padang": "Kota Padang", "bengkulu": "Kota Bengkulu", "pontianak": "Kota Pontianak",
+    "samarinda": "Kota Samarinda", "balikpapan": "Kota Balikpapan", "banjarmasin": "Kota Banjarmasin",
+    "surabaya": "Kota Surabaya", "malang": "Kota Malang", "kediri": "Kota Kediri",
+    "madiun": "Kota Madiun", "pasuruan": "Kota Pasuruan", "probolinggo": "Kota Probolinggo",
+    "mojokerto": "Kota Mojokerto", "blitar": "Kota Blitar", "banda": "Kota Banda Aceh",
+}
+
+KAB_PREFIX = re.compile(r"^(kabupaten|kab\.?|kota administrasi|kota adm\.?|kota)\s+", re.I)
+PREFIX = re.compile(r"^(radar|kabar|info|berita|suara|harian|warta|media|tribun|jurnal|koran|portal|lintas|fokus)")
+SUFFIX = re.compile(r"(pos|news|today|raya|terkini|ekspres|update|kita|post|hits|online|satu|net|id|co|com|"
+                    r"voice|zone|link|channel|kini|expose|ekspos|times|daily|metro|media|bicara|aktual)$")
 
 
 def outlet_city(domain):
@@ -150,6 +182,30 @@ def main():
                 return r
         return None
 
+    gaz_by_name = {}
+    for nm, r in gaz: gaz_by_name.setdefault(nm, r)
+
+    def place_from_alias(text):
+        t = norm(text)
+        for ali, target in ALIAS_TEMPAT.items():
+            if re.search(r"(?<![a-z])" + ali + r"(?![a-z])", t):
+                r = gaz_by_name.get(norm(target)) or gaz_by_name.get(norm(KAB_PREFIX.sub("", target)))
+                if r: return r
+        return None
+
+    def place_from_domain(domain):
+        """Outlet names embed their city (malangvoice, jurnalbogor). Longest gazetteer name that
+        appears inside the domain wins; the alias table covers local shorthand the gazetteer lacks."""
+        if not domain: return None
+        base = norm(domain.split(".")[0])
+        for nm, r in gaz:
+            if len(nm) >= 5 and nm.replace(" ", "") in base: return r
+        for ali, target in ALIAS_TEMPAT.items():
+            if ali in base:
+                r = gaz_by_name.get(norm(target)) or gaz_by_name.get(norm(KAB_PREFIX.sub("", target)))
+                if r: return r
+        return None
+
     def place_from_url(url):
         """Article slugs often carry the kab/kota even when the headline does not
         (…/pilkada/d-123/bawaslu-sleman-limpahkan…). Same gazetteer, same word-boundary rule."""
@@ -183,6 +239,12 @@ def main():
         if not p:
             p = place_from_url(k.get("url"))
             if p: dasar = "nama kab/kota di tautan"
+        if not p:
+            p = place_from_alias(k["judul"])
+            if p: dasar = "singkatan tempat di judul"
+        if not p:
+            p = place_from_domain(k.get("outlet"))
+            if p: dasar = "nama kota di domain outlet"
         prov, pidx = (province_of(p) if p else (None, None))
         if not p:
             hp = OUTLET_PROV.get(k.get("outlet"))
@@ -205,7 +267,11 @@ def main():
             "tanggal": None,                       # event date unknown; a publication date is not it
             "tanggal_berita": k.get("tanggal_terbit"),
             "provinsi": prov, "kab_kota": (p["label"] if p else None),
-            "lokasi_dasar": dasar, "lokasi_tingkat": ("kab_kota" if p else ("provinsi" if prov else None)),
+            "lokasi_dasar": dasar,
+            # True where the place came from the outlet rather than from the story itself: the article
+            # never names it, so the point marks where the outlet is based, not where the incident was.
+            "lokasi_perkiraan": dasar in ("wilayah edar outlet", "nama kota di domain outlet"),
+            "lokasi_tingkat": ("kab_kota" if p else ("provinsi" if prov else None)),
             "pelaku_jabatan": None, "sasaran_jenis": None,
             "mekanisme": k.get("mekanisme_dugaan"),
             "ringkasan_satu_kalimat": None, "hasil": None,
