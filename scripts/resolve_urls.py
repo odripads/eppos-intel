@@ -30,8 +30,12 @@ def main():
     if not todo:
         print("semua kandidat sudah punya URL", file=sys.stderr); return
     seen = {cc.norm_url(k["url"]) for k in kand if k.get("url")}
-    ok = fail = 0
+    ok = fail = beruntun = 0
     for k in todo[: a.max]:
+        if beruntun >= 5:
+            # Google allows a short burst then throttles; pushing past it only deepens the block.
+            # The rest keep their url_google and are retried by the next daily run.
+            print(f"  5 kegagalan beruntun \u2014 berhenti; sisanya dicoba lagi besok", file=sys.stderr); break
         gid = k["url_google"].rsplit("/", 1)[-1]
         u = cc.resolve(gid, attempts=2)
         if u:
@@ -40,8 +44,9 @@ def main():
                 k["status_url"] = "duplikat"; k["catatan_tinjau"] = "URL sama dengan kandidat lain"
             else:
                 seen.add(nu); k["url"] = u; k["status_url"] = "terselesaikan"; ok += 1
+            beruntun = 0
         else:
-            k["status_url"] = "belum terselesaikan"; fail += 1
+            k["status_url"] = "belum terselesaikan"; fail += 1; beruntun += 1
         print(("  OK   " if u else "  GAGAL") + " " + k["kandidat_id"] + " " + (u or k["judul"])[:72], file=sys.stderr)
         p.write_text(json.dumps(kand, ensure_ascii=False, indent=1) + "\n")
         time.sleep(a.gap)
