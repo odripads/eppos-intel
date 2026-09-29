@@ -33,14 +33,13 @@ siantar asahan labuhanbatu padang bukittinggi payakumbuh solok pariaman pekanbar
 palembang lubuklinggau prabumulih bengkulu lampung metro pringsewu pontianak singkawang sintang palangkaraya
 sampit pangkalanbun banjarmasin banjarbaru martapura samarinda balikpapan bontang tarakan batam tanjungpinang
 karimun bintan aceh banda lhokseumawe langsa sabang meulaboh bireuen""".split()
-POLA = ["radar{c}.com", "radar{c}.id", "{c}pos.com", "{c}pos.co.id", "{c}ekspres.com", "kabar{c}.com",
-        "kabar{c}.id", "info{c}.com", "berita{c}.com", "berita{c}.id", "suara{c}.com", "suara{c}.id",
-        "{c}terkini.com", "{c}today.com", "{c}raya.com", "{c}news.com", "harian{c}.com", "{c}update.com",
-        "tribun{c}.com", "{c}kita.com", "media{c}.com", "{c}post.com", "warta{c}.com", "{c}hits.com",
-        "{c}satu.com", "{c}satu.id", "portal{c}.com", "rakyat{c}.com", "{c}ekspres.co.id", "{c}raya.co.id",
-        "{c}online.com", "{c}link.com", "{c}bicara.com", "{c}now.com", "fokus{c}.com", "lintas{c}.com",
-        "jurnal{c}.com", "{c}headline.com", "{c}inside.com", "{c}metro.com", "metro{c}.com", "{c}daily.com",
-        "{c}times.com", "times{c}.com", "{c}pedia.com", "{c}zone.com", "{c}corner.com", "{c}express.com"]
+POLA = ["{c}ekspos.com", "ekspos{c}.com", "{c}bangkit.com", "{c}terbit.com", "{c}aktual.com",
+        "aktual{c}.com", "{c}pikiran.com", "{c}suara.com", "{c}warta.com", "{c}kabar.com",
+        "{c}berita.com", "{c}harian.id", "{c}pos.id", "{c}news.id", "{c}today.id", "{c}raya.id",
+        "{c}update.id", "{c}terkini.id", "{c}online.id", "{c}link.id", "{c}info.com", "{c}info.id",
+        "{c}tribun.com", "{c}koran.com", "koran{c}.com", "{c}media.com", "{c}channel.com",
+        "{c}voice.com", "{c}focus.com", "{c}review.com", "{c}journal.com", "{c}insight.com",
+        "{c}expose.com", "{c}detik.com", "{c}viral.com", "{c}terkini.co.id", "{c}news.co.id"]
 
 # headline signatures of things that are not local journalism
 SPAM = re.compile(r"(casino|slot|judi|gacor|togel|poker|betting|bookmaker|crypto|bitcoin|forex|"
