@@ -18,6 +18,8 @@ PY="$(command -v python3 || echo /opt/homebrew/bin/python3)"
   "$PY" scripts/resolve_urls.py --max 25 --gap 8 2>&1 | tail -3
   echo "── verifikasi judul sumber baru"
   "$PY" scripts/verify_titles.py 2>&1 | tail -3
+  echo "── terima kandidat baru (izin berdiri Odri, 29 Sep 2026)"
+  "$PY" scripts/confirm_queue.py 2>&1 | tail -1
   echo "── masukkan temuan otomatis ke lapisan peta"
   "$PY" scripts/promote_candidates.py 2>&1 | tail -3
   echo "── bangun ulang data dari xlsx"
