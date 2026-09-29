@@ -272,6 +272,13 @@
   "alasan": null,
   "sumber": "wikidata:Q10687 (Semarang)"
  },
+ "Jawa Tengah|Kabupaten Sukoharjo": {
+  "lat": -7.68333,
+  "lon": 110.83333,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q10692 (Sukoharjo)"
+ },
  "Jawa Tengah|Karanganyar": {
   "lat": -7.596111111,
   "lon": 110.950833333,
@@ -405,12 +412,47 @@
   "alasan": null,
   "sumber": "wikidata:Q11462 (Surabaya)"
  },
+ "Kalimantan Barat|": {
+  "lat": 0.0,
+  "lon": 110.5,
+  "tingkat": "provinsi",
+  "alasan": "kab_kota kosong: agregat provinsi",
+  "sumber": "wikidata:Q3916 (Kalimantan Barat)"
+ },
+ "Kalimantan Selatan|": {
+  "lat": -2.5,
+  "lon": 115.5,
+  "tingkat": "provinsi",
+  "alasan": "kab_kota kosong: agregat provinsi",
+  "sumber": "wikidata:Q3906 (Kalimantan Selatan)"
+ },
+ "Kalimantan Selatan|Kabupaten Tanah Laut": {
+  "lat": -3.799739239,
+  "lon": 114.782593377,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q14178 (Tanah Laut)"
+ },
  "Kalimantan Tengah|": {
   "lat": -2.216666666,
   "lon": 113.916666666,
   "tingkat": "provinsi",
   "alasan": "kab_kota kosong: agregat provinsi",
   "sumber": "wikidata:Q3891 (Kalimantan Tengah)"
+ },
+ "Kalimantan Timur|Kabupaten Penajam Paser Utara": {
+  "lat": -1.291709,
+  "lon": 116.513796,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q14479 (Penajam Paser Utara)"
+ },
+ "Kalimantan Utara|Nunukan": {
+  "lat": 4.133333333,
+  "lon": 116.7,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q14481 (Nunukan)"
  },
  "Lampung|": {
   "lat": -5.440833333,
@@ -419,12 +461,26 @@
   "alasan": "kab_kota kosong: agregat provinsi",
   "sumber": "wikidata:Q2110 (Lampung)"
  },
+ "Maluku|Ambon": {
+  "lat": -3.696666666,
+  "lon": 128.178333333,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q18970 (Ambon)"
+ },
  "Maluku Utara|Halmahera Selatan": {
   "lat": -0.3955,
   "lon": 127.90833,
   "tingkat": "kab_kota",
   "alasan": null,
   "sumber": "wikidata:Q19148 (Halmahera Selatan)"
+ },
+ "NTT|Kabupaten Belu": {
+  "lat": -9.1,
+  "lon": 124.9,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q14133 (Belu)"
  },
  "Nusa Tenggara Timur|Flores Timur": {
   "lat": -8.341208303,
@@ -440,6 +496,13 @@
   "alasan": null,
   "sumber": "wikidata:Q14155 (Kupang)"
  },
+ "Papua|Jaya Pura": {
+  "lat": -3.0,
+  "lon": 139.95,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q27477 (Jayapura)"
+ },
  "Papua|Kota Jayapura": {
   "lat": -2.5425,
   "lon": 140.704478888,
@@ -447,12 +510,47 @@
   "alasan": null,
   "sumber": "wikidata:Q27860 (Jayapura)"
  },
+ "Riau|Kota Pekanbaru": {
+  "lat": 0.533333333,
+  "lon": 101.45,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q7786 (Pekanbaru)"
+ },
+ "Sulawesi Selatan|": {
+  "lat": -3.75,
+  "lon": 120.0,
+  "tingkat": "provinsi",
+  "alasan": "kab_kota kosong: agregat provinsi",
+  "sumber": "wikidata:Q5078 (Sulawesi Selatan)"
+ },
  "Sulawesi Selatan|Bantaeng": {
   "lat": -5.53333,
   "lon": 119.933,
   "tingkat": "kab_kota",
   "alasan": null,
   "sumber": "wikidata:Q14590 (Bantaeng)"
+ },
+ "Sulawesi Tenggara|": {
+  "lat": -3.95,
+  "lon": 122.5,
+  "tingkat": "provinsi",
+  "alasan": "kab_kota kosong: agregat provinsi",
+  "sumber": "wikidata:Q5075 (Sulawesi Tenggara)"
+ },
+ "Sumatera Barat|": {
+  "lat": -1.0,
+  "lon": 100.5,
+  "tingkat": "provinsi",
+  "alasan": "kab_kota kosong: agregat provinsi",
+  "sumber": "wikidata:Q2772 (Sumatera Barat)"
+ },
+ "Sumatera Barat|Kabupaten Pasaman": {
+  "lat": 0.166666666,
+  "lon": 100.117,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q6048 (Pasaman)"
  },
  "Sumatera Barat|Tanah Datar": {
   "lat": -0.45,
@@ -468,6 +566,13 @@
   "alasan": "multi kab/kota, ditempatkan di centroid provinsi: “7 kabupaten/kota”",
   "sumber": "wikidata:Q2271 (Sumatera Selatan)"
  },
+ "Sumatera Selatan|Kabupaten Musi Banyuasin": {
+  "lat": -2.89388889,
+  "lon": 103.8125,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q8120 (Musi Banyuasin)"
+ },
  "Sumatera Utara|": {
   "lat": 2.0,
   "lon": 99.0,
@@ -481,6 +586,13 @@
   "tingkat": "kab_kota",
   "alasan": null,
   "sumber": "wikidata:Q5918 (Nias Selatan)"
+ },
+ "Sumatera Utara|Kabupaten Tapanuli Tengah": {
+  "lat": 1.9,
+  "lon": 98.66667,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q5800 (Tapanuli Tengah)"
  },
  "Sumatera Utara|Kota Pematang Siantar": {
   "lat": 2.96,

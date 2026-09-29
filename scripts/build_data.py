@@ -98,6 +98,9 @@ def norm(s):
 
 PROV_ALIAS = {"di yogyakarta": "yogyakarta", "dki jakarta": "jakarta"}   # Wikidata labels the provinces plainly
 # Hand-filled centroids for places Wikidata does not type as kab/kota (Jakarta's administrative cities). Source recorded per entry.
+# hand-entry spelling variants: the sheet is filled by people, and "Jaya Pura" is the same city
+EJAAN_VARIAN = {"jaya pura": "jayapura", "bau bau": "bau-bau", "pare pare": "pare-pare",
+                "ambon": "ambon", "nunukan": "nunukan", "banjarmasin": "banjarmasin"}
 MANUAL = {("dki jakarta", "jakarta utara"): {"lat": -6.1385, "lon": 106.8637, "sumber": "manual: id.wikipedia.org/wiki/Jakarta_Utara (koordinat infobox)"}}
 KAB_PREFIX = re.compile(r"^(kabupaten|kab\.?|kota administrasi|kota adm\.?|kota)\s+", re.I)
 
@@ -134,6 +137,7 @@ def resolve(prov, kab, wd, gagal):
     if not wd:
         gagal.append({"provinsi": prov, "kab_kota": kab, "alasan": "berkas centroid Wikidata tidak tersedia"}); return None
     k = norm(kab); m = KAB_PREFIX.match(kab); bare = norm(KAB_PREFIX.sub("", kab))
+    bare = EJAAN_VARIAN.get(bare, bare)
     if bare == norm(prov or "") or k in ("dki jakarta",): return prov_entry("kab_kota sama dengan provinsi")
     if m and m.group(1).lower().startswith("kota"): order = ["kota"]
     elif m: order = ["kab"]
@@ -178,6 +182,50 @@ def apply_titles(rows, url_col, titles):
             r["judul_sumber_1"] = t["judul"]; r["judul_status"] = "terverifikasi"; n += 1
     return n
 
+def periode_dari(tanggal, gelombang, periode_rows):
+    """Presidential period from the event date; falls back to the pilkada wave when the date is unknown."""
+    if tanggal:
+        for pr in periode_rows:
+            if pr.get("mulai") and str(pr["mulai"]) <= tanggal < str(pr.get("selesai") or "9999"):
+                return pr["periode"]
+    g = str(gelombang or "")
+    m = re.search(r"(20\d\d)", g)
+    if m:
+        y = m.group(1)
+        return {"2015": "Periode III", "2017": "Periode III", "2018": "Periode III",
+                "2013": "Periode II", "2012": "Periode II",
+                "2020": "Periode IV", "2019": "Periode III", "2024": "Periode V"}.get(y)
+    return None
+
+
+def merge_inan(insiden, kasus, periode_rows):
+    """Inan's hand-collected rows join the CURATED series: they have sources and a human behind them.
+    Validated separately by scripts/ingest_inan.py; anything it could not settle stays blank there."""
+    added = {"insiden": 0, "kasus": 0}
+    fi = DATA / "insiden_inan.json"
+    if fi.exists():
+        for r in json.loads(fi.read_text()):
+            row = {c: r.get(c) for c in INSIDEN_COLS}
+            row["insiden_id"] = r["insiden_id"]
+            row["periode_pilpres"] = periode_dari(r.get("tanggal"), r.get("gelombang_pilkada"), periode_rows)
+            row["judul_sumber_1"] = r.get("ringkasan_satu_kalimat") or r.get("sumber_1_url")
+            row["judul_status"] = "dari lembar isian"
+            row["sumber_baris"] = "Inan (lembar isian)"
+            row["catatan_validasi"] = r.get("catatan_validasi")
+            insiden.append(row); added["insiden"] += 1
+    fk = DATA / "kasus_resmi_inan.json"
+    if fk.exists():
+        for r in json.loads(fk.read_text()):
+            row = {c: r.get(c) for c in KASUS_COLS}
+            row["kasus_id"] = r["kasus_id"]
+            row["periode_pilpres"] = periode_dari(None, r.get("gelombang_pilkada") or r.get("tahun"), periode_rows)
+            row["judul_sumber_1"] = r.get("jenis_pelanggaran") or r.get("sumber_url")
+            row["judul_status"] = "dari lembar isian"
+            row["sumber_baris"] = "Inan (lembar isian)"
+            kasus.append(row); added["kasus"] += 1
+    return added
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("xlsx", nargs="?", default=str(ROOT / "eppos-media-intake.xlsx"))
@@ -193,6 +241,7 @@ def main():
     nt = apply_titles(ins, "sumber_1_url", titles) + apply_titles(kas, "sumber_url", titles)
     insiden = [{c: r.get(c) for c in INSIDEN_COLS} for r in ins]
     kasus = [{c: r.get(c) for c in KASUS_COLS} for r in kas]
+    ditambah = merge_inan(insiden, kasus, periode)
     koordinat, gagal = build_koordinat(insiden, kasus, a.wikidata)
     DATA.mkdir(exist_ok=True)
     def dump(name, obj): (DATA / name).write_text(json.dumps(obj, ensure_ascii=False, indent=1) + "\n")
@@ -202,6 +251,7 @@ def main():
     manifest = {"version": dt.date.today().isoformat(), "generated_at": dt.datetime.now(dt.timezone(dt.timedelta(hours=7))).isoformat(timespec="seconds"),
                 "xlsx": Path(a.xlsx).name, "xlsx_sha256": hashlib.sha256(open(a.xlsx, "rb").read()).hexdigest()[:16],
                 "periode": len(periode), "insiden": len(insiden), "kasus_resmi": len(kasus),
+                "dari_lembar_inan": ditambah,
                 "insiden_ditolak": len(p1), "kasus_ditolak": len(p2), "judul_terverifikasi": nt,
                 "koordinat": len(koordinat), "koordinat_gagal": len(gagal), "lokasi_dipakai": len(keys),
                 "proyeksi": {"lonMin": LON_MIN, "lonMax": LON_MAX, "latMin": LAT_MIN, "latMax": LAT_MAX, "viewBox": "0 0 1000 420"}}

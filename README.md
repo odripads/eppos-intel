@@ -186,3 +186,20 @@ Rasio 2018 hampir hilang — sebagian besarnya tadi hanyalah usaha pencarian yan
 `data/usaha_pencarian.json` menyimpan jumlah sel per jendela, dan tabel di situs menampilkan kolom
 "sel dicari" supaya ketimpangannya terlihat. Angka ini tetap mengukur **seberapa banyak yang
 diberitakan**, bukan seberapa banyak yang terjadi.
+
+### Lembar isian Inan (30 Sep 2026)
+
+`scripts/ingest_inan.py` membaca `../30sept/*.xlsx` (template v2, 22 kolom) dan memvalidasinya sebelum
+digabungkan ke deret **terkurasi** — bukan ke lapisan otomatis: baris ini dikumpulkan tangan dan bersumber.
+
+Yang dinormalkan secara deterministik: tanggal serial Excel dan `dd/mm/yyyy` → ISO; `mekanisme` teks bebas
+→ tipologi tertutup bila teksnya jelas cocok; `jumlah_kasus` → bilangan awal, teks aslinya disimpan.
+
+Yang **tidak** ditebak: tanggal yang memang tidak disebut sumbernya dibiarkan kosong (aslinya disimpan di
+`tanggal_asli`); `status_kurasi` tidak pernah diisi `masuk`, hanya `ragu`, karena Odri belum membacanya.
+
+ID dari kedua berkas bertabrakan (keduanya mulai dari `INS-2026-0001`), jadi tiap baris diberi awalan
+berkasnya: `INAN-20122018-…` dan `INAN-20182022-…`.
+
+Hasil: 9 insiden + 10 kasus resmi, **0 baris ditolak** (semuanya punya tautan sumber).
+5 baris ditandai perlu keputusan, tercatat di `catatan_validasi` dan `data/validasi_inan.json`.
