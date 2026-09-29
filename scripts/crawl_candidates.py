@@ -253,6 +253,11 @@ def main():
                      "alat": "Google News RSS (skrip)", "dijalankan_oleh": "rutin otomatis",
                      "catatan": f"{len(items)} hasil, {kept} masuk antrean tinjau"})
         state.setdefault("done", []).append(cid)
+        # simpan berkala: satu run panjang tidak boleh kehilangan semuanya kalau prosesnya mati
+        if len(state["done"]) % 25 == 0:
+            _merge_save(DATA / "kandidat.json", kandidat)
+            (DATA / "crawl_state.json").write_text(json.dumps(state, ensure_ascii=False, indent=1) + "\n")
+            (DATA / "log_pencarian.json").write_text(json.dumps(logs, ensure_ascii=False, indent=1) + "\n")
         print(f"  {wave} {(prov or '(nasional)')[:18]:18s} {mek[:24]:24s} {len(items):2d} hasil → {kept} kandidat", file=sys.stderr)
         time.sleep(12)
 
