@@ -34082,7 +34082,23 @@
   "provinsi_kueri": "(arsip outlet)",
   "kueri": "payakumbuhpos.id search='aparatur tidak netral' 2019-01-01..2019-06-08",
   "ditemukan_pada": "2026-09-29",
-  "status_tinjau": null,
-  "catatan_tinjau": null
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-09-29 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-01981",
+  "judul": "Kades dan Keluarganya di Pamekasan Diduga Melakukan Pengeroyokan",
+  "outlet": "pamekasanchannel.com",
+  "tanggal_terbit": "2021-10-05",
+  "url": "https://pamekasanchannel.com/news/hukum-kriminal/kades-dan-keluarganya-di-pamekasan-diduga-melakukan-pengeroyokan/",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2021",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "pamekasanchannel.com search='kepala desa dilaporkan' 2021-01-10..2021-12-31",
+  "ditemukan_pada": "2026-09-29",
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-09-29 atas izin berdiri Odri; bukan tinjauan per baris"
  }
 ]
