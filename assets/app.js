@@ -117,7 +117,7 @@
 
   function autoHtml(r) {
     var h = '<article class="rec oto"><h3><a href="' + esc(r.sumber_1_url) + '" target="_blank" rel="noopener">' + esc(r.judul_sumber_1) + " \u2197</a></h3>";
-    h += '<div class="tags"><span class="pill oto">penelusuran otomatis \u00b7 belum dikurasi</span>' +
+    h += '<div class="tags"><span class="pill oto">otomatis \u00b7 diterima, sumber belum diadu</span>' +
       '<span class="pill ' + (r.status_verifikasi === "dua sumber" ? "dua" : "satu") + '">' + esc(r.status_verifikasi) + "</span>" +
       '<span class="pill lbg">' + esc(r.sumber_1_outlet || "") + "</span></div>";
     h += '<dl class="meta">';
@@ -194,9 +194,10 @@
     if (kas.length) h += '<h4 class="grp">Kasus administratif \u00b7 dikurasi</h4>' + group(kas);
     if (oto.length) {
       h += '<h4 class="grp oto">Penelusuran otomatis \u00b7 ' + oto.length + " temuan, belum dikurasi</h4>" +
-        '<div class="note oto-note">Ditemukan otomatis dari arsip outlet. Hanya judul, tautan, outlet, tanggal terbit dan ' +
-        "kelompok mekanisme yang diturunkan; tanggal kejadian, pelaku, sasaran dan hasil dibiarkan kosong karena tidak bisa " +
-        "disimpulkan dari judul. Belum melewati kurasi, jadi jangan dikutip sebagai temuan.</div>" +
+        '<div class="note oto-note">Ditemukan otomatis dari arsip outlet dan diterima seluruhnya. Hanya judul, tautan, outlet, ' +
+        "tanggal terbit dan kelompok mekanisme yang diturunkan; tanggal kejadian, pelaku, sasaran dan hasil dibiarkan kosong " +
+        "karena tidak bisa disimpulkan dari judul. Sumbernya belum diadu satu sama lain, jadi jangan dikutip sebagai temuan " +
+        "sebelum diperiksa.</div>" +
         oto.map(autoHtml).join("");
     }
     if (!ins.length && !kas.length) h += '<div class="pnl-empty"><b>Tidak ada catatan</b><p>Belum ada baris untuk provinsi ini pada ' + esc(state.periode) + ".</p></div>";
@@ -301,21 +302,22 @@
       '<div class="stat"><b>' + Object.keys(provs).length + "</b><span>provinsi</span></div>";
   }
 
-  /* retrieval progress: automated finds now go straight onto the map as their own layer */
+  /* retrieval progress. The queue is accepted in bulk under a standing authorisation, so this reports
+     what is on the map and how it is sourced — not a backlog waiting on anyone. */
   function pipeline() {
     fetch("data/crawl_state.json").then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
       .then(function (cs) {
-        var oto = (D.otomatis || []).length;
-        if (!oto && !cs) return;
+        var oto = (D.otomatis || []);
+        if (!oto.length && !cs) return;
         var done = cs ? (cs.n_done != null ? cs.n_done : (cs.done ? cs.done.length : 0)) : 0;
         var last = cs && cs.runs && cs.runs.length ? cs.runs[cs.runs.length - 1].tanggal : null;
-        var dua = (D.otomatis || []).filter(function (r) { return r.status_verifikasi === "dua sumber"; }).length;
+        var dua = oto.filter(function (r) { return r.status_verifikasi === "dua sumber"; }).length;
         $("#pipeline").hidden = false;
         $("#pipeline").innerHTML =
-          "<span>Penelusuran berkelanjutan \u00b7 <b>" + oto + "</b> temuan otomatis di peta, <b>" + dua + "</b> terkuatkan dua outlet</span>" +
+          "<span><b>" + oto.length + "</b> temuan otomatis di peta \u00b7 semuanya sudah diterima \u00b7 <b>" +
+          dua + "</b> terkuatkan dua outlet</span>" +
           '<span class="grow"></span>' +
-          '<span class="mono muted">' + done + " kueri dijalankan" + (last ? " \u00b7 terakhir " + last : "") + "</span>" +
-          '<a class="cta" href="tinjau.html">antrean mentah</a>';
+          '<span class="mono muted">' + done.toLocaleString("id-ID") + " kueri dijalankan" + (last ? " \u00b7 terakhir " + last : "") + "</span>";
       });
   }
 
