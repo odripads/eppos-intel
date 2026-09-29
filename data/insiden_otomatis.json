@@ -7420,7 +7420,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajatim.com search='pelanggaran netralitas' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00276",
@@ -7449,7 +7450,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajatim.com search='pelanggaran netralitas' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00277",
@@ -7478,7 +7480,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajatim.com search='pelanggaran netralitas' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00278",
@@ -7507,7 +7510,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajatim.com search='pelanggaran netralitas' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00279",
@@ -29957,5 +29961,93 @@
   "kueri": "payakumbuhpos.id search='aparatur tidak netral' 2019-01-01..2019-06-08",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 25
+ },
+ {
+  "insiden_id": "AUTO-01982",
+  "tanggal": null,
+  "tanggal_berita": "2018-01-30",
+  "provinsi": "Banten",
+  "kab_kota": null,
+  "lokasi_dasar": "wilayah edar outlet",
+  "lokasi_perkiraan": true,
+  "lokasi_tingkat": "provinsi",
+  "pelaku_jabatan": null,
+  "sasaran_jenis": null,
+  "mekanisme": "paksaan aparat sipil",
+  "ringkasan_satu_kalimat": null,
+  "hasil": null,
+  "sumber_1_url": "https://www.radarbanten.co.id/2018/01/30/diduga-melanggar-aturan-sekda-banten-dilaporkan-ke-komisi-asn/",
+  "sumber_1_outlet": "radarbanten.co.id",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
+  "status_kurasi": "otomatis",
+  "periode_pilpres": "Periode III",
+  "gelombang_pilkada": "2018",
+  "judul_sumber_1": "Diduga Melanggar Aturan, Sekda Banten Dilaporkan ke Komisi ASN",
+  "judul_status": "terverifikasi",
+  "diisi_oleh": "penelusuran otomatis",
+  "tanggal_isi": "2026-09-29",
+  "kueri": "radarbanten.co.id search='ASN terlibat politik praktis' 2017-12-27..2018-07-27",
+  "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
+  "_path": 6
+ },
+ {
+  "insiden_id": "AUTO-01983",
+  "tanggal": null,
+  "tanggal_berita": "2024-09-27",
+  "provinsi": "Jawa Timur",
+  "kab_kota": "Sidoarjo",
+  "lokasi_dasar": "nama kab/kota di judul",
+  "lokasi_perkiraan": false,
+  "lokasi_tingkat": "kab_kota",
+  "pelaku_jabatan": null,
+  "sasaran_jenis": null,
+  "mekanisme": "paksaan aparat sipil",
+  "ringkasan_satu_kalimat": null,
+  "hasil": null,
+  "sumber_1_url": "https://sidoarjonews.id/bawaslu-sidoarjo-panggil-seorang-asn-diduga-dukung-paslon-di-pilkada-2024/",
+  "sumber_1_outlet": "sidoarjonews.id",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
+  "status_kurasi": "otomatis",
+  "periode_pilpres": "Periode V",
+  "gelombang_pilkada": "2024",
+  "judul_sumber_1": "Bawaslu Sidoarjo Panggil Seorang ASN Diduga Dukung Paslon di Pilkada 2024",
+  "judul_status": "terverifikasi",
+  "diisi_oleh": "penelusuran otomatis",
+  "tanggal_isi": "2026-09-29",
+  "kueri": "sidoarjonews.id search='pegawai dipanggil Bawaslu' 2024-05-27..2024-12-27",
+  "lingkup_dasar": "konteks elektoral di judul",
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
+ },
+ {
+  "insiden_id": "AUTO-01985",
+  "tanggal": null,
+  "tanggal_berita": "2020-12-01",
+  "provinsi": "Jawa Timur",
+  "kab_kota": "Surabaya",
+  "lokasi_dasar": "nama kab/kota di judul",
+  "lokasi_perkiraan": false,
+  "lokasi_tingkat": "kab_kota",
+  "pelaku_jabatan": null,
+  "sasaran_jenis": null,
+  "mekanisme": "paksaan aparat sipil",
+  "ringkasan_satu_kalimat": null,
+  "hasil": null,
+  "sumber_1_url": "https://rajawarta.com/bawaslu-siapkan-kajian-dugaan-pelanggaran-kampanye-walikota-surabaya/",
+  "sumber_1_outlet": "rajawarta.com",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
+  "status_kurasi": "otomatis",
+  "periode_pilpres": "Periode IV",
+  "gelombang_pilkada": "2020",
+  "judul_sumber_1": "Bawaslu Siapkan Kajian Dugaan Pelanggaran Kampanye Walikota Surabaya",
+  "judul_status": "terverifikasi",
+  "diisi_oleh": "penelusuran otomatis",
+  "tanggal_isi": "2026-09-29",
+  "kueri": "rajawarta.com search='ASN dilaporkan Bawaslu' 2020-06-09..2021-01-09",
+  "lingkup_dasar": "konteks elektoral di judul",
+  "_path": 7
  }
 ]

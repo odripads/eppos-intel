@@ -165,3 +165,24 @@ tersisa semuanya benar-benar peristiwa yang sama diberitakan dua outlet.
 siaran pers yang sama. Lapisan otomatis hanya menyimpan judul, bukan badan artikel, jadi uji itu belum
 bisa dijalankan. Yang bisa dipastikan sekarang hanyalah bahwa keduanya membicarakan peristiwa yang sama
 dari outlet berbeda — bukan bahwa keduanya ditulis secara independen.
+
+### Normalisasi usaha pencarian
+
+Perbandingan jendela pilkada vs jendela kontrol sempat memakai **hitungan mentah**, dan itu salah:
+jendela kontrol belum dicari sekeras jendela pilkada karena grid dijalankan berurutan.
+
+| jendela | sel dicari | temuan | per 1.000 sel |
+|---|---:|---:|---:|
+| 2024 | 21.815 | 479 | 22,0 |
+| kontrol-2024 (2023) | 16.255 | 81 | 5,0 |
+| 2020 | 20.007 | 201 | 10,0 |
+| kontrol-2020 (2019) | 9.327 | 18 | 1,9 |
+| 2018 | 19.687 | 86 | 4,4 |
+| kontrol-2018 | 8.960 | 29 | 3,2 |
+
+Rasio mentah 5,9× / 11,2× / 3,0× turun menjadi **4,4× / 5,2× / 1,3×** setelah dinormalkan.
+Rasio 2018 hampir hilang — sebagian besarnya tadi hanyalah usaha pencarian yang tidak seimbang.
+
+`data/usaha_pencarian.json` menyimpan jumlah sel per jendela, dan tabel di situs menampilkan kolom
+"sel dicari" supaya ketimpangannya terlihat. Angka ini tetap mengukur **seberapa banyak yang
+diberitakan**, bukan seberapa banyak yang terjadi.

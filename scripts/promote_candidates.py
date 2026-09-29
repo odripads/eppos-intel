@@ -342,6 +342,16 @@ def main():
         if not r["status_verifikasi"]: r["status_verifikasi"] = "satu sumber"
 
     (DATA / "insiden_otomatis.json").write_text(json.dumps(rows, ensure_ascii=False, indent=1) + "\n")
+    # effort per window: a wave searched twice as hard as its control will "find" twice as much,
+    # which is the same trap as a raw-count choropleth. Store cells searched so rates can be compared.
+    state = json.loads((DATA / "crawl_state.json").read_text()) if (DATA / "crawl_state.json").exists() else {"done": []}
+    usaha = {}
+    for cid in state.get("done", []):
+        if cid.startswith("wp|"):
+            parts = cid.split("|")
+            if len(parts) > 1: usaha[parts[1]] = usaha.get(parts[1], 0) + 1
+    (DATA / "usaha_pencarian.json").write_text(json.dumps(usaha, ensure_ascii=False, indent=1) + "\n")
+
     (DATA / "otomatis_diluar_lingkup.json").write_text(json.dumps(ditolak, ensure_ascii=False, indent=1) + "\n")
     print(f"{len(ditolak)} kandidat disisihkan sebagai di luar lingkup (tercatat, tidak dibuang)")
     dua = sum(1 for r in rows if r["status_verifikasi"] == "dua sumber")

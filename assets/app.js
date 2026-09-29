@@ -222,28 +222,34 @@
   var PASANGAN = [["2024", "kontrol-2024", "2024 vs 2023"], ["2020", "kontrol-2020", "2020 vs 2019"],
                   ["2018", "kontrol-2018", "2018 vs 2019/20"]];
   function bandingGelombang() {
-    var oto = (D.otomatis || []);
+    var oto = (D.otomatis || []), usaha = D.usaha || {};
     if (!oto.length) return "";
     var rows = PASANGAN.map(function (p) {
       var a = oto.filter(function (r) { return r.gelombang_pilkada === p[0]; }).length;
       var b = oto.filter(function (r) { return r.gelombang_pilkada === p[1]; }).length;
+      var ua = usaha[p[0]], ub = usaha[p[1]];
       if (!a && !b) return "";
-      var max = Math.max(a, b, 1);
+      // rate per 1,000 cells searched, because the two windows were not searched equally hard
+      var ra = ua ? a / ua * 1000 : null, rb = ub ? b / ub * 1000 : null;
+      var max = Math.max(ra || 0, rb || 0, 0.001);
+      var rasio = (ra && rb) ? (ra / rb).toFixed(1) + "\u00d7" : "\u2014";
       return '<tr><td>' + esc(p[2]) + '</td>' +
-        '<td class="bar"><i style="width:' + (a / max * 100) + '%"></i><b>' + a + "</b></td>" +
-        '<td class="bar k"><i style="width:' + (b / max * 100) + '%"></i><b>' + b + "</b></td>" +
-        "<td class=\"r\">" + (b ? "\u00d7" + (a / b).toFixed(1) : "\u2014") + "</td></tr>";
+        '<td class="bar"><i style="width:' + ((ra || 0) / max * 100) + '%"></i><b>' + (ra ? ra.toFixed(1) : "\u2014") + "</b></td>" +
+        '<td class="bar k"><i style="width:' + ((rb || 0) / max * 100) + '%"></i><b>' + (rb ? rb.toFixed(1) : "\u2014") + "</b></td>" +
+        '<td class="r">' + rasio + "</td>" +
+        '<td class="e mono muted">' + (ua ? (ua / 1000).toFixed(0) + "rb" : "?") + " / " + (ub ? (ub / 1000).toFixed(0) + "rb" : "?") + "</td></tr>";
     }).join("");
     if (!rows.replace(/\s/g, "")) return "";
     return '<div class="banding"><h4 class="grp">Jendela pilkada vs jendela kontrol \u00b7 lapisan otomatis</h4>' +
-      '<table class="bandingtab"><thead><tr><th></th><th>jendela pilkada</th><th>jendela kontrol</th><th class="r">rasio</th></tr></thead><tbody>' +
+      '<table class="bandingtab"><thead><tr><th></th><th>jendela pilkada</th><th>jendela kontrol</th><th class="r">rasio</th><th class="e">sel dicari</th></tr></thead><tbody>' +
       rows + "</tbody></table>" +
-      '<p class="hint" style="margin:8px 0 0">Jendela sama panjang dan outlet sama, jadi pasangannya sebanding. ' +
-      "Ini mengukur <b>seberapa banyak yang diberitakan</b>, bukan seberapa banyak yang terjadi: liputan sendiri " +
-      "memang meningkat saat musim pemilu. Angka dari lapisan otomatis yang belum dikurasi.</p></div>";
+      '<p class="hint" style="margin:8px 0 0">Angka adalah <b>temuan per 1.000 sel penelusuran</b>, bukan hitungan mentah: ' +
+      "jendela kontrol belum dicari sekeras jendela pilkada (kolom terakhir), dan membandingkan hitungan mentah " +
+      "hanya akan mengukur usaha kami sendiri. Bahkan setelah dinormalkan, ini mengukur <b>seberapa banyak yang " +
+      "diberitakan</b>, bukan seberapa banyak yang terjadi \u2014 liputan memang meningkat saat musim pemilu. " +
+      "Dari lapisan otomatis yang belum dikurasi.</p></div>";
   }
 
-  /* default panel: pick a province from a list, so nobody has to hunt for a dot */
   function provinceList() {
     state.prov = null; paintMap();
     var st = stats(), p = D.periode.filter(function (x) { return x.periode === state.periode; })[0] || {};
@@ -335,12 +341,12 @@
 
   fetch("data/manifest.json").then(function (r) { return r.json(); }).then(function (m) {
     D.manifest = m;
-    return Promise.all(["periode", "insiden", "kasus_resmi", "koordinat", "provinsi_path", "insiden_otomatis"].map(function (n) {
+    return Promise.all(["periode", "insiden", "kasus_resmi", "koordinat", "provinsi_path", "insiden_otomatis", "usaha_pencarian"].map(function (n) {
       return fetch("data/" + n + ".json").then(function (r) { return r.json(); });
     }));
   }).then(function (a) {
     D.periode = a[0]; D.insiden = a[1]; D.kasus_resmi = a[2]; D.koordinat = a[3];
-    D.otomatis = a[5] || [];
+    D.otomatis = a[5] || []; D.usaha = a[6] || {};
     var pp = a[4];
     D.pathProv = {}; D.pathXY = {};
     pp.paths.forEach(function (L) { D.pathXY[L.path_index] = [L.x, L.y]; });

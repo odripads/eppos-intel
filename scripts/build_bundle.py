@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parent.parent
 html = (ROOT / "index.html").read_text()
 css = (ROOT / "assets/app.css").read_text()
 js = (ROOT / "assets/app.js").read_text()
-data = {n: json.loads((ROOT / "data" / f"{n}.json").read_text()) for n in ("manifest", "periode", "insiden", "kasus_resmi", "koordinat", "provinsi_path", "insiden_otomatis", "crawl_state")}
+data = {n: json.loads((ROOT / "data" / f"{n}.json").read_text()) for n in ("manifest", "periode", "insiden", "kasus_resmi", "koordinat", "provinsi_path", "insiden_otomatis", "crawl_state", "usaha_pencarian")}
 
 # the single-file bundle carries only what the page renders. The full rows, including the query that
 # found each one, stay in data/*.json in the repo — the bundle is a viewer, not the dataset release.
@@ -27,8 +27,8 @@ js = re.sub(r'fetch\("data/manifest\.json"\)\.then\(function \(r\) \{ return r\.
             'Promise.resolve(window.EPPOS_DATA.manifest)', js)
 js = js.replace('fetch("data/crawl_state.json").then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })',
                 'Promise.resolve(window.EPPOS_DATA.crawl_state)')
-js = re.sub(r'return Promise\.all\(\["periode", "insiden", "kasus_resmi", "koordinat", "provinsi_path", "insiden_otomatis"\]\.map\(function \(n\) \{\s*return fetch\("data/" \+ n \+ "\.json"\)\.then\(function \(r\) \{ return r\.json\(\); \}\);\s*\}\)\);',
-            'return Promise.resolve(["periode","insiden","kasus_resmi","koordinat","provinsi_path","insiden_otomatis"].map(function(n){return window.EPPOS_DATA[n];}));', js)
+js = re.sub(r'return Promise\.all\(\["periode", "insiden", "kasus_resmi", "koordinat", "provinsi_path", "insiden_otomatis", "usaha_pencarian"\]\.map\(function \(n\) \{\s*return fetch\("data/" \+ n \+ "\.json"\)\.then\(function \(r\) \{ return r\.json\(\); \}\);\s*\}\)\);',
+            'return Promise.resolve(["periode","insiden","kasus_resmi","koordinat","provinsi_path","insiden_otomatis","usaha_pencarian"].map(function(n){return window.EPPOS_DATA[n];}));', js)
 body = re.search(r"<body>(.*)</body>", html, re.S).group(1)
 body = body.replace('<script src="assets/app.js"></script>', "")
 body = body.replace('src="assets/logo.png"', f'src="{logo}"')
