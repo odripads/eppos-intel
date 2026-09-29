@@ -30,6 +30,25 @@ S = 1000 / (LON_MAX - LON_MIN); OY = (420 - (LAT_MAX - LAT_MIN) * S) / 2
 def project(lon, lat): return ((lon - LON_MIN) * S, 420 - ((lat - LAT_MIN) * S + OY))
 
 
+# A headline must carry electoral context to count. Actor + action alone let through a COVID case
+# count, a kades embezzlement, and an affair — the last explicitly out of scope in PROJECT-SPEC v2.
+PEMILU = re.compile(r"(pilkada|pemilu|pilpres|pileg|pilgub|pilbup|pilwal|paslon|pasangan calon|calon (bupati|"
+    r"wali ?kota|gubernur|wakil)|cabup|cawabup|cagub|cawagub|bakal calon|bawaslu|panwaslu|gakkumdu|\bkpu\b|"
+    r"netralitas|kampanye|coblos|pemungutan suara|pencoblosan|tps\b|dkpp|\bkasn\b|masa tenang|"
+    r"tahapan pemilihan|pemilihan (kepala daerah|bupati|wali ?kota|gubernur))", re.I)
+# out of scope by the spec: personal scandal, ordinary crime, health/disaster reporting
+LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|pelecehan|narkoba|sabu|"
+    r"covid|corona|kecelakaan|laka lantas|kebakaran|banjir|gempa|longsor|pencurian|begal|judi|"
+    r"penggelapan|pungli|korupsi dana desa|mabuk|perkosa|cabul)", re.I)
+
+
+def dalam_lingkup(judul):
+    """(ok, reason). Scope is electoral coercion by executives, not every official in the news."""
+    if LUAR_LINGKUP.search(judul): return False, "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+    if not PEMILU.search(judul): return False, "tidak ada konteks elektoral di judul"
+    return True, None
+
+
 def norm(s):
     s = unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode().lower()
     return re.sub(r"\s+", " ", s).strip()
@@ -130,9 +149,12 @@ def main():
 
     prov_centroid = {norm(r["label"]): r for r in wd if "provin" in r["type"].lower()}
     PROV_ALIAS = {"di yogyakarta": "yogyakarta", "dki jakarta": "jakarta"}
-    rows, unplaced = [], 0
+    rows, unplaced, ditolak = [], 0, []
     for k in kand:
         if not k.get("url"): continue
+        ok, why = dalam_lingkup(k["judul"])
+        if not ok:
+            ditolak.append({"kandidat_id": k["kandidat_id"], "judul": k["judul"], "alasan": why}); continue
         p = place_of(k["judul"])
         dasar = "nama kab/kota di judul" if p else None
         if not p:
@@ -204,6 +226,8 @@ def main():
         if not r["status_verifikasi"]: r["status_verifikasi"] = "satu sumber"
 
     (DATA / "insiden_otomatis.json").write_text(json.dumps(rows, ensure_ascii=False, indent=1) + "\n")
+    (DATA / "otomatis_diluar_lingkup.json").write_text(json.dumps(ditolak, ensure_ascii=False, indent=1) + "\n")
+    print(f"{len(ditolak)} kandidat disisihkan sebagai di luar lingkup (tercatat, tidak dibuang)")
     dua = sum(1 for r in rows if r["status_verifikasi"] == "dua sumber")
     placed = sum(1 for r in rows if r["kab_kota"])
     provlvl = sum(1 for r in rows if not r["kab_kota"] and r["provinsi"])

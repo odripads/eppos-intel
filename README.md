@@ -96,3 +96,18 @@ karena tidak ada dan kosong karena disaring adalah dua hal berbeda.
 condong ke koran daerah. Sebaran temuan otomatis mengikuti bias itu, bukan sebaran kejadian.
 Daftar resmi Dewan Pers akan lebih tepat sebagai kerangka, tetapi portalnya (`datapers.dewanpers.or.id`)
 berada di balik login sehingga belum bisa dipakai otomatis.
+
+### Saringan lingkup elektoral
+
+Pemeriksaan sampel menunjukkan saringan lama (aktor + tindakan) meloloskan banyak berita yang bukan
+objek studi: jumlah kasus COVID, perselingkuhan kades, penggelapan, kebakaran hutan. Perselingkuhan
+bahkan eksplisit di luar lingkup menurut spek.
+
+`dalam_lingkup()` di `promote_candidates.py` kini mensyaratkan konteks elektoral di judul (pilkada,
+paslon, Bawaslu, netralitas, kampanye, KPU, dan sejenisnya) dan menolak topik di luar lingkup.
+Dari 1 632 baris, **909 disisihkan** dan tercatat di `data/otomatis_diluar_lingkup.json` — disimpan,
+bukan dibuang, supaya keputusannya bisa ditinjau ulang.
+
+Ini menukar sebagian recall demi presisi. Beberapa baris yang relevan ikut tersisih karena judulnya
+tidak menyebut konteks elektoral (mis. mutasi massal ASN tanpa kata "pilkada"). Untuk proyek yang
+menyajikan tiap titik sebagai dugaan intervensi, positif palsu lebih mahal daripada temuan yang luput.
