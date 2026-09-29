@@ -72,6 +72,23 @@ def dalam_lingkup(judul, gelombang=None):
     return False, "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada", None
 
 
+STOP_JUDUL = {"di","ke","dari","yang","untuk","dengan","pada","dan","atau","ini","itu","akan","sudah",
+              "telah","dalam","oleh","atas","se","para","tak","tidak","juga","usai","jadi","soal"}
+
+
+def shingles(text, k=2):
+    """Content words plus adjacent pairs. Headlines are short, so 4-grams were far too brittle —
+    one inserted word halved the score, which is exactly how outlets retitle a press release."""
+    w = [x for x in re.findall(r"\w+", (text or "").lower()) if x not in STOP_JUDUL and len(x) > 2]
+    grams = {" ".join(w[i:i + k]) for i in range(max(0, len(w) - k + 1))}
+    return set(w) | grams or {(text or "").lower()}
+
+
+def jaccard(a, b):
+    u = a | b
+    return len(a & b) / len(u) if u else 0.0
+
+
 def norm(s):
     s = unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode().lower()
     return re.sub(r"\s+", " ", s).strip()
@@ -304,13 +321,23 @@ def main():
         group.sort(key=lambda r: r["tanggal_berita"])
         for i, r in enumerate(group):
             d0 = dt.date.fromisoformat(r["tanggal_berita"])
-            others = {o["sumber_1_outlet"] for o in group
-                      if o is not r and abs((dt.date.fromisoformat(o["tanggal_berita"]) - d0).days) <= 7}
-            others.discard(r["sumber_1_outlet"])
-            if others:
+            sh_r = shingles(r["judul_sumber_1"])
+            mate = None
+            for o in group:
+                if o is r or o["sumber_1_outlet"] == r["sumber_1_outlet"]: continue
+                if abs((dt.date.fromisoformat(o["tanggal_berita"]) - d0).days) > 7: continue
+                # Same kab/kota + mechanism + week is NOT the same event: checking the pairs showed
+                # about half were unrelated stories that merely shared a regency and a week. Require the
+                # two headlines to actually be about the same thing before calling it corroboration.
+                sim = jaccard(sh_r, shingles(o["judul_sumber_1"]))
+                if sim < 0.25:
+                    r["catatan_duplikat"] = "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
+                    continue
+                mate = o; r["kemiripan_pasangan"] = round(sim, 2); break
+            if mate:
                 r["status_verifikasi"] = "dua sumber"
-                mate = next(o for o in group if o["sumber_1_outlet"] in others)
                 r["sumber_2_url"] = mate["sumber_1_url"]
+                r.pop("catatan_duplikat", None)
     for r in rows:
         if not r["status_verifikasi"]: r["status_verifikasi"] = "satu sumber"
 

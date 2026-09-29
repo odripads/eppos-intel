@@ -595,8 +595,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.radarbanten.co.id/2024/11/14/bawaslu-kabupaten-serang-tangani-30-laporan-didominasi-dugaan-pelanggaran-netralitas-kepala-desa/",
   "sumber_1_outlet": "radarbanten.co.id",
-  "sumber_2_url": "https://www.bantennews.co.id/ketua-apdesi-jadi-tersangka-bupati-serang-tak-boleh-ada-intimidasi-di-pilkada/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -606,7 +606,8 @@
   "tanggal_isi": "2026-09-28",
   "kueri": "radarbanten.co.id search='ASN tidak netral' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 6
+  "_path": 6,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00025",
@@ -653,8 +654,8 @@
   "hasil": null,
   "sumber_1_url": "https://kabarbanten.com/diduga-tidak-netral-ibnu-jandi-laporkan-pj-wali-kota-tangerang-ke-bawaslu/",
   "sumber_1_outlet": "kabarbanten.com",
-  "sumber_2_url": "https://www.radarbanten.co.id/2024/09/09/aktivis-kota-tangerang-kepung-bawaslu-minta-asn-tak-netral-disanksi/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -664,7 +665,8 @@
   "tanggal_isi": "2026-09-28",
   "kueri": "kabarbanten.com search='ASN tidak netral' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 6
+  "_path": 6,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00027",
@@ -682,8 +684,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.sulselsatu.com/2024/10/28/hukum/bawaslu-jeneponto-akan-tindaklanjuti-oknum-kades-dan-lurah-yang-viral-diduga-tak-netral.html",
   "sumber_1_outlet": "sulselsatu.com",
-  "sumber_2_url": "https://www.detik.com/sulsel/pilkada/d-7616404/4-kades-di-jeneponto-dukung-paslon-di-pilkada-diperiksa-bawaslu",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -693,7 +695,8 @@
   "tanggal_isi": "2026-09-28",
   "kueri": "sulselsatu.com search='kepala desa netralitas' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00028",
@@ -1378,8 +1381,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.sulselsatu.com/2020/12/03/berita-utama/bawaslu-laporkan-14-asn-diduga-tidak-netral-dalam-pilwali-makassar.html",
   "sumber_1_outlet": "sulselsatu.com",
-  "sumber_2_url": "https://fajar.co.id/2020/04/09/kasn-terima-laporan-bawaslu-makassar-soal-pelanggaran-pj-wali-kota/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -1389,7 +1392,8 @@
   "tanggal_isi": "2026-09-28",
   "kueri": "sulselsatu.com search='netralitas ASN' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00052",
@@ -1407,8 +1411,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.sulselsatu.com/2020/11/06/makassar/ombudsman-siap-kawal-kasus-dugaan-pelanggaran-asn-di-bawaslu.html",
   "sumber_1_outlet": "sulselsatu.com",
-  "sumber_2_url": "https://fajar.co.id/2020/04/09/kasn-terima-laporan-bawaslu-makassar-soal-pelanggaran-pj-wali-kota/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -1418,7 +1422,8 @@
   "tanggal_isi": "2026-09-28",
   "kueri": "sulselsatu.com search='netralitas ASN' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00053",
@@ -2045,8 +2050,8 @@
   "hasil": null,
   "sumber_1_url": "https://radarbekasi.id/2024/10/24/bawaslu-kota-bekasi-ungkap-6-laporan-dugaan-pelanggaran-pidana-paslon-wali-kota-wakil-wali-kota-bekasi-tak-terbukti/",
   "sumber_1_outlet": "radarbekasi.id",
-  "sumber_2_url": "https://bekasimedia.com/2016/12/05/mobilisasi-asn-di-aksi-412-mirip-gaya-orde-baru/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -2056,7 +2061,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "radarbekasi.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 14
+  "_path": 14,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00075",
@@ -2654,8 +2660,8 @@
   "hasil": null,
   "sumber_1_url": "https://fajar.co.id/2024/10/02/tiga-asn-di-makassar-diperiksa-gakkumdu-terkait-dugaan-pelanggaran-netralitas/",
   "sumber_1_outlet": "fajar.co.id",
-  "sumber_2_url": "https://www.sulselsatu.com/2020/06/16/makassar/rahman-bando-langgar-kode-etik-asn-yusran-tunggu-hasil-kajian.html",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -2665,7 +2671,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "fajar.co.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00096",
@@ -3767,7 +3774,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "langgam.id search='netralitas ASN' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 25
+  "_path": 25,
+  "kemiripan_pasangan": 0.48
  },
  {
   "insiden_id": "AUTO-00139",
@@ -3843,8 +3851,8 @@
   "hasil": null,
   "sumber_1_url": "https://langgam.id/asn-di-padang-pakai-nsp-lagu-mahyeldi-bawaslu-tunggu-laporan/",
   "sumber_1_outlet": "langgam.id",
-  "sumber_2_url": "https://padangkita.com/990-pelanggaran-netralitas-asn-dalam-kurun-waktu-januari-2018-maret-2019/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -3854,7 +3862,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "langgam.id search='netralitas ASN' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 25
+  "_path": 25,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00142",
@@ -4423,8 +4432,8 @@
   "hasil": null,
   "sumber_1_url": "https://fajar.co.id/2020/12/03/pilwalkot-makassar-sudah-12-pejabat-pemkot-langgar-netralitas-asn/",
   "sumber_1_outlet": "fajar.co.id",
-  "sumber_2_url": "https://www.sulselsatu.com/2020/06/16/makassar/rahman-bando-langgar-kode-etik-asn-yusran-tunggu-hasil-kajian.html",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -4434,7 +4443,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "fajar.co.id search='netralitas ASN' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00164",
@@ -4452,8 +4462,8 @@
   "hasil": null,
   "sumber_1_url": "https://fajar.co.id/2020/12/02/dua-asn-pemkot-makassar-dinyatakan-tidak-netral-belum-dapat-sanksi-rudy-mengaku-belum-terima-surat/",
   "sumber_1_outlet": "fajar.co.id",
-  "sumber_2_url": "https://www.sulselsatu.com/2020/06/16/makassar/rahman-bando-langgar-kode-etik-asn-yusran-tunggu-hasil-kajian.html",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -4463,7 +4473,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "fajar.co.id search='netralitas ASN' 2020-06-09..2021-01-09",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00165",
@@ -4481,8 +4492,8 @@
   "hasil": null,
   "sumber_1_url": "https://fajar.co.id/2020/11/27/dua-pejabat-pemkot-makassar-tersandung-kasus-netralitas-asn-ini-sanksinya/",
   "sumber_1_outlet": "fajar.co.id",
-  "sumber_2_url": "https://www.sulselsatu.com/2020/06/16/makassar/rahman-bando-langgar-kode-etik-asn-yusran-tunggu-hasil-kajian.html",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -4492,7 +4503,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "fajar.co.id search='netralitas ASN' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00166",
@@ -4713,8 +4725,8 @@
   "hasil": null,
   "sumber_1_url": "https://fajar.co.id/2020/11/07/namanya-dicatut-dugaan-pelanggaran-netralitas-asn-ini-respons-pj-walikota-makassar/",
   "sumber_1_outlet": "fajar.co.id",
-  "sumber_2_url": "https://www.sulselsatu.com/2020/06/16/makassar/rahman-bando-langgar-kode-etik-asn-yusran-tunggu-hasil-kajian.html",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -4724,7 +4736,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "fajar.co.id search='netralitas ASN' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00174",
@@ -5032,8 +5045,8 @@
   "hasil": null,
   "sumber_1_url": "https://fajar.co.id/2020/09/03/lima-asn-pemkot-makassar-langgar-netralitas/",
   "sumber_1_outlet": "fajar.co.id",
-  "sumber_2_url": "https://www.sulselsatu.com/2020/06/16/makassar/rahman-bando-langgar-kode-etik-asn-yusran-tunggu-hasil-kajian.html",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -5043,7 +5056,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "fajar.co.id search='netralitas ASN' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00185",
@@ -5681,7 +5695,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "padangkita.com search='netralitas ASN' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 25
+  "_path": 25,
+  "kemiripan_pasangan": 0.48
  },
  {
   "insiden_id": "AUTO-00211",
@@ -5699,8 +5714,8 @@
   "hasil": null,
   "sumber_1_url": "https://padangkita.com/asn-pelanggar-protokol-kesehatan-di-sumbar-disanksi-penundaan-kenaikan-pangkat-dan-potong-tunjangan/",
   "sumber_1_outlet": "padangkita.com",
-  "sumber_2_url": "https://langgam.id/2-asn-dipanggil-bawaslu-padang-terkait-dugaan-pelanggaran-pemilu/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -5710,7 +5725,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "padangkita.com search='netralitas ASN' 2020-06-09..2021-01-09",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 25
+  "_path": 25,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00212",
@@ -5728,8 +5744,8 @@
   "hasil": null,
   "sumber_1_url": "https://padangkita.com/asn-pessel-berikrar-netral-di-pilkada-pjs-bupati-ingatkan-tak-ada-pembelaan-asn-pelanggar-netralitas/",
   "sumber_1_outlet": "padangkita.com",
-  "sumber_2_url": "https://langgam.id/2-asn-dipanggil-bawaslu-padang-terkait-dugaan-pelanggaran-pemilu/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -5739,7 +5755,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "padangkita.com search='netralitas ASN' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 25
+  "_path": 25,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00214",
@@ -6482,8 +6499,8 @@
   "hasil": null,
   "sumber_1_url": "https://ulasan.co/relawan-gertak-minta-bawaslu-usut-tuntas-dugaan-pelanggaran-asn-bintan/",
   "sumber_1_outlet": "ulasan.co",
-  "sumber_2_url": "https://beritabatam.com/2024/11/bawaslu-temukan-asn-langgar-netralitas-di-bintan/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -6493,7 +6510,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "ulasan.co search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 18
+  "_path": 18,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00245",
@@ -6511,7 +6529,7 @@
   "hasil": null,
   "sumber_1_url": "https://ulasan.co/bawaslu-telusuri-dugaan-pelanggaran-netralitas-asn-bintan/",
   "sumber_1_outlet": "ulasan.co",
-  "sumber_2_url": "https://beritabatam.com/2024/11/bawaslu-temukan-asn-langgar-netralitas-di-bintan/",
+  "sumber_2_url": "https://radarbintan.com/2024/11/30/dugaan-langgar-netralitas-bawaslu-rekomendasi-temuan-asn-bintan-ke-bkn-ri/",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -6522,7 +6540,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "ulasan.co search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 18
+  "_path": 18,
+  "kemiripan_pasangan": 0.25
  },
  {
   "insiden_id": "AUTO-00246",
@@ -6656,8 +6675,8 @@
   "hasil": null,
   "sumber_1_url": "https://ulasan.co/bawaslu-batam-hentikan-laporan-terkait-camat-batu-ampar/",
   "sumber_1_outlet": "ulasan.co",
-  "sumber_2_url": "https://batampos.co.id/2018/05/02/di-hadapan-anggota-komisi-i-camat-se-batam-janji-netral-dan-siap-menerima-sanksi/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -6667,7 +6686,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "ulasan.co search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 18
+  "_path": 18,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00251",
@@ -6714,7 +6734,7 @@
   "hasil": null,
   "sumber_1_url": "https://ulasan.co/oknum-lurah-di-batam-terbukti-langgar-netralitas-asn/",
   "sumber_1_outlet": "ulasan.co",
-  "sumber_2_url": "https://batampos.co.id/2018/05/02/di-hadapan-anggota-komisi-i-camat-se-batam-janji-netral-dan-siap-menerima-sanksi/",
+  "sumber_2_url": "https://batamtoday.com/news/langgar-netralitas-asn-bawaslu-laporkan-oknum-lurah-di-batam-ke-bkn",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -6725,7 +6745,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "ulasan.co search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 18
+  "_path": 18,
+  "kemiripan_pasangan": 0.5
  },
  {
   "insiden_id": "AUTO-00253",
@@ -6743,7 +6764,7 @@
   "hasil": null,
   "sumber_1_url": "https://ulasan.co/terbukti-langgar-netralitas-asn-oknum-lurah-sei-pelunggut-batam-dilaporkan-bawaslu-ke-bkn/",
   "sumber_1_outlet": "ulasan.co",
-  "sumber_2_url": "https://batampos.co.id/2018/05/02/di-hadapan-anggota-komisi-i-camat-se-batam-janji-netral-dan-siap-menerima-sanksi/",
+  "sumber_2_url": "https://batamtoday.com/news/langgar-netralitas-asn-bawaslu-laporkan-oknum-lurah-di-batam-ke-bkn",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -6754,7 +6775,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "ulasan.co search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 18
+  "_path": 18,
+  "kemiripan_pasangan": 0.38
  },
  {
   "insiden_id": "AUTO-00254",
@@ -6772,8 +6794,8 @@
   "hasil": null,
   "sumber_1_url": "https://ulasan.co/ini-klarifikasi-bawaslu-batam-soal-dugaan-pelanggaran-netralitas-asn-oknum-camat-batu-ampar/",
   "sumber_1_outlet": "ulasan.co",
-  "sumber_2_url": "https://batampos.co.id/2018/05/02/di-hadapan-anggota-komisi-i-camat-se-batam-janji-netral-dan-siap-menerima-sanksi/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -6783,7 +6805,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "ulasan.co search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 18
+  "_path": 18,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00255",
@@ -6801,7 +6824,7 @@
   "hasil": null,
   "sumber_1_url": "https://ulasan.co/oknum-lurah-di-batam-dilaporkan-ke-bawaslu/",
   "sumber_1_outlet": "ulasan.co",
-  "sumber_2_url": "https://batampos.co.id/2018/05/02/di-hadapan-anggota-komisi-i-camat-se-batam-janji-netral-dan-siap-menerima-sanksi/",
+  "sumber_2_url": "https://www.detik.com/sumut/pilkada/d-7572808/foto-bareng-li-claudia-4-lurah-1-camat-di-batam-dilaporkan-ke-bawaslu",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -6812,7 +6835,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "ulasan.co search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 18
+  "_path": 18,
+  "kemiripan_pasangan": 0.33
  },
  {
   "insiden_id": "AUTO-00256",
@@ -7062,8 +7086,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritajatim.com/klarifikasi-2-kadis-terkait-dugaan-pelanggaran-netralitas-asn-bawaslu-mojokerto-rekom-ke-kasn",
   "sumber_1_outlet": "beritajatim.com",
-  "sumber_2_url": "https://bongkah.id/27/07/2024/asn-diduga-tak-netral-begini-jawaban-pemkab-mojokerto/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -7073,7 +7097,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajatim.com search='ASN dilaporkan Bawaslu' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00265",
@@ -7091,8 +7116,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritajatim.com/dugaan-pelanggaran-netralitas-asn-2-kadis-diperiksa-bawaslu-kabupaten-mojokerto",
   "sumber_1_outlet": "beritajatim.com",
-  "sumber_2_url": "https://bongkah.id/27/07/2024/asn-diduga-tak-netral-begini-jawaban-pemkab-mojokerto/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -7102,7 +7127,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajatim.com search='ASN dilaporkan Bawaslu' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00266",
@@ -7120,8 +7146,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritajatim.com/dugaan-pelanggaran-netralitas-asn-bawaslu-kabupaten-mojokerto-panggil-terlapor-dan-saksi",
   "sumber_1_outlet": "beritajatim.com",
-  "sumber_2_url": "https://bongkah.id/27/07/2024/asn-diduga-tak-netral-begini-jawaban-pemkab-mojokerto/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -7131,7 +7157,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajatim.com search='ASN dilaporkan Bawaslu' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00267",
@@ -7149,8 +7176,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritajatim.com/lima-asn-pemkab-mojokerto-dilaporkan-ke-bawaslu-diduga-langgar-netralitas",
   "sumber_1_outlet": "beritajatim.com",
-  "sumber_2_url": "https://bongkah.id/27/07/2024/asn-diduga-tak-netral-begini-jawaban-pemkab-mojokerto/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -7160,7 +7187,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajatim.com search='ASN dilaporkan Bawaslu' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00268",
@@ -7932,8 +7960,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritajatim.com/bawaslu-malang-periksa-asn-dispora-diduga-dukung-paslon-ladub",
   "sumber_1_outlet": "beritajatim.com",
-  "sumber_2_url": "https://malangvoice.com/libatkan-wali-kota-batu-kampanye-malang-anyar-diduga-pelanggaran/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -7943,7 +7971,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajatim.com search='netralitas ASN' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00296",
@@ -8309,8 +8338,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritajatim.com/bawaslu-kabupaten-malang-periksa-kadispora-terkait-dugaan-asn-tak-netral",
   "sumber_1_outlet": "beritajatim.com",
-  "sumber_2_url": "https://malangvoice.com/libatkan-wali-kota-batu-kampanye-malang-anyar-diduga-pelanggaran/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -8320,7 +8349,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajatim.com search='ASN tidak netral' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00310",
@@ -8338,8 +8368,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritajatim.com/bawaslu-kabupaten-mojokerto-hentikan-laporan-kasus-dugaan-pelanggaran-pemilu-calon-petahana",
   "sumber_1_outlet": "beritajatim.com",
-  "sumber_2_url": "https://www.suarasurabaya.net/politik/2020/laporan-dugaan-pelanggaran-pilkada-pada-bupati-mojokerto-dihentikan/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -8349,7 +8379,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajatim.com search='ASN dilaporkan Bawaslu' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00311",
@@ -8367,8 +8398,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritajatim.com/bawaslu-tindak-lanjuti-laporan-mutasi-jabatan-bupati-mojokerto",
   "sumber_1_outlet": "beritajatim.com",
-  "sumber_2_url": "https://www.suarasurabaya.net/politik/2020/laporan-dugaan-pelanggaran-pilkada-pada-bupati-mojokerto-dihentikan/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -8378,7 +8409,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajatim.com search='ASN dilaporkan Bawaslu' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00315",
@@ -8425,8 +8457,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.suarasurabaya.net/politik/2020/laporan-dugaan-pelanggaran-pilkada-pada-bupati-mojokerto-dihentikan/",
   "sumber_1_outlet": "suarasurabaya.net",
-  "sumber_2_url": "https://beritajatim.com/deklarasi-maju-calon-bupati-2-asn-ini-bakal-dipanggil-bawaslu-kabupaten-mojokerto",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -8436,7 +8468,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "suarasurabaya.net search='mutasi pejabat pilkada' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00317",
@@ -9237,8 +9270,8 @@
   "hasil": null,
   "sumber_1_url": "https://bongkah.id/11/09/2024/asn-kabupaten-kediri-teriak-yel-yel-cabup-petahana-dilaporkan-ke-bawaslu/",
   "sumber_1_outlet": "bongkah.id",
-  "sumber_2_url": "https://beritajatim.com/bawaslu-kediri-tangani-2-kasus-dugaan-pelanggaran-netralitas-asn",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -9248,7 +9281,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "bongkah.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00347",
@@ -9266,8 +9300,8 @@
   "hasil": null,
   "sumber_1_url": "https://bongkah.id/27/07/2024/asn-diduga-tak-netral-begini-jawaban-pemkab-mojokerto/",
   "sumber_1_outlet": "bongkah.id",
-  "sumber_2_url": "https://beritajatim.com/deklarasi-maju-calon-bupati-2-asn-ini-bakal-dipanggil-bawaslu-kabupaten-mojokerto",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -9277,7 +9311,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "bongkah.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00348",
@@ -9295,7 +9330,7 @@
   "hasil": null,
   "sumber_1_url": "https://beritabatam.com/2024/11/asn-diduga-langgar-netralitas-bawaslu-bintan-rekomendasi-temuan-ke-bkn-ri/",
   "sumber_1_outlet": "beritabatam.com",
-  "sumber_2_url": "https://ulasan.co/ketua-bawaslu-bintan-kasus-pelanggaran-netralitas-asn-sudah-di-proses/",
+  "sumber_2_url": "https://radarbintan.com/2024/11/24/bawaslu-bintan-temukan-dugaan-asn-langgar-netralitas/",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -9306,7 +9341,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritabatam.com search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 18
+  "_path": 18,
+  "kemiripan_pasangan": 0.3
  },
  {
   "insiden_id": "AUTO-00349",
@@ -9324,7 +9360,7 @@
   "hasil": null,
   "sumber_1_url": "https://beritabatam.com/2024/11/bawaslu-temukan-asn-langgar-netralitas-di-bintan/",
   "sumber_1_outlet": "beritabatam.com",
-  "sumber_2_url": "https://ulasan.co/ketua-bawaslu-bintan-kasus-pelanggaran-netralitas-asn-sudah-di-proses/",
+  "sumber_2_url": "https://radarbintan.com/2024/11/24/bawaslu-bintan-temukan-dugaan-asn-langgar-netralitas/",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -9335,7 +9371,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritabatam.com search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 18
+  "_path": 18,
+  "kemiripan_pasangan": 0.5
  },
  {
   "insiden_id": "AUTO-00350",
@@ -9469,8 +9506,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritajateng.id/berita/akibat-like-postingan-dan-hadiri-kampanye-bawaslu-semarang-laporkan-2-pelanggaran-netralitas-asn/",
   "sumber_1_outlet": "beritajateng.id",
-  "sumber_2_url": "https://www.detik.com/jateng/pilkada/d-7644897/2-asn-semarang-pelanggar-netralitas-dilaporkan-bawaslu-ke-bkn",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -9480,7 +9517,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajateng.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 5
+  "_path": 5,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00355",
@@ -9701,8 +9739,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritajateng.id/berita/pelanggaran-netralitas-enam-asn-di-kudus-tidak-terbukti-kepala-desa-ploso-terancam-sanksi/",
   "sumber_1_outlet": "beritajateng.id",
-  "sumber_2_url": "https://muria.suaramerdeka.com/muria-raya/0713654764/jadi-saksi-anggota-dprd-kudus-rochim-sutopo-siap-beberkan-bukti-pelanggaran-netralitas-6-asn-dan-1-kaedes",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -9712,7 +9750,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajateng.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 5
+  "_path": 5,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00363",
@@ -9730,8 +9769,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritajateng.id/berita/dugaan-pelanggaran-netralitas-pj-bupati-kudus-hartopo-tegaskan-tidak-tahu/",
   "sumber_1_outlet": "beritajateng.id",
-  "sumber_2_url": "https://muria.suaramerdeka.com/muria-raya/0713654764/jadi-saksi-anggota-dprd-kudus-rochim-sutopo-siap-beberkan-bukti-pelanggaran-netralitas-6-asn-dan-1-kaedes",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -9741,7 +9780,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajateng.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 5
+  "_path": 5,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00364",
@@ -9759,7 +9799,7 @@
   "hasil": null,
   "sumber_1_url": "https://beritajateng.id/berita/resmi-gulirkan-hak-angket-dprd-kudus-usut-dugaan-ketidaknetralan-pj-bupati-dalam-pilkada/",
   "sumber_1_outlet": "beritajateng.id",
-  "sumber_2_url": "https://muria.suaramerdeka.com/muria-raya/0713654764/jadi-saksi-anggota-dprd-kudus-rochim-sutopo-siap-beberkan-bukti-pelanggaran-netralitas-6-asn-dan-1-kaedes",
+  "sumber_2_url": "https://muria.suaramerdeka.com/muria-raya/0713668826/31-anggota-dprd-kudus-gulirkan-hak-angket-usut-dugaan-pelanggaran-netralitas-pj-bupati-dan-asn",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -9770,7 +9810,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajateng.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 5
+  "_path": 5,
+  "kemiripan_pasangan": 0.32
  },
  {
   "insiden_id": "AUTO-00365",
@@ -9788,8 +9829,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritajateng.id/berita/bawaslu-kudus-putuskan-panggil-enam-asn-dan-satu-kades-atas-dugaan-pelanggaran-netralitas/",
   "sumber_1_outlet": "beritajateng.id",
-  "sumber_2_url": "https://muria.suaramerdeka.com/muria-raya/0713654764/jadi-saksi-anggota-dprd-kudus-rochim-sutopo-siap-beberkan-bukti-pelanggaran-netralitas-6-asn-dan-1-kaedes",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -9799,7 +9840,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajateng.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 5
+  "_path": 5,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00366",
@@ -9817,8 +9859,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritajateng.id/berita/dugaan-pelanggaran-netralitas-6-asn-dan-1-kades-pj-bupati-kudus-tunggu-hasil-bawaslu/",
   "sumber_1_outlet": "beritajateng.id",
-  "sumber_2_url": "https://muria.suaramerdeka.com/muria-raya/0713654764/jadi-saksi-anggota-dprd-kudus-rochim-sutopo-siap-beberkan-bukti-pelanggaran-netralitas-6-asn-dan-1-kaedes",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -9828,7 +9870,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajateng.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 5
+  "_path": 5,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00367",
@@ -9846,8 +9889,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritajateng.id/berita/enam-asn-dan-satu-kades-diduga-langgar-netralitas-bawaslu-kudus-masih-kaji-laporan/",
   "sumber_1_outlet": "beritajateng.id",
-  "sumber_2_url": "https://muria.suaramerdeka.com/muria-raya/0713654764/jadi-saksi-anggota-dprd-kudus-rochim-sutopo-siap-beberkan-bukti-pelanggaran-netralitas-6-asn-dan-1-kaedes",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -9857,7 +9900,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajateng.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 5
+  "_path": 5,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00368",
@@ -9875,8 +9919,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritajateng.id/berita/pj-bupati-kudus-dituding-langgar-netralitas-pilkada-gara-gara-pose-dua-jari/",
   "sumber_1_outlet": "beritajateng.id",
-  "sumber_2_url": "https://muria.suaramerdeka.com/muria-raya/0713654764/jadi-saksi-anggota-dprd-kudus-rochim-sutopo-siap-beberkan-bukti-pelanggaran-netralitas-6-asn-dan-1-kaedes",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -9886,7 +9930,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajateng.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 5
+  "_path": 5,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00369",
@@ -9991,8 +10036,8 @@
   "hasil": null,
   "sumber_1_url": "https://metro.batampos.co.id/netralitas-asn-batam-di-pilkada-dipertanyakan-pjs-wali-kota-andi-agung-beri-teguran/",
   "sumber_1_outlet": "batampos.co.id",
-  "sumber_2_url": "https://ulasan.co/oknum-lurah-di-batam-dilaporkan-ke-bawaslu/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -10002,7 +10047,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "batampos.co.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 18
+  "_path": 18,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00373",
@@ -10049,8 +10095,8 @@
   "hasil": null,
   "sumber_1_url": "https://metro.batampos.co.id/bawaslu-batam-terima-5-laporan-pelanggaran-pilkada-mayoritas-soal-netralitas-asn/",
   "sumber_1_outlet": "batampos.co.id",
-  "sumber_2_url": "https://ulasan.co/oknum-lurah-di-batam-dilaporkan-ke-bawaslu/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -10060,7 +10106,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "batampos.co.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 18
+  "_path": 18,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00375",
@@ -10397,7 +10444,7 @@
   "hasil": null,
   "sumber_1_url": "https://eljabar.com/pilkada-kuningan-terindikasi-tidak-demokrasi-muncul-intimidasi-kepada-pegawai-non-asn/",
   "sumber_1_outlet": "eljabar.com",
-  "sumber_2_url": "https://kuninganonline.com/dua-asn-diduga-bakal-maju-di-pilkada-lembaga-iprc-politisasi-asn-menganggu-pelayanan-publik/",
+  "sumber_2_url": "https://kuninganonline.com/muncul-intimidasi-pegawai-non-asn-bawaslu-jangan-takut-lapor/",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -10408,7 +10455,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "eljabar.com search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 14
+  "_path": 14,
+  "kemiripan_pasangan": 0.29
  },
  {
   "insiden_id": "AUTO-00389",
@@ -11296,8 +11344,8 @@
   "hasil": null,
   "sumber_1_url": "https://radarsukabumi.com/politik/pilkada-kabupaten-sukabumi/bawaslu-kabupaten-sukabumi-kaji-laporan-dugaan-pelanggaran-pilkada-oknum-kades-yang-cawe-cawe/",
   "sumber_1_outlet": "radarsukabumi.com",
-  "sumber_2_url": "https://www.sukabumiupdate.com/sukabumi-memilih/146480/warning-oknum-kades-dan-asn-berpihak-di-pilkada-sukabumi-siap-siap-dilaporkan",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -11307,7 +11355,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "radarsukabumi.com search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 14
+  "_path": 14,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00425",
@@ -13192,7 +13241,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "kabarluwuk.com search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 19
+  "_path": 19,
+  "kemiripan_pasangan": 0.25
  },
  {
   "insiden_id": "AUTO-00500",
@@ -13210,8 +13260,8 @@
   "hasil": null,
   "sumber_1_url": "https://kabarluwuk.com/netralitas-dipertanyakan-kabag-tapem-dan-24-camat-diduga-terlibat-politik-praktis/",
   "sumber_1_outlet": "kabarluwuk.com",
-  "sumber_2_url": "https://banggaikece.id/2024/11/05/tim-hukum-laporkan-kabag-tapem-dan-24-camat-di-banggai-ke-bkn-soal-dugaan-langgar-netralitas-asn/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -13221,7 +13271,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "kabarluwuk.com search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 19
+  "_path": 19,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00501",
@@ -13500,8 +13551,8 @@
   "hasil": null,
   "sumber_1_url": "https://kabarluwuk.com/pelanggaran-netralitas-kades-di-kabupaten-banggai-alwin-palalo-beberkan-sanksi/",
   "sumber_1_outlet": "kabarluwuk.com",
-  "sumber_2_url": "https://banggaikece.id/2024/11/05/tim-hukum-laporkan-kabag-tapem-dan-24-camat-di-banggai-ke-bkn-soal-dugaan-langgar-netralitas-asn/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -13511,7 +13562,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "kabarluwuk.com search='pelanggaran netralitas' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 19
+  "_path": 19,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00512",
@@ -13964,8 +14016,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.marosnews.com/kuasa-hukum-chaidir-muetazim-laporkan-dugaan-ketidaknetralan-plt-bupati-maros-ke-bawaslu/",
   "sumber_1_outlet": "marosnews.com",
-  "sumber_2_url": "https://koranmakassar.com/bawaslu-maros-tindaklanjuti-dugaan-oknum-camat-tidak-netral/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -13975,7 +14027,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "marosnews.com search='ASN tidak netral' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00532",
@@ -14022,7 +14075,7 @@
   "hasil": null,
   "sumber_1_url": "https://radarbintan.com/2024/11/30/dugaan-langgar-netralitas-bawaslu-rekomendasi-temuan-asn-bintan-ke-bkn-ri/",
   "sumber_1_outlet": "radarbintan.com",
-  "sumber_2_url": "https://ulasan.co/ketua-bawaslu-bintan-kasus-pelanggaran-netralitas-asn-sudah-di-proses/",
+  "sumber_2_url": "https://ulasan.co/bawaslu-telusuri-dugaan-pelanggaran-netralitas-asn-bintan/",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -14033,7 +14086,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "radarbintan.com search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 18
+  "_path": 18,
+  "kemiripan_pasangan": 0.25
  },
  {
   "insiden_id": "AUTO-00534",
@@ -14051,7 +14105,7 @@
   "hasil": null,
   "sumber_1_url": "https://radarbintan.com/2024/11/24/bawaslu-bintan-temukan-dugaan-asn-langgar-netralitas/",
   "sumber_1_outlet": "radarbintan.com",
-  "sumber_2_url": "https://ulasan.co/ketua-bawaslu-bintan-kasus-pelanggaran-netralitas-asn-sudah-di-proses/",
+  "sumber_2_url": "https://beritabatam.com/2024/11/bawaslu-temukan-asn-langgar-netralitas-di-bintan/",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -14062,7 +14116,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "radarbintan.com search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 18
+  "_path": 18,
+  "kemiripan_pasangan": 0.5
  },
  {
   "insiden_id": "AUTO-00535",
@@ -14428,8 +14483,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritajatim.com/bawaslu-kabupaten-kediri-ada-laporan-dugaan-pelanggaran-netralitas-asn",
   "sumber_1_outlet": "beritajatim.com",
-  "sumber_2_url": "https://bongkah.id/11/09/2024/asn-kabupaten-kediri-teriak-yel-yel-cabup-petahana-dilaporkan-ke-bawaslu/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -14439,7 +14494,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritajatim.com search='sanksi netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00549",
@@ -14834,8 +14890,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritamanado.com/kasn-rekomendasikan-gubernur-membatalkan-mutasipelantikan-pejabat-7-september-2015-jems-tuuk-minta-sarundajang-taat-aturan/",
   "sumber_1_outlet": "beritamanado.com",
-  "sumber_2_url": "https://www.manadoterkini.com/2015/08/16458/sekda-manado-pns-jangan-ikut-kampanye-jika-ada-akan-di-kenai-sanksi/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode III",
   "gelombang_pilkada": "2015",
@@ -14845,7 +14901,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritamanado.com search='rekomendasi KASN' 2015-02-24..2016-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 21
+  "_path": 21,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00582",
@@ -15327,8 +15384,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritasampit.com/2023/12/22/ketua-bawaslu-status-laporan-pj-bupati-lamandau-dihentikan-tidak-memenuhi-unsur-terkait-dugaan-pelanggaran-netralitas-pejabat-daerah/",
   "sumber_1_outlet": "beritasampit.com",
-  "sumber_2_url": "https://www.kotawaringinnews.co.id/like-postingan-facebook-hendra-lesmana-8-asn-pemkab-lamandau-diproses-bawaslu-atas-dugaan-langgar-netralitas/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "kontrol-2024",
@@ -15338,7 +15395,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "beritasampit.com search='netralitas ASN' 2023-05-27..2023-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 26
+  "_path": 26,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00618",
@@ -18227,8 +18285,8 @@
   "hasil": null,
   "sumber_1_url": "https://jurnalbogor.com/advokat-bernhard-minta-kejari-usut-dugaan-gratifikasi-kades-karang-tengah/",
   "sumber_1_outlet": "jurnalbogor.com",
-  "sumber_2_url": "https://bogorexpose.com/ngaku-terima-duit-dari-pengusaha-kades-karang-tengah-dilaporkan-ke-kpk/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -18238,7 +18296,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "jurnalbogor.com search='kepala desa dilaporkan' 2024-05-27..2024-12-27",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 14
+  "_path": 14,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00822",
@@ -18256,7 +18315,7 @@
   "hasil": null,
   "sumber_1_url": "https://jurnalbogor.com/kades-karang-tengah-bogor-dilaporkan-ke-kejari-cibinong/",
   "sumber_1_outlet": "jurnalbogor.com",
-  "sumber_2_url": "https://bogorexpose.com/ngaku-terima-duit-dari-pengusaha-kades-karang-tengah-dilaporkan-ke-kpk/",
+  "sumber_2_url": "https://bogorexpose.com/diduga-terima-suap-kades-karang-tengah-dilaporkan-ke-kejari-cibinong/",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -18267,7 +18326,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "jurnalbogor.com search='kepala desa dilaporkan' 2024-05-27..2024-12-27",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 14
+  "_path": 14,
+  "kemiripan_pasangan": 0.5
  },
  {
   "insiden_id": "AUTO-00823",
@@ -18285,8 +18345,8 @@
   "hasil": null,
   "sumber_1_url": "https://jurnalbogor.com/fakta-persidangan-kades-karang-tengah-bogor-diduga-terima-gratifikasi-dari-pengusaha-kuasa-hukum-segera-lapor-ke-kpk/",
   "sumber_1_outlet": "jurnalbogor.com",
-  "sumber_2_url": "https://bogorexpose.com/ngaku-terima-duit-dari-pengusaha-kades-karang-tengah-dilaporkan-ke-kpk/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -18296,7 +18356,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "jurnalbogor.com search='kepala desa dilaporkan' 2024-05-27..2024-12-27",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 14
+  "_path": 14,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00826",
@@ -18372,8 +18433,8 @@
   "hasil": null,
   "sumber_1_url": "https://kuninganonline.com/dugaan-intimidasi-pegawai-honorer-dalam-pilkada-kuningan-pakar-hukum-pelanggaran-serius-terhadap-prinsip-demokrasi/",
   "sumber_1_outlet": "kuninganonline.com",
-  "sumber_2_url": "https://eljabar.com/pilkada-kuningan-terindikasi-tidak-demokrasi-muncul-intimidasi-kepada-pegawai-non-asn/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -18383,7 +18444,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "kuninganonline.com search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 14
+  "_path": 14,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00830",
@@ -18412,7 +18474,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "kuninganonline.com search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 14
+  "_path": 14,
+  "kemiripan_pasangan": 0.29
  },
  {
   "insiden_id": "AUTO-00831",
@@ -18575,8 +18638,8 @@
   "hasil": null,
   "sumber_1_url": "https://kuninganonline.com/tim-ridho-kamdan-desak-bawaslu-usut-intimidasi-terhadap-pegawai-honorer-di-pilkada-kuningan/",
   "sumber_1_outlet": "kuninganonline.com",
-  "sumber_2_url": "https://eljabar.com/pilkada-kuningan-terindikasi-tidak-demokrasi-muncul-intimidasi-kepada-pegawai-non-asn/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -18586,7 +18649,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "kuninganonline.com search='ASN tidak netral' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 14
+  "_path": 14,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00837",
@@ -18923,7 +18987,7 @@
   "hasil": null,
   "sumber_1_url": "https://www.madurazone.com/2016/09/21/ngaku-diancam-kades-warga-cangkreng-lapor-polisi/",
   "sumber_1_outlet": "madurazone.com",
-  "sumber_2_url": "https://koranmadura.com/2015/08/kades-dilaporkan-ke-bupati-dan-polres/",
+  "sumber_2_url": "https://koranmadura.com/2016/09/ngaku-dapat-ancaman-dari-kades-warga-lapor-polisi/",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode III",
@@ -18934,7 +18998,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "madurazone.com search='kepala desa dilaporkan' 2016-08-15..2017-03-15",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 7
+  "_path": 7,
+  "kemiripan_pasangan": 0.37
  },
  {
   "insiden_id": "AUTO-00851",
@@ -20228,8 +20293,8 @@
   "hasil": null,
   "sumber_1_url": "https://langgam.id/2-asn-dipanggil-bawaslu-padang-terkait-dugaan-pelanggaran-pemilu/",
   "sumber_1_outlet": "langgam.id",
-  "sumber_2_url": "https://padangkita.com/990-pelanggaran-netralitas-asn-dalam-kurun-waktu-januari-2018-maret-2019/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode III",
   "gelombang_pilkada": "2019b",
@@ -20239,7 +20304,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "langgam.id search='ASN kampanye' 2019-01-01..2019-06-08",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 25
+  "_path": 25,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01079",
@@ -20732,7 +20798,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "portalmadura.com search='ASN kampanye' 2017-12-27..2018-07-27",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 7
+  "_path": 7,
+  "kemiripan_pasangan": 0.33
  },
  {
   "insiden_id": "AUTO-01135",
@@ -20750,8 +20817,8 @@
   "hasil": null,
   "sumber_1_url": "https://portalmadura.com/dilaporkan-ada-pemotongan-tkp-perangkat-desa-di-pamekasan-diperiksa-polisi-73482/",
   "sumber_1_outlet": "portalmadura.com",
-  "sumber_2_url": "https://koranmadura.com/2015/08/kades-dilaporkan-ke-bupati-dan-polres/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode III",
   "gelombang_pilkada": "2017",
@@ -20761,7 +20828,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "portalmadura.com search='kepala desa dilaporkan' 2016-08-15..2017-03-15",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01137",
@@ -20953,8 +21021,8 @@
   "hasil": null,
   "sumber_1_url": "https://padangkita.com/990-pelanggaran-netralitas-asn-dalam-kurun-waktu-januari-2018-maret-2019/",
   "sumber_1_outlet": "padangkita.com",
-  "sumber_2_url": "https://langgam.id/2-asn-dipanggil-bawaslu-padang-terkait-dugaan-pelanggaran-pemilu/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode III",
   "gelombang_pilkada": "2019b",
@@ -20964,7 +21032,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "padangkita.com search='netralitas ASN' 2019-01-01..2019-06-08",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 25
+  "_path": 25,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01151",
@@ -21098,7 +21167,7 @@
   "hasil": null,
   "sumber_1_url": "https://portalmadura.com/tidak-netral-di-pemilu-2019-perangkat-desa-dan-asn-disanksi-189402/",
   "sumber_1_outlet": "portalmadura.com",
-  "sumber_2_url": "https://koranmadura.com/2018/01/tak-netral-dalam-pilkada-asn-siap-siap-kena-sanksi/",
+  "sumber_2_url": "https://koranmadura.com/2019/03/bawaslu-pamekasan-ancam-sanksi-asn-dan-perangkat-desa-tak-netral-di-pemilu-2019/",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode III",
@@ -21109,7 +21178,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "portalmadura.com search='netralitas ASN' 2019-01-01..2019-06-08",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "kemiripan_pasangan": 0.39
  },
  {
   "insiden_id": "AUTO-01178",
@@ -21156,8 +21226,8 @@
   "hasil": null,
   "sumber_1_url": "https://portalmadura.com/diduga-berkampanye-bupati-pamekasan-mangkir-panggilan-bawaslu-189735/",
   "sumber_1_outlet": "portalmadura.com",
-  "sumber_2_url": "https://koranmadura.com/2018/01/tak-netral-dalam-pilkada-asn-siap-siap-kena-sanksi/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode III",
   "gelombang_pilkada": "2019b",
@@ -21167,7 +21237,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "portalmadura.com search='ASN kampanye' 2019-01-01..2019-06-08",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01180",
@@ -22113,7 +22184,7 @@
   "hasil": null,
   "sumber_1_url": "https://www.bantennews.co.id/enam-kecamatan-di-pandeglang-rawan-pelanggaran-pemilu/",
   "sumber_1_outlet": "bantennews.co.id",
-  "sumber_2_url": "https://www.radarbanten.co.id/2023/12/10/diduga-tak-netral-bawaslu-laporkan-tiga-pejabat-pandeglang-ke-kasn/",
+  "sumber_2_url": "https://www.radarbanten.co.id/2024/06/25/bawaslu-pandeglang-enam-kecamatan-rawan-pelanggaran-pilkada-2024-ini-rinciannya/",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -22124,7 +22195,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "bantennews.co.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 6
+  "_path": 6,
+  "kemiripan_pasangan": 0.33
  },
  {
   "insiden_id": "AUTO-01416",
@@ -22171,8 +22243,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.bantennews.co.id/jelang-masa-tenang-bawaslu-kabupaten-serang-sebut-masih-ada-laporan-pelanggaran-asn/",
   "sumber_1_outlet": "bantennews.co.id",
-  "sumber_2_url": "https://www.radarbanten.co.id/2023/10/22/2-asn-kota-serang-langgar-netralitas-bawaslu-kirim-surat-ke-kasn/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -22182,7 +22254,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "bantennews.co.id search='ASN kampanye' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 6
+  "_path": 6,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01418",
@@ -22258,8 +22331,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.bantennews.co.id/ogah-jadi-nasabah-bprs-cm-asn-cilegon-abaikan-instruksi-walikota/",
   "sumber_1_outlet": "bantennews.co.id",
-  "sumber_2_url": "https://news.detik.com/pilkada/d-7526199/lurah-di-cilegon-dilaporkan-ke-bawaslu-diduga-bagi-bagi-kaos-cawalkot",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -22269,7 +22342,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "bantennews.co.id search='ASN dukung calon' 2024-05-27..2024-12-27",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 6
+  "_path": 6,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01421",
@@ -22287,8 +22361,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.bantennews.co.id/diduga-ikut-dukung-bapaslon-bupati-kpu-pandeglang-segera-panggil-oknum-anggota-sekretariat-pps/",
   "sumber_1_outlet": "bantennews.co.id",
-  "sumber_2_url": "https://www.radarbanten.co.id/2023/12/10/diduga-tak-netral-bawaslu-laporkan-tiga-pejabat-pandeglang-ke-kasn/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -22298,7 +22372,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "bantennews.co.id search='ASN dukung calon' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 6
+  "_path": 6,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01422",
@@ -22316,8 +22391,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.bantennews.co.id/panwascam-panggil-dua-asn-pandeglang-yang-diduga-dukung-bapaslon/",
   "sumber_1_outlet": "bantennews.co.id",
-  "sumber_2_url": "https://www.radarbanten.co.id/2023/12/10/diduga-tak-netral-bawaslu-laporkan-tiga-pejabat-pandeglang-ke-kasn/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -22327,7 +22402,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "bantennews.co.id search='ASN dukung calon' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 6
+  "_path": 6,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01424",
@@ -22780,8 +22856,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.radarbanten.co.id/2024/06/25/asn-pemkab-pandeglang-diduga-dipolitisasi/",
   "sumber_1_outlet": "radarbanten.co.id",
-  "sumber_2_url": "https://www.bantennews.co.id/buntut-video-dukung-petahana-2-asn-pandeglang-kena-sanksi/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -22791,7 +22867,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "radarbanten.co.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 6
+  "_path": 6,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01442",
@@ -22809,8 +22886,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.radarbanten.co.id/2024/06/25/2-asn-pandeglang-diduga-endorse-bapaslon-pilkada-2024-uday-suhada-itu-sudah-mencederai-demokrasi/",
   "sumber_1_outlet": "radarbanten.co.id",
-  "sumber_2_url": "https://www.bantennews.co.id/buntut-video-dukung-petahana-2-asn-pandeglang-kena-sanksi/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -22820,7 +22897,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "radarbanten.co.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 6
+  "_path": 6,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01443",
@@ -22838,8 +22916,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.radarbanten.co.id/2024/06/25/dua-asn-pandeglang-diduga-endorse-pasangan-bacalon-bawaslu-jika-terbukti-akan-direkomendasikan/",
   "sumber_1_outlet": "radarbanten.co.id",
-  "sumber_2_url": "https://www.bantennews.co.id/buntut-video-dukung-petahana-2-asn-pandeglang-kena-sanksi/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -22849,7 +22927,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "radarbanten.co.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 6
+  "_path": 6,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01444",
@@ -22867,7 +22946,7 @@
   "hasil": null,
   "sumber_1_url": "https://www.radarbanten.co.id/2024/06/25/bawaslu-pandeglang-enam-kecamatan-rawan-pelanggaran-pilkada-2024-ini-rinciannya/",
   "sumber_1_outlet": "radarbanten.co.id",
-  "sumber_2_url": "https://www.bantennews.co.id/buntut-video-dukung-petahana-2-asn-pandeglang-kena-sanksi/",
+  "sumber_2_url": "https://www.bantennews.co.id/enam-kecamatan-di-pandeglang-rawan-pelanggaran-pemilu/",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -22878,7 +22957,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "radarbanten.co.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 6
+  "_path": 6,
+  "kemiripan_pasangan": 0.33
  },
  {
   "insiden_id": "AUTO-01445",
@@ -22925,8 +23005,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.radarbanten.co.id/2024/09/09/aktivis-kota-tangerang-kepung-bawaslu-minta-asn-tak-netral-disanksi/",
   "sumber_1_outlet": "radarbanten.co.id",
-  "sumber_2_url": "https://kabarbanten.com/diduga-tidak-netral-ibnu-jandi-laporkan-pj-wali-kota-tangerang-ke-bawaslu/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -22936,7 +23016,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "radarbanten.co.id search='ASN tidak netral' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 6
+  "_path": 6,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01447",
@@ -22983,8 +23064,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.sulselsatu.com/2024/10/06/hukum/bawaslu-sulsel-putuskan-kepala-samsat-makassar-yarham-yasmin-langgar-netralitas-asn.html",
   "sumber_1_outlet": "sulselsatu.com",
-  "sumber_2_url": "https://fajar.co.id/2020/04/09/kasn-terima-laporan-bawaslu-makassar-soal-pelanggaran-pj-wali-kota/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -22994,7 +23075,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "sulselsatu.com search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01449",
@@ -23331,8 +23413,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.sulselsatu.com/2020/09/05/makassar/tanggapi-gerbong-mutasi-rudy-djamaluddin-na-untuk-jaga-netralitas-asn.html",
   "sumber_1_outlet": "sulselsatu.com",
-  "sumber_2_url": "https://fajar.co.id/2020/04/09/kasn-terima-laporan-bawaslu-makassar-soal-pelanggaran-pj-wali-kota/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -23342,7 +23424,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "sulselsatu.com search='netralitas ASN' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01463",
@@ -23360,8 +23443,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.sulselsatu.com/2020/09/04/makassar/rudy-kembali-mutasi-32-pejabat-dua-camat-dan-empat-lurah-diganti.html",
   "sumber_1_outlet": "sulselsatu.com",
-  "sumber_2_url": "https://fajar.co.id/2020/04/09/kasn-terima-laporan-bawaslu-makassar-soal-pelanggaran-pj-wali-kota/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -23371,7 +23454,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "sulselsatu.com search='netralitas ASN' 2020-06-09..2021-01-09",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01464",
@@ -23389,8 +23473,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.sulselsatu.com/2020/09/02/politik/bawaslu-makassar-temukan-6-tindakan-pelanggaran-asn.html",
   "sumber_1_outlet": "sulselsatu.com",
-  "sumber_2_url": "https://fajar.co.id/2020/04/09/kasn-terima-laporan-bawaslu-makassar-soal-pelanggaran-pj-wali-kota/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -23400,7 +23484,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "sulselsatu.com search='netralitas ASN' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01465",
@@ -23447,8 +23532,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.sulselsatu.com/2020/12/10/berita-utama/pilwali-makassar-usai-pj-walikota-sebut-bakal-mutasi-ribuan-pejabat.html",
   "sumber_1_outlet": "sulselsatu.com",
-  "sumber_2_url": "https://fajar.co.id/2020/04/09/kasn-terima-laporan-bawaslu-makassar-soal-pelanggaran-pj-wali-kota/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -23458,7 +23543,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "sulselsatu.com search='mutasi pejabat pilkada' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01467",
@@ -24897,7 +24983,7 @@
   "hasil": null,
   "sumber_1_url": "https://batamtoday.com/news/langgar-netralitas-asn-bawaslu-laporkan-oknum-lurah-di-batam-ke-bkn",
   "sumber_1_outlet": "Batamtoday.com",
-  "sumber_2_url": "https://batampos.co.id/2018/05/02/di-hadapan-anggota-komisi-i-camat-se-batam-janji-netral-dan-siap-menerima-sanksi/",
+  "sumber_2_url": "https://ulasan.co/oknum-lurah-di-batam-dilaporkan-ke-bawaslu/",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -24908,7 +24994,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "netralitas ASN dilaporkan after:2024-05-27 before:2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 18
+  "_path": 18,
+  "kemiripan_pasangan": 0.3
  },
  {
   "insiden_id": "AUTO-01414",
@@ -24926,8 +25013,8 @@
   "hasil": null,
   "sumber_1_url": "https://surabaya.inews.id/read/473210/skandal-netralitas-asn-enam-pejabat-mojokerto-dilaporkan-bawaslu-ini-respon-kadis-kominfo",
   "sumber_1_outlet": "iNews.ID",
-  "sumber_2_url": "https://beritajatim.com/deklarasi-maju-calon-bupati-2-asn-ini-bakal-dipanggil-bawaslu-kabupaten-mojokerto",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -24937,7 +25024,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "netralitas ASN dilaporkan after:2024-05-27 before:2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01415",
@@ -24984,7 +25072,7 @@
   "hasil": null,
   "sumber_1_url": "https://banggaikece.id/2024/11/05/tim-hukum-laporkan-kabag-tapem-dan-24-camat-di-banggai-ke-bkn-soal-dugaan-langgar-netralitas-asn/",
   "sumber_1_outlet": "Banggai Kece",
-  "sumber_2_url": "https://kabarluwuk.com/langgar-pkpu-dan-uu-pilkada-sejumlah-petahana-di-sulteng-tercancam-tms-pilkada-serentak-tahun-2020/",
+  "sumber_2_url": "https://kabarluwuk.com/bawaslu-banggai-teruskan-laporan-dugaan-langgar-netralitas-asn-ke-polisi/",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -24995,7 +25083,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "netralitas ASN dilaporkan after:2024-05-27 before:2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 19
+  "_path": 19,
+  "kemiripan_pasangan": 0.25
  },
  {
   "insiden_id": "AUTO-01417",
@@ -25013,8 +25102,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.detik.com/jateng/pilkada/d-7644897/2-asn-semarang-pelanggar-netralitas-dilaporkan-bawaslu-ke-bkn",
   "sumber_1_outlet": "detikcom",
-  "sumber_2_url": "https://beritajateng.id/berita/diduga-tidak-netral-kasn-panggil-2-asn-pemkot-semarang/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -25024,7 +25113,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "netralitas ASN dilaporkan after:2024-05-27 before:2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 5
+  "_path": 5,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01418",
@@ -25071,7 +25161,7 @@
   "hasil": null,
   "sumber_1_url": "https://news.detik.com/pilkada/d-7526199/lurah-di-cilegon-dilaporkan-ke-bawaslu-diduga-bagi-bagi-kaos-cawalkot",
   "sumber_1_outlet": "detikNews",
-  "sumber_2_url": "https://www.bantennews.co.id/dugaan-pelanggaran-netralitas-belasan-asn-sudah-dilaporkan-ke-bawaslu-cilegon/",
+  "sumber_2_url": "https://banten.tribunnews.com/2024/09/05/diduga-tak-netral-usai-bagi-bagi-kaos-cawalkot-lurah-gerem-dilaporkan-ke-bawaslu-kota-cilegon",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -25082,7 +25172,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "netralitas ASN dilaporkan after:2024-05-27 before:2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 6
+  "_path": 6,
+  "kemiripan_pasangan": 0.46
  },
  {
   "insiden_id": "AUTO-01420",
@@ -25332,8 +25423,8 @@
   "hasil": null,
   "sumber_1_url": "https://rri.co.id/surakarta/regional/1081750/privacy.html",
   "sumber_1_outlet": "RRI.co.id",
-  "sumber_2_url": "https://jatengtoday.com/kepala-desa-dan-camat-di-boyolali-dilaporkan-karena-tidak-netral",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -25343,7 +25434,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "netralitas ASN dilaporkan \"DI Yogyakarta\" after:2024-05-27 before:2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 5
+  "_path": 5,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01620",
@@ -25361,7 +25453,7 @@
   "hasil": null,
   "sumber_1_url": "https://www.detik.com/sumut/pilkada/d-7572808/foto-bareng-li-claudia-4-lurah-1-camat-di-batam-dilaporkan-ke-bawaslu",
   "sumber_1_outlet": "detikcom",
-  "sumber_2_url": "https://batampos.co.id/2018/05/02/di-hadapan-anggota-komisi-i-camat-se-batam-janji-netral-dan-siap-menerima-sanksi/",
+  "sumber_2_url": "https://ulasan.co/oknum-lurah-di-batam-dilaporkan-ke-bawaslu/",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -25372,7 +25464,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "netralitas ASN dilaporkan \"Sumatera Utara\" after:2024-05-27 before:2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 18
+  "_path": 18,
+  "kemiripan_pasangan": 0.33
  },
  {
   "insiden_id": "AUTO-01649",
@@ -25564,8 +25657,8 @@
   "hasil": null,
   "sumber_1_url": "https://muria.suaramerdeka.com/muria-raya/0713654764/jadi-saksi-anggota-dprd-kudus-rochim-sutopo-siap-beberkan-bukti-pelanggaran-netralitas-6-asn-dan-1-kaedes",
   "sumber_1_outlet": "Suara Merdeka Muria",
-  "sumber_2_url": "https://beritajateng.id/berita/pj-bupati-kudus-dituding-langgar-netralitas-pilkada-gara-gara-pose-dua-jari/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -25575,7 +25668,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "netralitas ASN dilaporkan after:2024-05-27 before:2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 5
+  "_path": 5,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01437",
@@ -25622,7 +25716,7 @@
   "hasil": null,
   "sumber_1_url": "https://muria.suaramerdeka.com/muria-raya/0713668826/31-anggota-dprd-kudus-gulirkan-hak-angket-usut-dugaan-pelanggaran-netralitas-pj-bupati-dan-asn",
   "sumber_1_outlet": "Suara Merdeka Muria",
-  "sumber_2_url": "https://beritajateng.id/berita/pj-bupati-kudus-dituding-langgar-netralitas-pilkada-gara-gara-pose-dua-jari/",
+  "sumber_2_url": "https://beritajateng.id/berita/resmi-gulirkan-hak-angket-dprd-kudus-usut-dugaan-ketidaknetralan-pj-bupati-dalam-pilkada/",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -25633,7 +25727,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "netralitas ASN dilaporkan after:2024-05-27 before:2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 5
+  "_path": 5,
+  "kemiripan_pasangan": 0.32
  },
  {
   "insiden_id": "AUTO-01439",
@@ -25651,8 +25746,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.sukabumiupdate.com/sukabumi-memilih/146480/warning-oknum-kades-dan-asn-berpihak-di-pilkada-sukabumi-siap-siap-dilaporkan",
   "sumber_1_outlet": "Sukabumi Update",
-  "sumber_2_url": "https://radarsukabumi.com/politik/pilgub-jawab/ingat-kades-bermain-bakal-di-sanksi-3/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -25662,7 +25757,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "netralitas ASN dilaporkan after:2024-05-27 before:2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 14
+  "_path": 14,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01441",
@@ -25738,7 +25834,7 @@
   "hasil": null,
   "sumber_1_url": "https://banten.tribunnews.com/2024/09/05/diduga-tak-netral-usai-bagi-bagi-kaos-cawalkot-lurah-gerem-dilaporkan-ke-bawaslu-kota-cilegon",
   "sumber_1_outlet": "Tribunbanten.com",
-  "sumber_2_url": "https://www.bantennews.co.id/dugaan-pelanggaran-netralitas-belasan-asn-sudah-dilaporkan-ke-bawaslu-cilegon/",
+  "sumber_2_url": "https://news.detik.com/pilkada/d-7526199/lurah-di-cilegon-dilaporkan-ke-bawaslu-diduga-bagi-bagi-kaos-cawalkot",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -25749,7 +25845,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "netralitas ASN dilaporkan after:2024-05-27 before:2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 6
+  "_path": 6,
+  "kemiripan_pasangan": 0.46
  },
  {
   "insiden_id": "AUTO-01444",
@@ -25767,8 +25864,8 @@
   "hasil": null,
   "sumber_1_url": "https://ntt.pikiran-rakyat.com/regional/pr-2328553716/heboh-bupati-kediri-kadis-pendidikan-dan-oknum-asn-dilaporkan-ke-bawaslu?page",
   "sumber_1_outlet": "ntt.pikiran-rakyat.com",
-  "sumber_2_url": "https://beritajatim.com/bawaslu-kediri-tangani-2-kasus-dugaan-pelanggaran-netralitas-asn",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -25778,7 +25875,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "netralitas ASN dilaporkan after:2024-05-27 before:2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01445",
@@ -25825,8 +25923,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.detik.com/sulsel/pilkada/d-7616404/4-kades-di-jeneponto-dukung-paslon-di-pilkada-diperiksa-bawaslu",
   "sumber_1_outlet": "detikcom",
-  "sumber_2_url": "https://www.sulselsatu.com/2024/10/28/hukum/bawaslu-jeneponto-akan-tindaklanjuti-oknum-kades-dan-lurah-yang-viral-diduga-tak-netral.html",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -25836,7 +25934,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "\"kepala desa\" dukung paslon dilaporkan after:2024-05-27 before:2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01448",
@@ -25912,8 +26011,8 @@
   "hasil": null,
   "sumber_1_url": "https://jatengtoday.com/kepala-desa-dan-camat-di-boyolali-dilaporkan-karena-tidak-netral",
   "sumber_1_outlet": "Jateng Today",
-  "sumber_2_url": "https://rri.co.id/surakarta/regional/1081750/privacy.html",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -25923,7 +26022,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "netralitas ASN dilaporkan \"Jawa Tengah\" after:2024-05-27 before:2024-12-27",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 5
+  "_path": 5,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01451",
@@ -26144,8 +26244,8 @@
   "hasil": null,
   "sumber_1_url": "https://bekasimedia.com/2024/10/29/bawaslu-didesak-usut-tuntas-dugaan-aliran-dana-asn-untuk-kampanye-tri-adhianto/",
   "sumber_1_outlet": "bekasimedia.com",
-  "sumber_2_url": "https://radarbekasi.id/2022/08/25/plt-walikota-dilaporkan-ke-bawaslu/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -26155,7 +26255,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "bekasimedia.com search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 14
+  "_path": 14,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01667",
@@ -26550,7 +26651,7 @@
   "hasil": null,
   "sumber_1_url": "https://bogorexpose.com/diduga-terima-suap-kades-karang-tengah-dilaporkan-ke-kejari-cibinong/",
   "sumber_1_outlet": "bogorexpose.com",
-  "sumber_2_url": "https://jurnalbogor.com/fakta-persidangan-kades-karang-tengah-bogor-diduga-terima-gratifikasi-dari-pengusaha-kuasa-hukum-segera-lapor-ke-kpk/",
+  "sumber_2_url": "https://jurnalbogor.com/kades-karang-tengah-bogor-dilaporkan-ke-kejari-cibinong/",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -26561,7 +26662,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "bogorexpose.com search='kepala desa dilaporkan' 2024-05-27..2024-12-27",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 14
+  "_path": 14,
+  "kemiripan_pasangan": 0.5
  },
  {
   "insiden_id": "AUTO-01695",
@@ -26579,8 +26681,8 @@
   "hasil": null,
   "sumber_1_url": "https://bogorexpose.com/ngaku-terima-duit-dari-pengusaha-kades-karang-tengah-dilaporkan-ke-kpk/",
   "sumber_1_outlet": "bogorexpose.com",
-  "sumber_2_url": "https://jurnalbogor.com/fakta-persidangan-kades-karang-tengah-bogor-diduga-terima-gratifikasi-dari-pengusaha-kuasa-hukum-segera-lapor-ke-kpk/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -26590,7 +26692,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "bogorexpose.com search='kepala desa dilaporkan' 2024-05-27..2024-12-27",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 14
+  "_path": 14,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01697",
@@ -27971,8 +28074,8 @@
   "hasil": null,
   "sumber_1_url": "https://koranmakassar.com/tim-cabup-petahana-diduga-sebarkan-informasi-hoaks-di-pilkada-maros/",
   "sumber_1_outlet": "koranmakassar.com",
-  "sumber_2_url": "https://www.marosnews.com/pelanggaran-netralitas-asn-di-sulsel-urutan-4-se-indonesia/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -27982,7 +28085,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "koranmakassar.com search='ASN dilaporkan Bawaslu' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01785",
@@ -28301,7 +28405,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "koranmadura.com search='ASN terlibat politik praktis' 2017-12-27..2018-07-27",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 7
+  "_path": 7,
+  "kemiripan_pasangan": 0.33
  },
  {
   "insiden_id": "AUTO-01799",
@@ -28348,8 +28453,8 @@
   "hasil": null,
   "sumber_1_url": "https://koranmadura.com/2017/01/semua-kades-dilaporkan-selewengkan-raskin-ini-yang-akan-dilakukan-akd/",
   "sumber_1_outlet": "koranmadura.com",
-  "sumber_2_url": "https://portalmadura.com/diduga-sunat-dana-psks-warga-raas-laporkan-oknum-kades-ke-polisi-31710/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode III",
   "gelombang_pilkada": "2017",
@@ -28359,7 +28464,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "koranmadura.com search='kepala desa dilaporkan' 2016-08-15..2017-03-15",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01805",
@@ -28406,8 +28512,8 @@
   "hasil": null,
   "sumber_1_url": "https://koranmadura.com/2016/09/empat-camat-dan-dua-kades-diperiksa/",
   "sumber_1_outlet": "koranmadura.com",
-  "sumber_2_url": "https://www.madurazone.com/2016/09/21/ngaku-diancam-kades-warga-cangkreng-lapor-polisi/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode III",
   "gelombang_pilkada": "2017",
@@ -28417,7 +28523,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "koranmadura.com search='kepala desa dilaporkan' 2016-08-15..2017-03-15",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01808",
@@ -28446,7 +28553,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "koranmadura.com search='kades diancam' 2016-08-15..2017-03-15",
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
-  "_path": 7
+  "_path": 7,
+  "kemiripan_pasangan": 0.37
  },
  {
   "insiden_id": "AUTO-01811",
@@ -28551,7 +28659,7 @@
   "hasil": null,
   "sumber_1_url": "https://koranmadura.com/2019/03/bawaslu-pamekasan-ancam-sanksi-asn-dan-perangkat-desa-tak-netral-di-pemilu-2019/",
   "sumber_1_outlet": "koranmadura.com",
-  "sumber_2_url": "https://portalmadura.com/panwaslih-kecamatan-batuputih-terima-laporan-apk-hilang-38105/",
+  "sumber_2_url": "https://portalmadura.com/tidak-netral-di-pemilu-2019-perangkat-desa-dan-asn-disanksi-189402/",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode III",
@@ -28562,7 +28670,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "koranmadura.com search='aparatur tidak netral' 2019-01-01..2019-06-08",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "kemiripan_pasangan": 0.39
  },
  {
   "insiden_id": "AUTO-01837",
@@ -28580,8 +28689,8 @@
   "hasil": null,
   "sumber_1_url": "https://koranmadura.com/2019/03/bupati-baddrut-tamam-bisa-dipidana-jika-terbukti-langgar-kampanye-pamilu-2019/",
   "sumber_1_outlet": "koranmadura.com",
-  "sumber_2_url": "https://portalmadura.com/panwaslih-kecamatan-batuputih-terima-laporan-apk-hilang-38105/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode III",
   "gelombang_pilkada": "2019b",
@@ -28591,7 +28700,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "koranmadura.com search='ASN kampanye' 2019-01-01..2019-06-08",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01838",
@@ -28609,8 +28719,8 @@
   "hasil": null,
   "sumber_1_url": "https://koranmadura.com/2019/03/dipanggil-bawaslu-bupati-pamekasan-malah-ngelencer-ke-jakarta324/",
   "sumber_1_outlet": "koranmadura.com",
-  "sumber_2_url": "https://portalmadura.com/panwaslih-kecamatan-batuputih-terima-laporan-apk-hilang-38105/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode III",
   "gelombang_pilkada": "2019b",
@@ -28620,7 +28730,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "koranmadura.com search='ASN kampanye' 2019-01-01..2019-06-08",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01846",
@@ -28783,8 +28894,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.kotawaringinnews.co.id/pj-bupati-lamandau-tak-terbukti-langgar-netralitas-pemilu/",
   "sumber_1_outlet": "kotawaringinnews.co.id",
-  "sumber_2_url": "https://beritasampit.com/2023/12/22/ketua-bawaslu-status-laporan-pj-bupati-lamandau-dihentikan-tidak-memenuhi-unsur-terkait-dugaan-pelanggaran-netralitas-pejabat-daerah/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "kontrol-2024",
@@ -28794,7 +28905,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "kotawaringinnews.co.id search='netralitas ASN' 2023-05-27..2023-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 26
+  "_path": 26,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01872",
@@ -28899,8 +29011,8 @@
   "hasil": null,
   "sumber_1_url": "https://makassarchannel.com/bawaslu-lanjutkan-kasus-dugaan-asn-pemprov-sulsel-kampanyekan-cagub/",
   "sumber_1_outlet": "makassarchannel.com",
-  "sumber_2_url": "https://fajar.co.id/2020/04/09/kasn-terima-laporan-bawaslu-makassar-soal-pelanggaran-pj-wali-kota/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -28910,7 +29022,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "makassarchannel.com search='ASN diperiksa netralitas' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01907",
@@ -28928,8 +29041,8 @@
   "hasil": null,
   "sumber_1_url": "https://makassarchannel.com/bawaslu-respons-dugaan-pelanggaran-netralitas-asn-bapenda-sulsel/",
   "sumber_1_outlet": "makassarchannel.com",
-  "sumber_2_url": "https://fajar.co.id/2020/04/09/kasn-terima-laporan-bawaslu-makassar-soal-pelanggaran-pj-wali-kota/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -28939,7 +29052,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "makassarchannel.com search='aparatur tidak netral' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01908",
@@ -28986,8 +29100,8 @@
   "hasil": null,
   "sumber_1_url": "https://makassarchannel.com/tiga-oknum-asn-pemprov-sulsel-langgar-netralitas-pilgub/",
   "sumber_1_outlet": "makassarchannel.com",
-  "sumber_2_url": "https://fajar.co.id/2020/04/09/kasn-terima-laporan-bawaslu-makassar-soal-pelanggaran-pj-wali-kota/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -28997,7 +29111,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "makassarchannel.com search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 12
+  "_path": 12,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01910",
@@ -29102,8 +29217,8 @@
   "hasil": null,
   "sumber_1_url": "https://malangvoice.com/sekda-dan-inspektorat-pemkab-malang-tunggu-hasil-pemeriksaan-bawaslu-soal-pelanggaran-asn-dukung-paslon/",
   "sumber_1_outlet": "malangvoice.com",
-  "sumber_2_url": "https://beritajatim.com/bawaslu-malang-periksa-asn-dispora-diduga-dukung-paslon-ladub",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -29113,7 +29228,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "malangvoice.com search='sanksi disiplin ASN pilkada' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01916",
@@ -29131,8 +29247,8 @@
   "hasil": null,
   "sumber_1_url": "https://malangvoice.com/diduga-pendukung-paslon-ladub-asn-terancam-sanksi-bawaslu/",
   "sumber_1_outlet": "malangvoice.com",
-  "sumber_2_url": "https://beritajatim.com/bawaslu-malang-periksa-asn-dispora-diduga-dukung-paslon-ladub",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode IV",
   "gelombang_pilkada": "2020",
@@ -29142,7 +29258,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "malangvoice.com search='aparatur tidak netral' 2020-06-09..2021-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 7
+  "_path": 7,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01917",
@@ -29392,8 +29509,8 @@
   "hasil": null,
   "sumber_1_url": "https://www.manadoterkini.com/2015/09/18105/rawan-pelanggaran-panwaslu-minsel-ingatkan-netralitas-asn-dan-kumtua/",
   "sumber_1_outlet": "manadoterkini.co.id",
-  "sumber_2_url": "https://beritamanado.com/kasn-rekomendasikan-gubernur-membatalkan-mutasipelantikan-pejabat-7-september-2015-jems-tuuk-minta-sarundajang-taat-aturan/",
-  "status_verifikasi": "dua sumber",
+  "sumber_2_url": null,
+  "status_verifikasi": "satu sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode III",
   "gelombang_pilkada": "2015",
@@ -29403,7 +29520,8 @@
   "tanggal_isi": "2026-09-29",
   "kueri": "manadoterkini.co.id search='ASN terlibat politik praktis' 2015-02-24..2016-01-09",
   "lingkup_dasar": "konteks elektoral di judul",
-  "_path": 21
+  "_path": 21,
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01935",

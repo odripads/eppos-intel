@@ -148,3 +148,20 @@ Tiap baris otomatis menyimpan `lokasi_dasar` dan bendera `lokasi_perkiraan`:
 Yang bertanda perkiraan menandai **di mana outletnya berada, bukan di mana peristiwanya**. Outlet daerah
 kerap meliput seluruh provinsinya, jadi titik semacam ini bisa meleset satu kabupaten atau lebih.
 Panel catatan menampilkan dasarnya pada tiap baris supaya pembaca tahu seberapa kuat penempatannya.
+
+### Korroborasi dua sumber, dan koreksinya
+
+Awalnya `dua sumber` diberikan bila dua outlet berbeda menerbitkan sesuatu di kab/kota dan mekanisme
+yang sama dalam 7 hari. Pemeriksaan pasangan secara manual menunjukkan **sekitar separuhnya bukan
+peristiwa yang sama** — hanya dua berita berbeda yang kebetulan berbagi kabupaten, kategori mekanisme,
+dan minggu yang sama. Median kemiripan judul antar-pasangan hanya 0,11, dan 51 dari 118 pasangan di
+bawah 0,10.
+
+Sekarang pasangan wajib lolos ambang kemiripan judul (Jaccard atas kata isi dan bigram, ≥ 0,25), dan
+nilainya disimpan di `kemiripan_pasangan`. Angkanya turun **118 → 30**, dan sampel pasangan yang
+tersisa semuanya benar-benar peristiwa yang sama diberitakan dua outlet.
+
+**Batasnya:** spek meminta uji nyaris-duplikat atas *teks* untuk memastikan dua sumber bukan satu
+siaran pers yang sama. Lapisan otomatis hanya menyimpan judul, bukan badan artikel, jadi uji itu belum
+bisa dijalankan. Yang bisa dipastikan sekarang hanyalah bahwa keduanya membicarakan peristiwa yang sama
+dari outlet berbeda — bukan bahwa keduanya ditulis secara independen.
