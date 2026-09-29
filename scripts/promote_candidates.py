@@ -38,15 +38,38 @@ PEMILU = re.compile(r"(pilkada|pemilu|pilpres|pileg|pilgub|pilbup|pilwal|paslon|
     r"tahapan pemilihan|pemilihan (kepala daerah|bupati|wali ?kota|gubernur))", re.I)
 # out of scope by the spec: personal scandal, ordinary crime, health/disaster reporting
 LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|pelecehan|narkoba|sabu|"
-    r"covid|corona|kecelakaan|laka lantas|kebakaran|banjir|gempa|longsor|pencurian|begal|judi|"
-    r"penggelapan|pungli|korupsi dana desa|mabuk|perkosa|cabul)", re.I)
+    r"covid|corona|kecelakaan|laka lantas|kebakaran|karhutla|banjir|gempa|longsor|pencurian|begal|judi|"
+    r"penggelapan|pungli|korupsi|mabuk|perkosa|cabul|"
+    # ordinary crime that the mechanism words alone would otherwise let back in
+    r"penipuan|ditipu|menipu|aniaya|penganiayaan|pencemaran nama baik|fitnah|difitnah|"
+    r"jual beli tanah|sengketa lahan|pembunuhan|curanmor|tawuran|bacok|istri kedua|"
+    r"vonis|divonis|penjara|dibui|napi|lapas)", re.I)
 
 
-def dalam_lingkup(judul):
-    """(ok, reason). Scope is electoral coercion by executives, not every official in the news."""
-    if LUAR_LINGKUP.search(judul): return False, "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
-    if not PEMILU.search(judul): return False, "tidak ada konteks elektoral di judul"
-    return True, None
+# Mechanism signatures from the closed typology. Inside a pilkada window these are plausibly electoral
+# even when the headline never says "pilkada" — a mass transfer of officials weeks before a vote is the
+# mechanism itself. Outside such a window the same words are just ordinary administration.
+MEKANISME_SIG = re.compile(r"(mutasi|rotasi jabatan|dimutasi|digeser|dicopot|demosi|non-?job|lelang jabatan|"
+    r"kepala desa|\bkades\b|lurah|perangkat desa|apdesi|paguyuban kades|\bASN\b|\bPNS\b|pegawai negeri|"
+    r"honorer|\bPPPK\b|aparatur sipil|camat|bansos|bantuan sosial|sembako|\bPKH\b|"
+    r"intimidasi|diancam|ancaman|ditekan|dipaksa|dimobilisasi|dikumpulkan)", re.I)
+JENDELA_PILKADA = {"2024", "2020", "2018", "2017", "2015"}
+
+
+def dalam_lingkup(judul, gelombang=None):
+    """(ok, reason, basis). Scope is electoral coercion by executives, not every official in the news.
+
+    Two ways in, recorded separately so the weaker basis stays visible:
+      1. the headline itself carries electoral context — strongest
+      2. a typology mechanism appears inside a pilkada window — weaker, flagged as such
+    Out-of-scope topics (personal scandal, ordinary crime, disaster) are refused on either path."""
+    if LUAR_LINGKUP.search(judul):
+        return False, "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)", None
+    if PEMILU.search(judul):
+        return True, None, "konteks elektoral di judul"
+    if gelombang in JENDELA_PILKADA and MEKANISME_SIG.search(judul):
+        return True, None, "mekanisme tipologi di dalam jendela pilkada"
+    return False, "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada", None
 
 
 def norm(s):
@@ -152,7 +175,7 @@ def main():
     rows, unplaced, ditolak = [], 0, []
     for k in kand:
         if not k.get("url"): continue
-        ok, why = dalam_lingkup(k["judul"])
+        ok, why, basis = dalam_lingkup(k["judul"], k.get("gelombang_pilkada"))
         if not ok:
             ditolak.append({"kandidat_id": k["kandidat_id"], "judul": k["judul"], "alasan": why}); continue
         p = place_of(k["judul"])
@@ -194,7 +217,7 @@ def main():
             "judul_sumber_1": k["judul"],
             "judul_status": "terverifikasi" if k.get("status_url") == "terselesaikan" else "dari URL",
             "diisi_oleh": "penelusuran otomatis", "tanggal_isi": k.get("ditemukan_pada"),
-            "kueri": k.get("kueri"), "_path": pidx,
+            "kueri": k.get("kueri"), "lingkup_dasar": basis, "_path": pidx,
         })
         if not prov: unplaced += 1
 

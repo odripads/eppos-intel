@@ -80,5 +80,43 @@
   </footer>
 </div>
 <script src="assets/app.js"></script>
+<script>
+/* muat-ulang-langsung — hanya di localhost. Menanyakan cap waktu berkas data; kalau berubah,
+   halaman dimuat ulang. Tidak aktif di versi terbitan. */
+(function () {
+  var host = location.hostname;
+  if (host !== "localhost" && host !== "127.0.0.1" && host !== "") return;
+  var WATCH = ["data/insiden_otomatis.json", "data/insiden.json", "data/kasus_resmi.json",
+               "assets/app.js", "assets/app.css", "index.html"];
+  var stamp = {}, first = true;
+  function cek() {
+    Promise.all(WATCH.map(function (f) {
+      return fetch(f + "?_=" + Date.now(), { method: "HEAD", cache: "no-store" })
+        .then(function (r) { return r.headers.get("last-modified") || r.headers.get("content-length") || ""; })
+        .catch(function () { return ""; });
+    })).then(function (vals) {
+      var berubah = false;
+      vals.forEach(function (v, i) {
+        if (!first && stamp[WATCH[i]] !== undefined && stamp[WATCH[i]] !== v) berubah = true;
+        stamp[WATCH[i]] = v;
+      });
+      if (first) { first = false; tanda(); return; }
+      if (berubah) { tanda("memuat ulang\u2026"); setTimeout(function () { location.reload(); }, 250); }
+    });
+  }
+  function tanda(teks) {
+    var el = document.getElementById("live-badge");
+    if (!el) {
+      el = document.createElement("div"); el.id = "live-badge";
+      el.style.cssText = "position:fixed;right:14px;bottom:14px;z-index:99;font:600 10px/1 'IBM Plex Mono',monospace;" +
+        "letter-spacing:.12em;text-transform:uppercase;background:var(--navy);color:var(--gold);" +
+        "border:2px solid var(--gold);border-radius:999px;padding:7px 12px;box-shadow:3px 3px 0 var(--red)";
+      document.body.appendChild(el);
+    }
+    el.textContent = teks || "pantau perubahan";
+  }
+  setInterval(cek, 2000); cek();
+})();
+</script>
 </body>
 </html>

@@ -111,3 +111,24 @@ bukan dibuang, supaya keputusannya bisa ditinjau ulang.
 Ini menukar sebagian recall demi presisi. Beberapa baris yang relevan ikut tersisih karena judulnya
 tidak menyebut konteks elektoral (mis. mutasi massal ASN tanpa kata "pilkada"). Untuk proyek yang
 menyajikan tiap titik sebagai dugaan intervensi, positif palsu lebih mahal daripada temuan yang luput.
+
+### Dua jalur masuk lingkup
+
+`dalam_lingkup()` menerima baris lewat dua jalur, dicatat terpisah di kolom `lingkup_dasar`:
+
+1. **`konteks elektoral di judul`** — judul menyebut pilkada, paslon, Bawaslu, netralitas, dan sejenisnya.
+2. **`mekanisme tipologi di dalam jendela pilkada`** — judul tidak menyebut pemilu, tetapi memuat mekanisme
+   dari tipologi tertutup (mutasi pejabat, kades/lurah dikumpulkan, bansos diarahkan, ASN ditekan) **dan**
+   terbit di dalam jendela gelombang pilkada. Mutasi massal pejabat beberapa minggu sebelum pemungutan suara
+   adalah mekanismenya itu sendiri; di luar jendela, kata yang sama hanya administrasi biasa.
+
+Jalur kedua lebih lemah dan sengaja ditandai supaya bisa disaring belakangan.
+
+Topik di luar lingkup ditolak pada kedua jalur: skandal pribadi (eksplisit di spek), kriminal umum
+(penipuan, penganiayaan, pencemaran nama baik, korupsi), bencana, dan kesehatan.
+
+### Muat ulang langsung saat mengembangkan
+
+`index.html` memuat pemantau kecil yang **hanya aktif di localhost**: ia menanyakan cap waktu berkas data
+dan aset tiap 2 detik, lalu memuat ulang halaman begitu ada yang berubah. Lencana kecil di pojok kanan bawah
+menunjukkan pemantauan sedang berjalan. Versi terbitan tidak menjalankannya.
