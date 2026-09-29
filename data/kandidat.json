@@ -25716,5 +25716,21 @@
   "ditemukan_pada": "2026-09-29",
   "status_tinjau": "diterima otomatis",
   "catatan_tinjau": "diterima massal 2026-09-29 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-01609",
+  "judul": "Dugaan Penipuan Investasi Usaha Tambang Pasir, Oknum Perangkat Desa Kembali Dilaporkan Polisi",
+  "outlet": "beritajatim.com",
+  "tanggal_terbit": "2020-01-24",
+  "url": "https://beritajatim.com/dugaan-penipuan-investasi-usaha-tambang-pasir-oknum-perangkat-desa-kembali-dilaporkan-polisi",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "kontrol-2018",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "beritajatim.com search='camat dilaporkan' 2019-12-27..2020-05-27",
+  "ditemukan_pada": "2026-09-29",
+  "status_tinjau": null,
+  "catatan_tinjau": null
  }
 ]

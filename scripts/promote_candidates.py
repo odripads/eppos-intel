@@ -108,6 +108,18 @@ def main():
                 return r
         return None
 
+    def place_from_url(url):
+        """Article slugs often carry the kab/kota even when the headline does not
+        (…/pilkada/d-123/bawaslu-sleman-limpahkan…). Same gazetteer, same word-boundary rule."""
+        if not url: return None
+        slug = re.sub(r"[^a-z]+", " ", url.lower().split("://", 1)[-1])
+        n = " " + slug + " "
+        for name, r in gaz:
+            if len(name) < 5: continue
+            if re.search(r"(?<![a-z])" + re.escape(name) + r"(?![a-z])", n):
+                return r
+        return None
+
     def province_of(r):
         x, y = project(r["lon"], r["lat"])
         for i, rs in enumerate(prings):
@@ -122,8 +134,11 @@ def main():
     for k in kand:
         if not k.get("url"): continue
         p = place_of(k["judul"])
-        prov, pidx = (province_of(p) if p else (None, None))
         dasar = "nama kab/kota di judul" if p else None
+        if not p:
+            p = place_from_url(k.get("url"))
+            if p: dasar = "nama kab/kota di tautan"
+        prov, pidx = (province_of(p) if p else (None, None))
         if not p:
             hp = OUTLET_PROV.get(k.get("outlet"))
             if not hp and k.get("outlet"):
