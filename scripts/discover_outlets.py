@@ -21,18 +21,25 @@ UA = "EPPOS-DPP-UGM academic research (incident census; github.com/odripads/eppo
 PATHS = ["/wp-json/wp/v2/posts?per_page=5&_fields=title,date,link",
          "/?rest_route=/wp/v2/posts&per_page=5&_fields=title,date,link"]
 
-KOTA = """bekasi karawang bogor depok tangerang cirebon indramayu subang purwakarta sukabumi garut tasikmalaya
-banjar kuningan majalengka sumedang cianjur bandung semarang solo jogja yogya kudus pati blora tegal pekalongan
-purwokerto magelang salatiga klaten sragen madiun kediri malang jember banyuwangi probolinggo pasuruan mojokerto
-jombang lamongan gresik tuban bojonegoro madura sumenep pamekasan bangkalan sampang sidoarjo surabaya nganjuk
-ngawi ponorogo pacitan trenggalek tulungagung blitar lumajang bondowoso situbondo denpasar bali singaraja
-lombok mataram bima dompu sumbawa kupang ende maumere ruteng labuanbajo atambua makassar parepare palopo bone
-gowa maros bulukumba manado bitung tomohon kotamobagu palu poso luwuk kendari baubau kolaka gorontalo ambon
-tual ternate tidore sofifi jayapura sorong manokwari merauke timika nabire biak medan binjai tebingtinggi
-siantar asahan labuhanbatu padang bukittinggi payakumbuh solok pariaman pekanbaru dumai bengkalis siak jambi
-palembang lubuklinggau prabumulih bengkulu lampung metro pringsewu pontianak singkawang sintang palangkaraya
-sampit pangkalanbun banjarmasin banjarbaru martapura samarinda balikpapan bontang tarakan batam tanjungpinang
-karimun bintan aceh banda lhokseumawe langsa sabang meulaboh bireuen""".split()
+def _kota_dari_gazetteer():
+    """Every kab/kota name in the gazetteer, reduced to the single token outlets actually use in a
+    domain (Kabupaten Tulang Bawang Barat -> tulangbawang). Beats a hand-typed list of big cities:
+    the thin-coverage regions are exactly the ones a hand-typed list forgets."""
+    import json as _j
+    rows = _j.loads((ROOT / "scripts" / "wikidata_id_regions.json").read_text())
+    out = set()
+    for r in rows:
+        if "provin" in r["type"].lower(): continue
+        t = re.sub(r"[^a-z ]+", "", r["label"].lower()).strip()
+        t = re.sub(r"^(kabupaten|kota administrasi|kota)\s+", "", t)
+        joined = t.replace(" ", "")
+        if 4 <= len(joined) <= 16: out.add(joined)
+        first = t.split(" ")[0]
+        if 4 <= len(first) <= 14: out.add(first)
+    return sorted(out)
+
+
+KOTA = _kota_dari_gazetteer()
 POLA = ["{c}ekspos.com", "ekspos{c}.com", "{c}bangkit.com", "{c}terbit.com", "{c}aktual.com",
         "aktual{c}.com", "{c}pikiran.com", "{c}suara.com", "{c}warta.com", "{c}kabar.com",
         "{c}berita.com", "{c}harian.id", "{c}pos.id", "{c}news.id", "{c}today.id", "{c}raya.id",
