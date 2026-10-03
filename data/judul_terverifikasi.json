@@ -308,11 +308,11 @@
   "status": "terverifikasi"
  },
  "https://semarangkota.bawaslu.go.id/berita/bawaslu-kota-semarang-tangani-29-kasus-dugaan-pelanggaran-pada-pilkada-2024": {
-  "diambil": "2026-09-16T01:12:27",
-  "http": null,
-  "judul": null,
-  "status": "gagal",
-  "error": "ReadTimeout"
+  "diambil": "2026-10-04T03:04:33",
+  "http": 200,
+  "url_akhir": "https://semarangkota.bawaslu.go.id/berita/bawaslu-kota-semarang-tangani-29-kasus-dugaan-pelanggaran-pada-pilkada-2024",
+  "judul": "Bawaslu Kota Semarang Tangani 29 Kasus Dugaan Pelanggaran pada Pilkada 2024",
+  "status": "terverifikasi"
  },
  "https://kumparan.com/kumparannews/pdip-ada-386-kasus-kades-di-jateng-diintimidasi-bentuk-10-ribu-posko-hukum-23rTNVLf2MO": {
   "diambil": "2026-09-16T01:12:59",
@@ -399,11 +399,11 @@
   "status": "terverifikasi"
  },
  "https://bantul.bawaslu.go.id/berita/bawaslu-bantul-lakukan-1442-pencegahan-selama-pilkada-2024": {
-  "diambil": "2026-09-16T01:13:31",
-  "http": null,
-  "judul": null,
-  "status": "gagal",
-  "error": "ReadTimeout"
+  "diambil": "2026-10-04T03:04:35",
+  "http": 200,
+  "url_akhir": "https://bantul.bawaslu.go.id/berita/bawaslu-bantul-lakukan-1442-pencegahan-selama-pilkada-2024",
+  "judul": "Bawaslu Bantul Lakukan 1.442 Pencegahan Selama Pilkada 2024",
+  "status": "terverifikasi"
  },
  "https://jogja.antaranews.com/berita/722921/bawaslu-sleman-teruskan-pelanggaran-netralitas-lurah-ke-bupati": {
   "diambil": "2026-09-16T01:14:03",
@@ -413,11 +413,11 @@
   "status": "terverifikasi"
  },
  "https://yogyakartakota.bawaslu.go.id/berita/dua-pekan-pelaksanaan-kampanye-bawaslu-kota-yogyakarta-temukan-dugaan-pelanggaran-netralitas": {
-  "diambil": "2026-09-16T01:14:06",
-  "http": null,
-  "judul": null,
-  "status": "gagal",
-  "error": "ReadTimeout"
+  "diambil": "2026-10-04T03:04:39",
+  "http": 200,
+  "url_akhir": "https://yogyakartakota.bawaslu.go.id/berita/dua-pekan-pelaksanaan-kampanye-bawaslu-kota-yogyakarta-temukan-dugaan-pelanggaran-netralitas",
+  "judul": "DUA PEKAN PELAKSANAAN KAMPANYE, BAWASLU KOTA YOGYAKARTA TEMUKAN DUGAAN PELANGGARAN NETRALITAS ASN DAN KAMPANYE DI TEMPAT IBADAH",
+  "status": "terverifikasi"
  },
  "https://www.jawapos.com/politik/015342716/terlibat-dukung-rk-suswono-rt-rw-dan-lmk-di-jakarta-utara-direkomendasikan-dijatuhi-sanksi": {
   "diambil": "2026-09-16T01:14:38",
@@ -469,7 +469,7 @@
   "status": "terverifikasi"
  },
  "https://www.mkri.id/berita/pelanggaran-netralitas-asn-dalam-pilkada-tanah-datar-22485": {
-  "diambil": "2026-09-16T01:14:58",
+  "diambil": "2026-10-04T03:04:42",
   "http": 403,
   "url_akhir": "https://www.mkri.id/berita/pelanggaran-netralitas-asn-dalam-pilkada-tanah-datar-22485",
   "judul": null,
@@ -518,15 +518,15 @@
   "status": "terverifikasi"
  },
  "https://jatim.jpnn.com/politik/32783": {
-  "diambil": "2026-09-16T01:15:19",
+  "diambil": "2026-10-04T03:04:44",
   "http": 200,
   "url_akhir": "https://jatim.jpnn.com/politik/32783",
   "judul": null,
   "status": "gagal"
  },
  "https://timesindonesia.co.id/politik/518152": {
-  "diambil": "2026-09-16T01:15:22",
-  "http": 404,
+  "diambil": "2026-10-04T03:04:46",
+  "http": 403,
   "url_akhir": "https://timesindonesia.co.id/politik/518152",
   "judul": null,
   "status": "gagal"
@@ -588,11 +588,11 @@
   "status": "terverifikasi"
  },
  "https://cimahikota.bawaslu.go.id/berita/bawaslu-ri-rilis-data-penanganan-pelanggaran-pilkada-2024": {
-  "diambil": "2026-09-16T01:15:47",
-  "http": null,
-  "judul": null,
-  "status": "gagal",
-  "error": "ReadTimeout"
+  "diambil": "2026-10-04T03:04:49",
+  "http": 200,
+  "url_akhir": "https://cimahikota.bawaslu.go.id/berita/bawaslu-ri-rilis-data-penanganan-pelanggaran-pilkada-2024",
+  "judul": "Bawaslu RI Rilis Data Penanganan Pelanggaran Pilkada 2024",
+  "status": "terverifikasi"
  },
  "https://kupang.antaranews.com/berita/125001/bawaslu-kota-kupang-temukan-satu-dugaan-pelanggaran-pemilu-libatkan-asn": {
   "diambil": "2026-09-16T01:16:19",
@@ -616,17 +616,129 @@
   "status": "terverifikasi"
  },
  "https://ternate.tribunnews.com/2024/12/10/bawaslu-proses-dugaan-pelanggaran-tsm-di-pilkada-halmahera-selatan-2024": {
-  "diambil": "2026-09-16T01:16:27",
+  "diambil": "2026-10-04T03:04:52",
   "http": 403,
   "url_akhir": "https://ternate.tribunnews.com/2024/12/10/bawaslu-proses-dugaan-pelanggaran-tsm-di-pilkada-halmahera-selatan-2024",
   "judul": null,
   "status": "gagal"
  },
  "https://papua.tribunnews.com/2024/11/13/dua-pejabat-publik-papua-dilaporkan-ke-bawaslu-terkait-pelanggaran-netralitas-asn": {
-  "diambil": "2026-09-16T01:16:29",
+  "diambil": "2026-10-04T03:04:54",
   "http": 403,
   "url_akhir": "https://papua.tribunnews.com/2024/11/13/dua-pejabat-publik-papua-dilaporkan-ke-bawaslu-terkait-pelanggaran-netralitas-asn",
   "judul": null,
   "status": "gagal"
+ },
+ "https://bantuanhukum.or.id/5-tahun-uu-ite-1-pasal-represif-25-korban-lalu-berapa-lagi-yang-akan-di-prita-kan/": {
+  "diambil": "2026-10-04T03:03:37",
+  "http": 403,
+  "url_akhir": "https://bantuanhukum.or.id/5-tahun-uu-ite-1-pasal-represif-25-korban-lalu-berapa-lagi-yang-akan-di-prita-kan/",
+  "judul": null,
+  "status": "gagal"
+ },
+ "https://tekno.kompas.com/read/2013/05/19/18435059/tulis-kecurangan-pilgub-ntt-di-facebook-pegiat-lsm-dilaporkan-ke-polisi": {
+  "diambil": "2026-10-04T03:03:39",
+  "http": 202,
+  "url_akhir": "https://tekno.kompas.com/read/2013/05/19/18435059/tulis-kecurangan-pilgub-ntt-di-facebook-pegiat-lsm-dilaporkan-ke-polisi",
+  "judul": null,
+  "status": "gagal"
+ },
+ "https://www.gosumut.com/berita/baca/2015/12/11/lbh-pers-protes-keras-perampasan-kamera-wartawan-di-posko-bennydaniel-pasaman": {
+  "diambil": "2026-10-04T03:03:41",
+  "http": 200,
+  "url_akhir": "https://www.gosumut.com/berita/baca/2015/12/11/lbh-pers-protes-keras-perampasan-kamera-wartawan-di-posko-bennydaniel-pasaman",
+  "judul": "One moment, please...",
+  "status": "terverifikasi"
+ },
+ "https://indonesia.ucanews.com/2013/02/08/pastor-rantinus-dan-ustad-jadi-tersangka-akibat-kritik-terhadap-bupati/": {
+  "diambil": "2026-10-04T03:03:43",
+  "http": 200,
+  "url_akhir": "https://indonesia.ucanews.com/2013/02/08/pastor-rantinus-dan-ustad-jadi-tersangka-akibat-kritik-terhadap-bupati/",
+  "judul": "One moment, please...",
+  "status": "terverifikasi"
+ },
+ "https://mubaonline.id/berita/terjerat-kasus-lama-salah-satu-wartawan-di-muba-dituntut-1-tahun-3-bulan-penjara-muba1345d": {
+  "diambil": "2026-10-04T03:03:46",
+  "http": null,
+  "judul": null,
+  "status": "gagal",
+  "error": "ReadTimeout"
+ },
+ "https://tirto.id/polisi-minta-jurnalis-diintimidasi-lapor-ke-sentra-gakkumdu-cjfl": {
+  "diambil": "2026-10-04T03:04:18",
+  "http": 200,
+  "url_akhir": "https://tirto.id/polisi-minta-jurnalis-diintimidasi-lapor-ke-sentra-gakkumdu-cjfl",
+  "judul": "Polisi Minta Jurnalis Diintimidasi Lapor ke Sentra Gakkumdu",
+  "status": "terverifikasi"
+ },
+ "https://aji.or.id/informasi/aji-manado-kecam-kekerasan-terhadap-jurnalis-ambon": {
+  "diambil": "2026-10-04T03:04:21",
+  "http": 200,
+  "url_akhir": "https://aji.or.id/informasi/aji-manado-kecam-kekerasan-terhadap-jurnalis-ambon",
+  "judul": "AJI Manado Kecam Kekerasan terhadap Jurnalis Ambon | AJI - Aliansi Jurnalis Independen",
+  "status": "terverifikasi"
+ },
+ "https://kalsel.antaranews.com/berita/210576/bawaslu-kalsel-minta-maaf-akui-ada-kekeliruan-panggil-wartawan": {
+  "diambil": "2026-10-04T03:04:24",
+  "http": 200,
+  "url_akhir": "https://kalsel.antaranews.com/berita/210576/bawaslu-kalsel-minta-maaf-akui-ada-kekeliruan-panggil-wartawan",
+  "judul": "Bawaslu Kalsel minta maaf akui ada kekeliruan \"panggil\" wartawan - ANTARA News Kalimantan Selatan",
+  "status": "terverifikasi"
+ },
+ "https://www.datariau.com/detail/berita/polda-riau-ungkap-kronologi-penganiayaan-wartawan-media-online-riau--pelaku-marah-karena-pemberitaan-tentang-pj-walikota-pekanbaru/1": {
+  "diambil": "2026-10-04T03:04:26",
+  "http": null,
+  "judul": null,
+  "status": "gagal",
+  "error": "SSLError"
+ },
+ "https://nasional.kompas.com/read/2018/06/24/14202451/mutasi-demosi-dan-promosi-jabatan-asn-masih-marak-jelang-pilkada?page=all": {
+  "diambil": "2026-10-04T03:04:56",
+  "http": 202,
+  "url_akhir": "https://nasional.kompas.com/read/2018/06/24/14202451/mutasi-demosi-dan-promosi-jabatan-asn-masih-marak-jelang-pilkada?page=all",
+  "judul": null,
+  "status": "gagal"
+ },
+ "https://solopos.espos.id/pilkada-sukoharjo-penyaluran-bansos-dipercepat-576686": {
+  "diambil": "2026-10-04T03:04:59",
+  "http": 200,
+  "url_akhir": "https://solopos.espos.id/pilkada-sukoharjo-penyaluran-bansos-dipercepat-576686",
+  "judul": "PILKADA SUKOHARJO : Penyaluran Bansos Dipercepat",
+  "status": "terverifikasi"
+ },
+ "https://republika.co.id/berita/qqbeua428/bawaslu-sumbar-catat-5-kasus-pidana-pilkada-2020": {
+  "diambil": "2026-10-04T03:05:01",
+  "http": 200,
+  "url_akhir": "https://republika.co.id/berita/qqbeua428/bawaslu-sumbar-catat-5-kasus-pidana-pilkada-2020",
+  "judul": "Bawaslu Sumbar Catat 5 Kasus Pidana Pilkada 2020 | Republika Online",
+  "status": "terverifikasi"
+ },
+ "https://kaltim.tribunnews.com/2021/02/27/bkpsdm-nunukan-tepis-isu-pemberhentian-24-honorer-akibat-dendam-kesumat-pilkada-2020": {
+  "diambil": "2026-10-04T03:05:04",
+  "http": 403,
+  "url_akhir": "https://kaltim.tribunnews.com/2021/02/27/bkpsdm-nunukan-tepis-isu-pemberhentian-24-honorer-akibat-dendam-kesumat-pilkada-2020",
+  "judul": null,
+  "status": "gagal"
+ },
+ "https://www.tempo.co/politik/bawaslu-catat-3-daerah-ini-paling-banyak-kasus-asn-tak-netral--904454": {
+  "diambil": "2026-10-04T03:05:07",
+  "http": 403,
+  "url_akhir": "https://www.tempo.co/politik/bawaslu-catat-3-daerah-ini-paling-banyak-kasus-asn-tak-netral--904454",
+  "judul": null,
+  "status": "gagal"
+ },
+ "https://kalsel.antaranews.com/berita/67187/empat-kadis-jadi-terdakwa-pelanggaran-netralitas-asn": {
+  "diambil": "2026-10-04T03:05:09",
+  "http": 200,
+  "url_akhir": "https://kalsel.antaranews.com/berita/67187/empat-kadis-jadi-terdakwa-pelanggaran-netralitas-asn",
+  "judul": "Empat Kadis Jadi Terdakwa Pelanggaran Netralitas ASN - ANTARA News Kalimantan Selatan",
+  "status": "terverifikasi"
+ },
+ "https://kaltim.antaranews.com/berita/48629/tenaga-honorer-penajam-jadi-caleg-harus-diberhentikan": {
+  "diambil": "2026-10-04T03:05:11",
+  "http": 200,
+  "url_akhir": "https://kaltim.antaranews.com/berita/48629/tenaga-honorer-penajam-jadi-caleg-harus-diberhentikan",
+  "judul": "Tenaga Honorer Penajam Jadi Caleg Harus Diberhentikan - ANTARA News Kalimantan Timur",
+  "status": "terverifikasi"
  }
 }
