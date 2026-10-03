@@ -1,6 +1,6 @@
 {
- "version": "2026-09-30",
- "generated_at": "2026-09-30T02:05:07+07:00",
+ "version": "2026-10-04",
+ "generated_at": "2026-10-04T03:21:15+07:00",
  "xlsx": "eppos-media-intake.xlsx",
  "xlsx_sha256": "f3cb313a162baa47",
  "periode": 5,
@@ -12,7 +12,7 @@
  },
  "insiden_ditolak": 0,
  "kasus_ditolak": 0,
- "judul_terverifikasi": 89,
+ "judul_terverifikasi": 93,
  "koordinat": 86,
  "koordinat_gagal": 7,
  "lokasi_dipakai": 87,
