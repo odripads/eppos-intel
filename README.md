@@ -203,3 +203,20 @@ berkasnya: `INAN-20122018-…` dan `INAN-20182022-…`.
 
 Hasil: 9 insiden + 10 kasus resmi, **0 baris ditolak** (semuanya punya tautan sumber).
 5 baris ditandai perlu keputusan, tercatat di `catatan_validasi` dan `data/validasi_inan.json`.
+
+### Letak repo dan rutin harian
+
+Repo berada di **`~/eppos-intel`**, dengan symlink `~/Desktop/EPPOS GROUP /eppos-intel` supaya jalur lama
+tetap jalan. Ini bukan selera: macOS (TCC) melarang `/bin/bash` yang dijalankan launchd membaca `~/Desktop`,
+sehingga rutin harian gagal dengan kode 126 "Operation not permitted" selama empat hari sementara jadwalnya
+tampak terdaftar. Memberi Full Disk Access **tidak** menyelesaikannya; uji launchd membuktikan skrip bisa
+membaca `~/` tetapi tidak `~/Desktop`. Setelah dipindah, kode keluarnya 0.
+
+Lembar isian tim dan spek tetap di `~/Desktop/EPPOS GROUP /`.
+
+Cara memastikan jadwalnya benar-benar jalan (jangan diasumsikan):
+
+```bash
+launchctl list | grep eppos.rutin   # kolom tengah = kode keluar terakhir; 0 artinya sukses
+tail -5 ~/eppos-intel/data/rutin.log
+```

@@ -2,7 +2,7 @@
 # Rutin harian EPPOS: satu petak grid penelusuran, lalu bangun ulang data dan situs.
 # Tidak pernah menerbitkan apa pun ke peta — hasilnya masuk antrean tinjauan (tinjau.html).
 set -uo pipefail
-REPO="/Users/odripads/Desktop/EPPOS GROUP /eppos-intel"
+REPO="$HOME/eppos-intel"
 LOG="$REPO/data/rutin.log"
 CELLS="${1:-40}"
 cd "$REPO" || exit 1
