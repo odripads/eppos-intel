@@ -92,29 +92,29 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .hint{font-size:12px;color:var(--ink-3);margin:0}
 
 /* map */
-.mapfig svg{display:block;width:100%;height:auto;background:var(--navy-deep)}
-.prov{fill:var(--navy-2);stroke:var(--navy-deep);stroke-width:.7;transition:fill .15s}
+.mapfig svg{display:block;width:100%;height:auto;background:var(--cream-2)}
+.prov{fill:#d9cfb8;stroke:#a89878;stroke-width:.7;transition:fill .15s}
 .prov.live{cursor:pointer}
 /* one hue family, ramped by how much evidence corroborates the province */
 .prov.cat-kuat{fill:var(--red)}
 .prov.cat-tunggal{fill:var(--gold)}
-.prov.live:hover{fill:#fff}
-.prov.sel{fill:#fff;stroke:var(--gold);stroke-width:2}
+.prov.live:hover{fill:var(--navy);}
+.prov.sel{fill:var(--navy);stroke:var(--gold);stroke-width:2.5}
 .prov.live:focus-visible{stroke:var(--gold);stroke-width:2.5;outline:none}
-.plab{font-family:var(--mono);font-size:8.5px;fill:#fff;opacity:.72;paint-order:stroke;stroke:var(--navy-deep);
+.plab{font-family:var(--mono);font-size:9px;fill:var(--navy);opacity:.9;paint-order:stroke;stroke:var(--cream-2);
   stroke-width:2.6;stroke-linejoin:round;pointer-events:none;letter-spacing:.04em}
-.plab.on{opacity:1;fill:var(--gold);font-weight:500}
+.plab.on{opacity:1;fill:#fff;stroke:var(--navy);stroke-width:3;font-weight:600}
 .dot{pointer-events:none}
-.dot.ins{fill:var(--navy-deep);fill-opacity:.55}
-.dot.kas{fill:var(--navy-deep);fill-opacity:.38}
-.dot.on{fill:var(--navy);fill-opacity:.85}
+.dot.ins{fill:var(--navy-deep);fill-opacity:.72}
+.dot.kas{fill:var(--navy-deep);fill-opacity:.5}
+.dot.on{fill:#fff;fill-opacity:.95;stroke:var(--navy-deep);stroke-width:.6}
 .legend{display:flex;flex-wrap:wrap;gap:12px 18px;padding:12px 18px;border-top:3px solid var(--navy);
   font-size:12px;color:var(--ink-2);background:var(--surface-2);align-items:center}
 .legend span{display:inline-flex;align-items:center;gap:7px}
 .sw{width:13px;height:13px;flex:0 0 auto;display:inline-block;border:2px solid var(--navy);border-radius:3px}
 .sw.kuat{background:var(--red)}
 .sw.tunggal{background:var(--gold)}
-.sw.kosong{background:var(--navy-2)}
+.sw.kosong{background:#d9cfb8;border-color:#a89878}
 .sw.ins{background:var(--red);border-radius:50%;width:10px;height:10px}
 .sw.kas{background:var(--gold);border-radius:2px;width:10px;height:10px;transform:rotate(45deg)}
 
@@ -182,7 +182,7 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .srcs a:hover{background:var(--red);color:#fff;border-color:var(--navy)}
 .note.div-kuat{border-left-color:var(--red)}
 .note.div-tunggal{border-left-color:var(--gold)}
-.note.div-otomatis{border-left-color:#6b5a3e}
+.note.div-otomatis{border-left-color:#c7a86a}
 
 /* notes / unmapped */
 .note{border:3px solid var(--navy);border-left-width:11px;border-left-color:var(--gold);border-radius:12px;
@@ -214,14 +214,14 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .pipeline a.cta:hover{transform:translate(-1px,-1px)}
 
 /* automated retrieval layer — visually separate from the curated census at every level */
-.prov.cat-otomatis{fill:#6b5a3e;stroke:var(--gold);stroke-width:1;stroke-dasharray:3 2}
-.dot.oto{fill:var(--gold);fill-opacity:.9}
-.dot.oto.on{fill:#fff;fill-opacity:1}
+.prov.cat-otomatis{fill:#c7a86a;stroke:#8a6f3a;stroke-width:1;stroke-dasharray:3 2}
+.dot.oto{fill:#8a6f3a;fill-opacity:.95}
+.dot.oto.on{fill:#fff;fill-opacity:1;stroke:#6b5428;stroke-width:.6}
 
-.sw.lemah{background:#6b5a3e;border-style:dashed}
+.sw.lemah{background:#c7a86a;border-style:dashed;border-color:#8a6f3a}
 .sw.oto{background:var(--gold);width:0;height:0;border:none;border-left:6px solid transparent;
   border-right:6px solid transparent;border-bottom:10px solid var(--gold);border-radius:0}
-.pcat.cat-otomatis{background:#6b5a3e;color:var(--cream)}
+.pcat.cat-otomatis{background:#c7a86a;color:var(--navy)}
 .pill.oto{color:var(--gold-deep,#8a6510);background:var(--gold-soft);border-style:dashed}
 :root[data-theme="dark"] .pill.oto,:root:not([data-theme="light"]) .pill.oto{color:var(--gold)}
 .rec.oto{border-left:4px solid var(--gold);padding-left:12px;background:color-mix(in srgb,var(--gold-soft) 28%,transparent);
@@ -292,7 +292,7 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
         <span><i class="sw kuat"></i><b>merah</b> &mdash; ada liputan media <b>dan</b> kasus resmi</span>
         <span><i class="sw tunggal"></i><b>emas</b> &mdash; salah satu saja</span>
         <span><i class="sw lemah"></i><b>cokelat</b> &mdash; baru hasil penelusuran otomatis</span>
-        <span><i class="sw kosong"></i><b>navy</b> &mdash; belum ada apa-apa</span>
+        <span><i class="sw kosong"></i><b>krem</b> &mdash; belum ada apa-apa</span>
         <span style="margin-left:auto"><i class="sw ins"></i>insiden<i class="sw kas" style="margin-left:10px"></i>kasus resmi<i class="sw oto" style="margin-left:10px"></i>otomatis</span>
       </div>
       <div class="legend" style="border-top:0;padding-top:0;display:block">
@@ -307,7 +307,7 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
             <dd>Baru <b>salah satu</b>: media saja, atau kasus resmi saja. Bentuk titiknya menunjukkan yang mana. Media saja bisa berarti laporannya tidak ditindak; kasus resmi saja bisa berarti persnya tidak ada di sana. Keduanya sama-sama emas karena bukan yang satu lebih berat dari yang lain, melainkan masalah yang berbeda.</dd>
             <dt><i class="sw lemah"></i>cokelat</dt>
             <dd>Baru <b>hasil penelusuran otomatis</b>, belum ada baris yang dikurasi tangan. Perlu diperiksa dulu.</dd>
-            <dt><i class="sw kosong"></i>navy</dt>
+            <dt><i class="sw kosong"></i>krem</dt>
             <dd><b>Belum ada apa-apa</b> yang ketemu lewat prosedur pencarian kami. Bukan berarti tidak ada kejadian di sana.</dd>
           </dl>
           <h4 class="lh">Bentuk titik &mdash; <em>dari mana barisnya berasal</em></h4>
