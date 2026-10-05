@@ -91,7 +91,7 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 
 /* map */
 .mapfig svg{display:block;width:100%;height:auto;background:var(--cream-2)}
-.prov{fill:#d9cfb8;stroke:#a89878;stroke-width:.7;transition:fill .15s}
+.prov{fill:#1c1c1c;stroke:var(--cream-2);stroke-width:.7;transition:fill .15s}
 .prov.live{cursor:pointer}
 /* one hue family, ramped by how much evidence corroborates the province */
 .prov.cat-kuat{fill:var(--red)}
@@ -99,7 +99,7 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .prov.live:hover{fill:var(--navy);}
 .prov.sel{fill:var(--navy);stroke:var(--gold);stroke-width:2.5}
 .prov.live:focus-visible{stroke:var(--gold);stroke-width:2.5;outline:none}
-.plab{font-family:var(--mono);font-size:9px;fill:var(--navy);opacity:.9;paint-order:stroke;stroke:var(--cream-2);
+.plab{font-family:var(--mono);font-size:9px;fill:var(--navy);opacity:.95;paint-order:stroke;stroke:var(--cream);
   stroke-width:2.6;stroke-linejoin:round;pointer-events:none;letter-spacing:.04em}
 .plab.on{opacity:1;fill:#fff;stroke:var(--navy);stroke-width:3;font-weight:600}
 .dot{pointer-events:none}
@@ -112,7 +112,7 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .sw{width:13px;height:13px;flex:0 0 auto;display:inline-block;border:2px solid var(--navy);border-radius:3px}
 .sw.kuat{background:var(--red)}
 .sw.tunggal{background:var(--gold)}
-.sw.kosong{background:#d9cfb8;border-color:#a89878}
+.sw.kosong{background:#1c1c1c;border-color:#1c1c1c}
 .sw.ins{background:var(--red);border-radius:50%;width:10px;height:10px}
 .sw.kas{background:var(--gold);border-radius:2px;width:10px;height:10px;transform:rotate(45deg)}
 
