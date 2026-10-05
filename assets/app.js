@@ -51,6 +51,9 @@
   }
 
   /* ---------- map ---------- */
+  var KATEGORI = { keduanya: "liputan media dan kasus resmi", resmi: "kasus resmi saja",
+    media: "liputan media saja", kosong: "belum ada catatan" };
+
   function paintMap() {
     var st = stats(), paths = all("#provs .prov"), labels = "", pts = "";
     paths.forEach(function (el, i) {
@@ -62,7 +65,9 @@
       if (withData.length) {
         var n = withData[0], s = st[n], c = D.pathXY[i];
         el.setAttribute("tabindex", "0"); el.setAttribute("role", "button");
-        el.setAttribute("aria-label", n + ": " + s.ins + " insiden, " + s.kas + " kasus resmi");
+        // the label says what the fill says: the colour encodes which series is present, not a count
+        el.setAttribute("aria-label", n + ": " + KATEGORI[s.cat] + ", " +
+          s.media + " liputan media, " + s.kas + " kasus resmi");
         el.classList.toggle("sel", state.prov === n);
         if (c && state.prov === n) labels += '<text class="plab on" x="' + c[0] + '" y="' + c[1] + '" text-anchor="middle">' + esc(n.toUpperCase()) + "</text>";
       } else {
@@ -114,7 +119,7 @@
   function pickPath(i) {
     var names = (D.pathProv[i] || []), st = stats();
     var withData = names.filter(function (n) { return st[n]; });
-    if (withData.length) return selectProv(withData[0]);
+    if (withData.length) return bukaFokus(withData[0]);
     showEmptyProv(names.join(" / ") || "Provinsi ini");
   }
 
@@ -186,6 +191,153 @@
     return order.map(function (k) {
       return '<div class="kab"><h4>' + esc(k) + '<span>' + g[k].length + "</span></h4>" + g[k].map(recordHtml).join("") + "</div>";
     }).join("");
+  }
+
+
+  /* ───── tampilan fokus: satu provinsi, tanpa peta dan tanpa teks lain ───── */
+
+  function catatanProvinsi(name) {
+    var m = function (r) { return name === NASIONAL ? !r.provinsi : r.provinsi === name; };
+    return { ins: insidenAktif().filter(m), kas: kasusAktif().filter(m), oto: otoAktif().filter(m) };
+  }
+
+  /* Sorotan dihitung dari barisnya, bukan dikarang: mekanisme terbanyak, keseimbangan dua deret,
+     pemusatan waktu, kab/kota teratas, dan korroborasi. Semua angka bisa ditelusuri ke barisnya. */
+  function sorotan(name) {
+    var c = catatanProvinsi(name), med = c.ins.concat(c.oto), out = [];
+    var nMed = med.length, nKas = c.kas.length;
+
+    var mek = {};
+    med.forEach(function (r) { if (r.mekanisme) mek[r.mekanisme] = (mek[r.mekanisme] || 0) + 1; });
+    var mekUrut = Object.keys(mek).sort(function (a, b) { return mek[b] - mek[a]; });
+
+    var kab = {};
+    med.concat(c.kas).forEach(function (r) { if (r.kab_kota) kab[r.kab_kota] = (kab[r.kab_kota] || 0) + 1; });
+    var kabUrut = Object.keys(kab).sort(function (a, b) { return kab[b] - kab[a]; });
+
+    var dua = med.filter(function (r) { return r.status_verifikasi === "dua sumber"; }).length;
+    var tgl = med.concat(c.kas).map(function (r) { return r.tanggal || r.tanggal_berita || (r.tahun ? r.tahun + "-01-01" : null); })
+      .filter(Boolean).sort();
+    var musim = med.filter(function (r) { return ["2024", "2020", "2018", "2017", "2015"].indexOf(r.gelombang_pilkada) >= 0; }).length;
+
+    out.push({ t: "Dua deret", n: nMed + " : " + nKas,
+      k: nMed && nKas ? "Pemberitaan dan kasus resmi sama-sama ada di sini."
+        : nKas ? "Hanya kasus resmi. Pengawas mencatat, pers tidak memberitakan."
+        : "Hanya pemberitaan. Tidak ada perkara yang masuk jalur resmi." });
+    if (mekUrut.length) out.push({ t: "Pola paling sering", n: mekUrut[0],
+      k: mek[mekUrut[0]] + " dari " + nMed + " pemberitaan" + (mekUrut[1] ? "; disusul " + mekUrut[1] + " (" + mek[mekUrut[1]] + ")" : "") + "." });
+    if (kabUrut.length) out.push({ t: "Paling banyak disebut", n: kabUrut[0],
+      k: kab[kabUrut[0]] + " catatan" + (kabUrut[1] ? "; lalu " + kabUrut[1] + " (" + kab[kabUrut[1]] + ")" : "") + "." });
+    out.push({ t: "Diberitakan dua outlet", n: dua + " dari " + nMed,
+      k: dua ? "Dua outlet berbeda memberitakan peristiwa yang sama." : "Belum ada yang diberitakan dua outlet berbeda." });
+    if (nMed) out.push({ t: "Terkait musim pilkada", n: Math.round(musim / nMed * 100) + "%",
+      k: musim + " dari " + nMed + " pemberitaan jatuh di rentang gelombang pilkada." });
+    if (tgl.length) out.push({ t: "Rentang waktu", n: tgl[0].slice(0, 4) + "\u2013" + tgl[tgl.length - 1].slice(0, 4),
+      k: tgl.length + " catatan bertanggal." });
+    return { sorot: out, c: c, nMed: nMed, nKas: nKas, dua: dua, musim: musim };
+  }
+
+  function bukaFokus(name) {
+    var S = sorotan(name), c = S.c;
+    $("#fokus-nama").textContent = name;
+    $("#fokus-sub").textContent = state.periode + " \u00b7 " + S.nMed + " liputan media \u00b7 " + S.nKas + " kasus resmi";
+
+    var idx = null;
+    Object.keys(D.pathProv).forEach(function (i) { if (D.pathProv[i].indexOf(name) >= 0) idx = i; });
+
+    $("#fokus-kaki").innerHTML = '<span class="pill lbg">' + S.nMed + " liputan media</span>" +
+      '<span class="pill lbg">' + S.nKas + " kasus resmi</span>" +
+      (S.dua ? '<span class="pill dua">' + S.dua + " dua sumber</span>" : "");
+
+    $("#fokus-kiri").innerHTML = '<div class="fk-blok"><h3>Sorotan</h3>' +
+      S.sorot.map(function (x) {
+        return '<div style="margin-bottom:12px"><div class="fk-baris" style="border:0;padding:0 0 2px">' +
+          "<span>" + esc(x.t) + "</span><b>" + esc(x.n) + "</b></div>" +
+          '<p class="fk-catatan">' + esc(x.k) + "</p></div>";
+      }).join("") + "</div>" +
+      '<div class="fk-blok"><h3>Cara membacanya</h3>' +
+      '<p class="fk-catatan">Angka di sini <b>bukan jumlah kejadian</b>, melainkan jumlah yang berhasil ditemukan ' +
+      "lewat prosedur pencarian kami. Provinsi dengan pers yang tebal akan tampak lebih ramai, dan itu sifat " +
+      "sumbernya, bukan sifat daerahnya.</p>" +
+      '<p class="fk-catatan">Yang lebih bisa dipercaya adalah <b>selisih antara dua deret</b>: kalau ada pemberitaan ' +
+      "tanpa kasus resmi, pertanyaannya kenapa tidak ditindak; kalau ada kasus resmi tanpa pemberitaan, " +
+      "pertanyaannya kenapa tidak diberitakan.</p></div>";
+
+    var semua = c.ins.map(function (r) { return { r: r, t: r.tanggal || "", jenis: "insiden" }; })
+      .concat(c.oto.map(function (r) { return { r: r, t: r.tanggal_berita || "", jenis: "oto" }; }))
+      .concat(c.kas.map(function (r) { return { r: r, t: (r.tahun ? r.tahun + "-01-01" : ""), jenis: "kasus" }; }))
+      .filter(function (x) { return x.t; })
+      .sort(function (a, b) { return b.t < a.t ? -1 : 1; });
+    var tanpaTgl = c.ins.filter(function (r) { return !r.tanggal; }).length +
+      c.oto.filter(function (r) { return !r.tanggal_berita; }).length;
+    var html = '<div class="fk-blok" style="padding:12px 16px"><h3 style="margin:0">Semua catatan, dari yang terbaru</h3></div>';
+    var th = null;
+    semua.forEach(function (x) {
+      var y = x.t.slice(0, 4);
+      if (y !== th) { th = y; html += '<div class="fk-tahun">' + esc(y) + "</div>"; }
+      html += (x.jenis === "oto" ? autoHtml(x.r) : recordHtml(x.r));
+    });
+    if (tanpaTgl) html += '<p class="fk-catatan" style="margin-top:12px">' + tanpaTgl +
+      " catatan lain tidak punya tanggal yang bisa dipastikan, jadi tidak masuk urutan di atas.</p>";
+    $("#fokus-kanan").innerHTML = html || '<div class="fk-blok">Belum ada catatan.</div>';
+
+    var fk = $("#fokus");
+    fk.classList.remove("tampil");
+    fk.hidden = false;
+    document.body.style.overflow = "hidden";
+    document.body.classList.add("fokus-aktif");
+    pemicuFokus = document.activeElement;   // so Esc puts the keyboard back where it came from
+    fk.focus();
+    fk.scrollTop = 0;
+    // getBBox only returns real numbers once the element is laid out, so the shape
+    // is measured after the panel stops being display:none, never before
+    gambarBentuk(idx, name, c);
+    all("#fokus-kanan .rec").forEach(function (el, i) { el.style.setProperty("--r", Math.min(i, 14)); });
+    // rAF gives a clean animation start; the timer is a backstop, because a browser that is not
+    // painting (hidden tab, reduced-motion shells) never runs rAF and the panel must still appear
+    var nyala = function () { fk.classList.add("tampil"); };
+    requestAnimationFrame(function () { requestAnimationFrame(nyala); });
+    setTimeout(nyala, 80);
+  }
+
+  // the province outline, lifted out of the map and scaled to fill the middle column
+  function gambarBentuk(idx, name, c) {
+    var sv = $("#fokus-bentuk");
+    if (idx == null || !D.pathD[idx]) { sv.innerHTML = ""; sv.setAttribute("viewBox", "0 0 100 100"); return; }
+    sv.setAttribute("viewBox", "0 0 1000 420");
+    sv.setAttribute("aria-label", "Bentuk wilayah " + name + ", dengan titik di kab/kota yang disebut");
+    sv.innerHTML = '<path class="bentuk" d="' + D.pathD[idx] + '"/>';
+    var node = sv.querySelector(".bentuk"), bb = node.getBBox();
+    if (!bb.width || !bb.height) return;          // still not laid out; leave the map-wide box
+    var pad = Math.max(bb.width, bb.height) * 0.08;
+    sv.setAttribute("viewBox", (bb.x - pad) + " " + (bb.y - pad) + " " +
+      (bb.width + pad * 2) + " " + (bb.height + pad * 2));
+    var st = stats()[name];
+    node.setAttribute("fill",
+      st && st.media && st.kas ? "var(--red)" : st && st.kas ? "#e8873a" : st && st.media ? "#f0c243" : "#1c1c1c");
+    node.setAttribute("stroke-width", (Math.max(bb.width, bb.height) * 0.006).toFixed(3));
+    // kab/kota points stay, so the shape still carries where inside the province things happened
+    var rad = Math.max(bb.width, bb.height) * 0.013, tt = "";
+    c.ins.concat(c.oto, c.kas).forEach(function (r) {
+      var k = D.koordinat[(r.provinsi || "") + "|" + (r.kab_kota || "")];
+      if (!k) return;
+      var pt = project(k.lon, k.lat);
+      tt += '<circle class="tt" cx="' + pt[0].toFixed(1) + '" cy="' + pt[1].toFixed(1) + '" r="' + rad.toFixed(2) + '" stroke-width="' + (rad * 0.28).toFixed(3) +
+        '" fill="' + (r.kasus_id ? "#8a4a12" : "var(--navy-deep)") + '" fill-opacity=".8"/>';
+    });
+    sv.insertAdjacentHTML("beforeend", tt);
+  }
+
+  var pemicuFokus = null;
+
+  function tutupFokus() {
+    if ($("#fokus").hidden) return;
+    $("#fokus").classList.remove("tampil");
+    $("#fokus").hidden = true;
+    document.body.style.overflow = "";
+    document.body.classList.remove("fokus-aktif");
+    if (pemicuFokus && document.contains(pemicuFokus)) pemicuFokus.focus();
+    pemicuFokus = null;
   }
 
   function selectProv(name) {
@@ -291,7 +443,7 @@
         (s.cat === "keduanya" ? "media + resmi" : s.cat === "resmi" ? "kasus resmi" : "liputan media") + "</span></button>";
     });
     $("#pnl").innerHTML = h + "</div>";
-    all(".prow").forEach(function (b) { b.onclick = function () { selectProv(b.dataset.prov); }; });
+    all(".prow").forEach(function (b) { b.onclick = function () { bukaFokus(b.dataset.prov); }; });
     requestAnimationFrame(function () {
       all(".bandingtab td.bar i").forEach(function (el) { el.style.width = el.dataset.w + "%"; });
     });
@@ -385,6 +537,8 @@
       var i = pp.provinsi_data[name]; (D.pathProv[i] = D.pathProv[i] || []).push(name);
     });
     pp.paths.forEach(function (L) { if (!D.pathProv[L.path_index]) D.pathProv[L.path_index] = L.provinsi_wikidata; });
+    D.pathD = {};
+    all("#provs .prov").forEach(function (el, i) { D.pathD[i] = el.getAttribute("d"); });
     var withRows = D.periode.filter(function (p) {
       return D.insiden.some(function (r) { return r.periode_pilpres === p.periode; }) || D.kasus_resmi.some(function (r) { return r.periode_pilpres === p.periode; });
     });
@@ -395,6 +549,8 @@
     var ex = D.insiden.length - D.insiden.filter(function (r) { return r.status_kurasi === "masuk" || r.status_kurasi === "ragu"; }).length;
     var xEl = $("#excl"); if (xEl) xEl.textContent = ex ? ex + " baris berstatus kurasi 'keluar' tetap di dataset tetapi tidak dipetakan." : "";
     drawPeriods(); provinceList(); updateStats(); pipeline(); wireLegendHelp();
+    var tb = $("#fokus-tutup"); if (tb) tb.onclick = tutupFokus;
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") tutupFokus(); });
   }).catch(function (e) {
     $("#pnl").innerHTML = '<div class="pnl-empty"><b>Data gagal dimuat</b><p>' + esc(e.message) + "</p></div>";
   });

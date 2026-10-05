@@ -310,4 +310,54 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
   .mapfig svg.siap .prov, .mapfig svg.siap .prov.cat-keduanya, .mapfig svg.siap .dot,
   .scrolly .rec, .scrolly .grp, .scrolly .kab h4, .ptab[aria-selected="true"]::after { animation: none !important }
   .bandingtab td.bar i { transition: none !important }
+  .fokus.tampil #fokus-bentuk, .fokus.tampil .fokus-kiri, .fokus.tampil .fokus-kanan,
+  .fokus-kanan .rec { animation: none !important }
 }
+
+/* ───── tampilan fokus satu provinsi ───── */
+.fokus{position:fixed;inset:0;z-index:60;background:var(--cream);overflow-y:auto;opacity:1}
+/* no fade on the container itself: it starts display:none, so a fill-mode:both animation would
+   never run and would pin opacity at 0. The children carry the entrance instead. */
+.fokus[hidden]{display:none}
+body.fokus-aktif #live-badge{display:none}
+.fokus-bar{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;
+  gap:16px;padding:14px 24px;background:var(--cream);border-bottom:4px solid var(--navy)}
+.fokus-merek{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.fokus-isi{max-width:1500px;margin:0 auto;padding:26px 24px 64px;display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(300px,1.05fr) minmax(0,1.25fr);gap:28px;align-items:start}
+@media (max-width:1100px){.fokus-isi{grid-template-columns:1fr}
+  /* stacked, the province itself should lead, then the reading, then the records */
+  .fokus-tengah{order:1;position:static}.fokus-kiri{order:2}.fokus-kanan{order:3}
+  #fokus-bentuk{max-height:38vh}}
+
+.fokus-tengah{text-align:center;position:sticky;top:78px}
+.fokus-tengah h2{font-size:clamp(26px,3.4vw,44px);color:var(--navy);text-shadow:3px 3px 0 var(--red);margin-bottom:6px}
+.fokus-sub{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin:0 0 14px}
+#fokus-bentuk{display:block;width:100%;height:auto;max-height:46vh}
+.fokus.tampil #fokus-bentuk{animation:bentuk-tumbuh .55s cubic-bezier(.2,.7,.2,1) both;animation-delay:.08s}
+@keyframes bentuk-tumbuh{from{opacity:0;transform:scale(.55)}to{opacity:1;transform:none}}
+/* the shadow lives on the svg element so its blur is read in screen pixels; on the path it would be
+   read in viewBox units and a small province blows it up into a haze */
+#fokus-bentuk{filter:drop-shadow(0 7px 16px rgba(28,28,28,.22))}
+/* no stroke-width here: a CSS declaration would beat the presentation attribute, and the attribute
+   is what scales the outline to the province's own viewBox */
+#fokus-bentuk .bentuk{stroke:var(--navy);stroke-linejoin:round}
+#fokus-bentuk .tt{stroke:var(--cream)}
+.fokus-kaki{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+
+.fokus.tampil .fokus-kiri,.fokus.tampil .fokus-kanan{animation:rec-masuk .4s cubic-bezier(.2,.7,.2,1) both;animation-delay:.18s}
+.fk-blok{background:var(--surface);border:3px solid var(--navy);border-radius:14px;padding:16px 18px;
+  box-shadow:var(--shadow);margin-bottom:14px}
+.fk-blok h3{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);margin-bottom:10px}
+.fk-besar{font-family:var(--disp);font-size:30px;line-height:1;color:var(--navy)}
+.fk-baris{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px solid var(--line);font-size:13px}
+.fk-baris:last-child{border-bottom:0}
+.fk-baris b{font-family:var(--mono);font-weight:600;color:var(--ink);white-space:nowrap}
+.fk-bar{height:7px;background:var(--cream-3);border-radius:999px;overflow:hidden;border:1.5px solid var(--navy);margin-top:4px}
+.fk-bar i{display:block;height:100%;background:var(--red);transition:width .7s cubic-bezier(.2,.7,.2,1)}
+.fk-catatan{font-size:12.5px;color:var(--ink-2);line-height:1.55;margin:0}
+.fk-catatan+.fk-catatan{margin-top:8px}
+.fokus-kanan .rec{border-bottom:2px solid var(--line)}
+.fk-tahun{position:sticky;top:78px;background:var(--cream);font-family:var(--disp);font-size:15px;
+  color:var(--navy);padding:8px 0 4px;border-bottom:2px solid var(--navy);margin:16px 0 2px;z-index:1}
