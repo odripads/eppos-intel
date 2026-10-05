@@ -19,7 +19,7 @@ untouched, so the two never blur together on the map or in the dataset release.
 Usage: python3 scripts/promote_candidates.py
 """
 from __future__ import annotations
-import datetime as dt, json, re, unicodedata
+import datetime as dt, json, re, unicodedata, urllib.parse
 from collections import defaultdict
 from pathlib import Path
 
@@ -180,6 +180,9 @@ OUTLET_PROV = {
     "metro.batampos.co.id": "Kepulauan Riau", "metropolis.batampos.co.id": "Kepulauan Riau",
     "halmaherapost.com": "Maluku Utara", "halosultra.com": "Sulawesi Tenggara",
     "banggainews.com": "Sulawesi Tengah", "harianmuria.com": "Jawa Tengah", "bacajogja.id": "Yogyakarta",
+    # island-wide outlets: Halmahera and Madura each span several regencies, so the home is the province
+    "halmaheraraya.id": "Maluku Utara", "koranmadura.com": "Jawa Timur", "madurazone.com": "Jawa Timur",
+    "portalmadura.com": "Jawa Timur",
 }
 
 
@@ -188,10 +191,10 @@ OUTLET_PROV = {
 ALIAS_TEMPAT = {
     "kotim": "Kotawaringin Timur", "sampit": "Kotawaringin Timur", "kobar": "Kotawaringin Barat",
     "pangkalanbun": "Kotawaringin Barat", "luwuk": "Banggai", "kotabaru": "Kota Baru",
-    "madura": "Pamekasan", "bumiaji": "Kota Batu", "batu": "Kota Batu",
+    "bumiaji": "Kota Batu", "batu": "Kota Batu",
     "inhu": "Indragiri Hulu", "inhil": "Indragiri Hilir", "pekanbaru": "Kota Pekanbaru",
     "tanjungpinang": "Kota Tanjung Pinang", "batam": "Kota Batam", "lingga": "Lingga",
-    "halmahera": "Halmahera Tengah", "ternate": "Kota Ternate", "sofifi": "Tidore Kepulauan",
+    "ternate": "Kota Ternate", "sofifi": "Tidore Kepulauan",
     "banjarbaru": "Kota Banjar Baru", "martapura": "Banjar", "kendari": "Kota Kendari",
     "baubau": "Kota Bau-Bau", "palu": "Kota Palu", "gorontalo": "Kota Gorontalo",
     "jayapura": "Kota Jayapura", "sorong": "Kota Sorong", "ambon": "Kota Ambon",
@@ -310,6 +313,10 @@ ALIAS_TEMPAT = {
     "bonebol": "Bone Bolango",
     "gorut": "Gorontalo Utara",
 }
+
+# Place names that are also ordinary words in outlet names: "jurnalmetro" is a Jakarta-area outlet, not
+# Kota Metro in Lampung; "batu" sits inside every "batubara".
+DOMAIN_BUKAN = {"metro", "batu"}
 
 # A province named in the headline is weaker evidence than a kab/kota but it is still the story's own
 # words, so it outranks the outlet's home address. Shorthand included: headlines rarely spell it out.
@@ -435,9 +442,10 @@ def main():
         if not domain: return None
         base = norm(domain.split(".")[0])
         for nm, r in gaz:
-            if len(nm) >= 5 and nm.replace(" ", "") in base: return r
+            if len(nm) >= 5 and nm.replace(" ", "") in base and nm not in DOMAIN_BUKAN: return r
         for ali, target in ALIAS_TEMPAT.items():
-            if ali in base:
+            # substrings of a domain: short aliases (oki, pali, tala) turn up inside unrelated words
+            if len(ali) >= 5 and ali in base and ali not in DOMAIN_BUKAN:
                 r = gaz_by_name.get(norm(target)) or gaz_by_name.get(norm(KAB_PREFIX.sub("", target)))
                 if r: return r
         return None
@@ -446,7 +454,10 @@ def main():
         """Article slugs often carry the kab/kota even when the headline does not
         (…/pilkada/d-123/bawaslu-sleman-limpahkan…). Same gazetteer, same word-boundary rule."""
         if not url: return None
-        slug = re.sub(r"[^a-z]+", " ", url.lower().split("://", 1)[-1])
+        # the path only: the host is the outlet's address, not the story's place. Reading it put a story
+        # about Maluku's governor in Bangka because the outlet is bangka.tribunnews.com
+        path = urllib.parse.urlsplit(url).path
+        slug = re.sub(r"[^a-z]+", " ", path.lower())
         n = " " + slug + " "
         # five letters and up only: a slug has no office word in front of a short name to anchor it
         for rx, r in gaz_rx5:
