@@ -37,11 +37,11 @@
         <g id="plabels"></g>
       </svg>
       <div class="legend">
-        <span><i class="sw kuat"></i><b>merah</b> &mdash; ada liputan media <b>dan</b> kasus resmi</span>
-        <span><i class="sw tunggal"></i><b>emas</b> &mdash; salah satu saja</span>
-        <span><i class="sw lemah"></i><b>cokelat</b> &mdash; baru hasil penelusuran otomatis</span>
+        <span><i class="sw keduanya"></i><b>merah</b> &mdash; liputan media <b>dan</b> kasus resmi</span>
+        <span><i class="sw resmi"></i><b>oranye</b> &mdash; kasus resmi saja</span>
+        <span><i class="sw media"></i><b>kuning</b> &mdash; liputan media saja</span>
         <span><i class="sw kosong"></i><b>hitam</b> &mdash; belum ada apa-apa</span>
-        <span style="margin-left:auto"><i class="sw ins"></i>insiden<i class="sw kas" style="margin-left:10px"></i>kasus resmi<i class="sw oto" style="margin-left:10px"></i>otomatis</span>
+        <span style="margin-left:auto"><i class="sw ins"></i>liputan media<i class="sw kas" style="margin-left:10px"></i>kasus resmi</span>
       </div>
       <div class="legend" style="border-top:0;padding-top:0;display:block">
         <p class="hint" id="excl" style="margin:0 0 8px"></p>
@@ -49,23 +49,21 @@
         <div id="legend-help" hidden>
           <h4 class="lh">Warna provinsi</h4>
           <dl class="lx">
-            <dt><i class="sw kuat"></i>merah</dt>
-            <dd>Ada <b>liputan media dan kasus resmi</b> di provinsi itu. Dua sumber yang biasnya berlawanan menunjuk ke tempat yang sama, jadi ini yang paling kuat.</dd>
-            <dt><i class="sw tunggal"></i>emas</dt>
-            <dd>Baru <b>salah satu</b>: media saja, atau kasus resmi saja. Bentuk titiknya menunjukkan yang mana. Media saja bisa berarti laporannya tidak ditindak; kasus resmi saja bisa berarti persnya tidak ada di sana. Keduanya sama-sama emas karena bukan yang satu lebih berat dari yang lain, melainkan masalah yang berbeda.</dd>
-            <dt><i class="sw lemah"></i>cokelat</dt>
-            <dd>Baru <b>hasil penelusuran otomatis</b>, belum ada baris yang dikurasi tangan. Perlu diperiksa dulu.</dd>
+            <dt><i class="sw keduanya"></i>merah</dt>
+            <dd>Ada <b>liputan media dan kasus resmi</b>. Dua sumber yang biasnya berlawanan menunjuk ke tempat yang sama.</dd>
+            <dt><i class="sw resmi"></i>oranye</dt>
+            <dd><b>Kasus resmi saja.</b> Pengawas mencatat, persnya tidak memberitakan &mdash; bisa jadi pers tidak sampai ke sana.</dd>
+            <dt><i class="sw media"></i>kuning</dt>
+            <dd><b>Liputan media saja.</b> Diberitakan, tidak ada kasus resmi &mdash; bisa jadi laporannya tidak ditindak.</dd>
             <dt><i class="sw kosong"></i>hitam</dt>
-            <dd><b>Belum ada apa-apa</b> yang ketemu lewat prosedur pencarian kami. Bukan berarti tidak ada kejadian di sana.</dd>
+            <dd><b>Belum ada apa-apa</b> yang ketemu lewat prosedur pencarian kami. Bukan berarti tidak ada kejadian.</dd>
           </dl>
-          <h4 class="lh">Bentuk titik &mdash; <em>dari mana barisnya berasal</em></h4>
+          <h4 class="lh">Dua deret yang dibandingkan</h4>
           <dl class="lx">
-            <dt><i class="sw ins"></i>insiden</dt>
-            <dd>Satu peristiwa paksaan yang <b>dilaporkan media</b> dan sudah dikurasi tangan oleh tim.</dd>
+            <dt><i class="sw ins"></i>liputan media</dt>
+            <dd>Peristiwa paksaan yang <b>diberitakan</b>, baik yang dikumpulkan tim maupun yang ditemukan dari arsip outlet.</dd>
             <dt><i class="sw kas"></i>kasus resmi</dt>
-            <dd>Catatan administratif dari Bawaslu, DKPP, BKN, KPK atau MK. Dikurasi tangan.</dd>
-            <dt><i class="sw oto"></i>otomatis</dt>
-            <dd>Ditemukan penelusuran mesin dari arsip outlet. Judul dan tautannya nyata, tetapi tanggal kejadian, pelaku, sasaran dan hasil dibiarkan kosong, dan sumbernya belum diadu. <b>Jangan dikutip sebagai temuan.</b></dd>
+            <dd>Catatan dari <b>Bawaslu, DKPP, BKN, KPK atau MK</b> &mdash; perkara yang masuk jalur resmi.</dd>
           </dl>
           <p class="lnote">Mengapa warnanya tidak menunjukkan jumlah: menghitung insiden per wilayah lalu mewarnainya
             akan menghasilkan <b>peta kepadatan pers</b>, bukan peta paksaan. Jawa memerah karena wartawannya banyak;

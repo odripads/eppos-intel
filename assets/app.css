@@ -94,8 +94,9 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .prov{fill:#1c1c1c;stroke:var(--cream-2);stroke-width:.7;transition:fill .15s}
 .prov.live{cursor:pointer}
 /* one hue family, ramped by how much evidence corroborates the province */
-.prov.cat-kuat{fill:var(--red)}
-.prov.cat-tunggal{fill:var(--gold)}
+.prov.cat-keduanya{fill:var(--red)}
+.prov.cat-resmi{fill:#e8873a}
+.prov.cat-media{fill:#f0c243}
 .prov.live:hover{fill:var(--navy);}
 .prov.sel{fill:var(--navy);stroke:var(--gold);stroke-width:2.5}
 .prov.live:focus-visible{stroke:var(--gold);stroke-width:2.5;outline:none}
@@ -110,8 +111,9 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
   font-size:12px;color:var(--ink-2);background:var(--surface-2);align-items:center}
 .legend span{display:inline-flex;align-items:center;gap:7px}
 .sw{width:13px;height:13px;flex:0 0 auto;display:inline-block;border:2px solid var(--navy);border-radius:3px}
-.sw.kuat{background:var(--red)}
-.sw.tunggal{background:var(--gold)}
+.sw.keduanya{background:var(--red)}
+.sw.resmi{background:#e8873a}
+.sw.media{background:#f0c243}
 .sw.kosong{background:#1c1c1c;border-color:#1c1c1c}
 .sw.ins{background:var(--red);border-radius:50%;width:10px;height:10px}
 .sw.kas{background:var(--gold);border-radius:2px;width:10px;height:10px;transform:rotate(45deg)}
@@ -142,8 +144,9 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .prow .pc i{margin-left:5px}
 .prow .pcat{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;
   padding:2px 8px;border-radius:999px;border:2px solid var(--navy)}
-.pcat.cat-kuat{background:var(--red);color:#fff}
-.pcat.cat-tunggal{background:var(--gold);color:var(--navy)}
+.pcat.cat-keduanya{background:var(--red);color:#fff}
+.pcat.cat-resmi{background:#e8873a;color:var(--navy)}
+.pcat.cat-media{background:#f0c243;color:var(--navy)}
 
 /* grouped records */
 .grp{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--red);
@@ -178,9 +181,10 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .srcs a{display:inline-flex;align-items:center;gap:5px;border:2px solid var(--navy);border-radius:8px;
   padding:4px 9px;text-decoration:none;color:var(--ink);background:var(--surface-2)}
 .srcs a:hover{background:var(--red);color:#fff;border-color:var(--navy)}
-.note.div-kuat{border-left-color:var(--red)}
-.note.div-tunggal{border-left-color:var(--gold)}
-.note.div-otomatis{border-left-color:#c7a86a}
+.note.div-keduanya{border-left-color:var(--red)}
+.note.div-resmi{border-left-color:#e8873a}
+.note.div-media{border-left-color:#f0c243}
+.note.div-kosong{border-left-color:#1c1c1c}
 
 /* notes / unmapped */
 .note{border:3px solid var(--navy);border-left-width:11px;border-left-color:var(--gold);border-radius:12px;
@@ -212,19 +216,19 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .pipeline a.cta:hover{transform:translate(-1px,-1px)}
 
 /* automated retrieval layer — visually separate from the curated census at every level */
-.prov.cat-otomatis{fill:#c7a86a;stroke:#8a6f3a;stroke-width:1;stroke-dasharray:3 2}
+
 .dot.oto{fill:#8a6f3a;fill-opacity:.95}
 .dot.oto.on{fill:#fff;fill-opacity:1;stroke:#6b5428;stroke-width:.6}
 
-.sw.lemah{background:#c7a86a;border-style:dashed;border-color:#8a6f3a}
+
 .sw.oto{background:var(--gold);width:0;height:0;border:none;border-left:6px solid transparent;
   border-right:6px solid transparent;border-bottom:10px solid var(--gold);border-radius:0}
-.pcat.cat-otomatis{background:#c7a86a;color:var(--navy)}
+
 .pill.oto{color:var(--gold-deep,#8a6510);background:var(--gold-soft);border-style:dashed}
 :root[data-theme="dark"] .pill.oto,:root:not([data-theme="light"]) .pill.oto{color:var(--gold)}
 .rec.oto{border-left:4px solid var(--gold);padding-left:12px;background:color-mix(in srgb,var(--gold-soft) 28%,transparent);
   border-radius:0 10px 10px 0;margin-bottom:6px}
-.grp.oto{color:var(--gold-deep,#8a6510)}
+.grp.oto{color:var(--ink-2)}
 :root[data-theme="dark"] .grp.oto,:root:not([data-theme="light"]) .grp.oto{color:var(--gold)}
 .note.oto-note{border-left-color:var(--gold);font-size:12px;margin-bottom:10px}
 .lyr i.oto{background:none;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;
@@ -257,3 +261,6 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 @media (max-width:640px){.lx{grid-template-columns:1fr;gap:2px} .lx dd{margin-bottom:8px}}
 .bandingtab th.e,.bandingtab td.e{text-align:right;font-size:10px;white-space:nowrap}
 .lg-title{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+
+.stat.sub b{color:var(--navy)}
+.stat.sub{background:var(--surface-2)}

@@ -42,12 +42,10 @@
     otoAktif().forEach(function (r) { touch(r.provinsi || NASIONAL).oto++; });
     Object.keys(m).forEach(function (p) {
       var s = m[p];
-      // Fill is a ramp of EVIDENCE STRENGTH, not a category salad: how many independent series
-      // corroborate this province. Deliberately NOT ranking media-only against official-only —
-      // the spec treats those as different findings (enforcement failure vs press absence),
-      // not as degrees of severity. Which series it is stays legible from the dot shapes.
-      s.cat = s.ins && s.kas ? "kuat" : (s.ins || s.kas) ? "tunggal" : s.oto ? "otomatis" : "kosong";
-      s.deret = s.ins && s.kas ? "media + kasus resmi" : s.ins ? "liputan media" : s.kas ? "kasus resmi" : s.oto ? "penelusuran otomatis" : null;
+      // Two series, named plainly. Archive finds are media reports, so they count as media coverage
+      // rather than forming a separate "automated" category the reader has to decode.
+      s.media = s.ins + s.oto;
+      s.cat = s.media && s.kas ? "keduanya" : s.kas ? "resmi" : s.media ? "media" : "kosong";
     });
     return m;
   }
@@ -120,7 +118,7 @@
 
   function autoHtml(r) {
     var h = '<article class="rec oto"><h3><a href="' + esc(r.sumber_1_url) + '" target="_blank" rel="noopener">' + esc(r.judul_sumber_1) + " \u2197</a></h3>";
-    h += '<div class="tags"><span class="pill oto">otomatis \u00b7 diterima, sumber belum diadu</span>' +
+    h += '<div class="tags"><span class="pill kat">' + esc(r.mekanisme || "liputan media") + "</span>" +
       '<span class="pill ' + (r.status_verifikasi === "dua sumber" ? "dua" : "satu") + '">' + esc(r.status_verifikasi) + "</span>" +
       '<span class="pill lbg">' + esc(r.sumber_1_outlet || "") + "</span></div>";
     h += '<dl class="meta">';
@@ -193,15 +191,13 @@
     var h = '<div class="pnl-hd"><div><h3>' + esc(name) + "</h3>" +
       '<p class="sub">' + ins.length + " insiden · " + kas.length + " kasus resmi · " + dua + " berstatus dua sumber</p></div>" +
       '<button class="btn-x" id="pnl-back">← semua provinsi</button></div>' +
-      '<div class="note div-' + (ins.length && kas.length ? "kuat" : (ins.length || kas.length) ? "tunggal" : "otomatis") + '">' + cat + "</div>";
-    if (ins.length) h += '<h4 class="grp">Insiden dilaporkan media \u00b7 dikurasi</h4>' + group(ins);
-    if (kas.length) h += '<h4 class="grp">Kasus administratif \u00b7 dikurasi</h4>' + group(kas);
+      '<div class="note div-' + (nMedia && kas.length ? "keduanya" : kas.length ? "resmi" : nMedia ? "media" : "kosong") + '">' + cat + "</div>";
+    if (ins.length) h += '<h4 class="grp">Liputan media \u00b7 ' + ins.length + " insiden</h4>" + group(ins);
+    if (kas.length) h += '<h4 class="grp">Kasus resmi \u00b7 ' + kas.length + " catatan</h4>" + group(kas);
     if (oto.length) {
-      h += '<h4 class="grp oto">Penelusuran otomatis \u00b7 ' + oto.length + " temuan, belum dikurasi</h4>" +
-        '<div class="note oto-note">Ditemukan otomatis dari arsip outlet dan diterima seluruhnya. Hanya judul, tautan, outlet, ' +
-        "tanggal terbit dan kelompok mekanisme yang diturunkan; tanggal kejadian, pelaku, sasaran dan hasil dibiarkan kosong " +
-        "karena tidak bisa disimpulkan dari judul. Sumbernya belum diadu satu sama lain, jadi jangan dikutip sebagai temuan " +
-        "sebelum diperiksa.</div>" +
+      h += '<h4 class="grp oto">Liputan media \u00b7 ' + oto.length + " dari arsip outlet</h4>" +
+        '<div class="note oto-note">Judul, tautan, outlet dan tanggal terbit diambil dari arsip outlet. Tanggal kejadian, ' +
+        "pelaku dan hasilnya dibiarkan kosong karena tidak bisa dipastikan dari judul saja.</div>" +
         oto.map(autoHtml).join("");
     }
     if (!ins.length && !kas.length) h += '<div class="pnl-empty"><b>Tidak ada catatan</b><p>Belum ada baris untuk provinsi ini pada ' + esc(state.periode) + ".</p></div>";
@@ -222,8 +218,13 @@
      Windows are the same length and cover the same outlets, so the pair is comparable; what it is NOT
      is a measure of incidence — both series still follow press attention, which itself rises at election
      time. Read it as "how much more is reported", never as "how much more happens". */
-  var PASANGAN = [["2024", "kontrol-2024", "2024 vs 2023"], ["2020", "kontrol-2020", "2020 vs 2019"],
-                  ["2018", "kontrol-2018", "2018 vs 2019/20"]];
+  var PASANGAN = [["2024", "kontrol-2024", "Pilkada 2024", "2023"],
+                  ["2020", "kontrol-2020", "Pilkada 2020", "2019"],
+                  ["2018", "kontrol-2018", "Pilkada 2018", "2019/20"]];
+
+  /* How much more gets reported during an election season than outside it.
+     Both windows are the same length and cover the same outlets, and the rate is per 1,000 searches
+     because the two were not searched equally hard. */
   function bandingGelombang() {
     var oto = (D.otomatis || []), usaha = D.usaha || {};
     if (!oto.length) return "";
@@ -232,25 +233,22 @@
       var b = oto.filter(function (r) { return r.gelombang_pilkada === p[1]; }).length;
       var ua = usaha[p[0]], ub = usaha[p[1]];
       if (!a && !b) return "";
-      // rate per 1,000 cells searched, because the two windows were not searched equally hard
       var ra = ua ? a / ua * 1000 : null, rb = ub ? b / ub * 1000 : null;
       var max = Math.max(ra || 0, rb || 0, 0.001);
-      var rasio = (ra && rb) ? (ra / rb).toFixed(1) + "\u00d7" : "\u2014";
-      return '<tr><td>' + esc(p[2]) + '</td>' +
+      var lipat = (ra && rb) ? (ra / rb).toFixed(1) : null;
+      return '<tr><td><b>' + esc(p[2]) + "</b></td>" +
         '<td class="bar"><i style="width:' + ((ra || 0) / max * 100) + '%"></i><b>' + (ra ? ra.toFixed(1) : "\u2014") + "</b></td>" +
         '<td class="bar k"><i style="width:' + ((rb || 0) / max * 100) + '%"></i><b>' + (rb ? rb.toFixed(1) : "\u2014") + "</b></td>" +
-        '<td class="r">' + rasio + "</td>" +
-        '<td class="e mono muted">' + (ua ? (ua / 1000).toFixed(0) + "rb" : "?") + " / " + (ub ? (ub / 1000).toFixed(0) + "rb" : "?") + "</td></tr>";
+        '<td class="r">' + (lipat ? lipat + "\u00d7 lebih banyak" : "\u2014") + "</td></tr>";
     }).join("");
     if (!rows.replace(/\s/g, "")) return "";
-    return '<div class="banding"><h4 class="grp">Jendela pilkada vs jendela kontrol \u00b7 lapisan otomatis</h4>' +
-      '<table class="bandingtab"><thead><tr><th></th><th>jendela pilkada</th><th>jendela kontrol</th><th class="r">rasio</th><th class="e">sel dicari</th></tr></thead><tbody>' +
+    return '<div class="banding"><h4 class="grp">Musim pilkada vs tahun biasa</h4>' +
+      '<p class="hint" style="margin:0 0 8px">Berapa banyak pemberitaan paksaan yang muncul <b>saat musim pilkada</b> ' +
+      "dibandingkan <b>tahun biasa tanpa pilkada</b>, di rentang bulan yang sama dan outlet yang sama.</p>" +
+      '<table class="bandingtab"><thead><tr><th></th><th>musim pilkada</th><th>tahun biasa</th><th class="r">bedanya</th></tr></thead><tbody>' +
       rows + "</tbody></table>" +
-      '<p class="hint" style="margin:8px 0 0">Angka adalah <b>temuan per 1.000 sel penelusuran</b>, bukan hitungan mentah: ' +
-      "jendela kontrol belum dicari sekeras jendela pilkada (kolom terakhir), dan membandingkan hitungan mentah " +
-      "hanya akan mengukur usaha kami sendiri. Bahkan setelah dinormalkan, ini mengukur <b>seberapa banyak yang " +
-      "diberitakan</b>, bukan seberapa banyak yang terjadi \u2014 liputan memang meningkat saat musim pemilu. " +
-      "Dari lapisan otomatis yang belum dikurasi.</p></div>";
+      '<p class="hint" style="margin:8px 0 0">Angkanya temuan per 1.000 pencarian, bukan jumlah mentah, karena kedua rentang ' +
+      "belum dicari sama banyak. Yang diukur <b>seberapa banyak yang diberitakan</b>, bukan seberapa banyak yang terjadi.</p></div>";
   }
 
   function provinceList() {
@@ -267,19 +265,20 @@
         '<p style="margin-top:10px">Gelombang pilkada yang akan mengisinya:<br><b class="wave">' + esc(p.gelombang_pilkada_di_dalamnya || "—") + "</b></p></div>";
       return;
     }
-    var tot = names.reduce(function (a, n) { return { ins: a.ins + st[n].ins, kas: a.kas + st[n].kas }; }, { ins: 0, kas: 0 });
+    var tot = names.reduce(function (a, n) { return { med: a.med + st[n].media, kas: a.kas + st[n].kas }; }, { med: 0, kas: 0 });
+    var nProv = names.filter(function (n) { return n !== NASIONAL; }).length;
     var h = '<div class="pnl-hd"><div><h3>' + esc(state.periode) + '</h3><p class="sub">' + esc(p.presiden_terpilih || "") + " · " + esc(p.gelombang_pilkada_di_dalamnya || "") + "</p></div></div>" +
-      '<div class="note"><b>' + tot.ins + " insiden dilaporkan media</b> dan <b>" + tot.kas + " kasus administratif</b> di " + names.length +
-      " wilayah. Kedua deret punya bias arah berbeda: liputan mengikuti kehadiran pers, kasus resmi mengikuti pengawasan yang berfungsi. Perbedaan keduanya adalah temuannya, bukan hitungan mentahnya.</div>" +
+      '<div class="note"><b>' + tot.med + " liputan media</b> dan <b>" + tot.kas + " kasus resmi</b> di " + nProv +
+      " provinsi. Keduanya meleset ke arah yang berlawanan: pemberitaan mengikuti ke mana pers hadir, kasus resmi mengikuti ke mana pengawasnya bekerja. " +
+      "Yang menarik justru di mana keduanya tidak cocok.</div>" +
       bandingGelombang() +
       '<p class="pick">Pilih provinsi — di peta atau dari daftar ini:</p><div class="plist">';
     names.forEach(function (n) {
       var s = st[n];
       h += '<button class="prow" data-prov="' + esc(n) + '"><span class="pn">' + esc(n) + "</span>" +
-        '<span class="pc"><i class="sw ins"></i>' + s.ins + '<i class="sw kas"></i>' + s.kas +
-        (s.oto ? '<i class="sw oto"></i>' + s.oto : "") + "</span>" +
+        '<span class="pc"><i class="sw ins"></i>' + s.media + '<i class="sw kas"></i>' + s.kas + "</span>" +
         '<span class="pcat cat-' + s.cat + '" title="' + esc(s.deret || "") + '">' +
-        (s.cat === "kuat" ? "media + resmi" : s.cat === "tunggal" ? "salah satu" : "otomatis") + "</span></button>";
+        (s.cat === "keduanya" ? "media + resmi" : s.cat === "resmi" ? "kasus resmi" : "liputan media") + "</span></button>";
     });
     $("#pnl").innerHTML = h + "</div>";
     all(".prow").forEach(function (b) { b.onclick = function () { selectProv(b.dataset.prov); }; });
@@ -317,10 +316,10 @@
     var oto = otoAktif();
     oto.forEach(function (r) { if (r.provinsi) provs[r.provinsi] = 1; });
     $("#stats").innerHTML =
-      '<div class="stat"><b>' + ins.length + "</b><span>insiden</span></div>" +
+      '<div class="stat"><b>' + (ins.length + oto.length) + "</b><span>liputan media</span></div>" +
       '<div class="stat"><b>' + kas.length + "</b><span>kasus resmi</span></div>" +
-      '<div class="stat"><b>' + oto.length + "</b><span>temuan otomatis</span></div>" +
-      '<div class="stat"><b>' + Object.keys(provs).length + "</b><span>provinsi</span></div>";
+      '<div class="stat"><b>' + Object.keys(provs).length + "</b><span>provinsi</span></div>" +
+      '<div class="stat sub"><b>' + esc(state.periode.replace("Periode ", "")) + "</b><span>periode dipilih</span></div>";
   }
 
   /* retrieval progress. The queue is accepted in bulk under a standing authorisation, so this reports
@@ -335,8 +334,7 @@
         var dua = oto.filter(function (r) { return r.status_verifikasi === "dua sumber"; }).length;
         $("#pipeline").hidden = false;
         $("#pipeline").innerHTML =
-          "<span><b>" + oto.length + "</b> temuan otomatis di peta \u00b7 semuanya sudah diterima \u00b7 <b>" +
-          dua + "</b> terkuatkan dua outlet</span>" +
+          "<span><b>" + oto.length + "</b> liputan media dari arsip outlet \u00b7 <b>" + dua + "</b> diberitakan dua outlet</span>" +
           '<span class="grow"></span>' +
           '<span class="mono muted">' + done.toLocaleString("id-ID") + " kueri dijalankan" + (last ? " \u00b7 terakhir " + last : "") + "</span>";
       });
@@ -361,7 +359,9 @@
       return D.insiden.some(function (r) { return r.periode_pilpres === p.periode; }) || D.kasus_resmi.some(function (r) { return r.periode_pilpres === p.periode; });
     });
     state.periode = (withRows[withRows.length - 1] || D.periode[D.periode.length - 1]).periode;
-    var vEl = $("#ver"); if (vEl) vEl.textContent = "data " + D.manifest.version + " · " + D.manifest.insiden + " insiden · " + D.manifest.kasus_resmi + " kasus resmi";
+    var vEl = $("#ver");
+    if (vEl) vEl.textContent = "seluruh data \u00b7 " + ((D.insiden || []).length + (D.otomatis || []).length) +
+      " liputan media \u00b7 " + (D.kasus_resmi || []).length + " kasus resmi";
     var ex = D.insiden.length - D.insiden.filter(function (r) { return r.status_kurasi === "masuk" || r.status_kurasi === "ragu"; }).length;
     var xEl = $("#excl"); if (xEl) xEl.textContent = ex ? ex + " baris berstatus kurasi 'keluar' tetap di dataset tetapi tidak dipetakan." : "";
     drawPeriods(); provinceList(); updateStats(); pipeline(); wireLegendHelp();
