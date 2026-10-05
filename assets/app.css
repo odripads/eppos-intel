@@ -264,3 +264,50 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 
 .stat.sub b{color:var(--navy)}
 .stat.sub{background:var(--surface-2)}
+
+/* ───── gerak ─────
+   Tiga aturan: gerakan menandai sesuatu yang nyata (provinsi muncul, angka naik, catatan masuk),
+   tidak ada yang bergoyang tanpa alasan, dan semuanya mati di prefers-reduced-motion. */
+
+/* peta merakit diri saat dimuat, dari barat ke timur */
+@keyframes prov-masuk { from { opacity: 0; transform: translateY(6px) } to { opacity: 1; transform: none } }
+.mapfig svg.siap .prov { animation: prov-masuk .5s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(var(--i, 0) * 14ms) }
+
+/* provinsi dengan dua deret berdenyut pelan — satu-satunya gerak menerus, dan ia menandai sinyal terkuat */
+@keyframes denyut { 0%,100% { filter: none } 50% { filter: brightness(1.14) } }
+.mapfig svg.siap .prov.cat-keduanya { animation: prov-masuk .5s cubic-bezier(.2,.7,.2,1) both,
+  denyut 3.4s ease-in-out infinite; animation-delay: calc(var(--i,0) * 14ms), calc(900ms + var(--i,0) * 40ms) }
+
+/* titik menetes masuk setelah provinsinya */
+@keyframes titik-masuk { from { opacity: 0; transform: scale(.4) } to { opacity: 1; transform: none } }
+.mapfig svg.siap .dot { transform-origin: center; transform-box: fill-box;
+  animation: titik-masuk .34s ease-out both; animation-delay: calc(700ms + var(--j, 0) * 4ms) }
+
+/* provinsi terpilih naik sedikit */
+.prov.sel { filter: drop-shadow(0 2px 5px rgba(28,28,28,.45)) }
+
+/* catatan masuk bertahap saat provinsi dibuka */
+@keyframes rec-masuk { from { opacity: 0; transform: translateY(8px) } to { opacity: 1; transform: none } }
+.scrolly .rec { animation: rec-masuk .34s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(var(--r, 0) * 45ms) }
+.scrolly .grp, .scrolly .kab h4 { animation: rec-masuk .3s ease-out both }
+
+/* batang perbandingan tumbuh dari nol */
+.bandingtab td.bar i { transition: width .7s cubic-bezier(.2,.7,.2,1) }
+
+/* kartu statistik dan tab */
+.stat { transition: transform .15s, box-shadow .15s }
+.stat:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--navy) }
+.ptab, .prow, .btn-x, .lyr { transition: transform .13s, box-shadow .13s, background .13s }
+.prow:active { transform: translate(1px,1px) }
+
+/* garis bawah tipis yang menyapu saat periode diganti */
+@keyframes sapu { from { transform: scaleX(0) } to { transform: scaleX(1) } }
+.ptab[aria-selected="true"]::after { content: ""; position: absolute; left: 10px; right: 10px; bottom: 5px;
+  height: 2px; background: currentColor; opacity: .45; transform-origin: left; animation: sapu .45s cubic-bezier(.2,.7,.2,1) both }
+.ptab { position: relative }
+
+@media (prefers-reduced-motion: reduce) {
+  .mapfig svg.siap .prov, .mapfig svg.siap .prov.cat-keduanya, .mapfig svg.siap .dot,
+  .scrolly .rec, .scrolly .grp, .scrolly .kab h4, .ptab[aria-selected="true"]::after { animation: none !important }
+  .bandingtab td.bar i { transition: none !important }
+}

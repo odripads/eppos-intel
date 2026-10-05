@@ -97,6 +97,14 @@
     });
     $("#pts").innerHTML = pts;
     $("#plabels").innerHTML = labels;
+    // stagger west→east so the map assembles in a readable order, not at random
+    var urut = paths.slice().sort(function (a, b) {
+      var ba = a.getBBox(), bb = b.getBBox(); return (ba.x + ba.width / 2) - (bb.x + bb.width / 2);
+    });
+    urut.forEach(function (el, i) { el.style.setProperty("--i", i); });
+    all("#pts .dot").forEach(function (el, i) { el.style.setProperty("--j", i); });
+    var svg = $("#map") || document.querySelector(".mapfig svg");
+    if (svg && !svg.classList.contains("siap")) requestAnimationFrame(function () { svg.classList.add("siap"); });
     paths.forEach(function (el) {
       el.onclick = function () { pickPath(+el.dataset.idx); };
       el.onkeydown = function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pickPath(+el.dataset.idx); } };
@@ -203,6 +211,7 @@
     }
     if (!ins.length && !kas.length) h += '<div class="pnl-empty"><b>Tidak ada catatan</b><p>Belum ada baris untuk provinsi ini pada ' + esc(state.periode) + ".</p></div>";
     $("#pnl").innerHTML = '<div class="scrolly">' + h + "</div>";
+    all("#pnl .rec").forEach(function (el, i) { el.style.setProperty("--r", Math.min(i, 14)); });
     $("#pnl-back").onclick = function () { state.prov = null; paintMap(); provinceList(); };
     $("#pnl").scrollTop = 0;
   }
@@ -238,8 +247,8 @@
       var max = Math.max(ra || 0, rb || 0, 0.001);
       var lipat = (ra && rb) ? (ra / rb).toFixed(1) : null;
       return '<tr><td><b>' + esc(p[2]) + "</b></td>" +
-        '<td class="bar"><i style="width:' + ((ra || 0) / max * 100) + '%"></i><b>' + (ra ? ra.toFixed(1) : "\u2014") + "</b></td>" +
-        '<td class="bar k"><i style="width:' + ((rb || 0) / max * 100) + '%"></i><b>' + (rb ? rb.toFixed(1) : "\u2014") + "</b></td>" +
+        '<td class="bar"><i data-w="' + ((ra || 0) / max * 100) + '" style="width:0"></i><b>' + (ra ? ra.toFixed(1) : "\u2014") + "</b></td>" +
+        '<td class="bar k"><i data-w="' + ((rb || 0) / max * 100) + '" style="width:0"></i><b>' + (rb ? rb.toFixed(1) : "\u2014") + "</b></td>" +
         '<td class="r">' + (lipat ? lipat + "\u00d7 lebih banyak" : "\u2014") + "</td></tr>";
     }).join("");
     if (!rows.replace(/\s/g, "")) return "";
@@ -283,6 +292,9 @@
     });
     $("#pnl").innerHTML = h + "</div>";
     all(".prow").forEach(function (b) { b.onclick = function () { selectProv(b.dataset.prov); }; });
+    requestAnimationFrame(function () {
+      all(".bandingtab td.bar i").forEach(function (el) { el.style.width = el.dataset.w + "%"; });
+    });
   }
 
   /* ---------- chrome ---------- */
@@ -311,6 +323,17 @@
     });
   }
 
+  function hitungNaik(el, target) {
+    var n = parseInt(target, 10);
+    if (isNaN(n) || n < 2 || matchMedia("(prefers-reduced-motion: reduce)").matches) { el.textContent = target; return; }
+    var t0 = performance.now(), dur = Math.min(900, 300 + n * 0.7);
+    (function step(t) {
+      var k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = Math.round(n * e).toLocaleString("id-ID");
+      if (k < 1) requestAnimationFrame(step);
+    })(t0);
+  }
+
   function updateStats() {
     var ins = insidenAktif(), kas = kasusAktif(), provs = {};
     ins.concat(kas).forEach(function (r) { if (r.provinsi) provs[r.provinsi] = 1; });
@@ -321,6 +344,12 @@
       '<div class="stat"><b>' + kas.length + "</b><span>kasus resmi</span></div>" +
       '<div class="stat"><b>' + Object.keys(provs).length + "</b><span>provinsi</span></div>" +
       '<div class="stat sub"><b>' + esc(state.periode.replace("Periode ", "")) + "</b><span>periode dipilih</span></div>";
+    // read the target from a data attribute: once the animation writes "1.084" with a thousands
+    // separator, re-reading textContent would parse it back as 1
+    all("#stats .stat:not(.sub) b").forEach(function (el) {
+      if (!el.dataset.t) el.dataset.t = el.textContent;
+      hitungNaik(el, el.dataset.t);
+    });
   }
 
   /* retrieval progress. The queue is accepted in bulk under a standing authorisation, so this reports
