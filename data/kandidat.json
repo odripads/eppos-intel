@@ -35554,8 +35554,8 @@
   "provinsi_kueri": "(arsip outlet)",
   "kueri": "tangerangpos.id search='aparatur tidak netral' 2023-05-27..2023-12-27",
   "ditemukan_pada": "2026-10-06",
-  "status_tinjau": null,
-  "catatan_tinjau": null
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
  },
  {
   "kandidat_id": "KAN-02054",
@@ -35570,8 +35570,8 @@
   "provinsi_kueri": "(arsip outlet)",
   "kueri": "tangerangpos.id search='netralitas ASN' 2023-05-27..2023-12-27",
   "ditemukan_pada": "2026-10-06",
-  "status_tinjau": null,
-  "catatan_tinjau": null
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
  },
  {
   "kandidat_id": "KAN-02055",
@@ -35586,7 +35586,7 @@
   "provinsi_kueri": "(arsip outlet)",
   "kueri": "tubannews.id search='kepala desa dikumpulkan' 2023-05-27..2023-12-27",
   "ditemukan_pada": "2026-10-06",
-  "status_tinjau": null,
-  "catatan_tinjau": null
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
  }
 ]
