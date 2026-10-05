@@ -146,14 +146,26 @@ def known_urls():
     return seen
 
 
-def build_grid(state, insiden):
-    """Least-covered provinces first, newest wave first: search hardest where the record is thinnest."""
+def build_grid(state, insiden, hanya=None):
+    """Least-covered provinces first, newest wave first: search hardest where the record is thinnest.
+
+    `hanya` restricts the sweep to named provinces and skips the national tier entirely, so a run
+    aimed at the provinces with no record at all is not spent on cells that would land elsewhere.
+    """
     cover = {p: 0 for p in PROVINSI}
     for r in insiden:
         if r.get("provinsi") in cover: cover[r["provinsi"]] += 1
     provs = sorted(PROVINSI, key=lambda p: (cover[p], p))
     done = set(state.get("done", []))
     grid = []
+    if hanya:
+        for prov in [p for p in provs if p in hanya]:
+            for wave in WAVE_ORDER:
+                for mek, queries in MEKANISME.items():
+                    for q in queries:
+                        cid = f"{wave}|{prov}|{mek}|{q}"
+                        if cid not in done: grid.append((cid, wave, prov, mek, q))
+        return grid
     # Tier 1 — national sweep per wave: no province term, so nothing is excluded by phrasing. Highest yield.
     for wave in WAVE_ORDER:
         for mek, queries in MEKANISME.items():
@@ -238,6 +250,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cells", type=int, default=25, help="grid cells per run (Google News membatasi laju; 25 aman)")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--provinsi", default=None,
+                    help="batasi sapuan ke provinsi ini (pisahkan dengan koma); tier nasional dilewati")
     a = ap.parse_args()
 
     insiden = load("insiden.json", [])
@@ -247,7 +261,13 @@ def main():
     seen = known_urls() | {norm_url(k.get("url")) for k in kandidat if k.get("url")}
     seen_titles = {re.sub(r"\W+", "", (k.get("judul") or "").lower())[:70] for k in kandidat}
 
-    grid = build_grid(state, insiden)
+    hanya = None
+    if a.provinsi:
+        hanya = [x.strip() for x in a.provinsi.split(",") if x.strip()]
+        asing = [x for x in hanya if x not in PROVINSI]
+        if asing: sys.exit(f"provinsi tidak dikenal: {asing}")
+        print("sapuan dibatasi ke: " + ", ".join(hanya), file=sys.stderr)
+    grid = build_grid(state, insiden, hanya)
     todo = grid[: a.cells]
     print(f"grid: {len(grid)} sel belum dijalankan; run ini mengambil {len(todo)}", file=sys.stderr)
     if not todo:

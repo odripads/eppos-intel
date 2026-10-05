@@ -21,15 +21,25 @@ UA = "EPPOS-DPP-UGM academic research (incident census; github.com/odripads/eppo
 PATHS = ["/wp-json/wp/v2/posts?per_page=5&_fields=title,date,link",
          "/?rest_route=/wp/v2/posts&per_page=5&_fields=title,date,link"]
 
-def _kota_dari_gazetteer():
+def _kota_dari_gazetteer(provinsi=None):
     """Every kab/kota name in the gazetteer, reduced to the single token outlets actually use in a
     domain (Kabupaten Tulang Bawang Barat -> tulangbawang). Beats a hand-typed list of big cities:
     the thin-coverage regions are exactly the ones a hand-typed list forgets."""
     import json as _j
     rows = _j.loads((ROOT / "scripts" / "wikidata_id_regions.json").read_text())
+    # `provinsi` narrows the stems to those provinces, matched on the BPS code rather than on map
+    # geometry, so a sweep can be aimed at the provinces that still have no outlet at all
+    kode = None
+    if provinsi:
+        want = {x.strip().lower() for x in provinsi}
+        kode = {r["bps"][:2] for r in rows
+                if "provin" in r["type"].lower() and r.get("bps") and r["label"].lower() in want}
+        if not kode:
+            raise SystemExit("provinsi tidak dikenal: " + ", ".join(sorted(want)))
     out = set()
     for r in rows:
         if "provin" in r["type"].lower(): continue
+        if kode is not None and (r.get("bps") or "")[:2] not in kode: continue
         t = re.sub(r"[^a-z ]+", "", r["label"].lower()).strip()
         t = re.sub(r"^(kabupaten|kota administrasi|kota)\s+", "", t)
         joined = t.replace(" ", "")
@@ -92,11 +102,23 @@ def vet(d, tot, titles):
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--workers", type=int, default=30)
+    ap.add_argument("--provinsi", default=None, help="batasi tebakan domain ke kab/kota provinsi ini (koma)")
+    ap.add_argument("--domains", default=None,
+                    help="berkas berisi satu domain per baris; vet domain itu saja, jangan menebak pola")
     a = ap.parse_args()
+    kota = _kota_dari_gazetteer(a.provinsi.split(",")) if a.provinsi else KOTA
+    print(f"{len(kota)} nama kota dipakai", file=sys.stderr)
     reg = json.loads((ROOT / "scripts" / "outlet_wp.json").read_text())
     tolak = json.loads((ROOT / "scripts" / "outlet_ditolak.json").read_text())
     known = set(reg) | set(tolak)
-    cand = sorted({p.format(c=c) for c in KOTA for p in POLA} - known)
+    if a.domains:
+        # domains observed in the wild (Google News surfaced them) rather than guessed from a pattern:
+        # they still go through the same vetting, because being real is not the same as being in frame
+        diminta = [x.strip().lower().replace("www.", "") for x in Path(a.domains).read_text().split() if x.strip()]
+        cand = sorted(set(diminta) - known)
+        print(f"{len(diminta)} domain diminta, {len(cand)} belum dikenal", file=sys.stderr)
+    else:
+        cand = sorted({p.format(c=c) for c in kota for p in POLA} - known)
     print(f"{len(cand)} domain kandidat", file=sys.stderr)
     with ThreadPoolExecutor(max_workers=a.workers) as ex:
         hits = [x for x in ex.map(probe, cand) if x]
@@ -106,10 +128,16 @@ def main():
         ok, why = vet(d, tot, titles)
         if ok: baru.append(d); print(f"  TERIMA {d:32s} {tot:>7,}  {titles[0][:56]}", file=sys.stderr)
         else: ditolak[d] = why
-    reg = sorted(set(reg) | set(baru))
-    tolak.update(ditolak)
-    (ROOT / "scripts" / "outlet_wp.json").write_text(json.dumps(reg, ensure_ascii=False, indent=1) + "\n")
-    (ROOT / "scripts" / "outlet_ditolak.json").write_text(json.dumps(tolak, ensure_ascii=False, indent=1) + "\n")
+    # re-read before writing: two sweeps run side by side (one per province, one over a domain list)
+    # and a wholesale write would silently drop whatever the other one had just accepted
+    def simpan_gabung(nama, tambahan, gabung):
+        f = ROOT / "scripts" / nama
+        kini = json.loads(f.read_text()) if f.exists() else ([] if isinstance(tambahan, list) else {})
+        hasil = gabung(kini, tambahan)
+        f.write_text(json.dumps(hasil, ensure_ascii=False, indent=1) + "\n")
+        return hasil
+    reg = simpan_gabung("outlet_wp.json", baru, lambda a, b: sorted(set(a) | set(b)))
+    simpan_gabung("outlet_ditolak.json", ditolak, lambda a, b: {**a, **b})
     print(f"\n+{len(baru)} diterima, +{len(ditolak)} ditolak · registri kini {len(reg)} outlet", file=sys.stderr)
 
 
