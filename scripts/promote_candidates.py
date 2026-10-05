@@ -53,7 +53,11 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
 # also carries no word of something having happened to someone.
 KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jenis pelanggaran dan sanksi|"
     r"aturan .{0,30}netral|ikrar netralitas|deklarasi netralitas|haramkan politik praktis|"
-    r"isu krusial|nota kesepahaman|teken mou)", re.I)
+    r"isu krusial|nota kesepahaman|teken mou|"
+    # statements and warnings: a conditional, an official "stressing" a rule, or a report that nothing
+    # has been reported. Still admitted when the headline also says something happened.
+    r"\btegaskan\b|menegaskan|\bjika\b|\bbila\b|apabila|belum ada laporan|tidak ada laporan|"
+    r"sanksi (?:berat |tegas )?bagi|bisa dipecat|terancam dipecat|adalah pemecatan)", re.I)
 # explainer formulas that are never a report of an act, whatever verb they contain
 PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelanggaran dan sanksi|aturan .{0,20}di pemilu:)", re.I)
 # "jika melanggar", "agar tak melanggar", "yang sering langgar": a violation that is threatened or
@@ -66,6 +70,8 @@ PILKADA_KATA = re.compile(r"(pilkada|pilbup|pilwal|pilgub|paslon|cabup|cagub|cal
 TERJADI = re.compile(r"(dilaporkan|melaporkan|laporkan|diperiksa|dipanggil|terbukti|disanksi|dijatuhi|"
     # the verb, not the noun: "ASN langgar netralitas" reports an act, "cegah pelanggaran" does not
     r"\blanggar\b|melanggar|sesalkan|menyesalkan|terindikasi|"
+    # the executive's own acts, which are the mechanism itself even inside a quoted warning
+    r"\blantik\b|melantik|memutasi|\bmutasi\b|rotasi|mencopot|non-?job|"
     r"dicopot|dimutasi|diberhentikan|ditegur|teguran|direkomendasikan|ditetapkan|diduga|dugaan)", re.I)
 
 
@@ -317,8 +323,10 @@ PROV_POLA = [
     ("Nusa Tenggara Barat", r"nusa tenggara barat|ntb"), ("Nusa Tenggara Timur", r"nusa tenggara timur|ntt"),
     ("Jawa Barat", r"jawa barat|jabar"), ("Jawa Tengah", r"jawa tengah|jateng"), ("Jawa Timur", r"jawa timur|jatim"),
     ("Maluku Utara", r"maluku utara|malut"),
-    ("Papua Barat Daya", r"papua barat daya"), ("Papua Pegunungan", r"papua pegunungan"),
+    # most specific first: "Papua Barat Daya" before "Papua Barat" before plain "Papua"
+    ("Papua Barat Daya", r"papua barat daya|\bpbd\b"), ("Papua Pegunungan", r"papua pegunungan"),
     ("Papua Selatan", r"papua selatan"), ("Papua Tengah", r"papua tengah"),
+    ("Papua Barat", r"papua barat"), ("Papua", r"papua"),
     ("Yogyakarta", r"di yogyakarta|d\.i\. yogyakarta|yogyakarta|jogja"),
     ("Aceh", r"\baceh\b"), ("Banten", r"\bbanten\b"), ("Bengkulu", r"\bbengkulu\b"),
     ("Gorontalo", r"\bgorontalo\b"), ("Jambi", r"\bjambi\b"), ("Lampung", r"\blampung\b"),
