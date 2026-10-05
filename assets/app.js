@@ -316,7 +316,17 @@
   // repeatedly along one diagonal to build the side wall, then the top face is laid over it
   function gambarBentuk(idx, name, c) {
     var sv = $("#fokus-bentuk");
-    if (idx == null || !D.pathD[idx]) { sv.innerHTML = ""; sv.setAttribute("viewBox", "0 0 100 100"); return; }
+    if (idx == null || !D.pathD[idx]) {
+      // some provinces have no shape in the base map at all (Kepulauan Riau is small islands and
+      // was never drawn); say so rather than leaving a blank where a map is expected
+      sv.innerHTML = ""; sv.setAttribute("viewBox", "0 0 100 100");
+      sv.removeAttribute("aria-label");
+      var ket = $("#fokus-tanpa-bentuk");
+      if (ket) { ket.hidden = false; ket.textContent = "Peta dasar yang kami pakai tidak menggambar " +
+        name + ", jadi bentuknya tidak bisa ditampilkan. Catatannya tetap lengkap di sebelah."; }
+      return;
+    }
+    var ket0 = $("#fokus-tanpa-bentuk"); if (ket0) ket0.hidden = true;
     sv.setAttribute("viewBox", "0 0 1000 420");
     sv.setAttribute("aria-label", "Bentuk wilayah " + name + ", dengan titik di kab/kota yang disebut");
     var d = D.pathD[idx];
@@ -462,7 +472,9 @@
     var st = stats(), p = D.periode.filter(function (x) { return x.periode === state.periode; })[0] || {};
     var names = Object.keys(st).sort(function (a, b) {
       if (a === NASIONAL) return 1; if (b === NASIONAL) return -1;
-      return (st[b].ins + st[b].kas) - (st[a].ins + st[a].kas) || a.localeCompare(b);
+      // sort by what the row actually shows; sorting on the curated layer alone buried provinces
+      // whose record is entirely automatic (Kepulauan Riau has 61 of them and would rank as zero)
+      return (st[b].media + st[b].kas) - (st[a].media + st[a].kas) || a.localeCompare(b);
     });
     if (!names.length) {
       $("#pnl").innerHTML = '<div class="pnl-hd"><h3>' + esc(state.periode) + "</h3></div>" +

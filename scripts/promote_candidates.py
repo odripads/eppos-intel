@@ -157,7 +157,36 @@ ALIAS_TEMPAT = {
     "surabaya": "Kota Surabaya", "malang": "Kota Malang", "kediri": "Kota Kediri",
     "madiun": "Kota Madiun", "pasuruan": "Kota Pasuruan", "probolinggo": "Kota Probolinggo",
     "mojokerto": "Kota Mojokerto", "blitar": "Kota Blitar", "banda": "Kota Banda Aceh",
+    # provinsi yang belum punya satu catatan pun: singkatan setempat yang tidak ada di gazetteer
+    "polman": "Polewali Mandar", "mateng": "Mamuju Tengah", "pangkalpinang": "Pangkal Pinang",
+    "babel": "Bangka", "timika": "Mimika", "wamena": "Jayawijaya", "agats": "Asmat",
+    "tanjungselor": "Bulungan", "manokwari": "Manokwari",
 }
+
+# A province named in the headline is weaker evidence than a kab/kota but it is still the story's own
+# words, so it outranks the outlet's home address. Shorthand included: headlines rarely spell it out.
+PROV_POLA = [
+    ("Sulawesi Barat", r"sulawesi barat|sulbar"), ("Sulawesi Selatan", r"sulawesi selatan|sulsel"),
+    ("Sulawesi Tengah", r"sulawesi tengah|sulteng"), ("Sulawesi Tenggara", r"sulawesi tenggara|sultra"),
+    ("Sulawesi Utara", r"sulawesi utara|sulut"),
+    ("Kepulauan Bangka Belitung", r"bangka belitung|babel(?:itung)?"),
+    ("Kepulauan Riau", r"kepulauan riau|kepri"),
+    ("Kalimantan Barat", r"kalimantan barat|kalbar"), ("Kalimantan Tengah", r"kalimantan tengah|kalteng"),
+    ("Kalimantan Selatan", r"kalimantan selatan|kalsel"), ("Kalimantan Timur", r"kalimantan timur|kaltim"),
+    ("Kalimantan Utara", r"kalimantan utara|kaltara"),
+    ("Sumatera Barat", r"sumatera barat|sumbar"), ("Sumatera Utara", r"sumatera utara|sumut"),
+    ("Sumatera Selatan", r"sumatera selatan|sumsel"),
+    ("Nusa Tenggara Barat", r"nusa tenggara barat|ntb"), ("Nusa Tenggara Timur", r"nusa tenggara timur|ntt"),
+    ("Jawa Barat", r"jawa barat|jabar"), ("Jawa Tengah", r"jawa tengah|jateng"), ("Jawa Timur", r"jawa timur|jatim"),
+    ("Maluku Utara", r"maluku utara|malut"),
+    ("Papua Barat Daya", r"papua barat daya"), ("Papua Pegunungan", r"papua pegunungan"),
+    ("Papua Selatan", r"papua selatan"), ("Papua Tengah", r"papua tengah"),
+    ("Yogyakarta", r"di yogyakarta|d\.i\. yogyakarta|yogyakarta|jogja"),
+    ("Aceh", r"\baceh\b"), ("Banten", r"\bbanten\b"), ("Bengkulu", r"\bbengkulu\b"),
+    ("Gorontalo", r"\bgorontalo\b"), ("Jambi", r"\bjambi\b"), ("Lampung", r"\blampung\b"),
+    ("Maluku", r"\bmaluku\b"), ("Riau", r"\briau\b"), ("Bali", r"\bbali\b"),
+]
+PROV_POLA = [(n, re.compile(r"(?<![a-z])(?:" + pat + r")(?![a-z])", re.I)) for n, pat in PROV_POLA]
 
 KAB_PREFIX = re.compile(r"^(kabupaten|kab\.?|kota administrasi|kota adm\.?|kota)\s+", re.I)
 PREFIX = re.compile(r"^(radar|kabar|info|berita|suara|harian|warta|media|tribun|jurnal|koran|portal|lintas|fokus)")
@@ -235,13 +264,26 @@ def main():
                 return r
         return None
 
+    # BPS code -> province. The gazetteer carries the official code on every entry, and its first two
+    # digits ARE the province, so this is a lookup rather than a guess.
+    BPS_PROV = {r["bps"]: r["label"] for r in wd if "provin" in r["type"].lower() and r.get("bps")}
+
     def province_of(r):
+        """Province from the official BPS code; the shape index still comes from the geometry.
+
+        Ray-casting alone cannot answer this. The base map merges provinces that were split off
+        later — Sulawesi Barat sits inside the Sulawesi Selatan shape, Kalimantan Utara inside
+        Kalimantan Timur, and all four 2022 Papua provinces inside their parents — so the geometric
+        answer is always the older, larger parent and the child province reads as empty.
+        """
         x, y = project(r["lon"], r["lat"])
+        pidx = None
         for i, rs in enumerate(prings):
-            if inside(rs, x, y):
-                names = path_names.get(i, [])
-                return (names[0] if names else None), i
-        return None, None
+            if inside(rs, x, y): pidx = i; break
+        kode = (r.get("bps") or "")[:2]
+        if kode in BPS_PROV: return BPS_PROV[kode], pidx
+        names = path_names.get(pidx, []) if pidx is not None else []
+        return (names[0] if names else None), pidx
 
     prov_centroid = {norm(r["label"]): r for r in wd if "provin" in r["type"].lower()}
     PROV_ALIAS = {"di yogyakarta": "yogyakarta", "dki jakarta": "jakarta"}
@@ -263,7 +305,15 @@ def main():
             p = place_from_domain(k.get("outlet"))
             if p: dasar = "nama kota di domain outlet"
         prov, pidx = (province_of(p) if p else (None, None))
+        # the map's geometry predates the 2022 split, so the ray-cast answer is overridden for the
+        # kab/kota that changed province; without this, Sorong keeps coming back as Papua Barat
         if not p:
+            pj = next((nm for nm, rx in PROV_POLA if rx.search(k["judul"] or "")), None)
+            if pj:
+                prov, dasar = pj, "nama provinsi di judul"
+                pr = prov_centroid.get(PROV_ALIAS.get(norm(pj), norm(pj)))
+                if pr: _, pidx = province_of(pr)
+        if not p and not prov:
             hp = OUTLET_PROV.get(k.get("outlet"))
             if not hp and k.get("outlet"):
                 city = outlet_city(k["outlet"])

@@ -97,11 +97,36 @@ def norm(s):
     return re.sub(r"\s+", " ", s).strip()
 
 PROV_ALIAS = {"di yogyakarta": "yogyakarta", "dki jakarta": "jakarta"}   # Wikidata labels the provinces plainly
+# The map's province paths are labelled with Wikidata's plain names. A record spelled any other way
+# simply never matches a shape and disappears from the map while still counting in the totals, so the
+# province field is rewritten to the map's own spelling before anything is written out.
+PROV_KANONIK = {
+    "di yogyakarta": "Yogyakarta", "d.i. yogyakarta": "Yogyakarta", "diy": "Yogyakarta",
+    "daerah istimewa yogyakarta": "Yogyakarta", "jogjakarta": "Yogyakarta", "yogyakarta": "Yogyakarta",
+    "dki jakarta": "Jakarta", "dki": "Jakarta", "jakarta": "Jakarta",
+    "ntt": "Nusa Tenggara Timur", "nusa tenggara timur": "Nusa Tenggara Timur",
+    "ntb": "Nusa Tenggara Barat", "nusa tenggara barat": "Nusa Tenggara Barat",
+    "kepri": "Kepulauan Riau", "kepulauan riau": "Kepulauan Riau",
+    "babel": "Kepulauan Bangka Belitung", "bangka belitung": "Kepulauan Bangka Belitung",
+    "kepulauan bangka belitung": "Kepulauan Bangka Belitung",
+}
+
+def kanonik_provinsi(rows):
+    """Rewrite provinsi to the spelling the map uses. Returns the changes made, for the build log."""
+    ubah = []
+    for r in rows:
+        v = r.get("provinsi")
+        if not v: continue
+        baru = PROV_KANONIK.get(norm(v))
+        if baru and baru != v:
+            ubah.append((v, baru)); r["provinsi"] = baru
+    return ubah
+
 # Hand-filled centroids for places Wikidata does not type as kab/kota (Jakarta's administrative cities). Source recorded per entry.
 # hand-entry spelling variants: the sheet is filled by people, and "Jaya Pura" is the same city
 EJAAN_VARIAN = {"jaya pura": "jayapura", "bau bau": "bau-bau", "pare pare": "pare-pare",
                 "ambon": "ambon", "nunukan": "nunukan", "banjarmasin": "banjarmasin"}
-MANUAL = {("dki jakarta", "jakarta utara"): {"lat": -6.1385, "lon": 106.8637, "sumber": "manual: id.wikipedia.org/wiki/Jakarta_Utara (koordinat infobox)"}}
+MANUAL = {("jakarta", "jakarta utara"): {"lat": -6.1385, "lon": 106.8637, "sumber": "manual: id.wikipedia.org/wiki/Jakarta_Utara (koordinat infobox)"}}
 KAB_PREFIX = re.compile(r"^(kabupaten|kab\.?|kota administrasi|kota adm\.?|kota)\s+", re.I)
 
 def load_wikidata(path):
@@ -242,6 +267,7 @@ def main():
     insiden = [{c: r.get(c) for c in INSIDEN_COLS} for r in ins]
     kasus = [{c: r.get(c) for c in KASUS_COLS} for r in kas]
     ditambah = merge_inan(insiden, kasus, periode)
+    ubah_prov = kanonik_provinsi(insiden) + kanonik_provinsi(kasus)
     koordinat, gagal = build_koordinat(insiden, kasus, a.wikidata)
     DATA.mkdir(exist_ok=True)
     def dump(name, obj): (DATA / name).write_text(json.dumps(obj, ensure_ascii=False, indent=1) + "\n")
@@ -257,6 +283,9 @@ def main():
                 "proyeksi": {"lonMin": LON_MIN, "lonMax": LON_MAX, "latMin": LAT_MIN, "latMax": LAT_MAX, "viewBox": "0 0 1000 420"}}
     dump("manifest.json", manifest)
     print(json.dumps(manifest, indent=1, ensure_ascii=False))
+    import collections as _c
+    for (lama, baru), n in _c.Counter(ubah_prov).items():
+        print(f"  EJAAN PROVINSI  {lama!r} -> {baru!r}  ({n} baris)")
     for p in p1 + p2: print("  TOLAK", p)
     for g in gagal: print("  KOORDINAT", g)
 

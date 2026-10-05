@@ -62,42 +62,14 @@
   "alasan": null,
   "sumber": "wikidata:Q8035 (Rejang Lebong)"
  },
- "DI Yogyakarta|Kabupaten Bantul": {
-  "lat": -7.884611,
-  "lon": 110.334111,
-  "tingkat": "kab_kota",
-  "alasan": null,
-  "sumber": "wikidata:Q11477 (Bantul)"
- },
- "DI Yogyakarta|Kabupaten Sleman": {
-  "lat": -7.68167,
-  "lon": 110.32333,
-  "tingkat": "kab_kota",
-  "alasan": null,
-  "sumber": "wikidata:Q11480 (Sleman)"
- },
- "DI Yogyakarta|Kota Yogyakarta": {
-  "lat": -7.800456766,
-  "lon": 110.391280229,
-  "tingkat": "kab_kota",
-  "alasan": null,
-  "sumber": "wikidata:Q7568 (Yogyakarta)"
- },
- "DI Yogyakarta|Kulon Progo": {
-  "lat": -7.8596,
-  "lon": 110.1579,
-  "tingkat": "kab_kota",
-  "alasan": null,
-  "sumber": "wikidata:Q11479 (Kulon Progo)"
- },
- "DKI Jakarta|DKI Jakarta": {
+ "Jakarta|DKI Jakarta": {
   "lat": -6.175277777,
   "lon": 106.826944444,
   "tingkat": "provinsi",
   "alasan": "kab_kota sama dengan provinsi",
   "sumber": "wikidata:Q3630 (Jakarta)"
  },
- "DKI Jakarta|Jakarta Utara": {
+ "Jakarta|Jakarta Utara": {
   "lat": -6.1385,
   "lon": 106.8637,
   "tingkat": "kab_kota",
@@ -475,19 +447,19 @@
   "alasan": null,
   "sumber": "wikidata:Q19148 (Halmahera Selatan)"
  },
- "NTT|Kabupaten Belu": {
-  "lat": -9.1,
-  "lon": 124.9,
-  "tingkat": "kab_kota",
-  "alasan": null,
-  "sumber": "wikidata:Q14133 (Belu)"
- },
  "Nusa Tenggara Timur|Flores Timur": {
   "lat": -8.341208303,
   "lon": 122.988115175,
   "tingkat": "kab_kota",
   "alasan": null,
   "sumber": "wikidata:Q14136 (Flores Timur)"
+ },
+ "Nusa Tenggara Timur|Kabupaten Belu": {
+  "lat": -9.1,
+  "lon": 124.9,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q14133 (Belu)"
  },
  "Nusa Tenggara Timur|Kota Kupang": {
   "lat": -10.163333333,
@@ -600,5 +572,33 @@
   "tingkat": "kab_kota",
   "alasan": null,
   "sumber": "wikidata:Q5979 (Pematang Siantar)"
+ },
+ "Yogyakarta|Kabupaten Bantul": {
+  "lat": -7.884611,
+  "lon": 110.334111,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11477 (Bantul)"
+ },
+ "Yogyakarta|Kabupaten Sleman": {
+  "lat": -7.68167,
+  "lon": 110.32333,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11480 (Sleman)"
+ },
+ "Yogyakarta|Kota Yogyakarta": {
+  "lat": -7.801388888,
+  "lon": 110.364444444,
+  "tingkat": "provinsi",
+  "alasan": "kab_kota sama dengan provinsi",
+  "sumber": "wikidata:Q3741 (Yogyakarta)"
+ },
+ "Yogyakarta|Kulon Progo": {
+  "lat": -7.8596,
+  "lon": 110.1579,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q11479 (Kulon Progo)"
  }
 }
