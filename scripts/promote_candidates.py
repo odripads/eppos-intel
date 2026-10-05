@@ -350,6 +350,13 @@ def main():
         if cid.startswith("wp|"):
             parts = cid.split("|")
             if len(parts) > 1: usaha[parts[1]] = usaha.get(parts[1], 0) + 1
+    runs = state.get("runs", [])
+    (DATA / "kemajuan.json").write_text(json.dumps({
+        "sel_selesai": len(state.get("done", [])),
+        "run_terakhir": (runs[-1].get("tanggal") if runs else None),
+        "catatan": "Ringkasan kemajuan untuk strip di situs; crawl_state.json penuh tidak perlu diunduh pengunjung."
+    }, ensure_ascii=False, indent=1) + "\n")
+
     (DATA / "usaha_pencarian.json").write_text(json.dumps(usaha, ensure_ascii=False, indent=1) + "\n")
 
     (DATA / "otomatis_diluar_lingkup.json").write_text(json.dumps(ditolak, ensure_ascii=False, indent=1) + "\n")

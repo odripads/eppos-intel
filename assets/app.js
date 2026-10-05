@@ -323,12 +323,12 @@
   /* retrieval progress. The queue is accepted in bulk under a standing authorisation, so this reports
      what is on the map and how it is sourced — not a backlog waiting on anyone. */
   function pipeline() {
-    fetch("data/crawl_state.json").then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
+    fetch("data/kemajuan.json").then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })
       .then(function (cs) {
         var oto = (D.otomatis || []);
         if (!oto.length && !cs) return;
-        var done = cs ? (cs.n_done != null ? cs.n_done : (cs.done ? cs.done.length : 0)) : 0;
-        var last = cs && cs.runs && cs.runs.length ? cs.runs[cs.runs.length - 1].tanggal : null;
+        var done = cs ? (cs.sel_selesai != null ? cs.sel_selesai : (cs.n_done != null ? cs.n_done : 0)) : 0;
+        var last = cs ? (cs.run_terakhir || (cs.runs && cs.runs.length ? cs.runs[cs.runs.length - 1].tanggal : null)) : null;
         var dua = oto.filter(function (r) { return r.status_verifikasi === "dua sumber"; }).length;
         $("#pipeline").hidden = false;
         $("#pipeline").innerHTML =

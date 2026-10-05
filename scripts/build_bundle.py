@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parent.parent
 html = (ROOT / "index.html").read_text()
 css = (ROOT / "assets/app.css").read_text()
 js = (ROOT / "assets/app.js").read_text()
-data = {n: json.loads((ROOT / "data" / f"{n}.json").read_text()) for n in ("manifest", "periode", "insiden", "kasus_resmi", "koordinat", "provinsi_path", "insiden_otomatis", "crawl_state", "usaha_pencarian")}
+data = {n: json.loads((ROOT / "data" / f"{n}.json").read_text()) for n in ("manifest", "periode", "insiden", "kasus_resmi", "koordinat", "provinsi_path", "insiden_otomatis", "kemajuan", "usaha_pencarian")}
 
 # the single-file bundle carries only what the page renders. The full rows, including the query that
 # found each one, stay in data/*.json in the repo — the bundle is a viewer, not the dataset release.
@@ -17,16 +17,15 @@ def trim_auto(rows):
             "judul_sumber_1", "judul_status", "diisi_oleh", "tanggal_isi", "gelombang_pilkada", "lokasi_perkiraan")
     return [{k: r.get(k) for k in keep if r.get(k) is not None} for r in rows]
 data["insiden_otomatis"] = trim_auto(data["insiden_otomatis"])
-data["crawl_state"] = {"done": [], "runs": data["crawl_state"].get("runs", [])[-3:],
-                       "n_done": len(data["crawl_state"].get("done", []))}
+
 def b64(p): return "data:image/png;base64," + base64.b64encode((ROOT / p).read_bytes()).decode()
 logo, logo_inv = b64("assets/logo.png"), b64("assets/logo-inverse.png")
 css = css.replace('url("logo-inverse.png")', f'url("{logo_inv}")').replace('url("logo.png")', f'url("{logo}")')
 # fetch() -> inlined constant
 js = re.sub(r'fetch\("data/manifest\.json"\)\.then\(function \(r\) \{ return r\.json\(\); \}\)',
             'Promise.resolve(window.EPPOS_DATA.manifest)', js)
-js = js.replace('fetch("data/crawl_state.json").then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })',
-                'Promise.resolve(window.EPPOS_DATA.crawl_state)')
+js = js.replace('fetch("data/kemajuan.json").then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })',
+                'Promise.resolve(window.EPPOS_DATA.kemajuan)')
 js = re.sub(r'return Promise\.all\(\["periode", "insiden", "kasus_resmi", "koordinat", "provinsi_path", "insiden_otomatis", "usaha_pencarian"\]\.map\(function \(n\) \{\s*return fetch\("data/" \+ n \+ "\.json"\)\.then\(function \(r\) \{ return r\.json\(\); \}\);\s*\}\)\);',
             'return Promise.resolve(["periode","insiden","kasus_resmi","koordinat","provinsi_path","insiden_otomatis","usaha_pencarian"].map(function(n){return window.EPPOS_DATA[n];}));', js)
 body = re.search(r"<body>(.*)</body>", html, re.S).group(1)

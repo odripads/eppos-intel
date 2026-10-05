@@ -237,3 +237,10 @@ Sekarang:
 
 Klaim reproduksibilitas tidak berkurang: `crawl_state.json` sudah memuat setiap sel yang dijalankan,
 dan definisi grid ada di skripnya. Yang dibuang hanyalah prosa yang mengulang informasi itu.
+
+### Kemajuan penelusuran di situs
+
+Strip kemajuan dulu mengambil `data/crawl_state.json` — **17 MB diunduh setiap pengunjung** hanya untuk
+satu angka. Sekarang `promote_candidates.py` menulis `data/kemajuan.json` (±170 byte) berisi jumlah sel
+dan tanggal run terakhir, dan halaman membaca itu. `crawl_state.json` tetap di repo sebagai rekaman
+prosedur, tetapi tidak lagi diunduh untuk ditampilkan.

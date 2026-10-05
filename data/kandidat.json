@@ -35540,5 +35540,53 @@
   "ditemukan_pada": "2026-10-06",
   "status_tinjau": "diterima otomatis",
   "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-02053",
+  "judul": "Al Muktabar Dipanggil KASN?, Kasus Dugaan Pelanggaran Netralitas Pj. Gubernur Banten Terus Bergulir",
+  "outlet": "tangerangpos.id",
+  "tanggal_terbit": "2023-05-31",
+  "url": "https://tangerangpos.id/al-muktabar-dipanggil-kasn-kasus-dugaan-pelanggaran-netralitas-pj-gubernur-banten-terus-bergulir/",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "kontrol-2024",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "tangerangpos.id search='aparatur tidak netral' 2023-05-27..2023-12-27",
+  "ditemukan_pada": "2026-10-06",
+  "status_tinjau": null,
+  "catatan_tinjau": null
+ },
+ {
+  "kandidat_id": "KAN-02054",
+  "judul": "KASN Masih Proses Laporan Dugaan Pelanggaran Pj. Gubernur Banten Terkait Netralitas ASN",
+  "outlet": "tangerangpos.id",
+  "tanggal_terbit": "2023-08-09",
+  "url": "https://tangerangpos.id/kasn-masih-proses-laporan-dugaan-pelanggaran-pj-gubernur-banten-terkait-netralitas-asn/",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "kontrol-2024",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "tangerangpos.id search='netralitas ASN' 2023-05-27..2023-12-27",
+  "ditemukan_pada": "2026-10-06",
+  "status_tinjau": null,
+  "catatan_tinjau": null
+ },
+ {
+  "kandidat_id": "KAN-02055",
+  "judul": "Weekend, Kades-Lurah se-Kabupaten Tuban Dikumpulkan di Pendapa, Ada Apa?",
+  "outlet": "tubannews.id",
+  "tanggal_terbit": "2023-12-18",
+  "url": "https://tubannews.id/weekend-kades-lurah-se-kabupaten-tuban-dikumpulkan-di-pendapa-ada-apa/",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "kontrol-2024",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "tubannews.id search='kepala desa dikumpulkan' 2023-05-27..2023-12-27",
+  "ditemukan_pada": "2026-10-06",
+  "status_tinjau": null,
+  "catatan_tinjau": null
  }
 ]
