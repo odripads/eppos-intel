@@ -188,6 +188,43 @@ def _merge_save(path, rows):
     return len(out)
 
 
+def _seed_log(D):
+    """Continue log numbering across runs now that the in-memory list starts empty."""
+    f = D / "log_pencarian_lengkap.jsonl"
+    try: return sum(1 for _ in open(f))
+    except Exception: return 0
+
+
+def _tulis_log(path_json, logs):
+    """Append per-query rows to a local JSONL and keep only a per-day summary in git.
+    The reproducible per-cell record is data/crawl_state.json ('window|outlet|query'); the verbose
+    log hit 53 MB and would have broken pushes at GitHub's 100 MB limit, silently killing the
+    daily routine's commits."""
+    import collections, json as _j
+    D = path_json.parent
+    full = D / "log_pencarian_lengkap.jsonl"
+    with open(full, "a") as f:
+        for r in logs: f.write(_j.dumps(r, ensure_ascii=False) + "\n")
+    ring = collections.defaultdict(lambda: {"sel": 0, "hasil_masuk": 0})
+    try:
+        for line in open(full):
+            x = _j.loads(line)
+            k = (x.get("tanggal_pencarian"), x.get("alat"), x.get("dijalankan_oleh"))
+            ring[k]["sel"] += 1
+            c = x.get("catatan") or ""
+            if "masuk antrean" in c:
+                try: ring[k]["hasil_masuk"] += int(c.split(",")[1].strip().split()[0])
+                except Exception: pass
+    except Exception:
+        pass
+    path_json.write_text(_j.dumps({
+        "catatan": ("Ringkasan per hari per alat. Catatan per-kueri ada di data/crawl_state.json "
+                    "(tiap sel = 'jendela|outlet|kueri'); rincian verbose lokal di "
+                    "data/log_pencarian_lengkap.jsonl, tidak di-commit karena ukurannya."),
+        "ringkasan": [{"tanggal_pencarian": k[0], "alat": k[1], "dijalankan_oleh": k[2], **v}
+                      for k, v in sorted(ring.items())]}, ensure_ascii=False, indent=1) + "\n")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cells", type=int, default=25, help="grid cells per run (Google News membatasi laju; 25 aman)")
@@ -197,7 +234,7 @@ def main():
     insiden = load("insiden.json", [])
     state = load("crawl_state.json", {"done": [], "runs": []})
     kandidat = load("kandidat.json", [])
-    logs = load("log_pencarian.json", [])
+    logs = []
     seen = known_urls() | {norm_url(k.get("url")) for k in kandidat if k.get("url")}
     seen_titles = {re.sub(r"\W+", "", (k.get("judul") or "").lower())[:70] for k in kandidat}
 
@@ -210,7 +247,7 @@ def main():
     today = dt.date.today().isoformat()
     gagal = 0
     nextn = max([int(k["kandidat_id"].split("-")[-1]) for k in kandidat], default=0)
-    nextlog = max([int(l["log_id"].split("-")[-1]) for l in logs], default=0)
+    nextlog = _seed_log(DATA)
     baru = 0
 
     for cid, wave, prov, mek, qterm in todo:
@@ -257,7 +294,7 @@ def main():
         if len(state["done"]) % 25 == 0:
             _merge_save(DATA / "kandidat.json", kandidat)
             (DATA / "crawl_state.json").write_text(json.dumps(state, ensure_ascii=False, indent=1) + "\n")
-            (DATA / "log_pencarian.json").write_text(json.dumps(logs, ensure_ascii=False, indent=1) + "\n")
+            _tulis_log(DATA / "log_pencarian.json", logs); logs = []
         print(f"  {wave} {(prov or '(nasional)')[:18]:18s} {mek[:24]:24s} {len(items):2d} hasil → {kept} kandidat", file=sys.stderr)
         time.sleep(12)
 
@@ -266,7 +303,7 @@ def main():
         print(f"[dry-run] {baru} kandidat akan ditambahkan", file=sys.stderr); return
     _merge_save(DATA / "kandidat.json", kandidat)
     (DATA / "crawl_state.json").write_text(json.dumps(state, ensure_ascii=False, indent=1) + "\n")
-    (DATA / "log_pencarian.json").write_text(json.dumps(logs, ensure_ascii=False, indent=1) + "\n")
+    _tulis_log(DATA / "log_pencarian.json", logs); logs = []
     belum = len([k for k in kandidat if not k.get("status_tinjau")])
     print(f"\n{baru} kandidat baru · {belum} menunggu tinjauan · {len(state['done'])}/{len(grid) + len(state['done'])} sel grid selesai", file=sys.stderr)
 

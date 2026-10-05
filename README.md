@@ -220,3 +220,20 @@ Cara memastikan jadwalnya benar-benar jalan (jangan diasumsikan):
 launchctl list | grep eppos.rutin   # kolom tengah = kode keluar terakhir; 0 artinya sukses
 tail -5 ~/eppos-intel/data/rutin.log
 ```
+
+### Catatan penelusuran dan batas ukuran GitHub
+
+`data/log_pencarian.json` tadinya memuat satu baris per kueri dan membengkak ke **53 MB** setelah
+179.584 kueri. GitHub memperingatkan di 50 MB dan menolak di 100 MB — kalau dibiarkan, commit dari
+rutin harian akan gagal diam-diam.
+
+Sekarang:
+
+| berkas | isi | di git? |
+|---|---|---|
+| `data/crawl_state.json` | tiap sel sebagai `jendela\|outlet\|kueri` — **rekaman prosedur yang bisa diulang** | ya (17 MB) |
+| `data/log_pencarian.json` | ringkasan per hari per alat | ya (1,4 KB) |
+| `data/log_pencarian_lengkap.jsonl` | rincian per kueri, append-only | tidak (50 MB) |
+
+Klaim reproduksibilitas tidak berkurang: `crawl_state.json` sudah memuat setiap sel yang dijalankan,
+dan definisi grid ada di skripnya. Yang dibuang hanyalah prosa yang mengulang informasi itu.
