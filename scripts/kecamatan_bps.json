@@ -1,7 +1,7 @@
 {
 "_sumber": "edwardsamuel/Wilayah-Administratif-Indonesia, csv/districts.csv + csv/regencies.csv (data BPS Master File Desa, diambil 11 Jan 2018)",
 "_lisensi": "Open Database License (ODbL) v1.0; sumber data: Badan Pusat Statistik (BPS) Indonesia",
-"_catatan": "Kabupaten tiap kecamatan ditautkan ke gazetteer lewat NAMA kabupaten BPS, bukan kode: gazetteer memakai penomoran Kemendagri dan urutan kabupaten di beberapa provinsi berbeda dari BPS (Aceh Timur = 1105 di BPS, 11.03 di Kemendagri). Tautan ditolak bila provinsinya tidak sama. Hanya nama kecamatan yang unik secara nasional, minimal 5 huruf, dan bukan nama kab/kota.",
+"_catatan": "Kabupaten tiap kecamatan ditautkan ke gazetteer lewat NAMA kabupaten BPS, bukan kode: gazetteer memakai penomoran Kemendagri dan urutan kabupaten di beberapa provinsi berbeda dari BPS (Aceh Timur = 1105 di BPS, 11.03 di Kemendagri). Tautan ditolak bila provinsinya tidak sama, kecuali di keluarga Papua (kode 91-96): kode 2018 mendahului pemekaran 2022, jadi Raja Ampat ber-kode Papua Barat padahal kini Papua Barat Daya. Hanya nama kecamatan yang unik secara nasional, minimal 5 huruf, dan bukan nama kab/kota.",
 "kecamatan": [
 {
 "label": "Teupah Selatan",
@@ -25522,6 +25522,36 @@
 "kab_label": "Penajam Paser Utara"
 },
 {
+"label": "Laham",
+"bps": "6411010",
+"kab_qid": "Q12488347",
+"kab_label": "Mahakam Ulu"
+},
+{
+"label": "Long Hubung",
+"bps": "6411020",
+"kab_qid": "Q12488347",
+"kab_label": "Mahakam Ulu"
+},
+{
+"label": "Long Bagun",
+"bps": "6411030",
+"kab_qid": "Q12488347",
+"kab_label": "Mahakam Ulu"
+},
+{
+"label": "Long Pahangai",
+"bps": "6411040",
+"kab_qid": "Q12488347",
+"kab_label": "Mahakam Ulu"
+},
+{
+"label": "Long Apari",
+"bps": "6411050",
+"kab_qid": "Q12488347",
+"kab_label": "Mahakam Ulu"
+},
+{
 "label": "Balikpapan Selatan",
 "bps": "6471010",
 "kab_qid": "Q14492",
@@ -26540,6 +26570,66 @@
 "bps": "7107060",
 "kab_qid": "Q15837",
 "kab_label": "Bolaang Mongondow Utara"
+},
+{
+"label": "Biaro",
+"bps": "7108010",
+"kab_qid": "Q15840",
+"kab_label": "Kepulauan Siau Tagulandang Biaro"
+},
+{
+"label": "Tagulandang Selatan",
+"bps": "7108020",
+"kab_qid": "Q15840",
+"kab_label": "Kepulauan Siau Tagulandang Biaro"
+},
+{
+"label": "Tagulandang",
+"bps": "7108030",
+"kab_qid": "Q15840",
+"kab_label": "Kepulauan Siau Tagulandang Biaro"
+},
+{
+"label": "Tagulandang Utara",
+"bps": "7108040",
+"kab_qid": "Q15840",
+"kab_label": "Kepulauan Siau Tagulandang Biaro"
+},
+{
+"label": "Siau Barat Selatan",
+"bps": "7108050",
+"kab_qid": "Q15840",
+"kab_label": "Kepulauan Siau Tagulandang Biaro"
+},
+{
+"label": "Siau Timur Selatan",
+"bps": "7108060",
+"kab_qid": "Q15840",
+"kab_label": "Kepulauan Siau Tagulandang Biaro"
+},
+{
+"label": "Siau Barat",
+"bps": "7108070",
+"kab_qid": "Q15840",
+"kab_label": "Kepulauan Siau Tagulandang Biaro"
+},
+{
+"label": "Siau Tengah",
+"bps": "7108080",
+"kab_qid": "Q15840",
+"kab_label": "Kepulauan Siau Tagulandang Biaro"
+},
+{
+"label": "Siau Timur",
+"bps": "7108090",
+"kab_qid": "Q15840",
+"kab_label": "Kepulauan Siau Tagulandang Biaro"
+},
+{
+"label": "Siau Barat Utara",
+"bps": "7108100",
+"kab_qid": "Q15840",
+"kab_label": "Kepulauan Siau Tagulandang Biaro"
 },
 {
 "label": "Ratatotok",
@@ -31306,6 +31396,72 @@
 "kab_label": "Mamuju"
 },
 {
+"label": "Sarudu",
+"bps": "7605010",
+"kab_qid": "Q15350",
+"kab_label": "Pasangkayu"
+},
+{
+"label": "Dapurang",
+"bps": "7605011",
+"kab_qid": "Q15350",
+"kab_label": "Pasangkayu"
+},
+{
+"label": "Duripoku",
+"bps": "7605012",
+"kab_qid": "Q15350",
+"kab_label": "Pasangkayu"
+},
+{
+"label": "Baras",
+"bps": "7605020",
+"kab_qid": "Q15350",
+"kab_label": "Pasangkayu"
+},
+{
+"label": "Bulu Taba",
+"bps": "7605021",
+"kab_qid": "Q15350",
+"kab_label": "Pasangkayu"
+},
+{
+"label": "Lariang",
+"bps": "7605022",
+"kab_qid": "Q15350",
+"kab_label": "Pasangkayu"
+},
+{
+"label": "Tikke Raya",
+"bps": "7605031",
+"kab_qid": "Q15350",
+"kab_label": "Pasangkayu"
+},
+{
+"label": "Pedongga",
+"bps": "7605032",
+"kab_qid": "Q15350",
+"kab_label": "Pasangkayu"
+},
+{
+"label": "Bambalamotu",
+"bps": "7605040",
+"kab_qid": "Q15350",
+"kab_label": "Pasangkayu"
+},
+{
+"label": "Bambaira",
+"bps": "7605041",
+"kab_qid": "Q15350",
+"kab_label": "Pasangkayu"
+},
+{
+"label": "Sarjo",
+"bps": "7605042",
+"kab_qid": "Q15350",
+"kab_label": "Pasangkayu"
+},
+{
 "label": "Pangale",
 "bps": "7606010",
 "kab_qid": "Q12488349",
@@ -32656,6 +32812,1584 @@
 "kab_label": "Tidore Kepulauan"
 },
 {
+"label": "Fakfak Timur",
+"bps": "9101050",
+"kab_qid": "Q26727",
+"kab_label": "Fakfak"
+},
+{
+"label": "Fakfak Timur Tengah",
+"bps": "9101052",
+"kab_qid": "Q26727",
+"kab_label": "Fakfak"
+},
+{
+"label": "Fakfak Tengah",
+"bps": "9101061",
+"kab_qid": "Q26727",
+"kab_label": "Fakfak"
+},
+{
+"label": "Pariwari",
+"bps": "9101062",
+"kab_qid": "Q26727",
+"kab_label": "Fakfak"
+},
+{
+"label": "Fakfak Barat",
+"bps": "9101070",
+"kab_qid": "Q26727",
+"kab_label": "Fakfak"
+},
+{
+"label": "Wartutin",
+"bps": "9101071",
+"kab_qid": "Q26727",
+"kab_label": "Fakfak"
+},
+{
+"label": "Kokas",
+"bps": "9101080",
+"kab_qid": "Q26727",
+"kab_label": "Fakfak"
+},
+{
+"label": "Teluk Patipi",
+"bps": "9101081",
+"kab_qid": "Q26727",
+"kab_label": "Fakfak"
+},
+{
+"label": "Kramongmongga",
+"bps": "9101082",
+"kab_qid": "Q26727",
+"kab_label": "Fakfak"
+},
+{
+"label": "Bomberay",
+"bps": "9101083",
+"kab_qid": "Q26727",
+"kab_label": "Fakfak"
+},
+{
+"label": "Arguni",
+"bps": "9101084",
+"kab_qid": "Q26727",
+"kab_label": "Fakfak"
+},
+{
+"label": "Mbahamdandara",
+"bps": "9101085",
+"kab_qid": "Q26727",
+"kab_label": "Fakfak"
+},
+{
+"label": "Furwagi",
+"bps": "9101086",
+"kab_qid": "Q26727",
+"kab_label": "Fakfak"
+},
+{
+"label": "Kayauni",
+"bps": "9101087",
+"kab_qid": "Q26727",
+"kab_label": "Fakfak"
+},
+{
+"label": "Tomage",
+"bps": "9101088",
+"kab_qid": "Q26727",
+"kab_label": "Fakfak"
+},
+{
+"label": "Buruway",
+"bps": "9102010",
+"kab_qid": "Q26739",
+"kab_label": "Kaimana"
+},
+{
+"label": "Teluk Arguni",
+"bps": "9102020",
+"kab_qid": "Q26739",
+"kab_label": "Kaimana"
+},
+{
+"label": "Teluk Arguni Bawah",
+"bps": "9102021",
+"kab_qid": "Q26739",
+"kab_label": "Kaimana"
+},
+{
+"label": "Kambrau",
+"bps": "9102031",
+"kab_qid": "Q26739",
+"kab_label": "Kaimana"
+},
+{
+"label": "Teluk Etna",
+"bps": "9102040",
+"kab_qid": "Q26739",
+"kab_label": "Kaimana"
+},
+{
+"label": "Yamor",
+"bps": "9102041",
+"kab_qid": "Q26739",
+"kab_label": "Kaimana"
+},
+{
+"label": "Naikere",
+"bps": "9103010",
+"kab_qid": "Q26827",
+"kab_label": "Teluk Wondama"
+},
+{
+"label": "Wondiboy",
+"bps": "9103020",
+"kab_qid": "Q26827",
+"kab_label": "Teluk Wondama"
+},
+{
+"label": "Rasiey",
+"bps": "9103021",
+"kab_qid": "Q26827",
+"kab_label": "Teluk Wondama"
+},
+{
+"label": "Kuri Wamesa",
+"bps": "9103022",
+"kab_qid": "Q26827",
+"kab_label": "Teluk Wondama"
+},
+{
+"label": "Wasior",
+"bps": "9103030",
+"kab_qid": "Q26827",
+"kab_label": "Teluk Wondama"
+},
+{
+"label": "Duairi",
+"bps": "9103040",
+"kab_qid": "Q26827",
+"kab_label": "Teluk Wondama"
+},
+{
+"label": "Nikiwar",
+"bps": "9103051",
+"kab_qid": "Q26827",
+"kab_label": "Teluk Wondama"
+},
+{
+"label": "Roswar",
+"bps": "9103061",
+"kab_qid": "Q26827",
+"kab_label": "Teluk Wondama"
+},
+{
+"label": "Rumberpon",
+"bps": "9103070",
+"kab_qid": "Q26827",
+"kab_label": "Teluk Wondama"
+},
+{
+"label": "Soug Jaya",
+"bps": "9103071",
+"kab_qid": "Q26827",
+"kab_label": "Teluk Wondama"
+},
+{
+"label": "Fafurwar",
+"bps": "9104010",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Sumuri",
+"bps": "9104021",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Aroba",
+"bps": "9104022",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Kaitaro",
+"bps": "9104023",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Bintuni",
+"bps": "9104050",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Manimeri",
+"bps": "9104051",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Tuhiba",
+"bps": "9104052",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Dataran Beimes",
+"bps": "9104053",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Tembuni",
+"bps": "9104060",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Aranday",
+"bps": "9104070",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Kamundan",
+"bps": "9104071",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Weriagar",
+"bps": "9104073",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Moskona Selatan",
+"bps": "9104080",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Meyado",
+"bps": "9104081",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Moskona Barat",
+"bps": "9104082",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Merdey",
+"bps": "9104090",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Biscoop",
+"bps": "9104091",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Masyeta",
+"bps": "9104092",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Moskona Utara",
+"bps": "9104100",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Moskona Timur",
+"bps": "9104101",
+"kab_qid": "Q26819",
+"kab_label": "Teluk Bintuni"
+},
+{
+"label": "Warmare",
+"bps": "9105110",
+"kab_qid": "Q26748",
+"kab_label": "Manokwari"
+},
+{
+"label": "Prafi",
+"bps": "9105120",
+"kab_qid": "Q26748",
+"kab_label": "Manokwari"
+},
+{
+"label": "Manokwari Barat",
+"bps": "9105141",
+"kab_qid": "Q26748",
+"kab_label": "Manokwari"
+},
+{
+"label": "Manokwari Timur",
+"bps": "9105142",
+"kab_qid": "Q26748",
+"kab_label": "Manokwari"
+},
+{
+"label": "Manokwari Utara",
+"bps": "9105143",
+"kab_qid": "Q26748",
+"kab_label": "Manokwari"
+},
+{
+"label": "Tanah Rubu",
+"bps": "9105146",
+"kab_qid": "Q26748",
+"kab_label": "Manokwari"
+},
+{
+"label": "Masni",
+"bps": "9105170",
+"kab_qid": "Q26748",
+"kab_label": "Manokwari"
+},
+{
+"label": "Sidey",
+"bps": "9105171",
+"kab_qid": "Q26748",
+"kab_label": "Manokwari"
+},
+{
+"label": "Inanwatan",
+"bps": "9106010",
+"kab_qid": "Q26802",
+"kab_label": "Sorong Selatan"
+},
+{
+"label": "Metemani",
+"bps": "9106011",
+"kab_qid": "Q26802",
+"kab_label": "Sorong Selatan"
+},
+{
+"label": "Kokoda",
+"bps": "9106020",
+"kab_qid": "Q26802",
+"kab_label": "Sorong Selatan"
+},
+{
+"label": "Kokoda Utara",
+"bps": "9106022",
+"kab_qid": "Q26802",
+"kab_label": "Sorong Selatan"
+},
+{
+"label": "Kais Darat",
+"bps": "9106023",
+"kab_qid": "Q26802",
+"kab_label": "Sorong Selatan"
+},
+{
+"label": "Moswaren",
+"bps": "9106060",
+"kab_qid": "Q26802",
+"kab_label": "Sorong Selatan"
+},
+{
+"label": "Teminabuan",
+"bps": "9106070",
+"kab_qid": "Q26802",
+"kab_label": "Sorong Selatan"
+},
+{
+"label": "Seremuk",
+"bps": "9106071",
+"kab_qid": "Q26802",
+"kab_label": "Sorong Selatan"
+},
+{
+"label": "Wayer",
+"bps": "9106072",
+"kab_qid": "Q26802",
+"kab_label": "Sorong Selatan"
+},
+{
+"label": "Saifi",
+"bps": "9106074",
+"kab_qid": "Q26802",
+"kab_label": "Sorong Selatan"
+},
+{
+"label": "Sawiat",
+"bps": "9106080",
+"kab_qid": "Q26802",
+"kab_label": "Sorong Selatan"
+},
+{
+"label": "Fokour",
+"bps": "9106081",
+"kab_qid": "Q26802",
+"kab_label": "Sorong Selatan"
+},
+{
+"label": "Salkma",
+"bps": "9106082",
+"kab_qid": "Q26802",
+"kab_label": "Sorong Selatan"
+},
+{
+"label": "Klaso",
+"bps": "9107061",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Saengkeduk",
+"bps": "9107062",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Makbon",
+"bps": "9107100",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Klayili",
+"bps": "9107101",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Beraur",
+"bps": "9107110",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Klamono",
+"bps": "9107111",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Klabot",
+"bps": "9107112",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Klawak",
+"bps": "9107113",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Bagun",
+"bps": "9107114",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Klasafet",
+"bps": "9107115",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Malabotom",
+"bps": "9107116",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Botain",
+"bps": "9107118",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Konhir",
+"bps": "9107119",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Salawati",
+"bps": "9107120",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Mayamuk",
+"bps": "9107121",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Salawati Timur",
+"bps": "9107122",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Hobard",
+"bps": "9107123",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Seget",
+"bps": "9107130",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Segun",
+"bps": "9107131",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Salawati Selatan",
+"bps": "9107132",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Aimas",
+"bps": "9107170",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Mariat",
+"bps": "9107171",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Sayosa",
+"bps": "9107180",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Maudus",
+"bps": "9107181",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Wemak",
+"bps": "9107182",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Sayosa Timur",
+"bps": "9107183",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Sunook",
+"bps": "9107184",
+"kab_qid": "Q26792",
+"kab_label": "Sorong"
+},
+{
+"label": "Misool Selatan",
+"bps": "9108011",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Misool Barat",
+"bps": "9108012",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Misool",
+"bps": "9108020",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Kofiau",
+"bps": "9108021",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Misool Timur",
+"bps": "9108022",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Kepulauan Sembilan",
+"bps": "9108023",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Salawati Utara",
+"bps": "9108031",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Salawati Barat",
+"bps": "9108034",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Batanta Selatan",
+"bps": "9108035",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Batanta Utara",
+"bps": "9108036",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Waigeo Selatan",
+"bps": "9108040",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Teluk Mayalibit",
+"bps": "9108041",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Meos Mansar",
+"bps": "9108042",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Kota Waisai",
+"bps": "9108043",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Tiplol Mayalibit",
+"bps": "9108044",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Waigeo Barat",
+"bps": "9108050",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Waigeo Barat Kepulauan",
+"bps": "9108051",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Waigeo Utara",
+"bps": "9108060",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Warwarbomi",
+"bps": "9108061",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Supnin",
+"bps": "9108062",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Kepulauan Ayau",
+"bps": "9108070",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Waigeo Timur",
+"bps": "9108080",
+"kab_qid": "Q26785",
+"kab_label": "Raja Ampat"
+},
+{
+"label": "Syujak",
+"bps": "9109011",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Tinggouw",
+"bps": "9109013",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Miyah",
+"bps": "9109020",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Miyah Selatan",
+"bps": "9109021",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Ireres",
+"bps": "9109022",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Wilhem Roumbouts",
+"bps": "9109023",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Kwoor",
+"bps": "9109040",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Tobouw",
+"bps": "9109041",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Kwesefo",
+"bps": "9109042",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Sausapor",
+"bps": "9109050",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Bikar",
+"bps": "9109051",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Yembun",
+"bps": "9109060",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Bamusbama",
+"bps": "9109061",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Kebar",
+"bps": "9109070",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Kebar Timur",
+"bps": "9109071",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Kebar Selatan",
+"bps": "9109072",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Manekar",
+"bps": "9109073",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Senopi",
+"bps": "9109080",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Mawabuan",
+"bps": "9109081",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Amberbaken",
+"bps": "9109090",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Amberbaken Barat",
+"bps": "9109092",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Mubarni / Arfu",
+"bps": "9109100",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Moraid",
+"bps": "9109110",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Selemkai",
+"bps": "9109111",
+"kab_qid": "Q26810",
+"kab_label": "Tambrauw"
+},
+{
+"label": "Aitinyo Barat/Athabu",
+"bps": "9110010",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Ayamaru Selatan Jaya",
+"bps": "9110011",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Aitinyo",
+"bps": "9110020",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Aitinyo Tengah",
+"bps": "9110021",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Aifat Selatan",
+"bps": "9110030",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Aifat Timur Selatan",
+"bps": "9110031",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Aifat",
+"bps": "9110040",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Aitinyo Utara",
+"bps": "9110050",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Aitinyo Raya",
+"bps": "9110051",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Ayamaru Timur",
+"bps": "9110060",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Ayamaru Timur Selatan",
+"bps": "9110061",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Ayamaru",
+"bps": "9110070",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Ayamaru Selatan",
+"bps": "9110071",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Ayamaru Jaya",
+"bps": "9110072",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Ayamaru Tengah",
+"bps": "9110073",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Ayamaru Barat",
+"bps": "9110074",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Ayamaru Utara",
+"bps": "9110080",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Ayamaru Utara Timur",
+"bps": "9110081",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Mare Selatan",
+"bps": "9110091",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Aifat Utara",
+"bps": "9110100",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Aifat Timur",
+"bps": "9110110",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Aifat Timur Tengah",
+"bps": "9110111",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Aifat Timur Jauh",
+"bps": "9110112",
+"kab_qid": "Q26759",
+"kab_label": "Maybrat"
+},
+{
+"label": "Tahota",
+"bps": "9111010",
+"kab_qid": "Q12488351",
+"kab_label": "Manokwari Selatan"
+},
+{
+"label": "Dataran Isim",
+"bps": "9111020",
+"kab_qid": "Q12488351",
+"kab_label": "Manokwari Selatan"
+},
+{
+"label": "Nenei",
+"bps": "9111030",
+"kab_qid": "Q12488351",
+"kab_label": "Manokwari Selatan"
+},
+{
+"label": "Momi Waren",
+"bps": "9111040",
+"kab_qid": "Q12488351",
+"kab_label": "Manokwari Selatan"
+},
+{
+"label": "Ransiki",
+"bps": "9111050",
+"kab_qid": "Q12488351",
+"kab_label": "Manokwari Selatan"
+},
+{
+"label": "Oransbari",
+"bps": "9111060",
+"kab_qid": "Q12488351",
+"kab_label": "Manokwari Selatan"
+},
+{
+"label": "Didohu",
+"bps": "9112010",
+"kab_qid": "Q16251650",
+"kab_label": "Pegunungan Arfak"
+},
+{
+"label": "Sururey",
+"bps": "9112020",
+"kab_qid": "Q16251650",
+"kab_label": "Pegunungan Arfak"
+},
+{
+"label": "Anggi Gida",
+"bps": "9112030",
+"kab_qid": "Q16251650",
+"kab_label": "Pegunungan Arfak"
+},
+{
+"label": "Membey",
+"bps": "9112040",
+"kab_qid": "Q16251650",
+"kab_label": "Pegunungan Arfak"
+},
+{
+"label": "Anggi",
+"bps": "9112050",
+"kab_qid": "Q16251650",
+"kab_label": "Pegunungan Arfak"
+},
+{
+"label": "Taige",
+"bps": "9112060",
+"kab_qid": "Q16251650",
+"kab_label": "Pegunungan Arfak"
+},
+{
+"label": "Hingk",
+"bps": "9112070",
+"kab_qid": "Q16251650",
+"kab_label": "Pegunungan Arfak"
+},
+{
+"label": "Menyambouw",
+"bps": "9112080",
+"kab_qid": "Q16251650",
+"kab_label": "Pegunungan Arfak"
+},
+{
+"label": "Catubouw",
+"bps": "9112090",
+"kab_qid": "Q16251650",
+"kab_label": "Pegunungan Arfak"
+},
+{
+"label": "Testega",
+"bps": "9112100",
+"kab_qid": "Q16251650",
+"kab_label": "Pegunungan Arfak"
+},
+{
+"label": "Sorong Barat",
+"bps": "9171010",
+"kab_qid": "Q26837",
+"kab_label": "Sorong"
+},
+{
+"label": "Sorong Kepulauan",
+"bps": "9171011",
+"kab_qid": "Q26837",
+"kab_label": "Sorong"
+},
+{
+"label": "Maladum Mes",
+"bps": "9171012",
+"kab_qid": "Q26837",
+"kab_label": "Sorong"
+},
+{
+"label": "Sorong Timur",
+"bps": "9171020",
+"kab_qid": "Q26837",
+"kab_label": "Sorong"
+},
+{
+"label": "Sorong Utara",
+"bps": "9171021",
+"kab_qid": "Q26837",
+"kab_label": "Sorong"
+},
+{
+"label": "Sorong Manoi",
+"bps": "9171023",
+"kab_qid": "Q26837",
+"kab_label": "Sorong"
+},
+{
+"label": "Klaurung",
+"bps": "9171024",
+"kab_qid": "Q26837",
+"kab_label": "Sorong"
+},
+{
+"label": "Malaimsimsa",
+"bps": "9171025",
+"kab_qid": "Q26837",
+"kab_label": "Sorong"
+},
+{
+"label": "Sorong Kota",
+"bps": "9171026",
+"kab_qid": "Q26837",
+"kab_label": "Sorong"
+},
+{
+"label": "Kimaam",
+"bps": "9401010",
+"kab_qid": "Q27693",
+"kab_label": "Merauke"
+},
+{
+"label": "Tabonji",
+"bps": "9401012",
+"kab_qid": "Q27693",
+"kab_label": "Merauke"
+},
+{
+"label": "Ilwayab",
+"bps": "9401013",
+"kab_qid": "Q27693",
+"kab_label": "Merauke"
+},
+{
+"label": "Okaba",
+"bps": "9401020",
+"kab_qid": "Q27693",
+"kab_label": "Merauke"
+},
+{
+"label": "Tubang",
+"bps": "9401021",
+"kab_qid": "Q27693",
+"kab_label": "Merauke"
+},
+{
+"label": "Ngguti",
+"bps": "9401022",
+"kab_qid": "Q27693",
+"kab_label": "Merauke"
+},
+{
+"label": "Kaptel",
+"bps": "9401023",
+"kab_qid": "Q27693",
+"kab_label": "Merauke"
+},
+{
+"label": "Kurik",
+"bps": "9401030",
+"kab_qid": "Q27693",
+"kab_label": "Merauke"
+},
+{
+"label": "Malind",
+"bps": "9401031",
+"kab_qid": "Q27693",
+"kab_label": "Merauke"
+},
+{
+"label": "Animha",
+"bps": "9401032",
+"kab_qid": "Q27693",
+"kab_label": "Merauke"
+},
+{
+"label": "Semangga",
+"bps": "9401041",
+"kab_qid": "Q27693",
+"kab_label": "Merauke"
+},
+{
+"label": "Tanah Miring",
+"bps": "9401042",
+"kab_qid": "Q27693",
+"kab_label": "Merauke"
+},
+{
+"label": "Jagebob",
+"bps": "9401043",
+"kab_qid": "Q27693",
+"kab_label": "Merauke"
+},
+{
+"label": "Naukenjerai",
+"bps": "9401045",
+"kab_qid": "Q27693",
+"kab_label": "Merauke"
+},
+{
+"label": "Muting",
+"bps": "9401050",
+"kab_qid": "Q27693",
+"kab_label": "Merauke"
+},
+{
+"label": "Eligobel",
+"bps": "9401051",
+"kab_qid": "Q27693",
+"kab_label": "Merauke"
+},
+{
+"label": "Ulilin",
+"bps": "9401052",
+"kab_qid": "Q27693",
+"kab_label": "Merauke"
+},
+{
+"label": "Wamena",
+"bps": "9402110",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Asolokobal",
+"bps": "9402111",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Walelagama",
+"bps": "9402112",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Trikora",
+"bps": "9402113",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Napua",
+"bps": "9402114",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Walaik",
+"bps": "9402115",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Wouma",
+"bps": "9402116",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Walesi",
+"bps": "9402117",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Asotipo",
+"bps": "9402118",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Maima",
+"bps": "9402119",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Hubikosi",
+"bps": "9402120",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Pelebaga",
+"bps": "9402121",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Ibele",
+"bps": "9402122",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Tailarek",
+"bps": "9402123",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Hubikiak",
+"bps": "9402124",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Asologaima",
+"bps": "9402180",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Musatfak",
+"bps": "9402181",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Silo Karno Doga",
+"bps": "9402182",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Pyramid",
+"bps": "9402183",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Muliama",
+"bps": "9402184",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Kurulu",
+"bps": "9402190",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Usilimo",
+"bps": "9402191",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Wita Waya",
+"bps": "9402192",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Libarek",
+"bps": "9402193",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Wadangku",
+"bps": "9402194",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Pisugi",
+"bps": "9402195",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Bolakme",
+"bps": "9402220",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Wollo",
+"bps": "9402221",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Yalengga",
+"bps": "9402222",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Molagalome",
+"bps": "9402224",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Bpiri",
+"bps": "9402227",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Koragi",
+"bps": "9402228",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Itlay Hasige",
+"bps": "9402611",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Siepkosi",
+"bps": "9402612",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Popugoba",
+"bps": "9402614",
+"kab_qid": "Q27529",
+"kab_label": "Jayawijaya"
+},
+{
+"label": "Kaureh",
+"bps": "9403080",
+"kab_qid": "Q27477",
+"kab_label": "Jayapura"
+},
+{
+"label": "Yapsi",
+"bps": "9403082",
+"kab_qid": "Q27477",
+"kab_label": "Jayapura"
+},
+{
+"label": "Kemtuk",
+"bps": "9403140",
+"kab_qid": "Q27477",
+"kab_label": "Jayapura"
+},
+{
+"label": "Kemtuk Gresi",
+"bps": "9403150",
+"kab_qid": "Q27477",
+"kab_label": "Jayapura"
+},
+{
+"label": "Gresi Selatan",
+"bps": "9403151",
+"kab_qid": "Q27477",
+"kab_label": "Jayapura"
+},
+{
+"label": "Nimboran",
+"bps": "9403160",
+"kab_qid": "Q27477",
+"kab_label": "Jayapura"
+},
+{
+"label": "Nimboran Timur / Namblong",
+"bps": "9403161",
+"kab_qid": "Q27477",
+"kab_label": "Jayapura"
+},
+{
+"label": "Nimbokrang",
+"bps": "9403170",
+"kab_qid": "Q27477",
+"kab_label": "Jayapura"
+},
+{
+"label": "Unurum Guay",
+"bps": "9403180",
+"kab_qid": "Q27477",
+"kab_label": "Jayapura"
+},
+{
+"label": "Demta",
+"bps": "9403200",
+"kab_qid": "Q27477",
+"kab_label": "Jayapura"
+},
+{
+"label": "Yokari",
+"bps": "9403201",
+"kab_qid": "Q27477",
+"kab_label": "Jayapura"
+},
+{
+"label": "Depapre",
+"bps": "9403210",
+"kab_qid": "Q27477",
+"kab_label": "Jayapura"
+},
+{
+"label": "Ravenirara",
+"bps": "9403211",
+"kab_qid": "Q27477",
+"kab_label": "Jayapura"
+},
+{
+"label": "Sentani Barat",
+"bps": "9403220",
+"kab_qid": "Q27477",
+"kab_label": "Jayapura"
+},
+{
+"label": "Waibu",
+"bps": "9403221",
+"kab_qid": "Q27477",
+"kab_label": "Jayapura"
+},
+{
+"label": "Sentani",
+"bps": "9403230",
+"kab_qid": "Q27477",
+"kab_label": "Jayapura"
+},
+{
+"label": "Ebungfau",
+"bps": "9403231",
+"kab_qid": "Q27477",
+"kab_label": "Jayapura"
+},
+{
+"label": "Sentani Timur",
+"bps": "9403240",
+"kab_qid": "Q27477",
+"kab_label": "Jayapura"
+},
+{
 "label": "Uwapa",
 "bps": "9404050",
 "kab_qid": "Q27708",
@@ -32708,6 +34442,204 @@
 "bps": "9404093",
 "kab_qid": "Q27708",
 "kab_label": "Nabire"
+},
+{
+"label": "Yapen Timur",
+"bps": "9408040",
+"kab_qid": "Q27848",
+"kab_label": "Kepulauan Yapen"
+},
+{
+"label": "Pantura Yapen",
+"bps": "9408041",
+"kab_qid": "Q27848",
+"kab_label": "Kepulauan Yapen"
+},
+{
+"label": "Teluk Ampimoi",
+"bps": "9408042",
+"kab_qid": "Q27848",
+"kab_label": "Kepulauan Yapen"
+},
+{
+"label": "Raimbawi",
+"bps": "9408043",
+"kab_qid": "Q27848",
+"kab_label": "Kepulauan Yapen"
+},
+{
+"label": "Pulau Kurudu",
+"bps": "9408044",
+"kab_qid": "Q27848",
+"kab_label": "Kepulauan Yapen"
+},
+{
+"label": "Angkaisera",
+"bps": "9408050",
+"kab_qid": "Q27848",
+"kab_label": "Kepulauan Yapen"
+},
+{
+"label": "Kep. Ambai",
+"bps": "9408051",
+"kab_qid": "Q27848",
+"kab_label": "Kepulauan Yapen"
+},
+{
+"label": "Yawakukat",
+"bps": "9408052",
+"kab_qid": "Q27848",
+"kab_label": "Kepulauan Yapen"
+},
+{
+"label": "Yapen Selatan",
+"bps": "9408060",
+"kab_qid": "Q27848",
+"kab_label": "Kepulauan Yapen"
+},
+{
+"label": "Kosiwo",
+"bps": "9408061",
+"kab_qid": "Q27848",
+"kab_label": "Kepulauan Yapen"
+},
+{
+"label": "Anataurei",
+"bps": "9408062",
+"kab_qid": "Q27848",
+"kab_label": "Kepulauan Yapen"
+},
+{
+"label": "Yapen Barat",
+"bps": "9408070",
+"kab_qid": "Q27848",
+"kab_label": "Kepulauan Yapen"
+},
+{
+"label": "Wonawa",
+"bps": "9408071",
+"kab_qid": "Q27848",
+"kab_label": "Kepulauan Yapen"
+},
+{
+"label": "Pulau Yerui",
+"bps": "9408072",
+"kab_qid": "Q27848",
+"kab_label": "Kepulauan Yapen"
+},
+{
+"label": "Numfor Barat",
+"bps": "9409010",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
+},
+{
+"label": "Orkeri",
+"bps": "9409011",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
+},
+{
+"label": "Numfor Timur",
+"bps": "9409020",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
+},
+{
+"label": "Bruyadori",
+"bps": "9409021",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
+},
+{
+"label": "Poiru",
+"bps": "9409022",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
+},
+{
+"label": "Padaido",
+"bps": "9409030",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
+},
+{
+"label": "Aimando Padaido",
+"bps": "9409031",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
+},
+{
+"label": "Biak Timur",
+"bps": "9409040",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
+},
+{
+"label": "Oridek",
+"bps": "9409041",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
+},
+{
+"label": "Biak Kota",
+"bps": "9409050",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
+},
+{
+"label": "Samofa",
+"bps": "9409060",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
+},
+{
+"label": "Yendidori",
+"bps": "9409070",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
+},
+{
+"label": "Biak Utara",
+"bps": "9409080",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
+},
+{
+"label": "Andey",
+"bps": "9409081",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
+},
+{
+"label": "Warsa",
+"bps": "9409090",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
+},
+{
+"label": "Yawosi",
+"bps": "9409091",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
+},
+{
+"label": "Bondifuar",
+"bps": "9409092",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
+},
+{
+"label": "Biak Barat",
+"bps": "9409100",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
+},
+{
+"label": "Swandiwe",
+"bps": "9409101",
+"kab_qid": "Q27246",
+"kab_label": "Biak Numfor"
 },
 {
 "label": "Paniai Timur",
@@ -33010,6 +34942,1578 @@
 "kab_label": "Mimika"
 },
 {
+"label": "Subur",
+"bps": "9413011",
+"kab_qid": "Q27262",
+"kab_label": "Boven Digoel"
+},
+{
+"label": "Mindiptana",
+"bps": "9413020",
+"kab_qid": "Q27262",
+"kab_label": "Boven Digoel"
+},
+{
+"label": "Iniyandit",
+"bps": "9413021",
+"kab_qid": "Q27262",
+"kab_label": "Boven Digoel"
+},
+{
+"label": "Kombut",
+"bps": "9413022",
+"kab_qid": "Q27262",
+"kab_label": "Boven Digoel"
+},
+{
+"label": "Sesnuk",
+"bps": "9413023",
+"kab_qid": "Q27262",
+"kab_label": "Boven Digoel"
+},
+{
+"label": "Mandobo",
+"bps": "9413030",
+"kab_qid": "Q27262",
+"kab_label": "Boven Digoel"
+},
+{
+"label": "Arimop",
+"bps": "9413032",
+"kab_qid": "Q27262",
+"kab_label": "Boven Digoel"
+},
+{
+"label": "Bomakia",
+"bps": "9413041",
+"kab_qid": "Q27262",
+"kab_label": "Boven Digoel"
+},
+{
+"label": "Firiwage",
+"bps": "9413042",
+"kab_qid": "Q27262",
+"kab_label": "Boven Digoel"
+},
+{
+"label": "Manggelum",
+"bps": "9413043",
+"kab_qid": "Q27262",
+"kab_label": "Boven Digoel"
+},
+{
+"label": "Yaniruma",
+"bps": "9413044",
+"kab_qid": "Q27262",
+"kab_label": "Boven Digoel"
+},
+{
+"label": "Kawagit",
+"bps": "9413045",
+"kab_qid": "Q27262",
+"kab_label": "Boven Digoel"
+},
+{
+"label": "Kombay",
+"bps": "9413046",
+"kab_qid": "Q27262",
+"kab_label": "Boven Digoel"
+},
+{
+"label": "Waropko",
+"bps": "9413050",
+"kab_qid": "Q27262",
+"kab_label": "Boven Digoel"
+},
+{
+"label": "Ambatkwi",
+"bps": "9413051",
+"kab_qid": "Q27262",
+"kab_label": "Boven Digoel"
+},
+{
+"label": "Ninati",
+"bps": "9413052",
+"kab_qid": "Q27262",
+"kab_label": "Boven Digoel"
+},
+{
+"label": "Nambioman Bapai",
+"bps": "9414010",
+"kab_qid": "Q27679",
+"kab_label": "Mappi"
+},
+{
+"label": "Minyamur",
+"bps": "9414011",
+"kab_qid": "Q27679",
+"kab_label": "Mappi"
+},
+{
+"label": "Edera",
+"bps": "9414020",
+"kab_qid": "Q27679",
+"kab_label": "Mappi"
+},
+{
+"label": "Venaha",
+"bps": "9414021",
+"kab_qid": "Q27679",
+"kab_label": "Mappi"
+},
+{
+"label": "Syahcame",
+"bps": "9414022",
+"kab_qid": "Q27679",
+"kab_label": "Mappi"
+},
+{
+"label": "Bamgi",
+"bps": "9414023",
+"kab_qid": "Q27679",
+"kab_label": "Mappi"
+},
+{
+"label": "Yakomi",
+"bps": "9414024",
+"kab_qid": "Q27679",
+"kab_label": "Mappi"
+},
+{
+"label": "Passue",
+"bps": "9414031",
+"kab_qid": "Q27679",
+"kab_label": "Mappi"
+},
+{
+"label": "Assue",
+"bps": "9414050",
+"kab_qid": "Q27679",
+"kab_label": "Mappi"
+},
+{
+"label": "Citakmitak",
+"bps": "9414060",
+"kab_qid": "Q27679",
+"kab_label": "Mappi"
+},
+{
+"label": "Kaibar",
+"bps": "9414061",
+"kab_qid": "Q27679",
+"kab_label": "Mappi"
+},
+{
+"label": "Passue Bawah",
+"bps": "9414062",
+"kab_qid": "Q27679",
+"kab_label": "Mappi"
+},
+{
+"label": "Ti-Zain",
+"bps": "9414063",
+"kab_qid": "Q27679",
+"kab_label": "Mappi"
+},
+{
+"label": "Pantai Kasuari",
+"bps": "9415010",
+"kab_qid": "Q27228",
+"kab_label": "Asmat"
+},
+{
+"label": "Kopay",
+"bps": "9415011",
+"kab_qid": "Q27228",
+"kab_label": "Asmat"
+},
+{
+"label": "Der Koumur",
+"bps": "9415012",
+"kab_qid": "Q27228",
+"kab_label": "Asmat"
+},
+{
+"label": "Safan",
+"bps": "9415013",
+"kab_qid": "Q27228",
+"kab_label": "Asmat"
+},
+{
+"label": "Fayit",
+"bps": "9415020",
+"kab_qid": "Q27228",
+"kab_label": "Asmat"
+},
+{
+"label": "Sirets",
+"bps": "9415031",
+"kab_qid": "Q27228",
+"kab_label": "Asmat"
+},
+{
+"label": "Bectbamu",
+"bps": "9415033",
+"kab_qid": "Q27228",
+"kab_label": "Asmat"
+},
+{
+"label": "Suator",
+"bps": "9415040",
+"kab_qid": "Q27228",
+"kab_label": "Asmat"
+},
+{
+"label": "Kolf Braza",
+"bps": "9415041",
+"kab_qid": "Q27228",
+"kab_label": "Asmat"
+},
+{
+"label": "Joutu",
+"bps": "9415042",
+"kab_qid": "Q27228",
+"kab_label": "Asmat"
+},
+{
+"label": "Koroway Buluanop",
+"bps": "9415043",
+"kab_qid": "Q27228",
+"kab_label": "Asmat"
+},
+{
+"label": "Jetsy",
+"bps": "9415051",
+"kab_qid": "Q27228",
+"kab_label": "Asmat"
+},
+{
+"label": "Agats",
+"bps": "9415060",
+"kab_qid": "Q27228",
+"kab_label": "Asmat"
+},
+{
+"label": "Sawa Erma",
+"bps": "9415070",
+"kab_qid": "Q27228",
+"kab_label": "Asmat"
+},
+{
+"label": "Unir Sirau",
+"bps": "9415072",
+"kab_qid": "Q27228",
+"kab_label": "Asmat"
+},
+{
+"label": "Joerat",
+"bps": "9415073",
+"kab_qid": "Q27228",
+"kab_label": "Asmat"
+},
+{
+"label": "Kurima",
+"bps": "9416010",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Musaik",
+"bps": "9416011",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Dekai",
+"bps": "9416013",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Pasema",
+"bps": "9416015",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Amuma",
+"bps": "9416016",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Wusama",
+"bps": "9416018",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Silimo",
+"bps": "9416019",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Ninia",
+"bps": "9416020",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Holuwon",
+"bps": "9416021",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Lolat",
+"bps": "9416022",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Langda",
+"bps": "9416023",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Bomela",
+"bps": "9416024",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Suntamon",
+"bps": "9416025",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Sobaham",
+"bps": "9416026",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Korupun",
+"bps": "9416027",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Kwelamdua",
+"bps": "9416029",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Anggruk",
+"bps": "9416030",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Panggema",
+"bps": "9416031",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Walma",
+"bps": "9416032",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Kosarek",
+"bps": "9416033",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Ubahak",
+"bps": "9416034",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Nalca",
+"bps": "9416035",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Puldama",
+"bps": "9416036",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Nipsan",
+"bps": "9416037",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Samenage",
+"bps": "9416041",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Tangma",
+"bps": "9416042",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Yogosem",
+"bps": "9416045",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Hogio",
+"bps": "9416048",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Werima",
+"bps": "9416051",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Soloikma",
+"bps": "9416052",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Seradala",
+"bps": "9416053",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Kabianggama",
+"bps": "9416054",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Kwikma",
+"bps": "9416055",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Hilipuk",
+"bps": "9416056",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Yahuliambut",
+"bps": "9416057",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Hereapini",
+"bps": "9416058",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Ubalihi",
+"bps": "9416059",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Talambo",
+"bps": "9416061",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Pronggoli",
+"bps": "9416062",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Endomen",
+"bps": "9416063",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Duram",
+"bps": "9416066",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Dirwemna",
+"bps": "9416067",
+"kab_qid": "Q27825",
+"kab_label": "Yahukimo"
+},
+{
+"label": "Kawor",
+"bps": "9417011",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Tarup",
+"bps": "9417012",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Awinbon",
+"bps": "9417013",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Oksibil",
+"bps": "9417020",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Pepera",
+"bps": "9417021",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Alemsom",
+"bps": "9417022",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Serambakon",
+"bps": "9417023",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Kolomdol",
+"bps": "9417024",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Oksop",
+"bps": "9417025",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Ok Bape",
+"bps": "9417026",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Ok Aon",
+"bps": "9417027",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Borme",
+"bps": "9417030",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Epumek",
+"bps": "9417032",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Weime",
+"bps": "9417033",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Pamek",
+"bps": "9417034",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Nongme",
+"bps": "9417035",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Batani",
+"bps": "9417036",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Okbab",
+"bps": "9417042",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Teiraplu",
+"bps": "9417043",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Yefta",
+"bps": "9417044",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Kiwirok",
+"bps": "9417050",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Kiwirok Timur",
+"bps": "9417051",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Oksebang",
+"bps": "9417052",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Okhika",
+"bps": "9417053",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Oklip",
+"bps": "9417054",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Oksamol",
+"bps": "9417055",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Okbemta",
+"bps": "9417056",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Batom",
+"bps": "9417060",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Murkim",
+"bps": "9417061",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Mofinop",
+"bps": "9417062",
+"kab_qid": "Q27750",
+"kab_label": "Pegunungan Bintang"
+},
+{
+"label": "Kanggime",
+"bps": "9418010",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Woniki",
+"bps": "9418011",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Nabunage",
+"bps": "9418012",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Gilubandu",
+"bps": "9418013",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Wakuo",
+"bps": "9418014",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Aweku",
+"bps": "9418015",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Bogonuk",
+"bps": "9418016",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Karubaga",
+"bps": "9418020",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Goyage",
+"bps": "9418021",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Wunin",
+"bps": "9418022",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Kondaga",
+"bps": "9418023",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Nelawi",
+"bps": "9418024",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Kuari",
+"bps": "9418025",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Lianogoma",
+"bps": "9418026",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Bokondini",
+"bps": "9418030",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Bokoneri",
+"bps": "9418031",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Bewani",
+"bps": "9418032",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Kembu",
+"bps": "9418040",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Umagi",
+"bps": "9418042",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Panaga",
+"bps": "9418043",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Poganeri",
+"bps": "9418044",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Kamboneri",
+"bps": "9418045",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Air Garam",
+"bps": "9418046",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Wari / Taiyeve",
+"bps": "9418048",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Egiam",
+"bps": "9418049",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Nunggawi",
+"bps": "9418051",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Anawi",
+"bps": "9418061",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Wenam",
+"bps": "9418071",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Numba",
+"bps": "9418080",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Dundu",
+"bps": "9418090",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Gundagi",
+"bps": "9418100",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Timori",
+"bps": "9418110",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Yuneri",
+"bps": "9418121",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Danime",
+"bps": "9418126",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Telenggeme",
+"bps": "9418541",
+"kab_qid": "Q27802",
+"kab_label": "Tolikara"
+},
+{
+"label": "Pantai Timur Bagian Barat",
+"bps": "9419021",
+"kab_qid": "Q27784",
+"kab_label": "Sarmi"
+},
+{
+"label": "Pantai Timur",
+"bps": "9419022",
+"kab_qid": "Q27784",
+"kab_label": "Sarmi"
+},
+{
+"label": "Sungai Biri",
+"bps": "9419024",
+"kab_qid": "Q27784",
+"kab_label": "Sarmi"
+},
+{
+"label": "Bonggo",
+"bps": "9419031",
+"kab_qid": "Q27784",
+"kab_label": "Sarmi"
+},
+{
+"label": "Bonggo Timur",
+"bps": "9419032",
+"kab_qid": "Q27784",
+"kab_label": "Sarmi"
+},
+{
+"label": "Bonggo Barat",
+"bps": "9419033",
+"kab_qid": "Q27784",
+"kab_label": "Sarmi"
+},
+{
+"label": "Tor Atas",
+"bps": "9419040",
+"kab_qid": "Q27784",
+"kab_label": "Sarmi"
+},
+{
+"label": "Ismari",
+"bps": "9419041",
+"kab_qid": "Q27784",
+"kab_label": "Sarmi"
+},
+{
+"label": "Sarmi Timur",
+"bps": "9419051",
+"kab_qid": "Q27784",
+"kab_label": "Sarmi"
+},
+{
+"label": "Sarmi Selatan",
+"bps": "9419052",
+"kab_qid": "Q27784",
+"kab_label": "Sarmi"
+},
+{
+"label": "Sobey",
+"bps": "9419053",
+"kab_qid": "Q27784",
+"kab_label": "Sarmi"
+},
+{
+"label": "Muara Tor",
+"bps": "9419054",
+"kab_qid": "Q27784",
+"kab_label": "Sarmi"
+},
+{
+"label": "Verkam",
+"bps": "9419055",
+"kab_qid": "Q27784",
+"kab_label": "Sarmi"
+},
+{
+"label": "Pantai Barat",
+"bps": "9419060",
+"kab_qid": "Q27784",
+"kab_label": "Sarmi"
+},
+{
+"label": "Apawer Hulu",
+"bps": "9419061",
+"kab_qid": "Q27784",
+"kab_label": "Sarmi"
+},
+{
+"label": "Apawer Hilir",
+"bps": "9419062",
+"kab_qid": "Q27784",
+"kab_label": "Sarmi"
+},
+{
+"label": "Apawer Tengah",
+"bps": "9419063",
+"kab_qid": "Q27784",
+"kab_label": "Sarmi"
+},
+{
+"label": "Yaffi",
+"bps": "9420012",
+"kab_qid": "Q27573",
+"kab_label": "Keerom"
+},
+{
+"label": "Senggi",
+"bps": "9420020",
+"kab_qid": "Q27573",
+"kab_label": "Keerom"
+},
+{
+"label": "Kaisenar",
+"bps": "9420021",
+"kab_qid": "Q27573",
+"kab_label": "Keerom"
+},
+{
+"label": "Waris",
+"bps": "9420030",
+"kab_qid": "Q27573",
+"kab_label": "Keerom"
+},
+{
+"label": "Arso Timur",
+"bps": "9420041",
+"kab_qid": "Q27573",
+"kab_label": "Keerom"
+},
+{
+"label": "Arso Barat",
+"bps": "9420042",
+"kab_qid": "Q27573",
+"kab_label": "Keerom"
+},
+{
+"label": "Mannem",
+"bps": "9420043",
+"kab_qid": "Q27573",
+"kab_label": "Keerom"
+},
+{
+"label": "Skanto",
+"bps": "9420050",
+"kab_qid": "Q27573",
+"kab_label": "Keerom"
+},
+{
+"label": "Waropen Bawah",
+"bps": "9426010",
+"kab_qid": "Q27815",
+"kab_label": "Waropen"
+},
+{
+"label": "Inggerus",
+"bps": "9426011",
+"kab_qid": "Q27815",
+"kab_label": "Waropen"
+},
+{
+"label": "Urei Faisei",
+"bps": "9426012",
+"kab_qid": "Q27815",
+"kab_label": "Waropen"
+},
+{
+"label": "Oudate",
+"bps": "9426013",
+"kab_qid": "Q27815",
+"kab_label": "Waropen"
+},
+{
+"label": "Masirei",
+"bps": "9426020",
+"kab_qid": "Q27815",
+"kab_label": "Waropen"
+},
+{
+"label": "Risei Sayati",
+"bps": "9426021",
+"kab_qid": "Q27815",
+"kab_label": "Waropen"
+},
+{
+"label": "Demba",
+"bps": "9426022",
+"kab_qid": "Q27815",
+"kab_label": "Waropen"
+},
+{
+"label": "Soyoi Mambai",
+"bps": "9426023",
+"kab_qid": "Q27815",
+"kab_label": "Waropen"
+},
+{
+"label": "Wonti",
+"bps": "9426024",
+"kab_qid": "Q27815",
+"kab_label": "Waropen"
+},
+{
+"label": "Walani",
+"bps": "9426030",
+"kab_qid": "Q27815",
+"kab_label": "Waropen"
+},
+{
+"label": "Kirihi",
+"bps": "9426040",
+"kab_qid": "Q27815",
+"kab_label": "Waropen"
+},
+{
+"label": "Supiori Selatan",
+"bps": "9427010",
+"kab_qid": "Q27793",
+"kab_label": "Supiori"
+},
+{
+"label": "Kepulauan Aruri",
+"bps": "9427011",
+"kab_qid": "Q27793",
+"kab_label": "Supiori"
+},
+{
+"label": "Supiori Utara",
+"bps": "9427020",
+"kab_qid": "Q27793",
+"kab_label": "Supiori"
+},
+{
+"label": "Supiori Barat",
+"bps": "9427021",
+"kab_qid": "Q27793",
+"kab_label": "Supiori"
+},
+{
+"label": "Supiori Timur",
+"bps": "9427030",
+"kab_qid": "Q27793",
+"kab_label": "Supiori"
+},
+{
+"label": "Waropen Atas",
+"bps": "9428030",
+"kab_qid": "Q27668",
+"kab_label": "Mamberamo Raya"
+},
+{
+"label": "Benuki",
+"bps": "9428031",
+"kab_qid": "Q27668",
+"kab_label": "Mamberamo Raya"
+},
+{
+"label": "Sawai",
+"bps": "9428032",
+"kab_qid": "Q27668",
+"kab_label": "Mamberamo Raya"
+},
+{
+"label": "Mamberamo Ilir",
+"bps": "9428040",
+"kab_qid": "Q27668",
+"kab_label": "Mamberamo Raya"
+},
+{
+"label": "Iwaso",
+"bps": "9428051",
+"kab_qid": "Q27668",
+"kab_label": "Mamberamo Raya"
+},
+{
+"label": "Mamberamo Tengah Timur",
+"bps": "9428060",
+"kab_qid": "Q27668",
+"kab_label": "Mamberamo Raya"
+},
+{
+"label": "Rofaer",
+"bps": "9428070",
+"kab_qid": "Q27668",
+"kab_label": "Mamberamo Raya"
+},
+{
+"label": "Mamberamo Ulu",
+"bps": "9428080",
+"kab_qid": "Q27668",
+"kab_label": "Mamberamo Raya"
+},
+{
+"label": "Wosak",
+"bps": "9429010",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Kenyam",
+"bps": "9429020",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Mbuwa Tengah",
+"bps": "9429021",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Krepkuri",
+"bps": "9429022",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Embetpem",
+"bps": "9429023",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Geselma",
+"bps": "9429030",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Kilmid",
+"bps": "9429031",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Yenggelo",
+"bps": "9429032",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Meborok",
+"bps": "9429034",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Mapenduma",
+"bps": "9429040",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Kroptak",
+"bps": "9429041",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Kegayem",
+"bps": "9429043",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Nirkuri",
+"bps": "9429062",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Inikgal",
+"bps": "9429063",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Mbuwa",
+"bps": "9429070",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Iniye",
+"bps": "9429071",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Wutpaga",
+"bps": "9429072",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Nenggeangin",
+"bps": "9429073",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Mbulmu Yalma",
+"bps": "9429074",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Gearek",
+"bps": "9429080",
+"kab_qid": "Q27724",
+"kab_label": "Nduga"
+},
+{
+"label": "Makki",
+"bps": "9430010",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Gupura",
+"bps": "9430011",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Kolawa",
+"bps": "9430012",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Gelok Beam",
+"bps": "9430013",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Awina",
+"bps": "9430014",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Pirime",
+"bps": "9430020",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Buguk Gona",
+"bps": "9430021",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Milimbo",
+"bps": "9430022",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Gollo",
+"bps": "9430023",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Wiringgabut",
+"bps": "9430024",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Mokoni",
+"bps": "9430032",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Niname",
+"bps": "9430033",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Yiginua",
+"bps": "9430034",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Tiom Ollo",
+"bps": "9430035",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Yugunwi",
+"bps": "9430036",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Lannyna",
+"bps": "9430037",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Balingga",
+"bps": "9430040",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Balingga Barat",
+"bps": "9430041",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Bruwa",
+"bps": "9430042",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Ayumnati",
+"bps": "9430043",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Kuyawage",
+"bps": "9430050",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Wano Barat",
+"bps": "9430051",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Malagaineri",
+"bps": "9430060",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Melagai",
+"bps": "9430061",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Tiomneri",
+"bps": "9430070",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Wereka",
+"bps": "9430071",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Dimba",
+"bps": "9430080",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Kelulome",
+"bps": "9430081",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Nikogwe",
+"bps": "9430082",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Gamelia",
+"bps": "9430090",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Yiluk",
+"bps": "9430092",
+"kab_qid": "Q27594",
+"kab_label": "Lanny Jaya"
+},
+{
+"label": "Kobakma",
+"bps": "9431010",
+"kab_qid": "Q27316",
+"kab_label": "Mamberamo Tengah"
+},
+{
+"label": "Ilugwa",
+"bps": "9431020",
+"kab_qid": "Q27316",
+"kab_label": "Mamberamo Tengah"
+},
+{
+"label": "Kelila",
+"bps": "9431030",
+"kab_qid": "Q27316",
+"kab_label": "Mamberamo Tengah"
+},
+{
+"label": "Eragayam",
+"bps": "9431040",
+"kab_qid": "Q27316",
+"kab_label": "Mamberamo Tengah"
+},
+{
+"label": "Megambilis",
+"bps": "9431050",
+"kab_qid": "Q27316",
+"kab_label": "Mamberamo Tengah"
+},
+{
+"label": "Welarek",
+"bps": "9432010",
+"kab_qid": "Q27838",
+"kab_label": "Yalimo"
+},
+{
+"label": "Apalapsili",
+"bps": "9432020",
+"kab_qid": "Q27838",
+"kab_label": "Yalimo"
+},
+{
+"label": "Abenaho",
+"bps": "9432030",
+"kab_qid": "Q27838",
+"kab_label": "Yalimo"
+},
+{
+"label": "Elelim",
+"bps": "9432040",
+"kab_qid": "Q27838",
+"kab_label": "Yalimo"
+},
+{
+"label": "Benawa",
+"bps": "9432050",
+"kab_qid": "Q27838",
+"kab_label": "Yalimo"
+},
+{
 "label": "Agadugume",
 "bps": "9433010",
 "kab_qid": "Q27761",
@@ -33254,6 +36758,36 @@
 "bps": "9436050",
 "kab_qid": "Q27386",
 "kab_label": "Deiyai"
+},
+{
+"label": "Muara Tami",
+"bps": "9471010",
+"kab_qid": "Q27860",
+"kab_label": "Jayapura"
+},
+{
+"label": "Abepura",
+"bps": "9471020",
+"kab_qid": "Q27860",
+"kab_label": "Jayapura"
+},
+{
+"label": "Heram",
+"bps": "9471021",
+"kab_qid": "Q27860",
+"kab_label": "Jayapura"
+},
+{
+"label": "Jayapura Selatan",
+"bps": "9471030",
+"kab_qid": "Q27860",
+"kab_label": "Jayapura"
+},
+{
+"label": "Jayapura Utara",
+"bps": "9471040",
+"kab_qid": "Q27860",
+"kab_label": "Jayapura"
 }
 ]
 }
