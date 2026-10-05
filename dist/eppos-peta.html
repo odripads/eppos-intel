@@ -312,8 +312,6 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
   .mapfig svg.siap .prov, .mapfig svg.siap .prov.cat-keduanya, .mapfig svg.siap .dot,
   .scrolly .rec, .scrolly .grp, .scrolly .kab h4, .ptab[aria-selected="true"]::after { animation: none !important }
   .bandingtab td.bar i { transition: none !important }
-  .fokus.tampil #fokus-bentuk, .fokus.tampil .fokus-kiri, .fokus.tampil .fokus-kanan,
-  .fokus-kanan .rec { animation: none !important }
 }
 
 /* ───── tampilan fokus satu provinsi ───── */
@@ -322,47 +320,84 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
    never run and would pin opacity at 0. The children carry the entrance instead. */
 .fokus[hidden]{display:none}
 body.fokus-aktif #live-badge{display:none}
-.fokus-bar{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;
+.fokus-bar{position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;
   gap:16px;padding:14px 24px;background:var(--cream);border-bottom:4px solid var(--navy)}
 .fokus-merek{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
-.fokus-isi{max-width:1500px;margin:0 auto;padding:26px 24px 64px;display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(300px,1.05fr) minmax(0,1.25fr);gap:28px;align-items:start}
-@media (max-width:1100px){.fokus-isi{grid-template-columns:1fr}
-  /* stacked, the province itself should lead, then the reading, then the records */
-  .fokus-tengah{order:1;position:static}.fokus-kiri{order:2}.fokus-kanan{order:3}
-  #fokus-bentuk{max-height:38vh}}
 
-.fokus-tengah{text-align:center;position:sticky;top:78px}
-.fokus-tengah h2{font-size:clamp(26px,3.4vw,44px);color:var(--navy);text-shadow:3px 3px 0 var(--red);margin-bottom:6px}
-.fokus-sub{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin:0 0 14px}
-#fokus-bentuk{display:block;width:100%;height:auto;max-height:46vh}
-.fokus.tampil #fokus-bentuk{animation:bentuk-tumbuh .55s cubic-bezier(.2,.7,.2,1) both;animation-delay:.08s}
-@keyframes bentuk-tumbuh{from{opacity:0;transform:scale(.55)}to{opacity:1;transform:none}}
-/* the shadow lives on the svg element so its blur is read in screen pixels; on the path it would be
-   read in viewBox units and a small province blows it up into a haze */
-#fokus-bentuk{filter:drop-shadow(0 7px 16px rgba(28,28,28,.22))}
+/* bentuk provinsi menetap di kiri, bacaan mengalir di kanan */
+.fokus-isi{max-width:1500px;margin:0 auto;padding:26px 24px 64px;display:grid;
+  grid-template-columns:minmax(320px,.85fr) minmax(0,1.6fr);gap:34px;align-items:start}
+.fokus-bentuk-kol{position:sticky;top:86px;text-align:center}
+.fokus-bentuk-kol h2{font-size:clamp(26px,2.6vw,40px);color:var(--navy);text-shadow:3px 3px 0 var(--red);margin-bottom:6px}
+.fokus-sub{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin:0 0 16px}
+
+/* panggung tiga dimensi: .panggung memegang perspektif, .panggung-ayun bergoyang pelan terus-menerus,
+   dan svg-nya sendiri dimiringkan mengikuti kursor lewat --rx/--ry */
+.panggung{perspective:1200px;perspective-origin:50% 42%}
+.panggung-ayun{animation:ayun 11s ease-in-out infinite;transform-style:preserve-3d}
+@keyframes ayun{
+  0%,100%{transform:rotateZ(-1.1deg) translateY(0)}
+  50%{transform:rotateZ(1.1deg) translateY(-7px)}
+}
+#fokus-bentuk{display:block;width:100%;height:auto;max-height:44vh;
+  transform:rotateX(var(--rx,11deg)) rotateY(var(--ry,-7deg));
+  transition:transform .28s cubic-bezier(.2,.7,.2,1);will-change:transform}
+.fokus.tampil #fokus-bentuk{animation:bentuk-tumbuh .6s cubic-bezier(.2,.7,.2,1) both;animation-delay:.08s}
+.fokus.tampil #fokus-bentuk.siap{animation:none}
+@keyframes bentuk-tumbuh{
+  from{opacity:0;transform:rotateX(46deg) rotateY(0deg) scale(.62)}
+  to{opacity:1;transform:rotateX(var(--rx,11deg)) rotateY(var(--ry,-7deg)) scale(1)}
+}
 /* no stroke-width here: a CSS declaration would beat the presentation attribute, and the attribute
    is what scales the outline to the province's own viewBox */
 #fokus-bentuk .bentuk{stroke:var(--navy);stroke-linejoin:round}
+#fokus-bentuk .sisi{stroke:none}
 #fokus-bentuk .tt{stroke:var(--cream)}
-.fokus-kaki{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+.fokus-kaki{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:20px}
 
-.fokus.tampil .fokus-kiri,.fokus.tampil .fokus-kanan{animation:rec-masuk .4s cubic-bezier(.2,.7,.2,1) both;animation-delay:.18s}
+.fokus-utama{display:flex;flex-direction:column;gap:22px}
+.fokus.tampil .fokus-utama{animation:rec-masuk .42s cubic-bezier(.2,.7,.2,1) both;animation-delay:.16s}
+
+/* sorotan sebagai kisi kartu, bukan satu kolom panjang yang menyisakan ruang kosong */
+.sorot-kisi{display:grid;grid-template-columns:repeat(auto-fit,minmax(214px,1fr));gap:12px}
+.sorot-kartu{background:var(--surface);border:3px solid var(--navy);border-radius:14px;padding:13px 15px;
+  box-shadow:var(--shadow);transition:transform .16s cubic-bezier(.2,.7,.2,1),box-shadow .16s}
+.sorot-kartu:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--navy)}
+.sorot-kartu .t{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--red);display:block;margin-bottom:6px}
+.sorot-kartu .n{font-family:var(--disp);font-size:25px;line-height:1;color:var(--navy);display:block;margin-bottom:7px}
+.sorot-kartu .k{font-size:12.5px;color:var(--ink-2);line-height:1.5;margin:0}
+
 .fk-blok{background:var(--surface);border:3px solid var(--navy);border-radius:14px;padding:16px 18px;
-  box-shadow:var(--shadow);margin-bottom:14px}
+  box-shadow:var(--shadow)}
 .fk-blok h3{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
   color:var(--red);margin-bottom:10px}
 .fk-besar{font-family:var(--disp);font-size:30px;line-height:1;color:var(--navy)}
 .fk-baris{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px solid var(--line);font-size:13px}
 .fk-baris:last-child{border-bottom:0}
 .fk-baris b{font-family:var(--mono);font-weight:600;color:var(--ink);white-space:nowrap}
-.fk-bar{height:7px;background:var(--cream-3);border-radius:999px;overflow:hidden;border:1.5px solid var(--navy);margin-top:4px}
-.fk-bar i{display:block;height:100%;background:var(--red);transition:width .7s cubic-bezier(.2,.7,.2,1)}
 .fk-catatan{font-size:12.5px;color:var(--ink-2);line-height:1.55;margin:0}
 .fk-catatan+.fk-catatan{margin-top:8px}
-.fokus-kanan .rec{border-bottom:2px solid var(--line)}
+.fk-bar{height:7px;background:var(--cream-3);border-radius:999px;overflow:hidden;border:1.5px solid var(--navy);margin-top:4px}
+.fk-bar i{display:block;height:100%;background:var(--red);transition:width .7s cubic-bezier(.2,.7,.2,1)}
+.fk-judul{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-3);border-bottom:3px solid var(--navy);padding-bottom:7px;margin-bottom:4px}
+.fokus-catatan .rec{border-bottom:2px solid var(--line)}
 .fk-tahun{position:sticky;top:78px;background:var(--cream);font-family:var(--disp);font-size:15px;
   color:var(--navy);padding:8px 0 4px;border-bottom:2px solid var(--navy);margin:16px 0 2px;z-index:1}
+
+@media (max-width:1100px){
+  .fokus-isi{grid-template-columns:1fr;gap:24px}
+  .fokus-bentuk-kol{position:static}
+  #fokus-bentuk{max-height:34vh}
+}
+@media (prefers-reduced-motion:reduce){
+  .panggung-ayun{animation:none}
+  #fokus-bentuk{transform:none;transition:none}
+  .fokus.tampil #fokus-bentuk,.fokus.tampil .fokus-utama,.fokus-catatan .rec{animation:none !important}
+  .sorot-kartu{transition:none}
+}
+
 </style>
 
 <div class="wrap">
@@ -441,14 +476,20 @@ body.fokus-aktif #live-badge{display:none}
       <button class="btn-x" id="fokus-tutup">&larr; kembali ke peta</button>
     </div>
     <div class="fokus-isi">
-      <aside class="fokus-kiri" id="fokus-kiri"></aside>
-      <div class="fokus-tengah">
+      <aside class="fokus-bentuk-kol">
         <h2 id="fokus-nama"></h2>
         <p class="fokus-sub" id="fokus-sub"></p>
-        <svg id="fokus-bentuk" viewBox="0 0 100 100" role="img"></svg>
+        <div class="panggung">
+          <div class="panggung-ayun">
+            <svg id="fokus-bentuk" viewBox="0 0 100 100" role="img"></svg>
+          </div>
+        </div>
         <div id="fokus-kaki" class="fokus-kaki"></div>
+      </aside>
+      <div class="fokus-utama">
+        <section class="fokus-sorotan" id="fokus-sorotan"></section>
+        <section class="fokus-catatan" id="fokus-catatan"></section>
       </div>
-      <section class="fokus-kanan" id="fokus-kanan"></section>
     </div>
   </section>
 
@@ -757,7 +798,7 @@ body.fokus-aktif #live-badge{display:none}
   function bukaFokus(name) {
     var S = sorotan(name), c = S.c;
     $("#fokus-nama").textContent = name;
-    $("#fokus-sub").textContent = state.periode + " \u00b7 " + S.nMed + " liputan media \u00b7 " + S.nKas + " kasus resmi";
+    $("#fokus-sub").textContent = state.periode + " · " + S.nMed + " liputan media · " + S.nKas + " kasus resmi";
 
     var idx = null;
     Object.keys(D.pathProv).forEach(function (i) { if (D.pathProv[i].indexOf(name) >= 0) idx = i; });
@@ -766,13 +807,14 @@ body.fokus-aktif #live-badge{display:none}
       '<span class="pill lbg">' + S.nKas + " kasus resmi</span>" +
       (S.dua ? '<span class="pill dua">' + S.dua + " dua sumber</span>" : "");
 
-    $("#fokus-kiri").innerHTML = '<div class="fk-blok"><h3>Sorotan</h3>' +
+    // sorotan sebagai kisi kartu: kolomnya sekarang lebar, satu lajur panjang hanya menyisakan ruang kosong
+    $("#fokus-sorotan").innerHTML = '<p class="fk-judul">Sorotan</p><div class="sorot-kisi">' +
       S.sorot.map(function (x) {
-        return '<div style="margin-bottom:12px"><div class="fk-baris" style="border:0;padding:0 0 2px">' +
-          "<span>" + esc(x.t) + "</span><b>" + esc(x.n) + "</b></div>" +
-          '<p class="fk-catatan">' + esc(x.k) + "</p></div>";
+        return '<div class="sorot-kartu"><span class="t">' + esc(x.t) + "</span>" +
+          '<span class="n">' + esc(x.n) + "</span>" +
+          '<p class="k">' + esc(x.k) + "</p></div>";
       }).join("") + "</div>" +
-      '<div class="fk-blok"><h3>Cara membacanya</h3>' +
+      '<div class="fk-blok" style="margin-top:14px"><h3>Cara membacanya</h3>' +
       '<p class="fk-catatan">Angka di sini <b>bukan jumlah kejadian</b>, melainkan jumlah yang berhasil ditemukan ' +
       "lewat prosedur pencarian kami. Provinsi dengan pers yang tebal akan tampak lebih ramai, dan itu sifat " +
       "sumbernya, bukan sifat daerahnya.</p>" +
@@ -787,7 +829,7 @@ body.fokus-aktif #live-badge{display:none}
       .sort(function (a, b) { return b.t < a.t ? -1 : 1; });
     var tanpaTgl = c.ins.filter(function (r) { return !r.tanggal; }).length +
       c.oto.filter(function (r) { return !r.tanggal_berita; }).length;
-    var html = '<div class="fk-blok" style="padding:12px 16px"><h3 style="margin:0">Semua catatan, dari yang terbaru</h3></div>';
+    var html = '<p class="fk-judul">Semua catatan, dari yang terbaru</p>';
     var th = null;
     semua.forEach(function (x) {
       var y = x.t.slice(0, 4);
@@ -796,7 +838,7 @@ body.fokus-aktif #live-badge{display:none}
     });
     if (tanpaTgl) html += '<p class="fk-catatan" style="margin-top:12px">' + tanpaTgl +
       " catatan lain tidak punya tanggal yang bisa dipastikan, jadi tidak masuk urutan di atas.</p>";
-    $("#fokus-kanan").innerHTML = html || '<div class="fk-blok">Belum ada catatan.</div>';
+    $("#fokus-catatan").innerHTML = semua.length ? html : '<div class="fk-blok">Belum ada catatan.</div>';
 
     var fk = $("#fokus");
     fk.classList.remove("tampil");
@@ -809,43 +851,86 @@ body.fokus-aktif #live-badge{display:none}
     // getBBox only returns real numbers once the element is laid out, so the shape
     // is measured after the panel stops being display:none, never before
     gambarBentuk(idx, name, c);
-    all("#fokus-kanan .rec").forEach(function (el, i) { el.style.setProperty("--r", Math.min(i, 14)); });
+    all("#fokus-catatan .rec").forEach(function (el, i) { el.style.setProperty("--r", Math.min(i, 14)); });
     // rAF gives a clean animation start; the timer is a backstop, because a browser that is not
     // painting (hidden tab, reduced-motion shells) never runs rAF and the panel must still appear
+    var sv = $("#fokus-bentuk");
+    sv.classList.remove("siap");
+    var lepas = function () { sv.classList.add("siap"); };
+    sv.addEventListener("animationend", lepas, { once: true });
+    setTimeout(lepas, 760);                 // backstop: no paint means no animationend
     var nyala = function () { fk.classList.add("tampil"); };
     requestAnimationFrame(function () { requestAnimationFrame(nyala); });
     setTimeout(nyala, 80);
   }
 
-  // the province outline, lifted out of the map and scaled to fill the middle column
+  // muka atas dan sisi tebal untuk tiap kategori; sisinya warna yang sama tapi digelapkan
+  var MUKA = {
+    keduanya: ["#c4402c", "#7f2718"], resmi: ["#e8873a", "#8f5119"],
+    media: ["#f0c243", "#95741c"], kosong: ["#1c1c1c", "#000000"]
+  };
+
+  // the province outline, lifted out of the map and given thickness: the same path is stamped
+  // repeatedly along one diagonal to build the side wall, then the top face is laid over it
   function gambarBentuk(idx, name, c) {
     var sv = $("#fokus-bentuk");
     if (idx == null || !D.pathD[idx]) { sv.innerHTML = ""; sv.setAttribute("viewBox", "0 0 100 100"); return; }
     sv.setAttribute("viewBox", "0 0 1000 420");
     sv.setAttribute("aria-label", "Bentuk wilayah " + name + ", dengan titik di kab/kota yang disebut");
-    sv.innerHTML = '<path class="bentuk" d="' + D.pathD[idx] + '"/>';
+    var d = D.pathD[idx];
+    sv.innerHTML = '<path class="bentuk" d="' + d + '"/>';
     var node = sv.querySelector(".bentuk"), bb = node.getBBox();
     if (!bb.width || !bb.height) return;          // still not laid out; leave the map-wide box
-    var pad = Math.max(bb.width, bb.height) * 0.08;
+    var sisi = Math.max(bb.width, bb.height) * 0.075, lapis = 16;
+    // the box has to leave room for the thickness, or the extrusion gets clipped at the bottom edge
+    var pad = Math.max(bb.width, bb.height) * 0.07;
     sv.setAttribute("viewBox", (bb.x - pad) + " " + (bb.y - pad) + " " +
-      (bb.width + pad * 2) + " " + (bb.height + pad * 2));
+      (bb.width + pad * 2 + sisi) + " " + (bb.height + pad * 2 + sisi));
+
     var st = stats()[name];
-    node.setAttribute("fill",
-      st && st.media && st.kas ? "var(--red)" : st && st.kas ? "#e8873a" : st && st.media ? "#f0c243" : "#1c1c1c");
-    node.setAttribute("stroke-width", (Math.max(bb.width, bb.height) * 0.006).toFixed(3));
+    var kat = st && st.media && st.kas ? "keduanya" : st && st.kas ? "resmi" : st && st.media ? "media" : "kosong";
+    var warna = MUKA[kat], dx = sisi / lapis * 0.55, dy = sisi / lapis;
+
+    var tumpuk = "";
+    for (var k = lapis; k >= 1; k--) {
+      tumpuk += '<path class="sisi" d="' + d + '" fill="' + warna[1] +
+        '" transform="translate(' + (k * dx).toFixed(2) + " " + (k * dy).toFixed(2) + ')"/>';
+    }
+    node.setAttribute("fill", warna[0]);
+    node.setAttribute("stroke-width", (Math.max(bb.width, bb.height) * 0.005).toFixed(3));
+    sv.insertAdjacentHTML("afterbegin", tumpuk);
+
     // kab/kota points stay, so the shape still carries where inside the province things happened
     var rad = Math.max(bb.width, bb.height) * 0.013, tt = "";
     c.ins.concat(c.oto, c.kas).forEach(function (r) {
-      var k = D.koordinat[(r.provinsi || "") + "|" + (r.kab_kota || "")];
-      if (!k) return;
-      var pt = project(k.lon, k.lat);
-      tt += '<circle class="tt" cx="' + pt[0].toFixed(1) + '" cy="' + pt[1].toFixed(1) + '" r="' + rad.toFixed(2) + '" stroke-width="' + (rad * 0.28).toFixed(3) +
-        '" fill="' + (r.kasus_id ? "#8a4a12" : "var(--navy-deep)") + '" fill-opacity=".8"/>';
+      var k2 = D.koordinat[(r.provinsi || "") + "|" + (r.kab_kota || "")];
+      if (!k2) return;
+      var pt = project(k2.lon, k2.lat);
+      tt += '<circle class="tt" cx="' + pt[0].toFixed(1) + '" cy="' + pt[1].toFixed(1) + '" r="' + rad.toFixed(2) +
+        '" stroke-width="' + (rad * 0.28).toFixed(3) +
+        '" fill="' + (r.kasus_id ? "#8a4a12" : "var(--navy-deep)") + '" fill-opacity=".85"/>';
     });
     sv.insertAdjacentHTML("beforeend", tt);
   }
 
   var pemicuFokus = null;
+
+  // the shape tilts toward the pointer. The entrance keyframes hold the transform while they run
+  // (fill-mode both), so the tilt only takes over once .siap turns that animation off.
+  function wireMiring() {
+    var pg = document.querySelector(".panggung"), sv = $("#fokus-bentuk");
+    if (!pg || !sv || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    pg.addEventListener("pointermove", function (e) {
+      var r = pg.getBoundingClientRect();
+      if (!r.width || !r.height) return;
+      sv.style.setProperty("--rx", (11 - ((e.clientY - r.top) / r.height - 0.5) * 17).toFixed(1) + "deg");
+      sv.style.setProperty("--ry", (-7 + ((e.clientX - r.left) / r.width - 0.5) * 24).toFixed(1) + "deg");
+    });
+    pg.addEventListener("pointerleave", function () {
+      sv.style.removeProperty("--rx"); sv.style.removeProperty("--ry");
+    });
+  }
+
 
   function tutupFokus() {
     if ($("#fokus").hidden) return;
@@ -1065,6 +1150,7 @@ body.fokus-aktif #live-badge{display:none}
     var xEl = $("#excl"); if (xEl) xEl.textContent = ex ? ex + " baris berstatus kurasi 'keluar' tetap di dataset tetapi tidak dipetakan." : "";
     drawPeriods(); provinceList(); updateStats(); pipeline(); wireLegendHelp();
     var tb = $("#fokus-tutup"); if (tb) tb.onclick = tutupFokus;
+    wireMiring();
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") tutupFokus(); });
   }).catch(function (e) {
     $("#pnl").innerHTML = '<div class="pnl-empty"><b>Data gagal dimuat</b><p>' + esc(e.message) + "</p></div>";

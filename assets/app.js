@@ -240,7 +240,7 @@
   function bukaFokus(name) {
     var S = sorotan(name), c = S.c;
     $("#fokus-nama").textContent = name;
-    $("#fokus-sub").textContent = state.periode + " \u00b7 " + S.nMed + " liputan media \u00b7 " + S.nKas + " kasus resmi";
+    $("#fokus-sub").textContent = state.periode + " · " + S.nMed + " liputan media · " + S.nKas + " kasus resmi";
 
     var idx = null;
     Object.keys(D.pathProv).forEach(function (i) { if (D.pathProv[i].indexOf(name) >= 0) idx = i; });
@@ -249,13 +249,14 @@
       '<span class="pill lbg">' + S.nKas + " kasus resmi</span>" +
       (S.dua ? '<span class="pill dua">' + S.dua + " dua sumber</span>" : "");
 
-    $("#fokus-kiri").innerHTML = '<div class="fk-blok"><h3>Sorotan</h3>' +
+    // sorotan sebagai kisi kartu: kolomnya sekarang lebar, satu lajur panjang hanya menyisakan ruang kosong
+    $("#fokus-sorotan").innerHTML = '<p class="fk-judul">Sorotan</p><div class="sorot-kisi">' +
       S.sorot.map(function (x) {
-        return '<div style="margin-bottom:12px"><div class="fk-baris" style="border:0;padding:0 0 2px">' +
-          "<span>" + esc(x.t) + "</span><b>" + esc(x.n) + "</b></div>" +
-          '<p class="fk-catatan">' + esc(x.k) + "</p></div>";
+        return '<div class="sorot-kartu"><span class="t">' + esc(x.t) + "</span>" +
+          '<span class="n">' + esc(x.n) + "</span>" +
+          '<p class="k">' + esc(x.k) + "</p></div>";
       }).join("") + "</div>" +
-      '<div class="fk-blok"><h3>Cara membacanya</h3>' +
+      '<div class="fk-blok" style="margin-top:14px"><h3>Cara membacanya</h3>' +
       '<p class="fk-catatan">Angka di sini <b>bukan jumlah kejadian</b>, melainkan jumlah yang berhasil ditemukan ' +
       "lewat prosedur pencarian kami. Provinsi dengan pers yang tebal akan tampak lebih ramai, dan itu sifat " +
       "sumbernya, bukan sifat daerahnya.</p>" +
@@ -270,7 +271,7 @@
       .sort(function (a, b) { return b.t < a.t ? -1 : 1; });
     var tanpaTgl = c.ins.filter(function (r) { return !r.tanggal; }).length +
       c.oto.filter(function (r) { return !r.tanggal_berita; }).length;
-    var html = '<div class="fk-blok" style="padding:12px 16px"><h3 style="margin:0">Semua catatan, dari yang terbaru</h3></div>';
+    var html = '<p class="fk-judul">Semua catatan, dari yang terbaru</p>';
     var th = null;
     semua.forEach(function (x) {
       var y = x.t.slice(0, 4);
@@ -279,7 +280,7 @@
     });
     if (tanpaTgl) html += '<p class="fk-catatan" style="margin-top:12px">' + tanpaTgl +
       " catatan lain tidak punya tanggal yang bisa dipastikan, jadi tidak masuk urutan di atas.</p>";
-    $("#fokus-kanan").innerHTML = html || '<div class="fk-blok">Belum ada catatan.</div>';
+    $("#fokus-catatan").innerHTML = semua.length ? html : '<div class="fk-blok">Belum ada catatan.</div>';
 
     var fk = $("#fokus");
     fk.classList.remove("tampil");
@@ -292,43 +293,86 @@
     // getBBox only returns real numbers once the element is laid out, so the shape
     // is measured after the panel stops being display:none, never before
     gambarBentuk(idx, name, c);
-    all("#fokus-kanan .rec").forEach(function (el, i) { el.style.setProperty("--r", Math.min(i, 14)); });
+    all("#fokus-catatan .rec").forEach(function (el, i) { el.style.setProperty("--r", Math.min(i, 14)); });
     // rAF gives a clean animation start; the timer is a backstop, because a browser that is not
     // painting (hidden tab, reduced-motion shells) never runs rAF and the panel must still appear
+    var sv = $("#fokus-bentuk");
+    sv.classList.remove("siap");
+    var lepas = function () { sv.classList.add("siap"); };
+    sv.addEventListener("animationend", lepas, { once: true });
+    setTimeout(lepas, 760);                 // backstop: no paint means no animationend
     var nyala = function () { fk.classList.add("tampil"); };
     requestAnimationFrame(function () { requestAnimationFrame(nyala); });
     setTimeout(nyala, 80);
   }
 
-  // the province outline, lifted out of the map and scaled to fill the middle column
+  // muka atas dan sisi tebal untuk tiap kategori; sisinya warna yang sama tapi digelapkan
+  var MUKA = {
+    keduanya: ["#c4402c", "#7f2718"], resmi: ["#e8873a", "#8f5119"],
+    media: ["#f0c243", "#95741c"], kosong: ["#1c1c1c", "#000000"]
+  };
+
+  // the province outline, lifted out of the map and given thickness: the same path is stamped
+  // repeatedly along one diagonal to build the side wall, then the top face is laid over it
   function gambarBentuk(idx, name, c) {
     var sv = $("#fokus-bentuk");
     if (idx == null || !D.pathD[idx]) { sv.innerHTML = ""; sv.setAttribute("viewBox", "0 0 100 100"); return; }
     sv.setAttribute("viewBox", "0 0 1000 420");
     sv.setAttribute("aria-label", "Bentuk wilayah " + name + ", dengan titik di kab/kota yang disebut");
-    sv.innerHTML = '<path class="bentuk" d="' + D.pathD[idx] + '"/>';
+    var d = D.pathD[idx];
+    sv.innerHTML = '<path class="bentuk" d="' + d + '"/>';
     var node = sv.querySelector(".bentuk"), bb = node.getBBox();
     if (!bb.width || !bb.height) return;          // still not laid out; leave the map-wide box
-    var pad = Math.max(bb.width, bb.height) * 0.08;
+    var sisi = Math.max(bb.width, bb.height) * 0.075, lapis = 16;
+    // the box has to leave room for the thickness, or the extrusion gets clipped at the bottom edge
+    var pad = Math.max(bb.width, bb.height) * 0.07;
     sv.setAttribute("viewBox", (bb.x - pad) + " " + (bb.y - pad) + " " +
-      (bb.width + pad * 2) + " " + (bb.height + pad * 2));
+      (bb.width + pad * 2 + sisi) + " " + (bb.height + pad * 2 + sisi));
+
     var st = stats()[name];
-    node.setAttribute("fill",
-      st && st.media && st.kas ? "var(--red)" : st && st.kas ? "#e8873a" : st && st.media ? "#f0c243" : "#1c1c1c");
-    node.setAttribute("stroke-width", (Math.max(bb.width, bb.height) * 0.006).toFixed(3));
+    var kat = st && st.media && st.kas ? "keduanya" : st && st.kas ? "resmi" : st && st.media ? "media" : "kosong";
+    var warna = MUKA[kat], dx = sisi / lapis * 0.55, dy = sisi / lapis;
+
+    var tumpuk = "";
+    for (var k = lapis; k >= 1; k--) {
+      tumpuk += '<path class="sisi" d="' + d + '" fill="' + warna[1] +
+        '" transform="translate(' + (k * dx).toFixed(2) + " " + (k * dy).toFixed(2) + ')"/>';
+    }
+    node.setAttribute("fill", warna[0]);
+    node.setAttribute("stroke-width", (Math.max(bb.width, bb.height) * 0.005).toFixed(3));
+    sv.insertAdjacentHTML("afterbegin", tumpuk);
+
     // kab/kota points stay, so the shape still carries where inside the province things happened
     var rad = Math.max(bb.width, bb.height) * 0.013, tt = "";
     c.ins.concat(c.oto, c.kas).forEach(function (r) {
-      var k = D.koordinat[(r.provinsi || "") + "|" + (r.kab_kota || "")];
-      if (!k) return;
-      var pt = project(k.lon, k.lat);
-      tt += '<circle class="tt" cx="' + pt[0].toFixed(1) + '" cy="' + pt[1].toFixed(1) + '" r="' + rad.toFixed(2) + '" stroke-width="' + (rad * 0.28).toFixed(3) +
-        '" fill="' + (r.kasus_id ? "#8a4a12" : "var(--navy-deep)") + '" fill-opacity=".8"/>';
+      var k2 = D.koordinat[(r.provinsi || "") + "|" + (r.kab_kota || "")];
+      if (!k2) return;
+      var pt = project(k2.lon, k2.lat);
+      tt += '<circle class="tt" cx="' + pt[0].toFixed(1) + '" cy="' + pt[1].toFixed(1) + '" r="' + rad.toFixed(2) +
+        '" stroke-width="' + (rad * 0.28).toFixed(3) +
+        '" fill="' + (r.kasus_id ? "#8a4a12" : "var(--navy-deep)") + '" fill-opacity=".85"/>';
     });
     sv.insertAdjacentHTML("beforeend", tt);
   }
 
   var pemicuFokus = null;
+
+  // the shape tilts toward the pointer. The entrance keyframes hold the transform while they run
+  // (fill-mode both), so the tilt only takes over once .siap turns that animation off.
+  function wireMiring() {
+    var pg = document.querySelector(".panggung"), sv = $("#fokus-bentuk");
+    if (!pg || !sv || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    pg.addEventListener("pointermove", function (e) {
+      var r = pg.getBoundingClientRect();
+      if (!r.width || !r.height) return;
+      sv.style.setProperty("--rx", (11 - ((e.clientY - r.top) / r.height - 0.5) * 17).toFixed(1) + "deg");
+      sv.style.setProperty("--ry", (-7 + ((e.clientX - r.left) / r.width - 0.5) * 24).toFixed(1) + "deg");
+    });
+    pg.addEventListener("pointerleave", function () {
+      sv.style.removeProperty("--rx"); sv.style.removeProperty("--ry");
+    });
+  }
+
 
   function tutupFokus() {
     if ($("#fokus").hidden) return;
@@ -550,6 +594,7 @@
     var xEl = $("#excl"); if (xEl) xEl.textContent = ex ? ex + " baris berstatus kurasi 'keluar' tetap di dataset tetapi tidak dipetakan." : "";
     drawPeriods(); provinceList(); updateStats(); pipeline(); wireLegendHelp();
     var tb = $("#fokus-tutup"); if (tb) tb.onclick = tutupFokus;
+    wireMiring();
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") tutupFokus(); });
   }).catch(function (e) {
     $("#pnl").innerHTML = '<div class="pnl-empty"><b>Data gagal dimuat</b><p>' + esc(e.message) + "</p></div>";
