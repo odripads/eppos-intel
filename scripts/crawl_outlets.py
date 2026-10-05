@@ -131,6 +131,15 @@ def _tulis_log(path_json, logs):
     import collections, json as _j
     D = path_json.parent
     full = D / "log_pencarian_lengkap.jsonl"
+    # self-healing: a process started before this change writes the old 58 MB list back. Absorb it
+    # rather than letting it silently undo the compaction (it did exactly that once).
+    try:
+        legacy = _j.loads(path_json.read_text())
+        if isinstance(legacy, list) and legacy:
+            with open(full, "a") as lf:
+                for r in legacy: lf.write(_j.dumps(r, ensure_ascii=False) + "\n")
+    except Exception:
+        pass
     with open(full, "a") as f:
         for r in logs: f.write(_j.dumps(r, ensure_ascii=False) + "\n")
     ring = collections.defaultdict(lambda: {"sel": 0, "hasil_masuk": 0})
