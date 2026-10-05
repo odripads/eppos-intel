@@ -279,7 +279,7 @@
         '<span class="pc"><i class="sw ins"></i>' + s.ins + '<i class="sw kas"></i>' + s.kas +
         (s.oto ? '<i class="sw oto"></i>' + s.oto : "") + "</span>" +
         '<span class="pcat cat-' + s.cat + '" title="' + esc(s.deret || "") + '">' +
-        (s.cat === "kuat" ? "dua deret" : s.cat === "tunggal" ? "satu deret" : "otomatis") + "</span></button>";
+        (s.cat === "kuat" ? "media + resmi" : s.cat === "tunggal" ? "salah satu" : "otomatis") + "</span></button>";
     });
     $("#pnl").innerHTML = h + "</div>";
     all(".prow").forEach(function (b) { b.onclick = function () { selectProv(b.dataset.prov); }; });

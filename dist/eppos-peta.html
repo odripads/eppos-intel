@@ -289,27 +289,26 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
         <g id="plabels"></g>
       </svg>
       <div class="legend">
-        <span class="lg-title">Seberapa kuat buktinya:</span>
-        <span><i class="sw kuat"></i>dua deret saling menguatkan</span>
-        <span><i class="sw tunggal"></i>satu deret saja</span>
-        <span><i class="sw lemah"></i>baru penelusuran otomatis</span>
-        <span><i class="sw kosong"></i>belum ada catatan</span>
+        <span><i class="sw kuat"></i><b>merah</b> &mdash; ada liputan media <b>dan</b> kasus resmi</span>
+        <span><i class="sw tunggal"></i><b>emas</b> &mdash; salah satu saja</span>
+        <span><i class="sw lemah"></i><b>cokelat</b> &mdash; baru hasil penelusuran otomatis</span>
+        <span><i class="sw kosong"></i><b>navy</b> &mdash; belum ada apa-apa</span>
         <span style="margin-left:auto"><i class="sw ins"></i>insiden<i class="sw kas" style="margin-left:10px"></i>kasus resmi<i class="sw oto" style="margin-left:10px"></i>otomatis</span>
       </div>
       <div class="legend" style="border-top:0;padding-top:0;display:block">
         <p class="hint" id="excl" style="margin:0 0 8px"></p>
         <button class="btn-x" id="legend-toggle" aria-expanded="false" style="margin-bottom:10px">apa arti tanda-tanda ini?</button>
         <div id="legend-help" hidden>
-          <h4 class="lh">Warna provinsi &mdash; <em>seberapa kuat buktinya, bukan berapa banyak</em></h4>
+          <h4 class="lh">Warna provinsi</h4>
           <dl class="lx">
-            <dt><i class="sw kuat"></i>dua deret saling menguatkan</dt>
-            <dd>Ada liputan media <b>dan</b> kasus administratif. Dua deret dengan bias berbeda menunjuk ke tempat yang sama &mdash; ini sinyal terkuat.</dd>
-            <dt><i class="sw tunggal"></i>satu deret saja</dt>
-            <dd>Baru satu jenis bukti. Bentuk titiknya menunjukkan yang mana, dan perbedaannya penting: <b>hanya media</b> mengarah ke kemungkinan kegagalan penegakan; <b>hanya kasus resmi</b> mengarah ke kemungkinan ketiadaan pers. Keduanya tidak diurutkan mana yang lebih berat &mdash; keduanya temuan yang berbeda, bukan derajat.</dd>
-            <dt><i class="sw lemah"></i>baru penelusuran otomatis</dt>
-            <dd>Ditemukan mesin, belum ada baris terkurasi. Perlu diperiksa sebelum dipakai.</dd>
-            <dt><i class="sw kosong"></i>belum ada catatan</dt>
-            <dd>Belum ada yang ditemukan lewat prosedur pencarian kami. <b>Bukan berarti tidak ada kejadian.</b></dd>
+            <dt><i class="sw kuat"></i>merah</dt>
+            <dd>Ada <b>liputan media dan kasus resmi</b> di provinsi itu. Dua sumber yang biasnya berlawanan menunjuk ke tempat yang sama, jadi ini yang paling kuat.</dd>
+            <dt><i class="sw tunggal"></i>emas</dt>
+            <dd>Baru <b>salah satu</b>: media saja, atau kasus resmi saja. Bentuk titiknya menunjukkan yang mana. Media saja bisa berarti laporannya tidak ditindak; kasus resmi saja bisa berarti persnya tidak ada di sana. Keduanya sama-sama emas karena bukan yang satu lebih berat dari yang lain, melainkan masalah yang berbeda.</dd>
+            <dt><i class="sw lemah"></i>cokelat</dt>
+            <dd>Baru <b>hasil penelusuran otomatis</b>, belum ada baris yang dikurasi tangan. Perlu diperiksa dulu.</dd>
+            <dt><i class="sw kosong"></i>navy</dt>
+            <dd><b>Belum ada apa-apa</b> yang ketemu lewat prosedur pencarian kami. Bukan berarti tidak ada kejadian di sana.</dd>
           </dl>
           <h4 class="lh">Bentuk titik &mdash; <em>dari mana barisnya berasal</em></h4>
           <dl class="lx">
@@ -677,7 +676,7 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
         '<span class="pc"><i class="sw ins"></i>' + s.ins + '<i class="sw kas"></i>' + s.kas +
         (s.oto ? '<i class="sw oto"></i>' + s.oto : "") + "</span>" +
         '<span class="pcat cat-' + s.cat + '" title="' + esc(s.deret || "") + '">' +
-        (s.cat === "kuat" ? "dua deret" : s.cat === "tunggal" ? "satu deret" : "otomatis") + "</span></button>";
+        (s.cat === "kuat" ? "media + resmi" : s.cat === "tunggal" ? "salah satu" : "otomatis") + "</span></button>";
     });
     $("#pnl").innerHTML = h + "</div>";
     all(".prow").forEach(function (b) { b.onclick = function () { selectProv(b.dataset.prov); }; });
