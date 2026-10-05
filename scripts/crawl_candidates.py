@@ -24,6 +24,8 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import kandidat_io  # noqa: E402  one locked writer for data/kandidat.json
 DATA = ROOT / "data"
 UA_RSS = "EPPOS-DPP-UGM academic research (incident census; github.com/odripads/eppos-intel)"
 UA_RES = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
@@ -65,12 +67,51 @@ PROVINSI = ["Aceh", "Sumatera Utara", "Sumatera Barat", "Riau", "Kepulauan Riau"
     "Gorontalo", "Sulawesi Tengah", "Sulawesi Barat", "Sulawesi Selatan", "Sulawesi Tenggara", "Maluku",
     "Maluku Utara", "Papua", "Papua Barat", "Papua Barat Daya", "Papua Tengah", "Papua Pegunungan", "Papua Selatan"]
 
+# Kab/kota sweep. Long phrases plus a quoted formal province name ("netralitas ASN dilaporkan "Papua
+# Tengah"") return almost nothing: every word is required, and local headlines name the town, not the
+# province. Short terms paired with a place name do return the local reporting. The village-head terms
+# follow the province's own vocabulary.
+KK_ISTILAH = {
+    "paksaan aparat sipil": ["netralitas ASN", "ASN tidak netral", "mutasi pejabat pilkada"],
+    "paksaan kepala desa dan lurah": ["kepala desa pilkada", "camat netralitas"],
+    "paksaan warga penerima program": ["bansos pilkada"],
+    "tekanan terhadap kritik": ["wartawan intimidasi"],
+    "pengalihan sumber daya": ["bantuan jelang pilkada"],
+}
+KK_ISTILAH_PAPUA = {"paksaan kepala desa dan lurah": ["kepala kampung pilkada", "kepala distrik netralitas"]}
+# newest first, and the inter-wave years before the old waves: four of the six target provinces only
+# exist from late 2022, so their own reporting starts there
+KK_URUT = ["2024", "2025", "2026", "2023", "2022", "2021", "2020", "2019b", "2018", "2017", "2016", "2015"]
+# towns people actually write instead of the kabupaten's official name
+KK_ALIAS = {"Mimika": ["Timika"], "Jayawijaya": ["Wamena"], "Pangkal Pinang": ["Pangkalpinang"],
+            "Boven Digoel": ["Tanah Merah"], "Teluk Bintuni": ["Bintuni"]}
+
+
+def tempat_provinsi(provs):
+    """Kab/kota search names per province, from the gazetteer's BPS codes (not from map geometry)."""
+    rows = json.loads((ROOT / "scripts" / "wikidata_id_regions.json").read_text())
+    kode = {r["bps"][:2]: r["label"] for r in rows if "provin" in r["type"].lower() and r.get("bps")}
+    out = {}
+    for r in rows:
+        if "provin" in r["type"].lower() or not r.get("bps"): continue
+        pv = kode.get(r["bps"][:2])
+        if pv not in provs: continue
+        nm = re.sub(r"^(Kabupaten|Kota)\s+", "", r["label"]).strip()
+        lst = out.setdefault(pv, [])
+        for x in [nm] + KK_ALIAS.get(nm, []):
+            if x not in lst: lst.append(x)
+    return out
+
+
 # a title must look like a specific act, not general commentary, before it is queued
 RELEVAN = re.compile(r"(dilaporkan|laporan|dugaan|diduga|langgar|pelanggaran|melanggar|sanksi|teguran|diperiksa|"
     r"dipanggil|mobilisasi|dikumpulkan|mengumpulkan|diancam|ancaman|intimidasi|mengintimidasi|tekanan|menekan|"
     r"dimutasi|mutasi|demosi|dicopot|dinonaktifkan|arahkan|mengarahkan|memerintahkan|instruksi)", re.I)
-AKTOR = re.compile(r"(bupati|wali ?kota|walikota|gubernur|camat|lurah|kepala desa|kades|sekda|asn|pj |penjabat|"
-    r"petahana|inkumben|perangkat desa|honorer|pppk|kepala dinas|pegawai negeri)", re.I)
+AKTOR = re.compile(r"(bupati|wali ?kota|walikota|gubernur|camat|lurah|kepala desa|kades|sekda|asn|pj |pjs |penjabat|"
+    r"petahana|inkumben|perangkat desa|honorer|pppk|kepala dinas|pegawai negeri|"
+    # Papua names the same offices differently: kepala kampung (kakam) for kepala desa, kepala distrik
+    # for camat. Without these, every Papuan village-head story failed this filter before anyone saw it.
+    r"kepala kampung|kakam|kepala distrik|kadistrik)", re.I)
 # commentary / process pieces that are about the topic but are not an incident
 BUANG = re.compile(r"(coming soon|tayang di youtube|webinar|sosialisasi|imbau|mengimbau|himbau|apel kesiapan|"
     r"deklarasi damai|doa bersama|tips|opini|kolom|resmi tayang|podcast|quick count|hitung cepat|hasil pilkada|"
@@ -137,6 +178,32 @@ def load(name, default):
     return json.loads(p.read_text()) if p.exists() else default
 
 
+def simpan_state(state):
+    """Union `done` with what is on disk, then replace the file atomically, under a lock.
+
+    Both crawlers share crawl_state.json and used to write it wholesale, so whichever saved last
+    erased the cells the other had just finished; those cells were then searched again. Losing a
+    done-mark never lost data (candidates are merged separately), it only wasted the next run.
+    """
+    import fcntl, os
+    p = DATA / "crawl_state.json"
+    with open(DATA / ".crawl_state.lock", "w") as kunci:
+        fcntl.flock(kunci, fcntl.LOCK_EX)
+        disk = json.loads(p.read_text()) if p.exists() else {"done": [], "runs": []}
+        done = set(disk.get("done", [])) | set(state.get("done", []))
+        runs, dilihat = list(disk.get("runs", [])), set()
+        for r in runs: dilihat.add(json.dumps(r, sort_keys=True))
+        for r in state.get("runs", []):
+            k = json.dumps(r, sort_keys=True)
+            if k not in dilihat: runs.append(r); dilihat.add(k)
+        out = dict(disk); out.update({k: v for k, v in state.items() if k not in ("done", "runs")})
+        out["done"] = sorted(done); out["runs"] = runs
+        tmp = p.with_name(f".crawl_state.{os.getpid()}.tmp")
+        tmp.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n")
+        os.replace(tmp, p)
+        state["done"] = out["done"]
+
+
 def known_urls():
     seen = set()
     for f, cols in (("insiden.json", ("sumber_1_url", "sumber_2_url")), ("kasus_resmi.json", ("sumber_url",))):
@@ -144,6 +211,24 @@ def known_urls():
             for c in cols:
                 if r.get(c): seen.add(norm_url(r[c]))
     return seen
+
+
+def build_grid_kabkota(state, provs):
+    """Cells 'kk|wave|province|place|term', wave-major so the newest window is covered everywhere first."""
+    done = set(state.get("done", []))
+    tempat = tempat_provinsi(set(provs))
+    grid = []
+    for wave in [w for w in KK_URUT if w in GELOMBANG]:
+        for prov in provs:
+            papua = prov.startswith("Papua")
+            istilah = dict(KK_ISTILAH)
+            if papua: istilah.update(KK_ISTILAH_PAPUA)
+            for place in tempat.get(prov, []):
+                for mek, terms in istilah.items():
+                    for term in terms:
+                        cid = f"kk|{wave}|{prov}|{place}|{term}"
+                        if cid not in done: grid.append((cid, wave, prov, mek, term))
+    return grid
 
 
 def build_grid(state, insiden, hanya=None):
@@ -183,21 +268,9 @@ def build_grid(state, insiden, hanya=None):
 
 
 def _merge_save(path, rows):
-    """Union with whatever is on disk now, keyed by URL (falling back to id), then write once."""
-    import json as _j
-    try:
-        disk = _j.loads(path.read_text())
-    except Exception:
-        disk = []
-    seen, out = {}, []
-    for r in disk + rows:
-        k = (r.get("url") or r.get("url_google") or r.get("kandidat_id"))
-        if k in seen:
-            out[seen[k]].update({kk: vv for kk, vv in r.items() if vv is not None})
-            continue
-        seen[k] = len(out); out.append(dict(r))
-    path.write_text(_j.dumps(out, ensure_ascii=False, indent=1) + "\n")
-    return len(out)
+    """Locked, disk-wins merge into data/kandidat.json (see scripts/kandidat_io.py for why)."""
+    assert path.name == "kandidat.json", path
+    return kandidat_io.simpan(rows)
 
 
 def _seed_log(D):
@@ -250,6 +323,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cells", type=int, default=25, help="grid cells per run (Google News membatasi laju; 25 aman)")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--kabkota", action="store_true",
+                    help="dengan --provinsi: kueri pendek x nama kab/kota, bukan frasa panjang x nama provinsi")
     ap.add_argument("--provinsi", default=None,
                     help="batasi sapuan ke provinsi ini (pisahkan dengan koma); tier nasional dilewati")
     a = ap.parse_args()
@@ -267,7 +342,11 @@ def main():
         asing = [x for x in hanya if x not in PROVINSI]
         if asing: sys.exit(f"provinsi tidak dikenal: {asing}")
         print("sapuan dibatasi ke: " + ", ".join(hanya), file=sys.stderr)
-    grid = build_grid(state, insiden, hanya)
+    if a.kabkota:
+        if not hanya: sys.exit("--kabkota butuh --provinsi")
+        grid = build_grid_kabkota(state, hanya)
+    else:
+        grid = build_grid(state, insiden, hanya)
     todo = grid[: a.cells]
     print(f"grid: {len(grid)} sel belum dijalankan; run ini mengambil {len(todo)}", file=sys.stderr)
     if not todo:
@@ -281,7 +360,12 @@ def main():
 
     for cid, wave, prov, mek, qterm in todo:
         start, end = GELOMBANG[wave]
-        query = (f'{qterm} "{prov}" after:{start} before:{end}' if prov else f'{qterm} after:{start} before:{end}')
+        if cid.startswith("kk|"):
+            place = cid.split("|")[3]
+            tq = f'"{place}"' if " " in place else place
+            query = f"{qterm} {tq} after:{start} before:{end}"
+        else:
+            query = (f'{qterm} "{prov}" after:{start} before:{end}' if prov else f'{qterm} after:{start} before:{end}')
         try:
             items = gnews(query)
         except Exception as e:
@@ -320,9 +404,9 @@ def main():
                      "catatan": f"{len(items)} hasil, {kept} masuk antrean tinjau"})
         state.setdefault("done", []).append(cid)
         # simpan berkala: satu run panjang tidak boleh kehilangan semuanya kalau prosesnya mati
-        if len(state["done"]) % 25 == 0:
+        if len(state["done"]) % 25 == 0 and not a.dry_run:
             _merge_save(DATA / "kandidat.json", kandidat)
-            (DATA / "crawl_state.json").write_text(json.dumps(state, ensure_ascii=False, indent=1) + "\n")
+            simpan_state(state)
             _tulis_log(DATA / "log_pencarian.json", logs); logs = []
         print(f"  {wave} {(prov or '(nasional)')[:18]:18s} {mek[:24]:24s} {len(items):2d} hasil → {kept} kandidat", file=sys.stderr)
         time.sleep(12)
@@ -331,7 +415,7 @@ def main():
     if a.dry_run:
         print(f"[dry-run] {baru} kandidat akan ditambahkan", file=sys.stderr); return
     _merge_save(DATA / "kandidat.json", kandidat)
-    (DATA / "crawl_state.json").write_text(json.dumps(state, ensure_ascii=False, indent=1) + "\n")
+    simpan_state(state)
     _tulis_log(DATA / "log_pencarian.json", logs); logs = []
     belum = len([k for k in kandidat if not k.get("status_tinjau")])
     print(f"\n{baru} kandidat baru · {belum} menunggu tinjauan · {len(state['done'])}/{len(grid) + len(state['done'])} sel grid selesai", file=sys.stderr)

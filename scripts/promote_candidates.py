@@ -126,6 +126,16 @@ OUTLET_PROV = {
     "beritamanado.com": "Sulawesi Utara", "sultengraya.com": "Sulawesi Tengah",
     "sultrakini.com": "Sulawesi Tenggara", "kalselpos.com": "Kalimantan Selatan",
     "niaga.asia": "Kalimantan Timur", "malutpost.id": "Maluku Utara",
+    # added 6 Oct 2026 after reading each outlet's own recent headlines; only outlets whose coverage is
+    # plainly one province. Cenderawasih Pos, Suara Papua, Teropong News and Odiyaiwuu cover several
+    # Papua provinces at once, so they stay out: their stories are placed by the kab/kota they name.
+    "papuakini.co": "Papua Barat", "balleonews.com": "Papua Barat Daya",
+    "babelreview.co.id": "Kepulauan Bangka Belitung", "bangkaterkini.id": "Kepulauan Bangka Belitung",
+    "hariankepri.com": "Kepulauan Riau", "batampos.co.id": "Kepulauan Riau",
+    "kepri.batampos.co.id": "Kepulauan Riau", "news.batampos.co.id": "Kepulauan Riau",
+    "metro.batampos.co.id": "Kepulauan Riau", "metropolis.batampos.co.id": "Kepulauan Riau",
+    "halmaherapost.com": "Maluku Utara", "halosultra.com": "Sulawesi Tenggara",
+    "banggainews.com": "Sulawesi Tengah", "harianmuria.com": "Jawa Tengah", "bacajogja.id": "Yogyakarta",
 }
 
 

@@ -23,13 +23,23 @@ P = ROOT / "data" / "kandidat.json"
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--reset", action="store_true")
     a = ap.parse_args()
-    kand = json.loads(P.read_text())
+    import sys; sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import kandidat_io
+    hasil = {}
+    kandidat_io.ubah(lambda kand: hasil.update(_cap(kand, a.reset)))
+    print(f"{hasil['n']} kandidat ditandai · {hasil['tertahan']} tertahan tanpa URL · {hasil['sisa']} belum ditandai")
+
+
+def _cap(kand, reset):
     today = dt.date.today().isoformat()
     n = 0
     for k in kand:
-        if a.reset:
+        if reset:
             k["status_tinjau"] = None; k["catatan_tinjau"] = None; n += 1
             continue
+        # held only because the URL was missing; once the resolver finds it, the hold no longer applies
+        if k.get("status_tinjau") == "tertahan" and k.get("url"):
+            k["status_tinjau"] = None
         if k.get("status_tinjau"): continue
         if not k.get("url"):
             k["status_tinjau"] = "tertahan"
@@ -38,10 +48,8 @@ def main():
         k["status_tinjau"] = "diterima otomatis"
         k["catatan_tinjau"] = f"diterima massal {today} atas izin berdiri Odri; bukan tinjauan per baris"
         n += 1
-    P.write_text(json.dumps(kand, ensure_ascii=False, indent=1) + "\n")
-    sisa = sum(1 for k in kand if not k.get("status_tinjau"))
-    tertahan = sum(1 for k in kand if k.get("status_tinjau") == "tertahan")
-    print(f"{n} kandidat ditandai · {tertahan} tertahan tanpa URL · {sisa} belum ditandai")
+    return {"n": n, "sisa": sum(1 for k in kand if not k.get("status_tinjau")),
+            "tertahan": sum(1 for k in kand if k.get("status_tinjau") == "tertahan")}
 
 
 if __name__ == "__main__":

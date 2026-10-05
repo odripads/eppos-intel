@@ -99,21 +99,9 @@ def clean(t):
 
 
 def _merge_save(path, rows):
-    """Union with whatever is on disk now, keyed by URL (falling back to id), then write once."""
-    import json as _j
-    try:
-        disk = _j.loads(path.read_text())
-    except Exception:
-        disk = []
-    seen, out = {}, []
-    for r in disk + rows:
-        k = (r.get("url") or r.get("url_google") or r.get("kandidat_id"))
-        if k in seen:
-            out[seen[k]].update({kk: vv for kk, vv in r.items() if vv is not None})
-            continue
-        seen[k] = len(out); out.append(dict(r))
-    path.write_text(_j.dumps(out, ensure_ascii=False, indent=1) + "\n")
-    return len(out)
+    """Locked, disk-wins merge into data/kandidat.json (see scripts/kandidat_io.py for why)."""
+    assert path.name == "kandidat.json", path
+    return cc.kandidat_io.simpan(rows)
 
 
 def _seed_log(D):
@@ -166,9 +154,15 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cells", type=int, default=400)
     ap.add_argument("--registry", default=str(ROOT / "scripts" / "outlet_wp.json"))
+    ap.add_argument("--outlet", default=None, help="hanya outlet ini (koma); untuk menyapu outlet baru lebih dulu")
+    ap.add_argument("--workers", type=int, default=10, help="satu pekerja per outlet; permintaan ke satu situs tetap berurutan")
     a = ap.parse_args()
 
     outlets = json.loads(Path(a.registry).read_text())
+    if a.outlet:
+        hanya = [x.strip() for x in a.outlet.split(",") if x.strip()]
+        outlets = [d for d in outlets if d in hanya]
+        print("outlet dibatasi: " + ", ".join(outlets), file=sys.stderr)
     state = cc.load("crawl_state.json", {"done": [], "runs": []})
     kand = cc.load("kandidat.json", [])
     logs = []
@@ -234,18 +228,18 @@ def main():
                 if counter["sel"] % 60 == 0:
                     state["done"] = sorted(done)
                     _merge_save(DATA / "kandidat.json", kand)
-                    (DATA / "crawl_state.json").write_text(json.dumps(state, ensure_ascii=False, indent=1) + "\n")
+                    cc.simpan_state(state)
                     print(f"  ... {counter['sel']} sel, {counter['baru']} kandidat baru", file=sys.stderr)
             time.sleep(1.0)
 
-    with ThreadPoolExecutor(max_workers=min(10, len(by_host))) as ex:
+    with ThreadPoolExecutor(max_workers=max(1, min(a.workers, len(by_host)))) as ex:
         list(ex.map(work, list(by_host)))
     baru = counter["baru"]
     state["done"] = sorted(done)
 
     state.setdefault("runs", []).append({"tanggal": today, "sel": len(todo), "kandidat_baru": baru, "sumber": "wp"})
     _merge_save(DATA / "kandidat.json", kand)
-    (DATA / "crawl_state.json").write_text(json.dumps(state, ensure_ascii=False, indent=1) + "\n")
+    cc.simpan_state(state)
     _tulis_log(DATA / "log_pencarian.json", logs); logs = []
     belum = len([k for k in kand if not k.get("status_tinjau")])
     print(f"\n{baru} kandidat baru · {belum} menunggu tinjauan", file=sys.stderr)

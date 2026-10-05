@@ -26,10 +26,10 @@ def main():
     if not p.exists():
         print("belum ada kandidat", file=sys.stderr); return
     kand = json.loads(p.read_text())
-    todo = [k for k in kand if not k.get("url") and k.get("url_google")]
+    # a row already known to duplicate another article is not worth a rate-limited request
+    todo = [k for k in kand if not k.get("url") and k.get("url_google") and k.get("status_url") != "duplikat"]
     if not todo:
         print("semua kandidat sudah punya URL", file=sys.stderr); return
-    seen = {cc.norm_url(k["url"]) for k in kand if k.get("url")}
     ok = fail = beruntun = 0
     for k in todo[: a.max]:
         if beruntun >= 5:
@@ -38,18 +38,26 @@ def main():
             print(f"  5 kegagalan beruntun \u2014 berhenti; sisanya dicoba lagi besok", file=sys.stderr); break
         gid = k["url_google"].rsplit("/", 1)[-1]
         u = cc.resolve(gid, attempts=2)
-        if u:
+
+        # applied to the row as it is on disk NOW, under the lock: the crawlers keep adding rows while
+        # this runs, and rewriting the whole file from the copy read at start would erase them
+        def terapkan(disk, k=k, u=u):
+            sasaran = next((d for d in disk if d.get("url_google") == k["url_google"]), None)
+            if sasaran is None or sasaran.get("url"): return "lewat"
+            if not u:
+                sasaran["status_url"] = "belum terselesaikan"; return "gagal"
             nu = cc.norm_url(u)
-            if nu in seen:
-                k["status_url"] = "duplikat"; k["catatan_tinjau"] = "URL sama dengan kandidat lain"
-            else:
-                seen.add(nu); k["url"] = u; k["status_url"] = "terselesaikan"; ok += 1
-            beruntun = 0
-        else:
-            k["status_url"] = "belum terselesaikan"; fail += 1; beruntun += 1
+            if any(cc.norm_url(d["url"]) == nu for d in disk if d.get("url")):
+                sasaran["status_url"] = "duplikat"; sasaran["catatan_tinjau"] = "URL sama dengan kandidat lain"
+                return "duplikat"
+            sasaran["url"] = u; sasaran["status_url"] = "terselesaikan"; return "ok"
+        hasil = cc.kandidat_io.ubah(terapkan)
+        if hasil == "ok": ok += 1
+        if u: beruntun = 0
+        else: fail += 1; beruntun += 1
         print(("  OK   " if u else "  GAGAL") + " " + k["kandidat_id"] + " " + (u or k["judul"])[:72], file=sys.stderr)
-        p.write_text(json.dumps(kand, ensure_ascii=False, indent=1) + "\n")
         time.sleep(a.gap)
+    kand = json.loads(p.read_text())
     sisa = len([k for k in kand if not k.get("url") and k.get("url_google")])
     print(f"{ok} terselesaikan, {fail} gagal, {sisa} masih menunggu", file=sys.stderr)
 
