@@ -79,6 +79,13 @@ KK_ISTILAH = {
     "pengalihan sumber daya": ["bantuan jelang pilkada"],
 }
 KK_ISTILAH_PAPUA = {"paksaan kepala desa dan lurah": ["kepala kampung pilkada", "kepala distrik netralitas"]}
+# the village head has a regional name in several provinces; a query in the national word misses it
+KK_DESA_DAERAH = {
+    "Aceh": ["keuchik pilkada", "geuchik netralitas"],
+    "Sumatera Barat": ["wali nagari pilkada", "wali nagari netralitas"],
+    "Lampung": ["kepala pekon pilkada", "peratin pilkada"],
+    "Bali": ["perbekel pilkada", "perbekel netralitas"],
+}
 # newest first, and the inter-wave years before the old waves: four of the six target provinces only
 # exist from late 2022, so their own reporting starts there
 KK_URUT = ["2024", "2025", "2026", "2023", "2022", "2021", "2020", "2019b", "2018", "2017", "2016", "2015"]
@@ -111,7 +118,9 @@ AKTOR = re.compile(r"(bupati|wali ?kota|walikota|gubernur|camat|lurah|kepala des
     r"petahana|inkumben|perangkat desa|honorer|pppk|kepala dinas|pegawai negeri|"
     # Papua names the same offices differently: kepala kampung (kakam) for kepala desa, kepala distrik
     # for camat. Without these, every Papuan village-head story failed this filter before anyone saw it.
-    r"kepala kampung|kakam|kepala distrik|kadistrik)", re.I)
+    r"kepala kampung|kakam|kepala distrik|kadistrik|"
+    # other regional names for the village head: Aceh, Sumatera Barat, Lampung, Bali, Toraja
+    r"keuchik|geuchik|wali nagari|kepala nagari|kepala pekon|peratin|perbekel|kepala lembang|hukum tua|kumtua)", re.I)
 # commentary / process pieces that are about the topic but are not an incident
 BUANG = re.compile(r"(coming soon|tayang di youtube|webinar|sosialisasi|imbau|mengimbau|himbau|apel kesiapan|"
     r"deklarasi damai|doa bersama|tips|opini|kolom|resmi tayang|podcast|quick count|hitung cepat|hasil pilkada|"
@@ -223,6 +232,8 @@ def build_grid_kabkota(state, provs):
             papua = prov.startswith("Papua")
             istilah = dict(KK_ISTILAH)
             if papua: istilah.update(KK_ISTILAH_PAPUA)
+            if prov in KK_DESA_DAERAH:
+                istilah["paksaan kepala desa dan lurah"] = KK_DESA_DAERAH[prov] + ["camat netralitas"]
             for place in tempat.get(prov, []):
                 for mek, terms in istilah.items():
                     for term in terms:

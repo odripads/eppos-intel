@@ -35,7 +35,10 @@ def project(lon, lat): return ((lon - LON_MIN) * S, 420 - ((lat - LAT_MIN) * S +
 PEMILU = re.compile(r"(pilkada|pemilu|pilpres|pileg|pilgub|pilbup|pilwal|paslon|pasangan calon|calon (bupati|"
     r"wali ?kota|gubernur|wakil)|cabup|cawabup|cagub|cawagub|bakal calon|bawaslu|panwaslu|gakkumdu|\bkpu\b|"
     r"netralitas|kampanye|coblos|pemungutan suara|pencoblosan|tps\b|dkpp|\bkasn\b|masa tenang|"
-    r"tahapan pemilihan|pemilihan (kepala daerah|bupati|wali ?kota|gubernur))", re.I)
+    r"tahapan pemilihan|pemilihan (kepala daerah|bupati|wali ?kota|gubernur)|"
+    # re-votes ordered by the Constitutional Court (several Papua regencies and the Papua governor race
+    # in 2025) are written as PSU, often with no other electoral word in the headline
+    r"\bpsu\b|pemungutan suara ulang|pilkada ulang)", re.I)
 # out of scope by the spec: personal scandal, ordinary crime, health/disaster reporting
 LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|pelecehan|narkoba|sabu|"
     r"covid|corona|kecelakaan|laka lantas|kebakaran|karhutla|banjir|gempa|longsor|pencurian|begal|judi|"
@@ -43,7 +46,27 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
     # ordinary crime that the mechanism words alone would otherwise let back in
     r"penipuan|ditipu|menipu|aniaya|penganiayaan|pencemaran nama baik|fitnah|difitnah|"
     r"jual beli tanah|sengketa lahan|pembunuhan|curanmor|tawuran|bacok|istri kedua|"
-    r"vonis|divonis|penjara|dibui|napi|lapas)", re.I)
+    r"vonis|divonis|penjara|dibui|napi|lapas|tanpa busana|bugil|\bsyur\b|ppdb|"
+    # military and police postings are not the civilian executive the typology is about
+    r"mutasi (?:tni|polri|perwira)|kepala bin)", re.I)
+# A reminder or an explainer is about the topic but is not an incident. Refused only when the headline
+# also carries no word of something having happened to someone.
+KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jenis pelanggaran dan sanksi|"
+    r"aturan .{0,30}netral|ikrar netralitas|deklarasi netralitas|haramkan politik praktis|"
+    r"isu krusial|nota kesepahaman|teken mou)", re.I)
+# explainer formulas that are never a report of an act, whatever verb they contain
+PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelanggaran dan sanksi|aturan .{0,20}di pemilu:)", re.I)
+# "jika melanggar", "agar tak melanggar", "yang sering langgar": a violation that is threatened or
+# hypothetical, which is exactly what a reminder talks about; removed before looking for an act
+BERSYARAT = re.compile(r"(?:jika|bila|apabila|kalau|agar (?:tak|tidak)|supaya (?:tak|tidak)|jangan|"
+                       r"yang(?: sering)?|tak|tidak)\s+(?:me)?langgar", re.I)
+# a village-head election is not a pilkada; refused unless the headline also names the regional race
+PILKADES = re.compile(r"(pilkades|cakades|calon kepala desa|pemilihan kepala desa)", re.I)
+PILKADA_KATA = re.compile(r"(pilkada|pilbup|pilwal|pilgub|paslon|cabup|cagub|calon bupati|calon wali)", re.I)
+TERJADI = re.compile(r"(dilaporkan|melaporkan|laporkan|diperiksa|dipanggil|terbukti|disanksi|dijatuhi|"
+    # the verb, not the noun: "ASN langgar netralitas" reports an act, "cegah pelanggaran" does not
+    r"\blanggar\b|melanggar|sesalkan|menyesalkan|terindikasi|"
+    r"dicopot|dimutasi|diberhentikan|ditegur|teguran|direkomendasikan|ditetapkan|diduga|dugaan)", re.I)
 
 
 # Mechanism signatures from the closed typology. Inside a pilkada window these are plausibly electoral
@@ -51,6 +74,11 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
 # mechanism itself. Outside such a window the same words are just ordinary administration.
 MEKANISME_SIG = re.compile(r"(mutasi|rotasi jabatan|dimutasi|digeser|dicopot|demosi|non-?job|lelang jabatan|"
     r"kepala desa|\bkades\b|lurah|perangkat desa|apdesi|paguyuban kades|\bASN\b|\bPNS\b|pegawai negeri|"
+    # Papua's names for the same offices: without them a Papuan village-head story never matched
+    r"kepala kampung|\bkakam\b|aparat kampung|kepala distrik|kadistrik|"
+    # and elsewhere: Aceh keuchik/geuchik, Sumatera Barat wali nagari, Lampung kepala pekon/peratin,
+    # Bali perbekel, Toraja kepala lembang
+    r"keuchik|geuchik|wali nagari|kepala nagari|kepala pekon|peratin|perbekel|kepala lembang|hukum tua|kumtua|"
     r"honorer|\bPPPK\b|aparatur sipil|camat|bansos|bantuan sosial|sembako|\bPKH\b|"
     r"intimidasi|diancam|ancaman|ditekan|dipaksa|dimobilisasi|dikumpulkan)", re.I)
 JENDELA_PILKADA = {"2024", "2020", "2018", "2017", "2015"}
@@ -65,6 +93,12 @@ def dalam_lingkup(judul, gelombang=None):
     Out-of-scope topics (personal scandal, ordinary crime, disaster) are refused on either path."""
     if LUAR_LINGKUP.search(judul):
         return False, "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)", None
+    if PILKADES.search(judul) and not PILKADA_KATA.search(judul):
+        return False, "pemilihan kepala desa, bukan pilkada", None
+    if PENJELAS.search(judul):
+        return False, "penjelasan aturan, bukan peristiwa", None
+    if KOMENTAR.search(judul) and not TERJADI.search(BERSYARAT.sub(" ", judul)):
+        return False, "imbauan atau penjelasan aturan, bukan peristiwa", None
     if PEMILU.search(judul):
         return True, None, "konteks elektoral di judul"
     if gelombang in JENDELA_PILKADA and MEKANISME_SIG.search(judul):
@@ -171,6 +205,100 @@ ALIAS_TEMPAT = {
     "polman": "Polewali Mandar", "mateng": "Mamuju Tengah", "pangkalpinang": "Pangkal Pinang",
     "babel": "Bangka", "timika": "Mimika", "wamena": "Jayawijaya", "agats": "Asmat",
     "tanjungselor": "Bulungan", "manokwari": "Manokwari",
+    "kukar": "Kutai Kartanegara", "kutim": "Kutai Timur", "kubar": "Kutai Barat", "tala": "Tanah Laut",
+    "hsu": "Hulu Sungai Utara", "hss": "Hulu Sungai Selatan", "hst": "Hulu Sungai Tengah",
+    "lobar": "Lombok Barat", "loteng": "Lombok Tengah", "lotim": "Lombok Timur", "klu": "Lombok Utara",
+    "sbd": "Sumba Barat Daya", "tts": "Timor Tengah Selatan", "ttu": "Timor Tengah Utara",
+    "labuhanbatu": "Labuhanbatu", "taput": "Tapanuli Utara", "tapsel": "Tapanuli Selatan",
+    # common kabupaten abbreviations in local headlines (6 Oct 2026); ones that are also ordinary words
+    # (benteng, balut, tuba, mura) are left out on purpose
+    "malra": "Maluku Tenggara",
+    "malteng": "Maluku Tengah",
+    "sbb": "Seram Bagian Barat",
+    "sbt": "Seram Bagian Timur",
+    "mbd": "Maluku Barat Daya",
+    "kkt": "Kepulauan Tanimbar",
+    "bursel": "Buru Selatan",
+    "halbar": "Halmahera Barat",
+    "halteng": "Halmahera Tengah",
+    "halsel": "Halmahera Selatan",
+    "haltim": "Halmahera Timur",
+    "halut": "Halmahera Utara",
+    "minsel": "Minahasa Selatan",
+    "bolsel": "Bolaang Mongondow Selatan",
+    "boltim": "Bolaang Mongondow Timur",
+    "bolmut": "Bolaang Mongondow Utara",
+    "sitaro": "Kepulauan Siau Tagulandang Biaro",
+    "parimo": "Parigi Moutong",
+    "touna": "Tojo Una-Una",
+    "morut": "Morowali Utara",
+    "bangkep": "Banggai Kepulauan",
+    "konsel": "Konawe Selatan",
+    "konut": "Konawe Utara",
+    "konkep": "Konawe Kepulauan",
+    "koltim": "Kolaka Timur",
+    "kolut": "Kolaka Utara",
+    "busel": "Buton Selatan",
+    "buteng": "Buton Tengah",
+    "mubar": "Muna Barat",
+    "kku": "Kayong Utara",
+    "pangkep": "Pangkajene dan Kepulauan",
+    "sidrap": "Sidenreng Rappang",
+    "lutim": "Luwu Timur",
+    "lutra": "Luwu Utara",
+    "tator": "Tana Toraja",
+    "torut": "Toraja Utara",
+    "madina": "Mandailing Natal",
+    "paluta": "Padang Lawas Utara",
+    "sergai": "Serdang Bedagai",
+    "humbahas": "Humbang Hasundutan",
+    "tobasa": "Toba",
+    "labusel": "Labuhanbatu Selatan",
+    "labura": "Labuhanbatu Utara",
+    "pessel": "Pesisir Selatan",
+    "pasbar": "Pasaman Barat",
+    "solsel": "Solok Selatan",
+    "kuansing": "Kuantan Singingi",
+    "rohil": "Rokan Hilir",
+    "rohul": "Rokan Hulu",
+    "tanjabbar": "Tanjung Jabung Barat",
+    "tanjabtim": "Tanjung Jabung Timur",
+    "oku": "Ogan Komering Ulu",
+    "oki": "Ogan Komering Ilir",
+    "okut": "Ogan Komering Ulu Timur",
+    "okus": "Ogan Komering Ulu Selatan",
+    "muba": "Musi Banyuasin",
+    "muratara": "Musi Rawas Utara",
+    "pali": "Penukal Abab Lematang Ilir",
+    "lamsel": "Lampung Selatan",
+    "lamtim": "Lampung Timur",
+    "lamteng": "Lampung Tengah",
+    "lambar": "Lampung Barat",
+    "lampura": "Lampung Utara",
+    "tubaba": "Tulang Bawang Barat",
+    "bateng": "Bangka Tengah",
+    "basel": "Bangka Selatan",
+    "babar": "Bangka Barat",
+    "beltim": "Belitung Timur",
+    "abdya": "Aceh Barat Daya",
+    "agara": "Aceh Tenggara",
+    "kbb": "Bandung Barat",
+    "ksb": "Sumbawa Barat",
+    "matim": "Manggarai Timur",
+    "mabar": "Manggarai Barat",
+    "flotim": "Flores Timur",
+    "gumas": "Gunung Mas",
+    "pulpis": "Pulang Pisau",
+    "barsel": "Barito Selatan",
+    "bartim": "Barito Timur",
+    "barut": "Barito Utara",
+    "batola": "Barito Kuala",
+    "tanbu": "Tanah Bumbu",
+    "mahulu": "Mahakam Ulu",
+    "ppu": "Penajam Paser Utara",
+    "ktt": "Tana Tidung",
+    "bonebol": "Bone Bolango",
+    "gorut": "Gorontalo Utara",
 }
 
 # A province named in the headline is weaker evidence than a kab/kota but it is still the story's own
@@ -228,23 +356,42 @@ def main():
         t = r["type"].lower()
         if "provin" in t: continue
         gaz.append((norm(r["label"]), r))
+    # headlines write many compound names as one word ("Lubuklinggau", "Muarojambi", "Palangkaraya"),
+    # the gazetteer writes them as two; index both spellings of the same place
+    for nm, r in list(gaz):
+        if " " in nm: gaz.append((nm.replace(" ", ""), r))
     gaz.sort(key=lambda g: -len(g[0]))
+
+    # Four-letter names (Pati, Belu, Alor, Bima, Buru) are ordinary syllables too often to match bare, so
+    # they count only right after an office or institution that is always followed by a place name.
+    INSTANSI = (r"(?:bawaslu|panwaslu|panwaslih|kpu|kpud|pilbup|pilwalkot|pilkada|bupati|wabup|pj bupati|"
+                r"pemkab|pemkot|kabupaten|kab|kota|dprd|polres|kejari|sekda|kesbangpol|bkpsdm|disdik)\s+")
+
+    # compiled once: ~1,100 names is past re's internal cache, and recompiling each pattern for each of
+    # ~3,000 candidates turned a seconds-long step into minutes
+    gaz_rx, gaz_rx5 = [], []
+    for name, r in gaz:
+        if len(name) >= 5:
+            rx = re.compile(r"(?<![a-z])" + re.escape(name) + r"(?![a-z])")
+            gaz_rx.append((rx, r)); gaz_rx5.append((rx, r))
+        elif len(name) == 4:
+            gaz_rx.append((re.compile(r"(?<![a-z])" + INSTANSI + re.escape(name) + r"(?![a-z])"), r))
 
     def place_of(title):
         n = " " + norm(title) + " "
-        for name, r in gaz:
-            if len(name) < 5: continue
-            if re.search(r"(?<![a-z])" + re.escape(name) + r"(?![a-z])", n):
-                return r
+        for rx, r in gaz_rx:
+            if rx.search(n): return r
         return None
 
     gaz_by_name = {}
     for nm, r in gaz: gaz_by_name.setdefault(nm, r)
 
+    alias_rx = [(re.compile(r"(?<![a-z])" + ali + r"(?![a-z])"), target) for ali, target in ALIAS_TEMPAT.items()]
+
     def place_from_alias(text):
         t = norm(text)
-        for ali, target in ALIAS_TEMPAT.items():
-            if re.search(r"(?<![a-z])" + ali + r"(?![a-z])", t):
+        for rx, target in alias_rx:
+            if rx.search(t):
                 r = gaz_by_name.get(norm(target)) or gaz_by_name.get(norm(KAB_PREFIX.sub("", target)))
                 if r: return r
         return None
@@ -268,10 +415,9 @@ def main():
         if not url: return None
         slug = re.sub(r"[^a-z]+", " ", url.lower().split("://", 1)[-1])
         n = " " + slug + " "
-        for name, r in gaz:
-            if len(name) < 5: continue
-            if re.search(r"(?<![a-z])" + re.escape(name) + r"(?![a-z])", n):
-                return r
+        # five letters and up only: a slug has no office word in front of a short name to anchor it
+        for rx, r in gaz_rx5:
+            if rx.search(n): return r
         return None
 
     # BPS code -> province. The gazetteer carries the official code on every entry, and its first two
