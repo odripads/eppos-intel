@@ -156,6 +156,8 @@ def main():
     ap.add_argument("--registry", default=str(ROOT / "scripts" / "outlet_wp.json"))
     ap.add_argument("--outlet", default=None, help="hanya outlet ini (koma); untuk menyapu outlet baru lebih dulu")
     ap.add_argument("--workers", type=int, default=10, help="satu pekerja per outlet; permintaan ke satu situs tetap berurutan")
+    ap.add_argument("--kabkota", default=None,
+                    help="provinsi (koma): kueri '<kab/kota> <istilah pendek>' alih-alih frasa CARI; pakai bersama --outlet")
     a = ap.parse_args()
 
     outlets = json.loads(Path(a.registry).read_text())
@@ -171,12 +173,33 @@ def main():
     done = set(state.get("done", []))
 
     grid = []
-    for wave in cc.WAVE_ORDER:
-        for mek, qs in CARI.items():
-            for q in qs:
-                for d in outlets:
-                    cid = f"wp|{wave}|{d}|{q}"
-                    if cid not in done: grid.append((cid, wave, d, mek, q))
+    if a.kabkota:
+        # WordPress search requires every term, so "<town> <term>" returns only posts that name the town:
+        # on a multi-province outlet (Suara Papua, Cenderawasih Pos) this is what lets a story land in
+        # Papua Tengah rather than nowhere. Town names come from the gazetteer by BPS code.
+        provs = [x.strip() for x in a.kabkota.split(",") if x.strip()]
+        tempat = cc.tempat_provinsi(set(provs))
+        for wave in [w for w in cc.KK_URUT if w in cc.GELOMBANG]:
+            for prov in provs:
+                desa = ("kepala kampung" if prov.startswith("Papua") else
+                        {"Aceh": "keuchik", "Sumatera Barat": "wali nagari", "Lampung": "kepala pekon",
+                         "Bali": "perbekel"}.get(prov, "kepala desa"))
+                istilah = [("paksaan aparat sipil", "netralitas"), ("paksaan aparat sipil", "ASN pilkada"),
+                           ("paksaan kepala desa dan lurah", desa), ("paksaan warga penerima program", "bansos"),
+                           ("tekanan terhadap kritik", "intimidasi")]
+                for place in tempat.get(prov, []):
+                    for mek, term in istilah:
+                        q = f"{place} {term}"
+                        for d in outlets:
+                            cid = f"wpkk|{wave}|{d}|{q}"
+                            if cid not in done: grid.append((cid, wave, d, mek, q))
+    else:
+        for wave in cc.WAVE_ORDER:
+            for mek, qs in CARI.items():
+                for q in qs:
+                    for d in outlets:
+                        cid = f"wp|{wave}|{d}|{q}"
+                        if cid not in done: grid.append((cid, wave, d, mek, q))
     todo = grid[: a.cells]
     print(f"grid WP: {len(grid)} sel tersisa; run ini {len(todo)}", file=sys.stderr)
 

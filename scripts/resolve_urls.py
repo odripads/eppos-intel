@@ -21,6 +21,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--max", type=int, default=25, help="candidates to attempt this run")
     ap.add_argument("--gap", type=float, default=8.0, help="seconds between attempts")
+    ap.add_argument("--prioritas", default=None,
+                    help="provinsi (koma) yang diselesaikan lebih dulu: anggaran permintaan Google kecil, "
+                         "jadi temuan untuk provinsi yang masih kosong tidak boleh antre di belakang")
     a = ap.parse_args()
     p = ROOT / "data" / "kandidat.json"
     if not p.exists():
@@ -28,6 +31,9 @@ def main():
     kand = json.loads(p.read_text())
     # a row already known to duplicate another article is not worth a rate-limited request
     todo = [k for k in kand if not k.get("url") and k.get("url_google") and k.get("status_url") != "duplikat"]
+    if a.prioritas:
+        urut = [x.strip() for x in a.prioritas.split(",") if x.strip()]
+        todo.sort(key=lambda k: urut.index(k.get("provinsi_kueri")) if k.get("provinsi_kueri") in urut else len(urut))
     if not todo:
         print("semua kandidat sudah punya URL", file=sys.stderr); return
     ok = fail = beruntun = 0

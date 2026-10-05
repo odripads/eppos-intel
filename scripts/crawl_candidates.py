@@ -114,7 +114,7 @@ def tempat_provinsi(provs):
 RELEVAN = re.compile(r"(dilaporkan|laporan|dugaan|diduga|langgar|pelanggaran|melanggar|sanksi|teguran|diperiksa|"
     r"dipanggil|mobilisasi|dikumpulkan|mengumpulkan|diancam|ancaman|intimidasi|mengintimidasi|tekanan|menekan|"
     r"dimutasi|mutasi|demosi|dicopot|dinonaktifkan|arahkan|mengarahkan|memerintahkan|instruksi)", re.I)
-AKTOR = re.compile(r"(bupati|wali ?kota|walikota|gubernur|camat|lurah|kepala desa|kades|sekda|asn|pj |pjs |penjabat|"
+AKTOR = re.compile(r"(bupati|wali ?kota|walikota|gubernur|\bcamat\b|\blurah\b|kepala desa|kades|sekda|asn|pj |pjs |penjabat|"
     r"petahana|inkumben|perangkat desa|honorer|pppk|kepala dinas|pegawai negeri|"
     # Papua names the same offices differently: kepala kampung (kakam) for kepala desa, kepala distrik
     # for camat. Without these, every Papuan village-head story failed this filter before anyone saw it.

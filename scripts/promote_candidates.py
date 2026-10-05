@@ -48,7 +48,8 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
     r"jual beli tanah|sengketa lahan|pembunuhan|curanmor|tawuran|bacok|istri kedua|"
     r"vonis|divonis|penjara|dibui|napi|lapas|tanpa busana|bugil|\bsyur\b|ppdb|"
     # military and police postings are not the civilian executive the typology is about
-    r"mutasi (?:tni|polri|perwira)|kepala bin)", re.I)
+    r"mutasi (?:tni|polri|perwira)|kepala bin|"
+    r"gelapkan|menggelapkan|digelapkan|lecehkan|melecehkan|dilecehkan|protokol kesehatan|\bprokes\b)", re.I)
 # A reminder or an explainer is about the topic but is not an incident. Refused only when the headline
 # also carries no word of something having happened to someone.
 KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jenis pelanggaran dan sanksi|"
@@ -57,7 +58,8 @@ KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jeni
     # statements and warnings: a conditional, an official "stressing" a rule, or a report that nothing
     # has been reported. Still admitted when the headline also says something happened.
     r"\btegaskan\b|menegaskan|\bjika\b|\bbila\b|apabila|belum ada laporan|tidak ada laporan|"
-    r"sanksi (?:berat |tegas )?bagi|bisa dipecat|terancam dipecat|adalah pemecatan)", re.I)
+    r"sanksi (?:berat |tegas )?bagi|bisa dipecat|terancam dipecat|adalah pemecatan|"
+    r"apel siaga|apel kesiapan|deklarasi damai|\brawan\b|potensi pelanggaran|\bawasi\b)", re.I)
 # explainer formulas that are never a report of an act, whatever verb they contain
 PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelanggaran dan sanksi|aturan .{0,20}di pemilu:)", re.I)
 # "jika melanggar", "agar tak melanggar", "yang sering langgar": a violation that is threatened or
@@ -69,7 +71,7 @@ PILKADES = re.compile(r"(pilkades|cakades|calon kepala desa|pemilihan kepala des
 PILKADA_KATA = re.compile(r"(pilkada|pilbup|pilwal|pilgub|paslon|cabup|cagub|calon bupati|calon wali)", re.I)
 TERJADI = re.compile(r"(dilaporkan|melaporkan|laporkan|diperiksa|dipanggil|terbukti|disanksi|dijatuhi|"
     # the verb, not the noun: "ASN langgar netralitas" reports an act, "cegah pelanggaran" does not
-    r"\blanggar\b|melanggar|sesalkan|menyesalkan|terindikasi|"
+    r"\blanggar\b|melanggar|sesalkan|menyesalkan|terindikasi|terima laporan|menerima laporan|"
     # the executive's own acts, which are the mechanism itself even inside a quoted warning
     r"\blantik\b|melantik|memutasi|\bmutasi\b|rotasi|mencopot|non-?job|"
     r"dicopot|dimutasi|diberhentikan|ditegur|teguran|direkomendasikan|ditetapkan|diduga|dugaan)", re.I)
@@ -79,13 +81,15 @@ TERJADI = re.compile(r"(dilaporkan|melaporkan|laporkan|diperiksa|dipanggil|terbu
 # even when the headline never says "pilkada" — a mass transfer of officials weeks before a vote is the
 # mechanism itself. Outside such a window the same words are just ordinary administration.
 MEKANISME_SIG = re.compile(r"(mutasi|rotasi jabatan|dimutasi|digeser|dicopot|demosi|non-?job|lelang jabatan|"
-    r"kepala desa|\bkades\b|lurah|perangkat desa|apdesi|paguyuban kades|\bASN\b|\bPNS\b|pegawai negeri|"
+    # word boundaries matter: "camat" sits inside every "kecamatan" and "lurah" inside every "kelurahan",
+    # which let any story about a sub-district office through during a pilkada window
+    r"kepala desa|\bkades\b|\blurah\b|perangkat desa|apdesi|paguyuban kades|\bASN\b|\bPNS\b|pegawai negeri|"
     # Papua's names for the same offices: without them a Papuan village-head story never matched
     r"kepala kampung|\bkakam\b|aparat kampung|kepala distrik|kadistrik|"
     # and elsewhere: Aceh keuchik/geuchik, Sumatera Barat wali nagari, Lampung kepala pekon/peratin,
     # Bali perbekel, Toraja kepala lembang
     r"keuchik|geuchik|wali nagari|kepala nagari|kepala pekon|peratin|perbekel|kepala lembang|hukum tua|kumtua|"
-    r"honorer|\bPPPK\b|aparatur sipil|camat|bansos|bantuan sosial|sembako|\bPKH\b|"
+    r"honorer|\bPPPK\b|aparatur sipil|\bcamat\b|bansos|bantuan sosial|sembako|\bPKH\b|"
     r"intimidasi|diancam|ancaman|ditekan|dipaksa|dimobilisasi|dikumpulkan)", re.I)
 JENDELA_PILKADA = {"2024", "2020", "2018", "2017", "2015"}
 
@@ -211,7 +215,7 @@ ALIAS_TEMPAT = {
     "polman": "Polewali Mandar", "mateng": "Mamuju Tengah", "pangkalpinang": "Pangkal Pinang",
     "babel": "Bangka", "timika": "Mimika", "wamena": "Jayawijaya", "agats": "Asmat",
     "tanjungselor": "Bulungan", "manokwari": "Manokwari",
-    "kukar": "Kutai Kartanegara", "kutim": "Kutai Timur", "kubar": "Kutai Barat", "tala": "Tanah Laut",
+    "tangsel": "Tangerang Selatan", "kukar": "Kutai Kartanegara", "kutim": "Kutai Timur", "kubar": "Kutai Barat", "tala": "Tanah Laut",
     "hsu": "Hulu Sungai Utara", "hss": "Hulu Sungai Selatan", "hst": "Hulu Sungai Tengah",
     "lobar": "Lombok Barat", "loteng": "Lombok Tengah", "lotim": "Lombok Timur", "klu": "Lombok Utara",
     "sbd": "Sumba Barat Daya", "tts": "Timor Tengah Selatan", "ttu": "Timor Tengah Utara",
@@ -328,6 +332,9 @@ PROV_POLA = [
     ("Papua Selatan", r"papua selatan"), ("Papua Tengah", r"papua tengah"),
     ("Papua Barat", r"papua barat"), ("Papua", r"papua"),
     ("Yogyakarta", r"di yogyakarta|d\.i\. yogyakarta|yogyakarta|jogja"),
+    # Jakarta's administrative cities are not typed as kab/kota in Wikidata, so the province name and
+    # the city abbreviations are the only way a Jakarta story gets placed at all
+    ("Jakarta", r"\bjakarta\b|\bdki\b|jaksel|jakut|jaktim|jakbar|jakpus|kepulauan seribu"),
     ("Aceh", r"\baceh\b"), ("Banten", r"\bbanten\b"), ("Bengkulu", r"\bbengkulu\b"),
     ("Gorontalo", r"\bgorontalo\b"), ("Jambi", r"\bjambi\b"), ("Lampung", r"\blampung\b"),
     ("Maluku", r"\bmaluku\b"), ("Riau", r"\briau\b"), ("Bali", r"\bbali\b"),
@@ -395,6 +402,24 @@ def main():
     for nm, r in gaz: gaz_by_name.setdefault(nm, r)
 
     alias_rx = [(re.compile(r"(?<![a-z])" + ali + r"(?![a-z])"), target) for ali, target in ALIAS_TEMPAT.items()]
+
+    # Kecamatan named in the headline ("Camat Kragan", "Kades di Baturetno"): placed at the kabupaten the
+    # BPS code says it belongs to. Only nationally unique names (scripts/kecamatan_bps.json), and only
+    # right after a word that introduces a place, so a kecamatan that is also an ordinary word cannot fire.
+    kec_rx = []
+    kp = ROOT / "scripts" / "kecamatan_bps.json"
+    if kp.exists():
+        by_qid = {r["qid"]: r for r in wd}
+        for kc in json.loads(kp.read_text())["kecamatan"]:
+            r = by_qid.get(kc["kab_qid"])   # linked by name at build time; BPS and Kemendagri codes differ
+            if r: kec_rx.append((re.compile(r"(?<![a-z])(?:camat|kecamatan|kec|distrik|di)\s+" +
+                                            re.escape(norm(kc["label"])) + r"(?![a-z])"), r))
+
+    def place_from_kecamatan(text):
+        t = " " + norm(text) + " "
+        for rx, r in kec_rx:
+            if rx.search(t): return r
+        return None
 
     def place_from_alias(text):
         t = norm(text)
@@ -466,11 +491,18 @@ def main():
             p = place_from_alias(k["judul"])
             if p: dasar = "singkatan tempat di judul"
         if not p:
+            p = place_from_kecamatan(k["judul"])
+            if p: dasar = "nama kecamatan di judul"
+        if not p:
+            pj0 = next((nm for nm, rx in PROV_POLA if rx.search(k["judul"] or "")), None)
+        else:
+            pj0 = None
+        if not p and not pj0:
             p = place_from_domain(k.get("outlet"))
             if p: dasar = "nama kota di domain outlet"
         prov, pidx = (province_of(p) if p else (None, None))
-        # the map's geometry predates the 2022 split, so the ray-cast answer is overridden for the
-        # kab/kota that changed province; without this, Sorong keeps coming back as Papua Barat
+        # no kab/kota or kecamatan, but the headline names the province: the story's own words outrank
+        # the outlet's address, which is why the domain guess above is skipped in this case
         if not p:
             pj = next((nm for nm, rx in PROV_POLA if rx.search(k["judul"] or "")), None)
             if pj:
