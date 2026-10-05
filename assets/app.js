@@ -184,13 +184,14 @@
     state.prov = name === NASIONAL ? null : name; paintMap();
     var match = function (r) { return name === NASIONAL ? !r.provinsi : r.provinsi === name; };
     var ins = insidenAktif().filter(match), kas = kasusAktif().filter(match), oto = otoAktif().filter(match);
-    var dua = ins.filter(function (r) { return r.status_verifikasi === "dua sumber"; }).length;
-    var cat = ins.length && kas.length ? "Keduanya hadir: liputan media dan kasus administratif." :
-      ins.length ? "Hanya liputan media, tanpa kasus administratif di deret ini — periksa kemungkinan kegagalan penegakan." :
-        "Hanya kasus administratif, tanpa liputan media di deret ini — periksa kemungkinan ketiadaan pers.";
+    var nMedia = ins.length + oto.length;
+    var cat = nMedia && kas.length ? "<b>Liputan media dan kasus resmi.</b> Keduanya ada di provinsi ini." :
+      kas.length ? "<b>Kasus resmi saja.</b> Ada catatan dari pengawas, tidak ada liputan media \u2014 bisa jadi persnya tidak sampai ke sana." :
+        nMedia ? "<b>Liputan media saja.</b> Ada pemberitaan, tidak ada kasus resmi \u2014 bisa jadi laporannya tidak ditindak." :
+        "Belum ada catatan di provinsi ini.";
     var h = '<div class="pnl-hd"><div><h3>' + esc(name) + "</h3>" +
-      '<p class="sub">' + ins.length + " insiden · " + kas.length + " kasus resmi · " + dua + " berstatus dua sumber</p></div>" +
-      '<button class="btn-x" id="pnl-back">← semua provinsi</button></div>' +
+      '<p class="sub">' + nMedia + " liputan media \u00b7 " + kas.length + " kasus resmi</p></div>" +
+      '<button class="btn-x" id="pnl-back">\u2190 semua provinsi</button></div>' +
       '<div class="note div-' + (nMedia && kas.length ? "keduanya" : kas.length ? "resmi" : nMedia ? "media" : "kosong") + '">' + cat + "</div>";
     if (ins.length) h += '<h4 class="grp">Liputan media \u00b7 ' + ins.length + " insiden</h4>" + group(ins);
     if (kas.length) h += '<h4 class="grp">Kasus resmi \u00b7 ' + kas.length + " catatan</h4>" + group(kas);
