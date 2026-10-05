@@ -93,9 +93,9 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .mapfig svg{display:block;width:100%;height:auto;background:var(--navy-deep)}
 .prov{fill:var(--navy-2);stroke:var(--navy-deep);stroke-width:.7;transition:fill .15s}
 .prov.live{cursor:pointer}
-.prov.cat-keduanya{fill:var(--red)}
-.prov.cat-media{fill:#e8764f}
-.prov.cat-resmi{fill:var(--gold)}
+/* one hue family, ramped by how much evidence corroborates the province */
+.prov.cat-kuat{fill:var(--red)}
+.prov.cat-tunggal{fill:var(--gold)}
 .prov.live:hover{fill:#fff}
 .prov.sel{fill:#fff;stroke:var(--gold);stroke-width:2}
 .prov.live:focus-visible{stroke:var(--gold);stroke-width:2.5;outline:none}
@@ -110,9 +110,8 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
   font-size:12px;color:var(--ink-2);background:var(--surface-2);align-items:center}
 .legend span{display:inline-flex;align-items:center;gap:7px}
 .sw{width:13px;height:13px;flex:0 0 auto;display:inline-block;border:2px solid var(--navy);border-radius:3px}
-.sw.keduanya{background:var(--red)}
-.sw.media{background:#e8764f}
-.sw.resmi{background:var(--gold)}
+.sw.kuat{background:var(--red)}
+.sw.tunggal{background:var(--gold)}
 .sw.kosong{background:var(--navy-2)}
 .sw.ins{background:var(--red);border-radius:50%;width:10px;height:10px}
 .sw.kas{background:var(--gold);border-radius:2px;width:10px;height:10px;transform:rotate(45deg)}
@@ -143,9 +142,8 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .prow .pc i{margin-left:5px}
 .prow .pcat{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;
   padding:2px 8px;border-radius:999px;border:2px solid var(--navy)}
-.pcat.cat-keduanya{background:var(--red);color:#fff}
-.pcat.cat-media{background:#e8764f;color:#fff}
-.pcat.cat-resmi{background:var(--gold);color:var(--navy)}
+.pcat.cat-kuat{background:var(--red);color:#fff}
+.pcat.cat-tunggal{background:var(--gold);color:var(--navy)}
 
 /* grouped records */
 .grp{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--red);
@@ -180,9 +178,9 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .srcs a{display:inline-flex;align-items:center;gap:5px;border:2px solid var(--navy);border-radius:8px;
   padding:4px 9px;text-decoration:none;color:var(--ink);background:var(--surface-2)}
 .srcs a:hover{background:var(--red);color:#fff;border-color:var(--navy)}
-.note.div-keduanya{border-left-color:var(--red)}
-.note.div-media{border-left-color:#e8764f}
-.note.div-resmi{border-left-color:var(--gold)}
+.note.div-kuat{border-left-color:var(--red)}
+.note.div-tunggal{border-left-color:var(--gold)}
+.note.div-otomatis{border-left-color:#6b5a3e}
 
 /* notes / unmapped */
 .note{border:3px solid var(--navy);border-left-width:11px;border-left-color:var(--gold);border-radius:12px;
@@ -214,12 +212,14 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .pipeline a.cta:hover{transform:translate(-1px,-1px)}
 
 /* automated retrieval layer — visually separate from the curated census at every level */
-.prov.cat-otomatis{fill:#3a4a78;stroke:var(--gold);stroke-width:1.2;stroke-dasharray:3 2}
+.prov.cat-otomatis{fill:#6b5a3e;stroke:var(--gold);stroke-width:1;stroke-dasharray:3 2}
 .dot.oto{fill:var(--gold);fill-opacity:.9}
 .dot.oto.on{fill:#fff;fill-opacity:1}
+
+.sw.lemah{background:#6b5a3e;border-style:dashed}
 .sw.oto{background:var(--gold);width:0;height:0;border:none;border-left:6px solid transparent;
   border-right:6px solid transparent;border-bottom:10px solid var(--gold);border-radius:0}
-.pcat.cat-otomatis{background:#3a4a78;color:var(--cream)}
+.pcat.cat-otomatis{background:#6b5a3e;color:var(--cream)}
 .pill.oto{color:var(--gold-deep,#8a6510);background:var(--gold-soft);border-style:dashed}
 :root[data-theme="dark"] .pill.oto,:root:not([data-theme="light"]) .pill.oto{color:var(--gold)}
 .rec.oto{border-left:4px solid var(--gold);padding-left:12px;background:color-mix(in srgb,var(--gold-soft) 28%,transparent);
@@ -256,3 +256,4 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 #legend-toggle[aria-expanded="true"]{background:var(--navy);color:var(--cream)}
 @media (max-width:640px){.lx{grid-template-columns:1fr;gap:2px} .lx dd{margin-bottom:8px}}
 .bandingtab th.e,.bandingtab td.e{text-align:right;font-size:10px;white-space:nowrap}
+.lg-title{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}

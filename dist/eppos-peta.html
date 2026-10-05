@@ -95,9 +95,9 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .mapfig svg{display:block;width:100%;height:auto;background:var(--navy-deep)}
 .prov{fill:var(--navy-2);stroke:var(--navy-deep);stroke-width:.7;transition:fill .15s}
 .prov.live{cursor:pointer}
-.prov.cat-keduanya{fill:var(--red)}
-.prov.cat-media{fill:#e8764f}
-.prov.cat-resmi{fill:var(--gold)}
+/* one hue family, ramped by how much evidence corroborates the province */
+.prov.cat-kuat{fill:var(--red)}
+.prov.cat-tunggal{fill:var(--gold)}
 .prov.live:hover{fill:#fff}
 .prov.sel{fill:#fff;stroke:var(--gold);stroke-width:2}
 .prov.live:focus-visible{stroke:var(--gold);stroke-width:2.5;outline:none}
@@ -112,9 +112,8 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
   font-size:12px;color:var(--ink-2);background:var(--surface-2);align-items:center}
 .legend span{display:inline-flex;align-items:center;gap:7px}
 .sw{width:13px;height:13px;flex:0 0 auto;display:inline-block;border:2px solid var(--navy);border-radius:3px}
-.sw.keduanya{background:var(--red)}
-.sw.media{background:#e8764f}
-.sw.resmi{background:var(--gold)}
+.sw.kuat{background:var(--red)}
+.sw.tunggal{background:var(--gold)}
 .sw.kosong{background:var(--navy-2)}
 .sw.ins{background:var(--red);border-radius:50%;width:10px;height:10px}
 .sw.kas{background:var(--gold);border-radius:2px;width:10px;height:10px;transform:rotate(45deg)}
@@ -145,9 +144,8 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .prow .pc i{margin-left:5px}
 .prow .pcat{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;
   padding:2px 8px;border-radius:999px;border:2px solid var(--navy)}
-.pcat.cat-keduanya{background:var(--red);color:#fff}
-.pcat.cat-media{background:#e8764f;color:#fff}
-.pcat.cat-resmi{background:var(--gold);color:var(--navy)}
+.pcat.cat-kuat{background:var(--red);color:#fff}
+.pcat.cat-tunggal{background:var(--gold);color:var(--navy)}
 
 /* grouped records */
 .grp{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--red);
@@ -182,9 +180,9 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .srcs a{display:inline-flex;align-items:center;gap:5px;border:2px solid var(--navy);border-radius:8px;
   padding:4px 9px;text-decoration:none;color:var(--ink);background:var(--surface-2)}
 .srcs a:hover{background:var(--red);color:#fff;border-color:var(--navy)}
-.note.div-keduanya{border-left-color:var(--red)}
-.note.div-media{border-left-color:#e8764f}
-.note.div-resmi{border-left-color:var(--gold)}
+.note.div-kuat{border-left-color:var(--red)}
+.note.div-tunggal{border-left-color:var(--gold)}
+.note.div-otomatis{border-left-color:#6b5a3e}
 
 /* notes / unmapped */
 .note{border:3px solid var(--navy);border-left-width:11px;border-left-color:var(--gold);border-radius:12px;
@@ -216,12 +214,14 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 .pipeline a.cta:hover{transform:translate(-1px,-1px)}
 
 /* automated retrieval layer — visually separate from the curated census at every level */
-.prov.cat-otomatis{fill:#3a4a78;stroke:var(--gold);stroke-width:1.2;stroke-dasharray:3 2}
+.prov.cat-otomatis{fill:#6b5a3e;stroke:var(--gold);stroke-width:1;stroke-dasharray:3 2}
 .dot.oto{fill:var(--gold);fill-opacity:.9}
 .dot.oto.on{fill:#fff;fill-opacity:1}
+
+.sw.lemah{background:#6b5a3e;border-style:dashed}
 .sw.oto{background:var(--gold);width:0;height:0;border:none;border-left:6px solid transparent;
   border-right:6px solid transparent;border-bottom:10px solid var(--gold);border-radius:0}
-.pcat.cat-otomatis{background:#3a4a78;color:var(--cream)}
+.pcat.cat-otomatis{background:#6b5a3e;color:var(--cream)}
 .pill.oto{color:var(--gold-deep,#8a6510);background:var(--gold-soft);border-style:dashed}
 :root[data-theme="dark"] .pill.oto,:root:not([data-theme="light"]) .pill.oto{color:var(--gold)}
 .rec.oto{border-left:4px solid var(--gold);padding-left:12px;background:color-mix(in srgb,var(--gold-soft) 28%,transparent);
@@ -258,6 +258,7 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
 #legend-toggle[aria-expanded="true"]{background:var(--navy);color:var(--cream)}
 @media (max-width:640px){.lx{grid-template-columns:1fr;gap:2px} .lx dd{margin-bottom:8px}}
 .bandingtab th.e,.bandingtab td.e{text-align:right;font-size:10px;white-space:nowrap}
+.lg-title{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
 </style>
 
 <div class="wrap">
@@ -288,29 +289,27 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
         <g id="plabels"></g>
       </svg>
       <div class="legend">
-        <span><i class="sw keduanya"></i>media &amp; kasus resmi</span>
-        <span><i class="sw media"></i>hanya liputan media</span>
-        <span><i class="sw resmi"></i>hanya kasus resmi</span>
+        <span class="lg-title">Seberapa kuat buktinya:</span>
+        <span><i class="sw kuat"></i>dua deret saling menguatkan</span>
+        <span><i class="sw tunggal"></i>satu deret saja</span>
+        <span><i class="sw lemah"></i>baru penelusuran otomatis</span>
         <span><i class="sw kosong"></i>belum ada catatan</span>
-        <span><i class="sw oto"></i>hanya penelusuran otomatis</span>
         <span style="margin-left:auto"><i class="sw ins"></i>insiden<i class="sw kas" style="margin-left:10px"></i>kasus resmi<i class="sw oto" style="margin-left:10px"></i>otomatis</span>
       </div>
       <div class="legend" style="border-top:0;padding-top:0;display:block">
         <p class="hint" id="excl" style="margin:0 0 8px"></p>
         <button class="btn-x" id="legend-toggle" aria-expanded="false" style="margin-bottom:10px">apa arti tanda-tanda ini?</button>
         <div id="legend-help" hidden>
-          <h4 class="lh">Warna provinsi &mdash; <em>deret mana yang ada di sana</em>, bukan berapa banyak</h4>
+          <h4 class="lh">Warna provinsi &mdash; <em>seberapa kuat buktinya, bukan berapa banyak</em></h4>
           <dl class="lx">
-            <dt><i class="sw keduanya"></i>media &amp; kasus resmi</dt>
-            <dd>Ada liputan media <b>dan</b> kasus administratif. Keduanya saling menguatkan &mdash; di sinilah sinyalnya paling kuat.</dd>
-            <dt><i class="sw media"></i>hanya liputan media</dt>
-            <dd>Pers memberitakan, tetapi tidak ada kasus resmi yang tercatat. Periksa kemungkinan <b>kegagalan penegakan</b>: laporan tidak naik, atau pengawas tidak menindak.</dd>
-            <dt><i class="sw resmi"></i>hanya kasus resmi</dt>
-            <dd>Pengawas mencatat kasus, tetapi persnya sunyi. Periksa kemungkinan <b>ketiadaan atau tekanan terhadap pers</b> di wilayah itu.</dd>
-            <dt><i class="sw oto"></i>hanya penelusuran otomatis</dt>
-            <dd>Baru ditemukan mesin, belum ada baris terkurasi. Perlu diperiksa sebelum dipakai.</dd>
+            <dt><i class="sw kuat"></i>dua deret saling menguatkan</dt>
+            <dd>Ada liputan media <b>dan</b> kasus administratif. Dua deret dengan bias berbeda menunjuk ke tempat yang sama &mdash; ini sinyal terkuat.</dd>
+            <dt><i class="sw tunggal"></i>satu deret saja</dt>
+            <dd>Baru satu jenis bukti. Bentuk titiknya menunjukkan yang mana, dan perbedaannya penting: <b>hanya media</b> mengarah ke kemungkinan kegagalan penegakan; <b>hanya kasus resmi</b> mengarah ke kemungkinan ketiadaan pers. Keduanya tidak diurutkan mana yang lebih berat &mdash; keduanya temuan yang berbeda, bukan derajat.</dd>
+            <dt><i class="sw lemah"></i>baru penelusuran otomatis</dt>
+            <dd>Ditemukan mesin, belum ada baris terkurasi. Perlu diperiksa sebelum dipakai.</dd>
             <dt><i class="sw kosong"></i>belum ada catatan</dt>
-            <dd>Belum ada yang ditemukan lewat prosedur pencarian kami. <b>Bukan berarti tidak ada kejadian</b> &mdash; bisa jadi kami belum mencari cukup dalam di sana.</dd>
+            <dd>Belum ada yang ditemukan lewat prosedur pencarian kami. <b>Bukan berarti tidak ada kejadian.</b></dd>
           </dl>
           <h4 class="lh">Bentuk titik &mdash; <em>dari mana barisnya berasal</em></h4>
           <dl class="lx">
@@ -441,9 +440,12 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
     otoAktif().forEach(function (r) { touch(r.provinsi || NASIONAL).oto++; });
     Object.keys(m).forEach(function (p) {
       var s = m[p];
-      // fill encodes the CURATED series only; automated retrieval gets its own shade so the
-      // two-series reading is never muddied by un-curated rows
-      s.cat = s.ins && s.kas ? "keduanya" : s.ins ? "media" : s.kas ? "resmi" : s.oto ? "otomatis" : "kosong";
+      // Fill is a ramp of EVIDENCE STRENGTH, not a category salad: how many independent series
+      // corroborate this province. Deliberately NOT ranking media-only against official-only —
+      // the spec treats those as different findings (enforcement failure vs press absence),
+      // not as degrees of severity. Which series it is stays legible from the dot shapes.
+      s.cat = s.ins && s.kas ? "kuat" : (s.ins || s.kas) ? "tunggal" : s.oto ? "otomatis" : "kosong";
+      s.deret = s.ins && s.kas ? "media + kasus resmi" : s.ins ? "liputan media" : s.kas ? "kasus resmi" : s.oto ? "penelusuran otomatis" : null;
     });
     return m;
   }
@@ -589,7 +591,7 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
     var h = '<div class="pnl-hd"><div><h3>' + esc(name) + "</h3>" +
       '<p class="sub">' + ins.length + " insiden · " + kas.length + " kasus resmi · " + dua + " berstatus dua sumber</p></div>" +
       '<button class="btn-x" id="pnl-back">← semua provinsi</button></div>' +
-      '<div class="note div-' + (ins.length && kas.length ? "keduanya" : ins.length ? "media" : "resmi") + '">' + cat + "</div>";
+      '<div class="note div-' + (ins.length && kas.length ? "kuat" : (ins.length || kas.length) ? "tunggal" : "otomatis") + '">' + cat + "</div>";
     if (ins.length) h += '<h4 class="grp">Insiden dilaporkan media \u00b7 dikurasi</h4>' + group(ins);
     if (kas.length) h += '<h4 class="grp">Kasus administratif \u00b7 dikurasi</h4>' + group(kas);
     if (oto.length) {
@@ -674,8 +676,8 @@ h1{font-size:clamp(28px,4vw,46px);color:var(--navy);text-shadow:3px 3px 0 var(--
       h += '<button class="prow" data-prov="' + esc(n) + '"><span class="pn">' + esc(n) + "</span>" +
         '<span class="pc"><i class="sw ins"></i>' + s.ins + '<i class="sw kas"></i>' + s.kas +
         (s.oto ? '<i class="sw oto"></i>' + s.oto : "") + "</span>" +
-        '<span class="pcat cat-' + s.cat + '">' + (s.cat === "keduanya" ? "keduanya" : s.cat === "media" ? "hanya media" :
-          s.cat === "resmi" ? "hanya resmi" : "otomatis") + "</span></button>";
+        '<span class="pcat cat-' + s.cat + '" title="' + esc(s.deret || "") + '">' +
+        (s.cat === "kuat" ? "dua deret" : s.cat === "tunggal" ? "satu deret" : "otomatis") + "</span></button>";
     });
     $("#pnl").innerHTML = h + "</div>";
     all(".prow").forEach(function (b) { b.onclick = function () { selectProv(b.dataset.prov); }; });

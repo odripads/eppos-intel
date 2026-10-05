@@ -37,29 +37,27 @@
         <g id="plabels"></g>
       </svg>
       <div class="legend">
-        <span><i class="sw keduanya"></i>media &amp; kasus resmi</span>
-        <span><i class="sw media"></i>hanya liputan media</span>
-        <span><i class="sw resmi"></i>hanya kasus resmi</span>
+        <span class="lg-title">Seberapa kuat buktinya:</span>
+        <span><i class="sw kuat"></i>dua deret saling menguatkan</span>
+        <span><i class="sw tunggal"></i>satu deret saja</span>
+        <span><i class="sw lemah"></i>baru penelusuran otomatis</span>
         <span><i class="sw kosong"></i>belum ada catatan</span>
-        <span><i class="sw oto"></i>hanya penelusuran otomatis</span>
         <span style="margin-left:auto"><i class="sw ins"></i>insiden<i class="sw kas" style="margin-left:10px"></i>kasus resmi<i class="sw oto" style="margin-left:10px"></i>otomatis</span>
       </div>
       <div class="legend" style="border-top:0;padding-top:0;display:block">
         <p class="hint" id="excl" style="margin:0 0 8px"></p>
         <button class="btn-x" id="legend-toggle" aria-expanded="false" style="margin-bottom:10px">apa arti tanda-tanda ini?</button>
         <div id="legend-help" hidden>
-          <h4 class="lh">Warna provinsi &mdash; <em>deret mana yang ada di sana</em>, bukan berapa banyak</h4>
+          <h4 class="lh">Warna provinsi &mdash; <em>seberapa kuat buktinya, bukan berapa banyak</em></h4>
           <dl class="lx">
-            <dt><i class="sw keduanya"></i>media &amp; kasus resmi</dt>
-            <dd>Ada liputan media <b>dan</b> kasus administratif. Keduanya saling menguatkan &mdash; di sinilah sinyalnya paling kuat.</dd>
-            <dt><i class="sw media"></i>hanya liputan media</dt>
-            <dd>Pers memberitakan, tetapi tidak ada kasus resmi yang tercatat. Periksa kemungkinan <b>kegagalan penegakan</b>: laporan tidak naik, atau pengawas tidak menindak.</dd>
-            <dt><i class="sw resmi"></i>hanya kasus resmi</dt>
-            <dd>Pengawas mencatat kasus, tetapi persnya sunyi. Periksa kemungkinan <b>ketiadaan atau tekanan terhadap pers</b> di wilayah itu.</dd>
-            <dt><i class="sw oto"></i>hanya penelusuran otomatis</dt>
-            <dd>Baru ditemukan mesin, belum ada baris terkurasi. Perlu diperiksa sebelum dipakai.</dd>
+            <dt><i class="sw kuat"></i>dua deret saling menguatkan</dt>
+            <dd>Ada liputan media <b>dan</b> kasus administratif. Dua deret dengan bias berbeda menunjuk ke tempat yang sama &mdash; ini sinyal terkuat.</dd>
+            <dt><i class="sw tunggal"></i>satu deret saja</dt>
+            <dd>Baru satu jenis bukti. Bentuk titiknya menunjukkan yang mana, dan perbedaannya penting: <b>hanya media</b> mengarah ke kemungkinan kegagalan penegakan; <b>hanya kasus resmi</b> mengarah ke kemungkinan ketiadaan pers. Keduanya tidak diurutkan mana yang lebih berat &mdash; keduanya temuan yang berbeda, bukan derajat.</dd>
+            <dt><i class="sw lemah"></i>baru penelusuran otomatis</dt>
+            <dd>Ditemukan mesin, belum ada baris terkurasi. Perlu diperiksa sebelum dipakai.</dd>
             <dt><i class="sw kosong"></i>belum ada catatan</dt>
-            <dd>Belum ada yang ditemukan lewat prosedur pencarian kami. <b>Bukan berarti tidak ada kejadian</b> &mdash; bisa jadi kami belum mencari cukup dalam di sana.</dd>
+            <dd>Belum ada yang ditemukan lewat prosedur pencarian kami. <b>Bukan berarti tidak ada kejadian.</b></dd>
           </dl>
           <h4 class="lh">Bentuk titik &mdash; <em>dari mana barisnya berasal</em></h4>
           <dl class="lx">

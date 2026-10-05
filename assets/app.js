@@ -42,9 +42,12 @@
     otoAktif().forEach(function (r) { touch(r.provinsi || NASIONAL).oto++; });
     Object.keys(m).forEach(function (p) {
       var s = m[p];
-      // fill encodes the CURATED series only; automated retrieval gets its own shade so the
-      // two-series reading is never muddied by un-curated rows
-      s.cat = s.ins && s.kas ? "keduanya" : s.ins ? "media" : s.kas ? "resmi" : s.oto ? "otomatis" : "kosong";
+      // Fill is a ramp of EVIDENCE STRENGTH, not a category salad: how many independent series
+      // corroborate this province. Deliberately NOT ranking media-only against official-only —
+      // the spec treats those as different findings (enforcement failure vs press absence),
+      // not as degrees of severity. Which series it is stays legible from the dot shapes.
+      s.cat = s.ins && s.kas ? "kuat" : (s.ins || s.kas) ? "tunggal" : s.oto ? "otomatis" : "kosong";
+      s.deret = s.ins && s.kas ? "media + kasus resmi" : s.ins ? "liputan media" : s.kas ? "kasus resmi" : s.oto ? "penelusuran otomatis" : null;
     });
     return m;
   }
@@ -190,7 +193,7 @@
     var h = '<div class="pnl-hd"><div><h3>' + esc(name) + "</h3>" +
       '<p class="sub">' + ins.length + " insiden · " + kas.length + " kasus resmi · " + dua + " berstatus dua sumber</p></div>" +
       '<button class="btn-x" id="pnl-back">← semua provinsi</button></div>' +
-      '<div class="note div-' + (ins.length && kas.length ? "keduanya" : ins.length ? "media" : "resmi") + '">' + cat + "</div>";
+      '<div class="note div-' + (ins.length && kas.length ? "kuat" : (ins.length || kas.length) ? "tunggal" : "otomatis") + '">' + cat + "</div>";
     if (ins.length) h += '<h4 class="grp">Insiden dilaporkan media \u00b7 dikurasi</h4>' + group(ins);
     if (kas.length) h += '<h4 class="grp">Kasus administratif \u00b7 dikurasi</h4>' + group(kas);
     if (oto.length) {
@@ -275,8 +278,8 @@
       h += '<button class="prow" data-prov="' + esc(n) + '"><span class="pn">' + esc(n) + "</span>" +
         '<span class="pc"><i class="sw ins"></i>' + s.ins + '<i class="sw kas"></i>' + s.kas +
         (s.oto ? '<i class="sw oto"></i>' + s.oto : "") + "</span>" +
-        '<span class="pcat cat-' + s.cat + '">' + (s.cat === "keduanya" ? "keduanya" : s.cat === "media" ? "hanya media" :
-          s.cat === "resmi" ? "hanya resmi" : "otomatis") + "</span></button>";
+        '<span class="pcat cat-' + s.cat + '" title="' + esc(s.deret || "") + '">' +
+        (s.cat === "kuat" ? "dua deret" : s.cat === "tunggal" ? "satu deret" : "otomatis") + "</span></button>";
     });
     $("#pnl").innerHTML = h + "</div>";
     all(".prow").forEach(function (b) { b.onclick = function () { selectProv(b.dataset.prov); }; });
