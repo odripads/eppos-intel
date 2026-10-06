@@ -1825,5 +1825,180 @@
  "https://wartaekonomi.co.id/read543572/pengamat-soroti-calon-petahana-tetap-mendaftar-pilwakot-meski-diduga-langgar-uu-pilkada": {
   "status": "tanpa dateline",
   "diambil": "2026-10-06"
+ },
+ "https://www.detik.com/bali/pilkada/d-7622989/cabup-farin-dipanggil-bawaslu-terkait-dugaan-kampanye-di-aula-kantor-bupati": {
+  "status": "ok",
+  "teks": "Lombok Barat",
+  "qid": "Q14123",
+  "label": "Lombok Barat",
+  "diambil": "2026-10-06"
+ },
+ "https://suarantb.com/2024/11/02/gakkumdu-periksa-saksi-telusuri-dugaan-pelanggaran-paslon-dan-oknum-pejabat/": {
+  "status": "gagal",
+  "galat": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of ",
+  "diambil": "2026-10-06"
+ },
+ "https://seputarfakta.com/seputar-kaltim/tiga-kades-dilaporkan-tidak-netral-chandra-sebut-hanya-menagih-janji-6206": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.okeline.com/berita-14722-bupati-petahana-afrizal-sintong-dan-fb-sanimar-dilaporkan-ke-bawaslu--ada-apa": {
+  "status": "gagal",
+  "galat": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of ",
+  "diambil": "2026-10-06"
+ },
+ "https://bukamatanews.id/read/2024/11/22/kantor-desa-dijadikan-tempat-siapkan-konsumsi-kampanye-budiman-akbar-kades-rinjani-nyaris-diamuk-warga": {
+  "status": "gagal",
+  "galat": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of ",
+  "diambil": "2026-10-06"
+ },
+ "https://rri.co.id/pemilu/518353/privacy.html": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://kilaspapua.com/daerah/pj-bupati-siriwa-mengaku-belum-tahu-laporan-oknum-kepala-kampung-mendukung-paslon/": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://papua.tribunnews.com/news/118876/sinode-gki-sebut-psu-gubernur-papua-cacat-ungkap-adanya-intimidasi-dan-penggelembungan-suara": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://portalpapua.pikiran-rakyat.com/papua/pr-1308766880/ampb-minta-pj-gubernur-bijak-pertimbangkan-pengaduan-pelanggaran-pemilu-terkait-rekaman-viral-pj-walikota": {
+  "status": "gagal",
+  "galat": "HTTP Error 403: Forbidden",
+  "diambil": "2026-10-06"
+ },
+ "https://www.newsikal.com/bawaslu-periksa-pelapor-dan-saksi-terkait-dugaan-mobilisasi-rt-rw-oleh-helmi-hasan-besok-giliran-lurah-dan-rt-bentiring": {
+  "status": "gagal",
+  "galat": "HTTP Error 403: Forbidden",
+  "diambil": "2026-10-06"
+ },
+ "https://www.detik.com/sumut/berita/d-6836171/geger-camat-kampanye-bupati-yang-nyaleg-dpr-ri-di-masjid": {
+  "status": "ok",
+  "teks": "Enrekang",
+  "qid": "Q14599",
+  "label": "Enrekang",
+  "diambil": "2026-10-06"
+ },
+ "https://infomassa.com/kepala-desa-sindang-asih-dilaporkan-ke-bawaslu-diduga-tidak-netral-mendukung-mad-romli-irvansyah/": {
+  "status": "gagal",
+  "galat": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of ",
+  "diambil": "2026-10-06"
+ },
+ "https://www.cnnindonesia.com/nasional/20240403163413-617-1082441/bawaslu-dki-di-mk-deklarasi-kades-ke-02-bukan-pelanggaran-pemilu": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://tirto.id/basri-soal-viral-bansos-pakai-logo-rido-itu-di-masa-kampanye-g6hV": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.inilah.com/komnas-ham-laporkan-temuan-pejabat-tak-netral-bawaslu-klaim-belum-terima-laporan": {
+  "status": "gagal",
+  "galat": "HTTP Error 403: Forbidden",
+  "diambil": "2026-10-06"
+ },
+ "https://www.inilah.com/telusuri-pelanggaran-netralitas-asn-bawaslu-panggil-apdesi-besok": {
+  "status": "gagal",
+  "galat": "HTTP Error 403: Forbidden",
+  "diambil": "2026-10-06"
+ },
+ "https://megapolitan.kompas.com/read/2018/11/23/14575501/kepala-sekolah-smp-127-diduga-langgar-kode-etik-asn-pada-kasus-kampanye": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://mekora.id/laporan-camat-kalumpang-soal-dukungan-ke-paslon-tertentu-dihentikan-akriadi-janggal/": {
+  "status": "ok",
+  "teks": "MAMUJU",
+  "qid": "Q15349",
+  "label": "Mamuju",
+  "diambil": "2026-10-06"
+ },
+ "https://mekora.id/tanggapi-kritik-penghentian-laporan-camat-kalumpang-ikhsan-kami-konferensi-pers-senin-ini/": {
+  "status": "ok",
+  "teks": "MAMUJU",
+  "qid": "Q15349",
+  "label": "Mamuju",
+  "diambil": "2026-10-06"
+ },
+ "https://sulbar.tribunnews.com/2024/10/25/kasus-camat-kalumpang-tidak-netral-dihentikan-prosesnya-dosen-unsulbar-sebut-agak-lain": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.detik.com/jabar/berita/d-7153984/bawaslu-20-asn-di-jabar-tidak-netral-camat-hingga-pj-wali-kota": {
+  "status": "ok",
+  "teks": "Sukabumi",
+  "qid": "Q10397",
+  "label": "Sukabumi",
+  "diambil": "2026-10-06"
+ },
+ "https://radarlombok.co.id/mutasi-pejabat-dapat-sorotan-dewan-dan-lsm.html": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.detik.com/bali/nusra/d-6944956/disebut-tak-netral-seusai-hadiri-acara-pdip-pj-gubernur-ntb-buka-suara": {
+  "status": "ok",
+  "teks": "Mataram",
+  "qid": "Q14126",
+  "label": "Mataram",
+  "diambil": "2026-10-06"
+ },
+ "https://www.liputan6.com/pemilu/read/5811508/viral-bansos-pakai-logo-rido-basri-baco-itu-di-masa-kampanye": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://radarlombok.co.id/bawaslu-rekomendasikan-asisten-ii-setda-ntb-fathul-gani-disanksi-kasn.html": {
+  "status": "ok",
+  "teks": "MATARAM",
+  "qid": "Q14126",
+  "label": "Mataram",
+  "diambil": "2026-10-06"
+ },
+ "https://www.kompas.id/artikel/pelanggaran-netralitas-di-jawa-barat-dilakukan-camat-kepala-sekolah-dan-guru": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.suara.com/news/2023/01/16/122105/sepanjang-2020-2022-ribuan-asn-langgar-netralitas": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.tempo.co/politik/jppi-kecam-asn-yang-diduga-kampanye-ajak-guru-pilih-paslon-tertentu-96669": {
+  "status": "gagal",
+  "galat": "HTTP Error 403: Forbidden",
+  "diambil": "2026-10-06"
+ },
+ "https://news.detik.com/berita/d-4404246/bawaslu-bali-rekomendasikan-5-kades-disanksi-karena-kampanye": {
+  "status": "ok",
+  "teks": "Denpasar",
+  "qid": "Q11506",
+  "label": "Denpasar",
+  "diambil": "2026-10-06"
+ },
+ "https://www.aksipost.com/arsip/61325/terbukti-melanggar-netralitas-asn-m-fadhil-arief-di-jatuhi-sanksi-oleh-kasn/": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://detail.id/2024/10/oknum-asn-provinsi-diduga-cawe-cawe-dukung-paslon-01-tim-paslon-02-laporkan-ke-bawaslu/": {
+  "status": "gagal",
+  "galat": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of ",
+  "diambil": "2026-10-06"
+ },
+ "https://www.kompas.id/artikel/kepala-disdikbud-kalsel-melanggar-netralitas-asn": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.kompas.id/artikel/kepri-beri-sanksi-asn-yang-tidak-netral": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://deltakepri.co.id/melanggar-netralitas-asn-saat-pileg-2024-indra-gunawan-terancam-turun-jabatan/": {
+  "status": "gagal",
+  "galat": "HTTP Error 403: Forbidden",
+  "diambil": "2026-10-06"
+ },
+ "https://rotari.id/diduga-tidak-netral-enam-asn-di-sulbar-direkomendasikan-pemberhentian-tidak-hormat/": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
  }
 }

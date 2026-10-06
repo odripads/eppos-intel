@@ -62,7 +62,7 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
     r"\bott\b|fee proyek|\blhkpn\b|calo jabatan|(?:kenakan|pakai|memakai|penggunaan) masker|"
     r"kekerasan seksual|korban kekerasan|\bjudol\b|jenazah|tak senonoh|nikah siri|\btampar|menampar|payudara|raba dada|"
     r"over ?dosis|dugem|gizi buruk|stunting|dilaporkan hilang|\bbencana\b|gratifikasi|utang kampanye|mutasi penduduk|pindah domisili|"
-    r"gar itb|\bgadai\b)", re.I)
+    r"gar itb|\bgadai\b|\btewas\b|\btebas\b|\btikam\b|disuntik mati|terbakar|ijazah palsu)", re.I)
 # A reminder or an explainer is about the topic but is not an incident. Refused only when the headline
 # also carries no word of something having happened to someone.
 KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jenis pelanggaran dan sanksi|"
@@ -110,7 +110,9 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     r"ungkap \d+ alasan|\d+ bentuk politisasi|contoh pelanggaran|tidak diperkenankan|sangat banyak|lebih banyak|masih temukan|"
     r"pak lurah|hafalkan|disetop sementara|(?:bupati|wali ?kota|walikota|gubernur)\s+\w+\s+cuti\b|"
     r"ingatkan[^,]{0,40}(?:tentang|soal) mutasi|isu utama|pengamat politik soroti indikasi|^profil\b|^video: eksklusif|rancang sistem|bakal tindak tegas|\bkian\b|"
-    r"bisa terkena|(?:meminta|minta) semua pihak|ada sanksi tegas|pecat atau turun pangkat|"
+    r"bisa terkena|(?:meminta|minta) semua pihak|ada sanksi tegas|pecat atau turun pangkat|boleh terlibat|tak gentar|"
+    r"terancam dibekukan|tekankan netralitas|terancam tak naik|^sebanyak [\d.]+|^(?:ratusan|ribuan) asn|ultimatum pns|satgas bidik|"
+    r"pastikan ganti|\bakan bongkar|"
     r"rekomendasi (?:pdip|pdi-p|golkar|nasdem|gerindra|pkb|pks|\bpan\b|ppp|demokrat|psi|perindo|hanura|gelora)|"
     r"^mendagri[^,]*total ada \d|minta (?:dugaan )?pelanggaran[^,]{0,20}ditindak|\bakan dicopot\b|"
     r"bentuk tim (?:untuk|khusus)|penertiban (?:aps|apk|alat peraga|baliho)|"
@@ -174,7 +176,7 @@ BUKAN_PEMILIHAN = re.compile(r"(gratifikasi|\bsuap\b|\bkpk\b|raskin|\blpj\b|fikt
     r"pengisian perangkat desa|mutasi perdes|seleksi mutasi|uji kompetensi|ke ki\b|\bbst\b|bprs|khilafah|"
     r"aksi [24]12|\bhina\b|menghina|awak media|personel perwira|\bproyek\b|uang honor|mobil dinas|\bthr\b|parcel|"
     r"\bperades\b|pengisian perangkat|disuap|supriyani|somasi|pelantikan kades|cantik|akan disanksi|jarang .{0,3}ngantor|"
-    r"aset lahan|kasus aset|\bcadar\b|"
+    r"aset lahan|kasus aset|\bcadar\b|\bperas\b|pemerasan|"
     r"ancaman serius|janji netral|antisipasi)", re.I)
 # Warnings and promises about what would happen to an official who took sides report no act, whether
 # or not the headline names the race, so these are refused on both paths.
