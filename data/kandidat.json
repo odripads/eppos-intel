@@ -96194,7 +96194,55 @@
   "provinsi_kueri": "(arsip outlet)",
   "kueri": "arsip.jubi.id search='netralitas ASN' 2020-06-09..2021-01-09",
   "ditemukan_pada": "2026-10-06",
-  "status_tinjau": null,
-  "catatan_tinjau": null
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-06051",
+  "judul": "Oknum Kepala Kampung di Raja Ampat, Diduga Terlibat Politik Praktis",
+  "outlet": "klikpapua.com",
+  "tanggal_terbit": "2020-11-23",
+  "url": "https://klikpapua.com/papua-barat/raja-ampat/oknum-kepala-kampung-di-raja-ampat-diduga-terlibat-politik-praktis.html",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2020",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "klikpapua.com search='ASN terlibat politik praktis' 2020-06-09..2021-01-09",
+  "ditemukan_pada": "2026-10-06",
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-06052",
+  "judul": "ASN Hati-hati Jangan Berpolitik Praktis, Sanksi Pidana",
+  "outlet": "klikpapua.com",
+  "tanggal_terbit": "2020-07-30",
+  "url": "https://klikpapua.com/papua-barat/manokwari/asn-hati-hati-jangan-berpolitik-praktis-sanksi-pidana.html",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2020",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "klikpapua.com search='ASN terlibat politik praktis' 2020-06-09..2021-01-09",
+  "ditemukan_pada": "2026-10-06",
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-06053",
+  "judul": "Pilkada 2020, Wali kota  Risma dilaporkan",
+  "outlet": "arsip.jubi.id",
+  "tanggal_terbit": "2020-10-24",
+  "url": "https://arsip.jubi.id/pilkada-2020-wali-kota-risma-dilaporkan/",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2020",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "arsip.jubi.id search='lurah dilaporkan' 2020-06-09..2021-01-09",
+  "ditemukan_pada": "2026-10-06",
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
  }
 ]
