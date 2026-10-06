@@ -415,6 +415,11 @@ ALIAS_TEMPAT = {
     "tolitoli": "Toli-Toli",
     "toli toli": "Toli-Toli",
     "limapuluh kota": "Lima Puluh Kota",
+    "tanah daftar": "Tanah Datar",   # a common misspelling in headlines
+    "karang asem": "Karangasem",
+    "taliabu": "Pulau Taliabu",
+    "tidore": "Tidore Kepulauan",
+    "meranti": "Kepulauan Meranti",
     "oku": "Ogan Komering Ulu",
     "oki": "Ogan Komering Ilir",
     "okut": "Ogan Komering Ulu Timur",
@@ -460,7 +465,7 @@ DOMAIN_BUKAN = {"metro", "batu", "lingga"}  # "lingga" sits inside linggauklik (
 # A province named in the headline is weaker evidence than a kab/kota but it is still the story's own
 # words, so it outranks the outlet's home address. Shorthand included: headlines rarely spell it out.
 PROV_POLA = [
-    ("Sulawesi Barat", r"sulawesi barat|sulbar"), ("Sulawesi Selatan", r"sulawesi selatan|sulsel"),
+    ("Sulawesi Barat", r"sulawesi barat|sulbar"), ("Sulawesi Selatan", r"sulawesi selatan|sulsel|\btoraja\b"),
     ("Sulawesi Tengah", r"sulawesi tengah|sulteng"), ("Sulawesi Tenggara", r"sulawesi tenggara|sultra"),
     ("Sulawesi Utara", r"sulawesi utara|sulut"),
     ("Kepulauan Bangka Belitung", r"bangka belitung|babel(?:itung)?"),
@@ -470,9 +475,11 @@ PROV_POLA = [
     ("Kalimantan Utara", r"kalimantan utara|kaltara"),
     ("Sumatera Barat", r"sumatera barat|sumbar"), ("Sumatera Utara", r"sumatera utara|sumut"),
     ("Sumatera Selatan", r"sumatera selatan|sumsel"),
-    ("Nusa Tenggara Barat", r"nusa tenggara barat|ntb"), ("Nusa Tenggara Timur", r"nusa tenggara timur|ntt"),
-    ("Jawa Barat", r"jawa barat|jabar"), ("Jawa Tengah", r"jawa tengah|jateng"), ("Jawa Timur", r"jawa timur|jatim"),
-    ("Maluku Utara", r"maluku utara|malut"),
+    # islands that span several regencies still settle the province ("Kades di Lombok", "di Madura")
+    ("Nusa Tenggara Barat", r"nusa tenggara barat|ntb|\blombok\b"),
+    ("Nusa Tenggara Timur", r"nusa tenggara timur|ntt|\bflores\b|\bsumba\b|pulau timor"),
+    ("Jawa Barat", r"jawa barat|jabar"), ("Jawa Tengah", r"jawa tengah|jateng"), ("Jawa Timur", r"jawa timur|jatim|\bmadura\b"),
+    ("Maluku Utara", r"maluku utara|malut|\bhalmahera\b"),
     # most specific first: "Papua Barat Daya" before "Papua Barat" before plain "Papua"
     ("Papua Barat Daya", r"papua barat daya|\bpbd\b"), ("Papua Pegunungan", r"papua pegunungan"),
     ("Papua Selatan", r"papua selatan"), ("Papua Tengah", r"papua tengah"),
@@ -483,7 +490,7 @@ PROV_POLA = [
     ("Jakarta", r"\bjakarta\b|\bdki\b|jaksel|jakut|jaktim|jakbar|jakpus|kepulauan seribu"),
     ("Aceh", r"\baceh\b"), ("Banten", r"\bbanten\b"), ("Bengkulu", r"\bbengkulu\b"),
     ("Gorontalo", r"\bgorontalo\b"), ("Jambi", r"\bjambi\b"), ("Lampung", r"\blampung\b"),
-    ("Maluku", r"\bmaluku\b"), ("Riau", r"\briau\b"), ("Bali", r"\bbali\b"),
+    ("Maluku", r"\bmaluku\b|\bseram\b"), ("Riau", r"\briau\b"), ("Bali", r"\bbali\b"),
 ]
 PROV_POLA = [(n, re.compile(r"(?<![a-z])(?:" + pat + r")(?![a-z])", re.I)) for n, pat in PROV_POLA]
 
