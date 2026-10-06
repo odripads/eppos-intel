@@ -394,7 +394,7 @@ def main():
 
     # Four-letter names (Pati, Belu, Alor, Bima, Buru) are ordinary syllables too often to match bare, so
     # they count only right after an office or institution that is always followed by a place name.
-    INSTANSI = (r"(?:bawaslu|panwaslu|panwaslih|kpu|kpud|pilbup|pilwalkot|pilkada|bupati|wabup|pj bupati|asn|pns|"
+    INSTANSI = (r"(?:di|bawaslu|panwaslu|panwaslih|kpu|kpud|pilbup|pilwalkot|pilkada|bupati|wabup|pj bupati|asn|pns|"
                 r"pemkab|pemkot|kabupaten|kab|kota|dprd|polres|kejari|sekda|kesbangpol|bkpsdm|disdik)\s+")
 
     # compiled once: ~1,100 names is past re's internal cache, and recompiling each pattern for each of
@@ -407,8 +407,12 @@ def main():
         elif len(name) == 4:
             gaz_rx.append((re.compile(r"(?<![a-z])" + INSTANSI + re.escape(name) + r"(?![a-z])"), r))
 
+    # an office named after the city it sits in, where the story is about somewhere else: a report sent
+    # "ke BKN Makassar" is about Polman; "AJI Palembang" is the union chapter commenting on Ambon
+    BUKAN_LOKASI = re.compile(r"(?:ke )?(?:bkn|kanreg|kanwil|aji|lbh|ombudsman ri perwakilan) [a-z]+")
+
     def place_of(title):
-        n = " " + norm(title) + " "
+        n = " " + BUKAN_LOKASI.sub(" ", norm(title)) + " "
         for rx, r in gaz_rx:
             if rx.search(n): return r
         return None
@@ -441,7 +445,7 @@ def main():
         return None
 
     def place_from_alias(text):
-        t = norm(text)
+        t = BUKAN_LOKASI.sub(" ", norm(text))
         for rx, target in alias_rx:
             if rx.search(t):
                 r = gaz_by_name.get(norm(target)) or gaz_by_name.get(norm(KAB_PREFIX.sub("", target)))
@@ -470,7 +474,7 @@ def main():
         # about Maluku's governor in Bangka because the outlet is bangka.tribunnews.com
         path = urllib.parse.urlsplit(url).path
         slug = re.sub(r"[^a-z]+", " ", path.lower())
-        n = " " + slug + " "
+        n = " " + BUKAN_LOKASI.sub(" ", slug) + " "
         # five letters and up only: a slug has no office word in front of a short name to anchor it
         for rx, r in gaz_rx5:
             if rx.search(n): return r
