@@ -86788,5 +86788,53 @@
   "ditemukan_pada": "2026-10-06",
   "status_tinjau": "diterima otomatis",
   "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-05456",
+  "judul": "Diduga Selewengkan Dana Desa, Warga Dua Desa di Yahukimo Tuntut Ganti Kepala Desa",
+  "outlet": "dailyklik.id",
+  "tanggal_terbit": "2024-08-30",
+  "url": "https://www.dailyklik.id/2024/08/30/diduga-selewengkan-dana-desa-warga-dua-desa-di-yahukimo-tuntut-ganti-kepala-desa/",
+  "url_google": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPc2ZtOE5wTU1tRlZzOW9SUjJGVTFnWUY2OTVDY2RjUFFSN2pxSndtQklFUDZwcllZNnU5dGt2cXlJN0xVWjlpeUU3bnVDWHNzMkE0WjJQdFB3M3lUcjJJWnN4UC03Tk5QZ2VIMUF3SmRzaGZoMy1yNVpSaGtJa0JoZTMxNmRFVlhES1NvQktOczBfQVllUzZJcUtLZWZ6ZUxXb25WVzFrS21Xam9aYnJuVW1wXzBoejdX",
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2024",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "Papua Pegunungan",
+  "kueri": "kepala kampung pilkada Yahukimo after:2024-05-27 before:2024-12-27",
+  "ditemukan_pada": "2026-10-06",
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-05458",
+  "judul": "Bawaslu Manokwari telusuri empat kasus dugaan pelanggaran netralitas ASN",
+  "outlet": "ANTARA News Papua Tengah",
+  "tanggal_terbit": "2024-10-14",
+  "url": null,
+  "url_google": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSlJXRktOQjY3WW1yOXpBSFQyUHRSSW92ZTR1Y0ItX3ZTOExSRTJJeFRDdTJFWHV4QWtBQndYbEtmX3VINTdzaG9SNUJfa0JUTzlwZVJEU2tlX2xucGZKVlBhVGV4MGp4WEQ0SGRKTkxPTkdUSFhNMkZVSjAzUkU4aTFLcEZQRWpPUG4tVlhDX1VTQUh6TjJLc3BUamg4Q3pFV3FiclNuWE1NdmFCTHZjODRwdFcweXFlSzZQb9IBwgFBVV95cUxPQ2JmMXRNblFTeF9teGZJWElwUGhkbFVFMVl1aFU4TEZUYjBZTEhaaEI1Mi1UUmtfLVlhZ0VXX1paQ2xZVTg3ZGtNZWMtQU1PVjRnTVNBMFBpTG9iNEtoTGQ2dkprR2d6bmJBNTVjajNXc3o5ck5tVUxrTE14b1puZ3ZzTVJzOXZuenpiMkZFeFdGOWtrOWxMU1lpV2tsYTEyNExKQ3NWdEhwLS10RVlmWm50UVFEeGFfRUUyM0JTUExRUQ",
+  "status_url": "duplikat",
+  "gelombang_pilkada": "2024",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "Papua Tengah",
+  "kueri": "netralitas ASN Mimika after:2024-05-27 before:2024-12-27",
+  "ditemukan_pada": "2026-10-06",
+  "status_tinjau": "tertahan",
+  "catatan_tinjau": "tanpa URL sumber; setiap baris wajib punya tautan sumber"
+ },
+ {
+  "kandidat_id": "KAN-05459",
+  "judul": "Plt Bupati Mimika Dinilai Harus Izin Mendagri saat Mutasi Pejabat",
+  "outlet": "MetroTVNews.com",
+  "tanggal_terbit": "2024-07-17",
+  "url": null,
+  "url_google": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMC1BbzQtUXRLc3ZEM3hNdm41ZFZtZDdfYi1HNmRtS0VhZFNQa2ctcF8xV3c1dHpQd1JEQ3hnVEhnZ2JIQVQ5eERieHVsck1OLVBMZlprMjRZZnBUdFBDV0RUbmptcl9pTXNfVXNPRWZ2RmI1aWR0Ui1KTENhX1p6Mi03UHBkSHZKNmdnQlZwTVd6aHRxRF9wTGFHaExHb0lOSlRuWUJkOVZaM1U",
+  "status_url": "duplikat",
+  "gelombang_pilkada": "2024",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "Papua Tengah",
+  "kueri": "mutasi pejabat pilkada Mimika after:2024-05-27 before:2024-12-27",
+  "ditemukan_pada": "2026-10-06",
+  "status_tinjau": "tertahan",
+  "catatan_tinjau": "tanpa URL sumber; setiap baris wajib punya tautan sumber"
  }
 ]
