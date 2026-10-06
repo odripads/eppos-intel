@@ -98884,5 +98884,53 @@
   "ditemukan_pada": "2026-10-06",
   "status_tinjau": "diterima otomatis",
   "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-08640",
+  "judul": "Diduga selewengkan dana desa, empat kepala kampung di Manokwari jadi target polisi",
+  "outlet": "arsip.jubi.id",
+  "tanggal_terbit": "2018-03-23",
+  "url": "https://arsip.jubi.id/diduga-selewengkan-dana-desa-empat-kepala-kampung-di-manokwari-jadi-target-polisi/",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2018",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "arsip.jubi.id search='Manokwari kepala kampung' 2017-12-27..2018-07-27",
+  "ditemukan_pada": "2026-10-06",
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-08641",
+  "judul": "Kepala Kampung Putapa, Dogiyai, Bantah Dirinya Dicopot",
+  "outlet": "nabire.net",
+  "tanggal_terbit": "2020-07-10",
+  "url": "https://www.nabire.net/kepala-kampung-putapa-dogiyai-bantah-dirinya-dicopot/",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2020",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "nabire.net search='Dogiyai kepala kampung' 2020-06-09..2021-01-09",
+  "ditemukan_pada": "2026-10-06",
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-08642",
+  "judul": "Diduga Langgar UU, Gibran Harus Dinonaktifkan 3 Bulan dari Walikota Solo",
+  "outlet": "rmolpapua.id",
+  "tanggal_terbit": "2022-02-11",
+  "url": "https://www.rmolpapua.id/diduga-langgar-uu-gibran-harus-dinonaktifkan-3-bulan-dari-walikota-solo",
+  "url_google": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbWxkS3VpMWFueHJKLTY4LVN0QjQtdnhuRmViZldGaFMtblA0VzNPZXRBa0dJU3dWWGg5UXpSUHN2R2hpenJQWE1qSjVMRG5GekRYOHBrY2UyWHVIeWlSLS0yV29lNW9fVk9lbWM3bThrdnBfclMwV1N5VndReUdSTlRmem9DZ2F2VE9UYm5xazlOOXducDVtSTMwWEc",
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2022",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "Papua Selatan",
+  "kueri": "kepala kampung pilkada \"Boven Digoel\" after:2022-01-01 before:2022-12-31",
+  "ditemukan_pada": "2026-10-06",
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
  }
 ]
