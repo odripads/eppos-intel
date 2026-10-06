@@ -99236,5 +99236,21 @@
   "ditemukan_pada": "2026-10-07",
   "status_tinjau": "tertahan",
   "catatan_tinjau": "tanpa URL sumber; setiap baris wajib punya tautan sumber"
+ },
+ {
+  "kandidat_id": "KAN-08662",
+  "judul": "Anak Bupati Kalah PSU, Guru & ASN Dimutasi",
+  "outlet": "Kabartimurnews.com",
+  "tanggal_terbit": "2019-05-02",
+  "url": null,
+  "url_google": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRXhUc001N0JRaGhRUGM3VHlfZEFlREV4d3FWM0RqaTdYaDZMU1lKNGdJTHJ3dE9MWXN4cDdoUno3M2wtRHdjejdfY1lMZElKNkh6OVZuU2JYcGhXd2p3WE00anVSbmdKdU9wbDVQZnNCd2hQTGYzcm9IbjJfdVlHVFhjUjAyR0pqcnc",
+  "status_url": "duplikat",
+  "gelombang_pilkada": "2019b",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "Maluku",
+  "kueri": "kepala desa pilkada Buru after:2019-01-01 before:2019-06-08",
+  "ditemukan_pada": "2026-10-07",
+  "status_tinjau": "tertahan",
+  "catatan_tinjau": "tanpa URL sumber; setiap baris wajib punya tautan sumber"
  }
 ]
