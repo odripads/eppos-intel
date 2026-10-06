@@ -60,7 +60,8 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
     r"nikah lagi|hubungan gelap|digerebek|aborsi|\bmayat\b|megathrust|tsunami|"
     # KPK stings, wealth declarations, office-selling and pandemic rules are their own beats
     r"\bott\b|fee proyek|\blhkpn\b|calo jabatan|(?:kenakan|pakai|memakai|penggunaan) masker|"
-    r"kekerasan seksual|korban kekerasan|\bjudol\b|jenazah|tak senonoh|nikah siri|\btampar|menampar)", re.I)
+    r"kekerasan seksual|korban kekerasan|\bjudol\b|jenazah|tak senonoh|nikah siri|\btampar|menampar|payudara|raba dada|"
+    r"over ?dosis|dugem|gizi buruk|stunting)", re.I)
 # A reminder or an explainer is about the topic but is not an incident. Refused only when the headline
 # also carries no word of something having happened to someone.
 KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jenis pelanggaran dan sanksi|"
@@ -69,7 +70,7 @@ KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jeni
     # statements and warnings: a conditional, an official "stressing" a rule, or a report that nothing
     # has been reported. Still admitted when the headline also says something happened.
     r"\btegaskan\b|menegaskan|\bjika\b|\bbila\b|apabila|belum ada laporan|tidak ada laporan|belum (?:terima|menerima) laporan|"
-    r"\bberpotensi\b|\bm[ae]nanti\b|"
+    r"\bberpotensi\b|\bm[ae]nanti\b|\bdilarang\b|waspadai|peringatkan|jaga netralitas|"
     r"sanksi (?:berat |tegas )?bagi|bisa dipecat|terancam dipecat|adalah pemecatan|"
     r"apel siaga|apel kesiapan|deklarasi damai|\brawan\b|\bpotensi\b|\bawasi\b)", re.I)
 # explainer formulas that are never a report of an act, whatever verb they contain
@@ -90,6 +91,12 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     r"\d+ ?% pelanggar|terbanyak|mayoritas|paling (?:sering|banyak)|banyak melanggar|turun signifikan|"
     r"\bmeningkat\b|kali lipat|tidak ada (?:intimidasi|laporan|pelanggaran|temuan)|belum ada temuan|tekankan ancaman|"
     r"berharap tidak|stop politisasi|ancam pidanakan|"
+    r"cuti kampanye|janji kampanye|kampanye damai|kampanye akbar|tepati janji|tagih janji|ditagih janji|pengamanan kampanye|"
+    r"larangan dan sanksi|larangan pose|inilah sanksi|inilah aktivitas|harus tahu|sanksi dan aturannya|ini aturannya|"
+    r"ada sanksi bagi|ada syaratnya|boleh (?:ikut|hadiri) kampanye|\bawas!|instruksi presiden|teken pp|\bpp baru\b|"
+    r"siap tindak (?!lanjut)|bakal sanksi|jangan ajak|syarat mutasi|apakah bisa|\bcuti\b[^,]{0,25}kampanye|paling tidak netral|^[\d.]{3,} (?:asn|pns|kades|laporan|kasus)|"
+    r"(?:terima rekomendasi|rekomendasikan) (?:dari )?(?:partai|dpp|nasdem|golkar|pdip|pdi-p|gerindra|pkb|demokrat|pks|\bpan\b|ppp|hanura|perindo|psi)|"
+    r"(?:golkar|nasdem|pdip|pdi-p|gerindra|pkb|demokrat|pks|ppp|hanura|perindo|psi) rekomendasikan|\bkukuhkan\b|\burung\b|"
     r"^mendagri[^,]*total ada \d|minta (?:dugaan )?pelanggaran[^,]{0,20}ditindak|\bakan dicopot\b|"
     r"bentuk tim (?:untuk|khusus)|penertiban (?:aps|apk|alat peraga|baliho)|"
     r"terkait larangan|soroti marak|jelaskan kewenangan|"
@@ -112,7 +119,8 @@ BERSYARAT = re.compile(r"(?:jika|bila|apabila|kalau|agar (?:tak|tidak)|supaya (?
                        r"tak boleh|dilarang|yang(?: sering)?|tak|tidak)\s+(?:\w+\s+){0,2}?"
                        r"(?:me)?(?:langgar|mutasi|lantik|copot|nonjob)\w*", re.I)
 # a village-head election is not a pilkada; refused unless the headline also names the regional race
-PILKADES = re.compile(r"(pilkades|cakades|calon kepala desa|pemilihan kepala desa)", re.I)
+PILKADES = re.compile(r"(pilkades|cakades|calon kepala desa|calon kades|pemilihan kepala desa|pemilihan rt|pilpanag|"
+                      r"pemilihan pangulu|pemilihan wali nagari|pemilihan lurah|kampanye lurah desa|\bpilur\b)", re.I)
 PILKADA_KATA = re.compile(r"(pilkada|pilbup|pilwal|pilgub|paslon|cabup|cagub|calon bupati|calon wali)", re.I)
 TERJADI = re.compile(r"(dilaporkan|melaporkan|laporkan|diperiksa|dipanggil|terbukti|disanksi|dijatuhi|"
     # the verb, not the noun: "ASN langgar netralitas" reports an act, "cegah pelanggaran" does not
@@ -171,10 +179,10 @@ AKTOR_EKSEKUTIF = re.compile(r"(bupati|wali ?kota|walikota|\bwako\b|gubernur|\bc
     r"\bthl\b|sekdes|kadus|kepala dusun|kepala lingkungan|kepling|kapus|puskesmas|menteri|\bmendes\b|mendagri|"
     # a report to the civil-service commission is a report about a civil servant; "kepala DKRTH",
     # "kepala dispenduk": an agency head named by the agency's acronym
-    r"\bkasn\b|komisi asn|demosi|\bkepala d(?!esa)[a-z]{2,}|"
+    r"\bkasn\b|komisi asn|demosi|\bkepala d(?!esa)[a-z]{2,}|\bsekjen\b|sekretaris jenderal|"
     # the resources an incumbent commands are the mechanism even when only the candidate is named
     r"fasilitas negara|\bpip\b|bansos|bantuan sosial|\bpkh\b|sembako|anggaran|\bapbd\b)", re.I)
-CALON_FRASA = re.compile(r"(?:bakal calon|bacalon|calon|cabup|cagub|cawalkot|cawali|mantan|eks)\s+(?:wakil\s+)?"
+CALON_FRASA = re.compile(r"(?:bakal calon|bacalon|balon|bapaslon|paslon|calon|cabup|cagub|cawalkot|cawali|mantan|eks)\s+(?:wakil\s+)?"
                          r"(?:bupati|wali ?kota|walikota|gubernur|kepala daerah)"
                          r"(?:\s+(?:dan|&)\s+wakil\s+(?:bupati|wali ?kota|walikota|gubernur))?", re.I)
 
