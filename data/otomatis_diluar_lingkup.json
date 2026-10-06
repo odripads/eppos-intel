@@ -15275,9 +15275,19 @@
   "alasan": "pemilihan kepala desa, bukan pilkada"
  },
  {
+  "kandidat_id": "KAN-05504",
+  "judul": "KKB Kodap III Ndugama Diduga Bertanggung Jawab atas Penembakan Tiga ASN Dinas Pertanian Jawawijaya, Mentan Amran Sulaiman Minta Pengamanan Diperketat",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
   "kandidat_id": "KAN-05506",
   "judul": "Bupati Sukoharjo Terjerat OTT, Jubir KPK Sebut terkait Dugaan Pemerasan Perangkat Daerah",
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05508",
+  "judul": "Diduga Ancam Wartawan yang Jalankan Tugas Jurnalistik, Kontraktor PT GPS Terancam Dipolisikan; DPP PJS Siap Kawal Hingga Tuntas",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
   "kandidat_id": "KAN-05509",
@@ -18103,5 +18113,45 @@
   "kandidat_id": "KAN-08582",
   "judul": "Mutasi Sekda Kota Sorong Disoroti Ombudsman Papua Barat, Ini Jawaban LJ",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-08585",
+  "judul": "Serahkan SK PNS Bagi Eks Honorer K2, Wabup Matret Tegaskan yang “Nakal” Dapat Sanksi",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-08586",
+  "judul": "Kapolda minta penyidikan dugaan korupsi Bupati Yalimo tidak dikaitkan dengan soal politik",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-08587",
+  "judul": "Pemprov Riau ancam sanksi untuk ASN nambah cuti lebaran",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-08590",
+  "judul": "Bupati Nabire Belum Tindaklanjuti Rekomendasi KASN Terkait Pelanggaran Sistem Merit, KASN Ingatkan Sanksinya",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-08592",
+  "judul": "Warga Manokwari Aksi Berkabung Kecam Insiden Dugaan Rasisme, Gubernur Papua Bersikap",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-08593",
+  "judul": "ASN Kembali Minta Sekda Sarmi Dicopot",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-08594",
+  "judul": "Bupati Fakfak Dilaporkan ke KPK",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-08595",
+  "judul": "Memalsukan Surat Keterangan Bebas Narkoba, Kades di Kolaka Dilaporkan Warganya ke Polisi",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  }
 ]
