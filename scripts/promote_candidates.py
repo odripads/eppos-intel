@@ -38,7 +38,9 @@ PEMILU = re.compile(r"(pilkada|pemilu|pilpres|pileg|pilgub|pilbup|pilwal|paslon|
     r"tahapan pemilihan|pemilihan (kepala daerah|bupati|wali ?kota|gubernur)|"
     # re-votes ordered by the Constitutional Court (several Papua regencies and the Papua governor race
     # in 2025) are written as PSU, often with no other electoral word in the headline
-    r"\bpsu\b|pemungutan suara ulang|pilkada ulang)", re.I)
+    r"\bpsu\b|pemungutan suara ulang|pilkada ulang|"
+    # an incumbent is by definition a candidate in a race; the word alone places the story in an election
+    r"petahana|inkumben)", re.I)
 # out of scope by the spec: personal scandal, ordinary crime, health/disaster reporting
 LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|pelecehan|narkoba|sabu|"
     r"covid|corona|kecelakaan|laka lantas|kebakaran|karhutla|banjir|gempa|longsor|pencurian|begal|judi|"
@@ -49,7 +51,9 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
     r"vonis|divonis|penjara|dibui|napi|lapas|tanpa busana|bugil|\bsyur\b|ppdb|"
     # military and police postings are not the civilian executive the typology is about
     r"mutasi (?:tni|polri|perwira)|kepala bin|"
-    r"gelapkan|menggelapkan|digelapkan|lecehkan|melecehkan|dilecehkan|protokol kesehatan|\bprokes\b)", re.I)
+    r"gelapkan|menggelapkan|digelapkan|lecehkan|melecehkan|dilecehkan|protokol kesehatan|\bprokes\b|"
+    # campaign-finance reporting, police postings, workplace bullying: real news, not executive coercion
+    r"\blpsdk\b|\blppdk\b|\blpsdk\b|dana kampanye|penjabat kepolisian|\bkapolres\b|\bkapolsek\b|bullying|perundungan)", re.I)
 # A reminder or an explainer is about the topic but is not an incident. Refused only when the headline
 # also carries no word of something having happened to someone.
 KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jenis pelanggaran dan sanksi|"
@@ -61,11 +65,15 @@ KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jeni
     r"sanksi (?:berat |tegas )?bagi|bisa dipecat|terancam dipecat|adalah pemecatan|"
     r"apel siaga|apel kesiapan|deklarasi damai|\brawan\b|potensi pelanggaran|\bawasi\b)", re.I)
 # explainer formulas that are never a report of an act, whatever verb they contain
-PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelanggaran dan sanksi|aturan .{0,20}di pemilu:)", re.I)
+PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelanggaran dan sanksi|aturan .{0,20}di pemilu:|"
+    r"tidak boleh mutasi|tak boleh mutasi|bisa didiskualifikasi|bisa berujung|mulai \d+ januari|berlaku \d+ januari|"
+    # "nothing was found" is not an incident either
+    r"tidak temukan|tak temukan|tidak menemukan)", re.I)
 # "jika melanggar", "agar tak melanggar", "yang sering langgar": a violation that is threatened or
 # hypothetical, which is exactly what a reminder talks about; removed before looking for an act
-BERSYARAT = re.compile(r"(?:jika|bila|apabila|kalau|agar (?:tak|tidak)|supaya (?:tak|tidak)|jangan|"
-                       r"yang(?: sering)?|tak|tidak)\s+(?:me)?langgar", re.I)
+BERSYARAT = re.compile(r"(?:jika|bila|apabila|kalau|agar (?:tak|tidak)|supaya (?:tak|tidak)|jangan|tidak boleh|"
+                       r"tak boleh|dilarang|yang(?: sering)?|tak|tidak)\s+(?:\w+\s+){0,2}?"
+                       r"(?:me)?(?:langgar|mutasi|lantik|copot|nonjob)\w*", re.I)
 # a village-head election is not a pilkada; refused unless the headline also names the regional race
 PILKADES = re.compile(r"(pilkades|cakades|calon kepala desa|pemilihan kepala desa)", re.I)
 PILKADA_KATA = re.compile(r"(pilkada|pilbup|pilwal|pilgub|paslon|cabup|cagub|calon bupati|calon wali)", re.I)
@@ -386,7 +394,7 @@ def main():
 
     # Four-letter names (Pati, Belu, Alor, Bima, Buru) are ordinary syllables too often to match bare, so
     # they count only right after an office or institution that is always followed by a place name.
-    INSTANSI = (r"(?:bawaslu|panwaslu|panwaslih|kpu|kpud|pilbup|pilwalkot|pilkada|bupati|wabup|pj bupati|"
+    INSTANSI = (r"(?:bawaslu|panwaslu|panwaslih|kpu|kpud|pilbup|pilwalkot|pilkada|bupati|wabup|pj bupati|asn|pns|"
                 r"pemkab|pemkot|kabupaten|kab|kota|dprd|polres|kejari|sekda|kesbangpol|bkpsdm|disdik)\s+")
 
     # compiled once: ~1,100 names is past re's internal cache, and recompiling each pattern for each of
@@ -419,8 +427,12 @@ def main():
         by_qid = {r["qid"]: r for r in wd}
         for kc in json.loads(kp.read_text())["kecamatan"]:
             r = by_qid.get(kc["kab_qid"])   # linked by name at build time; BPS and Kemendagri codes differ
-            if r: kec_rx.append((re.compile(r"(?<![a-z])(?:camat|kecamatan|kec|distrik|di)\s+" +
-                                            re.escape(norm(kc["label"])) + r"(?![a-z])"), r))
+            if not r: continue
+            nk = norm(kc["label"])
+            # after a bare "di", only long or multi-word names: "di ujung tanduk" is an idiom, Ujung is
+            # also a kecamatan in Parepare
+            awal = r"(?:camat|kecamatan|kec|distrik|di)" if (len(nk) >= 7 or " " in nk) else r"(?:camat|kecamatan|kec|distrik)"
+            kec_rx.append((re.compile(r"(?<![a-z])" + awal + r"\s+" + re.escape(nk) + r"(?![a-z])"), r))
 
     def place_from_kecamatan(text):
         t = " " + norm(text) + " "
