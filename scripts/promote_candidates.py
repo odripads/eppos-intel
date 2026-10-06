@@ -68,7 +68,9 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
     r"\bott\b|fee proyek|\blhkpn\b|calo jabatan|(?:kenakan|pakai|memakai|penggunaan) masker|"
     r"kekerasan seksual|korban kekerasan|\bjudol\b|jenazah|tak senonoh|nikah siri|\btampar|menampar|payudara|raba dada|"
     r"over ?dosis|dugem|gizi buruk|stunting|dilaporkan hilang|\bbencana\b|gratifikasi|utang kampanye|mutasi penduduk|pindah domisili|"
-    r"gar itb|gadai|minum bir|\bmiras\b|\btewas\b|\btebas\b|\btikam\b|disuntik mati|terbakar|ijazah palsu|kekasih gelap|pembuangan bayi)", re.I)
+    r"gar itb|gadai|minum bir|\bmiras\b|"
+    # "PSU" is also the housing-estate infrastructure a developer hands over (prasarana, sarana, utilitas)
+    r"sentul city|\bresidence\b|\bfasum\b|\bfasos\b|prasarana|perumahan|\btewas\b|\btebas\b|\btikam\b|disuntik mati|terbakar|ijazah palsu|kekasih gelap|pembuangan bayi)", re.I)
 # A reminder or an explainer is about the topic but is not an incident. Refused only when the headline
 # also carries no word of something having happened to someone.
 KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jenis pelanggaran dan sanksi|"
@@ -108,7 +110,7 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     r"(?:pdip|pdi-p|golkar|nasdem|gerindra|pkb|pks|\bpan\b|ppp|demokrat|psi|perindo|hanura|gelora) rekomendasi|"
     # the other sense of "kampanye": a public-health or cycling campaign, or a campaign's paperwork
     r"kampanye (?:gerakan|\")|luncurkan kampanye|kampanyekan (?:bike|gerakan|penggunaan)|"
-    r"laporan (?:penggunaan |pertanggungjawaban |sisa )?dana hibah|hibah gedung|"
+    r"laporan (?:penggunaan |pertanggungjawaban |sisa )?(?:dana )?hibah|hibah gedung|"
     r"\bboleh (?:ikut |hadiri |gunakan |berkampanye|kampanye)|tidak boleh (?:untuk|digunakan)|tidak ada pencairan|"
     r"diminta kampanye|jangan dijadikan|masa kampanye selesai|tolak gunakan|siap kampanye|izin cuti|ajukan cuti|"
     r"harus cuti|wajib cuti|fasilitas[^,]{0,40}dicabut selama|janjikampanye|tidak hadiri debat|jangan muncul pas kampanye|"
@@ -124,7 +126,7 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     r"jenis pelanggaran asn|enam penyebab|sindografis|siapkan skb|sanksi lemah|semoga tak ada lagi|wajah pemerintah|"
     r"jangan gadaikan|meningkat signifikan|strategi cegah|berikut ancaman|\btertinggi\b|di \d+ daerah|jadi catatan|"
     r"(?:terungkap!?|ada|sebanyak) \d{3,} asn|awasi (?:promosi|mutasi)|minta[^,]{0,50}ditindak tegas|harus berani|"
-    r"\d+ persen kasus|\bapresiasi\b|"
+    r"\d+ persen kasus|\bapresiasi\b|pastikan netralitas|persoalan utama|^fenomena\b|"
     r"rekomendasi (?:pdip|pdi-p|golkar|nasdem|gerindra|pkb|pks|\bpan\b|ppp|demokrat|psi|perindo|hanura|gelora)|"
     r"^mendagri[^,]*total ada \d|minta (?:dugaan )?pelanggaran[^,]{0,20}ditindak|\bakan dicopot\b|"
     r"bentuk tim (?:untuk|khusus)|penertiban (?:aps|apk|alat peraga|baliho)|"
@@ -135,7 +137,7 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     r"\bancam\b[^,]{0,25}(?:tak|tidak) netral|"
     # national tallies: a count of reports is not itself an incident, and its parts are counted where they happened
     r"^(?:mendagri|kemendagri|bawaslu ri|perludem|kasn|bkn)\b[^,]{0,40}(?:(?<!\d)(?!(?:19|20)\d\d(?!\d))\d{3,}|\d{1,3}\.\d{3}|ratusan|ribuan)\b|"
-    r"(?:terima|ungkap|temukan|catat|ada|tindaklanjuti|tangani) (?:ada )?(?:lebih dari )?(?:\d{2,}|\d{1,3}\.\d{3})[\d.]* (?:laporan|dugaan|kasus|perkara|pelanggaran|usulan|aduan)|"
+    r"(?:terima|ungkap|temukan|catat|ada|tindaklanjuti|tangani|dalami) (?:ada )?(?:lebih dari )?(?:\d{2,}|\d{1,3}\.\d{3})[\d.]* (?:laporan|dugaan|kasus|perkara|pelanggaran|usulan|aduan)|"
     r"usulan mutasi [\d.]+|masih masif)", re.I)
 # Police, prosecutors, the military and the religious-affairs ministry rotate their own officers on their own
 # calendar; a reshuffle there is not the regional executive the typology is about.

@@ -1702,7 +1702,7 @@
  {
   "kandidat_id": "KAN-00878",
   "judul": "Bupati Jember Digugat PTUN, Diduga 14 Hektar Aset Tanah Pemkab Raib ke Pengembang Perumahan",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-00879",
@@ -2158,6 +2158,11 @@
   "kandidat_id": "KAN-00998",
   "judul": "Warga Desa Margaluyu Tanggeung Geruduk Kejari Cianjur, Pertanyakan Proses Laporan Kasus Kades Bermasalah",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-00999",
+  "judul": "Bawaslu Papua Serahkan Laporan Hibah PSU 2025 ke Gubernur, Bahas Dukungan Tanah Kantor Dan SDM",
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-01000",
@@ -8517,7 +8522,7 @@
  {
   "kandidat_id": "KAN-03111",
   "judul": "Fenomena Mutasi ASN Sumsel: Nasib Pegawai yang Berseberangan dengan Kepala Daerah Baru",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-03112",
@@ -14748,5 +14753,95 @@
   "kandidat_id": "KAN-05314",
   "judul": "Tim patroli segel warung makan akibat langgar SE Wali Kota Medan",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05315",
+  "judul": "Calon Bupati Bangka Barat Terpilih Markus Laporkan Dua Saksi ke Polisi atas Dugaan Kesaksian Palsu di MK - Wow Babel",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05316",
+  "judul": "Fenomena Helmi Hasan: Menang Tanpa Kampanye, Tumbangkan Gubernur Petahana",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05321",
+  "judul": "AMPD Desak Bawaslu Tindak Tegas ASN Pandeglang yang tak Netral - Trust Banten",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05323",
+  "judul": "Hasbi Jayabaya, Sang Bupati Lebak Bakal Dilaporkan ke Mabes Polri Gegara Masalah Ini",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05324",
+  "judul": "Bupati Lebak Hasbi Jayabaya Bakal Dilaporkan ke Mabes Polri, Ini Masalahnya",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05325",
+  "judul": "PTUN Bandung Perintahkan Gubernur Jabar Jatuhkan Sanksi Bupati Bogor",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05326",
+  "judul": "Sengketa PSU Sentul City, Bupati Bogor Terancam Sanksi PTUN",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05327",
+  "judul": "Bawaslu Dalami 314 Pelanggaran Netralitas ASN di Pilkada 2024",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05328",
+  "judul": "Ketua PTUN Bandung Minta Gubernur Jawa Barat Jatuhkan Sanksi kepada Bupati Bogor",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05329",
+  "judul": "Bupati Bogor Dilaporkan ke Presiden dan DPR Terkait Pelaksanaan Putusan PTU",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05335",
+  "judul": "Calon Kepala Desa Bator di Bangkalan Dibacok, 20 Orang Diperiksa",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05336",
+  "judul": "Bawaslu Jatim: Potensi Pelanggaran Netralitas ASN Sangat Mungkin Terjadi pada Pilkada 2024",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05337",
+  "judul": "Polemik PSU Piranha Residence Memanas, Warga Diperiksa Polisi, Wawali Kota Malang Terancam Dilaporkan",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05338",
+  "judul": "Ditunjuk Pjs Wali Kota Surabaya, Novi Pastikan Netralitas ASN Saat Kampanye",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05341",
+  "judul": "Dugaan Pelanggaran Netralitas ASN Jadi Persoalan Utama Pilkada di Kepulauan Riau",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05343",
+  "judul": "Bawaslu Sumsel ingatkan ASN tak terlibat pasang alat peraga kampanye Pilkada",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05344",
+  "judul": "Danramil Cigugur Klarifikasi Soal Tudingan Intimidasi kepada Wartawan / Kades Cempaka Sentil Perilaku Jurnalistik",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05345",
+  "judul": "Pamannya Jadi Calon Bupati, Ketua KPU Batu Bara Dilaporkan ke DKPP",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
  }
 ]

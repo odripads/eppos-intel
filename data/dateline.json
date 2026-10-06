@@ -2303,5 +2303,28 @@
  "https://m.antaranews.com/amp/berita/1003942/kasn-tindak-lanjuti-rekomendasi-bawaslu-sangihe": {
   "status": "tanpa dateline",
   "diambil": "2026-10-06"
+ },
+ "https://www.inilah.com/kasus-asn-tidak-netral-dilaporkan-ke-dpr-jangan-sampai-terulang-di-pilkada-serentak": {
+  "status": "gagal",
+  "galat": "HTTP Error 403: Forbidden",
+  "diambil": "2026-10-06"
+ },
+ "https://bali.antaranews.com/berita/344622/pemprov-bali-laporkan-soal-kasus-asn-tidak-netral-ke-dpr-ri": {
+  "status": "ok",
+  "teks": "Denpasar",
+  "qid": "Q11506",
+  "label": "Denpasar",
+  "diambil": "2026-10-06"
+ },
+ "https://jateng.antaranews.com/berita/547127/bawaslu-jateng-telusuri-asn-tidak-netral-saat-pendaftaran-paslon": {
+  "status": "ok",
+  "teks": "Semarang",
+  "qid": "Q11025",
+  "label": "Semarang",
+  "diambil": "2026-10-06"
+ },
+ "https://regional.kompas.com/read/2024/02/16/190229978/sederet-dugaan-pelanggaran-pemilu-di-jateng-ada-surat-suara-tercoblos-dan": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
  }
 }
