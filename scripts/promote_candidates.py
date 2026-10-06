@@ -32,7 +32,8 @@ def project(lon, lat): return ((lon - LON_MIN) * S, 420 - ((lat - LAT_MIN) * S +
 
 # A headline must carry electoral context to count. Actor + action alone let through a COVID case
 # count, a kades embezzlement, and an affair — the last explicitly out of scope in PROJECT-SPEC v2.
-PEMILU = re.compile(r"(pilkada|pemilu|pilpres|pileg|\bcaleg\b|nyaleg|\bcapres\b|cawapres|(?:tak|tidak) netral|pilgub|pilbup|pilwal|paslon|pasangan calon|calon (bupati|"
+PEMILU = re.compile(r"(pilkada|pemilukada|pemilu|pilpres|pileg|\bcaleg\b|nyaleg|\bcapres\b|cawapres|(?:tak|tidak) netral|"
+    r"politik praktis|intimidasi politik|balas dendam politik|beda pilihan|pilgub|pilbup|pilwal|paslon|pasangan calon|calon (bupati|"
     r"wali ?kota|gubernur|wakil)|cabup|cawabup|cagub|cawagub|bakal calon|bawaslu|panwaslu|gakkumdu|\bkpu\b|"
     r"netralitas|kampanye|coblos|pemungutan suara|pencoblosan|tps\b|dkpp|\bkasn\b|masa tenang|"
     r"tahapan pemilihan|pemilihan (kepala daerah|bupati|wali ?kota|gubernur)|"
@@ -59,7 +60,7 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
     r"nikah lagi|hubungan gelap|digerebek|aborsi|\bmayat\b|megathrust|tsunami|"
     # KPK stings, wealth declarations, office-selling and pandemic rules are their own beats
     r"\bott\b|fee proyek|\blhkpn\b|calo jabatan|(?:kenakan|pakai|memakai|penggunaan) masker|"
-    r"kekerasan seksual|korban kekerasan|\bjudol\b|jenazah)", re.I)
+    r"kekerasan seksual|korban kekerasan|\bjudol\b|jenazah|tak senonoh|nikah siri|\btampar|menampar)", re.I)
 # A reminder or an explainer is about the topic but is not an incident. Refused only when the headline
 # also carries no word of something having happened to someone.
 KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jenis pelanggaran dan sanksi|"
@@ -87,7 +88,8 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     r"ini sanksi|dampak jika|\bfaktor|\bpenyebab\b(?!nya)|diprediksi|\bprediksi\b|\baplikasi\b|\bsbt\b|pencegahan|"
     r"sistem merit lindungi|merit system dalam|kerap hantui|hantui (?:pemilu|pilkada)|minta laporkan|silaturahmi ke|ini ancaman|ancaman (?:pidana|sanksi) bagi|dituntut netral|cuti di ?luar tanggungan|"
     r"\d+ ?% pelanggar|terbanyak|mayoritas|paling (?:sering|banyak)|banyak melanggar|turun signifikan|"
-    r"\bmeningkat\b|kali lipat|"
+    r"\bmeningkat\b|kali lipat|tidak ada (?:intimidasi|laporan|pelanggaran|temuan)|belum ada temuan|tekankan ancaman|"
+    r"berharap tidak|stop politisasi|ancam pidanakan|"
     r"^mendagri[^,]*total ada \d|minta (?:dugaan )?pelanggaran[^,]{0,20}ditindak|\bakan dicopot\b|"
     r"bentuk tim (?:untuk|khusus)|penertiban (?:aps|apk|alat peraga|baliho)|"
     r"terkait larangan|soroti marak|jelaskan kewenangan|"
@@ -148,10 +150,12 @@ BUKAN_PEMILIHAN = re.compile(r"(gratifikasi|\bsuap\b|\bkpk\b|raskin|\blpj\b|fikt
     r"\bcuri\b|mencuri|\btipu\b|ujaran kebencian|keroyok|pengeroyokan|penyeroyokan|\bptsl\b|seleksi pppk|"
     r"pengisian perangkat desa|mutasi perdes|seleksi mutasi|uji kompetensi|ke ki\b|\bbst\b|bprs|khilafah|"
     r"aksi [24]12|\bhina\b|menghina|awak media|personel perwira|\bproyek\b|uang honor|mobil dinas|\bthr\b|parcel|"
+    r"\bperades\b|pengisian perangkat|disuap|supriyani|somasi|pelantikan kades|cantik|"
     r"ancaman serius|janji netral|antisipasi)", re.I)
 # Warnings and promises about what would happen to an official who took sides report no act, whether
 # or not the headline names the race, so these are refused on both paths.
-PERINGATAN = re.compile(r"(bisa kena|bisa di ?sanksi|\bintai\b|wanti-wanti|siap-siap (?:kena|dapat|di ?sanksi|ditindak|dijerat|dipecat)|(?:asn|pns|kades)\b[^,]{0,40}(?:siap-siap|bakal) (?:kena|di ?sanksi)|"
+PERINGATAN = re.compile(r"(bisa kena|bisa di ?sanksi|\bintai\b|wanti-wanti|\bm[ae]nanti\b|ada sanksinya|siap beri sanksi|"
+    r"\byang\b[^,]{0,40}akan diberi(?:kan)? sanksi|(?:tidak|tak) boleh (?:lagi )?(?:melakukan )?mutasi|siap-siap (?:kena|dapat|di ?sanksi|ditindak|dijerat|dipecat)|(?:asn|pns|kades)\b[^,]{0,40}(?:siap-siap|bakal) (?:kena|di ?sanksi)|"
     r"sanksi berat!|konsekuensinya|peringatan terbaru|jangan mau|\bancam (?:akan )?(?:berikan |beri )?sanksi|"
     r"sebut akan sanksi|diberikan sanksi tegas|sanksi (?:\w+ )?menanti|siap terima sanksi|tak segan|"
     r"akan diberikan (?:surat )?teguran)", re.I)
