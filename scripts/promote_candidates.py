@@ -61,7 +61,8 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
     # KPK stings, wealth declarations, office-selling and pandemic rules are their own beats
     r"\bott\b|fee proyek|\blhkpn\b|calo jabatan|(?:kenakan|pakai|memakai|penggunaan) masker|"
     r"kekerasan seksual|korban kekerasan|\bjudol\b|jenazah|tak senonoh|nikah siri|\btampar|menampar|payudara|raba dada|"
-    r"over ?dosis|dugem|gizi buruk|stunting|dilaporkan hilang|\bbencana\b|gratifikasi|utang kampanye)", re.I)
+    r"over ?dosis|dugem|gizi buruk|stunting|dilaporkan hilang|\bbencana\b|gratifikasi|utang kampanye|mutasi penduduk|pindah domisili|"
+    r"gar itb|\bgadai\b)", re.I)
 # A reminder or an explainer is about the topic but is not an incident. Refused only when the headline
 # also carries no word of something having happened to someone.
 KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jenis pelanggaran dan sanksi|"
@@ -70,7 +71,7 @@ KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jeni
     # statements and warnings: a conditional, an official "stressing" a rule, or a report that nothing
     # has been reported. Still admitted when the headline also says something happened.
     r"\btegaskan\b|menegaskan|\bjika\b|\bbila\b|apabila|belum ada laporan|tidak ada laporan|belum (?:terima|menerima) laporan|"
-    r"\bberpotensi\b|\bm[ae]nanti\b|\bdilarang\b|waspadai|peringatkan|jaga netralitas|"
+    r"\bberpotensi\b|\bm[ae]nanti\b|\bdilarang\b|waspadai|peringatkan|jaga netralitas|\bkoordinasi\b|\bdorong\b|"
     r"sanksi (?:berat |tegas )?bagi|bisa dipecat|terancam dipecat|adalah pemecatan|"
     r"apel siaga|apel kesiapan|deklarasi damai|\brawan\b|\bpotensi\b|\bawasi\b)", re.I)
 # explainer formulas that are never a report of an act, whatever verb they contain
@@ -91,7 +92,7 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     r"\d+ ?% pelanggar|terbanyak|mayoritas|paling (?:sering|banyak)|banyak melanggar|turun signifikan|"
     r"\bmeningkat\b|kali lipat|tidak ada (?:intimidasi|laporan|pelanggaran|temuan)|belum ada temuan|tekankan ancaman|"
     r"berharap tidak|stop politisasi|ancam pidanakan|"
-    r"cuti kampanye|janji kampanye|kampanye damai|kampanye akbar|tepati janji|tagih janji|ditagih janji|pengamanan kampanye|"
+    r"cuti kampanye|janji kampanye|kampanye damai|(?:di|saat|hadiri|pengamanan|hari terakhir) kampanye akbar|tepati janji|tagih janji|ditagih janji|pengamanan kampanye|"
     r"larangan dan sanksi|larangan pose|inilah sanksi|inilah aktivitas|harus tahu|sanksi dan aturannya|ini aturannya|"
     r"ada sanksi bagi|ada syaratnya|boleh (?:ikut|hadiri) kampanye|\bawas!|instruksi presiden|teken pp|\bpp baru\b|"
     r"siap tindak (?!lanjut)|bakal sanksi|jangan ajak|syarat mutasi|apakah bisa|\bcuti\b[^,]{0,25}kampanye|paling tidak netral|^[\d.]{3,} (?:asn|pns|kades|laporan|kasus)|"
@@ -105,6 +106,12 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     r"\bboleh (?:ikut |hadiri |gunakan |berkampanye|kampanye)|tidak boleh (?:untuk|digunakan)|tidak ada pencairan|"
     r"diminta kampanye|jangan dijadikan|masa kampanye selesai|tolak gunakan|siap kampanye|izin cuti|ajukan cuti|"
     r"harus cuti|wajib cuti|fasilitas[^,]{0,40}dicabut selama|janjikampanye|tidak hadiri debat|jangan muncul pas kampanye|"
+    r"kampanye[”\"] |kampanye publik|kampanye terbatas|laporan kampanye|bisa jadi temuan|bisa diberhentikan|cuti saja|ajak paslon|"
+    r"ungkap \d+ alasan|\d+ bentuk politisasi|contoh pelanggaran|tidak diperkenankan|sangat banyak|lebih banyak|masih temukan|"
+    r"pak lurah|hafalkan|disetop sementara|(?:bupati|wali ?kota|walikota|gubernur)\s+\w+\s+cuti\b|"
+    r"ingatkan[^,]{0,40}(?:tentang|soal) mutasi|isu utama|pengamat politik soroti indikasi|^profil\b|^video: eksklusif|rancang sistem|bakal tindak tegas|\bkian\b|"
+    r"bisa terkena|(?:meminta|minta) semua pihak|ada sanksi tegas|pecat atau turun pangkat|"
+    r"rekomendasi (?:pdip|pdi-p|golkar|nasdem|gerindra|pkb|pks|\bpan\b|ppp|demokrat|psi|perindo|hanura|gelora)|"
     r"^mendagri[^,]*total ada \d|minta (?:dugaan )?pelanggaran[^,]{0,20}ditindak|\bakan dicopot\b|"
     r"bentuk tim (?:untuk|khusus)|penertiban (?:aps|apk|alat peraga|baliho)|"
     r"terkait larangan|soroti marak|jelaskan kewenangan|"
@@ -114,7 +121,7 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     r"\bancam\b[^,]{0,25}(?:tak|tidak) netral|"
     # national tallies: a count of reports is not itself an incident, and its parts are counted where they happened
     r"^(?:mendagri|kemendagri|bawaslu ri|perludem|kasn|bkn)\b[^,]{0,40}(?:(?<!\d)(?!(?:19|20)\d\d(?!\d))\d{3,}|\d{1,3}\.\d{3}|ratusan|ribuan)\b|"
-    r"(?:terima|ungkap|temukan|catat|ada) (?:ada )?(?:lebih dari )?\d[\d.]+ (?:laporan|dugaan|kasus|perkara|pelanggaran|usulan|aduan)|"
+    r"(?:terima|ungkap|temukan|catat|ada|tindaklanjuti|tangani) (?:ada )?(?:lebih dari )?(?:\d{2,}|\d{1,3}\.\d{3})[\d.]* (?:laporan|dugaan|kasus|perkara|pelanggaran|usulan|aduan)|"
     r"usulan mutasi [\d.]+|masih masif)", re.I)
 # Police, prosecutors, the military and the religious-affairs ministry rotate their own officers on their own
 # calendar; a reshuffle there is not the regional executive the typology is about.
@@ -128,7 +135,7 @@ BERSYARAT = re.compile(r"(?:jika|bila|apabila|kalau|agar (?:tak|tidak)|supaya (?
                        r"(?:me)?(?:langgar|mutasi|lantik|copot|nonjob)\w*", re.I)
 # a village-head election is not a pilkada; refused unless the headline also names the regional race
 PILKADES = re.compile(r"(pilkades|cakades|calon kepala desa|calon kades|pemilihan kepala desa|pemilihan rt|pilpanag|"
-                      r"pemilihan pangulu|pemilihan wali nagari|pemilihan lurah|kampanye lurah desa|\bpilur\b)", re.I)
+                      r"pemilihan pangulu|pemilihan wali nagari|pemilihan lurah|kampanye lurah desa|\bpilur\b|paslon lurah|calon lurah)", re.I)
 PILKADA_KATA = re.compile(r"(pilkada|pilbup|pilwal|pilgub|paslon|cabup|cagub|calon bupati|calon wali)", re.I)
 TERJADI = re.compile(r"(dilaporkan|melaporkan|laporkan|diperiksa|dipanggil|terbukti|disanksi|dijatuhi|"
     # the verb, not the noun: "ASN langgar netralitas" reports an act, "cegah pelanggaran" does not
@@ -166,7 +173,8 @@ BUKAN_PEMILIHAN = re.compile(r"(gratifikasi|\bsuap\b|\bkpk\b|raskin|\blpj\b|fikt
     r"\bcuri\b|mencuri|\btipu\b|ujaran kebencian|keroyok|pengeroyokan|penyeroyokan|\bptsl\b|seleksi pppk|"
     r"pengisian perangkat desa|mutasi perdes|seleksi mutasi|uji kompetensi|ke ki\b|\bbst\b|bprs|khilafah|"
     r"aksi [24]12|\bhina\b|menghina|awak media|personel perwira|\bproyek\b|uang honor|mobil dinas|\bthr\b|parcel|"
-    r"\bperades\b|pengisian perangkat|disuap|supriyani|somasi|pelantikan kades|cantik|"
+    r"\bperades\b|pengisian perangkat|disuap|supriyani|somasi|pelantikan kades|cantik|akan disanksi|jarang .{0,3}ngantor|"
+    r"aset lahan|kasus aset|\bcadar\b|"
     r"ancaman serius|janji netral|antisipasi)", re.I)
 # Warnings and promises about what would happen to an official who took sides report no act, whether
 # or not the headline names the race, so these are refused on both paths.
@@ -208,7 +216,7 @@ def dalam_lingkup(judul, gelombang=None):
     Out-of-scope topics (personal scandal, ordinary crime, disaster) are refused on either path."""
     if LUAR_LINGKUP.search(judul):
         return False, "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)", None
-    if PILKADES.search(judul) and not PILKADA_KATA.search(judul):
+    if PILKADES.search(judul) and not PILKADA_KATA.search(PILKADES.sub(" ", judul)):
         return False, "pemilihan kepala desa, bukan pilkada", None
     if APARAT_PUSAT.search(judul) and MUTASI_KATA.search(judul):
         return False, "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah", None
