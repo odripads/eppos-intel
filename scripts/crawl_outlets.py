@@ -222,7 +222,7 @@ def main():
             except Exception as e:
                 dead += 1
                 with lock: print(f"  GAGAL {dom} '{q}' {wave}: {type(e).__name__}", file=sys.stderr)
-                time.sleep(2); continue
+                time.sleep(6 * dead); continue      # back off harder each time; small hosts ban bursts
             rows, kept = [], 0
             for it in items:
                 t = clean(it.get("title", {}).get("rendered"))
@@ -253,7 +253,9 @@ def main():
                     _merge_save(DATA / "kandidat.json", kand)
                     cc.simpan_state(state)
                     print(f"  ... {counter['sel']} sel, {counter['baru']} kandidat baru", file=sys.stderr)
-            time.sleep(1.0)
+            # 2.5 s between requests to one host. At 1 s, some 30 small outlets on shared hosting started
+            # dropping our TLS handshakes partway through the grid: a firewall ban, not a dead site
+            time.sleep(2.5)
 
     with ThreadPoolExecutor(max_workers=max(1, min(a.workers, len(by_host)))) as ex:
         list(ex.map(work, list(by_host)))
