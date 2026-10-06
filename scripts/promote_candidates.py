@@ -32,7 +32,7 @@ def project(lon, lat): return ((lon - LON_MIN) * S, 420 - ((lat - LAT_MIN) * S +
 
 # A headline must carry electoral context to count. Actor + action alone let through a COVID case
 # count, a kades embezzlement, and an affair — the last explicitly out of scope in PROJECT-SPEC v2.
-PEMILU = re.compile(r"(pilkada|pemilu|pilpres|pileg|\bcaleg\b|nyaleg|\bcapres\b|cawapres|pilgub|pilbup|pilwal|paslon|pasangan calon|calon (bupati|"
+PEMILU = re.compile(r"(pilkada|pemilu|pilpres|pileg|\bcaleg\b|nyaleg|\bcapres\b|cawapres|(?:tak|tidak) netral|pilgub|pilbup|pilwal|paslon|pasangan calon|calon (bupati|"
     r"wali ?kota|gubernur|wakil)|cabup|cawabup|cagub|cawagub|bakal calon|bawaslu|panwaslu|gakkumdu|\bkpu\b|"
     r"netralitas|kampanye|coblos|pemungutan suara|pencoblosan|tps\b|dkpp|\bkasn\b|masa tenang|"
     r"tahapan pemilihan|pemilihan (kepala daerah|bupati|wali ?kota|gubernur)|"
@@ -58,7 +58,8 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
     # personal life and disasters that a village-head headline drags in
     r"nikah lagi|hubungan gelap|digerebek|aborsi|\bmayat\b|megathrust|tsunami|"
     # KPK stings, wealth declarations, office-selling and pandemic rules are their own beats
-    r"\bott\b|fee proyek|\blhkpn\b|calo jabatan|(?:kenakan|pakai|memakai|penggunaan) masker)", re.I)
+    r"\bott\b|fee proyek|\blhkpn\b|calo jabatan|(?:kenakan|pakai|memakai|penggunaan) masker|"
+    r"kekerasan seksual|korban kekerasan|\bjudol\b|jenazah)", re.I)
 # A reminder or an explainer is about the topic but is not an incident. Refused only when the headline
 # also carries no word of something having happened to someone.
 KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jenis pelanggaran dan sanksi|"
@@ -67,6 +68,7 @@ KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jeni
     # statements and warnings: a conditional, an official "stressing" a rule, or a report that nothing
     # has been reported. Still admitted when the headline also says something happened.
     r"\btegaskan\b|menegaskan|\bjika\b|\bbila\b|apabila|belum ada laporan|tidak ada laporan|belum (?:terima|menerima) laporan|"
+    r"\bberpotensi\b|"
     r"sanksi (?:berat |tegas )?bagi|bisa dipecat|terancam dipecat|adalah pemecatan|"
     r"apel siaga|apel kesiapan|deklarasi damai|\brawan\b|\bpotensi\b|\bawasi\b)", re.I)
 # explainer formulas that are never a report of an act, whatever verb they contain
@@ -82,6 +84,10 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     r"^[^,:]{0,40}jadi atensi|hati-hati|terkendala regulasi|termasuk politisasi|(?:tidak netral|netralitas) jika|\bruu\b|"
     r"bakal dibekukan|akan dikenakan sanksi|siap-siap nonjob|disanksi pemberhentian|bisa dipecat|sebagian kasus|"
     r"dapat (?:me)?ngakibatkan|dapat akibatkan|tekankan sanksi|perlukah|\bzero\b|\bnihil\b|"
+    r"ini sanksi|dampak jika|\bfaktor|\bpenyebab\b(?!nya)|diprediksi|\bprediksi\b|\baplikasi\b|\bsbt\b|pencegahan|"
+    r"sistem merit lindungi|merit system dalam|kerap hantui|hantui (?:pemilu|pilkada)|minta laporkan|silaturahmi ke|ini ancaman|ancaman (?:pidana|sanksi) bagi|dituntut netral|cuti di ?luar tanggungan|"
+    r"\d+ ?% pelanggar|terbanyak|mayoritas|paling (?:sering|banyak)|banyak melanggar|turun signifikan|"
+    r"\bmeningkat\b|kali lipat|"
     r"^mendagri[^,]*total ada \d|minta (?:dugaan )?pelanggaran[^,]{0,20}ditindak|\bakan dicopot\b|"
     r"bentuk tim (?:untuk|khusus)|penertiban (?:aps|apk|alat peraga|baliho)|"
     r"terkait larangan|soroti marak|jelaskan kewenangan|"
@@ -91,7 +97,7 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     r"\bancam\b[^,]{0,25}(?:tak|tidak) netral|"
     # national tallies: a count of reports is not itself an incident, and its parts are counted where they happened
     r"^(?:mendagri|kemendagri|bawaslu ri|perludem|kasn|bkn)\b[^,]{0,40}(?:(?<!\d)(?!(?:19|20)\d\d(?!\d))\d{3,}|\d{1,3}\.\d{3}|ratusan|ribuan)\b|"
-    r"(?:terima|ungkap|temukan|catat|ada) (?:ada )?(?:lebih dari )?\d[\d.]+ (?:laporan|dugaan|kasus|perkara|pelanggaran|usulan)|"
+    r"(?:terima|ungkap|temukan|catat|ada) (?:ada )?(?:lebih dari )?\d[\d.]+ (?:laporan|dugaan|kasus|perkara|pelanggaran|usulan|aduan)|"
     r"usulan mutasi [\d.]+|masih masif)", re.I)
 # Police, prosecutors, the military and the religious-affairs ministry rotate their own officers on their own
 # calendar; a reshuffle there is not the regional executive the typology is about.
@@ -145,7 +151,7 @@ BUKAN_PEMILIHAN = re.compile(r"(gratifikasi|\bsuap\b|\bkpk\b|raskin|\blpj\b|fikt
     r"ancaman serius|janji netral|antisipasi)", re.I)
 # Warnings and promises about what would happen to an official who took sides report no act, whether
 # or not the headline names the race, so these are refused on both paths.
-PERINGATAN = re.compile(r"(bisa kena|(?:asn|pns|kades)\b[^,]{0,40}(?:siap-siap|bakal) (?:kena|di ?sanksi)|"
+PERINGATAN = re.compile(r"(bisa kena|bisa di ?sanksi|\bintai\b|wanti-wanti|siap-siap (?:kena|dapat|di ?sanksi|ditindak|dijerat|dipecat)|(?:asn|pns|kades)\b[^,]{0,40}(?:siap-siap|bakal) (?:kena|di ?sanksi)|"
     r"sanksi berat!|konsekuensinya|peringatan terbaru|jangan mau|\bancam (?:akan )?(?:berikan |beri )?sanksi|"
     r"sebut akan sanksi|diberikan sanksi tegas|sanksi (?:\w+ )?menanti|siap terima sanksi|tak segan|"
     r"akan diberikan (?:surat )?teguran)", re.I)
@@ -370,6 +376,15 @@ ALIAS_TEMPAT = {
     # the regency's everyday name; a kecamatan in Lingga (Kepri) is also called Selayar, and read alone
     # it put a Sulawesi Selatan bansos story in the Riau islands
     "selayar": "Kepulauan Selayar",
+    "tapteng": "Tapanuli Tengah",
+    "palas": "Padang Lawas",
+    "morotai": "Pulau Morotai",
+    "linggau": "Lubuk Linggau",
+    # not "mura": it is Musi Rawas in Sumatera Selatan and Murung Raya in Kalimantan Tengah
+    "butur": "Buton Utara",
+    "tolitoli": "Toli-Toli",
+    "toli toli": "Toli-Toli",
+    "limapuluh kota": "Lima Puluh Kota",
     "oku": "Ogan Komering Ulu",
     "oki": "Ogan Komering Ilir",
     "okut": "Ogan Komering Ulu Timur",
@@ -410,7 +425,7 @@ ALIAS_TEMPAT = {
 
 # Place names that are also ordinary words in outlet names: "jurnalmetro" is a Jakarta-area outlet, not
 # Kota Metro in Lampung; "batu" sits inside every "batubara".
-DOMAIN_BUKAN = {"metro", "batu"}
+DOMAIN_BUKAN = {"metro", "batu", "lingga"}  # "lingga" sits inside linggauklik (Lubuk Linggau)
 
 # A province named in the headline is weaker evidence than a kab/kota but it is still the story's own
 # words, so it outranks the outlet's home address. Shorthand included: headlines rarely spell it out.
@@ -643,7 +658,8 @@ def main():
         if not k.get("url"): continue
         ok, why, basis = dalam_lingkup(k["judul"], k.get("gelombang_pilkada"))
         u = urllib.parse.urlsplit(k["url"])
-        if ok and (u.netloc.lower().removeprefix("www.") in BUKAN_BERITA or u.path.startswith("/tag/")):
+        if ok and (u.netloc.lower().removeprefix("www.") in BUKAN_BERITA or u.path.startswith("/tag/")
+                   or re.search(r"/(?:kolom|opini|opinion|newsletter)/", u.path)):
             ok, why = False, "platform blog warga atau halaman tag, bukan pemberitaan"
         if not ok:
             ditolak.append({"kandidat_id": k["kandidat_id"], "judul": k["judul"], "alasan": why}); continue
