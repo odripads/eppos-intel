@@ -277,7 +277,7 @@
  {
   "kandidat_id": "KAN-00289",
   "judul": "BERSINAR Bentuk Tim Khusus Antisipasi Intimidasi Terhadap ASN Karimun",
-  "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-00292",
@@ -393,6 +393,11 @@
   "kandidat_id": "KAN-00397",
   "judul": "ASN dan PTT Tidak Netral, Sanksi Pecat Menanti",
   "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-00404",
+  "judul": "MenPAN-RB Instruksikan ASN Kampanyekan Penggunaan Masker",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-00405",
@@ -815,11 +820,6 @@
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
-  "kandidat_id": "KAN-00617",
-  "judul": "Pj Bupati Mura Diduga Lakukan Pembiaran Tekon Ikut Nyaleg",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
- },
- {
   "kandidat_id": "KAN-00618",
   "judul": "Bawaslu Kotim Masih Mengkaji Keterpenuhan Syarat Formil dan Materil Terkait Laporan Ribuan DPT Fiktif di Kelurahan Ketapang",
   "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
@@ -837,7 +837,7 @@
  {
   "kandidat_id": "KAN-00621",
   "judul": "Bupati Kotim Instruksikan Camat dan Kades Ikut Serta Dalam Penertiban APS Caleg",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-00622",
@@ -1023,11 +1023,6 @@
   "kandidat_id": "KAN-00690",
   "judul": "AMB Desak Kejari Banggai Usut Dugaan Korupsi MTQ Sulteng dan Ingatkan Camat Pelimpahan Dana 5 Milyar",
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
-  "kandidat_id": "KAN-00692",
-  "judul": "ASN Harus Netral, Foto Pj Bupati Jombang Mampang di Baliho Caleg Dicopot",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
   "kandidat_id": "KAN-00693",
@@ -2080,11 +2075,6 @@
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
-  "kandidat_id": "KAN-00987",
-  "judul": "Sanksi 15 Camat Beri Dukungan ke Salah Satu Capres Tergantung Wali Kota Makassar",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
- },
- {
   "kandidat_id": "KAN-00997",
   "judul": "Gubernur Lemhanas Andi Widjajanto Memastikan Posisinya di TPN Ganjar Tak Langgar Aturan",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
@@ -2432,7 +2422,7 @@
  {
   "kandidat_id": "KAN-01071",
   "judul": "Dugaan Mafia DAK di NTB: Sekda, PPK, dan PT Titik Temu Diduga Jadi Dalang Aliran Fee Proyek",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-01072",
@@ -3132,7 +3122,7 @@
  {
   "kandidat_id": "KAN-01245",
   "judul": "KPK Amankan Bupati Pati Sudewo dalam OTT, Dugaan Jual-Beli Jabatan Diselidiki",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-01246",
@@ -3437,7 +3427,7 @@
  {
   "kandidat_id": "KAN-01317",
   "judul": "KPK Soroti LHKPN Bupati Natuna Cen Sui Lan, Pejabat Tak Jujur Terancam Sanksi",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-01318",
@@ -3472,7 +3462,7 @@
  {
   "kandidat_id": "KAN-01324",
   "judul": "2 Orang Kena OTT di Karimun Diduga Peras Sejumlah Camat",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-01325",
@@ -3652,7 +3642,7 @@
  {
   "kandidat_id": "KAN-01361",
   "judul": "Ini Kronologi OTT Oknum LSM dan ASN Inspektorat Soal Dugaan Pemerasan Kades",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-01362",
@@ -4410,11 +4400,6 @@
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
-  "kandidat_id": "KAN-01573",
-  "judul": "Endorse Anaknya Yang Nyaleg, ASN Pemprov Banten Disanksi",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
- },
- {
   "kandidat_id": "KAN-01577",
   "judul": "Ini Sanksi yang Berlaku Jika ASN Tidak Menjaga Netralitas",
   "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
@@ -4677,16 +4662,6 @@
  {
   "kandidat_id": "KAN-02272",
   "judul": "Isu Bupati dan Paguyuban ASN Boyolali Dilaporkan ke KPK, Sekda: Kami Hormati Prosesnya",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
- },
- {
-  "kandidat_id": "KAN-02276",
-  "judul": "Lurah di Pinrang Diduga Bagi Beras-Kartu Nama Caleg Anak Bupati Irwan Hamid",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
- },
- {
-  "kandidat_id": "KAN-02279",
-  "judul": "Mendes Sebut Sanksi ke Kepala Desa Dukung Capres Urusan Kemendagri - kumparan.com",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
@@ -5012,7 +4987,7 @@
  {
   "kandidat_id": "KAN-01747",
   "judul": "Terlibat Politik Praktis, ASN dan PTT di Halteng Akan Dicopot",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-01751",
@@ -5677,11 +5652,6 @@
  {
   "kandidat_id": "KAN-01939",
   "judul": "Ulah Dirut Perumda Wanua Wenang, Wali Kota AA Dilaporkan ke Kejaksaan",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
- },
- {
-  "kandidat_id": "KAN-01940",
-  "judul": "Oknum Perangkat Desa di Motoling Barat Diduga Jadi Ketua Tim Kerja Caleg",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
@@ -6412,7 +6382,7 @@
  {
   "kandidat_id": "KAN-02337",
   "judul": "OTT KPK di Pati: Kepala Desa Diduga Kumpulkan Uang dalam Koper untuk Bupati Sudewo",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-02338",
@@ -6522,11 +6492,6 @@
  {
   "kandidat_id": "KAN-02360",
   "judul": "Bantu Istri Sekda Bintan Jadi Anggota DPRD, Indra Dicopot dari Camat Bintim",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
- },
- {
-  "kandidat_id": "KAN-02361",
-  "judul": "Diduga Meloloskan Mantan Caleg Jadi PPPK, Begini Penjelasan BKD Maluku Utara",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
@@ -7330,19 +7295,9 @@
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
-  "kandidat_id": "KAN-02572",
-  "judul": "Viral Video Perangkat Desa di Wonogiri Diarahkan ke Capres Jokowi dan Caleg Tertentu. Tak Disangka Diduga Dilakukan Oknum PNS",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
- },
- {
   "kandidat_id": "KAN-02575",
   "judul": "Dana Desa di Karanganyar Diduga Tak Sesuai Aturan. Tim Pendamping Desa Ungkap Banyak Oknum Kades Bagi Roto Jelang Pilkades",
   "alasan": "pemilihan kepala desa, bukan pilkada"
- },
- {
-  "kandidat_id": "KAN-02576",
-  "judul": "Ini Tanggapan BPN Prabowo Sandi Wonogiri Soal Perangkat Desa yang Diarahkan ke Capres Jokowi",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
   "kandidat_id": "KAN-02577",
@@ -8112,7 +8067,7 @@
  {
   "kandidat_id": "KAN-02923",
   "judul": "Kasus Dugaan LHKPN Janggal Wali Kota Pangkalpinang, KPK Dituntut Transparan",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-02924",
@@ -8182,7 +8137,7 @@
  {
   "kandidat_id": "KAN-02946",
   "judul": "Satgas Linmas di Nagan Raya 'ngamuk' dan rusak meja kantor camat, diduga terkait uang honor",
-  "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
   "kandidat_id": "KAN-02947",
@@ -8220,6 +8175,11 @@
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
+  "kandidat_id": "KAN-02954",
+  "judul": "Zaini Abdullah Arogan, Diduga Ada Motif Tertentu Mutasi Pejabat Aceh",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
   "kandidat_id": "KAN-02955",
   "judul": "Diduga Takut Diperiksa Kejagung, Bupati Puncak Papua Menghilang",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
@@ -8238,5 +8198,575 @@
   "kandidat_id": "KAN-02958",
   "judul": "Pensiunan dan Pejabat Nonjob 'Berjamaah' Kuasai Ratusan Mobil Dinas Pemprov Riau",
   "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
+ },
+ {
+  "kandidat_id": "KAN-02967",
+  "judul": "ASN Promosi, demosi, dan rotasi perlukah?",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-02968",
+  "judul": "Dilaporkan Ke Polisi, Lurah Kedaleman Cilegon Bantah Tuduhan Pelecehan Seksual",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-02969",
+  "judul": "Camat Sukalarang Klarifikasi Dugaan Lecehkan Profesi Guru yang Bertugas Dalam Penyelenggaraan Pemilu 2024 - Tatar Media",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-02971",
+  "judul": "Tinjau Jalan Putus Akibat Banjir, Bupati Bungo Langsung Instruksikan Balai Jalan Nasional Agar Di Perbaiki Sehari Langsung Normal",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-02972",
+  "judul": "Lima Pejabat Utama Polda Jambi, Dirkrimum Polda Jambi, Kapolres Sarolangun dan Kapolres Merangin Dimutasi, Ini Penggantinya",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-02975",
+  "judul": "Menjaga Integritas Birokrasi Melalui Merit System dalam Promosi Mutasi ASN Pemerintah Kota Bekasi 2024",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-02977",
+  "judul": "Kepala Desa Rawan Dimobilisasi Menjelang Pilkada, Akademisi: Mudah Pengaruhi Warga",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-02979",
+  "judul": "Calon Wali Kota Kotamobagu Nomor Urut 3 Walk Out dari Debat Terbuka, Tuding KPU Tidak Netral",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-02982",
+  "judul": "Diduga Istri Kepala Desa di Majalengka Sebar Fitnah Agar Tak Memilih Karna di Pilbup 2024, Ini Klarifikasinya! - Kabar Cirebon",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-02983",
+  "judul": "Laporan Harta Kekayaan LHKPN Eko Sapto Purnomo Plt Bupati Sukoharjo",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-02984",
+  "judul": "Bupati Sukoharjo Etik Suryani dari Partai Apa? Terjaring OTT KPK Diduga Terkait Pemerasan Perangkat Daerah",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-02988",
+  "judul": "Kisruh Pengisian Perangkat Desa di Pati, Ada Dugaan Intimidasi",
+  "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
+ },
+ {
+  "kandidat_id": "KAN-02991",
+  "judul": "Mutasi Perwira Polda Jateng, Dirreskrimum dan Dirreskrimsus Diganti, Ini Pejabat Barunya",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-02992",
+  "judul": "ASN Tak Netral dalam Pilkada, Dapat Akibatkan Diskriminasi Layanan",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-02994",
+  "judul": "Sekda Solo Pastikan ASN Tak Netral Selama Pilkada Bakal Disanksi",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-03000",
+  "judul": "Kasus Pelanggaran Netralitas Segera Disidangkan, Kades Randuharjo Terancam 6 Bulan Penjara",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03001",
+  "judul": "Langgar Netralitas Pilkada, Kades di Mojokerto Divonis 1 Bulan Penjara",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03002",
+  "judul": "Diduga Kampanye Terselubung, Bawaslu Sumenep Sebut Plt Bupati Terancam Dipenjara!",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03004",
+  "judul": "Tiga Pejabat Polres Jombang Dimutasi, Berikut Daftar Lengkapnya",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03006",
+  "judul": "Diduga Lakukan Penggelapan, Mantan Calon Bupati Tulungagung Diadukan Polisi",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03010",
+  "judul": "Roda Mutasi Jajaran Pejabat Polresta Malang Kembali Bergerak - Suara Merdeka Surabaya",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03013",
+  "judul": "Bupati Jember Gus Fawait Mutasi Puluhan Kepala OPD, Ini Daftarnya",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03017",
+  "judul": "Kemenag dan Kejati Jatim Tuntut ASN Bersifat Netral di Pilkada, Jika Tidak Sanksi Tegas Menanti",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-03020",
+  "judul": "Paslon Gus Bentuk Tim untuk Pantau Kades dan Camat Tak Netral di Pilkada 2024",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-03022",
+  "judul": "Kompak! BPD Tropodo Waru Tidak Hadir di Acara Pelantikan Mutasi Jabatan Perangkat Desa - Cakrawala",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03024",
+  "judul": "Mutasi di Polresta Banjarmasin, Empat Pejabat Utama dan Tiga Kapolsek Resmi Berganti",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03025",
+  "judul": "Kapolres Kotabaru Pimpin Sertijab, Sejumlah Pejabat Utama Dimutasi",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03027",
+  "judul": "Kapolri Terbitkan Telegram Mutasi, Sejumlah Pejabat Utama dan Kapolres di Polda Kalsel Berganti",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03028",
+  "judul": "Daftar Lengkap Mutasi Pejabat Kejaksaan Tinggi Aceh",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03029",
+  "judul": "Oknum Aspri Bupati KBB, R dan Kepala BKPSDM Diduga Menjadi \"Calo Jabatan\" Mengatur Pengisian Rotmut",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03032",
+  "judul": "Kapolda Kalteng dan Sejumlah Pejabat Dimutasi, Ini Daftar Nama dan Jabatan Barunya",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03035",
+  "judul": "Mobilisasi Kepala Desa di Rumah Pemenangan Jadi Dalil Pemohon PHPU Kotawaringin Timur",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03040",
+  "judul": "Enam Pejabat Utama Polda Kalteng dan Lima Kapolres Masuk Daftar Mutasi",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03041",
+  "judul": "Jaksa Agung Lakukan Mutasi Besar-besaran, Kajari Batanghari Diganti dan Dua Pejabat Kejati Jambi Naik Jabatan",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03043",
+  "judul": "5 Pejabat Utama Kepolisian Kepri Dimutasi, Berikut Daftar Lengkapnya",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03044",
+  "judul": "Kapolda Kepri Mutasi Sejumlah Pejabat Polresta Barelang, dari Kasatlantas hingga Kasatreskrim",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03045",
+  "judul": "Bupati Roby Wacanakan Mutasi Pejabat Bintan Bulan Depan",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03050",
+  "judul": "Kapolri Mutasi Pejabat Polda Malut, Kabid Humas dan Kapolres Sula Berganti",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03052",
+  "judul": "Sutomo Mutasi ke Sula, Bupati Taliabu Tunjuk Kamiruddin Jabat Plt Kaban Kesbangpol",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03053",
+  "judul": "Rotasi Jabatan Polri Juni 2026, Ini Daftar Pejabat Polda Maluku Utara yang Dimutasi",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03056",
+  "judul": "JPU Tuntut 3 Bulan Penjara Kapus Ranga-ranga Mamuju Hamzah, Terbukti Langgar Netralitas ASN",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03058",
+  "judul": "Mutasi Pejabat Polres Maros : Wakapolres ke Polda, Kapolsek Mandai Jadi Kasat, Kapolsek Bantimurung Lanjut Pendidikan",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03060",
+  "judul": "Mutasi Pejabat Polres Maros : Dua Kasat Berganti, Termasuk Dua Kapolsek",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03061",
+  "judul": "Mutasi Pejabat, Kabag SDM Polres Maros Dimutasi Jadi Wakapolres di Jeneponto",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03072",
+  "judul": "KPK Tetapkan Bupati Langkat dan Tim Suksesnya Jadi Tersangka Dugaan Kasus Suap Proyek",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03073",
+  "judul": "Mutasi Pejabat Pemkot Makassar Dimulai, Appi: Bukan Soal Kedekatan, Tapi Kompetensi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03074",
+  "judul": "Jabatan Baru Komjen Purn Rudy Sufahriadi, Dulu Dicopot Kapolri Kini Jadi Pj Gubernur Papua Selatan",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03076",
+  "judul": "Mutasi Besar-besaran Lingkup Pemkab Banggai, Bupati Amirudin: Tunggu Persetujuan dari Kementerian",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03078",
+  "judul": "Bupati Konawe Selatan Terancam SANKSI PIDANA, Melebihi Kewenangan Mendagri dan Tidak Sesuai PROSEDUR HUKUM - Pojok Satu",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03080",
+  "judul": "Pegang Amanah Pj Bupati Kolut, Yusmin Siap Mundur Jika Langgar Netralitas ASN di Pilkada",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-03084",
+  "judul": "Kaban BKD Malut Dinilai Menyalahgunakan Kewenangan Terkait Demosi 2 ASN di Biro BPBJ",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03085",
+  "judul": "Diduga Bermasalah 2 ASN Ajukan Keberatan Atas Mutasi yang Dilakukan Gubernur Malut",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03086",
+  "judul": "PKH Tidak Merata, WBK Tindaklanjuti Laporan Warga Kecamatan Paal Dua",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03090",
+  "judul": "Mutasi Camat dan Lurah Jadi Kunci Navigasi Pemerintahan Kota Kotamobagu",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03091",
+  "judul": "Sejumlah Pejabat di Polres Pasaman Barat Dimutasi",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03092",
+  "judul": "Empat Pejabat di Polres Tanah Datar dimutasi",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03094",
+  "judul": "Beberapa Pejabat Polres OKI Kena Mutasi, Ini Dia Nama-namanya",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03096",
+  "judul": "Babak Baru Laporan Dugaan Intimisasi Plt Bupati Tapsel ke Kepsek",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03104",
+  "judul": "Kabupaten Banyuasin Zero ASN Tidak Netral Pada Pilpres dan Pileg Tahun 2024",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-03107",
+  "judul": "Plt Bupati OKI Tidak Terbukti Lakukan Pelanggaran",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03110",
+  "judul": "Lima Pejabat Polres Prabumulih Mutasi, Ini Penjelasan AKBP Endro",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03111",
+  "judul": "Fenomena Mutasi ASN Sumsel: Nasib Pegawai yang Berseberangan dengan Kepala Daerah Baru",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03112",
+  "judul": "Wali Kota Prabumulih Minta Maaf, Kepsek Batal Dicopot",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03113",
+  "judul": "Bupati Muara Enim Edison Diduga Terima ”Fee” Proyek 5 Persen",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03114",
+  "judul": "Bupati Pemalang Diduga Terlibat Suap Proyek dan Jual Beli Jabatan, Golkar Evaluasi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03115",
+  "judul": "Rotasi dan Mutasi di Polda Sumsel: Sejumlah Kapolsek dan Pejabat Polrestabes Palembang Berganti Posisi - rakyatempatlawang.disway.id",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03116",
+  "judul": "Kontroversi Wali Kota Prabumulih H Arlan; Dari Pamer Empat Istri hingga Dugaan Copot Kepala SMP",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03120",
+  "judul": "Pejabat Kelurahan 19 Ilir Diduga Tak Netral, Ajak Warga Dukung Yudha-Bahar",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03121",
+  "judul": "Sekda Kota Palembang Tekankan Sanksi Ringan Hingga Berat Bagi ASN Tak Netral",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-03122",
+  "judul": "Mendagri Segera Evaluasi Pj Bupati Tapteng, Ketua DPRD Ajukan Pergantian Sugeng Karena Dinilai Tidak Netral",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03124",
+  "judul": "Pejabat Polres Taput dilaporkan ke Bid Propam Polda Sumut",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03125",
+  "judul": "Kapolda Sumut Mutasi Sejumlah Perwira, 16 Pejabat Bergeser",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03126",
+  "judul": "Empat Pejabat Polresta Deli Serdang Dimutasi, Termasuk Kasat Reskrim dan Kasat Narkoba",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03133",
+  "judul": "Pansus DPRD Nisel Ungkap Dugaan Pelanggaran Mutasi ASN, Rekomendasikan Sanksi Berat untuk Pejabat Terlibat",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03134",
+  "judul": "BKD Nisel Diduga Kangkangi Rekomendasi Mendagri Terkait Mutasi Sejumlah ASN",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03135",
+  "judul": "Idealisman: Pejabat Yang Tidak Baik Pelayanannya Ke Publik Akan Dicopot",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-03136",
+  "judul": "BKPSDM Simalungun Bantah Surat Mutasi Palsu yang Catut Nama Pejabat",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03137",
+  "judul": "Warga berkecukupan di Hinai Langkat diduga masih terima bantuan PKH",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03139",
+  "judul": "Dinilai Tidak Netral Pj.Bupati Langkat Diminta Segera Mencopot Kadis Dukcapil",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03141",
+  "judul": "Dugaan Fitnah, Kepala Desa Pangambatan Kembali Dilaporkan Salah Seorang Warganya ke Polres Karo",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03142",
+  "judul": "Kenapa Bupati Madina Tidak Mutasi Pejabat Sejak Tahun 2025?",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03143",
+  "judul": "Kapolri Lakukan Mutasi Jelang Akhir Tahun, 21 Pejabat Polda Sulsel dan Jajaran Berganti",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03144",
+  "judul": "3 Pejabat Utama Polda Metro Jaya Kena Mutasi, Termasuk Dirreskrimsus",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03145",
+  "judul": "Ratusan Perwira Dimutasi Kapolri, Berikut Daftar Pejabat Utama Polda Sumut yang Baru",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03146",
+  "judul": "Pemko Medan Larang Honorer Libur Nasional 27 November, Blok Sumut: Tidak Netral",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-03155",
+  "judul": "ASN yang Laporkan Bupati Dimutasi ke Sibolangit, BKPSDM Sebut untuk Kepentingan Dinas",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03159",
+  "judul": "Dua Pejabat Dinas Pendidikan Deli Serdang Dicopot",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03160",
+  "judul": "Anak Mantan Bupati Deli Serdang Terancam Dicopot",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-03161",
+  "judul": "Politik Tapteng Panas, Bupati Masinton Pasaribu Diancam Pemakzulan",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03164",
+  "judul": "Bawaslu Temukan Pola Politisasi Bansos COVID-19 di Pilkada Banten",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03166",
+  "judul": "Minta Uang ke Pejabat, 3 Panwascam Cianjur Dipecat karena Langgar Kode Etik",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03168",
+  "judul": "33 Perwira Tinggi TNI AU Termasuk Wakil Gubernur AAU Terkena Mutasi, Nih Daftar Namanya",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03170",
+  "judul": "Inspektorat Jatim: Pengangkatan Plt oleh Bupati Faida Pelanggaran Berat",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03173",
+  "judul": "OPD Serapan Terendah Disanksi, Pj Bupati Bondowoso Sebut Dinas Perkim Paling Rendah, Bambang: 1 Persen - Bharata",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03174",
+  "judul": "Diberitakan Melakukan Intimidasi, Kades Sawo Mojokerto Angkat Bicara",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03177",
+  "judul": "Berita Terkini Harian Kades Lojejer Dilaporkan Ke Bawaslu Terbaru Hari Ini",
+  "alasan": "platform blog warga atau halaman tag, bukan pemberitaan"
+ },
+ {
+  "kandidat_id": "KAN-03180",
+  "judul": "Lurah Jombatan Jombang Dimutasi Akibat Terbitkan Surat Minta THR dan Parcel Lebaran",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03181",
+  "judul": "Mutasi Dianulir, 18 Pejabat di Tuban Balik ke Jabatan Semula",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03182",
+  "judul": "Pejabat Utama Rencana Dimutasi, Kapolres Malang Minta Tetap Pertahankan Predikat",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03183",
+  "judul": "Tegas! Oknum Pejabat yang Terbukti Pungli Akan Langsung Dicopot",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03185",
+  "judul": "Pj Bupati Ingatkan ASN Temanggung Tidak Netral di Pemilu 2024 Bakal Disanksi Pemecatan",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-03186",
+  "judul": "LMPP Malut nilai mutasi ASN di Kota Tidore Kepulauan langgar aturan",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03187",
+  "judul": "DPD GPM Malut dan GPM DKI, Desak Mendagri Berikan Sanksi Tegas Kepada Bupati Sula",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03189",
+  "judul": "Ombudsman Minta Dugaan Pelanggaran ASN Ditindak Tegas",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-03190",
+  "judul": "ASN Dinas Perikanan Parigi Moutong Diduga \"Main\" Distribusi BBM",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03191",
+  "judul": "Promosi & Mutasi ASN Banggai Segera Digelar Kembali Kamis Besok, Soal Jumlah Intinya Lebih dari Satu",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03192",
+  "judul": "Penyegaran Birokrasi Banggai Jelang Nataru, Pejabat Eselon III dan IV Hari Ini Dirotasi, Mutasi & Promosi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03193",
+  "judul": "Pemerintah Kota Bukittinggi Mutasi dan Promosi 64 Orang Pejabat",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03194",
+  "judul": "Nama-nama Pejabat Utama Polda Sulut yang Masuk Daftar Mutasi Mabes Polri Terkini",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03195",
+  "judul": "Sanksi Penurunan Jabatan hingga Dibehentikan Menanti Lurah Kayawu Tomohon Sulawesi Utara",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03196",
+  "judul": "Dua Pejabat Polres Pasbar Mutasi, Kasat Reskrim Kini Dijabat Fetrizal, Kasat Binmas Keling David",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-03197",
+  "judul": "Heboh Mutasi Pejabat Pemko Padang, Begini Sikap Feri Mulyani Sosok Dokter yang Urus Perpustakaan",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-03200",
+  "judul": "Kasat Pol PP Sibolga : Akan Beri Sanksi Terhadap ASN dan THL Bila Tidak Kenakan Masker Saat Ngantor",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03201",
+  "judul": "Diduga Lakukan Pelecehan Seksual, Kades Ini Diamankan Polres Langkat",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  }
 ]

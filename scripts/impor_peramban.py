@@ -38,7 +38,8 @@ def mekanisme(j):
 def gelombang(d):
     for w, (a, b) in JENDELA.items():
         if a <= d <= b: return w
-    return d[:4]
+    # a bare year that happens to name a wave ("2024" for a March 2024 story) would read as inside it
+    return f"luar-{d[:4]}" if d[:4] in JENDELA else d[:4]
 
 
 def main():
