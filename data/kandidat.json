@@ -99124,5 +99124,21 @@
   "ditemukan_pada": "2026-10-06",
   "status_tinjau": "diterima otomatis",
   "catatan_tinjau": "diterima massal 2026-10-07 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-08655",
+  "judul": "Dicopot Bupati, 106 Kakam Dirikan Tenda di Kantor Bank Papua Paniai",
+  "outlet": "Suara Papua",
+  "tanggal_terbit": "2021-08-21",
+  "url": null,
+  "url_google": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdWVWaE5UazRJbWNjWVRVczNKbTh4dmZVMlp4d1ZCd2NWLVFJaUlzcjFXdXI4OGpieUVOUE9ZYUVQZkdTc082LVdoWXV3N0xSYmlucFBIX3dhR1Y5OTIzNmR4YkMxdEJOcTh1dWN3TW9wX1BLOFhZdldWN0ZFTzlMY000ejVrVHpaeVFreFdjdVNmYmhJSTBWUWs1RTItTnJvZ0k4",
+  "status_url": "duplikat",
+  "gelombang_pilkada": "2021",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "Papua Tengah",
+  "kueri": "kepala kampung pilkada Paniai after:2021-01-10 before:2021-12-31",
+  "ditemukan_pada": "2026-10-07",
+  "status_tinjau": "tertahan",
+  "catatan_tinjau": "tanpa URL sumber; setiap baris wajib punya tautan sumber"
  }
 ]
