@@ -15185,6 +15185,11 @@
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
+  "kandidat_id": "KAN-05501",
+  "judul": "Tambang Emas Ilegal di Kalumpang Kian Masif, Diduga Dapat Bekingan Oknum APH dan Kades",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
   "kandidat_id": "KAN-05502",
   "judul": "Bupati Bangka Tegaskan Profesionalisme ASN dan PPPK, Pelanggar Disiplin Diminta Mundur",
   "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
@@ -15193,5 +15198,10 @@
   "kandidat_id": "KAN-05503",
   "judul": "Pemkab Basel Pastikan Pilkades Serentak 2026 Kondusif, Belum Ada Indikasi Pelanggaran",
   "alasan": "pemilihan kepala desa, bukan pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05506",
+  "judul": "Bupati Sukoharjo Terjerat OTT, Jubir KPK Sebut terkait Dugaan Pemerasan Perangkat Daerah",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  }
 ]
