@@ -2887,7 +2887,7 @@
  {
   "kandidat_id": "KAN-01181",
   "judul": "Dugaan Kericuhan Pemilihan PAW Kades Gunung Maddah Sampang",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "pemilihan kepala desa, bukan pilkada"
  },
  {
   "kandidat_id": "KAN-01182",
@@ -3047,7 +3047,7 @@
  {
   "kandidat_id": "KAN-01215",
   "judul": "Diduga Kuasai Lahan Milik Warga, Kades Terpilih Sidokepung Dilaporkan ke Polisi",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "pemilihan kepala desa, bukan pilkada"
  },
  {
   "kandidat_id": "KAN-01216",
@@ -4637,7 +4637,7 @@
  {
   "kandidat_id": "KAN-02241",
   "judul": "Pemprov DKI Jakarta Bantah Kendaraan Dinas Dipakai Mudik, Siap Sanksi Tegas ASN yang Melanggar",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-02242",
@@ -6180,6 +6180,11 @@
   "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
+  "kandidat_id": "KAN-02119",
+  "judul": "Sebut 4 Kerawanan, Bawaslu Ungkap Satu PNS Sragen Berkasus Pelanggaran Netralitas saat Pilkada. Bupati Yuni Klaim 80 % Infrastruktur Jalan Sudah Baik",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
   "kandidat_id": "KAN-02125",
   "judul": "Bawaslu Sragen Instruksikan 712 Spanduk Bergambar Calon dan Paslon di 20 Kecamatan Diturunkan. Timses Diberi Waktu 1 x 24 Jam Untuk Turunkan Sendiri!",
   "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
@@ -6228,6 +6233,11 @@
   "kandidat_id": "KAN-02141",
   "judul": "Diduga Berbuat Asusila dan Arogan, Warga Desa Kuri Pasai Tuntut Kades Dicopot",
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-02142",
+  "judul": "Dikumpulkan di Kabupaten, Kades-Kades Baru di Karanganyar Diingatkan Soal Ini di Masa Pandemi!",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-02143",
@@ -9172,7 +9182,7 @@
  {
   "kandidat_id": "KAN-03433",
   "judul": "ASN Pangkalpinang diingatkan tidak terlibat pelanggaran hukum",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-03434",
@@ -11065,6 +11075,11 @@
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
+  "kandidat_id": "KAN-03891",
+  "judul": "Farah ingatkan Bawaslu Awasi Larangan Mutasi ASN, Jelang Pilkada 2024",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
   "kandidat_id": "KAN-03899",
   "judul": "Mutasi Pejabat Eselon II Lampung Utara Bikin Geleng Kepala, Ini Alasannya",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
@@ -11182,7 +11197,7 @@
  {
   "kandidat_id": "KAN-03943",
   "judul": "Kades Terpilih Lantung Padesa Diperiksa Polisi",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "pemilihan kepala desa, bukan pilkada"
  },
  {
   "kandidat_id": "KAN-03954",
@@ -11823,6 +11838,11 @@
   "kandidat_id": "KAN-04195",
   "judul": "Polemik pencopotan Kepsek, Wali Kota Prabumulih Arlan diperiksa Kemendagri",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04196",
+  "judul": "Jelang Pilkada, KNPI Lampung Minta Bawaslu Awasi Larangan Mutasi ASN",
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-04197",
@@ -12547,7 +12567,7 @@
  {
   "kandidat_id": "KAN-04374",
   "judul": "Bawaslu Awasi Larangan ASN dan Pegawai BUMN/BUMD Berkampanye",
-  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-04375",
@@ -13277,7 +13297,7 @@
  {
   "kandidat_id": "KAN-04602",
   "judul": "Kades Terpilih Selong Belanak Diperiksa Polisi",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "pemilihan kepala desa, bukan pilkada"
  },
  {
   "kandidat_id": "KAN-04603",
@@ -13748,5 +13768,580 @@
   "kandidat_id": "KAN-04802",
   "judul": "Ratusan ASN Langgar Netralitas Jelang Pemilu, KASN: Lebih Sistemik dan Nekat",
   "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04803",
+  "judul": "Surat Keterangan Bisa Baca Alquran Bagi Calon Kades di Siak Jadi Polemik, Ada Dugaan Pemalsuan",
+  "alasan": "pemilihan kepala desa, bukan pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04806",
+  "judul": "Bupati Kubu Raya Terseret Dugaan Jual Beli Lahan Mangrove, Ini Kata Pemkab",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04807",
+  "judul": "2 Penembak ASN di Papua Diduga Pernah Terlibat Kasus Pilot Susi Air",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04809",
+  "judul": "44 Orang Ambil Formulir Pendaftaran Kades di Bangka Barat, 35 Orang di Antaranya Mengumpulkan Berkas",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04810",
+  "judul": "BKPSDM Nunukan Sebut Sanksi ASN Wajib lewat BKN",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04812",
+  "judul": "Kesbangpol Nunukan Sebut ASN Boleh Hadir di Lokasi Kampanye, Hasan: Masa Pilih 'Kucing dalam Karung'",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04815",
+  "judul": "Lurah Rampoang Dicopot Gegara Selfi, Tokoh Universitas Hasanuddin Angkat Bicara",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04816",
+  "judul": "ASN di Mimika Diingatkan Tak Ikut Kampanye, Pj Sekda: Harus Netral",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04817",
+  "judul": "ASN-Pejabat Mimika “Kepala Mabuk” di Jam Kantor Kini Terancam Sanksi Tegas - Berita Indonesia Timur Terkini",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-04818",
+  "judul": "Terlibat Kampanye Dukung Paslon Bupati dan Wakil Bupati, Sekretaris Bapenda Mimika Dinonjobkan",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-04821",
+  "judul": "Ini larangan gaya foto ASN selama masa kampanye pilkada 2024",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04829",
+  "judul": "Diduga Honorer “Siluman Disulap” Jadi PNS, Roberth Asmuruf: Saya Tidak Komentar Itu",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04830",
+  "judul": "Bawaslu Raja Ampat Tegaskan Profesional Tangani Laporan Rekaman Sekda",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04837",
+  "judul": "Farah Nuriza Amelia Minta Bawaslu Awasi Larangan Mutasi ASN",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04841",
+  "judul": "Bawaslu Kabupaten Batang Tekankan Netralitas ASN, Ancamannya Pemberhentian Jika Dilanggar",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04844",
+  "judul": "Usai Kasus Berlian, Anak Nia Daniaty Dilaporkan Tipu Calon PNS",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04847",
+  "judul": "PKS Rekomendasi Susanti Bakal Calon Wali Kota Siantar",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04850",
+  "judul": "Tak Senang Warganya Pasang Status Bacaleg, Istri Kades Pardasuka Lamsel Tebar Ancaman",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04851",
+  "judul": "Kepala Desa Terpilih Diduga Mengunakan Ijazah Palsu Syarat Pencalonannya",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-04853",
+  "judul": "Lewat Diskusi Hukum, Bawaslu Pohuwato Dorong Optimalisasi Penanganan Pelanggaran ASN",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04854",
+  "judul": "BKD Pemprov Gorontalo Kaji Calon Pejabat Mutasi-Promosi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04855",
+  "judul": "Calon Wakil Wali Kota Gorontalo Dilaporkan ke Bawaslu",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-04857",
+  "judul": "Kabag Prokopim Meranti Diduga Berpolitik. Komisi I DPRD Meranti Akan Proses Sesuai UU ASN.",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04869",
+  "judul": "Gagal Selesaikan LPJ, 14 Kepala Desa Di Kabupaten Kupang Dinonaktifkan Sementara",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04870",
+  "judul": "Percaloan Calon ASN, Oknum Pegawai BKN Diduga Terlibat - GenPI.co NTB",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04875",
+  "judul": "Diduga Selewengkan Dana, Kades di Sumbawa Mundur Saat Didemo Warga",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04877",
+  "judul": "Ini Isi Percakapan Kades Ungga yang Diduga Melecehkan Warganya",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-04880",
+  "judul": "Diduga Miliki Ijazah Palsu, Calon Bupati Simalungun Diprotes",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-04888",
+  "judul": "Ketua TP PKK di Paser Diduga Paksa Kades Kumpulkan KTP, DPC Apdesi Langsung Bantah",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04897",
+  "judul": "ASN di DIY Dilarang Pose Politik, Siap-siap Disanksi Tegas",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04898",
+  "judul": "Beredar Dugaan Kampanye Terselubung Calon Lurah Gilangharjo, Begini Klarifikasinya",
+  "alasan": "pemilihan kepala desa, bukan pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04899",
+  "judul": "Ingat, ASN dan Perangkat Kalurahan Wajib Netral dalam Pilkada, LCS di Medsos pun Dilarang, Melanggar Bisa Dipidana",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04900",
+  "judul": "Bawaslu RI Temukan 320 Pelanggaran Pemilu, 33 Kasus Soal Netralitas ASN",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04901",
+  "judul": "Larangan hingga Sanksi Pose Foto Bagi ASN Selama Masa Pemilu 2024",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04902",
+  "judul": "PNS Dilarang Like hingga Share Akun Kampanye, Ini Sanksinya",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04903",
+  "judul": "Ini Sanksi Moral Bagi PNS Like, Share, & Follow Medsos Capres",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04904",
+  "judul": "PNS Like, Share, Follow, & Comment Medsos Capres, Awas Sanksi",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04905",
+  "judul": "Hati-hati Jarimu ASN, Berikut Pose Jari yang Dilarang dan Ancaman Sanksi yang Langgar Netralitas ASN",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04906",
+  "judul": "Pj Heru Siap Sanksi ASN DKI yang Like dan Share Akun Medsos Capres",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04912",
+  "judul": "Beh! Ternyata Masih Ada ASN di Pemkab Buleleng yang Bandel, Sekda Sebut Sudah Disanksi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04913",
+  "judul": "PNS Aktif Berebut Rekomendasi PDIP, Ketua DPRD Badung “Bela” Sekda Adi Arnawa",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04915",
+  "judul": "Tak Mau Kena Sanksi Pelanggaran Pemilu, Ini Aturan dan Batasan yang Harus Dipahami ASN dan Aparatur Desa",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04916",
+  "judul": "KASN Ingatkan Sanksi Berat Menanti ASN Tak Netral di Pemilu",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04917",
+  "judul": "ASN Perlu Catat! Pantang Lakukan 7 Pelanggaran Kode Etik Netralitas Ini Selama Pemilu 2024",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04919",
+  "judul": "Robinsar: Tidak Ada Calon Sekda Cilegon Memiliki Catatan Pelanggaran ASN",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04920",
+  "judul": "Bawaslu Pandeglang Tangani 15 Dugaan Pelanggaran Pilkada 2024, Terbanyak ASN",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04921",
+  "judul": "Bawaslu Kota Serang Ingatkan ASN, Tidak Netral di Pilkada Terancam Pidana",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04927",
+  "judul": "Pose Dua Jari, Kades Kosambironyok Dilaporkan Warga",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04930",
+  "judul": "Bawaslu Jambi Tegaskan Netralitas Kades dan ASN dalam Pilkada 2024, Peringatan Pelanggaran Diberlakukan",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04934",
+  "judul": "ASN Pemkot Bekasi Diputus Melanggar Usai Pamer Jersey Nomor Punggung 2",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04935",
+  "judul": "Camat Bekasi Barat Enggan Berkomentar Banyak Usai Diperiksa soal Foto Pamer \"Jersey\" Nomor 2",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04939",
+  "judul": "Soal Foto Pamer \"Jersey\" Nomor 2, Camat Bekasi Timur: Spontan, Tidak Ada yang Mengarahkan",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04951",
+  "judul": "Calon Kades di Garut Meninggal Saat Kampanye",
+  "alasan": "pemilihan kepala desa, bukan pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04953",
+  "judul": "Bupati Kuningan Kutuk Kades Tak Pro Jokowi, 7 Saksi Diperiksa",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04958",
+  "judul": "Dugaan Politik Uang Bayangi PAW Kades Pasirtamiang Ciamis, Calon Nomor 2 Layangkan Laporan Resmi",
+  "alasan": "pemilihan kepala desa, bukan pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04961",
+  "judul": "Masa Kampanye, Bawaslu Indramayu Ingatkan ASN Harus Netral",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04962",
+  "judul": "Berkas Bakal Calon Kades Bangunharja Diperiksa, Warga Menunggu Proses yang Transparan",
+  "alasan": "pemilihan kepala desa, bukan pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04963",
+  "judul": "Inspektorat Ciamis Sebut Belum Ada Laporan ASN Tidak Netral di Pilkada 2024",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04964",
+  "judul": "Sanksinya Apa?Digadaikan Oknum Kades Rp 10 Juta, Kini Motor Plat Merah Sudah Ditebus",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-04965",
+  "judul": "ASN Diminta Hati-hati, Like dan Komen Postingan Terkait Pemilu Bisa Jadi Pelanggaran - https://rakyatcirebon.disway.id/",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04968",
+  "judul": "Daftar ke PDI Perjuangan, 12 Tokoh Berebut Rekomendasi Megawati Untuk Calon Bupati Cirebon - Kabar Cirebon",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-04993",
+  "judul": "Sekda Demak Tegaskan Bakal Beri Sanksi Tegas untuk ASN Tak Netral - jateng.disway.id",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04995",
+  "judul": "Pemkab Demak Diduga Langgar Hak Asasi karena Tidak Melantik Calon Kades dengan Pemilih Terbanyak",
+  "alasan": "pemilihan kepala desa, bukan pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04998",
+  "judul": "Bupati Pekalongan: Saya Alot Keluarkan Izin Mutasi ASN",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05013",
+  "judul": "Beredar Video Pembubaran Paguyuban ASN Boyolali, Sekda: Nggak Ada Instruksi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05021",
+  "judul": "Sam’ani Nikahkan Putrinya di Masa Kampanye, Bawaslu Kudus: ‘ASN Boleh Hadir Asal …’",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05036",
+  "judul": "Diduga Lakukan Praktik Jual Beli Jabatan, Camat di Bondowoso Terancam Dipindah",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05042",
+  "judul": "Acungkan Tiga Jari Sebut Paslon 3 Saat Mabuk, Kades Ngrawan Nganjuk Diperiksa Bawaslu",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05043",
+  "judul": "Tersangka SK ASN Palsu Gresik Bongkar Dugaan Keterlibatan ASN Aktif",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05044",
+  "judul": "Daftar Pose Foto ASN yang Dilarang Jelang Pemilu 2024, Sanksi Penurunan Jabatan hingga Diberhentikan",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05045",
+  "judul": "Kampanye Unik, Calon Kades Ini Sebut Dirinya Sebagai Cucu Kakek Merah",
+  "alasan": "pemilihan kepala desa, bukan pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05046",
+  "judul": "Skandal Calo CPNS 2024 di Pemkab Ponorogo, Dua ASN Diperiksa Inspektorat",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05054",
+  "judul": "Pj Bupati Ugas: Kurangi Medsos, Fokus Kerja Saja, Proses bila Melanggar",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05057",
+  "judul": "Munculnya Para Calon Kepala Desa “Siluman”, “Boneka” Alias, “Abal-Abal” Timbulkan Gejolak Di Desa Lain, Sanksi Pidana Menanti",
+  "alasan": "pemilihan kepala desa, bukan pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05058",
+  "judul": "DPRD Jember Gelar RDP Bahas Dugaan Pelanggaran Disiplin ASN Pemkab",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05066",
+  "judul": "Bawaslu Sampang Tegaskan ASN Harus Netral dan Tak Boleh Ikut Kampanye",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05067",
+  "judul": "Pendamping Desa Terlibat Kampanye Paslon di Jombang, Pj Bupati Bakal Koordinasi dengan Kemendes PDTT",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05069",
+  "judul": "PPPK Paruh Waktu di Jombang Wajib Tahu! Ini Deadline Unggah DRH Sesuai Instruksi BKPSDM",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05072",
+  "judul": "Laporan Lamban Ditangani, DPRD Sidoarjo Mendesak Kades, ASN dan Penyelenggara Jaga Netralitas Pilkada 2024",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05074",
+  "judul": "Makin Meruncing Konflik Bupati dan Wabup Sidoarjo gegara Mutasi ASN",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05076",
+  "judul": "Kades Tidak Netral di Pilkada Bojonegoro Berpotensi Picu Kegaduhan",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05080",
+  "judul": "Ketua AKD Bojonegoro diduga Koordinir Kades yang Dipanggil Polisi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05082",
+  "judul": "Kampanye Calon Kades Sampaikan Visi Dan Misinya",
+  "alasan": "pemilihan kepala desa, bukan pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05083",
+  "judul": "Pemilihan PAW Kades Kalanis Diduga Penuh Dengan Kecurangan, Benarkah?",
+  "alasan": "pemilihan kepala desa, bukan pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05084",
+  "judul": "Sanksi Tegas Menanti Bagi ASN yang Kampanye dan Usung Salah Satu Calon",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05092",
+  "judul": "10 Jenis Pose Foto Dilarang Bagi ASN Selama Pemilu 2024, Langgar Ini Hukumannya",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05096",
+  "judul": "Keluarkan Rekomendasi, DPRD Minta Bupati Halteng untuk Tidak Terbitkan SK Penetapan 4 Kades Terpilih, Ini Masalahnya",
+  "alasan": "pemilihan kepala desa, bukan pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05098",
+  "judul": "Diduga Gelapkan Sertifikat Tanah, Warga di Halmahera Tengah Polisikan Kades",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05099",
+  "judul": "ASN Kemenag-Pemkab Mamuju Diduga Tipu Warga Rp 300 Juta Modus Beri Kuota Haji",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05100",
+  "judul": "NTT Masuk 10 Besar Daerah Paling Rawan Pelanggaran Netralitas ASN",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05101",
+  "judul": "Pemprov Sulbar Tegaskan ASN Netral di Pilkada Serentak 2024, Sanksi Menanti yang Melanggar",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05112",
+  "judul": "Bawaslu Sulsel Temukan 12 Pelanggaran Netralitas ASN, 5 di Palopo",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05124",
+  "judul": "Sanksi Pidana Menanti, Berikut Nama-nama Kades di Bantaeng Yang Diduga Langgar Netralitas Pilkada",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05127",
+  "judul": "Viral Lurah di Makassar Bagi Kupon Sembako Diduga Kampanyekan Calon Ketua RT",
+  "alasan": "pemilihan kepala desa, bukan pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05135",
+  "judul": "Warga Geruduk Lurah Mangasa Makassar, Protes ASN-Calon RT Politisasi Bansos",
+  "alasan": "pemilihan kepala desa, bukan pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05145",
+  "judul": "Ancaman Bawaslu Palopo untuk ASN yang Like dan Komentari Medsos Berbau Politik",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05146",
+  "judul": "Calon Kades Saemba Walati Pernah Terseret Dugaan Ijazah Palsu",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05147",
+  "judul": "Warga Laporkan Dugaan Ijazah Palsu, Salah Satu Calon Kades",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05151",
+  "judul": "Bocornya telaahan staf buka dugaan \"permainan\" pengaktifan Kades Tamainusi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05152",
+  "judul": "Langgar Aturan Pemilihan RT/RW, Camat Palu Timur: Bisa Dilakukan Pemilihan Kembali",
+  "alasan": "pemilihan kepala desa, bukan pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05153",
+  "judul": "Diduga Gelapkan Hasil Pungutan PBB Ratusan Juta Rupiah, ASN Kota Banjar Ditahan",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05156",
+  "judul": "Dugaan Ijazah Bermasalah Kades Terpilih Timbolo Mencuat, Pesaing Siap Tempuh Jalur Hukum - Butol Post",
+  "alasan": "pemilihan kepala desa, bukan pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05157",
+  "judul": "25 ASN di Sulawesi Tenggara Langgar Netralitas Jelang Pemilu 2024, Bawaslu Catat Terbanyak di Kolaka",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05158",
+  "judul": "Abdul Azis Terima Surat Rekomendasi DPP NasDem sebagai Calon Bupati Koltim",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05161",
+  "judul": "Oknum ASN Bapenda Padang Diduga Tipu Calon Mahasiswa, Janjikan Lulus Perguruan Tinggi Lewat Jalur Belakang",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05162",
+  "judul": "Potensi Pelanggaran Netralitas ASN Perlu Diwaspadai, Bawaslu Gelar Diskusi Publik",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05167",
+  "judul": "Diduga Melakukan Kekerasan Seksual, Oknum Lurah Berprestasi Nasional di Empat Lawang Dilaporkan ke Mabes Polri - radarlampung.disway.id",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05170",
+  "judul": "Sekda Ogan Ilir Ancam ASN Tak Netral Saat Pemilu 2024 Bisa Diberhentikan",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05171",
+  "judul": "Wanita Diduga Kekasih Gelap Oknum Kades Tak Senonoh di Ogan Ilir Dikabarkan Pindah ke Luar Negeri - sumeks.disway.id",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05172",
+  "judul": "Bidan ASN Tersangka Dugaan Pembuangan Bayi, BKPSDM Binjai Minta Dinkes Proses Pemberhentian Sementar",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05175",
+  "judul": "Apel Siaga Pengawasan Tahapan Kampanye, Pj Gubernur Sumut Bersama Ketua Bawaslu Teken Kesepakatan Pemilu Damai 2024",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05179",
+  "judul": "Diduga Jabatan Kepling di Medan Denai Dibanderol Rp15 Juta, Oknum Camat dan Lurah Bermain?",
+  "alasan": "pemilihan kepala desa, bukan pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05181",
+  "judul": "Viral… Diduga Percakapan Melibatkan Lurah dan Seklur Tanah 600 Beredar di Medsos",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05183",
+  "judul": "Lurah Tanjung Mulia Diduga Menangkan Calon Kepling XVIII yang Tidak Lulus Verifikasi",
+  "alasan": "pemilihan kepala desa, bukan pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05185",
+  "judul": "ASN Tak Netral Jadi Salah Satu Indikator Kerawanan Pemilu 2024 di Blitar",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
  }
 ]
