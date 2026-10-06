@@ -87284,5 +87284,21 @@
   "ditemukan_pada": "2026-10-06",
   "status_tinjau": "diterima otomatis",
   "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-05493",
+  "judul": "Bawaslu PBD Soroti Pelanggaran Netralitas ASN Dalam Pemilu",
+  "outlet": "RRI.co.id",
+  "tanggal_terbit": "2025-08-09",
+  "url": null,
+  "url_google": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNX2gtXzRSc1VWdE9Cc201bVBPZ3pVdHlheHdTVmpSeTN1b3ZpaWVNVFV5ZHUtRlIzTHdMMmNHYkFTTi1IdGRIZlRoaEtNS2RLMWpZMTJvNTVXY0xsSUhVWGJYSW9DTXQ3dFhUd1NhdFl3N3FmUlZpMm1GaENJeUVKRVI4QS1SWTlIZFBYbUgtQl9iM2Rwc3FMM1NLaENmX0RjaFE",
+  "status_url": "belum terselesaikan",
+  "gelombang_pilkada": "2025",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "Papua Barat Daya",
+  "kueri": "netralitas ASN Sorong after:2025-01-01 before:2025-12-31",
+  "ditemukan_pada": "2026-10-06",
+  "status_tinjau": "tertahan",
+  "catatan_tinjau": "tanpa URL sumber; setiap baris wajib punya tautan sumber"
  }
 ]
