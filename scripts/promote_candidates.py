@@ -61,7 +61,7 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
     # KPK stings, wealth declarations, office-selling and pandemic rules are their own beats
     r"\bott\b|fee proyek|\blhkpn\b|calo jabatan|(?:kenakan|pakai|memakai|penggunaan) masker|"
     r"kekerasan seksual|korban kekerasan|\bjudol\b|jenazah|tak senonoh|nikah siri|\btampar|menampar|payudara|raba dada|"
-    r"over ?dosis|dugem|gizi buruk|stunting)", re.I)
+    r"over ?dosis|dugem|gizi buruk|stunting|dilaporkan hilang|\bbencana\b|gratifikasi|utang kampanye)", re.I)
 # A reminder or an explainer is about the topic but is not an incident. Refused only when the headline
 # also carries no word of something having happened to someone.
 KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jenis pelanggaran dan sanksi|"
@@ -97,6 +97,14 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     r"siap tindak (?!lanjut)|bakal sanksi|jangan ajak|syarat mutasi|apakah bisa|\bcuti\b[^,]{0,25}kampanye|paling tidak netral|^[\d.]{3,} (?:asn|pns|kades|laporan|kasus)|"
     r"(?:terima rekomendasi|rekomendasikan) (?:dari )?(?:partai|dpp|nasdem|golkar|pdip|pdi-p|gerindra|pkb|demokrat|pks|\bpan\b|ppp|hanura|perindo|psi)|"
     r"(?:golkar|nasdem|pdip|pdi-p|gerindra|pkb|demokrat|pks|ppp|hanura|perindo|psi) rekomendasikan|\bkukuhkan\b|\burung\b|"
+    r"rekomendasi (?:partai|parpol|dpp|pasangan calon)|(?:dpp|partai) \w+ rekomendasi|surat rekomendasi kepada|tolak rekomendasi|"
+    r"(?:pdip|pdi-p|golkar|nasdem|gerindra|pkb|pks|\bpan\b|ppp|demokrat|psi|perindo|hanura|gelora) rekomendasi|"
+    # the other sense of "kampanye": a public-health or cycling campaign, or a campaign's paperwork
+    r"kampanye (?:gerakan|\")|luncurkan kampanye|kampanyekan (?:bike|gerakan|penggunaan)|"
+    r"laporan (?:penggunaan |pertanggungjawaban |sisa )?dana hibah|hibah gedung|"
+    r"\bboleh (?:ikut |hadiri |gunakan |berkampanye|kampanye)|tidak boleh (?:untuk|digunakan)|tidak ada pencairan|"
+    r"diminta kampanye|jangan dijadikan|masa kampanye selesai|tolak gunakan|siap kampanye|izin cuti|ajukan cuti|"
+    r"harus cuti|wajib cuti|fasilitas[^,]{0,40}dicabut selama|janjikampanye|tidak hadiri debat|jangan muncul pas kampanye|"
     r"^mendagri[^,]*total ada \d|minta (?:dugaan )?pelanggaran[^,]{0,20}ditindak|\bakan dicopot\b|"
     r"bentuk tim (?:untuk|khusus)|penertiban (?:aps|apk|alat peraga|baliho)|"
     r"terkait larangan|soroti marak|jelaskan kewenangan|"
@@ -181,7 +189,7 @@ AKTOR_EKSEKUTIF = re.compile(r"(bupati|wali ?kota|walikota|\bwako\b|gubernur|\bc
     # "kepala dispenduk": an agency head named by the agency's acronym
     r"\bkasn\b|komisi asn|demosi|\bkepala d(?!esa)[a-z]{2,}|\bsekjen\b|sekretaris jenderal|"
     # the resources an incumbent commands are the mechanism even when only the candidate is named
-    r"fasilitas negara|\bpip\b|bansos|bantuan sosial|\bpkh\b|sembako|anggaran|\bapbd\b)", re.I)
+    r"fasilitas negara|\bpip\b|bansos|bantuan sosial|\bpkh\b|sembako|\banggaran\b|\bapbd\b)", re.I)
 CALON_FRASA = re.compile(r"(?:bakal calon|bacalon|balon|bapaslon|paslon|calon|cabup|cagub|cawalkot|cawali|mantan|eks)\s+(?:wakil\s+)?"
                          r"(?:bupati|wali ?kota|walikota|gubernur|kepala daerah)"
                          r"(?:\s+(?:dan|&)\s+wakil\s+(?:bupati|wali ?kota|walikota|gubernur))?", re.I)

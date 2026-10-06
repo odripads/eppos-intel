@@ -120,6 +120,11 @@
   "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
+  "kandidat_id": "KAN-00120",
+  "judul": "Waldy Mokodompit: Semua Pelanggaran Pilkada Tingkat Desa dan Kecamatan Dilaporkan ke Bawaslu",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
   "kandidat_id": "KAN-00123",
   "judul": "Pj Gubernur Kaltim Instruksikan Dinas ESDM Buka Hotline Pengaduan Soal Tambang Batubara",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
@@ -540,6 +545,11 @@
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
+  "kandidat_id": "KAN-00427",
+  "judul": "Kuasa Hukum Paslon Bupati Sukabumi Nomor Urut 1 Laporkan Dugaan Pelanggaran Pemilu di Momentum Geopark Spektakuler ke Bawaslu",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
   "kandidat_id": "KAN-00428",
   "judul": "Calon Wali Kota Sukabumi Achmad Fahmi Sikapi Maraknya Dugaan Kampanye Hitam di Medsos",
   "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
@@ -552,7 +562,7 @@
  {
   "kandidat_id": "KAN-00430",
   "judul": "Update Bencana Sukabumi Kembali Meluas ke 38 Kecamatan, 3 Dilaporkan Meninggal, 4 Hilang",
-  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-00439",
@@ -587,6 +597,16 @@
  {
   "kandidat_id": "KAN-00482",
   "judul": "Bawaslu Palangka Raya: Paslon Gubernur Nomor Urut 1, 2 dan 4 Terbukti Langgar Aturan APK",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-00483",
+  "judul": "Dugaan Pelanggaran APK Tiga Paslon Gubernur Kalteng Ditangani Bawaslu Palangka Raya",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-00485",
+  "judul": "Dugaan Pelanggaran TSM, Tim Hukum Sanidin-Siyono Laporkan Paslon Bupati Kotim ke Bawaslu Kalteng",
   "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
  },
  {
@@ -1532,12 +1552,12 @@
  {
   "kandidat_id": "KAN-00821",
   "judul": "Advokat Bernhard Minta Kejari Usut Dugaan Gratifikasi Kades Karang Tengah",
-  "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-00823",
   "judul": "Fakta Persidangan, Kades Karang Tengah Bogor Diduga Terima Gratifikasi dari Pengusaha, Kuasa Hukum Segera Lapor ke KPK",
-  "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-00824",
@@ -2347,7 +2367,7 @@
  {
   "kandidat_id": "KAN-01039",
   "judul": "Mantan Kades Dilaporkan Ke Polda, Diduga Serobot Tanah Desa dan Libatkan Oknum DPRD Sidoarjo dalam Gratifikasi",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-01040",
@@ -2412,7 +2432,7 @@
  {
   "kandidat_id": "KAN-01053",
   "judul": "Gubernur Sumbar Instruksikan Seluruh OPD Bergerak Cepat Tangani Dampak Bencana",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-01054",
@@ -2702,7 +2722,7 @@
  {
   "kandidat_id": "KAN-01121",
   "judul": "Tolak Gugatan Hendri Septa-Hidayat, MK: Penyelesaian Pelanggaran TSM di 8 Kecamatan Sesuai Kententuan",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
  },
  {
   "kandidat_id": "KAN-01124",
@@ -3117,7 +3137,7 @@
  {
   "kandidat_id": "KAN-01224",
   "judul": "Empat Eks Camat di Sidoarjo Dihadirkan Sebagai Saksi Dalam Kasus Dugaan Gratifikasi Eks Bupati Saiful Ilah",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-01225",
@@ -3192,7 +3212,7 @@
  {
   "kandidat_id": "KAN-01242",
   "judul": "Satgas Kecamatan Tak Berwenang Eksekusi Pelanggaran Pilwu",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
  },
  {
   "kandidat_id": "KAN-01244",
@@ -3532,7 +3552,7 @@
  {
   "kandidat_id": "KAN-01322",
   "judul": "Open Bidding Sekda Kota Bekasi Minim Pelamar, Dugaan Gratifikasi Mencuat",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-01323",
@@ -4827,7 +4847,7 @@
  {
   "kandidat_id": "KAN-01664",
   "judul": "Bupati Dadang Supriatna Instruksikan BPBD Siaga Bencana di Kabupaten Bandung",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-01667",
@@ -4872,7 +4892,7 @@
  {
   "kandidat_id": "KAN-01679",
   "judul": "Gubernur Aceh Tindaklanjuti Surat Mendagri, Instruksikan Langkah Mitigasi Bencana Hidrometeorologi",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-01680",
@@ -5437,7 +5457,7 @@
  {
   "kandidat_id": "KAN-01852",
   "judul": "Wali Kota Semarang Ita & Suami Diduga Terima Gratifikasi Rp5 Miliar",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-01853",
@@ -6385,6 +6405,11 @@
   "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
+  "kandidat_id": "KAN-02172",
+  "judul": "Dugaan Pelanggaran Administrasi Bacalon Gubernur, KPU PBD Dilaporkan ke Bawaslu",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
   "kandidat_id": "KAN-02174",
   "judul": "Belum Ada Laporan ASN Pemkab Main Politik Praktis",
   "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
@@ -6612,7 +6637,7 @@
  {
   "kandidat_id": "KAN-02359",
   "judul": "Perempuan Cantik Asal Kulon Progo Dilaporkan Hilang, Ini ciri dan Identitasnya",
-  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-02360",
@@ -10902,12 +10927,12 @@
  {
   "kandidat_id": "KAN-03814",
   "judul": "Selain Suap, Bupati Langkat Juga Diduga Terima Gratifikasi Rp 3,5 Miliar",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-03815",
   "judul": "Selain Suap, Bupati Langkat Syah Afandin Diduga Terima Gratifikasi Rp3,5 Miliar",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-03816",
@@ -11077,7 +11102,7 @@
  {
   "kandidat_id": "KAN-03854",
   "judul": "Isu Mutasi Pejabat Pemkab Kuningan, Mang Ewo Ingatkan Jangan Dijadikan Ajang Balas Budi Politik",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-03855",
@@ -12063,5 +12088,665 @@
   "kandidat_id": "KAN-04214",
   "judul": "Lantik Pj Sekretaris Daerah, Bupati Tulungagung Tegaskan Mutasi Pejabat 100 Persen Tanpa Mahar",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04217",
+  "judul": "Pj Bupati Mappi Hadiri Pengundian Nomor Urut Paslon dan Deklarasi Kampanye Damai",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04218",
+  "judul": "Bawaslu Ketapang : Bupati Boleh Berkampanye Asal Cuti di Luar Tanggungan Negara",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04219",
+  "judul": "Rawan Penyelewengan, Puskaptis Banyuwangi Minta Bawaslu Stop Bansos di Musim Kampanye",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04220",
+  "judul": "3 Bupati Di Papua Pegunungan Cuti Kampanye, 3 Penjabat Sementara Bupati Dikukuhkan",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04222",
+  "judul": "IMM Ambon Cabut Laporan Terhadap Ketua PKK Provinsi Maluku dan Bupati Bursel",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04223",
+  "judul": "Oknum ASN Kabsor Diduga Jadi Makelar Proyek di Pemkot Sorong –...",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04224",
+  "judul": "Bupati Tambrauw Serahkan Laporan Keuangan Daerah Tahun 2024 ke BPK...",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04225",
+  "judul": "KPU Serahkan Laporan Penggunaan Dana Hibah Pilkada 2024 ke Wali Kota Sorong",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04226",
+  "judul": "Rekomendasi Parpol untuk Balon Bupati Sorong Johny Kamuru Bertambah, Partai Gelora Susul NasDem",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04227",
+  "judul": "Bupati Lampung Tengah Kantongi Fee Proyek Rp 5,75 Miliar: Dipakai Buat Bayar Utang Kampanye",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-04228",
+  "judul": "Segini Jatah Bupati Ardito di Kasus Dugaan Suap dan Gratifikasi Kabupaten Lampung Tengah, Uang Haramnya Digunakan Bayar Utang Kampanye!",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-04229",
+  "judul": "Viral video siswi SMP di Jambi kritik wali kota, Pemkot Jambi cabut laporan polisi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04230",
+  "judul": "Keluarga Bimo Yudha Diduga Diintimidasi Pejabat Lampung, Mardani Ali Sera: Kemendagri Tolong Tegur!",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04231",
+  "judul": "Kemunduran Lampung: TikTokers Bimo Yudho Saputro Diancam, Gubernur Lampung Ikut Kesorot",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04232",
+  "judul": "Buntut Viral Kritik Pembangunan di Lampung, Orangtua Tiktoker Awbimax Didatangi Polisi dan Dipanggil Bupati",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04233",
+  "judul": "Awbimax Menangis saat Curhat Keluarganya di Lampung Dapat Ancaman: Polisi Dateng, Bokap Dipanggil Bupati - Pikiran-Rakyat.com",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04234",
+  "judul": "Usai Kritik Lampung, Sambil Menangis Bima Cerita Keluarganya Dapat Ancaman Hingga Sang Ayah Dipanggil Bupati - Detik Sumsel",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04235",
+  "judul": "Pekerjaan Juliman Ayah Bima Yudho Viral Kritik Lampung, Seorang PNS, Sempat Disebut Diintimidasi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04236",
+  "judul": "Imbas Kritik Lampung Tak Maju-maju, Bima Panas Dingin Orang Tuanya Diintimidasi Bupati - Pojok Satu",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04237",
+  "judul": "Gubernur Lampung Jawab dengan Kesal Dugaan Intimidasi ke Keluarga Bima: Tanya Aja Sama Orang Tuanya! - Kilat",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04238",
+  "judul": "Kritik Pernyataan Said Aqil soal Jenggot dan Sorban, Bupati Lampung Selatan Dilaporkan ke Polisi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04239",
+  "judul": "Berkas Perkara P21 di Kejaksaan, Calon Wakil Wali Kota Metro Qomaru Segera Disidang Atas Kasus Pelanggaran Pilkada",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-04240",
+  "judul": "Cuti Kampanye, Bupati Malang Lepas Fasilitas Negara",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04241",
+  "judul": "Pengamat: Janji Kampanye Asri Ludin Program Guru \"Senyum\", Jadi Bupati 2.341 Guru P3K PW \"Murung\" Tak Dapat Gaji",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04242",
+  "judul": "Kampanye Pakai Fasilitas Negara, Calon Wakil Wali Kota Metro Lampung Terancam 6 Bulan Penjara",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-04243",
+  "judul": "Inilah Laporan Wabup Zulkifli yang Bikin Emosi Bupati Sukarmis",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04244",
+  "judul": "Pasca Dicopot Pj Bupati Kampar, Mantan Kades M Haris Ch Makin Kencang Kerahkan Massa Dukung Prabowo Gibran",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04245",
+  "judul": "PSI Jayapura Diduga Tolak Rekomendasi Pasangan Calon Bupati dari DPP",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04246",
+  "judul": "Rehab Rumah Jabatan Bupati Malaka Senilai Rp 2,1 Milyar Diduga Tidak Sesuai Spek - Koran Timor",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04248",
+  "judul": "Hendrikus Djawa Diduga Lakukan Kekerasan Verbal dan Penghinaan. Bupati Kupang Ambil Sikap!",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04249",
+  "judul": "Ketua DPRD Sebut, Janji Kampanye Wali Kota-Wakil Wali Kota Kupang Akan Dikerjakan Tahun 2026",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04250",
+  "judul": "Penuhi Janji Kampanye, Kades Batu Cermin Bangun Kantor Megah Pakai Dana Pribadi - Kupang News",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04251",
+  "judul": "Kades Hauteas Barat Kecamatan Biboki Utara Diduga Menentang SE Bupati TTU Tentang Perekrutan Perangkat Desa - Koran Timor",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04252",
+  "judul": "Diduga Sebarkan Data Pribadi di Medsos, Gubernur NTB Laporkan Direktur NTB Care ke Polisi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04255",
+  "judul": "Mantan Pj Bupati Teuku Mirzuan Diperiksa Terkait Kasus Hibah Panwaslih Rp1 Miliar",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04256",
+  "judul": "NasDem Dukung Sanksi Bupati Aceh Selatan: Jangan Muncul Pas Kampanye Aja",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04257",
+  "judul": "DPP PAN Rekomendasi Raidin Pinim Maju Calon Bupati Pada Pilkada 2024 - Realitas Online",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04258",
+  "judul": "Wali Kota Langsa diduga kabur ke Medan saat bencana, berikut fakta, ungkapan warga, dan polemik yang memanas - Hops ID",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-04259",
+  "judul": "Dilaporkan Soal Keabsahan Ijazah, Calon Bupati Aceh Singkil Dulmusrid Heran",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-04261",
+  "judul": "Apip, Pengkritik Masa Jabatan Kades 9 Tahun, Yakin Tak Bersalah, Terpaksa Minta Maaf karena Diancam dan Ditekan",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04262",
+  "judul": "Nama Pj Wali Kota Bengkulu Arif Gunadi Terus Disebut di Sidang Dugaan Suap Penerimaan PHL PDAM - radarbengkulu.disway.id",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04263",
+  "judul": "Sekjen Partai Gerindra Serahkan Surat Rekomendasi Kepada Kopli Ansori Sebagai Calon Bupati Lebong.",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04264",
+  "judul": "CalonKepalaDaerahGunakanFasilitasNegaraBawasluSanksiTegas - https://harianrakyatbengkulu.bacakoran.co/",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-04265",
+  "judul": "Apip, Warga Asal Bengkulu, Dipaksa Minta Maaf karena Kritik Masa Jabatan Kades 9 Tahun, Diancam Dipolisikan",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04266",
+  "judul": "Tunggu Rekomendasi Bupati Terpilih, Lelang 5 Jabatan OPD di Pemkab BU Terancam Gagal",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04267",
+  "judul": "Sebelum Masa Kampanye, KPU Sebut Petahana Harus Cuti",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04268",
+  "judul": "Bupati dan Wakil Bupati Kutai Timur Ambil Cuti Kampanye Pilkada 2024",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04269",
+  "judul": "Tak Ada PAW, Andi Harun Bakal Tinggalkan Semua Fasilitas sebagai Wali Kota Selama Cuti Kampanye",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04271",
+  "judul": "APBD PPU 2019 Naik 16%, Bupati AGM Perioritaskan Tiga Pilar Sesuai Janji Kampanye",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04272",
+  "judul": "Tanggung Biaya PCR untuk Masyarakat Berau, Janji Kampanye Ibu Bupati Cuma Mimpi? - Sapos",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04273",
+  "judul": "Dana Hibah Pariwisata Untuk Kampanye Istri – Mantan Bupati Sleman Sidang Perdana",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-04274",
+  "judul": "Eks Bupati Sleman Keberatan Didakwa Selewengkan Dana Hibah buat Kampanye Istri",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-04276",
+  "judul": "Proposal Hibah Dikumpulkan di Rumah Dinas Bupati Sleman, Orang-Orang Dekat Raudi Akmal Mulai “Nyanyi”",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04277",
+  "judul": "Lontarkan Hinaan, Akun Anonim 166 Dilaporkan Bupati Talaud ke Polisi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04278",
+  "judul": "Pemuda Garut Diintimidasi Keluarga Kades Gara-gara Kritik Jalan Rusak",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04279",
+  "judul": "Siswi SMP yang Kritik Wali kota Minta Maaf, Pemkot Jambi Akan Cabut Laporan",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04280",
+  "judul": "Bupati Kotim Dilaporkan Istri ke Mendagri",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04281",
+  "judul": "Alvin Akawijaya Putra Dilaporkan Hilang ke Polisi, Wabup Buton: Bupati di Jakarta",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-04282",
+  "judul": "Yusril: Cuti Petahana Saat Kampanye Konstitusional",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04283",
+  "judul": "Pengamat: Kampanye, Presiden Dilarang Bagikan Bansos",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04284",
+  "judul": "KPU: Capres Petahana Boleh Gunakan Fasilitas Negara untuk Kampanye Sesuai UU",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04285",
+  "judul": "Mendagri: Capres Petahana Bisa Gunakan Pesawat Lain Saat Cuti Kampanye",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04286",
+  "judul": "Mengenal Kak Onyot Lebih Dekat (2), Pernah Dilaporkan Pejabat yang Tersinggung, Hingga Ucap 4 Syarat Pemimpin - Pos Bali",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04287",
+  "judul": "Bawaslu Larang Hibah dan Bansos untuk Kampanye",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04288",
+  "judul": "Pilkada 2020, Petahana Wajib Cuti saat Kampanye",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04289",
+  "judul": "Pjs Bupati Jembrana Tegaskan Selama Masa Kampanye, Tidak Ada Pencairan Hibah Bagi Kelompok Masyarakat",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04290",
+  "judul": "Masa Kampanye, ASN di Klungkung Dilarang Gunakan Tagline “Incumbent”",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04291",
+  "judul": "Hari Terakhir Kampanye, Paslon Bupati Bangli Raden Cahyo-Winuntara Hibur Masyarakat di Songan",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-04292",
+  "judul": "Billboard Calon Bupati Bangli Raden Cahyo Dicopot, Tim Pemenangan Lapor Polisi",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-04295",
+  "judul": "Walikota Jambi tinggalkan rumah dinas cuti kampanye",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04297",
+  "judul": "Sederet Kritik yang Bikin Pemuda Garut Diintimidasi Keluarga Kades",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04298",
+  "judul": "Anggota DPRD Banyumas Buka Suara Soal Warga Cilongok Diintimidasi saat Kritik Menu MBG Gunung Lurah - Portal Purwokerto",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04299",
+  "judul": "Elektabilitas Meningkat dan Dukungan Mengalir dari Berbagai Elemen, Kang DS Optimistis Direkomendasi Jadi Calon Bupati Bandung dari Partai Golkar",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04300",
+  "judul": "Jambore Perangkat Desa di Kabupaten Bandung Jangan Dijadikan Ajang Kampanye - Ayo Bandung",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04304",
+  "judul": "Bupati Majalengka Bangun Tugu Batas Desa, Realisasi Janji Kampanye Tanpa Bebani APBD",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04305",
+  "judul": "Pj Bupati Temanggung: Fasilitas Negara Tidak Boleh untuk Kampanye",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04306",
+  "judul": "Muchamad Nur Aziz Cuti selama Kampanye, Ahmad Aziz Jadi Pejabat Sementara Wali Kota Magelang",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04307",
+  "judul": "Bupati Banyumas ajukan cuti kampanye",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04309",
+  "judul": "Pemkab: Calon Bupati Kudus diminta kampanye secara elegan dan mendidik",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04310",
+  "judul": "LHKPN Laporan Harta Kekayaan Eistianah Bupati Demak Terpilih Pilkada 2024",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-04311",
+  "judul": "Dico Ganinduto dan Mitos Bupati Kendal Satu Periode, Sekalinya Melanggar Terjerat Kasus, Tumenggung Bahurekso Kalah di Medan Perang - Suara Merdeka",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04314",
+  "judul": "Bupati Cuti Kampanye, Endi Faiz Effendi SPi MA Ditunjuk Sebagai Pjs Bupati Purworejo",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04315",
+  "judul": "DIDUGA SELEWENGKAN KEUANGAN UNTUK BIAYA PENCALEGAN, SEJUMLAH KADES DIPOLISIKAN",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04316",
+  "judul": "Tanggapan Bupati dan DPRD Blora Terkait Demonstrasi Penolakan Politisasi APBD",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04317",
+  "judul": "Fakta di Balik Kegaduhan \"Tampang Boyolali\", Hanya Seloroh hingga Bupati Seno Dilaporkan",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04318",
+  "judul": "Sebut Prabowo Asu, Bupati Boyolali akan Dilaporkan ke Polisi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04319",
+  "judul": "Realisasikan Janji Kampanye, Bupati Samani Upayakan HKGS bagi Guru di Kudus - jateng.disway.id",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04320",
+  "judul": "LHKPN Laporan Harta Kekayaan Bellinda Putri Sabrina Birton Wakil Bupati Kudus Terpilih Pilkada 2024",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-04321",
+  "judul": "Terbukti Langgar Pidana Pemilu, Kades di Bojongsari Divonis Satu Bulan Penjara - radarbanyumas.disway.id",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-04322",
+  "judul": "PDIP rekomendasi petahana pada Pilkada Lamongan",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04323",
+  "judul": "Pj Wali Kota Mojokerto Kampanyekan Bike to School",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04324",
+  "judul": "Petahana Cuti Kampanye, Pemkab Mojokerto Dipimpin Pjs Bupati",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04326",
+  "judul": "Soal Pejabat Pemkab Jember Dilaporkan ke BKN, Begini Kata Mantan Kepala BKPSDM",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04327",
+  "judul": "Wali Kota Probolinggo Terima Audiensi KPU, Bahas Laporan Hasil Pemilu dan Usulan Hibah Gedung",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04328",
+  "judul": "Bupati Madiun Luncurkan Kampanye \"Tetap Cinta Indonesia\" melalui Mobil Dinas",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04329",
+  "judul": "Caleg Petahana Boleh Kampanye Asal Tak Gunakan Fasilitas Negara",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04331",
+  "judul": "Jadi jurkam, Bupati-Wabup Jember izin cuti untuk kampanye Jokowi di Jember",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04332",
+  "judul": "Ikut Kampanye Jokowi, Bupati dan Wabup Jember Ajukan Cuti",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04333",
+  "judul": "Bupati-Wabup Ponorogo Wajib Cuti, Selama Masa Kampanye dan Dilarang Pakai Fasilitas Negara",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04334",
+  "judul": "Bupati Jember dan Wakilnya Ajukan Cuti untuk Kampanye Jokowi",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04335",
+  "judul": "Cuti Turun, Fasilitas Bupati Blitar Rini Syarifah Dicabut Selama Masa Kampanye Pilkada 2024",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04336",
+  "judul": "Dewan Awasi Ketat Kegiatan Potensi Kampanye Terselubung Pj Wali Kota Malang",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04337",
+  "judul": "Alasan Suhairi Ajukan Pemakzulan Bupati Pamekasan: Diduga Langgar Sumpah Jabatan dan Tak Mau Diluruskan",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04338",
+  "judul": "Anggota DPRD Kediri Berebut Rekomendasi Partai Nasdem dengan Petahana",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04339",
+  "judul": "Kembali Menjabat Bupati Kediri Usai Cuti Kampanye, Mas Dhito segera Sahkan APBD 2025",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04340",
+  "judul": "Masa Kampanye Selesai, Mas Dhito Aktif Kembali Menjabat Bupati Kediri",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04341",
+  "judul": "Petahana Bupati HST Aulia tolak gunakan fasilitas negara saat kampanye",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04342",
+  "judul": "Calon Bupati/Wakil Bupati HST Siap Kampanye",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04343",
+  "judul": "Aulia Oktafiandi Tinggalkan Rumah Jabatan Bupati HST, Ikuti Aturan Cuti Kampanye",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04344",
+  "judul": "Setop Proyek Tak Berkualitas, Bupati Devi: Jangan Takut Diancam Kontraktor",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04346",
+  "judul": "Oknum mahasiswa sebarkan ujaran kebencian kepada Wali Kota dilaporkan, tegakkan hukum",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04348",
+  "judul": "Cuti Kampanye 2024, Bawaslu Ingatkan Bakal Calon Bupati",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04349",
+  "judul": "Yaumil-Herny Turunkan 2 Mantan Bupati Saat Kampanye, Kotak Kosong Diibaratkan Sampah",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-04350",
+  "judul": "Pemuda Desa Tapandullu dan Sumare Tagih Janji Kampanye Bupati Mamuju - kumparan.com",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04352",
+  "judul": "Angka Stunting Meningkat, Bupati Kampanye Gerakan Makan Telur",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-04354",
+  "judul": "Pj Bupati Luwu Diduga Salahgunakan Wewenang, Aktivis LSM Siap Adukan ke Aparat Hukum",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04355",
+  "judul": "Bawaslu Bulukumba Ingatkan Petahana tidak Gunakan Fasilitas Negara selama Kampanye dan Wajib Cuti - Sulawesi Network",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04356",
+  "judul": "Warga yang Dilaporkan Bupati Sinjai Gegara Postingan Jadi Tersangka UU ITE",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04357",
+  "judul": "Bupati Bone Bolango Tak Tinggal Diam, Iswan Malik Terancam Dilaporkan ke Polisi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04358",
+  "judul": "Heboh Bupati Buton Alvin Akawijaya Dilaporkan Hilang gegara Sulit Ditemui",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-04359",
+  "judul": "Viral! Bupati Buton Alvin Akawijaya Dilaporkan Hilang, Siapa Sosok Termuda Jebolan Hukum UGM Ini?",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-04360",
+  "judul": "Diancam Gubernur Ahok, Warga Kalijodo Cuek",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04361",
+  "judul": "Bupati Agam Terima Laporan Pertanggungjawaban Dana Hibah Pilkada, KPU Serap 99,84 Persen Anggaran",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04362",
+  "judul": "Presma UIN Bukittinggi Diancam Setelah Tolak Kedatangan Gubernur, Pemprov Sumbar: Silakan Lapor Polisi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04363",
+  "judul": "Banyak Kepala OPD Mangkir, DPRD Empat Lawang Minta Bupati Beri Teguran",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04364",
+  "judul": "BupatiEmpatLawangJoncikMuhammadMintaMaafSebagianJanjiKampanyeBelumTerwujud - https://linggaupos.bacakoran.co/",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04366",
+  "judul": "Elemen Masyarakat Gelar Unjuk Rasa Minta Bupati Asahan Dicopot",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04367",
+  "judul": "Bawaslu Karo Serahkan Laporan Sisa Dana Hibah Pilkada 2024 kepada Bupati Antonius Ginting",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04368",
+  "judul": "Plt Kades Baho, Pemberhentian kadus II diduga Cacat Hukum Alias maladministrasi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04369",
+  "judul": "Diduga Gelapkan Dana Bantuan, Camat Labuhan Deli Terancam Dipidanakan",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-04370",
+  "judul": "Tiga Bulan Laporan Walet Ilegal Tak Tuntas, Ombudsman RI Diminta Periksa Satpol PP hingga Wali Kota Pematangsiantar",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-04371",
+  "judul": "Istri Bupati Yang Ikut Pilkada Labusel Tidak Hadiri Debat Publik, KPU: Kena Sanksi Iklan Kampanye Tidak Ditayangkan Lagi",
+  "alasan": "penjelasan aturan, bukan peristiwa"
  }
 ]
