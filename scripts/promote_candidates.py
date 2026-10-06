@@ -664,6 +664,8 @@ def main():
         return (names[0] if names else None), pidx
 
     prov_centroid = {norm(r["label"]): r for r in wd if "provin" in r["type"].lower()}
+    qid_wd = {r["qid"]: r for r in wd}
+    DATELINE = json.loads((DATA / "dateline.json").read_text()) if (DATA / "dateline.json").exists() else {}
     PROV_ALIAS = {"di yogyakarta": "yogyakarta", "dki jakarta": "jakarta"}
     rows, unplaced, ditolak = [], 0, []
     for k in kand:
@@ -692,6 +694,17 @@ def main():
             pj0 = next((nm for nm, rx in PROV_POLA if rx.search(k["judul"] or "")), None)
         else:
             pj0 = None
+        # the reporter's dateline (scripts/dateline.py): the article's own words, so it comes before
+        # the outlet's address. Jakarta datelines mostly mark a national desk, not the place, and are
+        # taken only when the headline is about Jakarta; a headline naming another province wins.
+        if not p:
+            d = DATELINE.get(k.get("url")) or {}
+            r_dl = qid_wd.get(d.get("qid")) if d.get("status") == "ok" else None
+            if r_dl:
+                pv, _ix = province_of(r_dl)
+                jkt = pv == "Jakarta" and not re.search(r"jakarta|\bdki\b", (k["judul"] or "").lower())
+                if pv and not jkt and (not pj0 or pv == pj0):
+                    p, dasar = r_dl, "kota dateline berita"
         if not p and not pj0:
             p = place_from_domain(k.get("outlet"))
             if p: dasar = "nama kota di domain outlet"
@@ -728,7 +741,9 @@ def main():
             "lokasi_dasar": dasar,
             # True where the place came from the outlet rather than from the story itself: the article
             # never names it, so the point marks where the outlet is based, not where the incident was.
-            "lokasi_perkiraan": dasar in ("wilayah edar outlet", "nama kota di domain outlet"),
+            # a dateline is the story's own words but names where the reporter filed, which for a city that
+            # shares its name with the surrounding regency, or a provincial desk, is close rather than exact
+            "lokasi_perkiraan": dasar in ("wilayah edar outlet", "nama kota di domain outlet", "kota dateline berita"),
             "lokasi_tingkat": ("kab_kota" if p else ("provinsi" if prov else None)),
             "pelaku_jabatan": None, "sasaran_jenis": None,
             "mekanisme": k.get("mekanisme_dugaan"),
