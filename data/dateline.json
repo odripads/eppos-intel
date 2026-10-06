@@ -2072,5 +2072,28 @@
  "https://hukum.tvrinews.com/berita/trftcxc-kadis-sosial-tanah-daftar-ditahan-usai-divonis-melanggar-netralitas-asn": {
   "status": "tanpa dateline",
   "diambil": "2026-10-06"
+ },
+ "https://beritajatim.com/peneliti-senior-dukungan-perangkat-desa-kepada-prabowo-gibran-layak-dijatuhi-sanksi-berat": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://fajar.co.id/2022/03/30/apdesi-dukung-jokowi-3-periode-natalius-sebut-kades-bisa-dilaporkan-ke-kpk/": {
+  "status": "gagal",
+  "galat": "HTTP Error 403: Forbidden",
+  "diambil": "2026-10-06"
+ },
+ "https://www.radarbanten.co.id/2019/11/28/gubernur-wh-sanksi-asn-pendukung-anaknya/": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://mkri.id/berita/pasangan-ahmad-hm-ali---abdul-karim-al-jufri-ajukan-php-gubernur-sulteng-soroti-pelanggaran-yang-dilakukan-penyelenggara-21965": {
+  "status": "gagal",
+  "galat": "HTTP Error 403: Forbidden",
+  "diambil": "2026-10-06"
+ },
+ "https://netizenku.com/bupati-dendi-bantah-arahkan-aparatur-daerah-mendukung-istrinya/": {
+  "status": "gagal",
+  "galat": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of ",
+  "diambil": "2026-10-06"
  }
 }

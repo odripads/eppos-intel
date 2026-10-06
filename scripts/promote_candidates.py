@@ -33,7 +33,13 @@ def project(lon, lat): return ((lon - LON_MIN) * S, 420 - ((lat - LAT_MIN) * S +
 # A headline must carry electoral context to count. Actor + action alone let through a COVID case
 # count, a kades embezzlement, and an affair — the last explicitly out of scope in PROJECT-SPEC v2.
 PEMILU = re.compile(r"(pilkada|pemilukada|pemilu|pilpres|pileg|\bcaleg\b|nyaleg|\bcapres\b|cawapres|(?:tak|tidak) netral|"
-    r"politik praktis|intimidasi politik|balas dendam politik|beda pilihan|pilgub|pilbup|pilwal|paslon|pasangan calon|calon (bupati|"
+    r"politik praktis|intimidasi politik|balas dendam politik|beda pilihan|"
+    # the race named through its candidates: "ancam stafnya pilih bupati", "mobilisasi ASN dukung istrinya",
+    # a presidential ticket, or the Constitutional Court dispute that follows a regional vote
+    r"\bpilih (?:bupati|gubernur|wali ?kota|walikota|calon|paslon|caleg|capres)|"
+    r"dukung (?:istri|anak|suami|adik|kakak)(?:nya)?\b|pendukung (?:anak|istri)(?:nya)?\b|"
+    r"prabowo-gibran|ganjar-mahfud|anies-muhaimin|dukung (?:prabowo|ganjar|anies|jokowi)|ke jokowi|"
+    r"relawan (?:anies|prabowo|ganjar|jokowi|capres|paslon)|\bphpu\b|\bphp (?:bupati|gubernur|wali)|pilgub|pilbup|pilwal|paslon|pasangan calon|calon (bupati|"
     r"wali ?kota|gubernur|wakil)|cabup|cawabup|cagub|cawagub|bakal calon|bawaslu|panwaslu|gakkumdu|\bkpu\b|"
     r"netralitas|kampanye|coblos|pemungutan suara|pencoblosan|tps\b|dkpp|\bkasn\b|masa tenang|"
     r"tahapan pemilihan|pemilihan (kepala daerah|bupati|wali ?kota|gubernur)|"
@@ -160,7 +166,7 @@ MEKANISME_SIG = re.compile(r"(mutasi|rotasi jabatan|dimutasi|digeser|dicopot|dem
     # Bali perbekel, Toraja kepala lembang
     r"keuchik|geuchik|wali nagari|kepala nagari|kepala pekon|peratin|perbekel|kepala lembang|hukum tua|kumtua|"
     r"honorer|\bPPPK\b|aparatur sipil|\bcamat\b|bansos|bantuan sosial|sembako|\bPKH\b|"
-    r"intimidasi|diancam|ancaman|ditekan|dipaksa|dimobilisasi|dikumpulkan)", re.I)
+    r"intimidasi|diancam|ancaman|ditekan|dipaksa|dimobilisasi|dikumpulkan|ketua rt|\brt/rw\b|\brt dan rw\b|\brt-rw\b)", re.I)
 JENDELA_PILKADA = {"2024", "2020", "2018", "2017", "2015"}
 # Village-fund disputes (a kades cutting cash aid, an APBDes audit) carry the office words of the
 # typology but are administration or graft, not an election. They stand on the weaker path only;
