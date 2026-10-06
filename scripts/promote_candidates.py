@@ -80,7 +80,7 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
     r"(?:calon|paslon|cabup|cagub|cawabup)\b.{0,40}masih (?:berstatus )?asn|status asn .{0,20}calon|"
     r"(?:ketua|anggota) (?:kpu|bawaslu|panwas\w*)\b.{0,40}(?:masih )?berstatus asn|pejabat (?:kpu|bawaslu)\b|rekomendasikan peneliti brin|"
     # a public-health or civic "kampanye" is not an election campaign
-    r"kampanye (?:gemar|makan ikan|hidup sehat|cuci tangan|imunisasi|vaksinasi|literasi|kesehatan|stunting|gizi|anti narkoba))", re.I)
+    r"kampanye (?:gemar|makan ikan|hidup sehat|cuci tangan|imunisasi|vaksinasi|literasi|kesehatan|stunting|gizi|anti narkoba|campak))", re.I)
 # A reminder or an explainer is about the topic but is not an incident. Refused only when the headline
 # also carries no word of something having happened to someone.
 KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jenis pelanggaran dan sanksi|"
@@ -168,7 +168,12 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     # the election's own budget and conduct: "anggaran PSU", "PSU terlaksana", "jangan takut ancaman"
     r"\banggaran (?:psu|pilkada|pemilu|pilgub|pemilihan)|dana hibah pilkada|\bterlaksana\b|jaga keamanan|jangan takut ancaman|masih terjadi|"
     # an official casting their own vote, urging turnout, fighting hoaxes, a vote running on schedule
-    r"hak pilihnya|tangkal hoaks|lawan hoaks|sesuai jadwal|berjalan (?:lancar|aman|sesuai))", re.I)
+    r"hak pilihnya|tangkal hoaks|lawan hoaks|sesuai jadwal|berjalan (?:lancar|aman|sesuai)|"
+    # appeals around a vote (the regional wire carries dozens): calm, peace, a holiday, turnout, accept the result
+    r"kondusif|kedamaian|hari libur|partisipasi pemilih|terima hasil psu|contoh demokrasi|inventarisasi|\blogistik\b|"
+    r"(?:salurkan|gunakan|menggunakan) hak pilih|(?<!diminta )perkuat (?:\w+ )?pengawasan|atas persetujuan|sanksi pidana bagi|"
+    r"sanksi pemecatan bagi|\bpiket\b|redam konflik|^akademisi\s*:|sanksinya pecat|bakal keluarkan sanksi|akan evaluasi|"
+    r"tunggu hasil psu|ancaman covid|^menpan ?rb\s*:)", re.I)
 # Police, prosecutors, the military and the religious-affairs ministry rotate their own officers on their own
 # calendar; a reshuffle there is not the regional executive the typology is about.
 APARAT_PUSAT = re.compile(r"(\bpolres\b|\bpolresta\b|\bpolda\b|polrestabes|\bpolri\b|kapolri|kapolda|kepolisian|propam|kejari|kejati|kejaksaan|"
@@ -224,7 +229,7 @@ BUKAN_PEMILIHAN = re.compile(r"(gratifikasi|\bsuap\b|\bkpk\b|raskin|\blpj\b|fikt
     r"\bperades\b|pengisian perangkat|disuap|supriyani|somasi|pelantikan kades|cantik|akan disanksi|jarang .{0,3}ngantor|"
     r"aset lahan|kasus aset|\bcadar\b|\bperas\b|pemerasan|\bvonis\b|divonis|penjara|dibui|covid|corona|fitnah|difitnah|"
     r"ancaman serius|janji netral|antisipasi|\bbbm\b|jeri[gk]en|\bbakar\b|membakar|(?:tak|tidak) (?:ada )?di tempat|"
-    r"mangkir|\bbolos\b|indisipliner|\bnakes\b|(?:massa|warga|mahasiswa|demo)\b.{0,40}(?:minta|tuntut|desak)\w* .{0,50}dicopot)", re.I)
+    r"mangkir|\bbolos\b|indisipliner|\bnakes\b|\btpp\b|absensi|\babsen\b|warung kopi|warkop|\brazia\b|dilebur|restrukturisasi|(?:massa|warga|mahasiswa|demo)\b.{0,40}(?:minta|tuntut|desak)\w* .{0,50}dicopot)", re.I)
 # Warnings and promises about what would happen to an official who took sides report no act, whether
 # or not the headline names the race, so these are refused on both paths.
 PERINGATAN = re.compile(r"(bisa kena|bisa di ?sanksi|\bintai\b|wanti-wanti|ada sanksinya|siap beri sanksi|"
@@ -246,7 +251,10 @@ AKTOR_EKSEKUTIF = re.compile(r"(bupati|wali ?kota|walikota|\bwako\b|gubernur|\bc
     # "kepala dispenduk": an agency head named by the agency's acronym
     r"\bkasn\b|komisi asn|demosi|\bkepala d(?!esa)[a-z]{2,}|\bsekjen\b|sekretaris jenderal|"
     # the resources an incumbent commands are the mechanism even when only the candidate is named
-    r"fasilitas negara|\bpip\b|bansos|bantuan sosial|\bpkh\b|sembako|\banggaran\b|\bapbd\b)", re.I)
+    r"fasilitas negara|\bpip\b|bansos|bantuan sosial|\bpkh\b|sembako|\banggaran\b|\bapbd\b|"
+    # village funds released or cut days before a vote ("dana desa dicairkan H-7 jelang pilkada"); without
+    # electoral words such a headline still fails, and the weak path refuses village-fund stories outright
+    r"dana desa)", re.I)
 CALON_FRASA = re.compile(r"(?:bakal calon|bacalon|balon|bapaslon|paslon|calon|cabup|cagub|cawalkot|cawali|mantan|eks)\s+(?:wakil\s+)?"
                          r"(?:bupati|wali ?kota|walikota|gubernur|kepala daerah)"
                          r"(?:\s+(?:dan|&)\s+wakil\s+(?:bupati|wali ?kota|walikota|gubernur))?"
@@ -593,6 +601,7 @@ def saluran(k):
     global CARI_GRID
     q = k.get("kueri") or ""
     if q.startswith("Pencarian web"): return "websearch"
+    if q.startswith("Pencarian situs"): return "situs"
     if "peramban" in q: return "gnews-peramban"
     m = re.search(r"search='([^']*)'", q)
     if m:

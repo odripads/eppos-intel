@@ -2481,5 +2481,45 @@
   "status": "gagal",
   "galat": "HTTP Error 403: Forbidden",
   "diambil": "2026-10-06"
+ },
+ "https://www.jurnalmamberamofoja.com/bawaslu-soroti-4-dugaan-pelanggaran-pemilu-netralitas-asn-dan-kepala-kampung-fokus-utama/": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.jurnalmamberamofoja.com/simbol-lima-jari-dalam-foto-bersama-seorang-kepala-kampung-terancam-dipanggil-bawaslu/": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://kilaspapua.com/provinsi-papua/bawaslu-papua-rekomendasikan-22-orang-asn-ke-kasn-ini-pelanggarannya/": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.papuatimes.co.id/2020/10/09/asn-terlibat-pilkada-diberi-sanksi-berat/": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://arsip.jubi.id/pilkada-2020-wali-kota-risma-dilaporkan/": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://arsip.jubi.id/asn-diduga-terlibat-kampanye-politik-/": {
+  "status": "gagal",
+  "galat": "HTTP Error 404: Not Found",
+  "diambil": "2026-10-06"
+ },
+ "https://papua.antaranews.com/berita/731061/pj-gubernur-papua-belum-terima-laporan-terkait-asn-tak-netral": {
+  "status": "ok",
+  "teks": "Jayapura",
+  "qid": "Q27860",
+  "label": "Jayapura",
+  "diambil": "2026-10-06"
+ },
+ "https://papua.antaranews.com/berita/595089/asn-dan-kampanye-pilkada-serentak-2020": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://papuatengah.antaranews.com/berita/51/sejumlah-pejabat-eselon-papua-barat-dimutasi": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
  }
 }

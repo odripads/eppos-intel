@@ -64,8 +64,11 @@ def bersih_judul(judul, host):
 
 KUERI_PERAMBAN = "Google News (peramban, halaman pencarian): "
 KUERI_WEB = "Pencarian web (websearch): "
+KUERI_SITUS = "Pencarian situs (halaman cari outlet): "
 CATATAN_PERAMBAN = ("ditemukan lewat halaman pencarian Google News di peramban; URL lewat panggilan "
                     "pengalihan Google dari halaman yang sama")
+CATATAN_SITUS = ("ditemukan lewat halaman pencarian situs outlet itu sendiri; judul dan tanggal dibaca dari "
+                 "kartu hasil pencarian, tanggal relatif ('2 jam lalu') tidak dipakai")
 CATATAN_WEB = ("ditemukan lewat mesin pencari web; judul dan tanggal terbit dibaca dari metadata halaman artikel "
                "(og:title, article:published_time), dari tanggal di URL, atau dari Google News untuk judul yang sama")
 
@@ -73,22 +76,27 @@ CATATAN_WEB = ("ditemukan lewat mesin pencari web; judul dan tanggal terbit diba
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("berkas"); ap.add_argument("--kueri", required=True)
     # "websearch": URLs from a web search engine; headline and date read from the article page itself
-    ap.add_argument("--saluran", choices=["peramban", "websearch"], default="peramban")
+    ap.add_argument("--saluran", choices=["peramban", "websearch", "situs"], default="peramban")
+    # "situs": an outlet's own search page (regional Antara); lines carry "| outlet | query" after the URL
     a = ap.parse_args()
     today = dt.date.today().isoformat()
     rows = []
     for line in Path(a.berkas).read_text().splitlines():
         if not line.strip(): continue
-        d, j, u = [x.strip() for x in line.split(" | ", 2)]
+        f = [x.strip() for x in line.split(" | ")]
+        if len(f) >= 5 and f[-3].startswith("http"):   # date | title | url | outlet | query
+            d, j, u, kueri = f[0], " | ".join(f[1:-3]), f[-3], f"{a.kueri} {f[-2]} cari='{f[-1]}'"
+        else:
+            d, j, u, kueri = f[0], " | ".join(f[1:-1]), f[-1], a.kueri
         p = urllib.parse.urlsplit(u)
         if a.saluran == "websearch": j = bersih_judul(j, p.netloc)
         rows.append({"kandidat_id": "KAN-00000", "judul": j, "outlet": p.netloc.replace("www.", ""),
                      "tanggal_terbit": d, "url": urllib.parse.urlunsplit((p.scheme, p.netloc, p.path, "", "")),
                      "url_google": None, "status_url": "terselesaikan", "gelombang_pilkada": gelombang(d),
                      "mekanisme_dugaan": mekanisme(j), "provinsi_kueri": "(pencarian peramban)",
-                     "kueri": (KUERI_WEB if a.saluran == "websearch" else KUERI_PERAMBAN) + a.kueri, "ditemukan_pada": today,
+                     "kueri": {"websearch": KUERI_WEB, "situs": KUERI_SITUS}.get(a.saluran, KUERI_PERAMBAN) + kueri, "ditemukan_pada": today,
                      "status_tinjau": None,
-                     "catatan_tinjau": CATATAN_WEB if a.saluran == "websearch" else CATATAN_PERAMBAN})
+                     "catatan_tinjau": {"websearch": CATATAN_WEB, "situs": CATATAN_SITUS}.get(a.saluran, CATATAN_PERAMBAN)})
     sebelum = len(kandidat_io._baca())
     n = kandidat_io.id_berikut()
     for i, r in enumerate(rows): r["kandidat_id"] = f"KAN-{n + i + 1:05d}"
