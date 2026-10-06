@@ -54,7 +54,9 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
     r"gelapkan|menggelapkan|digelapkan|lecehkan|melecehkan|dilecehkan|protokol kesehatan|\bprokes\b|"
     # campaign-finance reporting, police postings, workplace bullying: real news, not executive coercion
     r"\blpsdk\b|\blppdk\b|\blpsdk\b|dana kampanye|penjabat kepolisian|\bkapolres\b|\bkapolsek\b|bullying|perundungan|"
-    r"\bskt\b|surat keterangan tanah|lahan ptpn|sertifikat tanah)", re.I)
+    r"\bskt\b|surat keterangan tanah|lahan ptpn|sertifikat tanah|"
+    # personal life and disasters that a village-head headline drags in
+    r"nikah lagi|hubungan gelap|digerebek|aborsi|\bmayat\b|megathrust|tsunami)", re.I)
 # A reminder or an explainer is about the topic but is not an incident. Refused only when the headline
 # also carries no word of something having happened to someone.
 KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jenis pelanggaran dan sanksi|"
@@ -101,6 +103,43 @@ MEKANISME_SIG = re.compile(r"(mutasi|rotasi jabatan|dimutasi|digeser|dicopot|dem
     r"honorer|\bPPPK\b|aparatur sipil|\bcamat\b|bansos|bantuan sosial|sembako|\bPKH\b|"
     r"intimidasi|diancam|ancaman|ditekan|dipaksa|dimobilisasi|dikumpulkan)", re.I)
 JENDELA_PILKADA = {"2024", "2020", "2018", "2017", "2015"}
+# Village-fund disputes (a kades cutting cash aid, an APBDes audit) carry the office words of the
+# typology but are administration or graft, not an election. They stand on the weaker path only;
+# a headline that also names the race still gets in on the first path.
+DANA_DESA = re.compile(r"(dana desa|alokasi dana desa|\bapbdes\b|\bBLT[ -]?DD\b|pemangkasan blt|"
+    r"potong(?:an)? blt|pemotongan blt|blt dipotong)", re.I)
+# The same holds for graft, ordinary disputes and village staffing: an office word plus "dilaporkan"
+# inside a pilkada window is not enough when the headline names what the report was about.
+BUKAN_PEMILIHAN = re.compile(r"(gratifikasi|\bsuap\b|\bkpk\b|raskin|\blpj\b|fiktif|kerugian negara|selewengkan|"
+    r"penyelewengan|penyimpangan|manipulasi dana|sunat dana|\bupeti\b|pemotongan (?:tkp|bst|dana)|block gran|"
+    r"dana talangan|\bpades\b|bumdes|proyek komputer|komputer sid|ilegal|developer|serobot|ijazah palsu|"
+    r"\bcuri\b|mencuri|\btipu\b|ujaran kebencian|keroyok|pengeroyokan|penyeroyokan|\bptsl\b|seleksi pppk|"
+    r"pengisian perangkat desa|mutasi perdes|seleksi mutasi|uji kompetensi|ke ki\b|\bbst\b|bprs|khilafah|"
+    r"aksi [24]12|\bhina\b|menghina|awak media|personel perwira|"
+    r"ancaman serius|janji netral|antisipasi)", re.I)
+# Warnings and promises about what would happen to an official who took sides report no act, whether
+# or not the headline names the race, so these are refused on both paths.
+PERINGATAN = re.compile(r"(bisa kena|(?:asn|pns|kades)\b[^,]{0,40}(?:siap-siap|bakal) (?:kena|di ?sanksi)|"
+    r"sanksi berat!|konsekuensinya|peringatan terbaru|jangan mau|\bancam (?:akan )?(?:berikan |beri )?sanksi|"
+    r"sebut akan sanksi|diberikan sanksi tegas|sanksi (?:\w+ )?menanti|siap terima sanksi|tak segan|"
+    r"akan diberikan (?:surat )?teguran)", re.I)
+
+
+# Someone holding or wielding executive office. "Calon bupati" is a candidate, not yet an executive,
+# so candidate phrases are removed before looking.
+AKTOR_EKSEKUTIF = re.compile(r"(bupati|wali ?kota|walikota|\bwako\b|gubernur|\bcamat\b|\blurah\b|kepala desa|\bkades\b|"
+    r"sekda|\basn\b|\bpns\b|\bpj\b|\bpjs\b|penjabat|petahana|inkumben|incumbent|perangkat desa|honorer|pppk|"
+    r"kepala dinas|\bkadis|pegawai|kepala kampung|\bkakam\b|distrik|keuchik|geuchik|nagari|pekon|peratin|perbekel|"
+    r"lembang|hukum tua|kumtua|pemkab|pemkot|pemprov|pemda|aparat|pejabat|birokra|dinas|\bopd\b|\bplt\b|kepsek|"
+    r"kepala sekolah|guru|\brt\b|\brw\b|dukuh|sangadi|kepala daerah|\bbpd\b|apdesi|satpol|tenaga kontrak|\bptt\b|"
+    r"\bthl\b|sekdes|kadus|kepala dusun|kepala lingkungan|kepling|kapus|puskesmas|menteri|\bmendes\b|mendagri|"
+    # a report to the civil-service commission is a report about a civil servant; "kepala DKRTH",
+    # "kepala dispenduk": an agency head named by the agency's acronym
+    r"\bkasn\b|komisi asn|demosi|\bkepala d(?!esa)[a-z]{2,}|"
+    # the resources an incumbent commands are the mechanism even when only the candidate is named
+    r"fasilitas negara|\bpip\b|bansos|bantuan sosial|\bpkh\b|sembako|mutasi|dicopot|anggaran|\bapbd\b)", re.I)
+CALON_FRASA = re.compile(r"(?:bakal calon|bacalon|calon|cabup|cagub|cawalkot|cawali|mantan|eks)\s+(?:wakil\s+)?"
+                         r"(?:bupati|wali ?kota|walikota|gubernur|kepala daerah)", re.I)
 
 
 def dalam_lingkup(judul, gelombang=None):
@@ -114,13 +153,19 @@ def dalam_lingkup(judul, gelombang=None):
         return False, "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)", None
     if PILKADES.search(judul) and not PILKADA_KATA.search(judul):
         return False, "pemilihan kepala desa, bukan pilkada", None
-    if PENJELAS.search(judul):
+    if PENJELAS.search(judul) or PERINGATAN.search(judul):
         return False, "penjelasan aturan, bukan peristiwa", None
     if KOMENTAR.search(judul) and not TERJADI.search(BERSYARAT.sub(" ", judul)):
         return False, "imbauan atau penjelasan aturan, bukan peristiwa", None
+    if not AKTOR_EKSEKUTIF.search(CALON_FRASA.sub(" ", judul)):
+        return False, "hanya calon yang disebut, bukan pemegang jabatan eksekutif", None
     if PEMILU.search(judul):
         return True, None, "konteks elektoral di judul"
     if gelombang in JENDELA_PILKADA and MEKANISME_SIG.search(judul):
+        if DANA_DESA.search(judul):
+            return False, "urusan dana desa tanpa konteks elektoral di judul", None
+        if BUKAN_PEMILIHAN.search(judul):
+            return False, "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul", None
         return True, None, "mekanisme tipologi di dalam jendela pilkada"
     return False, "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada", None
 
