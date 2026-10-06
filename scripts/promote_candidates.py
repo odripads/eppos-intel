@@ -78,7 +78,9 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
     r"\bdkpp (?:pecat|berhentikan|copot)|pejabat internal|sekretariat (?:kpu|bawaslu)|"
     # a candidate's or an election organizer's own civil-service status is eligibility or ethics, not coercion
     r"(?:calon|paslon|cabup|cagub|cawabup)\b.{0,40}masih (?:berstatus )?asn|status asn .{0,20}calon|"
-    r"(?:ketua|anggota) (?:kpu|bawaslu|panwas\w*)\b.{0,40}(?:masih )?berstatus asn|pejabat (?:kpu|bawaslu)\b|rekomendasikan peneliti brin)", re.I)
+    r"(?:ketua|anggota) (?:kpu|bawaslu|panwas\w*)\b.{0,40}(?:masih )?berstatus asn|pejabat (?:kpu|bawaslu)\b|rekomendasikan peneliti brin|"
+    # a public-health or civic "kampanye" is not an election campaign
+    r"kampanye (?:gemar|makan ikan|hidup sehat|cuci tangan|imunisasi|vaksinasi|literasi|kesehatan|stunting|gizi|anti narkoba))", re.I)
 # A reminder or an explainer is about the topic but is not an incident. Refused only when the headline
 # also carries no word of something having happened to someone.
 KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jenis pelanggaran dan sanksi|"
@@ -164,7 +166,9 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     r"harus (?:ikuti|sesuai) aturan|tolak majunya|upaya[ –-]+upaya|\bjangan (?:meng|di|ter)?(?:intimidasi|tekan|paksa)|"
     r"minta asn (?:fokus|tidak berpolitik|tak berpolitik|jaga|tetap)|\basn harus netral (?:baik|di|dalam|saat|selama)|"
     # the election's own budget and conduct: "anggaran PSU", "PSU terlaksana", "jangan takut ancaman"
-    r"\banggaran (?:psu|pilkada|pemilu|pilgub|pemilihan)|dana hibah pilkada|\bterlaksana\b|jaga keamanan|jangan takut ancaman|masih terjadi)", re.I)
+    r"\banggaran (?:psu|pilkada|pemilu|pilgub|pemilihan)|dana hibah pilkada|\bterlaksana\b|jaga keamanan|jangan takut ancaman|masih terjadi|"
+    # an official casting their own vote, urging turnout, fighting hoaxes, a vote running on schedule
+    r"hak pilihnya|tangkal hoaks|lawan hoaks|sesuai jadwal|berjalan (?:lancar|aman|sesuai))", re.I)
 # Police, prosecutors, the military and the religious-affairs ministry rotate their own officers on their own
 # calendar; a reshuffle there is not the regional executive the typology is about.
 APARAT_PUSAT = re.compile(r"(\bpolres\b|\bpolresta\b|\bpolda\b|polrestabes|\bpolri\b|kapolri|kapolda|kepolisian|propam|kejari|kejati|kejaksaan|"

@@ -7520,6 +7520,11 @@
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
+  "kandidat_id": "KAN-02655",
+  "judul": "Penjabat Walikota Ajak Warga Kota Penuhi TPS Salurkan Hak Pilihnya Tanpa Intimidasi dan Paksaan",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
   "kandidat_id": "KAN-02702",
   "judul": "Beredar Isi Chat Dugaan Perselingkuhan Kades Pantolobete Donggala Dengan Ketua BPD",
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
@@ -15477,7 +15482,7 @@
  {
   "kandidat_id": "KAN-05558",
   "judul": "PHPU Bupati Mamberamo Raya: PSU Beberapa TPS Tak Sesuai Jadwal",
-  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-05560",
@@ -17332,6 +17337,276 @@
  {
   "kandidat_id": "KAN-05984",
   "judul": "KASN rekomendasikan peneliti BRIN dijatuhi sanksi disiplin berat",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05987",
+  "judul": "Plt. Sekda Fonataba Sebut Belum Ada Laporan ASN Terlibat Politik Praktis di Pilkada serentak 2024 Papua Barat",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05992",
+  "judul": "Gubernur Wanggai Kunker ke Mamteng, Instruksikan Bupati, Sekda dan Jajaran Sukseskan Pilkada",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05993",
+  "judul": "Pj Bupati Ungkap; Belum Ada Laporan Resmi Terkait Kepala Kampung Dukung Salah Satu Paslon",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05994",
+  "judul": "Dua Paslon Bupati Sarmi Lapor Ke Bawaslu, Diduga Adanya Pelanggaran Secara TSM",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05995",
+  "judul": "Dugaan Penyalahgunaan Ratusan E-KTP untuk Pencalonan Bupati Kaimana Diadukan ke Polisi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05996",
+  "judul": "Gubernur Kaltara Zainal A Paliwang Siapkan Sanksi, ASN Tertangkap Basah Ngopi Saat Jam Dinas",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05997",
+  "judul": "Ingat! ASN Nakal Bakal Disanksi",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05998",
+  "judul": "Realisasi Lamban, ASN Bulungan Terancam Sanksi TPP Mulai 2026",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05999",
+  "judul": "Sanksi bagi ASN Indisipliner",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-06000",
+  "judul": "Lantik Pejabat Eselon II dan III, Bupati Puncak Jaya Tegaskan Tidak Ada 'Non Job'",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06001",
+  "judul": "Gubernur Meki Nawipa Instruksikan Tiga Bupati Bentuk Tim Tangani Konflik Kapiraya",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06002",
+  "judul": "Siap-siap, ASN Papua Tengah Bakal Kena Sanksi ini Kalau Tidak Disiplin",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-06003",
+  "judul": "Gubernur Papua Pegunungan instruksikan pejabat eselon II-III segera laporkan LHKPN",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-06004",
+  "judul": "8 Fakta dan Dugaan Kasus Pembunuhan Anak Pj Gubernur Papua Pegunungan di Semarang",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-06005",
+  "judul": "Diduga Menenggak Miras, Putri Pj Gubernur Papua Pegunungan Tewas di Semarang",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-06006",
+  "judul": "Diduga Alami Kekerasan Seksual, Polisi Selidiki Tewasnya Putri Penjabat Gubernur Papua Pegunungan",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-06007",
+  "judul": "Mahasiswa di Semarang Jadi Tersangka Pembunuhan Putri Pj Gubernur Papua Pegunungan",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-06008",
+  "judul": "Pj Bupati Sorong Kena OTT, Diduga Kongkalikong Pengkondisian BPK",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-06009",
+  "judul": "Kediaman Rumah Jabatan Bupati Disegel KPK, Pasca Penjemputan Pj Bupati Sorong Atas Dugaan Rasuah",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06010",
+  "judul": "30 ASN BPK Papua Barat Diperiksa KPK",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06011",
+  "judul": "Diduga Masih Loyal ke Mantan Walkot, Pj Wali Kota Sorong Pecat Honorer dan Kabag Prokopim",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06012",
+  "judul": "KPK Periksa 8 Saksi Termasuk Bupati Tambrauw dalam Dugaan Kasus Suap Bupati Sorong, Papua Barat Daya - Poros Jakarta",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06013",
+  "judul": "PROFIL dan Biodata Irianto Lambrie, Tim Kampanye Anies-Cak Imin atau AMIN di Kaltara, Eks Gubernur - Halaman 3",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-06015",
+  "judul": "Kampanye Gemar Makan Ikan, Bupati Launching Dapur Pengolahan TP PKK Bulungan",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-06016",
+  "judul": "Pemkab Malinau Belum Sanksi Kades Sesua, Ini Alasannya...",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06017",
+  "judul": "Pj Wali Kota Tarakan Menggunakan Hak Pilihnya Pada PSU Tarakan Tengah",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-06018",
+  "judul": "Masa Kampanye Pilkada 2024, Pj Wali Kota Tarakan Ajak Masyarakat Tangkal Hoaks",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-06019",
+  "judul": "Kampanye Pasangan Natalis Tabuni-Yan Kobogeyauw Di Distrik Hitadipa Intan Jaya",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-06020",
+  "judul": "Tidak Boleh Ada yang Melarang Kampanye, Son Bahabol: Targetkan DYEM Menang 100 Persen di Distrik Sobaham",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-06021",
+  "judul": "Penjabat Gubernur Ribka Haluk Serukan Kampanye Damai dalam Pilkada 2024 Papua Tengah",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-06022",
+  "judul": "Pemprov Papua Pastikan PSU Gubernur dan Wakilnya Berjalan Sesuai Jadwal",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-06024",
+  "judul": "Berikut Jadwal Kampanye Terbuka dan Debat Publik Paslon Gubernur dan Wagub Papua Barat Daya",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-06027",
+  "judul": "Sanksi PDTH Menanti ASN Yang Terlibat Pilkada",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-06029",
+  "judul": "Profil Camat Kemuning Palembang M Irman, Harta Kekayaan di LKHPN Rp 1 M Dilaporkan 5 Tahun Lalu",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-06030",
+  "judul": "14 PNS Nunukan Dilaporkan Langgar Kode Etik",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06031",
+  "judul": "DPRD Nunukan Gelar Rapat Kerja Bahas Polemik Mutasi ASN",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06032",
+  "judul": "Dua Oknum Polsek Lumbis Diduga Terlibat Sabu ASN Cantik",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-06033",
+  "judul": "Dinilai Arogan, Oknum Kepsek SDN di Sembakung Dilaporkan Guru dan Honorer ke Disdik Nunukan",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06034",
+  "judul": "Lakukan Pelanggaran, Tahun 2023 Pemkab Nunukan Berhentikan 12 ASN",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06035",
+  "judul": "Pertegas Larangan Merokok di Kompleks Kantor Wali Kota Tarakan, yang Melanggar, Sanksi Pidana atau Denda Menanti",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-06036",
+  "judul": "BKD Kaltara Pastikan Proses Disiplin Berjenjang bagi ASN yang Melanggar Etik",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06037",
+  "judul": "ASN Kaltara yang Bolos Usai Libur Panjang Bakal Kena Sanksi",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-06038",
+  "judul": "Tidak Disiplin, ASN Kaltara Siap-Siap Terima Sanksi",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-06039",
+  "judul": "PP Lama Banyak Dilanggar, Sekda Khawatirkan ASN Tarakan",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06040",
+  "judul": "4 ASN Tarakan Dilaporkan Absen di Hari Pertama Masuk Kerja, Kepala BKPSDM: Ada Sanksi Potongan TPP",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06041",
+  "judul": "Mutasi ASN Nunukan Diminta Berbasis Sistem Merit",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06042",
+  "judul": "Berita Video - BKPSDM Nunukan Sebut Sanksi ASN Wajib lewat BKN",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06043",
+  "judul": "ASN Bulungan Wajib Masuk Hari Pertama Kerja, Absen Terancam Sanksi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06044",
+  "judul": "ASN Pemprov Kaltara Terjaring Razia Warkop, Sekprov Siapkan Sanksi Dan Teguran",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06045",
+  "judul": "Ingin Mutasi atau Pensiun, ASN Wajib Kantongi Surat Bebas Temuan",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06046",
+  "judul": "Bolos Kerja hingga Terjerat Hukum, BKD Kaltara Ungkap Ragam Pelanggaran ASN",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-06047",
+  "judul": "Gubernur Kaltara Keluarkan Edaran Larangan Rekrut Tenaga Honor, Sanksi Bagi Kepala OPD yang Langgar",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-06048",
+  "judul": "Diduga Lecehkan Wanita Saat Buat e-KTP, ASN Nunukan Kaltara Dipolisikan",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-06049",
+  "judul": "Jadi Tersangka Pelecehan Gadis Pemohon KTP, ASN Nunukan Minta Bertemu Orangtua Sebelum Ditahan",
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  }
 ]
