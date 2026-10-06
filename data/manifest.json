@@ -1,21 +1,22 @@
 {
  "version": "2026-10-06",
- "generated_at": "2026-10-06T20:37:32+07:00",
+ "generated_at": "2026-10-06T20:51:08+07:00",
  "xlsx": "eppos-media-intake.xlsx",
  "xlsx_sha256": "f3cb313a162baa47",
  "periode": 5,
  "insiden": 53,
- "kasus_resmi": 64,
+ "kasus_resmi": 72,
  "dari_lembar_inan": {
   "insiden": 9,
-  "kasus": 10
+  "kasus": 10,
+  "kasus_otomatis": 8
  },
  "insiden_ditolak": 0,
  "kasus_ditolak": 0,
  "judul_terverifikasi": 93,
- "koordinat": 86,
+ "koordinat": 92,
  "koordinat_gagal": 7,
- "lokasi_dipakai": 87,
+ "lokasi_dipakai": 93,
  "proyeksi": {
   "lonMin": 95.195138,
   "lonMax": 141.0009,

@@ -251,6 +251,19 @@ def merge_inan(insiden, kasus, periode_rows):
     return added
 
 
+def merge_otomatis_kasus(kasus, periode_rows):
+    """Administrative cases read off Bawaslu's own regional sites by scripts/kasus_resmi_bawaslu.py. They join
+    kasus_resmi (never the media series) but stay marked: rule-selected headlines, not yet checked by a person."""
+    f = DATA / "kasus_resmi_otomatis.json"
+    if not f.exists(): return 0
+    n = 0
+    for r in json.loads(f.read_text()):
+        row = {c: r.get(c) for c in KASUS_COLS}
+        row["periode_pilpres"] = periode_dari(r.get("tanggal"), r.get("tahun"), periode_rows)
+        kasus.append(row); n += 1
+    return n
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("xlsx", nargs="?", default=str(ROOT / "eppos-media-intake.xlsx"))
@@ -267,6 +280,7 @@ def main():
     insiden = [{c: r.get(c) for c in INSIDEN_COLS} for r in ins]
     kasus = [{c: r.get(c) for c in KASUS_COLS} for r in kas]
     ditambah = merge_inan(insiden, kasus, periode)
+    ditambah["kasus_otomatis"] = merge_otomatis_kasus(kasus, periode)
     ubah_prov = kanonik_provinsi(insiden) + kanonik_provinsi(kasus)
     koordinat, gagal = build_koordinat(insiden, kasus, a.wikidata)
     DATA.mkdir(exist_ok=True)

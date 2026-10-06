@@ -419,6 +419,13 @@
   "alasan": null,
   "sumber": "wikidata:Q14479 (Penajam Paser Utara)"
  },
+ "Kalimantan Utara|Kabupaten Nunukan": {
+  "lat": 4.133333333,
+  "lon": 116.7,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q14481 (Nunukan)"
+ },
  "Kalimantan Utara|Nunukan": {
   "lat": 4.133333333,
   "lon": 116.7,
@@ -475,12 +482,47 @@
   "alasan": null,
   "sumber": "wikidata:Q27477 (Jayapura)"
  },
+ "Papua|Kabupaten Biak Numfor": {
+  "lat": -1.03333,
+  "lon": 136.0,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q27246 (Biak Numfor)"
+ },
+ "Papua|Kabupaten Jayapura": {
+  "lat": -3.0,
+  "lon": 139.95,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q27477 (Jayapura)"
+ },
  "Papua|Kota Jayapura": {
   "lat": -2.5425,
   "lon": 140.704478888,
   "tingkat": "kab_kota",
   "alasan": null,
   "sumber": "wikidata:Q27860 (Jayapura)"
+ },
+ "Papua Barat|Kabupaten Fakfak": {
+  "lat": -2.9167,
+  "lon": 132.3,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q26727 (Fakfak)"
+ },
+ "Papua Barat|Kabupaten Teluk Wondama": {
+  "lat": -2.7,
+  "lon": 134.5,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q26827 (Teluk Wondama)"
+ },
+ "Papua Selatan|Kabupaten Merauke": {
+  "lat": -7.66667,
+  "lon": 139.66667,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q27693 (Merauke)"
  },
  "Riau|Kota Pekanbaru": {
   "lat": 0.533333333,

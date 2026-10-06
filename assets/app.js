@@ -157,7 +157,8 @@
     h += '<div class="tags"><span class="pill lbg">' + esc(isIns ? r.insiden_id : r.kasus_id) + "</span>";
     if (isIns) { h += verifPill(r); if (r.status_kurasi === "ragu") h += '<span class="pill ragu">kurasi: ragu</span>'; }
     else if (r.lembaga) h += '<span class="pill lbg">' + esc(r.lembaga) + "</span>";
-    if (r.judul_status !== "terverifikasi") h += '<span class="pill judul">judul belum diverifikasi (dari URL)</span>';
+    if (r.judul_status === "otomatis, belum diverifikasi") h += '<span class="pill judul">otomatis dari situs lembaga · belum diverifikasi</span>';
+    else if (r.judul_status !== "terverifikasi") h += '<span class="pill judul">judul belum diverifikasi (dari URL)</span>';
     h += "</div>";
     if (isIns) h += '<p class="ring">' + val(r.ringkasan_satu_kalimat) + "</p>";
     h += '<dl class="meta">';
