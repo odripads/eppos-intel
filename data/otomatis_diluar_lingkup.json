@@ -185,8 +185,18 @@
   "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
+  "kandidat_id": "KAN-00178",
+  "judul": "Dugaan Pelanggaran Netralitas ASN di Sulsel, Kasus Tertinggi di Bulukumba",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
   "kandidat_id": "KAN-00179",
   "judul": "101 Kasus Dugaan Pelanggaran Netralitas ASN di Sulsel",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-00181",
+  "judul": "Pilkada Serentak 2020, Sudah ada 694 ASN Dilaporkan Langgar Netralitas",
   "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
@@ -357,6 +367,11 @@
  {
   "kandidat_id": "KAN-00315",
   "judul": "Bawaslu RI: Sekitar 700 ASN Terlibat Pelanggaran Pilkada",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-00320",
+  "judul": "Bawaslu: ASN Wakatobi Tertinggi se-Indonesia Diduga Langgar Netralitas Jelang Pilkada",
   "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
@@ -572,6 +587,11 @@
  {
   "kandidat_id": "KAN-00449",
   "judul": "Ingat Kades ‘Bermain’ Bakal di Sanksi",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-00464",
+  "judul": "Bawaslu Kotim Harus Berani Tangani Laporan Dugaan Pelanggaran Netralitas Perangkat Desa",
   "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
@@ -1107,7 +1127,7 @@
  {
   "kandidat_id": "KAN-00697",
   "judul": "POLRESTA DALAMI  TEWASNYA 4 WARGA DIDUGA AKIBAT TENGGAK MIRAS OPLOSAN",
-  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-00698",
@@ -5782,7 +5802,7 @@
  {
   "kandidat_id": "KAN-01961",
   "judul": "Tegas! Bupati Subandi Tutup 3 Toko Miras yang Langgar Aturan",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-01962",
@@ -6042,7 +6062,7 @@
  {
   "kandidat_id": "KAN-02035",
   "judul": "Panwaslu Panggail 5 Oknum PPK Kecamatan Rajeg Pesta Miras, 3 Sanksi Akan Diterapkan",
-  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-02041",
@@ -6417,7 +6437,7 @@
  {
   "kandidat_id": "KAN-02325",
   "judul": "4 Instruksi Bupati Telbin Larang Miras dan Waktu Operasi THM",
-  "alasan": "penjelasan aturan, bukan peristiwa"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-02326",
@@ -6682,7 +6702,7 @@
  {
   "kandidat_id": "KAN-02396",
   "judul": "Dilaporkan Tempat Miras dan Ganja, Walikota Sidak Rental Play Station",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-02397",
@@ -8525,6 +8545,11 @@
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
+  "kandidat_id": "KAN-03118",
+  "judul": "Sah, 7 Pejabat Pimpinan Tertinggi Pratama Pemkab Lahat Mutasi, Berikut Informasi Selengkapnya - lahatpos.disway.id",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
   "kandidat_id": "KAN-03121",
   "judul": "Sekda Kota Palembang Tekankan Sanksi Ringan Hingga Berat Bagi ASN Tak Netral",
   "alasan": "penjelasan aturan, bukan peristiwa"
@@ -8673,6 +8698,11 @@
   "kandidat_id": "KAN-03183",
   "judul": "Tegas! Oknum Pejabat yang Terbukti Pungli Akan Langsung Dicopot",
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-03184",
+  "judul": "Mendagri Sebut 5 Pejabat Pemerintah Tidak Netral di Pemilu 2024, Total Ada 240 ASN",
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-03185",
@@ -9452,7 +9482,7 @@
  {
   "kandidat_id": "KAN-03498",
   "judul": "Tegas! Bupati Kupang Ancam Sanksi Camat dan Kades Jika Pesta Berujung Miras dan Keributan",
-  "alasan": "penjelasan aturan, bukan peristiwa"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-03499",
@@ -10807,7 +10837,7 @@
  {
   "kandidat_id": "KAN-03825",
   "judul": "Bupati Humbahas Ancam Beri Sanksi PNS Joget Sambil Tenggak Miras",
-  "alasan": "penjelasan aturan, bukan peristiwa"
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-03826",
@@ -14343,5 +14373,380 @@
   "kandidat_id": "KAN-05185",
   "judul": "ASN Tak Netral Jadi Salah Satu Indikator Kerawanan Pemilu 2024 di Blitar",
   "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05186",
+  "judul": "Bupati Landak dukung presiden sanksi tegas bagi pelanggar protokol kesehatan",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05187",
+  "judul": "183 ASN melanggar netralitas Pemilu 2024, ungkap KASN",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05188",
+  "judul": "Bawaslu Mulai Susun Strategi Cegah Pelanggaran ASN dan Aparatur Desa",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05189",
+  "judul": "Bupati Befa Tuntut Laporan Kegiatan dari Dana Lanny Jaya Mandiri",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05190",
+  "judul": "Pj Gubernur: Menteri Tito klaim penunjukan sudah 'demokratis', tapi mengapa dituding 'tidak transparan' dan rentan 'dipolitisasi'?",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05191",
+  "judul": "Kades Tak Netral, Berikut Ancaman Sanksi Pidananya",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05192",
+  "judul": "ASN Tidak Boleh Dimutasi, Kalau Melanggar Bakal Kena Sanksi Administrasi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05194",
+  "judul": "Bawaslu Malut: pelanggaran netralitas ASN tertinggi pada Pilkada 2020",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05196",
+  "judul": "Bawaslu Ungkap Politisasi Bansos Corona di 23 Daerah",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05197",
+  "judul": "Diduga Oknum PJ Kepala Pekon Way Halom Tanggamus Selewengkan Dana BLT",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05198",
+  "judul": "Menolak Divaksin Covid-19 Siap-siap Kena Sanksi Denda hingga Pencabutan Bansos",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05199",
+  "judul": "Seorang ASN Dinas Pendidikan Pemprov Jabar Dinyatakan Langgar Kode Etik - Pikiran-Rakyat.com",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05201",
+  "judul": "ASN Berseragam Dinas Diduga Minum Bir Viral, Wagub Sulsel: Investigasi !",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05202",
+  "judul": "Proyek Stiker Bansos-PKH Akan Dilaporkan ke Polisi -",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05204",
+  "judul": "15 Jenis Pelanggaran ASN di Pilkada: Dukung Calon di Medsos hingga Daftar Partai - kumparan.com",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05207",
+  "judul": "Perbaiki Kualitas Pilkada Pelanggaran Netralitas ASN Jadi Catatan Bawaslu Malut",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05209",
+  "judul": "Belum Ada Laporan ke Bawaslu Soal ASN Kukar Dukung Calon",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05213",
+  "judul": "Tak Netral Dalam Tahapan Pilkada, Kepala Desa Bisa Dipidana",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05214",
+  "judul": "Kemendagri Ingatkan Daerah Segera Tindak ASN Tidak Netral",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05215",
+  "judul": "Politisasi Bansos Corona, Wajah Pemerintah yang Tak Peka",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05216",
+  "judul": "KASN: 183 ASN Terbukti Melakukan Pelanggaran Netralitas Di Pemilu 2024",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05217",
+  "judul": "Terungkap! 604 ASN Tak Netral Saat Pilkada 2020",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05218",
+  "judul": "Bawaslu: Ada 1.800 Pelanggaran ASN Selama Pilkada, Separuhnya Terkait Netralitas - kumparan.com",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05219",
+  "judul": "Berikut Enam Penyebab Pelanggaran Netralitas ASN dalam Pilkada",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05220",
+  "judul": "Rekomendasi Sanksi ASN tak Netral Meningkat Signifikan",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05221",
+  "judul": "SINDOgrafis: Sanksi Tegas ASN Apabila Tak Netral di Pilkada 2020",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05222",
+  "judul": "Pemerintah Siapkan SKB untuk Tindak Tegas ASN Tak Netral di Pilkada 2020",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05223",
+  "judul": "Jelang Pilkada Serentak 2020, Bawaslu Jabar Awasi Promosi dan Mutasi PNS",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05224",
+  "judul": "ASN Semakin Bandel, Pelanggaran Netralitas Sudah 400 Kasus, Bawaslu Prediksi Pilkada Lebih Masif daripada Pilpres - Balpos",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05225",
+  "judul": "Berita - Sekda Adi Arnawa Terima Bantuan Paket Sembako dari BNI Kantor Cabang Denpasar, Instruksikan Kadis Sosial Segera Salurkan Kepada Masyarakat",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05226",
+  "judul": "Bansos Covid-19 Diduga Disunat oleh Oknum RT di Tangerang Rp 100 ribu rupiah, Bupati; Sekedar Uang Rokok",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05227",
+  "judul": "Lebak dan Pandeglang disebut rawan tinggi pelanggaran netralitas ASN",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05228",
+  "judul": "Pengamat Duga 'Kegenitan' Jadi Penyebab ASN Kota Cilegon Paling Tidak Netral se-Banten",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05231",
+  "judul": "Bupati Bandung Barat Diduga Terima Suap Rp 1 M dari Proyek COVID-19",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05232",
+  "judul": "Polisi Selidiki Aparat Desa Bandung Barat Diduga Sunat Bansos Corona",
+  "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
+ },
+ {
+  "kandidat_id": "KAN-05233",
+  "judul": "Masih Disidangkan, 7 Anggota Keluarga Aa Umbara Diduga Terima Uang Maling Rakyat Paket Bansos COVID-19 KBB - Mudanesia",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05234",
+  "judul": "Sistem mutasi ASN di Depok dinilai DPRD Jabar jadi era baru tata kelola birokrasi",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05235",
+  "judul": "Ketua Komisi A DPRD Kota Depok Minta ASN yang Tak Netral Pada Pilkada Ditindak Tegas",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05237",
+  "judul": "Putri mantan Bupati Karawang masih tunggu rekomendasi Gerindra maju Pilkada",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05240",
+  "judul": "Bawaslu Kabupaten Bandung Harus Berani Tindak Tegas Oknum ASN yang Langgar Netralitas Saat Pemilu - Fokus Satu",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05241",
+  "judul": "Pilkada Kabupaten Tasikmalaya 2020 : Rekomendasi Bawaslu Jadi Catatan Buruk Calon Petahana di MK - Desk Jabar",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05242",
+  "judul": "Bupati Bandung Barat Diduga Terima Rp1 M",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05244",
+  "judul": "Diduga Selewengkan Dana BLT,Warga Jagapura Kulon Kabupaten Cirebon Berencana Laporkan Kepala Desanya - Pikiran-Rakyat.com",
+  "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
+ },
+ {
+  "kandidat_id": "KAN-05245",
+  "judul": "Politisasi Amplop Bansos di Karanganyar Tuai Kecaman untuk Bupati",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05246",
+  "judul": "Dilaporkan ke Ombudsman Soal Bansos, Bupati Banjarnegara Santuni Pelapor Rp200 Ribu",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05254",
+  "judul": "Menpan RB: Masih Adanya Pelanggaran Netralitas ASN karena Sanksi Lemah",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05257",
+  "judul": "Netralitas ASN di Pemilu Masuk Pelanggaran Luar Biasa, 89 Persen Kasus Terbukti",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05258",
+  "judul": "Kata Mensos Soal Bansos untuk Lansia di Tegal Diduga Dipotong Rp 100 Ribu",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05262",
+  "judul": "Politisasi Bansos di Tengah Pandemi Covid-19, Indekstat: Jangan Gadaikan Moral",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05269",
+  "judul": "Petahana Maju Pilkada, Kerawanan Pelanggaran Netralitas ASN di Sukoharjo Tinggi",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05272",
+  "judul": "ADA KADES DI KEC.LAREN LAMONGAN JATIM DIDUGA ‘MAIN SULAP’ BANSOS, UHUY !",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05273",
+  "judul": "Tumpukan Beras Rusak Ditemukan di Jakarta, Diduga Untuk Bansos Covid-19 - Pikiran-Rakyat.com",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05275",
+  "judul": "KASN apresiasi langkah Pemprov Jatim tangani pelanggaran netralitas pegawai",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05278",
+  "judul": "Pemkab Banyuwangi tempel laporan data penerima bansos di tempat ibadah",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05279",
+  "judul": "Bupati Banyuwangi Instruksikan Camat Ingatkan Bahaya COVID-19 Pakai Keranda Mayat - Pikiran-Rakyat.com",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05283",
+  "judul": "Ratusan Warga Surabaya Pengantre Bansos COVID-19 Langgar Physical Distancing",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05284",
+  "judul": "Pemkot Surabaya Terima 55 Laporan Terkait Bansos Warga Terdampak COVID-19",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05285",
+  "judul": "KASN apresiasi Pemprov Jatim tangani pelanggaran netralitas ASN",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05288",
+  "judul": "KASN Terima Laporan 403 ASN Tidak Netral, Pj Wali Kota Kediri: Hati-hati Gunakan Jari",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05292",
+  "judul": "Sekda Karimun ingatkan sanksi bagi ASN tidak netral dalam Pilkada",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05294",
+  "judul": "Bawaslu: Semoga Tak Ada Lagi ASN Lingga yang Tak Netral - kumparan.com",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05295",
+  "judul": "Mendagri beri sanksi pada Bupat dan Wakil Bupati Karimun",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05297",
+  "judul": "Waduh, Dugaan Pemotongan dan Penyelewengan Bansos di Jeneponto, PAM Sulsel Demo Dinas Sosial",
+  "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
+ },
+ {
+  "kandidat_id": "KAN-05298",
+  "judul": "Penerima BLT DD Diduga Hanya 20 Orang 1 Desa, LSM L-PK2 Minta DPRD Jeneponto Hearing Kades Banrimanurung",
+  "alasan": "urusan dana desa tanpa konteks elektoral di judul"
+ },
+ {
+  "kandidat_id": "KAN-05299",
+  "judul": "Dugaan Mark Up Bansos Covid-19 Makassar, Mantan Pj Wali Kota Makassar Dipanggil",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05300",
+  "judul": "Mantan Pj Wali Kota Makassar Iqbal Suhaeb Dipanggil Polisi terkait Kasus Bansos COVID-19",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05301",
+  "judul": "Kasus Markup Bansos Corona Makassar, Polisi Temukan Dugaan Monopoli Supplier",
+  "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
+ },
+ {
+  "kandidat_id": "KAN-05302",
+  "judul": "Eks Kadinsos Divonis 4 Tahun Penjara Kasus Dugaan Mark-up Bansos Covid Makassar, Lebih Rendah dari Tuntutan",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05303",
+  "judul": "Pj Walkot Makassar Teken Perwali PSBB, Ini Aturan dan Sanksinya",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05304",
+  "judul": "Foto : Dugaan \"Mark Up\" Bansos Covid-19 Makassar, Mantan Kadinsos Jadi Tersangka Halaman 1",
+  "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
+ },
+ {
+  "kandidat_id": "KAN-05309",
+  "judul": "Gubernur Akan Tegur Bupati dan Walikota, Empat Daerah Langgar Manajemen ASN - Harian Haluan",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05310",
+  "judul": "Bupati Banyuasin: Ciptakan Kegiatan Kepramukaan Yang Tak Melanggar Protokol Kesehatan",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05311",
+  "judul": "Dana BLT Diduga Dipakai Pribadi, Kades Buat Surat Perjanjian Diatas Materai",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05312",
+  "judul": "Terkait Dugaan Penyunatan Dana Bansos Covid-19, Pihak Penegak Hukum Harus Ikuti Instruksi Presiden",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05314",
+  "judul": "Tim patroli segel warung makan akibat langgar SE Wali Kota Medan",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  }
 ]

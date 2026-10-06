@@ -2255,5 +2255,53 @@
  "https://voi.id/hi/amp/330639": {
   "status": "tanpa dateline",
   "diambil": "2026-10-06"
+ },
+ "https://daerah.sindonews.com/read/263834/707/95-asn-di-jateng-terindikasi-tak-netral-selama-pilkada-1607602330": {
+  "status": "ok",
+  "teks": "SEMARANG",
+  "qid": "Q11025",
+  "label": "Semarang",
+  "diambil": "2026-10-06"
+ },
+ "https://m.antaranews.com/amp/berita/1816240/bkd-gubernur-jatim-telah-tindak-lanjuti-rekomendasi-kasn": {
+  "status": "gagal",
+  "galat": "Remote end closed connection without response",
+  "diambil": "2026-10-06"
+ },
+ "https://timesindonesia.co.id/politik/247230/golkar-dipanggil-bawaslu-terkait-netralitas-asn-arham-kan-belum-masuk-tahapan": {
+  "status": "gagal",
+  "galat": "HTTP Error 403: Forbidden",
+  "diambil": "2026-10-06"
+ },
+ "https://wartakota.tribunnews.com/2020/10/06/kubu-muhamad-saraswati-minta-bawaslu-investigasi-komentar-sara-yang-diduga-dilontarkan-lurah-saidun": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://kumparan.com/piki-pardede/netralitas-asn-and-sinyal-politisasi-birokrasi-jelang-pilkada-1uEGfdeOiBb": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.antaranews.com/berita/1560720/bawaslu-jateng-minta-dua-sekda-patuhi-rekomendasi-kasn": {
+  "status": "ok",
+  "teks": "Semarang",
+  "qid": "Q11025",
+  "label": "Semarang",
+  "diambil": "2026-10-06"
+ },
+ "https://mediajatim.com/2020/05/02/soal-dugaan-oknum-kades-dukung-bacabup-bawaslu-diminta-tegas/": {
+  "status": "gagal",
+  "galat": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of ",
+  "diambil": "2026-10-06"
+ },
+ "https://cyrustimes.com/diduga-terlibat-dalam-pilkada-kepala-daerah-dan-asn-kalteng-dilaporkan-ke-bawaslu/": {
+  "status": "ok",
+  "teks": "PALANGKA RAYA",
+  "qid": "Q14409",
+  "label": "Palangka Raya",
+  "diambil": "2026-10-06"
+ },
+ "https://m.antaranews.com/amp/berita/1003942/kasn-tindak-lanjuti-rekomendasi-bawaslu-sangihe": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
  }
 }

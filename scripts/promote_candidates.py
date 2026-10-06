@@ -68,7 +68,7 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
     r"\bott\b|fee proyek|\blhkpn\b|calo jabatan|(?:kenakan|pakai|memakai|penggunaan) masker|"
     r"kekerasan seksual|korban kekerasan|\bjudol\b|jenazah|tak senonoh|nikah siri|\btampar|menampar|payudara|raba dada|"
     r"over ?dosis|dugem|gizi buruk|stunting|dilaporkan hilang|\bbencana\b|gratifikasi|utang kampanye|mutasi penduduk|pindah domisili|"
-    r"gar itb|gadai|\btewas\b|\btebas\b|\btikam\b|disuntik mati|terbakar|ijazah palsu|kekasih gelap|pembuangan bayi)", re.I)
+    r"gar itb|gadai|minum bir|\bmiras\b|\btewas\b|\btebas\b|\btikam\b|disuntik mati|terbakar|ijazah palsu|kekasih gelap|pembuangan bayi)", re.I)
 # A reminder or an explainer is about the topic but is not an incident. Refused only when the headline
 # also carries no word of something having happened to someone.
 KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jenis pelanggaran dan sanksi|"
@@ -121,6 +121,10 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     r"pastikan ganti|\bakan bongkar|bisa diancam|\bwarning\b[^,]{0,40}soal sanksi|"
     r"boleh hadir|ini larangan|larangan gaya|awasi larangan|larangan hingga sanksi|awas sanksi|siap sanksi|"
     r"aturan dan batasan|perlu catat|pantang lakukan|daftar pose|jenis pose|pose foto asn yang dilarang|ancaman bawaslu|"
+    r"jenis pelanggaran asn|enam penyebab|sindografis|siapkan skb|sanksi lemah|semoga tak ada lagi|wajah pemerintah|"
+    r"jangan gadaikan|meningkat signifikan|strategi cegah|berikut ancaman|\btertinggi\b|di \d+ daerah|jadi catatan|"
+    r"(?:terungkap!?|ada|sebanyak) \d{3,} asn|awasi (?:promosi|mutasi)|minta[^,]{0,50}ditindak tegas|harus berani|"
+    r"\d+ persen kasus|\bapresiasi\b|"
     r"rekomendasi (?:pdip|pdi-p|golkar|nasdem|gerindra|pkb|pks|\bpan\b|ppp|demokrat|psi|perindo|hanura|gelora)|"
     r"^mendagri[^,]*total ada \d|minta (?:dugaan )?pelanggaran[^,]{0,20}ditindak|\bakan dicopot\b|"
     r"bentuk tim (?:untuk|khusus)|penertiban (?:aps|apk|alat peraga|baliho)|"
