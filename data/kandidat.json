@@ -99140,5 +99140,21 @@
   "ditemukan_pada": "2026-10-07",
   "status_tinjau": "tertahan",
   "catatan_tinjau": "tanpa URL sumber; setiap baris wajib punya tautan sumber"
+ },
+ {
+  "kandidat_id": "KAN-08656",
+  "judul": "Tidak Terbukti, Kejati Maluku Tutup Kasus Dugaan Gratifikasi Istri Bupati Malra",
+  "outlet": "BeritaBeta",
+  "tanggal_terbit": "2021-07-22",
+  "url": "https://beritabeta.com/p/tidak-terbukti-kejati-maluku-tutup-kasus-dugaan-gratifikasi-istri-bupati-malra",
+  "url_google": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNDdtY3dLcl9JeHdpaTMzaGx5M1VFc1Y2d195VTRLeE5nMno0LUpGVlZlcEFBVDNFSElPck1LY25TcnVMaHdlQUZMemZ4NnNQQktfUHdNdUlESGQ3TjJsejdIYW9FTWZZdEIxVlA4eDFQWnhMM3dJWHB2WFZwOWw2UGdSMDBuYW56ZEE5dVNObVhRS0xnaUN6VXB5bjBPQ2g3bEFscDJ3",
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2021",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "Maluku",
+  "kueri": "kepala desa pilkada \"Maluku Tenggara\" after:2021-01-10 before:2021-12-31",
+  "ditemukan_pada": "2026-10-07",
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-07 atas izin berdiri Odri; bukan tinjauan per baris"
  }
 ]
