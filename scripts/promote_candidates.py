@@ -33,7 +33,7 @@ def project(lon, lat): return ((lon - LON_MIN) * S, 420 - ((lat - LAT_MIN) * S +
 # A headline must carry electoral context to count. Actor + action alone let through a COVID case
 # count, a kades embezzlement, and an affair — the last explicitly out of scope in PROJECT-SPEC v2.
 PEMILU = re.compile(r"(pilkada|pemilukada|pemilu|pilpres|pileg|\bcaleg\b|nyaleg|\bcapres\b|cawapres|(?:tak|tidak) netral|"
-    r"politik praktis|intimidasi politik|balas dendam politik|beda pilihan|"
+    r"politik praktis|intimidasi politik|dendam politik|beda pilihan|"
     # the race named through its candidates: "ancam stafnya pilih bupati", "mobilisasi ASN dukung istrinya",
     # a presidential ticket, or the Constitutional Court dispute that follows a regional vote
     r"\bpilih (?:bupati|gubernur|wali ?kota|walikota|calon|paslon|caleg|capres)|"
@@ -70,7 +70,15 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
     r"over ?dosis|dugem|gizi buruk|stunting|dilaporkan hilang|\bbencana\b|gratifikasi|utang kampanye|mutasi penduduk|pindah domisili|"
     r"gar itb|gadai|minum bir|\bmiras\b|sinopsis|"
     # "PSU" is also the housing-estate infrastructure a developer hands over (prasarana, sarana, utilitas)
-    r"sentul city|\bresidence\b|\bfasum\b|\bfasos\b|prasarana|perumahan|\btewas\b|\btebas\b|\btikam\b|disuntik mati|terbakar|ijazah palsu|kekasih gelap|pembuangan bayi)", re.I)
+    r"sentul city|\bresidence\b|\bfasum\b|\bfasos\b|prasarana|perumahan|\btewas\b|\btebas\b|\btikam\b|disuntik mati|terbakar|ijazah palsu|kekasih gelap|pembuangan bayi|"
+    # a house fire, vehicle re-registration, a party dropping its own member, the ethics council firing an organizer,
+    # and the election body's own staff: none of these is the civilian executive
+    r"jago merah|korsleting|mutasi kendaraan|\bbbnkb\b|balik nama kendaraan|"
+    r"dicopot (?:dari )?(?:partai|gerindra|pdip|pdi-?p|golkar|nasdem|pkb|demokrat|pks|hanura|perindo|ppp|psi)\b|dipecat (?:dari )?partai|"
+    r"\bdkpp (?:pecat|berhentikan|copot)|pejabat internal|sekretariat (?:kpu|bawaslu)|"
+    # a candidate's or an election organizer's own civil-service status is eligibility or ethics, not coercion
+    r"(?:calon|paslon|cabup|cagub|cawabup)\b.{0,40}masih (?:berstatus )?asn|status asn .{0,20}calon|"
+    r"(?:ketua|anggota) (?:kpu|bawaslu|panwas\w*)\b.{0,40}(?:masih )?berstatus asn|pejabat (?:kpu|bawaslu)\b|rekomendasikan peneliti brin)", re.I)
 # A reminder or an explainer is about the topic but is not an incident. Refused only when the headline
 # also carries no word of something having happened to someone.
 KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jenis pelanggaran dan sanksi|"
@@ -81,7 +89,13 @@ KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jeni
     r"\btegaskan\b|menegaskan|\bjika\b|\bbila\b|apabila|belum ada laporan|tidak ada laporan|belum (?:terima|menerima) laporan|"
     r"\bberpotensi\b|\bm[ae]nanti\b|\bdilarang\b|waspadai|peringatkan|jaga netralitas|\bkoordinasi\b|\bdorong\b|kerawanan|diingatkan|"
     r"sanksi (?:berat |tegas )?bagi|bisa dipecat|terancam dipecat|adalah pemecatan|"
-    r"apel siaga|apel kesiapan|deklarasi damai|\brawan\b|\bpotensi\b|\bawasi\b)", re.I)
+    r"apel siaga|apel kesiapan|deklarasi damai|\brawan\b|\bpotensi\b|\bawasi\b|"
+    # ceremony and procedure around a vote (Papua's 2025 re-votes produced dozens): urging turnout, touring
+    # polling stations, logistics, a pledge of neutrality, a governor opening the campaign beside the KPU chair
+    r"sukseskan|(?:pemilu|pilkada|psu|pilgub) damai|kamtibmas|pastikan .{0,10}logistik|cek (?:kesiapan )?logistik|"
+    r"kesiapan logistik|distribusi logistik|\blancar\b|tinjau (?:ke )?tps|(?:tidak|tak) (?:gelar|ada) psu|^rekapitulasi|"
+    r"lupakan janji|(?:&|dan|bersama) ketua (?:kpu|bawaslu)|sepakat netral|jangan (?:ditekan|diintimidasi)|"
+    r"diminta (?:tetap )?netral)", re.I)
 # explainer formulas that are never a report of an act, whatever verb they contain
 PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelanggaran dan sanksi|aturan .{0,20}di pemilu:|"
     r"tidak boleh mutasi|tak boleh mutasi|bisa didiskualifikasi|bisa berujung|mulai \d+ januari|berlaku \d+ januari|"
@@ -95,7 +109,7 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     r"^[^,:]{0,40}jadi atensi|hati-hati|terkendala regulasi|termasuk politisasi|(?:tidak netral|netralitas) jika|\bruu\b|"
     r"bakal dibekukan|akan dikenakan sanksi|siap-siap nonjob|disanksi pemberhentian|bisa dipecat|sebagian kasus|"
     r"dapat (?:me)?ngakibatkan|dapat akibatkan|tekankan sanksi|perlukah|\bzero\b|\bnihil\b|"
-    r"ini sanksi|dampak jika|\bfaktor|\bpenyebab\b(?!nya)|diprediksi|\bprediksi\b|\baplikasi\b|\bsbt\b|pencegahan|"
+    r"ini sanksi|dampak jika|\bfaktor|(?<!terkuak )(?<!terungkap )\bpenyebab\b(?!nya)|diprediksi|\bprediksi\b|\baplikasi\b|\bsbt\b|pencegahan|"
     r"sistem merit lindungi|merit system dalam|kerap hantui|hantui (?:pemilu|pilkada)|minta laporkan|silaturahmi ke|ini ancaman|ancaman (?:pidana|sanksi) bagi|dituntut netral|cuti di ?luar tanggungan|"
     r"\d+ ?% pelanggar|terbanyak|mayoritas|paling (?:sering|banyak)|banyak melanggar|turun signifikan|"
     r"\bmeningkat\b|kali lipat|tidak ada (?:intimidasi|laporan|pelanggaran|temuan)|belum ada temuan|tekankan ancaman|"
@@ -139,8 +153,18 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     r"\bancam\b[^,]{0,25}(?:tak|tidak) netral|"
     # national tallies: a count of reports is not itself an incident, and its parts are counted where they happened
     r"^(?:mendagri|kemendagri|bawaslu ri|perludem|kasn|bkn)\b[^,]{0,40}(?:(?<!\d)(?!(?:19|20)\d\d(?!\d))\d{3,}|\d{1,3}\.\d{3}|ratusan|ribuan)\b|"
-    r"(?:terima|ungkap|temukan|catat|ada|tindaklanjuti|tangani|dalami) (?:ada )?(?:lebih dari )?(?:\d{2,}|\d{1,3}\.\d{3})[\d.]* (?:laporan|dugaan|kasus|perkara|pelanggaran|usulan|aduan)|"
-    r"usulan mutasi [\d.]+|masih masif)", re.I)
+    r"(?:terima|ungkap|temukan|catat|ada|tindaklanjuti|tangani|dalami|bongkar) (?:ada )?(?:lebih dari )?(?:\d{2,}|\d{1,3}\.\d{3})[\d.]* (?:laporan|dugaan|kasus|perkara|pelanggaran|usulan|aduan)|"
+    r"usulan mutasi [\d.]+|masih masif|"
+    # the motive named only to deny it: "mutasi profesional, tidak ada balas budi apalagi dendam politik"
+    r"(?:tidak|tak|bukan) (?:ada )?(?:unsur )?(?:balas budi|dendam politik|balas dendam)|"
+    # outreach and preparation (the browser channel drops these before import; web-search results arrive unfiltered)
+    r"sosialisasi|ikrar(?:kan)? netralitas|komitmen netralitas|pakta integritas|perkuat paham|fokus pengawasan|\bbersiap\b|"
+    r"(?:minta|harap|ajak) asn (?:untuk )?netral|akan ditindak|wajib (?:undur|mundur)|dikawal berdasarkan|sidang pendahuluan|"
+    r"ikrar netral\w*|\d+ jenis pelanggaran|tantangan netralitas|\bkesiapan\b|dipantau langsung|pantau (?:langsung )?(?:tps|psu)|"
+    r"harus (?:ikuti|sesuai) aturan|tolak majunya|upaya[ –-]+upaya|\bjangan (?:meng|di|ter)?(?:intimidasi|tekan|paksa)|"
+    r"minta asn (?:fokus|tidak berpolitik|tak berpolitik|jaga|tetap)|\basn harus netral (?:baik|di|dalam|saat|selama)|"
+    # the election's own budget and conduct: "anggaran PSU", "PSU terlaksana", "jangan takut ancaman"
+    r"\banggaran (?:psu|pilkada|pemilu|pilgub|pemilihan)|dana hibah pilkada|\bterlaksana\b|jaga keamanan|jangan takut ancaman|masih terjadi)", re.I)
 # Police, prosecutors, the military and the religious-affairs ministry rotate their own officers on their own
 # calendar; a reshuffle there is not the regional executive the typology is about.
 APARAT_PUSAT = re.compile(r"(\bpolres\b|\bpolresta\b|\bpolda\b|polrestabes|\bpolri\b|kapolri|kapolda|kepolisian|propam|kejari|kejati|kejaksaan|"
@@ -195,7 +219,8 @@ BUKAN_PEMILIHAN = re.compile(r"(gratifikasi|\bsuap\b|\bkpk\b|raskin|\blpj\b|fikt
     r"aksi [24]12|\bhina\b|menghina|awak media|personel perwira|\bproyek\b|uang honor|mobil dinas|\bthr\b|parcel|"
     r"\bperades\b|pengisian perangkat|disuap|supriyani|somasi|pelantikan kades|cantik|akan disanksi|jarang .{0,3}ngantor|"
     r"aset lahan|kasus aset|\bcadar\b|\bperas\b|pemerasan|\bvonis\b|divonis|penjara|dibui|covid|corona|fitnah|difitnah|"
-    r"ancaman serius|janji netral|antisipasi)", re.I)
+    r"ancaman serius|janji netral|antisipasi|\bbbm\b|jeri[gk]en|\bbakar\b|membakar|(?:tak|tidak) (?:ada )?di tempat|"
+    r"mangkir|\bbolos\b|indisipliner|\bnakes\b|(?:massa|warga|mahasiswa|demo)\b.{0,40}(?:minta|tuntut|desak)\w* .{0,50}dicopot)", re.I)
 # Warnings and promises about what would happen to an official who took sides report no act, whether
 # or not the headline names the race, so these are refused on both paths.
 PERINGATAN = re.compile(r"(bisa kena|bisa di ?sanksi|\bintai\b|wanti-wanti|ada sanksinya|siap beri sanksi|"
@@ -209,7 +234,7 @@ PERINGATAN = re.compile(r"(bisa kena|bisa di ?sanksi|\bintai\b|wanti-wanti|ada s
 # so candidate phrases are removed before looking.
 AKTOR_EKSEKUTIF = re.compile(r"(bupati|wali ?kota|walikota|\bwako\b|gubernur|\bcamat\b|\blurah\b|kepala desa|\bkades\b|"
     r"sekda|\basn\b|\bpns\b|\bpj\b|\bpjs\b|penjabat|petahana|inkumben|incumbent|perangkat desa|honorer|pppk|"
-    r"kepala dinas|\bkadis|pegawai|kepala kampung|\bkakam\b|distrik|keuchik|geuchik|nagari|pekon|peratin|perbekel|"
+    r"kepala dinas|\bkadis|pegawai|kepala kampung|\bkakam\b|kepala distrik|sekretaris distrik|\bsekdist?\b|keuchik|geuchik|nagari|pekon|peratin|perbekel|"
     r"lembang|hukum tua|kumtua|pemkab|pemkot|pemprov|pemda|aparat|pejabat|birokra|dinas|\bopd\b|\bplt\b|kepsek|"
     r"kepala sekolah|guru|\brt\b|\brw\b|dukuh|sangadi|kepala daerah|\bbpd\b|apdesi|satpol|tenaga kontrak|\bptt\b|"
     r"\bthl\b|sekdes|kadus|kepala dusun|kepala lingkungan|kepling|kapus|puskesmas|menteri|\bmendes\b|mendagri|"
@@ -222,11 +247,24 @@ CALON_FRASA = re.compile(r"(?:bakal calon|bacalon|balon|bapaslon|paslon|calon|ca
                          r"(?:bupati|wali ?kota|walikota|gubernur|kepala daerah)"
                          r"(?:\s+(?:dan|&)\s+wakil\s+(?:bupati|wali ?kota|walikota|gubernur))?"
                          # "didoakan jadi wali kota": a candidate's hoped-for office, not a sitting one
-                         r"|jadi (?:wali ?kota|walikota|bupati|gubernur)\b", re.I)
+                         r"|jadi (?:wali ?kota|walikota|bupati|gubernur)\b"
+                         # "PHPU Bupati Sarmi" names the race under dispute, not a sitting official
+                         r"|\bphpu (?:pilkada |pilbup |pilgub |pilwalkot )?(?:bupati|wali ?kota|walikota|gubernur|kepala daerah)"
+                         # the race itself: "sengketa pemilihan gubernur", "gugat pemilihan bupati Yapen"
+                         r"|\bpsu (?:pemilihan |pilkada )?(?:gubernur|bupati|wali ?kota|walikota)"
+                         r"|\bpemilihan (?:gubernur|bupati|wali ?kota|walikota)(?:\s+(?:dan|&)\s+wa(?:kil|bup|gub)\w*(?:\s+(?:bupati|wali ?kota|gubernur))?)?"
+                         r"(?:\s+(?:dan|&)\s+wakil\s+(?:bupati|wali ?kota|walikota|gubernur))?", re.I)
 
 
 # user-blog platforms: a citizen's essay is not a news report of an incident
 BUKAN_BERITA = {"kompasiana.com"}
+
+
+# An official beating a polling supervisor who reported him is the typology, not ordinary assault:
+# the assault words are read with that phrase taken out.
+KEKERASAN_PENYELENGGARA = re.compile(r"(?:panwas\w*|bawaslu|pengawas (?:pemilu|tps|kelurahan|desa|kecamatan)|\bptps\b|\bpkd\b|"
+    r"\bkpps\b|\bppk\b|\bpps\b|saksi (?:paslon|tps|partai|calon))\b[^.]{0,40}?(?:dianiaya|dipukul|dikeroyok)|"
+    r"(?:aniaya|pukul|keroyok)\w* (?:ketua |anggota )?(?:panwas\w*|bawaslu|pengawas|ptps|pkd|kpps|ppk|pps)\b", re.I)
 
 
 def dalam_lingkup(judul, gelombang=None):
@@ -236,7 +274,7 @@ def dalam_lingkup(judul, gelombang=None):
       1. the headline itself carries electoral context — strongest
       2. a typology mechanism appears inside a pilkada window — weaker, flagged as such
     Out-of-scope topics (personal scandal, ordinary crime, disaster) are refused on either path."""
-    if LUAR_LINGKUP.search(judul):
+    if LUAR_LINGKUP.search(KEKERASAN_PENYELENGGARA.sub(" ", judul)):
         return False, "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)", None
     if PILKADES.search(judul) and not PILKADA_KATA.search(PILKADES.sub(" ", judul)):
         return False, "pemilihan kepala desa, bukan pilkada", None
@@ -476,6 +514,11 @@ ALIAS_TEMPAT = {
     "ktt": "Tana Tidung",
     "bonebol": "Bone Bolango",
     "gorut": "Gorontalo Utara",
+    # Tanah Papua shorthand and regency seats that the gazetteer does not carry under these spellings
+    "sorsel": "Sorong Selatan", "pegubin": "Pegunungan Bintang", "pegaf": "Pegunungan Arfak",
+    "mansel": "Manokwari Selatan", "mamteng": "Mamberamo Tengah", "mamra": "Mamberamo Raya",
+    "serui": "Kepulauan Yapen", "bintuni": "Teluk Bintuni", "wasior": "Teluk Wondama", "waisai": "Raja Ampat",
+    "teminabuan": "Sorong Selatan", "tanjung selor": "Bulungan",
 }
 
 # Place names that are also ordinary words in outlet names: "jurnalmetro" is a Jakarta-area outlet, not
@@ -545,6 +588,7 @@ CARI_GRID = None
 def saluran(k):
     global CARI_GRID
     q = k.get("kueri") or ""
+    if q.startswith("Pencarian web"): return "websearch"
     if "peramban" in q: return "gnews-peramban"
     m = re.search(r"search='([^']*)'", q)
     if m:
@@ -620,7 +664,10 @@ def main():
             nk = norm(kc["label"])
             # after a bare "di", only long or multi-word names: "di ujung tanduk" is an idiom, Ujung is
             # also a kecamatan in Parepare
-            awal = r"(?:camat|kecamatan|kec|distrik|di)" if (len(nk) >= 7 or " " in nk) else r"(?:camat|kecamatan|kec|distrik)"
+            # "Panwaslu Aitinyo": the supervisory panel at kecamatan level is named after its kecamatan
+            # (long names only, like "di": "Panwaslu Butuh 1 Saksi" is not Butuh in Purworejo)
+            awal = (r"(?:camat|kecamatan|kec|distrik|panwaslu|panwascam|di)" if (len(nk) >= 7 or " " in nk)
+                    else r"(?:camat|kecamatan|kec|distrik)")
             kec_rx.append((re.compile(r"(?<![a-z])" + awal + r"\s+" + re.escape(nk) + r"(?![a-z])"), r))
 
     # A kecamatan whose name contains a kab/kota name ("Pangkalan Kerinci" in Pelalawan, "Mataram Baru" in

@@ -2394,5 +2394,92 @@
  "https://www.metro-online.co/2024/10/diduga-persulit-warga-karena-gak-dukung.html": {
   "status": "tanpa dateline",
   "diambil": "2026-10-06"
+ },
+ "https://beritakeadilan.com/diduga-tidak-netral-nasib-camat-talun-dan-lurah-kamulan-diujung-tanduk/": {
+  "status": "gagal",
+  "galat": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of ",
+  "diambil": "2026-10-06"
+ },
+ "https://radarbangsa.co.id/lsm-bidik-laporkan-dugaan-oknum-asn-berkampanye/": {
+  "status": "gagal",
+  "galat": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of ",
+  "diambil": "2026-10-06"
+ },
+ "https://rm.id/baca-berita/pilkada/276872/netralitas-asn-dan-aparat-di-psu-pilkada-papua-disorot-bawaslu-turun-tangan": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.antaranews.com/berita/1712682/bawaslu-terus-berkoordinasi-soal-pengancaman-panwas-distrik-mamberamo": {
+  "status": "ok",
+  "teks": "Mamberamo Raya",
+  "qid": "Q27668",
+  "label": "Mamberamo Raya",
+  "diambil": "2026-10-06"
+ },
+ "https://radarmalang.jawapos.com/amp/nasional/2106290023/dana-covid-19-untuk-kampanye-pilkada-bupati-di-papua-jadi-tersangka": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://jatimtimes.com/baca/217780/20200701/182900/pakar-dari-ub-nilai-mutasi-kilat-harry-jadi-kepala-dinas-mencederai-etika-birokrasi": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://jendelakaltara.co/2021/01/awali-tahun-2021-dengan-pelantikan-sejumlah-pejabat-di-mutasi-ini-daftarnya/": {
+  "status": "gagal",
+  "galat": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of ",
+  "diambil": "2026-10-06"
+ },
+ "https://www.papuatimes.co.id/2025/08/04/arahkan-asn-piih-cagub-investor-by-design-dan-by-order/": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.suara.com/news/2025/08/12/125159/psu-pilkada-papua-bawaslu-ri-turun-tangan-usut-dugaan-asn-polri-tak-netral": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://cenderawasihpos.jawapos.com/berita-utama/01/11/2024/rekaman-suara-9-menit-seret-nama-pj-walikota-ke-bawaslu/": {
+  "status": "ok",
+  "teks": "JAYAPURA",
+  "qid": "Q27860",
+  "label": "Jayapura",
+  "diambil": "2026-10-06"
+ },
+ "https://www.jpnn.com/news/begini-respons-bawaslu-soal-dugaan-pelanggaran-netralitas-asn-dan-polri-di-psu-papua": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://rmol.id/politik/read/2025/08/06/675347/ditemukan-dugaan-intimidasi-ke-kepala-kampung-di-psu-pilgub-papua": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://nasional.kompas.com/read/2025/08/08/23441581/pdip-klaim-aparat-dan-penyelenggara-pemilu-intervensi-psu-pilkada-papua": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.antaranews.com/view/1815036/netralitas-asn-kemendagri-tegur-67-kepala-daerah": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://voi.id/en/news/504494": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://papua.antaranews.com/berita/722454/pemkab-biak-utamakan-asn-dipilih-menjadi-plt-kepala-kampung": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://papua.antaranews.com/berita/723729/pemprov-papua-pj-kepala-kampung-diangkat-dari-asn-pemda": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.mkri.id/berita/keterlibatan-asn,-pejabat-daerah,-dan-diskriminasi-politik-dalam-pilgub-papua-barat-daya-22333": {
+  "status": "gagal",
+  "galat": "HTTP Error 403: Forbidden",
+  "diambil": "2026-10-06"
+ },
+ "https://korankaltim.com/read/politik/13914/tim-ahli-temukan-asn-terlibat-kampanye": {
+  "status": "gagal",
+  "galat": "HTTP Error 403: Forbidden",
+  "diambil": "2026-10-06"
  }
 }

@@ -267,7 +267,7 @@
  {
   "kandidat_id": "KAN-00212",
   "judul": "ASN Pessel Berikrar Netral di Pilkada, Pjs Bupati Ingatkan Tak Ada Pembelaan ASN Pelanggar Netralitas",
-  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-00213",
@@ -6875,6 +6875,11 @@
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
+  "kandidat_id": "KAN-02427",
+  "judul": "ASN Harus Netral di Pilkada, Menteri Rini Sebut Area yang Kerap Dilanggar",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
   "kandidat_id": "KAN-02428",
   "judul": "Pjs Bupati Ponorogo Instruksikan ASN Menjaga Netralitas, Cerita Kasus saat Pilkada Trenggalek",
   "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
@@ -9215,6 +9220,11 @@
   "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
+  "kandidat_id": "KAN-03424",
+  "judul": "Cek Fakta! Sekda Bali Sebut Tantangan Netralitas ASN Lebih Berat pada Pilkada, Ditemukan ASN Tidak Netral saat Pemilu 2024",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
   "kandidat_id": "KAN-03425",
   "judul": "KASN Rekomendasikan Sanksi Bagi Empat ASN Pemkot Tomohon Lantaran Tak Netral di Pemilu 2024",
   "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
@@ -10862,7 +10872,7 @@
  {
   "kandidat_id": "KAN-03822",
   "judul": "DPRD Medan minta sekolah jangan intimidasi guru tidak lulus PPPK",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-03823",
@@ -12898,6 +12908,11 @@
   "kandidat_id": "KAN-04446",
   "judul": "Jelang Pilkada 2024 Bawaslu Yapen Ingatkan PJ. Bupati tentang Mutasi Jabatan",
   "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-04447",
+  "judul": "Sinode GKI Sebut PSU Gubernur Papua Cacat, Ungkap Adanya Intimidasi dan Penggelembungan Suara",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
  },
  {
   "kandidat_id": "KAN-04448",
@@ -15742,7 +15757,7 @@
  {
   "kandidat_id": "KAN-05624",
   "judul": "Dr. Menase Kadepa Ingatkan Gubernur Papua Tengah: Mutasi dan Rotasi ASN Harus Sesuai Aturan",
-  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-05625",
@@ -15937,7 +15952,7 @@
  {
   "kandidat_id": "KAN-05666",
   "judul": "Dandim 1702 bersama Pejabat Bupati Yalimo cek kesiapan logistik PSU",
-  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-05667",
@@ -16202,7 +16217,7 @@
  {
   "kandidat_id": "KAN-05725",
   "judul": "ASN Jangan Ditekan, Jangan Diintimidasi",
-  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-05726",
@@ -16378,5 +16393,945 @@
   "kandidat_id": "KAN-05763",
   "judul": "BKD : ASN Masih Minim yang Ingin Pindah ke Provinsi Baru di Papua, Baru 65 ASN Daftar Mutasi ke DOB",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05765",
+  "judul": "PSU Pilkada Papua, Pj Gubernur Ingatkan Penyelenggara dan ASN untuk Netral",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05767",
+  "judul": "ASN Harus Tahu Menggunakan Hak Politiknya Dengan Benar",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05768",
+  "judul": "Pj. Bupati Larang ASN Gunakan Fasilitas Negara Saat Berkampanye",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05769",
+  "judul": "Tak Cukup Dipecat, Kadis di Kabupaten Sarmi Bisa Kena Delik Pidana karena Langgar Netralitas",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05770",
+  "judul": "Keberpihakan Kadis DPMK Sarmi di Pilkada Bisa Berujung Pidana, BKN Didesak Bertindak",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05772",
+  "judul": "Bawaslu Biak petakan 19 jenis pelanggaran netralitas ASN pada pilkada",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05773",
+  "judul": "Bawaslu: Tantangan Netralitas ASN di Kabupaten Biak Numfor",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05774",
+  "judul": "Mohon tunggu sebentar…",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05775",
+  "judul": "DKPP Periksa Sembilan Penyelenggara Pemilu Kabupaten Biak Numfor",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05776",
+  "judul": "Bupati Yapen Tegaskan Netralitas ASN Jelang PSU Papua",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05778",
+  "judul": "Pj Walikota Akui Rekaman Suaranya",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05779",
+  "judul": "Mohon tunggu sebentar…",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05780",
+  "judul": "Bawaslu Papua Tetapkan Status Laporan Rekaman Pj Walikota Tidak Ada Pelanggaran Pidana",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05782",
+  "judul": "Tak Bisa Harapkan Bawaslu, Tinggal Tunggu Putusan BKN",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05783",
+  "judul": "Pj. Gubernur Papua Kesiapan PSU di Kabupaten Jayapura",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05784",
+  "judul": "Catatan Komnas HAM dan Ombudsman Sama soal PSU",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05785",
+  "judul": "Temuan Pelanggaran PSU Bakal Dilapor ke ORI Pusat",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05786",
+  "judul": "Pj Sekda Kota Jayapura Tegaskan ASN Disiplin Dan Netral Dalam Pemilu",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05787",
+  "judul": "PSU Pilgub Papua, Integritas KPU Dan Bawaslu Papua Jadi Sorotan",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05789",
+  "judul": "Bawaslu Telusuri Dugaan Pelanggaran di PSU Pilkada Papua",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05790",
+  "judul": "Dalil tak terbukti, MK tolak sengketa PSU Pilkada Papua",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05791",
+  "judul": "Besok, MK Putuskan Perkara PSU Papua dan Boven Digoel",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05792",
+  "judul": "Pj Gubernur Papua Pimpin Apel Deklarasi Netralitas-Penandatanganan Pakta Integritas ASN",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05793",
+  "judul": "Pj Gubernur Agus Fatoni Ingatkan ASN Jaga Netralitas pada PSU Pilgub Papua",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05794",
+  "judul": "Jelang PSU Pilgub Papua 2025, Pj Gubernur Agus Fatoni Pimpin Apel Deklarasi Netralitas ASN",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05795",
+  "judul": "Apel Gabungan di Kantor Wali Kota Jayapura, Agus Fatoni Ingatkan ASN Jaga Netralitas Jelang PSU",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05796",
+  "judul": "Calon Bupati Memberamo Raya Jadi Tersangka Kasus Politik Uang",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05797",
+  "judul": "DKPP Periksa KPU dan Bawaslu Mamberamo Raya Karena Tak Buka Kotak Suara Saat Rekapitulasi",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05798",
+  "judul": "Bawaslu: 20 TPS di Mamberamo Raya laksanakan pemungutan suara susulan",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05799",
+  "judul": "6-7 November 2020, DKPP Periksa Tiga Perkara Dugaan Pelanggaran Kode Etik di Provinsi Papua",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05800",
+  "judul": "Bawaslu Kota Jayapura Terima 3 Aduan Pelanggaran Kampanye: Ada Money Politic",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05801",
+  "judul": "Pemerintah Kabupaten Supiori minta ASN netral pada Pemilu 2024",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05802",
+  "judul": "MK Tolak Gugatan, Heronimus-Sahrul Resmi Bupati-Wakil Bupati Terpilih Supiori.",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05803",
+  "judul": "Sidang PHPU Supiori: Kuasa Hukum Paslon Terpilih Minta Permohonan Pemohon Ditolak",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05804",
+  "judul": "Jajaran Polres Sarmi Bekomitmen Menjaga Netralitas di Pemilu 2024",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05805",
+  "judul": "PSU Pilgub Papua, TPS 16 Doyo Baru Dipantau Langsung Bupati, dan Wakil Bupati Jayapura",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05806",
+  "judul": "Pilgub Papua, Menutup Celah Agar Tak Ada 'PSU Jilid 2'",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05807",
+  "judul": "Meneropong Putusan MK untuk PSU Pilgub Papua - tandaseru.com | Penting Dibaca",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05808",
+  "judul": "Sidang Pendahuluan di MK, BTM-CK Dalilkan Partisipasi Pemilih di PSU Pilkada Papua Melebihi 100 Persen DPT",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05809",
+  "judul": "KPU Yapen Gelar Pelantikan PPS Jelang PSU",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05810",
+  "judul": "Dewan Adat dan 7 Kepala Suku di Serui Restui Pasangan Mari-Yo Maju Pilgub Papua",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05811",
+  "judul": "Hasil Pilkada Waropen Digugat ke MK",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05812",
+  "judul": "Sidang Gugatan Pilkada Waropen Papua Persoalkan Sistem Noken yang Tidak Sah",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05813",
+  "judul": "Sidang Sengketa Pilkada Ahli Soroti Pemalsuan Dokumen Cawagub Papua",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05814",
+  "judul": "JDIH Komisi Pemilihan Umum",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05815",
+  "judul": "Tak Mau Terulang Kembali, Pj Triwarno: Penyelenggaraan Pilkada 2024 Harus Ikuti Aturan",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05816",
+  "judul": "Pilkada Jayapura KPU Acuhkan Rekomendasi Bawaslu untuk Pemungutan Suara Ulang",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05817",
+  "judul": "Bawaslu Kabupaten Jayapura Sampaikan Bentuk-bentuk Dugaan Pelanggaran Saat Pemungutan Suara",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05818",
+  "judul": "Mohon tunggu sebentar…",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05819",
+  "judul": "Bawaslu Papua temukan dugaan pelanggaran PSU Pilkada",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05820",
+  "judul": "Lokataru Ungkap Dugaan Pelanggaran Hukum Dan HAM Dalam PSU Pilkada Papua 2025",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05822",
+  "judul": "DKPP Periksa Ketua Bawaslu Kabupaten Sarmi Terkait Dugaan Gratifikasi",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05823",
+  "judul": "Belajar dari Pilkada Serentak di Papua",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05824",
+  "judul": "Masyarakat Keerom Tolak Majunya Kembali Bupati Petahana",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05825",
+  "judul": "Ini Tanggapan Kepala DPMK Biak Atas Berita Yang Diduga Menvonis Dirinya",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05826",
+  "judul": "MK Tolak gugatan Pemohon, Pasangan Bisma Kukuh Jadi Pemenang Pilbup Waropen",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05827",
+  "judul": "Perkara sengketa hasil Pilkada Mamberamo Raya berguguran",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05828",
+  "judul": "Sorotan Keterangan Paslu Ketua Bawaslu Sarmi di MK Dan Dugaan Gratifikasi",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05829",
+  "judul": "Saat Keadilan di MK Tak Terpaku pada Syarat Ambang Batas Suara",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05833",
+  "judul": "PDIP Minta Jangan Ada yang Ubah Kehendak Rakyat di PSU Pilgub Papua",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05834",
+  "judul": "PDIP Minta Semua Pihak Hormati Hasil PSU Pilkada Papua, Ingatkan Tak Ada Intervensi Kekuasaan",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05836",
+  "judul": "Ketua DPRD Kepulauan Yapen Diduga Ganggu Proses PSU di Kampung Ampimoi, Marshel Morin Kecam Keras",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05837",
+  "judul": "Bawaslu Papua Minta 13 TPS Gelar PSU Lagi Imbas 4 Temuan Pelanggaran",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05838",
+  "judul": "PSU Pilgub Papua: KPU Papua Terima Tiga Rekomendasi PSU Di Tiga Kabupaten",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05839",
+  "judul": "PSU Pilgub Provinsi Papua, KPU Sebut Pemilih Melebihi 100 Persen DPT karena DPTb dan DPK",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05840",
+  "judul": "Perkara PSU Gubernur Papua di MK Lanjut Pemeriksaan Saksi Ahli",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05841",
+  "judul": "Pilkada Kabupaten Keerom Disinyalir Penuh Dengan Kecurangan",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05842",
+  "judul": "Kabupaten Keerom Berpotensi Rusuh",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05843",
+  "judul": "Dinilai Cacat Hukum, Hasil Pemilukada Keerom Digugat",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05844",
+  "judul": "Lagi! 7 Paslon Cabut Gugatan Sengketa Pilkada 2024 di MK",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05845",
+  "judul": "Sambut Putusan MK, Piter Gusbager: Mari Bergandengan Tangan Bangun Keerom",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05846",
+  "judul": "Kepala Suka Besar Manirem Mengakui Adanya Indikasi Pelanggaran di Pilkada Sarmi",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05847",
+  "judul": "Wow , Jelang H-7 Pilkada Ada Pencairan Dana Desa Dan Pemotongan Dana Desa di Kabupaten Sarmi",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05848",
+  "judul": "Kisruh Dana Kampung di Sarmi, Kepala Distrik Bonggo Tarik Dukungan dari Surat Pernyataan",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05849",
+  "judul": "Parah ! Dana Desa Dicairkan H-7 Jelang Pilkada Sarmi, Begini Kejanggalannya",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05850",
+  "judul": "Sidang Sengketa Pilkada Supiori 2024, KPU dan Pihak Terkait Bantah Seluruh Dalil Pemohon",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05851",
+  "judul": "Sidang Lanjutan Sengketa Pilkada Papua di MK, KPU Pastikan Yeremias Bisai Memenuhi Syarat Calon Wakil Gubernur",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05852",
+  "judul": "KPU Papua Optimis Bakal Menangkan Gugatan di MK",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05853",
+  "judul": "Tiga Perkara Hasil Pilkada Berlanjut di MK",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05855",
+  "judul": "Bawaslu: ASN harus netral baik petahana maju atau tidak pada Pilkada",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05856",
+  "judul": "Bawaslu Telusuri Dugaan Pelanggaran Netralitas di PSU Pilkada Papua",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05858",
+  "judul": "Sohilait Diminta Konsisten Selesaikan Pelanggaran Pilkada",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05860",
+  "judul": "Temuan Sementara Dugaan Pelanggaran Netralitas dalam Pilkada 2024 di Tanah Papua",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05861",
+  "judul": "LSM Gempur Papua Ajukan 3 Laporan ke Bawaslu",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05862",
+  "judul": "Diisukan Maju di Pilkada Kota Jayapura, Ini Kata Frans Pekey",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05863",
+  "judul": "DKPP Periksa Bawaslu RI dan Bawaslu Papua Terkait Dugaan Kelalaian Penanganan Pelanggaran Pilkada",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05865",
+  "judul": "Pengamat Minta Bawaslu RI dan Kapolri Tindak Tegas",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05868",
+  "judul": "Bawaslu Papua Barat Ingatkan Anggota DPR Wajib Cuti Jika Terlibat Kampanye Pilkada",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05869",
+  "judul": "Penggugat Pilkada Manokwari Selatan Minta 3 Paslon Lain Didiskualifikasi karena Masih ASN",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05870",
+  "judul": "Hakim Tegur Pihak Penggugat Pilkada Manokwari Selatan, Minta Fokus ke Inti Gugatan",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05871",
+  "judul": "Sidang Sengketa Pilkada Manokwari Selatan Ungkap 3 Calon Bupati Masih Berstatus ASN dan Terima Gaji Bulanan",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05872",
+  "judul": "BAWASLU DAN PEMDA TELUK WONDAMA SUDAH MELAKUKAN UPAYA –UPAYA DENGAN TERKAIT NETRALITAS ANS",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05875",
+  "judul": "DKPP Pecat Anggota Bawaslu Teluk Bintuni",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05876",
+  "judul": "Rekomendasi Kepala BKN, Delapan Kepala Dinas di Teluk Bintuni Akan Diuji Kompetensinya",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05877",
+  "judul": "Alimudin Minta ASN Fokus ke Pelayanan Publik dan Tidak Berpolitik Praktis",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05878",
+  "judul": "Sidang Sengketa Pilkada Teluk Bintuni Kuasa Hukum YOJOIN: Laporan ke DKPP Tidak Lagi Relevan",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05879",
+  "judul": "KPU Papua Barat Anulir Putusan yang Diskualifikasi Untung Tamsil dan Yohana Hindom",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05882",
+  "judul": "KPU RI dan Papua Barat Dilaporkan ke Bawaslu-DKPP karena Anulir Sanksi Diskualifikasi Paslon Untung Tamsil dan Yohana Hindom",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05883",
+  "judul": "Tim Pasangan UTA’YOH Siap Tempuh Jalur Hukum atas Diskualifikasi oleh KPU Fakfak",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05885",
+  "judul": "Diskualifikasi Paslon di Fakfak Dianulir, KPU Papua Barat Dilaporkan ke Bawaslu dan DKPP",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05886",
+  "judul": "Polemik Pilkada Fakfak, KPU dan KPUD Papua Barat Dilaporkan ke DKPP dan Bawaslu",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05887",
+  "judul": "Diskualifikasi Paslon UTAYOH Berujung Sanksi, Lima Komisioner KPU Fakfak Dinonaktifkan",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05888",
+  "judul": "Ali Baham Temongmere Tegaskan ASN di Pemkab Fakfak Tak Boleh Terlibat Politik Praktis",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05889",
+  "judul": "Jelang Pemilu 2024, Muhammad Musa’ad Minta ASN Tak Terlibat Politik Praktis: Nanti Cepat Ketahuan",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05890",
+  "judul": "Bawaslu Kaimana Gelar Patroli Gabungan Pengawasan Pilkada 2024",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05891",
+  "judul": "Warga Kaimana Papua Barat Mulai Pencoblosan Pilkada 2024",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05892",
+  "judul": "HUT ke-23 Kota Sorong, ASN Akan Tanda Tangan Ikrar Netral pada Pemilu 2024",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05893",
+  "judul": "BREAKING NEWS - Tegur Komarudin Watubun, Bawaslu Sorong Cekcok dengan Kader PDI Perjuangan",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05894",
+  "judul": "Ditegur Bawaslu-KPU Kota Sorong, Politisi PDI Perjuangan Kamarudin Watubun Tuding Ada Pesan Sponsor",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05895",
+  "judul": "Bawaslu Papua Barat lakukan pemetaan kerawanan Pilkada 2024",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05896",
+  "judul": "Mohon tunggu sebentar…",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05897",
+  "judul": "Sekretaris dan Bendahara Bawaslu Pegaf Jadi Tersangka Korupsi Dana Hibah Rp4,2 Miliar",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05898",
+  "judul": "Kasus PPD Manokwari Barat, ‘Pintu Masuk’ Ungkap Pelanggaran Pemilu",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05899",
+  "judul": "Pilkada Manokwari, Paslon BERBUDI Ajukan Gugatan Ke Mahkamah Konstitusi",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05900",
+  "judul": "Pj Gubernur Ali Baham Lantik Yacob Fonataba sebagai Pj Sekda Papua Barat",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05901",
+  "judul": "Bawaslu Mansel Gelar Media Gathering Perkuat Sinergi Pengawasan Non-Tahapan",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05902",
+  "judul": "Keluarga Jadi Calon Bupati, Ketua Bawaslu Raja Ampat Jamin Tetap Netral dan Profesional",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05904",
+  "judul": "Sengketa Pilkada Teluk Bintuni Persoalkan Dugaan Pemilih Nyoblos 2 Kali Halaman all",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05905",
+  "judul": "Cabup Teluk Bintuni yang Ajukan Gugatan Pilkada di MK Meninggal Dunia",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05906",
+  "judul": "Cabup Teluk Bintuni Tuding Money Politics, Minta Pungutan Suara Ulang 76 TPS",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05907",
+  "judul": "Octavianus Mayor Tekankan Netralitas ASN Fakfak Saat Pilkada",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05908",
+  "judul": "ASN Diimbau Patuhi Aturan Netralitas Jelang Pilkada",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05909",
+  "judul": "MK Resmi Terima Pendaftaran Sengketa Pilkada Kabupaten Kaimana",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05910",
+  "judul": "Bawaslu Puji Kelegawaan Kandidat Di Pilkada Pegunungan Arfak",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05911",
+  "judul": "Sengketa Pilkada Teluk Wondama, Pemohon Sebut “Obama” Terlibat Kampanye Paslon Pemenang",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05912",
+  "judul": "Sidang Sengketa Pilkada Manokwari Selatan di Makamah Konstitusi",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05913",
+  "judul": "Bawaslu Papua Barat Ajak Mahasiswa Awasi Netralitas ASN pada Pilkada Serentak 2024",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05914",
+  "judul": "Bupati Manokwari Lantik 16 Pejabat Baru dan Tunjuk 8 Pelaksana Tugas",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05915",
+  "judul": "Pembatalan Pasangan Calon Bupati Fakfak Jadi Sorotan Publik",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05917",
+  "judul": "Polemik Pilkada Fakfak Berlanjut, KPU RI dan KPU Provinsi Papua Barat Dilaporkan ke DKPP dan Bawaslu RI",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05918",
+  "judul": "Verify you're human",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05919",
+  "judul": "MK Tolak Gugatan Boneftar-Waluyo, Hermus Indou-Mugiono Sah Menang Pilkada Manokwari",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05920",
+  "judul": "Mohon tunggu sebentar…",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05921",
+  "judul": "Mohon tunggu sebentar…",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05922",
+  "judul": "Wagub Lakotani Ungkap Ada Upaya ASN Manuver Jabatan Lewat Orang Dalam",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05923",
+  "judul": "MK Kabulkan Gugatan Sengketa Pilkada Teluk Wondama",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05924",
+  "judul": "MK tak Terima Gugatan Sengketa Pilkada Teluk Wondama karena Selisih Suara Terlalu Besar",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05925",
+  "judul": "Cuma Selisih Tujuh Suara, Pilkada Teluk Bituni Digugat ke MK |Republika Online",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05926",
+  "judul": "Cabup Teluk Bintuni Petrus-Matret puas putusan MK",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05927",
+  "judul": "Petrus Kasihiw: Aparat Jangan Mengintimidasi Masyarakat Dalam Pilkada Bintuni",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05928",
+  "judul": "Pemohon Persoalkan Pergantian Pejabat ASN, Ini Kata Prof Sugiarto",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05929",
+  "judul": "Dalil TSM Bakal Dianulir MK, Ini Penjelasan Menohok Kemendagri",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05930",
+  "judul": "Bawaslu Manokwari Beri Rekomendasi PSU di TPS 09 Kelurahan Sanggeng",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05931",
+  "judul": "Temuan Bawaslu Jelang Pilkada 2020, Sulawesi Utara dan Manokwari Jadi Wilayah Paling Rawan",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05932",
+  "judul": "Bawaslu Rilis Indeks Kerawanan Pilkada 2020, Manokwari Berpotensi Sangat Tinggi Konflik",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05933",
+  "judul": "Mohon tunggu sebentar…",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05934",
+  "judul": "Profil Dominggus Mandacan, cagub petahana Papua Barat Pilkada 2024",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05935",
+  "judul": "Kampanye Perdana di Pulau Mansinam, Dominggus: Kita Akan Buat Kartu Papua Barat Cerdas dan Sehat",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05936",
+  "judul": "Hakim MK ingatkan ASN jadi saksi sengketa pilkada harus dapat izin",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05937",
+  "judul": "Penetapan suara DPD RI di Maybrat Papua Barat mengacu data Bawaslu",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05938",
+  "judul": "Tepis Hoaks, Bupati Luruskan Isu Mutasi ASN di Lingkungan Pemda Fakfak",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05939",
+  "judul": "Lantik 28 Pejabat Administrator dan Pengawas, Bupati Kaimana: Jabatan adalah Amanah bukan Hak",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05940",
+  "judul": "Bupati Kaimana Lantik 28 Pejabat Eselon III dan IV",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05942",
+  "judul": "Bupati Biak Numfor: ASN penjabat kepala kampung bisa diganti",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05943",
+  "judul": "Pemkab Biak Numfor tugaskan 257 ASN pejabat kepala kampung",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05946",
+  "judul": "Mohon tunggu sebentar…",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05947",
+  "judul": "Bupati Biak Numfor: Mutasi ASN ke distrik untuk tingkatkan kinerja",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05948",
+  "judul": "Pemda Biak Numfor Mutasi Tiga Kepala Sekolah",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05950",
+  "judul": "Status ASN Tiga Calon Bupati Manokwari Selatan Dipersoalkan",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05951",
+  "judul": "Bupati: ASN di Manokwari harus netral tapi cegah golput",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05953",
+  "judul": "DKPP Periksa Ketua dan Anggota KPU Teluk Wandoma Karena Masih Berstatus ASN",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05956",
+  "judul": "Tokoh Intelektual Minta DPRD dan Pj Bupati Nabire Segera Jadwalkan Pembahasan Anggaran PSU",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05957",
+  "judul": "Mariunus Tandiseno: Partai Golkar Mimika Tidak Pernah Keluarkan Rekomendasi PJ Bupati Mimika",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05959",
+  "judul": "PSU Tiga Distrik di Jayawijaya Terlaksana Sesuai Putusan MK, Pj Bupati Tony Mayor: Jaga Keamanan",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05960",
+  "judul": "Eks Pj Bupati Nduga Kantongi Rekomendasi Partai Garuda Maju Pilkada 2024",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05961",
+  "judul": "Salurkan Dana Hibah, Pj Bupati Mappi Ingatkan Buat Laporan Pertanggungjawaban",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05962",
+  "judul": "Tegaskan Rekomendasi Pj Wali Kota Wewenang DPRD Kaltara",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05963",
+  "judul": "Bupati Cuti Kampanye, Faridil Murad akan Jabat Plt Bupati Nunukan",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05964",
+  "judul": "Miliki 72,5 Butir Pil Ekstasi, ASN Kantor Samsat Nunukan Rian Ariandi Divonis 7 Tahun Penjara",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05965",
+  "judul": "ASN Boleh Hadiri Kampanye, Ini Syaratnya....",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05966",
+  "judul": "Kampanye Terbuka Datangkan Artis, Ini yang Perlu Diperhatikan ASN jika Ikut Nonton",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05968",
+  "judul": "Kasus Dana Hibah Pilkada Kotim Melebar, 2 Pejabat KPU Jadi Tersangka",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+ },
+ {
+  "kandidat_id": "KAN-05969",
+  "judul": "Teguh Setyabudi, Pj Gubernur Spesialis Pilkada yang Terbukti Netral",
+  "alasan": "platform blog warga atau halaman tag, bukan pemberitaan"
+ },
+ {
+  "kandidat_id": "KAN-05970",
+  "judul": "KPU RI Sebut ASN Boleh Hadiri Rapat Kampanye Terbuka, Asal..",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05971",
+  "judul": "Divonis Bersalah Lakukan Tindak Pidana Pemilu, Calon Wakil Wali Kota Metro Didenda Rp 6 Juta",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05972",
+  "judul": "Daftar Pejabat Baru di Pos-pos Penting Pasca Mutasi Besar Polri",
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
+ },
+ {
+  "kandidat_id": "KAN-05973",
+  "judul": "KPK Mutasi 12 Pejabat Pimpinan Tinggi Pratama, Simak Daftar Selengkapnya",
+  "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
+ },
+ {
+  "kandidat_id": "KAN-05974",
+  "judul": "Heboh! Isu 15 Pejabat Pemda Gowa Dinonjobkan, Bupati Husniah Akhirnya Buka Suara",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05975",
+  "judul": "Bupati Gowa : Bukan 16 Orang Yang Dinonjobkan Tetapi Hanya 7 Orang Yang Dibebas Tugaskan Sementara",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05976",
+  "judul": "Kesal Karena Dicopot dari Jabatan, Kepala Kampung Bakar Kantor Distrik Waigeo Utara, Raja Ampat",
+  "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
+ },
+ {
+  "kandidat_id": "KAN-05977",
+  "judul": "Percayakan Ketua RT Bagi BLT, Kepala Kampung Mandiri Jaya : Berani Salahgunakan Dicopot",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05978",
+  "judul": "Awasi Data Pemilih dan Netralitas ASN, Bawaslu Pastikan Tak Ada Pelanggaran KPU Atas Putusan MK",
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05979",
+  "judul": "Bawaslu Sulsel Bongkar 128 Kasus ASN Tak Netral di Pemilu 2024",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05980",
+  "judul": "Soal Netralitas ASN, Sekda Kabupaten Semarang: Jangan Takut Ancaman dan Tekanan dari Oknum",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05981",
+  "judul": "Pelanggaran Netralitas ASN Masih Terjadi",
+  "alasan": "penjelasan aturan, bukan peristiwa"
+ },
+ {
+  "kandidat_id": "KAN-05982",
+  "judul": "KPU Ungkap Rekapitulasi Suara di Distrik Wame Penuh Halangan dan Intimidasi",
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
+ },
+ {
+  "kandidat_id": "KAN-05983",
+  "judul": "Kantor Staff Kepresidenan Minta Mendagri Berikan Teguran dan Sanksi Terkait Rolling Brutal Bupati Mimika",
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
+ },
+ {
+  "kandidat_id": "KAN-05984",
+  "judul": "KASN rekomendasikan peneliti BRIN dijatuhi sanksi disiplin berat",
+  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  }
 ]
