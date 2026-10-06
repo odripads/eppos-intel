@@ -66,12 +66,33 @@ KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jeni
     # has been reported. Still admitted when the headline also says something happened.
     r"\btegaskan\b|menegaskan|\bjika\b|\bbila\b|apabila|belum ada laporan|tidak ada laporan|"
     r"sanksi (?:berat |tegas )?bagi|bisa dipecat|terancam dipecat|adalah pemecatan|"
-    r"apel siaga|apel kesiapan|deklarasi damai|\brawan\b|potensi pelanggaran|\bawasi\b)", re.I)
+    r"apel siaga|apel kesiapan|deklarasi damai|\brawan\b|\bpotensi\b|\bawasi\b)", re.I)
 # explainer formulas that are never a report of an act, whatever verb they contain
 PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelanggaran dan sanksi|aturan .{0,20}di pemilu:|"
     r"tidak boleh mutasi|tak boleh mutasi|bisa didiskualifikasi|bisa berujung|mulai \d+ januari|berlaku \d+ januari|"
     # "nothing was found" is not an incident either
-    r"tidak temukan|tak temukan|tidak menemukan)", re.I)
+    r"tidak temukan|tak temukan|tidak menemukan|"
+    # rules, bans and what the law allows: a ministry or Bawaslu stating them is not an act
+    r"\blarang\b|melarang|ingatkan larangan|ingatkan petahana|ingatkan kepala daerah|bisa dipenjara|bisa dipidana|"
+    r"berpotensi dipidana|akan dipidana|dapat didiskualifikasi|bisa diuji|syarat kepala daerah|bolehkan|"
+    r"(?:terbitkan|keluarkan) surat edaran|surat edaran (?:larang|penundaan|mendagri|menpan)|"
+    r"cara lapor|diminta melapor|minta masyarakat lapor|masyarakat laporkan|tindak tegas asn|dikhawatirkan|"
+    r"^[^,:]{0,40}jadi atensi|hati-hati|terkendala regulasi|termasuk politisasi|(?:tidak netral|netralitas) jika|\bruu\b|"
+    r"bakal dibekukan|akan dikenakan sanksi|siap-siap nonjob|disanksi pemberhentian|bisa dipecat|sebagian kasus|"
+    r"terkait larangan|soroti marak|jelaskan kewenangan|"
+    r"mulai \d+ (?:januari|februari|maret|april|mei|juni|juli|agustus|september|oktober|november|desember)|"
+    r"(?:minta|diminta|meminta)[^,]{0,40}(?:tak|tidak|jangan) (?:lakukan |melakukan )?(?:mutasi|politisasi|terlibat|libatkan|gunakan)|"
+    r"penundaan (?:sementara )?(?:distribusi|mutasi)|tegaskan tak mutasi|puncak gunung es|"
+    r"\bancam\b[^,]{0,25}(?:tak|tidak) netral|"
+    # national tallies: a count of reports is not itself an incident, and its parts are counted where they happened
+    r"^(?:mendagri|kemendagri|bawaslu ri|perludem|kasn|bkn)\b[^,]{0,40}(?:\d{3,}|\d{1,3}\.\d{3}|ratusan|ribuan)\b|"
+    r"(?:terima|ungkap|temukan|catat|ada) (?:ada )?(?:lebih dari )?\d[\d.]+ (?:laporan|dugaan|kasus|perkara|pelanggaran|usulan)|"
+    r"usulan mutasi [\d.]+|masih masif)", re.I)
+# Police, prosecutors, the military and the religious-affairs ministry rotate their own officers on their own
+# calendar; a reshuffle there is not the regional executive the typology is about.
+APARAT_PUSAT = re.compile(r"(\bpolres\b|\bpolda\b|polrestabes|\bpolri\b|kapolri|kapolda|kejari|kejati|kejaksaan|"
+                          r"jaksa agung|kejagung|imigrasi|kemenag|\btni\b)", re.I)
+MUTASI_KATA = re.compile(r"(mutasi|dimutasi|dirotasi|rotasi|dicopot|pindah ?tugas|dipindahtugaskan)", re.I)
 # "jika melanggar", "agar tak melanggar", "yang sering langgar": a violation that is threatened or
 # hypothetical, which is exactly what a reminder talks about; removed before looking for an act
 BERSYARAT = re.compile(r"(?:jika|bila|apabila|kalau|agar (?:tak|tidak)|supaya (?:tak|tidak)|jangan|tidak boleh|"
@@ -115,7 +136,7 @@ BUKAN_PEMILIHAN = re.compile(r"(gratifikasi|\bsuap\b|\bkpk\b|raskin|\blpj\b|fikt
     r"dana talangan|\bpades\b|bumdes|proyek komputer|komputer sid|ilegal|developer|serobot|ijazah palsu|"
     r"\bcuri\b|mencuri|\btipu\b|ujaran kebencian|keroyok|pengeroyokan|penyeroyokan|\bptsl\b|seleksi pppk|"
     r"pengisian perangkat desa|mutasi perdes|seleksi mutasi|uji kompetensi|ke ki\b|\bbst\b|bprs|khilafah|"
-    r"aksi [24]12|\bhina\b|menghina|awak media|personel perwira|"
+    r"aksi [24]12|\bhina\b|menghina|awak media|personel perwira|\bproyek\b|uang honor|mobil dinas|"
     r"ancaman serius|janji netral|antisipasi)", re.I)
 # Warnings and promises about what would happen to an official who took sides report no act, whether
 # or not the headline names the race, so these are refused on both paths.
@@ -137,9 +158,10 @@ AKTOR_EKSEKUTIF = re.compile(r"(bupati|wali ?kota|walikota|\bwako\b|gubernur|\bc
     # "kepala dispenduk": an agency head named by the agency's acronym
     r"\bkasn\b|komisi asn|demosi|\bkepala d(?!esa)[a-z]{2,}|"
     # the resources an incumbent commands are the mechanism even when only the candidate is named
-    r"fasilitas negara|\bpip\b|bansos|bantuan sosial|\bpkh\b|sembako|mutasi|dicopot|anggaran|\bapbd\b)", re.I)
+    r"fasilitas negara|\bpip\b|bansos|bantuan sosial|\bpkh\b|sembako|anggaran|\bapbd\b)", re.I)
 CALON_FRASA = re.compile(r"(?:bakal calon|bacalon|calon|cabup|cagub|cawalkot|cawali|mantan|eks)\s+(?:wakil\s+)?"
-                         r"(?:bupati|wali ?kota|walikota|gubernur|kepala daerah)", re.I)
+                         r"(?:bupati|wali ?kota|walikota|gubernur|kepala daerah)"
+                         r"(?:\s+(?:dan|&)\s+wakil\s+(?:bupati|wali ?kota|walikota|gubernur))?", re.I)
 
 
 def dalam_lingkup(judul, gelombang=None):
@@ -153,6 +175,8 @@ def dalam_lingkup(judul, gelombang=None):
         return False, "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)", None
     if PILKADES.search(judul) and not PILKADA_KATA.search(judul):
         return False, "pemilihan kepala desa, bukan pilkada", None
+    if APARAT_PUSAT.search(judul) and MUTASI_KATA.search(judul):
+        return False, "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah", None
     if PENJELAS.search(judul) or PERINGATAN.search(judul):
         return False, "penjelasan aturan, bukan peristiwa", None
     if KOMENTAR.search(judul) and not TERJADI.search(BERSYARAT.sub(" ", judul)):
@@ -466,7 +490,7 @@ def main():
     # Four-letter names (Pati, Belu, Alor, Bima, Buru) are ordinary syllables too often to match bare, so
     # they count only right after an office or institution that is always followed by a place name.
     INSTANSI = (r"(?:di|bawaslu|panwaslu|panwaslih|kpu|kpud|pilbup|pilwalkot|pilkada|bupati|wabup|pj bupati|asn|pns|"
-                r"pemkab|pemkot|kabupaten|kab|kota|dprd|polres|kejari|sekda|kesbangpol|bkpsdm|disdik)\s+")
+                r"pemkab|pemkot|pemda|kabupaten|kab|kota|dprd|polres|kejari|sekda|kesbangpol|bkpsdm|disdik)\s+")
 
     # compiled once: ~1,100 names is past re's internal cache, and recompiling each pattern for each of
     # ~3,000 candidates turned a seconds-long step into minutes
@@ -484,6 +508,8 @@ def main():
 
     def place_of(title):
         n = " " + BUKAN_LOKASI.sub(" ", norm(title)) + " "
+        k = kec_dalam_nama(n)
+        if k: return k
         for rx, r in gaz_rx:
             if rx.search(n): return r
         return None
@@ -509,9 +535,31 @@ def main():
             awal = r"(?:camat|kecamatan|kec|distrik|di)" if (len(nk) >= 7 or " " in nk) else r"(?:camat|kecamatan|kec|distrik)"
             kec_rx.append((re.compile(r"(?<![a-z])" + awal + r"\s+" + re.escape(nk) + r"(?![a-z])"), r))
 
+    # A kecamatan whose name contains a kab/kota name ("Pangkalan Kerinci" in Pelalawan, "Mataram Baru" in
+    # Lampung Timur) was read as that kab/kota, a province away. Those few are checked before the
+    # gazetteer. Headlines also run two-word names together ("Camat Negerikaton"), so both spellings count.
+    nama_gaz = {nm for nm, _ in gaz}
+    kec_konflik, kec_gabung = [], []
+    if kp.exists():
+        for kc in json.loads(kp.read_text())["kecamatan"]:
+            r = by_qid.get(kc["kab_qid"]); nk = norm(kc["label"]); w = nk.split()
+            if not r or len(w) < 2: continue
+            kec_gabung.append((re.compile(r"(?<![a-z])(?:camat|kecamatan|kec|distrik)\s+" + re.escape(nk.replace(" ", ""))
+                                          + r"(?![a-z])"), r))
+            if any(x in nama_gaz for x in w + [" ".join(w[i:i + 2]) for i in range(len(w) - 1)]):
+                kec_konflik.append((re.compile(r"(?<![a-z])(?:camat|kecamatan|kec|distrik|di)\s+" + re.escape(nk)
+                                               + r"(?![a-z])"), r))
+
+    def kec_dalam_nama(n):
+        for rx, r in kec_konflik:
+            if rx.search(n): return r
+        return None
+
     def place_from_kecamatan(text):
         t = " " + norm(text) + " "
         for rx, r in kec_rx:
+            if rx.search(t): return r
+        for rx, r in kec_gabung:
             if rx.search(t): return r
         return None
 
