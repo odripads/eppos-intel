@@ -442,7 +442,9 @@
      Both windows are the same length and cover the same outlets, and the rate is per 1,000 searches
      because the two were not searched equally hard. */
   function bandingGelombang() {
-    var oto = (D.otomatis || []), usaha = D.usaha || {};
+    // only the WordPress archive grid: it searches every window with the same queries, and only its
+    // searches are counted in the denominator. Targeted sweeps were aimed at election windows on purpose.
+    var oto = (D.otomatis || []).filter(function (r) { return r.saluran === "wp-grid"; }), usaha = D.usaha || {};
     if (!oto.length) return "";
     var rows = PASANGAN.map(function (p) {
       var a = oto.filter(function (r) { return r.gelombang_pilkada === p[0]; }).length;
@@ -464,7 +466,9 @@
       '<table class="bandingtab"><thead><tr><th></th><th>musim pilkada</th><th>tahun biasa</th><th class="r">bedanya</th></tr></thead><tbody>' +
       rows + "</tbody></table>" +
       '<p class="hint" style="margin:8px 0 0">Angkanya temuan per 1.000 pencarian, bukan jumlah mentah, karena kedua rentang ' +
-      "belum dicari sama banyak. Yang diukur <b>seberapa banyak yang diberitakan</b>, bukan seberapa banyak yang terjadi.</p></div>";
+      "belum dicari sama banyak. Hanya temuan dari sapuan arsip outlet yang sama di kedua rentang yang dihitung di sini; " +
+      "pencarian yang sengaja diarahkan ke musim pilkada tidak ikut. Yang diukur <b>seberapa banyak yang diberitakan</b>, " +
+      "bukan seberapa banyak yang terjadi.</p></div>";
   }
 
   function provinceList() {

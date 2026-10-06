@@ -371,6 +371,31 @@ def outlet_city(domain):
     return base if len(base) >= 4 else None
 
 
+# The wave-vs-control comparison divides finds by searches made. Only the WordPress archive grid searches
+# every window with the same queries on the same outlets, and only its cells are counted as effort, so it
+# is the only channel whose finds may enter that comparison. Everything else (Google News, the town-name
+# sweeps aimed at thin provinces, browser searches) was pointed at election windows on purpose, and would
+# inflate the election side if counted there.
+def _cari_grid():
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("co", ROOT / "scripts" / "crawl_outlets.py")
+    co = importlib.util.module_from_spec(spec); spec.loader.exec_module(co)
+    return {q for qs in co.CARI.values() for q in qs}
+CARI_GRID = None
+
+
+def saluran(k):
+    global CARI_GRID
+    q = k.get("kueri") or ""
+    if "peramban" in q: return "gnews-peramban"
+    m = re.search(r"search='([^']*)'", q)
+    if m:
+        if CARI_GRID is None: CARI_GRID = _cari_grid()
+        return "wp-grid" if m.group(1) in CARI_GRID else "wp-kabkota"
+    if "after:" in q: return "gnews-rss"
+    return "lain"
+
+
 def main():
     kand = json.loads((DATA / "kandidat.json").read_text())
     wd = json.loads((ROOT / "scripts" / "wikidata_id_regions.json").read_text())
@@ -573,7 +598,7 @@ def main():
             "judul_sumber_1": k["judul"],
             "judul_status": "terverifikasi" if k.get("status_url") == "terselesaikan" else "dari URL",
             "diisi_oleh": "penelusuran otomatis", "tanggal_isi": k.get("ditemukan_pada"),
-            "kueri": k.get("kueri"), "lingkup_dasar": basis, "_path": pidx,
+            "kueri": k.get("kueri"), "lingkup_dasar": basis, "_path": pidx, "saluran": saluran(k),
         })
         if not prov: unplaced += 1
 
