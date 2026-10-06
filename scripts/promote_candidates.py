@@ -69,7 +69,7 @@ KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jeni
     # statements and warnings: a conditional, an official "stressing" a rule, or a report that nothing
     # has been reported. Still admitted when the headline also says something happened.
     r"\btegaskan\b|menegaskan|\bjika\b|\bbila\b|apabila|belum ada laporan|tidak ada laporan|belum (?:terima|menerima) laporan|"
-    r"\bberpotensi\b|"
+    r"\bberpotensi\b|\bm[ae]nanti\b|"
     r"sanksi (?:berat |tegas )?bagi|bisa dipecat|terancam dipecat|adalah pemecatan|"
     r"apel siaga|apel kesiapan|deklarasi damai|\brawan\b|\bpotensi\b|\bawasi\b)", re.I)
 # explainer formulas that are never a report of an act, whatever verb they contain
@@ -154,7 +154,7 @@ BUKAN_PEMILIHAN = re.compile(r"(gratifikasi|\bsuap\b|\bkpk\b|raskin|\blpj\b|fikt
     r"ancaman serius|janji netral|antisipasi)", re.I)
 # Warnings and promises about what would happen to an official who took sides report no act, whether
 # or not the headline names the race, so these are refused on both paths.
-PERINGATAN = re.compile(r"(bisa kena|bisa di ?sanksi|\bintai\b|wanti-wanti|\bm[ae]nanti\b|ada sanksinya|siap beri sanksi|"
+PERINGATAN = re.compile(r"(bisa kena|bisa di ?sanksi|\bintai\b|wanti-wanti|ada sanksinya|siap beri sanksi|"
     r"\byang\b[^,]{0,40}akan diberi(?:kan)? sanksi|(?:tidak|tak) boleh (?:lagi )?(?:melakukan )?mutasi|siap-siap (?:kena|dapat|di ?sanksi|ditindak|dijerat|dipecat)|(?:asn|pns|kades)\b[^,]{0,40}(?:siap-siap|bakal) (?:kena|di ?sanksi)|"
     r"sanksi berat!|konsekuensinya|peringatan terbaru|jangan mau|\bancam (?:akan )?(?:berikan |beri )?sanksi|"
     r"sebut akan sanksi|diberikan sanksi tegas|sanksi (?:\w+ )?menanti|siap terima sanksi|tak segan|"
