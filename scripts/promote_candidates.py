@@ -53,7 +53,8 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
     r"mutasi (?:tni|polri|perwira)|kepala bin|"
     r"gelapkan|menggelapkan|digelapkan|lecehkan|melecehkan|dilecehkan|protokol kesehatan|\bprokes\b|"
     # campaign-finance reporting, police postings, workplace bullying: real news, not executive coercion
-    r"\blpsdk\b|\blppdk\b|\blpsdk\b|dana kampanye|penjabat kepolisian|\bkapolres\b|\bkapolsek\b|bullying|perundungan)", re.I)
+    r"\blpsdk\b|\blppdk\b|\blpsdk\b|dana kampanye|penjabat kepolisian|\bkapolres\b|\bkapolsek\b|bullying|perundungan|"
+    r"\bskt\b|surat keterangan tanah|lahan ptpn|sertifikat tanah)", re.I)
 # A reminder or an explainer is about the topic but is not an incident. Refused only when the headline
 # also carries no word of something having happened to someone.
 KOMENTAR = re.compile(r"(\bingatkan\b|mengingatkan|\bimbau|mengimbau|himbau|jenis pelanggaran dan sanksi|"
