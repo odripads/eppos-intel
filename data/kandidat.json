@@ -99156,5 +99156,21 @@
   "ditemukan_pada": "2026-10-07",
   "status_tinjau": "diterima otomatis",
   "catatan_tinjau": "diterima massal 2026-10-07 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-08657",
+  "judul": "Cara-Cara 'Aneh' Bupati Malang Lakukan Mutasi",
+  "outlet": "MalangTIMES",
+  "tanggal_terbit": "2020-06-30",
+  "url": null,
+  "url_google": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPaHdiZEk3Wks2NmRta2FfZzRlX0NkcGJDN2x1SlVTODFmM2lKNmVRamZlMXRleWR4RTc0YldYZVZyTnB5SzYyN2tzTFVaeU1IZWtnTUNzMEd0OTZLRUN4ZW5kYXd5RVNEMlc5V3gtTmlpaVV1S0tQNzVSMTlFOFljemREcjlWTzFDZDFjZENOWHUzZzNZVVlHUUpn",
+  "status_url": "duplikat",
+  "gelombang_pilkada": "2020",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "Papua Barat Daya",
+  "kueri": "mutasi pejabat pilkada \"Raja Ampat\" after:2020-06-09 before:2021-01-09",
+  "ditemukan_pada": "2026-10-07",
+  "status_tinjau": "tertahan",
+  "catatan_tinjau": "tanpa URL sumber; setiap baris wajib punya tautan sumber"
  }
 ]
