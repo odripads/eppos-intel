@@ -43,13 +43,13 @@ PEMILU = re.compile(r"(pilkada|pemilukada|pemilu|pilpres|pileg|\bcaleg\b|nyaleg|
     # an incumbent is by definition a candidate in a race; the word alone places the story in an election
     r"petahana|inkumben)", re.I)
 # out of scope by the spec: personal scandal, ordinary crime, health/disaster reporting
-LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|pelecehan|narkoba|sabu|"
-    r"covid|corona|kecelakaan|laka lantas|kebakaran|karhutla|banjir|gempa|longsor|pencurian|begal|judi|"
+LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|pelecehan|narkoba|\bsabu\b|"
+    r"kecelakaan|laka lantas|kebakaran|karhutla|banjir|gempa|longsor|pencurian|begal|judi|"
     r"penggelapan|pungli|korupsi|mabuk|perkosa|cabul|"
     # ordinary crime that the mechanism words alone would otherwise let back in
-    r"penipuan|ditipu|menipu|aniaya|penganiayaan|pencemaran nama baik|fitnah|difitnah|"
+    r"penipuan|ditipu|menipu|aniaya|penganiayaan|pencemaran nama baik|"
     r"jual beli tanah|sengketa lahan|pembunuhan|curanmor|tawuran|bacok|istri kedua|"
-    r"vonis|divonis|penjara|dibui|napi|lapas|tanpa busana|bugil|\bsyur\b|ppdb|"
+    r"\bnapi\b|\blapas\b|tanpa busana|bugil|\bsyur\b|ppdb|"
     # military and police postings are not the civilian executive the typology is about
     r"mutasi (?:tni|polri|perwira)|kepala bin|"
     r"gelapkan|menggelapkan|digelapkan|lecehkan|melecehkan|dilecehkan|protokol kesehatan|\bprokes\b|"
@@ -112,7 +112,7 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     r"ingatkan[^,]{0,40}(?:tentang|soal) mutasi|isu utama|pengamat politik soroti indikasi|^profil\b|^video: eksklusif|rancang sistem|bakal tindak tegas|\bkian\b|"
     r"bisa terkena|(?:meminta|minta) semua pihak|ada sanksi tegas|pecat atau turun pangkat|boleh terlibat|tak gentar|"
     r"terancam dibekukan|tekankan netralitas|terancam tak naik|^sebanyak [\d.]+|^(?:ratusan|ribuan) asn|ultimatum pns|satgas bidik|"
-    r"pastikan ganti|\bakan bongkar|"
+    r"pastikan ganti|\bakan bongkar|bisa diancam|\bwarning\b[^,]{0,40}soal sanksi|"
     r"rekomendasi (?:pdip|pdi-p|golkar|nasdem|gerindra|pkb|pks|\bpan\b|ppp|demokrat|psi|perindo|hanura|gelora)|"
     r"^mendagri[^,]*total ada \d|minta (?:dugaan )?pelanggaran[^,]{0,20}ditindak|\bakan dicopot\b|"
     r"bentuk tim (?:untuk|khusus)|penertiban (?:aps|apk|alat peraga|baliho)|"
@@ -176,7 +176,7 @@ BUKAN_PEMILIHAN = re.compile(r"(gratifikasi|\bsuap\b|\bkpk\b|raskin|\blpj\b|fikt
     r"pengisian perangkat desa|mutasi perdes|seleksi mutasi|uji kompetensi|ke ki\b|\bbst\b|bprs|khilafah|"
     r"aksi [24]12|\bhina\b|menghina|awak media|personel perwira|\bproyek\b|uang honor|mobil dinas|\bthr\b|parcel|"
     r"\bperades\b|pengisian perangkat|disuap|supriyani|somasi|pelantikan kades|cantik|akan disanksi|jarang .{0,3}ngantor|"
-    r"aset lahan|kasus aset|\bcadar\b|\bperas\b|pemerasan|"
+    r"aset lahan|kasus aset|\bcadar\b|\bperas\b|pemerasan|\bvonis\b|divonis|penjara|dibui|covid|corona|fitnah|difitnah|"
     r"ancaman serius|janji netral|antisipasi)", re.I)
 # Warnings and promises about what would happen to an official who took sides report no act, whether
 # or not the headline names the race, so these are refused on both paths.

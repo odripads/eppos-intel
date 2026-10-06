@@ -15,16 +15,6 @@
   "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
-  "kandidat_id": "KAN-00011",
-  "judul": "Langgar Netralitas di Pilkada Mojokerto, Kades Randuharjo Divonis 1 Bulan Penjara",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
-  "kandidat_id": "KAN-00013",
-  "judul": "Sidang Pelanggaran Netralitas Pilkada 2024, Kades di Mojokerto Dituntut 2 Bulan Penjara",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-00024",
   "judul": "Bawaslu Kabupaten Serang Tangani 30 Laporan, Didominasi Dugaan Pelanggaran Netralitas Kepala Desa",
   "alasan": "penjelasan aturan, bukan peristiwa"
@@ -185,16 +175,6 @@
   "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
  },
  {
-  "kandidat_id": "KAN-00158",
-  "judul": "Demosi ASN Bitung, Apa Kabar Rekomendasi KASN dan Dana Covid-19",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
-  "kandidat_id": "KAN-00160",
-  "judul": "Sidang Pelanggaran Netralitas, ASN di Gowa Divonis Satu Bulan Penjara",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-00165",
   "judul": "Dua Pejabat Pemkot Makassar Tersandung Kasus Netralitas ASN, Ini Sanksinya",
   "alasan": "penjelasan aturan, bukan peristiwa"
@@ -247,7 +227,7 @@
  {
   "kandidat_id": "KAN-00205",
   "judul": "Diduga Satgas Covid Kelurahan di Bitung Digaji untuk Jadi Saksi Salah Satu Paslon",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
  },
  {
   "kandidat_id": "KAN-00206",
@@ -277,7 +257,7 @@
  {
   "kandidat_id": "KAN-00213",
   "judul": "Warga dari Kecamatan Ini Dilaporkan Meninggal COVID-19, Tabanan Juga Catatkan Kasus Baru",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
  },
  {
   "kandidat_id": "KAN-00215",
@@ -373,11 +353,6 @@
   "kandidat_id": "KAN-00313",
   "judul": "Bupati Faida Kena Sanksi Gubernur, Anggota DPRD Jember Ini Cukur Gundul",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
- },
- {
-  "kandidat_id": "KAN-00314",
-  "judul": "Ketua KPK Terima Laporan Oknum Petahana Maju Pilkada Membonceng Dana Covid-19",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-00315",
@@ -680,11 +655,6 @@
   "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
  },
  {
-  "kandidat_id": "KAN-00530",
-  "judul": "Laporan Paslon Jadi-Jo di Bawaslu, Asisten Walikota Mengaku di Fitnah",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-00531",
   "judul": "Walikota Kotamobagu Panuti Masyarakatnya Laporan SPT 2017",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
@@ -727,22 +697,22 @@
  {
   "kandidat_id": "KAN-00554",
   "judul": "Warga dari Kelurahan di Denpasar Ini Dilaporkan Meninggal COVID-19",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
  },
  {
   "kandidat_id": "KAN-00555",
   "judul": "Belasan Pasien COVID-19 Baru Dilaporkan Denpasar, Ini Kelurahan Sumbang Kasus Terbanyak",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-00556",
   "judul": "Lima Berita Terpopuler Kemarin: Dari Tiga Pejabat Utama Polda Dimutasi hingga Penyebaran COVID-19 Melonjak, Ini Kata Gubernur Koster",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
  },
  {
   "kandidat_id": "KAN-00557",
   "judul": "Belasan Kasus COVID-19 Baru Dilaporkan Denpasar, Kelurahan Ini Sumbang Warga Terbanyak",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-00561",
@@ -992,7 +962,7 @@
  {
   "kandidat_id": "KAN-00637",
   "judul": "Bupati Instruksi, Camat dan Puskesmas Pantau Penyebaran Covid-19",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
   "kandidat_id": "KAN-00638",
@@ -1117,7 +1087,7 @@
  {
   "kandidat_id": "KAN-00688",
   "judul": "Dilaporkan Karena Bagikan Sembako, Gubernur Gorontalo: Saya Rela Dipenjara Demi Rakyat",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
   "kandidat_id": "KAN-00689",
@@ -1237,22 +1207,22 @@
  {
   "kandidat_id": "KAN-00718",
   "judul": "Seorang ASN Kantor Kemenag Kota Solok Dilaporkan Positif Covid-19 Hari Ini",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
  },
  {
   "kandidat_id": "KAN-00719",
   "judul": "Dua Kelurahan di Kota Padang Dilaporkan Telah Bebas Kasus Covid-19",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
  },
  {
   "kandidat_id": "KAN-00720",
   "judul": "Dokter, ASN dan Guru Dilaporkan Positif Covid-19, Kasus Aktif di Pessel 104 Orang",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
  },
  {
   "kandidat_id": "KAN-00721",
   "judul": "Kabid Damkar dan 2 ASN di Pessel Dilaporkan Positif Terinfeksi Covid-19",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
  },
  {
   "kandidat_id": "KAN-00722",
@@ -1387,7 +1357,7 @@
  {
   "kandidat_id": "KAN-00758",
   "judul": "Gubernur Jabar Instruksikan 27 Kepala Daerah Bentuk RW Siaga Corona",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
   "kandidat_id": "KAN-00759",
@@ -1427,7 +1397,7 @@
  {
   "kandidat_id": "KAN-00768",
   "judul": "Botoh Pilkades di Mojokerto Diringkus Polisi, Bisa Diancam 10 Tahun Penjara",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "pemilihan kepala desa, bukan pilkada"
  },
  {
   "kandidat_id": "KAN-00769",
@@ -1437,7 +1407,7 @@
  {
   "kandidat_id": "KAN-00770",
   "judul": "Risma Minta Lurah Se-Surabaya Gerakkan Warga Menekan dan Memutus Penyebaran Covid-19",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
  },
  {
   "kandidat_id": "KAN-00771",
@@ -1497,7 +1467,7 @@
  {
   "kandidat_id": "KAN-00786",
   "judul": "Kades di Buton Diancam 20 Tahun Penjara, Diduga Selewengkan Dana Desa",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "urusan dana desa tanpa konteks elektoral di judul"
  },
  {
   "kandidat_id": "KAN-00791",
@@ -1662,7 +1632,7 @@
  {
   "kandidat_id": "KAN-00857",
   "judul": "Tambahan Belasan Kasus COVID-19 Dilaporkan Buleleng, Sebarannya Ada di 6 Kecamatan Ini",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
  },
  {
   "kandidat_id": "KAN-00860",
@@ -1897,7 +1867,7 @@
  {
   "kandidat_id": "KAN-00915",
   "judul": "Bawaslu Minut Warning Kumtua dan ASN Soal Sanksi Pidana Penjara dan Denda",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-00916",
@@ -2537,7 +2507,7 @@
  {
   "kandidat_id": "KAN-01072",
   "judul": "Diduga gunakan Ijazah SLTP palsu, oknum Kades di Kabupaten Banjar terancam 6 tahun Penjara",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
   "kandidat_id": "KAN-01073",
@@ -2822,7 +2792,7 @@
  {
   "kandidat_id": "KAN-01148",
   "judul": "Mantan Kades Klompang Timur Diancam 7 Tahun Penjara",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
  },
  {
   "kandidat_id": "KAN-01149",
@@ -3557,11 +3527,6 @@
  {
   "kandidat_id": "KAN-01320",
   "judul": "Miris! Oknum Camat di Natuna Diduga Cabuli ART di Bawah Umur, Polisi Lakukan Penyelidikan",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
-  "kandidat_id": "KAN-01321",
-  "judul": "Terbukti Langgar Netralitas ASN, Jaksa Eksekusi Kabag Tapem Karimun ke Penjara",
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
@@ -4637,12 +4602,12 @@
  {
   "kandidat_id": "KAN-01607",
   "judul": "Bertambah Puluhan Warga Buleleng Terjangkit COVID-19, Terbanyak Dilaporkan Kecamatan Ini",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-01608",
   "judul": "Belasan Kasus COVID-19 Dilaporkan Karangasem, 4 Kecamatan Ini Tambah Warga Terjangkit",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
  },
  {
   "kandidat_id": "KAN-01609",
@@ -4657,11 +4622,6 @@
  {
   "kandidat_id": "KAN-01611",
   "judul": "Terkait Oknum Lurah Pekayon Jaya yang Diduga Terlibat Pelecehan, Pemkot akan Melakukan Pembinaan",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
-  "kandidat_id": "KAN-01614",
-  "judul": "Mobilisasi ASN, Bawaslu Tangsel Vonis Camat Pondok Aren Bersalah",
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
@@ -4737,11 +4697,6 @@
  {
   "kandidat_id": "KAN-02245",
   "judul": "Polda Sulsel-BNN Diminta Usut Dugaan Aliran Duit Bandar Narkoba Owen ke Bupati Torut",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
-  "kandidat_id": "KAN-02247",
-  "judul": "Terbukti Langgar Netralitas ASN, Kabag Tapem Pemkab Karimun Divonis 1 Bulan Penjara",
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
@@ -5187,7 +5142,7 @@
  {
   "kandidat_id": "KAN-01764",
   "judul": "Guru Honorer Supriyani Diancam 5 Tahun Penjara",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
  },
  {
   "kandidat_id": "KAN-01765",
@@ -6062,7 +6017,7 @@
  {
   "kandidat_id": "KAN-02017",
   "judul": "Gubernur dan Wagub Instruksikan Refocusing APBD untuk Penanganan Covid-19",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
   "kandidat_id": "KAN-02018",
@@ -6370,11 +6325,6 @@
   "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
  },
  {
-  "kandidat_id": "KAN-02158",
-  "judul": "Dugaan Tindak Pidana Pemilu Dilaporkan ke Gubernur, DKPP, Bawaslu, dan Mendagri, Ada Kemungkinan Risma Dipenjara!",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-02159",
   "judul": "Eri Cahyadi Bukan Anaknya, Wali Kota Surabaya Diadukan ke Polisi Soal Dugaan Pembohongan Publik",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
@@ -6467,7 +6417,7 @@
  {
   "kandidat_id": "KAN-02175",
   "judul": "Peta Sebaran Zona Merah Positif Covid-19  Bertambah Satu Kecamatan,  Sehari 5 Warga Bogor Raya Dilaporkan Positif Corona",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
  },
  {
   "kandidat_id": "KAN-02177",
@@ -6533,11 +6483,6 @@
   "kandidat_id": "KAN-02332",
   "judul": "Salah Satu Potensi Ancaman Gangguan Pilkada: Netralitas ASN",
   "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
- },
- {
-  "kandidat_id": "KAN-02335",
-  "judul": "Langgar Netralitas Pilkada, Kades di Situbondo Divonis Masa Percobaan 3 Bulan",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-02336",
@@ -7432,7 +7377,7 @@
  {
   "kandidat_id": "KAN-02559",
   "judul": "Awas, Ikut-ikutan Kampanye Kades Bisa Diancam 1 Tahun Penjara dan Denda Uang!",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-02561",
@@ -7525,11 +7470,6 @@
   "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
-  "kandidat_id": "KAN-02635",
-  "judul": "Pilkada: Bupati Pasaman divonis bersalah langgar aturan kampanye di tempat ibadah",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-02638",
   "judul": "Pilkada, Menpan RB Ingatkan Potensi Pelanggaran Netralitas ASN lewat Anggaran Daerah",
   "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
@@ -7572,11 +7512,6 @@
  {
   "kandidat_id": "KAN-02654",
   "judul": "Calon Bupati Biak Numfor Diduga Melakukan Pencabulan",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
-  "kandidat_id": "KAN-02667",
-  "judul": "Oknum ASN Bagikan Sabun Cuci Bergambar Paslon Dilaporkan Bawaslu ke BKN Pusat",
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
@@ -7860,11 +7795,6 @@
   "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
-  "kandidat_id": "KAN-02791",
-  "judul": "Divonis 1,5 Bulan Penjara, Kades Tidak Netral saat Pilkada Deli Serdang Banding",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-02800",
   "judul": "Buntut Penjualan Mobil di Facebook, Kades Rana Mbeling Laporkan Dugaan Penipuan dan Pencemaran Nama Baik - Victory News",
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
@@ -8057,7 +7987,7 @@
  {
   "kandidat_id": "KAN-02881",
   "judul": "Kepala Daerah Mutasi Pejabat Jelang Pilkada 2024 Bisa Dipenjara dan Denda",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-02882",
@@ -8170,19 +8100,9 @@
   "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
-  "kandidat_id": "KAN-02911",
-  "judul": "Bupati Klaten Diduga Pakai Bantuan Corona demi Kampanye, Kok Bisa?",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-02912",
   "judul": "5 Poin Terkait Dugaan Keterkaitan Sritex dan Gibran di Proyek Bansos",
   "alasan": "perkara non-pemilihan atau peringatan, tanpa konteks elektoral di judul"
- },
- {
-  "kandidat_id": "KAN-02913",
-  "judul": "Ada Wajahnya pada Bansos Corona, Wali Kota Semarang Siap Diperiksa Bawaslu",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-02914",
@@ -8380,11 +8300,6 @@
   "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
  },
  {
-  "kandidat_id": "KAN-02982",
-  "judul": "Diduga Istri Kepala Desa di Majalengka Sebar Fitnah Agar Tak Memilih Karna di Pilbup 2024, Ini Klarifikasinya! - Kabar Cirebon",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-02983",
   "judul": "Laporan Harta Kekayaan LHKPN Eko Sapto Purnomo Plt Bupati Sukoharjo",
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
@@ -8413,21 +8328,6 @@
   "kandidat_id": "KAN-02994",
   "judul": "Sekda Solo Pastikan ASN Tak Netral Selama Pilkada Bakal Disanksi",
   "alasan": "penjelasan aturan, bukan peristiwa"
- },
- {
-  "kandidat_id": "KAN-03000",
-  "judul": "Kasus Pelanggaran Netralitas Segera Disidangkan, Kades Randuharjo Terancam 6 Bulan Penjara",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
-  "kandidat_id": "KAN-03001",
-  "judul": "Langgar Netralitas Pilkada, Kades di Mojokerto Divonis 1 Bulan Penjara",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
-  "kandidat_id": "KAN-03002",
-  "judul": "Diduga Kampanye Terselubung, Bawaslu Sumenep Sebut Plt Bupati Terancam Dipenjara!",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-03004",
@@ -8548,11 +8448,6 @@
   "kandidat_id": "KAN-03053",
   "judul": "Rotasi Jabatan Polri Juni 2026, Ini Daftar Pejabat Polda Maluku Utara yang Dimutasi",
   "alasan": "rotasi di kepolisian, kejaksaan, TNI atau Kemenag, bukan eksekutif daerah"
- },
- {
-  "kandidat_id": "KAN-03056",
-  "judul": "JPU Tuntut 3 Bulan Penjara Kapus Ranga-ranga Mamuju Hamzah, Terbukti Langgar Netralitas ASN",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-03058",
@@ -8742,7 +8637,7 @@
  {
   "kandidat_id": "KAN-03141",
   "judul": "Dugaan Fitnah, Kepala Desa Pangambatan Kembali Dilaporkan Salah Seorang Warganya ke Polres Karo",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
   "kandidat_id": "KAN-03142",
@@ -8788,11 +8683,6 @@
   "kandidat_id": "KAN-03161",
   "judul": "Politik Tapteng Panas, Bupati Masinton Pasaribu Diancam Pemakzulan",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
- },
- {
-  "kandidat_id": "KAN-03164",
-  "judul": "Bawaslu Temukan Pola Politisasi Bansos COVID-19 di Pilkada Banten",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-03166",
@@ -9145,11 +9035,6 @@
   "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
-  "kandidat_id": "KAN-03333",
-  "judul": "Fadly Amran Diduga Kena fitnah, Maidestal Hari Mahesa: Hanya Petahana yang Bisa Mobilisasi ASN dan Pengurus RT/RW",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-03334",
   "judul": "Lurah se-Makassar Dikumpulkan gara-gara Marak Pengambilan Jenazah",
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
@@ -9397,7 +9282,7 @@
  {
   "kandidat_id": "KAN-03438",
   "judul": "Bupati Nunukan Ancam Sanksi Perusahaan yang Tidak Patuhi Kebijakan Penanganan Covid-19",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-03439",
@@ -9542,12 +9427,12 @@
  {
   "kandidat_id": "KAN-03473",
   "judul": "Bupati Lampung Selatan Terbitkan Surat Edaran Lingkungan, Pelanggar Terancam Penjara hingga 10 Tahun",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-03474",
   "judul": "Nanang Minta Camat Hingga Kades Berkolaborasi Untk Menekan Lonjakan Covid-19",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
   "kandidat_id": "KAN-03475",
@@ -9562,7 +9447,7 @@
  {
   "kandidat_id": "KAN-03477",
   "judul": "Bukti Tayang: Nanang Minta Camat Hingga Kades Berkolaborasi Untk Menekan Lonjakan Covid-19",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
   "kandidat_id": "KAN-03478",
@@ -9692,7 +9577,7 @@
  {
   "kandidat_id": "KAN-03507",
   "judul": "Bupati Lembata Keluarkan Pengumaman BBM Subsidi, Pelanggar Ancaman Penjara 6 Tahun - NTT Express",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
   "kandidat_id": "KAN-03508",
@@ -10252,7 +10137,7 @@
  {
   "kandidat_id": "KAN-03643",
   "judul": "LSM Penjara Garut Nilai Rotasi Mutasi Ada Unsur Balas Dendam Bupati",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
   "kandidat_id": "KAN-03644",
@@ -10952,7 +10837,7 @@
  {
   "kandidat_id": "KAN-03812",
   "judul": "Sebut Video 7 Menit Fitnah, Camat Abu Rahmi Amir Tetap Dicopot Dari Jabatannya, Begini Nasibnya",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
   "kandidat_id": "KAN-03813",
@@ -11395,11 +11280,6 @@
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
-  "kandidat_id": "KAN-03941",
-  "judul": "Penuhi Unsur Pelanggaran Pemilu, Camat Raba Terancam Penjara 6 Bulan",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-03942",
   "judul": "Berkas Dugaan Ijazah Palsu Kades Padesa Diteliti Jaksa",
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
@@ -11550,11 +11430,6 @@
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
-  "kandidat_id": "KAN-04002",
-  "judul": "PILKADA 2018 : Panwaslu Kudus Vonis Kades Mlati Lor Lakukan Pelanggaran Administrasi",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-04005",
   "judul": "Andre Taulany Bantah Mobilisasi PNS",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
@@ -11667,7 +11542,7 @@
  {
   "kandidat_id": "KAN-04035",
   "judul": "Awas! Kades dan Perangkat Desa Terlibat Kampanye Bisa Dipidana Penjara, Ini Aturannya",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-04036",
@@ -11870,11 +11745,6 @@
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
-  "kandidat_id": "KAN-04124",
-  "judul": "Terbukti Tidak Netral dalam Pilkada, Empat Kepala Desa Divonis oleh Pengadilan Negeri Jeneponto",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-04137",
   "judul": "Bupati Toraja Utara Frederik Victor Palimbong Lantik 148 Pejabat, Tegaskan Tak Ada Nonjob",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
@@ -11977,7 +11847,7 @@
  {
   "kandidat_id": "KAN-04170",
   "judul": "Bawaslu Awasi Petahana Kampanye Manfaatkan Bantuan COVID-19",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "imbauan atau penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-04171",
@@ -12243,11 +12113,6 @@
   "kandidat_id": "KAN-04241",
   "judul": "Pengamat: Janji Kampanye Asri Ludin Program Guru \"Senyum\", Jadi Bupati 2.341 Guru P3K PW \"Murung\" Tak Dapat Gaji",
   "alasan": "penjelasan aturan, bukan peristiwa"
- },
- {
-  "kandidat_id": "KAN-04242",
-  "judul": "Kampanye Pakai Fasilitas Negara, Calon Wakil Wali Kota Metro Lampung Terancam 6 Bulan Penjara",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-04243",
@@ -12562,11 +12427,6 @@
  {
   "kandidat_id": "KAN-04320",
   "judul": "LHKPN Laporan Harta Kekayaan Bellinda Putri Sabrina Birton Wakil Bupati Kudus Terpilih Pilkada 2024",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
-  "kandidat_id": "KAN-04321",
-  "judul": "Terbukti Langgar Pidana Pemilu, Kades di Bojongsari Divonis Satu Bulan Penjara - radarbanyumas.disway.id",
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
@@ -13140,14 +13000,9 @@
   "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
-  "kandidat_id": "KAN-04479",
-  "judul": "Virus corona dan bantuan sosial: Foto kepala daerah di kemasan bansos, 'kampanye terselubung' yang dapat dipidanakan",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-04480",
   "judul": "Bawaslu Ungkap 4 Bentuk Politisasi Bansos Covid-19 pada Pilkada 2020",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-04482",
@@ -13282,7 +13137,7 @@
  {
   "kandidat_id": "KAN-04514",
   "judul": "KALAPAS Cibinong Diberhentikan dari ASN dan 16 Pegawai Disanksi",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
  },
  {
   "kandidat_id": "KAN-04515",
@@ -13310,21 +13165,6 @@
   "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
-  "kandidat_id": "KAN-04529",
-  "judul": "Kades Sugihwaras Divonis 2 Bulan Bui di Kasus Pelanggaran Pidana Pemilu",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
-  "kandidat_id": "KAN-04530",
-  "judul": "5 Kades-1 Kapus Langgar Netralitas Pilkada di Mamasa Dijebloskan ke Penjara",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
-  "kandidat_id": "KAN-04531",
-  "judul": "Terbukti Melanggar Netralitas, Kades Sumarrang Divonis 5 Bulan Percobaan",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-04537",
   "judul": "Gelombang Mutasi Pejabat Pasangkayu, 19 Eselon II Bergeser, 7 OPD Masih Lowong",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
@@ -13343,21 +13183,6 @@
   "kandidat_id": "KAN-04540",
   "judul": "Bhabinkamtibmas Wirokerten Hadiri Technical Meeting Kampanye Pemilihan Lurah",
   "alasan": "pemilihan kepala desa, bukan pilkada"
- },
- {
-  "kandidat_id": "KAN-04542",
-  "judul": "Kades di Lombok Divonis Penjara 3 Bulan, Kampanyekan Istri yang Nyaleg di Grup WA dan Facebook",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
-  "kandidat_id": "KAN-04546",
-  "judul": "Kampanyekan Istri Sebagai Caleg PKB, Kades di Lombok Divonis 3 Bulan Bui",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
-  "kandidat_id": "KAN-04550",
-  "judul": "Diduga Kampanyekan Istri yang Nyaleg, Kades Langko Dituntut 5 Bulan Penjara dan Denda Rp5 Juta",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-04551",
@@ -13532,7 +13357,7 @@
  {
   "kandidat_id": "KAN-04593",
   "judul": "Kreatif, Lurah Bukit Duri Kampanyekan Pencegahan Covid-19 dengan Mural",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-04594",
@@ -13543,11 +13368,6 @@
   "kandidat_id": "KAN-04595",
   "judul": "Soal Penilapan Dana Kelurahan, Atasan Oknum Honorer Juga Bakal Diperiksa",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
- },
- {
-  "kandidat_id": "KAN-04596",
-  "judul": "2 Kades di Mamasa Divonis 3 Bulan Penjara, Kasus Pelanggaran Pilkada 2024",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-04598",
@@ -13730,11 +13550,6 @@
   "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
-  "kandidat_id": "KAN-04640",
-  "judul": "Kades di Banyuwangi Dilaporkan ke Bawaslu Karena Hadiri Kampanye Gibran, Terancam Penjara 1 Tahun",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-04641",
   "judul": "Bawaslu Lanny Jaya: ASN Boleh Terlibat Secara Pasif Dalam Kampanye Pilkada",
   "alasan": "penjelasan aturan, bukan peristiwa"
@@ -13753,11 +13568,6 @@
   "kandidat_id": "KAN-04644",
   "judul": "Dugaan Ijazah Paket C Palsu Calon Bupati Bangka Rato Rusdianto, Ini Fakta-Faktanya",
   "alasan": "hanya calon yang disebut, bukan pemegang jabatan eksekutif"
- },
- {
-  "kandidat_id": "KAN-04645",
-  "judul": "TOK! ASN Pemkab PPU Divonis Hukuman 1 Bulan Penjara: Terbukti Bersalah Terlibat Kampanye Pilkada",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-04646",
@@ -13798,16 +13608,6 @@
   "kandidat_id": "KAN-04657",
   "judul": "Penjaringan Kepala Desa Oesao di Dusun II Diduga Sarat Rekayasa",
   "alasan": "tidak ada konteks elektoral, dan bukan mekanisme tipologi di jendela pilkada"
- },
- {
-  "kandidat_id": "KAN-04658",
-  "judul": "Kampanyekan Istri, Kades Langko Divonis Tiga Bulan Penjara",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
-  "kandidat_id": "KAN-04659",
-  "judul": "Tipilu karena Kampanyekan Istri di Medsos, Kepala Desa di Lombok Dituntut 5 Bulan Penjara",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-04662",
@@ -13885,11 +13685,6 @@
   "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
-  "kandidat_id": "KAN-04689",
-  "judul": "Selain Penjara, Oknum Dokter di PPU yang Langgar UU Pilkada Bakal Dikenakan Sanksi Disiplin ASN",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-04690",
   "judul": "991 PNS Pelanggar Netralitas Terancam Sanksi Disiplin",
   "alasan": "penjelasan aturan, bukan peristiwa"
@@ -13912,7 +13707,7 @@
  {
   "kandidat_id": "KAN-04702",
   "judul": "Bawaslu Wanti-wanti Kepala Desa Tak Jadi ‘Alat Kampanye’ Pemilu 2024, Ada Ancaman 1 Tahun Penjara",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-04711",
@@ -13920,14 +13715,9 @@
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
-  "kandidat_id": "KAN-04712",
-  "judul": "Dituntut 1 Tahun Penjara Karena Kampanyekan Caleg, Kepala Desa di Majalaya Bandung Divonis 4 Bulan",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-04714",
   "judul": "Bawaslu Ingatkan Soal Netralitas, Kades Ikut Kampanye Pilkada Bisa Dipidana 6 Bulan Penjara",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
+  "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
   "kandidat_id": "KAN-04716",
@@ -14055,11 +13845,6 @@
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
-  "kandidat_id": "KAN-04783",
-  "judul": "Pj Kades Betteng Majene Dijeboloskan ke Penjara, Kasus Pelanggaran Pemilu",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-04784",
   "judul": "Kades di Majene Sulbar Tikam Warganya hingga Tewas, Masalah Pribadi Diduga Jadi Pemicu",
   "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
@@ -14070,24 +13855,9 @@
   "alasan": "penjelasan aturan, bukan peristiwa"
  },
  {
-  "kandidat_id": "KAN-04797",
-  "judul": "Kadis Sosial Tanah Daftar Ditahan Usai Divonis Melanggar Netralitas ASN",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
-  "kandidat_id": "KAN-04798",
-  "judul": "Langgar Netralitas ASN pada Pilkada Serentak 2024, Kadis Sosial Tanahdatar Afrizon Dijebloskan ke Penjara, Divonis 1 Bulan Kurungan dan Denda Rp 6 Juta",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
- },
- {
   "kandidat_id": "KAN-04799",
   "judul": "Ketua DPRD Karo “Saya Akan Bongkar ASN Tidak Netral”",
   "alasan": "penjelasan aturan, bukan peristiwa"
- },
- {
-  "kandidat_id": "KAN-04800",
-  "judul": "Langgar Netralitas, Kades Buduan Situbondo Divonis Satu Bulan Penjara",
-  "alasan": "topik di luar lingkup (skandal pribadi / kriminal umum / bencana)"
  },
  {
   "kandidat_id": "KAN-04802",

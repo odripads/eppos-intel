@@ -2000,5 +2000,77 @@
  "https://rotari.id/diduga-tidak-netral-enam-asn-di-sulbar-direkomendasikan-pemberhentian-tidak-hormat/": {
   "status": "tanpa dateline",
   "diambil": "2026-10-06"
+ },
+ "https://beritajatim.com/ketua-kpk-terima-laporan-oknum-petahana-maju-pilkada-membonceng-dana-covid-19": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://jurnalpatrolinews.co.id/headline/dugaan-tindak-pidana-pemilu-dilaporkan-ke-gubernur-dkpp-bawaslu-dan-mendagri-ada-kemungkinan-risma-dipenjara/": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.jatimpos.co/hukum/15752-kasus-pelanggaran-netralitas-segera-disidangkan-kades-randuharjo-terancam-6-bulan-penjara": {
+  "status": "gagal",
+  "galat": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of ",
+  "diambil": "2026-10-06"
+ },
+ "https://news.detik.com/berita-jawa-barat/d-5057488/bawaslu-temukan-pola-politisasi-bansos-covid-19-di-pilkada-banten": {
+  "status": "ok",
+  "teks": "Serang",
+  "qid": "Q10126",
+  "label": "Serang",
+  "diambil": "2026-10-06"
+ },
+ "https://mimbarsumbar.id/fadly-amran-diduga-kena-fitnah-maidestal-hari-mahesa-hanya-petahana-yang-bisa-mobilisasi-asn-dan-pengurus-rt-rw/": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://kahaba.net/penuhi-unsur-pelanggaran-pemilu-camat-raba-terancam-penjara-6-bulan": {
+  "status": "gagal",
+  "galat": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of ",
+  "diambil": "2026-10-06"
+ },
+ "https://www.bbc.com/indonesia/indonesia-52533254": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.detik.com/sulsel/pilkada/d-7638935/kades-sugihwaras-divonis-2-bulan-bui-di-kasus-pelanggaran-pidana-pemilu": {
+  "status": "ok",
+  "teks": "Polewali Mandar",
+  "qid": "Q15353",
+  "label": "Polewali Mandar",
+  "diambil": "2026-10-06"
+ },
+ "https://www.metrotvnews.com/play/NG9C330d-terbukti-melanggar-netralitas-kades-sumarrang-divonis-5-bulan-percobaan": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.kompas.tv/regional/482979/kades-di-lombok-divonis-penjara-3-bulan-kampanyekan-istri-yang-nyaleg-di-grup-wa-dan-facebook": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.detik.com/bali/berita/d-7178183/kampanyekan-istri-sebagai-caleg-pkb-kades-di-lombok-divonis-3-bulan-bui": {
+  "status": "ok",
+  "teks": "Mataram",
+  "qid": "Q14126",
+  "label": "Mataram",
+  "diambil": "2026-10-06"
+ },
+ "https://insidelombok.id/berita-utama/diduga-kampanyekan-istri-yang-nyaleg-kades-langko-dituntut-5-bulan-penjara-dan-denda-rp5-juta/": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://suarantb.com/2024/02/06/kampanyekan-istri-kades-langko-divonis-tiga-bulan-penjara/": {
+  "status": "gagal",
+  "galat": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of ",
+  "diambil": "2026-10-06"
+ },
+ "https://regional.kompas.com/read/2024/02/01/204352178/tipilu-karena-kampanyekan-istri-di-medsos-kepala-desa-di-lombok-dituntut-5": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://hukum.tvrinews.com/berita/trftcxc-kadis-sosial-tanah-daftar-ditahan-usai-divonis-melanggar-netralitas-asn": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
  }
 }
