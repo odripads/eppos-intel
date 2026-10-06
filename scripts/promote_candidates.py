@@ -68,7 +68,7 @@ LUAR_LINGKUP = re.compile(r"(selingkuh|perselingkuhan|asusila|mesum|zina|peleceh
     r"\bott\b|fee proyek|\blhkpn\b|calo jabatan|(?:kenakan|pakai|memakai|penggunaan) masker|"
     r"kekerasan seksual|korban kekerasan|\bjudol\b|jenazah|tak senonoh|nikah siri|\btampar|menampar|payudara|raba dada|"
     r"over ?dosis|dugem|gizi buruk|stunting|dilaporkan hilang|\bbencana\b|gratifikasi|utang kampanye|mutasi penduduk|pindah domisili|"
-    r"gar itb|gadai|minum bir|\bmiras\b|"
+    r"gar itb|gadai|minum bir|\bmiras\b|sinopsis|"
     # "PSU" is also the housing-estate infrastructure a developer hands over (prasarana, sarana, utilitas)
     r"sentul city|\bresidence\b|\bfasum\b|\bfasos\b|prasarana|perumahan|\btewas\b|\btebas\b|\btikam\b|disuntik mati|terbakar|ijazah palsu|kekasih gelap|pembuangan bayi)", re.I)
 # A reminder or an explainer is about the topic but is not an incident. Refused only when the headline
@@ -126,7 +126,9 @@ PENJELAS = re.compile(r"(sanksi menanti|ini sanksinya|berikut sanksi|jenis pelan
     r"jenis pelanggaran asn|enam penyebab|sindografis|siapkan skb|sanksi lemah|semoga tak ada lagi|wajah pemerintah|"
     r"jangan gadaikan|meningkat signifikan|strategi cegah|berikut ancaman|\btertinggi\b|di \d+ daerah|jadi catatan|"
     r"(?:terungkap!?|ada|sebanyak) \d{3,} asn|awasi (?:promosi|mutasi)|minta[^,]{0,50}ditindak tegas|harus berani|"
-    r"\d+ persen kasus|\bapresiasi\b|pastikan netralitas|persoalan utama|^fenomena\b|"
+    r"\d+ persen kasus|\bapresiasi\b|pastikan netralitas|persoalan utama|^fenomena\b|^uu pemilu:|larangan-larangan|"
+    r"(?:tak|tidak) boleh (?:kampanye|kampanyekan|ikut)|jadwal dan lokasi|\baman$|berlangsung (?:tertib|meriah|damai)|"
+    r"^bukan kampanye|rekomendasi balon|waspada asn|dampak hukum|"
     r"rekomendasi (?:pdip|pdi-p|golkar|nasdem|gerindra|pkb|pks|\bpan\b|ppp|demokrat|psi|perindo|hanura|gelora)|"
     r"^mendagri[^,]*total ada \d|minta (?:dugaan )?pelanggaran[^,]{0,20}ditindak|\bakan dicopot\b|"
     r"bentuk tim (?:untuk|khusus)|penertiban (?:aps|apk|alat peraga|baliho)|"
@@ -152,7 +154,8 @@ BERSYARAT = re.compile(r"(?:jika|bila|apabila|kalau|agar (?:tak|tidak)|supaya (?
 # a village-head election is not a pilkada; refused unless the headline also names the regional race
 PILKADES = re.compile(r"(pilkades|cakades|calon kepala desa|calon kades|pemilihan kepala desa|pemilihan rt|pilpanag|"
                       r"pemilihan pangulu|pemilihan wali nagari|pemilihan lurah|kampanye lurah desa|\bpilur\b|paslon lurah|calon lurah|"
-                      r"calon (?:ketua )?rt\b|calon kepling|jabatan kepling|kades terpilih|paw kades)", re.I)
+                      r"calon (?:ketua )?rt\b|calon kepling|jabatan kepling|kades terpilih|paw kades|calon wali nagari|"
+                      r"calon perbekel|calon kepala kampung|calon keuchik|calon pangulu|pilurdes|kades petahana)", re.I)
 PILKADA_KATA = re.compile(r"(pilkada|pilbup|pilwal|pilgub|paslon|cabup|cagub|calon bupati|calon wali)", re.I)
 TERJADI = re.compile(r"(dilaporkan|melaporkan|laporkan|diperiksa|dipanggil|terbukti|disanksi|dijatuhi|"
     # the verb, not the noun: "ASN langgar netralitas" reports an act, "cegah pelanggaran" does not
@@ -217,7 +220,9 @@ AKTOR_EKSEKUTIF = re.compile(r"(bupati|wali ?kota|walikota|\bwako\b|gubernur|\bc
     r"fasilitas negara|\bpip\b|bansos|bantuan sosial|\bpkh\b|sembako|\banggaran\b|\bapbd\b)", re.I)
 CALON_FRASA = re.compile(r"(?:bakal calon|bacalon|balon|bapaslon|paslon|calon|cabup|cagub|cawalkot|cawali|mantan|eks)\s+(?:wakil\s+)?"
                          r"(?:bupati|wali ?kota|walikota|gubernur|kepala daerah)"
-                         r"(?:\s+(?:dan|&)\s+wakil\s+(?:bupati|wali ?kota|walikota|gubernur))?", re.I)
+                         r"(?:\s+(?:dan|&)\s+wakil\s+(?:bupati|wali ?kota|walikota|gubernur))?"
+                         # "didoakan jadi wali kota": a candidate's hoped-for office, not a sitting one
+                         r"|jadi (?:wali ?kota|walikota|bupati|gubernur)\b", re.I)
 
 
 # user-blog platforms: a citizen's essay is not a news report of an incident

@@ -2326,5 +2326,73 @@
  "https://regional.kompas.com/read/2024/02/16/190229978/sederet-dugaan-pelanggaran-pemilu-di-jateng-ada-surat-suara-tercoblos-dan": {
   "status": "tanpa dateline",
   "diambil": "2026-10-06"
+ },
+ "https://patmamedia.com/berita/oknum-asn-kepergok-terlibat-kampanye-mediasi-gagal-dilakukan": {
+  "status": "gagal",
+  "galat": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of ",
+  "diambil": "2026-10-06"
+ },
+ "https://regional.kompas.com/read/2019/02/22/22513241/15-camat-dikawal-super-hero-avengers-saat-diperiksa-bawaslu-sulsel": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://lombokpost.jawapos.com/politika/2409060047/dugaan-pelanggaran-netralitas-puluhan-asn-di-ntb-dilaporkan-ke-bkn": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://kaltimtoday.co/dugaan-terlibat-politik-praktis-najib-minta-pemkot-tindak-tegas-oknum-camat": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.jpnn.com/news/kades-dan-asn-diduga-digerakkan-dukung-paslon-tertentu-di-pilkada-jateng": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://www.harianbanten.co.id/camat-grogol-diperiksa-bawaslu-ini-kata-tim-kuasa-hukum-robinsar-fajar-hadi-prabowo/": {
+  "status": "gagal",
+  "galat": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of ",
+  "diambil": "2026-10-06"
+ },
+ "https://strateginews.id/2024/10/01/terciduk-oknum-kepala-desa-tellesang-dan-pegawai-kecamatan-ikuti-kampanye-arrahman-di-kelurahan-siwa/": {
+  "status": "gagal",
+  "galat": "HTTP Error 403: Forbidden",
+  "diambil": "2026-10-06"
+ },
+ "https://www.detik.com/jabar/hukum-dan-kriminal/d-7202843/awal-mula-kades-majasetra-kampanyekan-caleg-berujung-di-meja-hijau": {
+  "status": "ok",
+  "teks": "Kabupaten Bandung",
+  "qid": "Q10389",
+  "label": "Bandung",
+  "diambil": "2026-10-06"
+ },
+ "https://www.tempo.co/politik/megawati-minta-rakyat-kritis-soal-kampanye-terselubung-lewat-pembagian-bansos-dan-sembako-95503": {
+  "status": "gagal",
+  "galat": "HTTP Error 403: Forbidden",
+  "diambil": "2026-10-06"
+ },
+ "https://rejabar.republika.co.id/berita/sn30no512/lurah-cigadung-berpose-tiga-jari-diduga-dukung-farhan-ini-hasil-klarifikasi-pj-wali-kota": {
+  "status": "ok",
+  "teks": "BANDUNG",
+  "qid": "Q10389",
+  "label": "Bandung",
+  "diambil": "2026-10-06"
+ },
+ "https://radarbali.jawapos.com/nasional/1804240026/ikut-kampanye-paslon-panwaslu-klarifikasi-jajaran-perangkat-desa": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
+ },
+ "https://suarajatimpost.com/diduga-dukung-salah-satu-paslon-ini-jawaban-kades-selo-tambak": {
+  "status": "gagal",
+  "galat": "HTTP Error 403: Forbidden",
+  "diambil": "2026-10-06"
+ },
+ "https://www.pedulirakyat.co.id/kompak-bontoa-laporkan-kepala-desa-jojjolo-ke-panwascam-atas-politisasi-raskin-dan-kampanye/1390/": {
+  "status": "gagal",
+  "galat": "<urlopen error _ssl.c:1011: The handshake operation timed out>",
+  "diambil": "2026-10-06"
+ },
+ "https://www.metro-online.co/2024/10/diduga-persulit-warga-karena-gak-dukung.html": {
+  "status": "tanpa dateline",
+  "diambil": "2026-10-06"
  }
 }
