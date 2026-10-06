@@ -30612,8 +30612,8 @@
   "hasil": null,
   "sumber_1_url": "https://teropongnews.com/2024/10/tiga-oknum-asn-diduga-tidak-netral-jadi-temuan-bawaslu/",
   "sumber_1_outlet": "teropongnews.com",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://suara.merauke.go.id/post/3813/tiga-oknum-asn-diduga-tidak-netral-jadi-temuan-bawaslu.html",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -30624,7 +30624,8 @@
   "kueri": "teropongnews.com search='aparatur tidak netral' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 0,
-  "saluran": "wp-grid"
+  "saluran": "wp-grid",
+  "kemiripan_pasangan": 1.0
  },
  {
   "insiden_id": "AUTO-02167",
@@ -72710,5 +72711,36 @@
   "lingkup_dasar": "mekanisme tipologi di dalam jendela pilkada",
   "_path": 23,
   "saluran": "gnews-peramban"
+ },
+ {
+  "insiden_id": "AUTO-05463",
+  "tanggal": null,
+  "tanggal_berita": "2024-10-10",
+  "provinsi": "Papua Selatan",
+  "kab_kota": "Merauke",
+  "lokasi_dasar": "nama kota di domain outlet",
+  "lokasi_perkiraan": true,
+  "lokasi_tingkat": "kab_kota",
+  "pelaku_jabatan": null,
+  "sasaran_jenis": null,
+  "mekanisme": "paksaan aparat sipil",
+  "ringkasan_satu_kalimat": null,
+  "hasil": null,
+  "sumber_1_url": "https://suara.merauke.go.id/post/3813/tiga-oknum-asn-diduga-tidak-netral-jadi-temuan-bawaslu.html",
+  "sumber_1_outlet": "Suara Merauke",
+  "sumber_2_url": "https://teropongnews.com/2024/10/tiga-oknum-asn-diduga-tidak-netral-jadi-temuan-bawaslu/",
+  "status_verifikasi": "dua sumber",
+  "status_kurasi": "otomatis",
+  "periode_pilpres": "Periode V",
+  "gelombang_pilkada": "2024",
+  "judul_sumber_1": "Tiga Oknum ASN Diduga Tidak Netral Jadi Temuan Bawaslu",
+  "judul_status": "terverifikasi",
+  "diisi_oleh": "penelusuran otomatis",
+  "tanggal_isi": "2026-10-06",
+  "kueri": "netralitas ASN Merauke after:2024-05-27 before:2024-12-27",
+  "lingkup_dasar": "konteks elektoral di judul",
+  "_path": 0,
+  "saluran": "gnews-rss",
+  "kemiripan_pasangan": 1.0
  }
 ]
