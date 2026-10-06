@@ -98546,8 +98546,8 @@
   "provinsi_kueri": "(arsip outlet)",
   "kueri": "papua.kabardaerah.com search='Jayapura kepala kampung' 2026-01-01..2026-09-29",
   "ditemukan_pada": "2026-10-06",
-  "status_tinjau": null,
-  "catatan_tinjau": null
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
  },
  {
   "kandidat_id": "KAN-08619",
@@ -98562,8 +98562,8 @@
   "provinsi_kueri": "(arsip outlet)",
   "kueri": "nabire.net search='Deiyai kepala kampung' 2026-01-01..2026-09-29",
   "ditemukan_pada": "2026-10-06",
-  "status_tinjau": null,
-  "catatan_tinjau": null
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
  },
  {
   "kandidat_id": "KAN-08620",
@@ -98578,8 +98578,8 @@
   "provinsi_kueri": "(arsip outlet)",
   "kueri": "nabire.net search='Dogiyai kepala kampung' 2026-01-01..2026-09-29",
   "ditemukan_pada": "2026-10-06",
-  "status_tinjau": null,
-  "catatan_tinjau": null
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
  },
  {
   "kandidat_id": "KAN-08621",
@@ -98594,8 +98594,8 @@
   "provinsi_kueri": "(arsip outlet)",
   "kueri": "nabire.net search='Intan Jaya kepala kampung' 2026-01-01..2026-09-29",
   "ditemukan_pada": "2026-10-06",
-  "status_tinjau": null,
-  "catatan_tinjau": null
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
  },
  {
   "kandidat_id": "KAN-08622",
@@ -98610,8 +98610,8 @@
   "provinsi_kueri": "(arsip outlet)",
   "kueri": "kilaspapua.com search='Jayapura kepala kampung' 2022-01-01..2022-12-31",
   "ditemukan_pada": "2026-10-06",
-  "status_tinjau": null,
-  "catatan_tinjau": null
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
  },
  {
   "kandidat_id": "KAN-08623",
@@ -98625,6 +98625,22 @@
   "mekanisme_dugaan": "paksaan kepala desa dan lurah",
   "provinsi_kueri": "(arsip outlet)",
   "kueri": "kilaspapua.com search='Jayapura kepala kampung' 2022-01-01..2022-12-31",
+  "ditemukan_pada": "2026-10-06",
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-08624",
+  "judul": "Penambangan emas di Wasirawi Distrik Masni Papua Barat diduga jadi praktik perampasan kekayaan alam",
+  "outlet": "arsip.jubi.id",
+  "tanggal_terbit": "2022-01-10",
+  "url": "https://arsip.jubi.id/penambangan-emas-di-wasirawi-distrik-masni-papua-barat-diduga-jadi-praktik-perampasan-kekayaan-alam/",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2022",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "arsip.jubi.id search='Manokwari kepala kampung' 2022-01-01..2022-12-31",
   "ditemukan_pada": "2026-10-06",
   "status_tinjau": null,
   "catatan_tinjau": null
