@@ -87444,5 +87444,37 @@
   "ditemukan_pada": "2026-10-06",
   "status_tinjau": "diterima otomatis",
   "catatan_tinjau": "diterima massal 2026-10-06 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-05504",
+  "judul": "KKB Kodap III Ndugama Diduga Bertanggung Jawab atas Penembakan Tiga ASN Dinas Pertanian Jawawijaya, Mentan Amran Sulaiman Minta Pengamanan Diperketat",
+  "outlet": "AFU.id",
+  "tanggal_terbit": "2026-09-10",
+  "url": null,
+  "url_google": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQNFd0QzU5ZEJWVTEzQTM1M25ONTZ5N0d4VFVaQW1ZakZiRlhlZjYxLW5TOFZRaHJTWXVRWGJkT0t1b1ZlZHE3bXA3bzRxQTJidF84OVBBMUxQQzlkZTctSmV0VlVzRXlQcUJVdVU2b1o2MkxQVkc2RVlOT2M0YjJMd3hUUEkwcHRPWVRmaHRQYXlpTE9VT2JzYVlpUkNtRlhIMTFhTll3V0p0eTVBT1oxQTlMUU5EVmhyS0JCNHNxMlU2TWNkWTM1WVNHZTEtWmo0SUg1S190RkhZUko1T0dLd0JRZTNyVkhvckk5Skx3b08xRUVBb0ZlM2hOZmdrTDV5blE",
+  "status_url": "belum terselesaikan",
+  "gelombang_pilkada": "2026",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "Papua Pegunungan",
+  "kueri": "ASN tidak netral Jayawijaya after:2026-01-01 before:2026-09-29",
+  "ditemukan_pada": "2026-10-06",
+  "status_tinjau": "tertahan",
+  "catatan_tinjau": "tanpa URL sumber; setiap baris wajib punya tautan sumber"
+ },
+ {
+  "kandidat_id": "KAN-05505",
+  "judul": "Bupati Dogiyai Instruksikan Larang Miras, Pencurian dan Pemalangan Jalan",
+  "outlet": "Suara Papua",
+  "tanggal_terbit": "2026-03-25",
+  "url": null,
+  "url_google": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPRDJjSjZqUkJZQWVrSjQzZmlsejR6eEJVb00tVm5qejc3dUhFcDFHekFqdzVFRF9tNktLTzZFSk1YSGFhME1sYmdZMzA5d3cxaVJjV1Q1VUh6R2JtSWdkSjVzTE9vSW5UN3A3RFgzaTItbFN0UWtrS1VqQ3hocW9pNjdzbXRjd2V6TFZKOHdsbEdWenMwbUxrbk5ndXB1c3Rwb19WMkc0OTk1QQ",
+  "status_url": "belum terselesaikan",
+  "gelombang_pilkada": "2026",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "Papua Tengah",
+  "kueri": "kepala kampung pilkada Dogiyai after:2026-01-01 before:2026-09-29",
+  "ditemukan_pada": "2026-10-06",
+  "status_tinjau": "tertahan",
+  "catatan_tinjau": "tanpa URL sumber; setiap baris wajib punya tautan sumber"
  }
 ]
