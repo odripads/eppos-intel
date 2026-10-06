@@ -74,3 +74,41 @@
 ── bangun ulang bundel situs
 /Users/odripads/eppos-intel/dist/eppos-peta.html 1.02 MB
 ── selesai · 0 kandidat menunggu tinjauan · buka tinjau.html
+════════ 2026-10-06 09:30:05 · rutin harian (40 sel) ════════
+── sapuan arsip outlet (WordPress REST, tanpa batas laju bersama)
+  GAGAL surabayaaktual.com 'bansos pilkada' 2024: URLError
+  GAGAL tangerangonline.id 'bansos dipolitisasi' 2024: URLError
+  GAGAL depoknews.id 'ASN terlibat politik praktis' 2024: timeout
+  GAGAL depoknews.id 'sanksi disiplin ASN pilkada' 2024: timeout
+
+0 kandidat baru · 0 menunggu tinjauan
+── sapuan Google News (dibatasi laju; pelan)
+  GAGAL honorer diancam pilkada "DI Yogyakarta" after:2020-06-09 bef: HTTPError (sel diulang besok)
+  GAGAL "kepala desa" dukung paslon dilaporkan "DI Yogyakarta" after: HTTPError (sel diulang besok)
+  GAGAL lurah langgar netralitas "DI Yogyakarta" after:2020-06-09 be: HTTPError (sel diulang besok)
+  5 kegagalan beruntun — kemungkinan dibatasi laju; hentikan run ini.
+
+0 kandidat baru · 0 menunggu tinjauan · 389520/396011 sel grid selesai
+── selesaikan URL kandidat (bertahap, endpoint Google membatasi laju)
+  GAGAL KAN-01651 Diduga Tidak Netral, Nasib Camat Talun dan Lurah Kamulan Diujung Tanduk
+  GAGAL KAN-01653 LSM BIDIK Laporkan Dugaan Oknum ASN Berkampanye
+0 terselesaikan, 3 gagal, 5 masih menunggu
+── verifikasi judul sumber baru
+[11/12] gagal         https://kaltim.tribunnews.com/2021/02/27/bkpsdm-nunukan-tepis-isu-pemb  →  
+[12/12] gagal         https://www.tempo.co/politik/bawaslu-catat-3-daerah-ini-paling-banyak-  →  
+94 terverifikasi, 12 gagal → /Users/odripads/eppos-intel/data/judul_terverifikasi.json
+── terima kandidat baru (izin berdiri Odri, 29 Sep 2026)
+0 kandidat ditandai · 5 tertahan tanpa URL · 0 belum ditandai
+── masukkan temuan otomatis ke lapisan peta
+3024 kandidat disisihkan sebagai di luar lingkup (tercatat, tidak dibuang)
+2396 baris otomatis · 2006 punya kab/kota · 155 tanpa lokasi · 189 dua sumber
+38 provinsi tersentuh: Jawa Timur(364), Jawa Tengah(285), Sulawesi Selatan(265), Jawa Barat(178), Banten(131), Kepulauan Riau(91), Sulawesi Tenggara(67), Kalimantan Tengah(62), Sumatera Utara(58), Sulawesi Utara(56), Sulawesi Tengah(50), Bali(48)
+── bangun ulang data dari xlsx
+ "insiden": 53,
+ "kasus_resmi": 64,
+  "insiden": 9,
+ "judul_terverifikasi": 93,
+ "koordinat": 86,
+── bangun ulang bundel situs
+/Users/odripads/eppos-intel/dist/eppos-peta.html 1.99 MB
+── selesai · 0 kandidat menunggu tinjauan · buka tinjau.html

@@ -469,7 +469,7 @@
   "status": "terverifikasi"
  },
  "https://www.mkri.id/berita/pelanggaran-netralitas-asn-dalam-pilkada-tanah-datar-22485": {
-  "diambil": "2026-10-05T09:45:14",
+  "diambil": "2026-10-06T09:49:23",
   "http": 403,
   "url_akhir": "https://www.mkri.id/berita/pelanggaran-netralitas-asn-dalam-pilkada-tanah-datar-22485",
   "judul": null,
@@ -518,14 +518,14 @@
   "status": "terverifikasi"
  },
  "https://jatim.jpnn.com/politik/32783": {
-  "diambil": "2026-10-05T09:45:16",
+  "diambil": "2026-10-06T09:49:25",
   "http": 200,
   "url_akhir": "https://jatim.jpnn.com/politik/32783",
   "judul": null,
   "status": "gagal"
  },
  "https://timesindonesia.co.id/politik/518152": {
-  "diambil": "2026-10-05T09:45:19",
+  "diambil": "2026-10-06T09:49:28",
   "http": 403,
   "url_akhir": "https://timesindonesia.co.id/politik/518152",
   "judul": null,
@@ -616,28 +616,28 @@
   "status": "terverifikasi"
  },
  "https://ternate.tribunnews.com/2024/12/10/bawaslu-proses-dugaan-pelanggaran-tsm-di-pilkada-halmahera-selatan-2024": {
-  "diambil": "2026-10-05T09:45:21",
+  "diambil": "2026-10-06T09:49:30",
   "http": 403,
   "url_akhir": "https://ternate.tribunnews.com/2024/12/10/bawaslu-proses-dugaan-pelanggaran-tsm-di-pilkada-halmahera-selatan-2024",
   "judul": null,
   "status": "gagal"
  },
  "https://papua.tribunnews.com/2024/11/13/dua-pejabat-publik-papua-dilaporkan-ke-bawaslu-terkait-pelanggaran-netralitas-asn": {
-  "diambil": "2026-10-05T09:45:24",
+  "diambil": "2026-10-06T09:49:33",
   "http": 403,
   "url_akhir": "https://papua.tribunnews.com/2024/11/13/dua-pejabat-publik-papua-dilaporkan-ke-bawaslu-terkait-pelanggaran-netralitas-asn",
   "judul": null,
   "status": "gagal"
  },
  "https://bantuanhukum.or.id/5-tahun-uu-ite-1-pasal-represif-25-korban-lalu-berapa-lagi-yang-akan-di-prita-kan/": {
-  "diambil": "2026-10-05T09:44:29",
+  "diambil": "2026-10-06T09:48:38",
   "http": 403,
   "url_akhir": "https://bantuanhukum.or.id/5-tahun-uu-ite-1-pasal-represif-25-korban-lalu-berapa-lagi-yang-akan-di-prita-kan/",
   "judul": null,
   "status": "gagal"
  },
  "https://tekno.kompas.com/read/2013/05/19/18435059/tulis-kecurangan-pilgub-ntt-di-facebook-pegiat-lsm-dilaporkan-ke-polisi": {
-  "diambil": "2026-10-05T09:44:32",
+  "diambil": "2026-10-06T09:48:41",
   "http": 202,
   "url_akhir": "https://tekno.kompas.com/read/2013/05/19/18435059/tulis-kecurangan-pilgub-ntt-di-facebook-pegiat-lsm-dilaporkan-ke-polisi",
   "judul": null,
@@ -658,7 +658,7 @@
   "status": "terverifikasi"
  },
  "https://mubaonline.id/berita/terjerat-kasus-lama-salah-satu-wartawan-di-muba-dituntut-1-tahun-3-bulan-penjara-muba1345d": {
-  "diambil": "2026-10-05T09:44:34",
+  "diambil": "2026-10-06T09:48:43",
   "http": null,
   "judul": null,
   "status": "gagal",
@@ -686,14 +686,14 @@
   "status": "terverifikasi"
  },
  "https://www.datariau.com/detail/berita/polda-riau-ungkap-kronologi-penganiayaan-wartawan-media-online-riau--pelaku-marah-karena-pemberitaan-tentang-pj-walikota-pekanbaru/1": {
-  "diambil": "2026-10-05T09:45:06",
+  "diambil": "2026-10-06T09:49:15",
   "http": null,
   "judul": null,
   "status": "gagal",
   "error": "SSLError"
  },
  "https://nasional.kompas.com/read/2018/06/24/14202451/mutasi-demosi-dan-promosi-jabatan-asn-masih-marak-jelang-pilkada?page=all": {
-  "diambil": "2026-10-05T09:45:26",
+  "diambil": "2026-10-06T09:49:35",
   "http": 202,
   "url_akhir": "https://nasional.kompas.com/read/2018/06/24/14202451/mutasi-demosi-dan-promosi-jabatan-asn-masih-marak-jelang-pilkada?page=all",
   "judul": null,
@@ -714,14 +714,14 @@
   "status": "terverifikasi"
  },
  "https://kaltim.tribunnews.com/2021/02/27/bkpsdm-nunukan-tepis-isu-pemberhentian-24-honorer-akibat-dendam-kesumat-pilkada-2020": {
-  "diambil": "2026-10-05T09:45:29",
+  "diambil": "2026-10-06T09:49:37",
   "http": 403,
   "url_akhir": "https://kaltim.tribunnews.com/2021/02/27/bkpsdm-nunukan-tepis-isu-pemberhentian-24-honorer-akibat-dendam-kesumat-pilkada-2020",
   "judul": null,
   "status": "gagal"
  },
  "https://www.tempo.co/politik/bawaslu-catat-3-daerah-ini-paling-banyak-kasus-asn-tak-netral--904454": {
-  "diambil": "2026-10-05T09:45:31",
+  "diambil": "2026-10-06T09:49:40",
   "http": 403,
   "url_akhir": "https://www.tempo.co/politik/bawaslu-catat-3-daerah-ini-paling-banyak-kasus-asn-tak-netral--904454",
   "judul": null,
