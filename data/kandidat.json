@@ -99284,5 +99284,37 @@
   "ditemukan_pada": "2026-10-07",
   "status_tinjau": "tertahan",
   "catatan_tinjau": "tanpa URL sumber; setiap baris wajib punya tautan sumber"
+ },
+ {
+  "kandidat_id": "KAN-08665",
+  "judul": "Bawaslu Bolsel Mulai Tangani Dugaan ASN jadi Admin Pemenangan Paslon",
+  "outlet": "manadonews.co.id",
+  "tanggal_terbit": "2020-10-20",
+  "url": "https://www.manadonews.co.id/2020/10/20/bawaslu-bolsel-mulai-tangani-dugaan-asn-jadi-admin-pemenangan-paslon/",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2020",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "manadonews.co.id search='ASN terlibat politik praktis' 2020-06-09..2021-01-09",
+  "ditemukan_pada": "2026-10-07",
+  "status_tinjau": null,
+  "catatan_tinjau": null
+ },
+ {
+  "kandidat_id": "KAN-08666",
+  "judul": "Diduga, Oknum ASN Kotamobagu jadi Admin Grup Pemenangan Paslon",
+  "outlet": "manadonews.co.id",
+  "tanggal_terbit": "2020-10-15",
+  "url": "https://www.manadonews.co.id/2020/10/15/diduga-oknum-asn-kotamobagu-jadi-admin-grup-pemenangan-paslon/",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2020",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "manadonews.co.id search='ASN terlibat politik praktis' 2020-06-09..2021-01-09",
+  "ditemukan_pada": "2026-10-07",
+  "status_tinjau": null,
+  "catatan_tinjau": null
  }
 ]
