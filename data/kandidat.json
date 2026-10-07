@@ -99410,8 +99410,8 @@
   "provinsi_kueri": "(arsip outlet)",
   "kueri": "tangerangonline.id search='sanksi disiplin ASN pilkada' 2020-06-09..2021-01-09",
   "ditemukan_pada": "2026-10-07",
-  "status_tinjau": null,
-  "catatan_tinjau": null
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-07 atas izin berdiri Odri; bukan tinjauan per baris"
  },
  {
   "kandidat_id": "KAN-08673",
@@ -99426,8 +99426,8 @@
   "provinsi_kueri": "(arsip outlet)",
   "kueri": "tangerangonline.id search='netralitas ASN' 2020-06-09..2021-01-09",
   "ditemukan_pada": "2026-10-07",
-  "status_tinjau": null,
-  "catatan_tinjau": null
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-07 atas izin berdiri Odri; bukan tinjauan per baris"
  },
  {
   "kandidat_id": "KAN-08674",
@@ -99442,8 +99442,8 @@
   "provinsi_kueri": "(arsip outlet)",
   "kueri": "tangerangonline.id search='netralitas ASN' 2020-06-09..2021-01-09",
   "ditemukan_pada": "2026-10-07",
-  "status_tinjau": null,
-  "catatan_tinjau": null
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-07 atas izin berdiri Odri; bukan tinjauan per baris"
  },
  {
   "kandidat_id": "KAN-08675",
@@ -99458,8 +99458,8 @@
   "provinsi_kueri": "(arsip outlet)",
   "kueri": "tangerangonline.id search='netralitas ASN' 2020-06-09..2021-01-09",
   "ditemukan_pada": "2026-10-07",
-  "status_tinjau": null,
-  "catatan_tinjau": null
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-07 atas izin berdiri Odri; bukan tinjauan per baris"
  },
  {
   "kandidat_id": "KAN-08676",
@@ -99474,7 +99474,55 @@
   "provinsi_kueri": "(arsip outlet)",
   "kueri": "tangerangonline.id search='ASN dilaporkan Bawaslu' 2020-06-09..2021-01-09",
   "ditemukan_pada": "2026-10-07",
-  "status_tinjau": null,
-  "catatan_tinjau": null
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-07 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-08677",
+  "judul": "Pesan Mobilisasi ASN Lanjut ke KASN, Bawaslu Putuskan Camat Bersalah",
+  "outlet": "tangerangonline.id",
+  "tanggal_terbit": "2020-07-04",
+  "url": "https://tangerangonline.id/2020/07/04/pesan-mobilisasi-asn-lanjut-ke-kasn-bawaslu-putuskan-camat-bersalah/",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2020",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "tangerangonline.id search='rekomendasi KASN' 2020-06-09..2021-01-09",
+  "ditemukan_pada": "2026-10-07",
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-07 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-08678",
+  "judul": "Oknum Lurah Dilaporkan Polisi Gegera Ngamuk di SMAN 3 Tangsel",
+  "outlet": "tangerangonline.id",
+  "tanggal_terbit": "2020-07-17",
+  "url": "https://tangerangonline.id/2020/07/17/oknum-lurah-dilaporkan-polisi-gegera-ngamuk-di-sman-3-tangsel/",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2020",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "tangerangonline.id search='lurah dilaporkan' 2020-06-09..2021-01-09",
+  "ditemukan_pada": "2026-10-07",
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-07 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-08679",
+  "judul": "Dituding Aniaya Warga, Kades Bangka Ajang Dilaporkan ke Polisi",
+  "outlet": "floresa.co",
+  "tanggal_terbit": "2018-05-25",
+  "url": "https://floresa.co/reportase/peristiwa/34236/2018/05/25/dituding-aniaya-warga-kades-bangka-ajang-dilaporkan-ke-polisi",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2018",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "floresa.co search='kepala desa dilaporkan' 2017-12-27..2018-07-27",
+  "ditemukan_pada": "2026-10-07",
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-07 atas izin berdiri Odri; bukan tinjauan per baris"
  }
 ]
