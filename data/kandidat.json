@@ -99268,5 +99268,21 @@
   "ditemukan_pada": "2026-10-07",
   "status_tinjau": "diterima otomatis",
   "catatan_tinjau": "diterima massal 2026-10-07 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-08664",
+  "judul": "Oknum Aparat Desa hingga Camat di Mamasa Dilaporkan Menyuap Pemilih",
+  "outlet": "Kompas.com",
+  "tanggal_terbit": "2018-06-27",
+  "url": null,
+  "url_google": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQb3k1Rnl4LV8tcVF2cGhNQ2RwOFdaaUVTd0Y4akxNU0JnRmZMdGE2dnc2TlU5ZjFmM2dRWWxocnVPeTRDbUJyOXdMQ1JvNnhfbmVyZERlT1BYNGMxdGJoMzFTcXpzd2F0d1Z6aDNDVDhDRDQ4Z2hDcGFLaXkwaFJHZjFGTURldjlfbjdrZkJKdVVtLW13RU5kUk4yVzlRRm9ETUxpQ2lIQmxEdFZWY1pxQ0EtWkhuN1pIVFBjcA",
+  "status_url": "duplikat",
+  "gelombang_pilkada": "2018",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "Sulawesi Barat",
+  "kueri": "kepala desa pilkada Mamasa after:2017-12-27 before:2018-07-27",
+  "ditemukan_pada": "2026-10-07",
+  "status_tinjau": "tertahan",
+  "catatan_tinjau": "tanpa URL sumber; setiap baris wajib punya tautan sumber"
  }
 ]
