@@ -99828,5 +99828,21 @@
   "ditemukan_pada": "2026-10-07",
   "status_tinjau": "tertahan",
   "catatan_tinjau": "tanpa URL sumber; setiap baris wajib punya tautan sumber"
+ },
+ {
+  "kandidat_id": "KAN-08699",
+  "judul": "Kakam Sambakungan Dilaporkan atas Dugaan Pemalsuan Surat Tanah",
+  "outlet": "beraunews.id",
+  "tanggal_terbit": "2026-01-15",
+  "url": "https://beraunews.id/kakam-sambakungan-dilaporkan-atas-dugaan-pemalsuan-surat-tanah/",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2026",
+  "mekanisme_dugaan": "paksaan kepala desa dan lurah",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "beraunews.id search='camat dilaporkan' 2026-01-01..2026-09-29",
+  "ditemukan_pada": "2026-10-07",
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-07 atas izin berdiri Odri; bukan tinjauan per baris"
  }
 ]
