@@ -121,3 +121,30 @@
 
 0 kandidat baru · 0 menunggu tinjauan
 ── sapuan Google News (dibatasi laju; pelan)
+  2020 Sulawesi Utara     tekanan terhadap kritik   0 hasil → 0 kandidat
+  2020 Sulawesi Utara     tekanan terhadap kritik   0 hasil → 0 kandidat
+  2020 Sulawesi Utara     pengalihan sumber daya    0 hasil → 0 kandidat
+  2020 Sulawesi Utara     pengalihan sumber daya    0 hasil → 0 kandidat
+
+0 kandidat baru · 0 menunggu tinjauan · 436304/442795 sel grid selesai
+── selesaikan URL kandidat (bertahap, endpoint Google membatasi laju)
+semua kandidat sudah punya URL
+── verifikasi judul sumber baru
+[19/20] terverifikasi https://biaknumfor.bawaslu.go.id/berita/sentra-gakkumdu-kabupaten-biak  →  Sentra Gakkumdu Kabupaten Biak Adakan Konferensi Pers: Satu 
+[20/20] terverifikasi https://telukwondama.bawaslu.go.id/berita/bawaslu-teluk-wondama-terima  →  Bawaslu Teluk Wondama Terima Beberapa Laporan Dugaan Pelangg
+104 terverifikasi, 10 gagal → /Users/odripads/eppos-intel/data/judul_terverifikasi.json
+── terima kandidat baru (izin berdiri Odri, 29 Sep 2026)
+7 kandidat ditandai · 33 tertahan tanpa URL · 0 belum ditandai
+── masukkan temuan otomatis ke lapisan peta
+3685 kandidat disisihkan sebagai di luar lingkup (tercatat, tidak dibuang)
+2495 baris otomatis · 2081 punya kab/kota · 172 tanpa lokasi · 203 dua sumber
+38 provinsi tersentuh: Jawa Timur(365), Jawa Tengah(285), Sulawesi Selatan(266), Jawa Barat(178), Banten(135), Kepulauan Riau(91), Sulawesi Tenggara(68), Kalimantan Tengah(60), Sulawesi Utara(59), Sumatera Utara(58), Sulawesi Tengah(52), Bali(47)
+── bangun ulang data dari xlsx
+ "insiden": 53,
+ "kasus_resmi": 72,
+  "insiden": 9,
+ "judul_terverifikasi": 93,
+ "koordinat": 92,
+── bangun ulang bundel situs
+/Users/odripads/eppos-intel/dist/eppos-peta.html 2.07 MB
+── selesai · 5 kandidat menunggu tinjauan · buka tinjau.html
