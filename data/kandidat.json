@@ -99812,5 +99812,21 @@
   "ditemukan_pada": "2026-10-07",
   "status_tinjau": "diterima otomatis",
   "catatan_tinjau": "diterima massal 2026-10-07 atas izin berdiri Odri; bukan tinjauan per baris"
+ },
+ {
+  "kandidat_id": "KAN-08698",
+  "judul": "Diduga Takut Diperiksa Kejagung, Bupati Puncak Papua Menghilang",
+  "outlet": "Rmol.id",
+  "tanggal_terbit": "2016-03-18",
+  "url": null,
+  "url_google": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQQUZRZWJyb01aNWhibVBVZnFjcHctNXQteHJFR1phVHU3T3F2SkhJSU1TVXpqRHFGTVE3Wno5UmNGZGltWklaOUxTczZrOEF1bG8yb2JhOE5IaGFlUXpJNXFQbzFSYUJ5TDhRZ3gyVE1YQVY3amVMU01uQjVRRVpzX0pnX2puSjA5VkZoS1V3MEluVVpETUdlQmt0NmRfdHlXd2RV",
+  "status_url": "duplikat",
+  "gelombang_pilkada": "2016",
+  "mekanisme_dugaan": "paksaan warga penerima program",
+  "provinsi_kueri": "Papua Tengah",
+  "kueri": "bansos pilkada Puncak after:2016-01-10 before:2016-08-14",
+  "ditemukan_pada": "2026-10-07",
+  "status_tinjau": "tertahan",
+  "catatan_tinjau": "tanpa URL sumber; setiap baris wajib punya tautan sumber"
  }
 ]
