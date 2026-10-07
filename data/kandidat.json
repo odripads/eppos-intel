@@ -99252,5 +99252,21 @@
   "ditemukan_pada": "2026-10-07",
   "status_tinjau": "tertahan",
   "catatan_tinjau": "tanpa URL sumber; setiap baris wajib punya tautan sumber"
+ },
+ {
+  "kandidat_id": "KAN-08663",
+  "judul": "Kades Galung ''Preman'' Wartawan di Intimidasi",
+  "outlet": "RADAR NUSANTARA NEWS",
+  "tanggal_terbit": "2018-06-07",
+  "url": "http://www.radarnusantara.com/2018/06/kades-galung-preman-wartawan-di.html",
+  "url_google": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5xa3lSek54cTMxZDBFMTlfUFgwcHpfUTQ0bFRyT2V2VVhCdnRXcmdmZk5RbUFZMzdjRjBDZFBWQlFiaVlfc2NzaHI0c19jdG5PQ2d6c0JQeHNmTzI4UGRfX2JfSmphLUpDSmdYNW93ZkhRZk5DSVdQSFQ0dmtpQzA",
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2018",
+  "mekanisme_dugaan": "tekanan terhadap kritik",
+  "provinsi_kueri": "Kalimantan Utara",
+  "kueri": "wartawan intimidasi Tarakan after:2017-12-27 before:2018-07-27",
+  "ditemukan_pada": "2026-10-07",
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-10-07 atas izin berdiri Odri; bukan tinjauan per baris"
  }
 ]
