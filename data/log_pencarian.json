@@ -68,8 +68,15 @@
    "tanggal_pencarian": "2026-10-07",
    "alat": "Google News RSS (skrip)",
    "dijalankan_oleh": "rutin otomatis",
-   "sel": 2423,
+   "sel": 2509,
    "hasil_masuk": 10
+  },
+  {
+   "tanggal_pencarian": "2026-10-07",
+   "alat": "WordPress REST (skrip)",
+   "dijalankan_oleh": "rutin otomatis",
+   "sel": 6629,
+   "hasil_masuk": 15
   }
  ]
 }
