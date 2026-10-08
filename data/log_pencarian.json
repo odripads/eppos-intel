@@ -68,15 +68,29 @@
    "tanggal_pencarian": "2026-10-07",
    "alat": "Google News RSS (skrip)",
    "dijalankan_oleh": "rutin otomatis",
-   "sel": 3237,
+   "sel": 3263,
    "hasil_masuk": 11
   },
   {
    "tanggal_pencarian": "2026-10-07",
    "alat": "WordPress REST (skrip)",
    "dijalankan_oleh": "rutin otomatis",
-   "sel": 18092,
-   "hasil_masuk": 74
+   "sel": 19863,
+   "hasil_masuk": 81
+  },
+  {
+   "tanggal_pencarian": "2026-10-08",
+   "alat": "Google News RSS (skrip)",
+   "dijalankan_oleh": "rutin otomatis",
+   "sel": 40,
+   "hasil_masuk": 2
+  },
+  {
+   "tanggal_pencarian": "2026-10-08",
+   "alat": "WordPress REST (skrip)",
+   "dijalankan_oleh": "rutin otomatis",
+   "sel": 112,
+   "hasil_masuk": 17
   }
  ]
 }
