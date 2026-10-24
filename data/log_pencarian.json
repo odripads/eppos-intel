@@ -217,6 +217,20 @@
    "dijalankan_oleh": "rutin otomatis",
    "sel": 8,
    "hasil_masuk": 0
+  },
+  {
+   "tanggal_pencarian": "2026-10-24",
+   "alat": "Google News RSS (skrip)",
+   "dijalankan_oleh": "rutin otomatis",
+   "sel": 40,
+   "hasil_masuk": 0
+  },
+  {
+   "tanggal_pencarian": "2026-10-24",
+   "alat": "WordPress REST (skrip)",
+   "dijalankan_oleh": "rutin otomatis",
+   "sel": 6,
+   "hasil_masuk": 0
   }
  ]
 }
