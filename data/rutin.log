@@ -654,3 +654,39 @@ semua kandidat sudah punya URL
 ── bangun ulang bundel situs
 /Users/odripads/eppos-intel/dist/eppos-peta.html 2.10 MB
 ── selesai · 0 kandidat menunggu tinjauan · buka tinjau.html
+════════ 2026-10-28 09:30:00 · rutin harian (40 sel) ════════
+── sapuan arsip outlet (WordPress REST, tanpa batas laju bersama)
+  GAGAL indonesiadefense.com 'ASN terlibat politik praktis' 2024: HTTPError
+  GAGAL depoknews.id 'ASN terlibat politik praktis' 2024: JSONDecodeError
+  GAGAL indonesiadefense.com 'sanksi disiplin ASN pilkada' 2024: HTTPError
+  GAGAL depoknews.id 'sanksi disiplin ASN pilkada' 2024: JSONDecodeError
+
+0 kandidat baru · 0 menunggu tinjauan
+── sapuan Google News (dibatasi laju; pelan)
+  2017 Bengkulu           paksaan kepala desa dan   0 hasil → 0 kandidat
+  2017 Bengkulu           paksaan warga penerima p  0 hasil → 0 kandidat
+  2017 Bengkulu           paksaan warga penerima p  0 hasil → 0 kandidat
+  2017 Bengkulu           tekanan terhadap kritik   0 hasil → 0 kandidat
+
+0 kandidat baru · 0 menunggu tinjauan · 457559/463459 sel grid selesai
+── selesaikan URL kandidat (bertahap, endpoint Google membatasi laju)
+semua kandidat sudah punya URL
+── verifikasi judul sumber baru
+[7/8] gagal         https://kaltim.tribunnews.com/2021/02/27/bkpsdm-nunukan-tepis-isu-pemb  →  
+[8/8] gagal         https://www.tempo.co/politik/bawaslu-catat-3-daerah-ini-paling-banyak-  →  
+106 terverifikasi, 8 gagal → /Users/odripads/eppos-intel/data/judul_terverifikasi.json
+── terima kandidat baru (izin berdiri Odri, 29 Sep 2026)
+0 kandidat ditandai · 35 tertahan tanpa URL · 0 belum ditandai
+── masukkan temuan otomatis ke lapisan peta
+3730 kandidat disisihkan sebagai di luar lingkup (tercatat, tidak dibuang)
+2549 baris otomatis · 2115 punya kab/kota · 179 tanpa lokasi · 209 dua sumber
+38 provinsi tersentuh: Jawa Timur(366), Jawa Tengah(288), Sulawesi Selatan(267), Jawa Barat(178), Banten(144), Kepulauan Riau(95), Sulawesi Tenggara(70), Kalimantan Tengah(60), Maluku Utara(60), Sulawesi Utara(59), Sumatera Utara(58), Sulawesi Tengah(53)
+── bangun ulang data dari xlsx
+ "insiden": 53,
+ "kasus_resmi": 72,
+  "insiden": 9,
+ "judul_terverifikasi": 93,
+ "koordinat": 92,
+── bangun ulang bundel situs
+/Users/odripads/eppos-intel/dist/eppos-peta.html 2.10 MB
+── selesai · 0 kandidat menunggu tinjauan · buka tinjau.html
