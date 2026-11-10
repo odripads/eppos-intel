@@ -101012,5 +101012,21 @@
   "ditemukan_pada": "2026-10-26",
   "status_tinjau": "tertahan",
   "catatan_tinjau": "tanpa URL sumber; setiap baris wajib punya tautan sumber"
+ },
+ {
+  "kandidat_id": "KAN-08773",
+  "judul": "Polres Mimika Koordinasi dengan Dewan Pers, Tindak Lanjuti Laporan Bupati John Rettob",
+  "outlet": "timikaexpress.id",
+  "tanggal_terbit": "2026-11-10",
+  "url": "https://timikaexpress.id/polres-mimika-koordinasi-dengan-dewan-pers-tindak-lanjuti-laporan-bupati-john-rettob/",
+  "url_google": null,
+  "status_url": "terselesaikan",
+  "gelombang_pilkada": "2009",
+  "mekanisme_dugaan": "paksaan aparat sipil",
+  "provinsi_kueri": "(arsip outlet)",
+  "kueri": "timikaexpress.id search='ASN diperiksa netralitas' 2008-10-09..2009-08-08",
+  "ditemukan_pada": "2026-11-10",
+  "status_tinjau": "diterima otomatis",
+  "catatan_tinjau": "diterima massal 2026-11-10 atas izin berdiri Odri; bukan tinjauan per baris"
  }
 ]
