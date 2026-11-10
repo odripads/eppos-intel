@@ -384,7 +384,9 @@ OUTLET_PROV = {
 ALIAS_TEMPAT = {
     "kotim": "Kotawaringin Timur", "sampit": "Kotawaringin Timur", "kobar": "Kotawaringin Barat",
     "pangkalanbun": "Kotawaringin Barat", "luwuk": "Banggai", "kotabaru": "Kota Baru",
-    "bumiaji": "Kota Batu", "batu": "Kota Batu",
+    # "Camat Batu Ampar" (Kubu Raya / Batam) was placed in Kota Batu: "batu" opens many place names elsewhere
+    # (Baturaja, Batulicin, Batusangkar, Batu Bara), so it must not be followed by one of them
+    "bumiaji": "Kota Batu", r"batu(?!\s?(?:ampar|raja|licin|sangkar|bara|hijau|kajang|layang|nanggar|putih|besar))": "Kota Batu",
     "inhu": "Indragiri Hulu", "inhil": "Indragiri Hilir", "pekanbaru": "Kota Pekanbaru",
     "tanjungpinang": "Kota Tanjung Pinang", "batam": "Kota Batam", "lingga": "Lingga",
     "ternate": "Kota Ternate", "sofifi": "Tidore Kepulauan",

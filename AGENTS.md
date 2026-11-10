@@ -21,7 +21,7 @@ to the same Vercel site, only through `scripts/terbitkan.sh`.
   method decisions (the map cut-off date, scope or mechanism rules, relabelling or deleting rows, the closed lists
   in `data/posisi_skema.json`); running crawlers by hand (`crawl_outlets.py`, `crawl_candidates.py`,
   `discover_outlets.py`, `dateline.py`), since ad-hoc crawling is paused until Odri says "continue" (the 09:30
-  launchd routine may keep running). **Exception, sprint 10–13 Nov 2026:** Odri said (10 Nov) "as long as I'm here
+  launchd routine may keep running). **Exception, "sprint mode" (10–13 Nov 2026; while active, keep going without asking):** Odri said (10 Nov) "as long as I'm here
   and chatting … keep crawling and putting changes to our website", and the same for bot-posisi, "so that by Friday we
   have it updated, fresh and perfected". Until Fri 13 Nov 23:59 WIB, bot-media may run `scripts/rutin_harian.sh`
   (never while another copy runs: check `pgrep -f "[r]utin_harian.sh"`) and both bots may publish after their checks.
