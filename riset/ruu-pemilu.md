@@ -1,7 +1,7 @@
 # Riset RUU Pemilu (bot-posisi)
 
 Catatan bersumber untuk Fokus 2. Setiap butir punya tautan. Yang belum pasti ditandai **[belum pasti]**.
-Terakhir diperbarui: 10 Nov 2026 (sesi 3, 19.00 WIB).
+Terakhir diperbarui: 10 Nov 2026 (sesi 4, 21.00 WIB).
 
 ## 1. Status dan linimasa RUU Pemilu di DPR
 - 24 Sep 2026: pimpinan DPR menyebut pembahasan "masih dinamis" ([RCTI+/iNews](https://www.rctiplus.com/news/detail/inews/5479608/dasco-sebut-pembahasan-ruu-pemilu-masih-dinamis--jamin-tampung-semua-usulan)).
@@ -32,6 +32,15 @@ Terakhir diperbarui: 10 Nov 2026 (sesi 3, 19.00 WIB).
 - Titi Anggraini, 28 Okt (Menara Kompas): belum dibentuknya timsel "adalah preseden buruk"; "Presiden harus menjelaskan
   mengapa sampai hari ini tidak dibentuk tim seleksi"; "Tidak boleh kemudian tim seleksi tidak dibentuk, di saat yang
   sama undang-undang pemilunya masih berlaku" ([Kompas.com, 30 Okt](https://nasional.kompas.com/read/2026/10/30/09461141/uu-pemilu-belum-disahkan-seberapa-siap-indonesia-menghadapi-pemilu-2029?page=2)).
+- Sikap fraksi soal waktu pembentukan pansel (sesi 4):
+  - Golkar/Ahmad Doli Kurnia, 26 Okt: "saya termasuk orang yang sebetulnya kurang setuju kalau pansel itu dibentuk sekarang" ([CNN Indonesia](https://www.cnnindonesia.com/nasional/20261026220436-32-1419910/doli-golkar-tak-setuju-pansel-kpu-dibentuk-sekarang)).
+  - PKB/Muhammad Khozin, 29 Okt: "idealnya proses tahapan timsel KPU-Bawaslu dilakukan setelah pengesahan UU Pemilu";
+    Ketua Komisi II Rifqinizamy: belum dibentuknya pansel "sangat dimengerti dan dimaklumi" ([CNN Indonesia](https://www.cnnindonesia.com/nasional/20261029120338-32-1420946/pkb-usul-pansel-kpu-bawaslu-dibentuk-usai-ruu-pemilu-rampung)).
+  - PKS/Mardani Ali Sera, 29 Okt: "enam bulan sebelum masa berakhir pansel sudah harus dibentuk"; Mendagri Tito Karnavian,
+    28 Okt: "masih bisa dilaksanakan proses untuk panselnya". Kompas menulis tenggat pansel KPU 2027–2032 terlewat 12 Okt 2026
+    dan masa jabatan KPU 2022–2027 berakhir 12 Apr 2027 ([Kompas.com](https://nasional.kompas.com/read/2026/10/29/15295221/pansel-kpu-tak-kunjung-terbentuk-pks-minta-pemerintah-patuhi-uu)).
+  - Usul mantan komisioner KPU I Gusti Putu Artha (7 Nov, HUT KPU): pansel 17 orang dibentuk Presiden, komisioner
+    dilantik langsung tanpa uji kelayakan DPR ([detik](https://news.detik.com/berita/d-8742625/muncul-usulan-komisioner-dipilih-presiden-lewat-pansel-di-hut-ke-73-kpu)).
 - Bawaslu: belum dicari terpisah. **[belum dicek]**
 
 ## 3. Pembanding: seleksi 2022–2027
@@ -65,6 +74,13 @@ ingin ambang batas dihapus, berbeda dengan Viva Yoga (18 Sep) yang keberatan di 
 Syarat pencapresan: usulan minimal dua fraksi (Golkar/Doli, Demokrat, NasDem) dan batas atas (Golkar/Sarmuji maks. 4
 partai, PDIP/Aria Bima 20–30%, PDIP/Said Abdullah, Demokrat/Dede Yusuf); penolak: Perludem, LIMA, Hanura, Gerakan Rakyat, Titi Anggraini; CSIS menolak batas koalisi; PKB (Khozin, 21 Sep)
 masih menunggu Panja.
+Tambahan sesi 4 (+6 baris): TII/Arfianto Purbolaksono (kenaikan PT membuang suara, 18 Sep; syarat dua fraksi menyempitkan
+peluang capres, 22 Sep); PDIP/Deddy Yevri Sitorus (batas atas koalisi maks. 25% kursi atau 30% suara, 21 Sep);
+Hanura/Benny Rhamdani untuk GKSR (1%, 27 Sep); akademisi UMY Tunjung Sulaksono (ambang batas fraksi, 30 Sep);
+NasDem/Saan Mustopa (7%, 11 Nov 2025).
+Status per 10 Nov 21.00 WIB: belum ada berita rapat internal Komisi II 10 Nov atau rapat Panja 11 Nov yang saya temukan
+(dicek: antaranews, detik, kompas, CNN Indonesia). DPR tidak memasukkan RUU Pemilu dalam 4 RUU prioritas usai reses
+(Dasco, 28 Okt; [CNN Indonesia](https://www.cnnindonesia.com/nasional/20261028185111-32-1420707/dpr-ungkap-4-ruu-prioritas-usai-reses-tak-ada-ruu-pemilu)).
 
 ## Catatan metode (untuk dicek Odri / tim Beckham)
 - Sikap yang berubah dicatat sebagai baris terpisah, tidak ditimpa: Khozin (PKB) 5% pada 18 Sep (POS-0007) lalu 6% pada
@@ -80,6 +96,12 @@ masih menunggu Panja.
 - Tidak dimasukkan (sesi 3): Yusril Ihza Mahendra (Menko, 3 Mar: threshold "pilihan politik terbuka", tanpa sikap
   tegas), Bahtra Banong (Gerindra, soal dua fraksi: hanya menekankan partisipasi publik), Jazuli Juwaini (hanya
   menggambarkan peta usulan), Benny Rhamdani/GKSR (kutipan tidak menyebut sikap), opini Ramdansyah (KAHMI, bersyarat).
+- Tidak dimasukkan (sesi 4): Surya Paloh (19 Sep, kutipan tidak menyebut angka 7%; diganti Saan Mustopa yang
+  menyebutnya), Viva Yoga soal dua parpol (dukungannya hanya ada di parafrase wartawan), Raja Juli Antoni/PSI ("berapa
+  pun kami siap", bukan sikap), Bima Arya/Wamendagri (tanpa sikap), Yuri Kemal/PBB 20 Okt (sikap sama dengan POS-0024,
+  kutipan hanya "tidak sedang meminta agar ambang batas parlemen dihapuskan"), Ferry Kurnia/Perindo 14 Okt (sama dengan POS-0014),
+  Titi Anggraini 25 Feb (ambang batas fraksi; sikap sama dengan POS-0012).
+- Hanura kini punya tiga sikap: Patrice Rio Capella 4% (POS-0026), OSO 0% (POS-0043), Benny Rhamdani 1% untuk GKSR (POS-0049).
 - Beberapa partai kini punya pernyataan yang tampak berbeda dari waktu ke waktu (Demokrat, PAN). Peta menampilkan
   semuanya dengan tanggal; tim Beckham bisa memutuskan mana yang dianggap sikap resmi.
 
@@ -99,5 +121,14 @@ Dicek terhadap dokumen resmi; tautan di situs diganti dari berita ke dokumen ini
 - Putusan MK 135/PUU-XXII/2024: diucapkan Kamis 26 Jun 2025; amar: pemilu daerah paling singkat 2 tahun, paling lama
   2 tahun 6 bulan sejak pelantikan DPR/DPD atau Presiden. **Cocok.** "Mulai 2029" sesuai tabel periode di putusan.
   ([PDF MK](https://www.mkri.id/public/content/persidangan/putusan/putusan_mkri_12830_1750924073.pdf))
-- Belum dicek: "sekitar 270 daerah" dipimpin penjabat (sumber menyebut 271 atau 272) dan UU 20/2023 (KASN dibubarkan,
-  pengawasan ke BKN). **[belum dicek]**
+- UU 20/2023 tentang ASN (sesi 4): disahkan dan diundangkan 31 Okt 2023. UU ini **tidak langsung** membubarkan KASN:
+  Pasal 70 ayat (3) "Komisi Aparatur Sipil Negara yang ada pada saat berlakunya Undang-Undang ini, tetap melaksanakan
+  tugas dan fungsinya sampai dengan ditetapkannya peraturan pelaksanaan dari Undang-Undang ini"; Pasal 26 ayat (2) huruf d
+  menyerahkan "pengawasan penerapan Sistem Merit" ke kementerian/lembaga ([JDIH BPK](https://peraturan.bpk.go.id/Download/326904/UU%20Nomor%2020%20Tahun%202023.pdf)).
+  Perpres 92/2024 tentang BKN (ditetapkan 23 Agu 2024) memberi BKN tugas "pelaksanaan pengawasan penerapan Sistem Merit"
+  ([JDIH BKN](https://jdih.bkn.go.id/common/dokumen/2024perpres92-2576.pdf)). Kata "netralitas" tidak saya temukan di teks
+  Perpres itu (hasil OCR), jadi kartu di situs kini menyebut "sistem merit", bukan "netralitas". Teks kartu lama ("KASN
+  dibubarkan ... tepat sebelum pemilu", tahun 2023) **tidak tepat**: peralihan ke BKN terjadi Agustus 2024, sesudah Pemilu
+  14 Feb 2024 dan sebelum Pilkada 27 Nov 2024. **Perlu Odri/bot-media:** kalimat "patahan struktural di titik ini" ikut
+  kartu 2023; cek apakah patahan di data ada di akhir 2023 atau Agustus 2024.
+- Belum dicek: "sekitar 270 daerah" dipimpin penjabat (sumber menyebut 271 atau 272). **[belum dicek]**
