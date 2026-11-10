@@ -9,3 +9,5 @@ Untuk mengembalikan versi sebelumnya: `cd dist/eppos-outlook && vercel rollback`
 - 2026-11-10 18:48 · bot-media: tempat Camat Batu Ampar tidak lagi dibaca Kota Batu (aturan singkatan dipersempit) · data 2026-11-10 · https://eppos-outlook-no75hv02y-odripads.vercel.app
 - 2026-11-10 18:55 · bot-media: 134 baris ASN tidak lagi berlabel pengalihan sumber daya (aturan \banggaran), +20 dua sumber · data 2026-11-10 · https://eppos-outlook-57igxsegz-odripads.vercel.app
 - 2026-11-10 18:59 · bot-posisi: +9 posisi (parlemen 3, nonparlemen 5, sipil 1), riset Panja/timsel · data 2026-11-10 · https://eppos-outlook-8ww9wb3q6-odripads.vercel.app
+- 2026-11-10 19:03 · bot-posisi: sprint 2026-11-10 19:00, +7 baris · data 2026-11-10 · https://eppos-outlook-5ilaqk0i8-odripads.vercel.app
+- 2026-11-10 19:05 · bot-posisi: sprint 2026-11-10 19:30, cek fakta E.PATAH ke dokumen resmi · data 2026-11-10 · https://eppos-outlook-emkqrwnu5-odripads.vercel.app

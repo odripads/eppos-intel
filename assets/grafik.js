@@ -131,15 +131,15 @@
 
   /* jalan aturan: dipakai halaman Skema dan pelat presentasi */
   E.PATAH = [
-    { t: "23 Jan 2014", j: "Putusan MK 14/PUU-XI/2013", k: "Pemilu legislatif dan presiden harus digelar serentak, mulai 2019.", url: "https://www.hukumonline.com/berita/a/dpr-sebut-pemilu-serentak-amanat-putusan-mk-lt5dd396cde3c1f" },
-    { t: "2016", j: "UU 10/2016 Pasal 201", k: "Pilkada serentak nasional dijadwalkan November 2024. Kepala daerah yang masa jabatannya habis sebelum itu diganti penjabat." },
-    { t: "26 Feb 2020", j: "Putusan MK 55/PUU-XVII/2019", k: "Enam model keserentakan disebut sebagai pilihan yang konstitusional.", url: "https://www.medcom.id/nasional/politik/DkqXpZpb-6-model-pemilu-serentak-2024-usulan-mk" },
-    { t: "14 Jun 2022", j: "Tahapan Pemilu 2024 dimulai", k: "PKPU 3/2022. Tanggal ini memisahkan Peta I dan Peta II.", url: "https://kabar24.bisnis.com/read/20220609/15/1541958/kpu-gelar-launching-tahapan-pemilu-2024-14-juni-2022", kunci: 1 },
+    { t: "23 Jan 2014", j: "Putusan MK 14/PUU-XI/2013", k: "Pemilu legislatif dan presiden harus digelar serentak, mulai 2019.", url: "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_1612_14-PUU-2013-telahucap-23Jan2014.pdf" },
+    { t: "2016", j: "UU 10/2016 Pasal 201", k: "Pilkada serentak nasional dijadwalkan November 2024. Kepala daerah yang masa jabatannya habis sebelum itu diganti penjabat.", url: "https://peraturan.bpk.go.id/Download/26408/UU%20Nomor%2010%20Tahun%202016.pdf" },
+    { t: "26 Feb 2020", j: "Putusan MK 55/PUU-XVII/2019", k: "Enam model keserentakan disebut sebagai pilihan yang konstitusional.", url: "https://www.mkri.id/public/content/persidangan/putusan/putusan_mkri_6797.pdf" },
+    { t: "14 Jun 2022", j: "Tahapan Pemilu 2024 dimulai", k: "PKPU 3/2022. Tanggal ini memisahkan Peta I dan Peta II.", url: "https://peraturan.go.id/files/bn574-2022.pdf", kunci: 1 },
     { t: "2022–2023", j: "Gelombang penjabat", k: "Sekitar 270 daerah dipimpin penjabat yang ditunjuk pusat sampai hasil Pilkada 2024 dilantik." },
     { t: "2023", j: "UU 20/2023 tentang ASN", k: "KASN dibubarkan, pengawasan netralitas ASN pindah ke BKN, tepat sebelum pemilu. Deret kasus resmi punya patahan struktural di titik ini." },
     { t: "14 Feb dan 27 Nov 2024", j: "Pemilu dan pilkada dalam satu tahun", k: "Pertama kalinya pemilu nasional dan pilkada serentak se-Indonesia jatuh di tahun yang sama.", kunci: 1 },
-    { t: "29 Feb 2024", j: "Putusan MK 116/PUU-XXI/2023", k: "Ambang batas parlemen 4 persen tetap untuk 2024, tetapi harus diubah sebelum Pemilu 2029.", url: "https://nasional.kontan.co.id/news/mk-putuskan-ambang-batas-parlemen-4-harus-diubah-sebelum-pemilu-2029" },
-    { t: "2 Jan 2025", j: "Putusan MK 62/PUU-XXII/2024", k: "Ambang pencalonan presiden 20 persen dihapus.", url: "https://nasional.kontan.co.id/news/mahkamah-konstitusi-mk-hapus-ketentuan-presidential-threshold" },
-    { t: "26 Jun 2025", j: "Putusan MK 135/PUU-XXII/2024", k: "Pemilu nasional dan daerah dipisah mulai 2029, dengan jeda 2 sampai 2,5 tahun.", url: "https://www.hukumonline.com/berita/a/transisi-menuju-pemisahan-pemilu-perlu-diatur-uu-lt687b2cc883003/?page=all", kunci: 1 }
+    { t: "29 Feb 2024", j: "Putusan MK 116/PUU-XXI/2023", k: "Ambang batas parlemen 4 persen tetap untuk 2024, tetapi harus diubah sebelum Pemilu 2029.", url: "https://www.mkri.id/public/content/persidangan/putusan/putusan_mkri_9657_1709186459.pdf" },
+    { t: "2 Jan 2025", j: "Putusan MK 62/PUU-XXII/2024", k: "Ambang pencalonan presiden (20 persen kursi DPR atau 25 persen suara sah nasional) dihapus.", url: "https://www.mkri.id/public/content/persidangan/putusan/putusan_mkri_11344_1735807848.pdf" },
+    { t: "26 Jun 2025", j: "Putusan MK 135/PUU-XXII/2024", k: "Pemilu nasional dan daerah dipisah mulai 2029, dengan jeda 2 sampai 2,5 tahun.", url: "https://www.mkri.id/public/content/persidangan/putusan/putusan_mkri_12830_1750924073.pdf", kunci: 1 }
   ];
 })(window.EPPOS);

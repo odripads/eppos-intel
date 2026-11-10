@@ -1,7 +1,7 @@
 # Riset RUU Pemilu (bot-posisi)
 
 Catatan bersumber untuk Fokus 2. Setiap butir punya tautan. Yang belum pasti ditandai **[belum pasti]**.
-Terakhir diperbarui: 10 Nov 2026 (sesi 2).
+Terakhir diperbarui: 10 Nov 2026 (sesi 3, 19.00 WIB).
 
 ## 1. Status dan linimasa RUU Pemilu di DPR
 - 24 Sep 2026: pimpinan DPR menyebut pembahasan "masih dinamis" ([RCTI+/iNews](https://www.rctiplus.com/news/detail/inews/5479608/dasco-sebut-pembahasan-ruu-pemilu-masih-dinamis--jamin-tampung-semua-usulan)).
@@ -40,6 +40,11 @@ Terakhir diperbarui: 10 Nov 2026 (sesi 2).
 - Perludem: kenaikan ke 5% menambah suara terbuang (17,3 juta suara pada 2024); syarat dua fraksi dinilai ambang batas
   terselubung (POS-0011, POS-0020).
 - Titi Anggraini: hapus ambang batas parlemen, atau 1% suara sah nasional; pembahasan harus melibatkan publik (POS-0012).
+- Titi Anggraini (28 Jun 2026, diskusi Perludem): wacana capres-cawapres minimal diusung tiga partai parlemen disebut
+  "bahaya besar" bagi konstitusionalitas Pemilu 2029 (POS-0037).
+- CSIS (Arya Fernandes, RDPU Komisi II, 20 Jan 2026): koalisi pilpres harus terbentuk "secara alamiah", menolak batas
+  persentase koalisi (POS-0036). Menurut NU Online, CSIS juga mengusulkan ambang batas parlemen 3,5% untuk 2029, tetapi
+  angka itu tidak ada di kutipan langsung, jadi tidak dijadikan baris ([NU Online](https://nu.or.id/nasional/csis-usulkan-ambang-batas-parlemen-diturunkan-jadi-3-5-persen-pada-pemilu-2029-kt2WR)).
 - LIMA (Ray Rangkuti): syarat dua fraksi = "PT terselubung" (POS-0021).
 - Arifki Chaniago (Aljabar Strategic Indonesia): jangan ada mekanisme baru yang mengurangi kontestan 2029 (POS-0031).
 - NETGRIT (Hadar Gumay): fokus pada seleksi dan integritas penyelenggara, bukan angka ambang batas (lihat butir 2).
@@ -50,8 +55,13 @@ Lihat `data/posisi_aktor.json`. Peta kasar per 10 Nov 2026: koalisi pemerintah d
 PKS lewat Sarmuji, PKB); PDIP resmi 6%; NasDem 7%; PAN keberatan di atas 4%; Mardani (PKS) 3,5–4,5%; partai nonparlemen
 (GKSR, Perindo, Gerakan Rakyat, PSI) 0–1%; PPP menolak 6–7%; Hanura menolak di atas 4%; PBB minta ambang batas boleh
 dipenuhi gabungan partai; Gelora "0 persen atau 20 persen sekalian".
+Tambahan sesi 3 (pernyataan lebih awal di 2026, dicatat dengan tanggalnya): Demokrat/Herman Khaeron (25 Apr) menilai 4%
+"sudah ideal", lalu juru bicara Herzaky (23 Sep) menyebut Demokrat masih mengkaji 5% atau 7%; PAN/Eddy Soeparno (29 Jan)
+ingin ambang batas dihapus, berbeda dengan Viva Yoga (18 Sep) yang keberatan di atas 4%; Ketua MPR Ahmad Muzani
+(Gerindra, 22 Feb) menilai 7% terlalu tinggi.
 Syarat pencapresan: usulan minimal dua fraksi (Golkar/Doli, Demokrat, NasDem) dan batas atas (Golkar/Sarmuji maks. 4
-partai, PDIP/Aria Bima 20–30%, PDIP/Said Abdullah, Demokrat/Dede Yusuf); penolak: Perludem, LIMA, Hanura, Gerakan Rakyat.
+partai, PDIP/Aria Bima 20–30%, PDIP/Said Abdullah, Demokrat/Dede Yusuf); penolak: Perludem, LIMA, Hanura, Gerakan Rakyat, Titi Anggraini; CSIS menolak batas koalisi; PKB (Khozin, 21 Sep)
+masih menunggu Panja.
 
 ## Catatan metode (untuk dicek Odri / tim Beckham)
 - Pengurus partai yang punya kursi DPR (mis. Sugiono, Viva Yoga) saya masukkan **elit parlemen** walau belum tentu duduk
@@ -62,3 +72,27 @@ partai, PDIP/Aria Bima 20–30%, PDIP/Said Abdullah, Demokrat/Dede Yusuf); penol
   dua fraksi ("Itu bagian dari usulan Golkar juga"), Zulhas, Puan, Dede Yusuf, pengamat Agung Baskoro dan Arifki Chaniago.
 - rm.id menolak curl (403); dibaca lewat peramban OpenBot, kutipan dicek di halaman.
 - Tidak dimasukkan (kutipan tak tegas atau tanpa nama lengkap): Muhammad Kholid (PKS), "Deddy" (Komisi II), Yusuf Lakaseng ("Itu kan akal-akalan").
+- Tidak dimasukkan (sesi 3): Yusril Ihza Mahendra (Menko, 3 Mar: threshold "pilihan politik terbuka", tanpa sikap
+  tegas), Bahtra Banong (Gerindra, soal dua fraksi: hanya menekankan partisipasi publik), Jazuli Juwaini (hanya
+  menggambarkan peta usulan), Benny Rhamdani/GKSR (kutipan tidak menyebut sikap), opini Ramdansyah (KAHMI, bersyarat).
+- Beberapa partai kini punya pernyataan yang tampak berbeda dari waktu ke waktu (Demokrat, PAN). Peta menampilkan
+  semuanya dengan tanggal; tim Beckham bisa memutuskan mana yang dianggap sikap resmi.
+
+## 6. Cek fakta linimasa hukum (`E.PATAH`, `assets/grafik.js`), 10 Nov 2026
+Dicek terhadap dokumen resmi; tautan di situs diganti dari berita ke dokumen ini.
+- Putusan MK 14/PUU-XI/2013: diucapkan Kamis 23 Jan 2014; amar berlaku untuk pemilu 2019 dan seterusnya. **Cocok.**
+  ([PDF MK](https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_1612_14-PUU-2013-telahucap-23Jan2014.pdf))
+- UU 10/2016 Pasal 201 ayat (8): pemungutan suara serentak nasional "dilaksanakan pada bulan November 2024"; ayat (9):
+  kekosongan jabatan 2022 dan 2023 diisi penjabat. **Cocok.** ([JDIH BPK](https://peraturan.bpk.go.id/Download/26408/UU%20Nomor%2010%20Tahun%202016.pdf))
+- Putusan MK 55/PUU-XVII/2019: diucapkan Rabu 26 Feb 2020. **Cocok.** ([PDF MK](https://www.mkri.id/public/content/persidangan/putusan/putusan_mkri_6797.pdf))
+  Isi "enam model keserentakan" belum saya cocokkan kata per kata di pertimbangan. **[belum dicek isi]**
+- PKPU 3/2022: lampiran jadwal, tahapan pertama mulai "Selasa, 14 Juni 2022". **Cocok.** ([BN 574/2022](https://peraturan.go.id/files/bn574-2022.pdf))
+- Putusan MK 116/PUU-XXI/2023: diucapkan Kamis 29 Feb 2024; Pasal 414 ayat (1) konstitusional untuk Pemilu DPR 2024,
+  konstitusional bersyarat untuk 2029 bila norma dan angkanya diubah. **Cocok.** ([PDF MK](https://www.mkri.id/public/content/persidangan/putusan/putusan_mkri_9657_1709186459.pdf))
+- Putusan MK 62/PUU-XXII/2024: diucapkan Kamis 2 Jan 2025; Pasal 222 UU 7/2017 bertentangan dengan UUD 1945. Ambang
+  lamanya 20% kursi DPR **atau 25% suara sah nasional**, jadi teks kartu diperjelas. ([PDF MK](https://www.mkri.id/public/content/persidangan/putusan/putusan_mkri_11344_1735807848.pdf))
+- Putusan MK 135/PUU-XXII/2024: diucapkan Kamis 26 Jun 2025; amar: pemilu daerah paling singkat 2 tahun, paling lama
+  2 tahun 6 bulan sejak pelantikan DPR/DPD atau Presiden. **Cocok.** "Mulai 2029" sesuai tabel periode di putusan.
+  ([PDF MK](https://www.mkri.id/public/content/persidangan/putusan/putusan_mkri_12830_1750924073.pdf))
+- Belum dicek: "sekitar 270 daerah" dipimpin penjabat (sumber menyebut 271 atau 272) dan UU 20/2023 (KASN dibubarkan,
+  pengawasan ke BKN). **[belum dicek]**
