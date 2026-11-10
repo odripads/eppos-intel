@@ -7,3 +7,4 @@ Untuk mengembalikan versi sebelumnya: `cd dist/eppos-outlook && vercel rollback`
 - 2026-11-10 17:54 · Claude: peta posisi aktor (kosong, menunggu bot-posisi), Gambar 11 di Metode, promote_candidates diperbaiki · data 2026-11-10 · https://eppos-outlook-eq56zb2vk-odripads.vercel.app
 - 2026-11-10 18:46 · bot-posisi: +22 posisi (sipil 4, parlemen 13, nonparlemen 5), riset RUU, status Panja 11 Nov · data 2026-11-10 · https://eppos-outlook-203f7gdj8-odripads.vercel.app
 - 2026-11-10 18:48 · bot-media: tempat Camat Batu Ampar tidak lagi dibaca Kota Batu (aturan singkatan dipersempit) · data 2026-11-10 · https://eppos-outlook-no75hv02y-odripads.vercel.app
+- 2026-11-10 18:55 · bot-media: 134 baris ASN tidak lagi berlabel pengalihan sumber daya (aturan \banggaran), +20 dua sumber · data 2026-11-10 · https://eppos-outlook-57igxsegz-odripads.vercel.app

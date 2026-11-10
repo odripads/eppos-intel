@@ -22,7 +22,9 @@ DESA = re.compile(r"(kades|kepala desa|\blurah\b|keuchik|geuchik|wali nagari|kep
                   r"perbekel|kepala pekon|peratin|kumtua|hukum tua)", re.I)
 BANSOS = re.compile(r"(bansos|bantuan sosial|sembako|\bpkh\b|blt)", re.I)
 KRITIK = re.compile(r"(wartawan|jurnalis|intimidasi|teror|diancam|kritik)", re.I)
-SUMBER = re.compile(r"(peras|dana desa|anggaran|hibah|proyek|fasilitas negara|kendaraan dinas)", re.I)
+# \banggaran: bare "anggaran" matched inside "pelanggaran", so 134 ASN-neutrality stories read as resource
+# diversion (fixed 10 Nov 2026, sprint approval). (?<!o)peras: "operasional", "koperasi" are not extortion.
+SUMBER = re.compile(r"((?<!o)peras|dana desa|\banggaran|hibah|proyek|fasilitas negara|kendaraan dinas)", re.I)
 JENDELA = {"2024": ("2024-05-27", "2024-12-27"), "2020": ("2020-06-09", "2021-01-09"),
            "2018": ("2017-12-27", "2018-07-27"), "2017": ("2016-08-15", "2017-03-15"), "2015": ("2015-02-24", "2016-01-09")}
 

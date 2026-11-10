@@ -5498,7 +5498,8 @@
   "kueri": "ulasan.co search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 18,
-  "saluran": "wp-grid"
+  "saluran": "wp-grid",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00247",
@@ -5516,8 +5517,8 @@
   "hasil": null,
   "sumber_1_url": "https://ulasan.co/bawaslu-karimun-serahkan-penanganan-5-dugaan-pelanggaran-netralitas-asn-ke-bkn/",
   "sumber_1_outlet": "ulasan.co",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://www.batamnews.co.id/berita-115515-dugaan-pelanggaran-netralitas-asn-di-karimun-tim-pemenangan-rudi-rafiq-akan-laporkan-ke-bawaslu.html",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -5528,7 +5529,8 @@
   "kueri": "ulasan.co search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 18,
-  "saluran": "wp-grid"
+  "saluran": "wp-grid",
+  "kemiripan_pasangan": 0.31
  },
  {
   "insiden_id": "AUTO-00248",
@@ -5546,8 +5548,8 @@
   "hasil": null,
   "sumber_1_url": "https://ulasan.co/tim-rudi-rafiq-akan-laporkan-dugaan-pelanggaran-netralitas-asn-ke-bawaslu/",
   "sumber_1_outlet": "ulasan.co",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://www.batamnews.co.id/berita-115515-dugaan-pelanggaran-netralitas-asn-di-karimun-tim-pemenangan-rudi-rafiq-akan-laporkan-ke-bawaslu.html",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -5558,7 +5560,8 @@
   "kueri": "ulasan.co search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 18,
-  "saluran": "wp-grid"
+  "saluran": "wp-grid",
+  "kemiripan_pasangan": 0.58
  },
  {
   "insiden_id": "AUTO-00249",
@@ -5637,8 +5640,8 @@
   "hasil": null,
   "sumber_1_url": "https://ulasan.co/hadir-saat-kampanye-ansar-bawaslu-telusuri-dugaan-pelanggaran-oknum-asn-di-karimun/",
   "sumber_1_outlet": "ulasan.co",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://harianmetropolitan.co.id/2024/10/14/bawaslu-dalami-dugaan-pelanggaran-asn-saat-kampanye-ansar-di-karimun/",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -5649,7 +5652,8 @@
   "kueri": "ulasan.co search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 18,
-  "saluran": "wp-grid"
+  "saluran": "wp-grid",
+  "kemiripan_pasangan": 0.41
  },
  {
   "insiden_id": "AUTO-00252",
@@ -5729,8 +5733,8 @@
   "hasil": null,
   "sumber_1_url": "https://ulasan.co/ini-klarifikasi-bawaslu-batam-soal-dugaan-pelanggaran-netralitas-asn-oknum-camat-batu-ampar/",
   "sumber_1_outlet": "ulasan.co",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://batam.inews.id/read/502786/kepala-diskominfo-batam-diperiksa-bawaslu-terkait-dugaan-pelanggaran-netralitas-asn",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -5742,7 +5746,7 @@
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 18,
   "saluran": "wp-grid",
-  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
+  "kemiripan_pasangan": 0.29
  },
  {
   "insiden_id": "AUTO-00255",
@@ -8096,8 +8100,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritajateng.id/berita/dugaan-pelanggaran-netralitas-camat-kradenan-blora-bkn-resmi-beri-rekomendasi-sanksi/",
   "sumber_1_outlet": "beritajateng.id",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://radarbojonegoro.jawapos.com/politika/2411250009/dugaan-pelanggaran-netralitas-pilkada-2024-camat-kradenan-blora-terancam-sanksi-disiplin",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -8109,7 +8113,7 @@
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 5,
   "saluran": "wp-grid",
-  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
+  "kemiripan_pasangan": 0.35
  },
  {
   "insiden_id": "AUTO-00354",
@@ -8403,7 +8407,7 @@
   "hasil": null,
   "sumber_1_url": "https://beritajateng.id/berita/dugaan-pelanggaran-netralitas-pj-bupati-kudus-hartopo-tegaskan-tidak-tahu/",
   "sumber_1_outlet": "beritajateng.id",
-  "sumber_2_url": "https://harianmuria.com/news/6-asn-termasuk-pj-bupati-kudus-dan-1-kades-dilaporkan-terkait-dugaan-pelanggaran-netralitas/",
+  "sumber_2_url": "https://jateng.antaranews.com/berita/551355/dugaan-pelanggaran-pemilu-pj-bupati-kudus-ini-penjelasan-bawaslu",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -8416,7 +8420,7 @@
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 5,
   "saluran": "wp-grid",
-  "kemiripan_pasangan": 0.31
+  "kemiripan_pasangan": 0.27
  },
  {
   "insiden_id": "AUTO-00364",
@@ -8496,7 +8500,7 @@
   "hasil": null,
   "sumber_1_url": "https://beritajateng.id/berita/dugaan-pelanggaran-netralitas-6-asn-dan-1-kades-pj-bupati-kudus-tunggu-hasil-bawaslu/",
   "sumber_1_outlet": "beritajateng.id",
-  "sumber_2_url": "https://harianmuria.com/news/6-asn-termasuk-pj-bupati-kudus-dan-1-kades-dilaporkan-terkait-dugaan-pelanggaran-netralitas/",
+  "sumber_2_url": "https://jateng.antaranews.com/berita/551355/dugaan-pelanggaran-pemilu-pj-bupati-kudus-ini-penjelasan-bawaslu",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -8509,7 +8513,7 @@
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 5,
   "saluran": "wp-grid",
-  "kemiripan_pasangan": 0.36
+  "kemiripan_pasangan": 0.28
  },
  {
   "insiden_id": "AUTO-00367",
@@ -9482,7 +9486,8 @@
   "kueri": "radarsukabumi.com search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 14,
-  "saluran": "wp-grid"
+  "saluran": "wp-grid",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00421",
@@ -11264,7 +11269,8 @@
   "kueri": "kabarluwuk.com search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 19,
-  "saluran": "wp-grid"
+  "saluran": "wp-grid",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00503",
@@ -11282,8 +11288,8 @@
   "hasil": null,
   "sumber_1_url": "https://kabarluwuk.com/bawaslu-kabupaten-banggai-umumkan-hasil-penanganan-dugaan-pelanggaran-netralitas-asn/",
   "sumber_1_outlet": "kabarluwuk.com",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://channelsulawesi.id/2024/09/20/bawaslu-banggai-tindak-lanjuti-kasus-dugaan-pelanggaran-netralitas-asn/",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -11294,7 +11300,8 @@
   "kueri": "kabarluwuk.com search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 19,
-  "saluran": "wp-grid"
+  "saluran": "wp-grid",
+  "kemiripan_pasangan": 0.33
  },
  {
   "insiden_id": "AUTO-00504",
@@ -12745,7 +12752,8 @@
   "kueri": "beritamanado.com search='netralitas ASN' 2023-05-27..2023-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 21,
-  "saluran": "wp-grid"
+  "saluran": "wp-grid",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00588",
@@ -15302,7 +15310,8 @@
   "kueri": "ulasan.co search='netralitas ASN' 2023-05-27..2023-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 18,
-  "saluran": "wp-grid"
+  "saluran": "wp-grid",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-00808",
@@ -23120,7 +23129,8 @@
   "kueri": "netralitas ASN dilaporkan after:2023-05-27 before:2023-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 6,
-  "saluran": "gnews-rss"
+  "saluran": "gnews-rss",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-02276",
@@ -24261,8 +24271,8 @@
   "hasil": null,
   "sumber_1_url": "https://jateng.antaranews.com/berita/559501/dua-laporan-pelanggaran-netralitas-asn-kota-semarang-lanjut-ke-bkn",
   "sumber_1_outlet": "ANTARA News Jateng",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://www.ayosemarang.com/semarang-raya/7713973083/tindak-laporan-bawaslu-kota-semarang-sampaikan-dua-pelanggaran-netralitas-asn-ke-bkn",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -24274,7 +24284,7 @@
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 5,
   "saluran": "gnews-rss",
-  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
+  "kemiripan_pasangan": 0.37
  },
  {
   "insiden_id": "AUTO-01644",
@@ -24912,7 +24922,8 @@
   "kueri": "bengkulunews.co.id search='netralitas ASN' 2024-05-27..2024-12-27",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 30,
-  "saluran": "wp-grid"
+  "saluran": "wp-grid",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-01691",
@@ -30443,8 +30454,8 @@
   "hasil": null,
   "sumber_1_url": "https://suarapapua.com/2024/11/13/bawaslu-papua-hentikan-pemeriksaan-dugaan-kasus-pj-wali-kota-jayapura/",
   "sumber_1_outlet": "suarapapua.com",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://koreri.com/2024/11/06/bawaslu-papua-terima-2-alat-bukti-dugaan-pelanggaran-pj-wali-kota-jayapura/",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -30456,7 +30467,7 @@
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 0,
   "saluran": "wp-grid",
-  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
+  "kemiripan_pasangan": 0.33
  },
  {
   "insiden_id": "AUTO-02164",
@@ -32832,7 +32843,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://radartarakan.jawapos.com/tarakan/2415077292/ombudsman-pembatalan-jabatan-57-asn-bukan-pelanggaran",
@@ -33168,7 +33179,7 @@
   "lokasi_tingkat": null,
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.kompas.id/artikel/ketua-bawaslu-indikasi-pelanggaran-netralitas-asn-sudah-terlihat",
@@ -33683,7 +33694,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.mkri.id/berita/pelanggaran-netralitas-asn-dalam-pilkada-tanah-datar-22485",
@@ -33806,7 +33817,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://sulbar.tribunnews.com/2024/10/08/bawaslu-pasangkayu-sudah-terima-5-laporan-pelanggaran-asn-pelanggaran-administrasi-pilkada-2024",
@@ -34171,7 +34182,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.detik.com/sumbagsel/pilkada/d-7626984/bawaslu-bengkulu-tindak-lanjuti-dugaan-pelanggaran-netralitas-66-asn",
@@ -34188,7 +34199,8 @@
   "kueri": "Google News (peramban, halaman pencarian): sapuan nasional 60 pencarian: 12 istilah (ASN/kades/lurah/camat dilaporkan Bawaslu, mutasi/bansos/intimidasi petahana, honorer diancam, wartawan diintimidasi) x 5 gelombang pilkada",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 30,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-02666",
@@ -34206,8 +34218,8 @@
   "hasil": null,
   "sumber_1_url": "https://beritakeadilan.com/diduga-langgar-netralitas-asn-sekda-dan-9-pejabat-di-lamongan-dilaporkan-ke-bawaslu/",
   "sumber_1_outlet": "beritakeadilan.com",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://www.koranmemo.com/daerah/19214015159/sekda-lamongan-dan-9-pejabat-lingkup-pemkab-lamongan-dilaporkan-ke-bawaslu-terkait-dugaan-pelanggaran-netralitas-asn-pemilu",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -34219,7 +34231,7 @@
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 7,
   "saluran": "gnews-peramban",
-  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
+  "kemiripan_pasangan": 0.27
  },
  {
   "insiden_id": "AUTO-02667",
@@ -35475,7 +35487,7 @@
   "lokasi_tingkat": "provinsi",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://gaperta.id/miris-diduga-kuat-pejabat-pemda-kalbar-terjerat-sanksi-bkn-akibat-pelanggaran-netralitas-asn/",
@@ -35691,7 +35703,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://dkpp.go.id/dkpp-periksa-ketua-dan-anggota-bawaslu-indramayu-terkait-dugaan-pelanggaran-netralitas-asn/",
@@ -35721,7 +35733,7 @@
   "lokasi_tingkat": "provinsi",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://mkri.id/berita/pasangan-ahmad-hm-ali---abdul-karim-al-jufri-ajukan-php-gubernur-sulteng-soroti-pelanggaran-yang-dilakukan-penyelenggara-21965",
@@ -35904,7 +35916,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://ambon.antaranews.com/berita/195576/kasn-keluarkan-surat-rekomendasi-pelanggaran-netralitas-dua-asn-kepri",
@@ -35921,7 +35933,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota 19 provinsi tipis x 5 gelombang",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 18,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-02764",
@@ -35964,7 +35977,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://rri.co.id/jember/pemilu/223642/faq.html",
@@ -36178,7 +36191,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.mkri.id/berita/petahana-bupati-diduga-lakukan-pelanggaran,-pilbup-kuansing-diminta-diulang-22065",
@@ -36621,7 +36634,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota 19 provinsi tipis x 5 gelombang",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 16,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-02804",
@@ -36664,7 +36678,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.katantt.com/artikel/49773/laporan-dugaan-pelanggaran-asn-pemda-belu-ditelusuri-bawaslu-/",
@@ -36694,7 +36708,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.victorynews.id/ntt/33113642190/bawaslu-manggarai-barat-laporkan-dugaan-pelanggaran-netralitas-asn-ke-bkn",
@@ -36711,7 +36725,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota 19 provinsi tipis x 5 gelombang",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 16,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-02807",
@@ -37088,7 +37103,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://jurnalborneo.com/pengadilan-negeri-penajam-gelar-sidang-perdana-kasus-pelanggaran-netralitas-asn-ppu/",
@@ -37105,7 +37120,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota 19 provinsi tipis x 5 gelombang",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 20,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-02842",
@@ -37273,7 +37289,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.kutairaya.com/news.php",
@@ -38673,7 +38689,7 @@
   "lokasi_tingkat": "provinsi",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.nusabali.com/berita/180075/bawaslu-bali-tangani-pelanggaran-pilkada-kelian-dinas-sampai-camat-tidak-netral",
@@ -38855,7 +38871,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://halojambi.id/index.php/mata-jambi/14624-bawaslu-tanjabtimur-siaran-pers-pelanggaran-netralitas-oknum-asn-r-memenuhi-unsur",
@@ -38885,7 +38901,7 @@
   "lokasi_tingkat": null,
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://megapolitan.kompas.com/read/2024/05/30/15342341/kasn-terima-dua-laporan-dugaan-pelanggaran-netralitas-asn-oleh-supian",
@@ -39131,7 +39147,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://jateng.antaranews.com/berita/555009/bawaslu-teruskan-dugaan-pelanggaran-netralitas-pejabat-kejagung-ke-bkn",
@@ -39148,7 +39164,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota 18 provinsi lain x 2 gelombang",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 5,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-02987",
@@ -39404,13 +39421,13 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://jateng.antaranews.com/berita/551355/dugaan-pelanggaran-pemilu-pj-bupati-kudus-ini-penjelasan-bawaslu",
   "sumber_1_outlet": "jateng.antaranews.com",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://beritajateng.id/berita/dugaan-pelanggaran-netralitas-6-asn-dan-1-kades-pj-bupati-kudus-tunggu-hasil-bawaslu/",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -39421,7 +39438,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota 18 provinsi lain x 2 gelombang",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 5,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "kemiripan_pasangan": 0.28
  },
  {
   "insiden_id": "AUTO-03000",
@@ -39587,7 +39605,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://mediajatim.com/2024/11/11/dugaan-pelanggaran-netralitas-plt-bupati-sumenep-naik-ke-penyidikan-polisi-periksa-pelapor-dan-saksi/",
@@ -39604,7 +39622,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota 18 provinsi lain x 2 gelombang",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 7,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-03008",
@@ -40010,7 +40029,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://kalteng.antaranews.com/berita/679638/bkpsdm-kotim-belum-terima-laporan-pelanggaran-netralitas-asn",
@@ -40027,7 +40046,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota 18 provinsi lain x 2 gelombang",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 26,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-03037",
@@ -40543,7 +40563,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota 18 provinsi lain x 2 gelombang",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 12,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-03065",
@@ -40648,7 +40669,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://abatanews.com/anak-amir-uskara-sebut-ada-11-kadis-dan-9-camat-yang-ungkap-dugaan-pelanggaran-di-pilkada-gowa/",
@@ -40665,7 +40686,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota 18 provinsi lain x 2 gelombang",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 12,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-03069",
@@ -40949,7 +40971,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.mkri.id/berita/-22216",
@@ -41009,7 +41031,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.brilio.net/ragam/asn-pemko-pariaman-ditetapkan-tersangka-pelanggaran-netralitas-9-penting-penerapan-etika-kepegawaian-241105l.html",
@@ -41026,7 +41048,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota 18 provinsi lain x 2 gelombang",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 25,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-03095",
@@ -41765,7 +41788,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://mistar.id/news/destinasi/bkd-simalungun-terima-rekomendasi-pelanggaran-netralitas-asn",
@@ -42608,7 +42631,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://kalbar.antaranews.com/berita/439293/bawaslu-terima-laporan-dugaan-dua-pelanggaran-petahana-sambas",
@@ -42790,7 +42813,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://bangka.tribunnews.com/2024/02/05/bawaslu-pangkalpinang-layangkan-surat-pemanggilan-camat-diduga-lakukan-pelanggaran-netralitas",
@@ -42945,7 +42968,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://papuatengah.antaranews.com/berita/53485/bawaslu-manokwari-telusuri-empat-kasus-dugaan-pelanggaran-netralitas-asn",
@@ -42976,7 +42999,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://taburapos.co/2024/11/08/dugaan-pelanggaran-asn-masih-seputaran-proses-di-gakkumdu-manokwari/",
@@ -43219,7 +43242,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://mediapakuan.pikiran-rakyat.com/sukabumi-raya/pr-638660784/tersandung-kasus-pelanggaran-netralitas-asn-inspektorat-sebut-tejo-masih-menjabat-kadisporapar-kota-sukabumi",
@@ -43236,7 +43259,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, templat B (kades dikumpulkan, honorer, KASN/BKN, RT/RW)",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 14,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-03234",
@@ -44038,7 +44062,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://timesindonesia.co.id/peristiwa-daerah/501984/dugaan-pelanggaran-netralitas-sekda-eman-suherman-pj-bupati-majalengka-disurati-bkn",
@@ -44055,7 +44079,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, templat B (kades dikumpulkan, honorer, KASN/BKN, RT/RW)",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 14,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-03281",
@@ -44068,7 +44093,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://jabar.tribunnews.com/2024/06/12/sekda-kota-tasikmalaya-diduga-lakukan-pelanggaran-netralitas-asn-begini-pembelaan-ivan-dicksan",
@@ -44190,13 +44215,13 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://presmedia.id/dugaan-pelanggaran-netralitas-asn-kabag-tapem-karimun-masuk-tahap-penyidikan-bawaslu/",
   "sumber_1_outlet": "presmedia.id",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://ulasan.co/bawaslu-karimun-serahkan-penanganan-5-dugaan-pelanggaran-netralitas-asn-ke-bkn/",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -44207,7 +44232,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, templat B (kades dikumpulkan, honorer, KASN/BKN, RT/RW)",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 18,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "kemiripan_pasangan": 0.31
  },
  {
   "insiden_id": "AUTO-03286",
@@ -44647,7 +44673,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://kaltengsatu.com/news/14737_Bawaslu_Barito_Utara_Teruskan_Dugaan_Pelanggaran_Netralitas_ASN_ke_BKN_Pusat.html",
@@ -44831,13 +44857,13 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://harianmetropolitan.co.id/2024/10/14/bawaslu-dalami-dugaan-pelanggaran-asn-saat-kampanye-ansar-di-karimun/",
   "sumber_1_outlet": "harianmetropolitan.co.id",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://ulasan.co/hadir-saat-kampanye-ansar-bawaslu-telusuri-dugaan-pelanggaran-oknum-asn-di-karimun/",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -44848,7 +44874,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, templat B (kades dikumpulkan, honorer, KASN/BKN, RT/RW)",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 18,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "kemiripan_pasangan": 0.41
  },
  {
   "insiden_id": "AUTO-03315",
@@ -44981,7 +45008,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://sulbar.tribunnews.com/2024/11/22/hmi-majene-demo-sentra-gakkumdu-tuntut-penyelesaian-kasus-dugaan-pelanggaran-netralitas-asn",
@@ -44998,7 +45025,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, templat B (kades dikumpulkan, honorer, KASN/BKN, RT/RW)",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": null,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-03321",
@@ -45132,7 +45160,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://pedoman.media/read/24149/bawaslu-ri-dan-bkn-usut-pelanggaran-netralitas-kabag-umum-torut-sejumlah-asn-juga-terseret",
@@ -45193,7 +45221,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://makassar.tribunnews.com/2025/03/18/dugaan-pelanggaran-netralitas-asn-sekda-sinjai-andi-jefrianto-asapa-masih-bergulir-di-bkn",
@@ -45495,7 +45523,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://catatanriau.com/news/detail/17482/diduga-lakukan-pelanggaran-netralitas-asn-bawaslu-gelar-konferensi-pers-terkait-kasus-camat-sabak-auh",
@@ -45525,7 +45553,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://sumbar.pikiran-rakyat.com/politik/pr-3159005603/pelanggaran-netralitas-asn-di-pilkada-tanah-datar-2024-terkuak-dalam-sidang-mk",
@@ -45907,7 +45935,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, templat B (kades dikumpulkan, honorer, KASN/BKN, RT/RW)",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 18,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-03365",
@@ -46041,7 +46070,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.kompas.tv/nasional/488068/tindak-lanjuti-dugaan-pelanggaran-netralitas-asn-bawaslu-bengkulu-rekomendasikan-ke-kasn",
@@ -46103,13 +46132,13 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.cyber88.co.id/berita/42336/camat-pangkalan-kerinci-terancam-sanksi-berat-akibat-pelanggaran-netralitas-pilkada-2024.html",
   "sumber_1_outlet": "cyber88.co.id",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://kompas1.net/terbukti-langgar-netralitas-asn-camat-pangkalan-kerinci-terancam-sanksi-berat/",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -46120,7 +46149,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, templat B (kades dikumpulkan, honorer, KASN/BKN, RT/RW)",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 18,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "kemiripan_pasangan": 0.43
  },
  {
   "insiden_id": "AUTO-03379",
@@ -46194,7 +46224,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://radarmadiun.jawapos.com/ngawi/803707976/soal-dugaan-pelanggaran-netralitas-asn-bkpsdm-ngawi-tunggu-keputusan-bawaslu-idham-karima-kami-wait-and-see",
@@ -46211,7 +46241,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, templat B (kades dikumpulkan, honorer, KASN/BKN, RT/RW)",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 7,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-03389",
@@ -46499,7 +46530,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://realita.co/baca-28134-bawaslu-lamongan-temukan-dugaan-pelanggaran-kode-etik-asn",
@@ -46559,7 +46590,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.malangtimes.com/amp/baca/225749/20201008/065300/privacy",
@@ -46576,7 +46607,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, templat B (kades dikumpulkan, honorer, KASN/BKN, RT/RW)",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 7,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-03409",
@@ -46739,7 +46771,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://kabarbanten.pikiran-rakyat.com/seputar-banten/pr-597627264/pemilu-2024-dugaan-pelanggaran-netralitas-asn-bawaslu-cilegon-rekomendasi-ke-kasn",
@@ -46770,7 +46802,7 @@
   "lokasi_tingkat": null,
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://faktamalut.com/rekomendasi-kasn-atas-pelanggaran-pemilu-dr-iksan-subur-meminta-maaf-secara-terbuka/",
@@ -48310,7 +48342,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://radarpati.jawapos.com/blora/2409300030/bawaslu-blora-dalami-dugaan-pelanggaran-netralitas-camat-todanan-begini-indikasinya",
@@ -48431,13 +48463,13 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.koranmemo.com/daerah/19214015159/sekda-lamongan-dan-9-pejabat-lingkup-pemkab-lamongan-dilaporkan-ke-bawaslu-terkait-dugaan-pelanggaran-netralitas-asn-pemilu",
   "sumber_1_outlet": "koranmemo.com",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://beritakeadilan.com/diduga-langgar-netralitas-asn-sekda-dan-9-pejabat-di-lamongan-dilaporkan-ke-bawaslu/",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -48448,7 +48480,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, templat C (intimidasi petahana, kepsek/guru, bansos dicabut, mutasi pascapilkada)",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 7,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "kemiripan_pasangan": 0.27
  },
  {
   "insiden_id": "AUTO-03711",
@@ -49278,7 +49311,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.detik.com/sumbagsel/pilkada/d-7581161/bawaslu-lampung-catat-8-pelanggaran-netralitas-libatkan-asn-oknum-polisi",
@@ -49295,7 +49328,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, kosakata lama (PNS, Panwas) gelombang 2015-2018",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 29,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-03892",
@@ -49763,7 +49797,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.digtara.com/nusantara/204161/camat-sipahutar-resmi-tersangka-pelanggaran-pemilu-2024-kedapatan-kampanye-calon-bupati-tapanuli-utara/",
@@ -50126,7 +50160,7 @@
   "lokasi_tingkat": null,
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://kahaba.net/penuhi-unsur-pelanggaran-pemilu-camat-raba-terancam-penjara-6-bulan",
@@ -54158,7 +54192,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.korantimor.com/hukum-kriminal/1544611731/daftar-sebagai-calon-wali-kota-kupang-george-hadjo-dilaporkan-terkait-dugaan-pelanggaran-uu-asn",
@@ -54218,7 +54252,7 @@
   "lokasi_tingkat": null,
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://suarantb.com/2024/11/02/gakkumdu-periksa-saksi-telusuri-dugaan-pelanggaran-paslon-dan-oknum-pejabat/",
@@ -54882,7 +54916,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://ketapang.suarakalbar.co.id/2020/10/dugaan-pelanggaran-netralitas-asn-dan.html",
@@ -55032,7 +55066,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.wowbabel.com/lokal/59811795535/bawaslu-panggil-tiga-pihak-soal-adanya-dugaan-pelanggaran-netralitas-asn-yang-dilakukan-camat-pangkalbalam",
@@ -55093,7 +55127,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.wowbabel.com/lokal/59811753008/deki-kurniawan-nilai-bawaslu-kota-pangkalpinang-lambat-tangani-kasus-dugaan-pelanggaran-oknum-asn",
@@ -55124,7 +55158,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.faktaberita.co.id/bawaslu-pangkalpinang-telusuri-dugaan-pelanggaran-netralitas-asn-terkait-video-viral/",
@@ -55141,7 +55175,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan provinsi tipis (Papua, Kaltara, Kalbar, Maluku, Gorontalo, Jakarta 2017) x 2024/2020/PSU 2025",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 24,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-04419",
@@ -55214,7 +55249,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://rri.co.id/sorong/regional/1757180/bawaslu-pbd-soroti-pelanggaran-netralitas-asn-dalam-pemilu",
@@ -55487,7 +55522,7 @@
   "lokasi_tingkat": "provinsi",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://portalpapua.pikiran-rakyat.com/papua/pr-1308766880/ampb-minta-pj-gubernur-bijak-pertimbangkan-pengaduan-pelanggaran-pemilu-terkait-rekaman-viral-pj-walikota",
@@ -56030,7 +56065,7 @@
   "lokasi_tingkat": null,
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.inilah.com/telusuri-pelanggaran-netralitas-asn-bawaslu-panggil-apdesi-besok",
@@ -56514,7 +56549,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://sulbar.tribunnews.com/2024/11/09/bawaslu-pasangkayu-sudah-tangani-9-pelanggaran-netralitas-asn-termasuk-istri-camat-sarjo",
@@ -57439,7 +57474,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, hasil perkara (divonis, tersangka, terbukti, direkomendasikan)",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 20,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-04650",
@@ -57844,7 +57880,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://kaltim.idntimes.com/news/kalimantan-timur/pilkada-balikpapan-bawaslu-ada-dugaan-pelanggaran-netralitas-asn-00-lgfzc-44b4vg",
@@ -57934,7 +57970,7 @@
   "lokasi_tingkat": "provinsi",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.kompas.id/artikel/pelanggaran-netralitas-di-jawa-barat-dilakukan-camat-kepala-sekolah-dan-guru",
@@ -57964,7 +58000,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://megapolitan.antaranews.com/berita/115677/bawaslu-karawang-rekomendasikan-dugaan-pelanggaran-netralitas-asn-ke-kasn",
@@ -58479,7 +58515,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.cnnindonesia.com/nasional/20240206131636-617-1059278/bawaslu-jabar-koreksi-bawaslu-kota-bekasi-5-asn-pelanggaran-pemilu",
@@ -58541,7 +58577,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://jabar.idntimes.com/news/jawa-barat/gubernur-tunggu-surat-dari-bawaslu-terkait-pelanggaran-pemilu-asn-di-bekasi-00-9y7yl-z8ydrj",
@@ -58572,7 +58608,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.detik.com/jabar/berita/d-7606262/asn-cianjur-jadi-tersangka-dugaan-pelanggaran-pemilu-terancam-6-bulan-bui",
@@ -58633,7 +58669,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://news.detik.com/pemilu/d-7166442/bawaslu-serang-temukan-5-dugaan-pelanggaran-netralitas-asn",
@@ -58772,7 +58808,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, hasil perkara (divonis, tersangka, terbukti, direkomendasikan)",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 5,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-04726",
@@ -58908,13 +58945,13 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.ngopibareng.id/read/pelanggaran-netralitas-asn-blora-camat-sambong-terancam-sanksi",
   "sumber_1_outlet": "ngopibareng.id",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://suarabanyuurip.com/2024/04/19/terbukti-langgar-netralitas-asn-camat-sambong-terancam-kena-sanksi/",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": null,
   "gelombang_pilkada": "luar-2024",
@@ -58925,7 +58962,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, hasil perkara (divonis, tersangka, terbukti, direkomendasikan)",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 5,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "kemiripan_pasangan": 0.39
  },
  {
   "insiden_id": "AUTO-04732",
@@ -58943,7 +58981,7 @@
   "hasil": null,
   "sumber_1_url": "https://suarabanyuurip.com/2024/04/26/terbukti-langgar-netralitas-asn-pemkab-blora-siap-jatuhkan-sanksi-ke-camat-sambong/",
   "sumber_1_outlet": "suarabanyuurip.com",
-  "sumber_2_url": "https://radarkudus.jawapos.com/blora/694606296/ini-3-sanksi-berat-yang-menanti-camat-sombong-blora-usai-terbukti-langgar-netralitas-asn",
+  "sumber_2_url": "https://www.ngopibareng.id/read/pelanggaran-netralitas-asn-blora-camat-sambong-terancam-sanksi",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": null,
@@ -58956,7 +58994,7 @@
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 5,
   "saluran": "gnews-peramban",
-  "kemiripan_pasangan": 0.33
+  "kemiripan_pasangan": 0.29
  },
  {
   "insiden_id": "AUTO-04733",
@@ -58974,8 +59012,8 @@
   "hasil": null,
   "sumber_1_url": "https://suarabanyuurip.com/2024/04/19/terbukti-langgar-netralitas-asn-camat-sambong-terancam-kena-sanksi/",
   "sumber_1_outlet": "suarabanyuurip.com",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://www.ngopibareng.id/read/pelanggaran-netralitas-asn-blora-camat-sambong-terancam-sanksi",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": null,
   "gelombang_pilkada": "luar-2024",
@@ -58986,7 +59024,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, hasil perkara (divonis, tersangka, terbukti, direkomendasikan)",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 5,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "kemiripan_pasangan": 0.39
  },
  {
   "insiden_id": "AUTO-04734",
@@ -59432,7 +59471,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.ngopibareng.id/read/dugaan-pelanggaran-netralitas-bupati-jember-diperiksa-bawaslu",
@@ -59449,7 +59488,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, hasil perkara (divonis, tersangka, terbukti, direkomendasikan)",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 7,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-04755",
@@ -59462,7 +59502,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://jatimnow.com/baca-64308-bawaslu-kota-kediri-dalami-dugaan-pelanggaran-netralitas-asn-dan-perusakan-apk-pan",
@@ -60163,7 +60203,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://newsurban.id/2024/10/28/bawaslu-bone-serahkan-berkas-kasus-dugaan-pelanggaran-netralitas-asn-ke-bkn-makassar/",
@@ -60180,7 +60220,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, hasil perkara (divonis, tersangka, terbukti, direkomendasikan)",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 12,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-04792",
@@ -60317,7 +60358,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.detik.com/sulsel/berita/d-7584733/bawaslu-boltim-usut-11-dugaan-pelanggaran-pilkada-2-asn-langgar-netralitas",
@@ -60531,7 +60572,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://serumpun.babelprov.go.id/cegah-pelanggaran-netralitas-pemprov-kep-babel-luncurkan-silapor-asn",
@@ -60955,7 +60996,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://kupastuntas.co/2024/01/05/kepala-ombudsman-lampung-sebut-pelanggaran-netralitas-asn-disebabkan-bawahan-takut-atasan",
@@ -61286,7 +61327,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://kanalmetro.com/2023/09/04/video-viral-oknum-camat-di-minut-soal-dugaan-pelanggaran-netralitas-asn-bawaslu-sulut-pastikan-sedang-dalam-penanganan/",
@@ -61303,7 +61344,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, foto/pose/medsos ASN-kades-lurah-camat",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 21,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-04848",
@@ -61466,7 +61508,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://kilaspapua.com/kabupaten-waropen/bawaslu-waropen-tangani-1-aduan-dan-3-temuan-pelanggaran-pilkada-salahsatunya-netralitas-asn/",
@@ -61586,7 +61628,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.detik.com/bali/nusra/d-7123147/bawaslu-selidiki-dugaan-pelanggaran-asn-jadi-mc-kampanye-gibran-di-kupang",
@@ -61616,7 +61658,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://kupang.antaranews.com/berita/125001/bawaslu-kota-kupang-temukan-satu-dugaan-pelanggaran-pemilu-libatkan-asn",
@@ -61633,7 +61675,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, foto/pose/medsos ASN-kades-lurah-camat",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 16,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-04865",
@@ -61663,7 +61706,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, foto/pose/medsos ASN-kades-lurah-camat",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 16,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-04866",
@@ -61916,7 +61960,7 @@
   "lokasi_tingkat": "provinsi",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://posmerdeka.com/diduga-langgar-netralitas-asn-bawaslu-ri-proses-pelanggaran-pj-gubernur-ntb/",
@@ -61976,7 +62020,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://bengkulu.antaranews.com/berita/327555/bawaslu-gelar-kajian-hukum-dugaan-pelanggaran-pj-wali-kota-bengkulu",
@@ -62007,7 +62051,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://infonegeri.id/2024/01/11/pj-walikota-bengkulu-kirim-konten-caleg-ke-whatsapp-grup-apakah-pelanggaran-pidana-pemilu/",
@@ -62038,7 +62082,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://rri.co.id/pemilu/561735/selama-kampanye-bawaslu-provinsi-bengkulu-tindaklanjuti-dugaan-pelanggaran-asn-hingga-pengawas-adhoc",
@@ -62129,7 +62173,7 @@
   "lokasi_tingkat": null,
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://daerah.sindonews.com/read/72480/710/cara-bawaslu-kasn-tekan-pelanggaran-netralitas-saat-pilkada-2020-1592373977",
@@ -62465,7 +62509,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://karangasem.bawaslu.go.id/berita/cegah-pelanggaran-pemilu-di-medsos-hingga-dunia-nyata-bawaslu-karangasem-gandeng-kecamatan",
@@ -62495,7 +62539,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://bali.idntimes.com/news/bali/2-asn-di-tabanan-melakukan-pelanggaran-administrasi-00-x4g41-x4cpjn",
@@ -62739,7 +62783,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://banten.tribunnews.com/2023/10/10/bawaslu-pelototi-akun-medsos-asn-banten-untuk-cegah-pelanggaran-netralitas",
@@ -63014,7 +63058,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://jabar.antaranews.com/berita/481830/bawaslu-cianjur-serahkan-kasus-dugaan-pelanggaran-netralitas-asn-ke-kasn",
@@ -63747,7 +63791,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.rmoljawatengah.id/bawaslu-karanganyar-panggil-mantan-camat-jaten-terkait-dugaan-pelanggaran-netralitas-asn",
@@ -63764,7 +63808,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, foto/pose/medsos ASN-kades-lurah-camat",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 5,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-04973",
@@ -64269,7 +64314,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.krjogja.com/banyumas/1244014792/tidak-terbukti-melakukan-pelanggaran-tindak-pidana-pemilu-camat-kedungbanteng-supaya-dibina",
@@ -64286,7 +64331,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, foto/pose/medsos ASN-kades-lurah-camat",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 5,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-04990",
@@ -64361,7 +64407,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://jatengprov.go.id/beritadaerah/hingga-kini-belum-ada-pelanggaran-netralitas-asn-di-batang/",
@@ -64391,7 +64437,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://jateng.disway.id/disway-solo/read/702093/dugaan-pelanggaran-netralitas-asn-inilah-langkah-bawaslu-sragen",
@@ -64408,7 +64454,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, foto/pose/medsos ASN-kades-lurah-camat",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 5,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-04996",
@@ -64451,12 +64498,12 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.ayosemarang.com/semarang-raya/7713973083/tindak-laporan-bawaslu-kota-semarang-sampaikan-dua-pelanggaran-netralitas-asn-ke-bkn",
   "sumber_1_outlet": "ayosemarang.com",
-  "sumber_2_url": "https://halosemarang.id/bawaslu-kota-semarang-proses-dugaan-pelanggaran-netralitas-asn-ke-bkn/",
+  "sumber_2_url": "https://jateng.antaranews.com/berita/559501/dua-laporan-pelanggaran-netralitas-asn-kota-semarang-lanjut-ke-bkn",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -64469,7 +64516,7 @@
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 5,
   "saluran": "gnews-peramban",
-  "kemiripan_pasangan": 0.41
+  "kemiripan_pasangan": 0.37
  },
  {
   "insiden_id": "AUTO-04999",
@@ -64543,12 +64590,12 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://halosemarang.id/bawaslu-kota-semarang-proses-dugaan-pelanggaran-netralitas-asn-ke-bkn/",
   "sumber_1_outlet": "halosemarang.id",
-  "sumber_2_url": "https://www.ayosemarang.com/semarang-raya/7713973083/tindak-laporan-bawaslu-kota-semarang-sampaikan-dua-pelanggaran-netralitas-asn-ke-bkn",
+  "sumber_2_url": "https://jateng.antaranews.com/berita/559501/dua-laporan-pelanggaran-netralitas-asn-kota-semarang-lanjut-ke-bkn",
   "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
@@ -64561,7 +64608,7 @@
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 5,
   "saluran": "gnews-peramban",
-  "kemiripan_pasangan": 0.41
+  "kemiripan_pasangan": 0.36
  },
  {
   "insiden_id": "AUTO-05002",
@@ -64665,13 +64712,13 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://radarbojonegoro.jawapos.com/politika/2411250009/dugaan-pelanggaran-netralitas-pilkada-2024-camat-kradenan-blora-terancam-sanksi-disiplin",
   "sumber_1_outlet": "radarbojonegoro.jawapos.com",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://beritajateng.id/berita/dugaan-pelanggaran-netralitas-camat-kradenan-blora-bkn-resmi-beri-rekomendasi-sanksi/",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -64682,7 +64729,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, foto/pose/medsos ASN-kades-lurah-camat",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 5,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "kemiripan_pasangan": 0.35
  },
  {
   "insiden_id": "AUTO-05006",
@@ -64695,7 +64743,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://radarbojonegoro.jawapos.com/politik-pemerintahan/2412130013/dugaan-pelanggaran-netralitas-pilkada-blora-2024-sanksi-camat-kradenan-masih-tunggu-keputusan",
@@ -64712,7 +64760,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, foto/pose/medsos ASN-kades-lurah-camat",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 5,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-05007",
@@ -64725,7 +64774,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://radarkudus.jawapos.com/blora/2410020003/bawaslu-dalami-dugaan-pelanggaran-netralitas-camat-todanan-dukung-salah-satu-paslon-pilkada-blora",
@@ -64756,7 +64805,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://lingkarjateng.id/soal-dugaan-pelanggaran-netralitas-camat-kradenan-ini-kata-kepala-bkd-blora/",
@@ -65156,7 +65205,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://muria.suaramerdeka.com/muria-raya/0713580367/sekda-jepara-panggil-10-asn-atas-dugaan-pelanggaran-netralitas",
@@ -65173,7 +65222,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, foto/pose/medsos ASN-kades-lurah-camat",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": null,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-05024",
@@ -65726,7 +65776,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, foto/pose/medsos ASN-kades-lurah-camat",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 7,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-05048",
@@ -65770,7 +65821,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://jatim.antaranews.com/berita/698661/bawaslu-jember-panggil-pelapor-pelanggaran-netralitas-asn",
@@ -65801,7 +65852,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://rri.co.id/madiun/lainnya/710500/kejaksaan-kabupaten-madiun-menjelaskan-poin-pelanggaran-netralitas-asn",
@@ -65985,7 +66036,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://selalu.id/news-15390-soal-dugaan-pelanggaran-disiplin-asn-jember-bawaslu-bilang-begini",
@@ -66002,7 +66053,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, foto/pose/medsos ASN-kades-lurah-camat",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 7,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-05060",
@@ -66505,13 +66557,13 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://batam.inews.id/read/502786/kepala-diskominfo-batam-diperiksa-bawaslu-terkait-dugaan-pelanggaran-netralitas-asn",
   "sumber_1_outlet": "batam.inews.id",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://ulasan.co/ini-klarifikasi-bawaslu-batam-soal-dugaan-pelanggaran-netralitas-asn-oknum-camat-batu-ampar/",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -66522,7 +66574,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, foto/pose/medsos ASN-kades-lurah-camat",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 18,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "kemiripan_pasangan": 0.29
  },
  {
   "insiden_id": "AUTO-05087",
@@ -66535,13 +66588,13 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.batamnews.co.id/berita-115515-dugaan-pelanggaran-netralitas-asn-di-karimun-tim-pemenangan-rudi-rafiq-akan-laporkan-ke-bawaslu.html",
   "sumber_1_outlet": "batamnews.co.id",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://ulasan.co/tim-rudi-rafiq-akan-laporkan-dugaan-pelanggaran-netralitas-asn-ke-bawaslu/",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -66552,7 +66605,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, foto/pose/medsos ASN-kades-lurah-camat",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 18,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "kemiripan_pasangan": 0.58
  },
  {
   "insiden_id": "AUTO-05088",
@@ -66717,7 +66771,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://ulasan.co/bkpsdm-bintan-belum-terima-laporan-resmi-pelanggaran-netralitas-asn/",
@@ -66734,7 +66788,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, foto/pose/medsos ASN-kades-lurah-camat",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 18,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-05095",
@@ -66807,7 +66862,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://sulbar.tribunnews.com/2024/10/02/bawaslu-mateng-belum-terima-laporan-pelanggaran-netralitas-asn-di-masa-kampanye",
@@ -66927,7 +66982,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.detik.com/sulsel/berita/d-7127136/ramai-kasus-dugaan-pelanggaran-pemilu-asn-di-pinrang-kadis-camat-terseret",
@@ -66944,7 +66999,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, foto/pose/medsos ASN-kades-lurah-camat",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 12,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-05107",
@@ -66987,7 +67043,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.detik.com/sulsel/berita/d-7047921/bawaslu-pinrang-periksa-kadinsos-terkait-dugaan-pelanggaran-netralitas-asn",
@@ -67125,7 +67181,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, foto/pose/medsos ASN-kades-lurah-camat",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 12,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-05114",
@@ -67289,7 +67346,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.detik.com/sulsel/berita/d-7410767/2-dugaan-pelanggaran-netralitas-asn-libatkan-eks-bupati-pinrang-irwan-hamid",
@@ -67471,7 +67528,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://makassar.kompas.com/image/2024/10/11/221005878/bawaslu-makassar-ungkap-8-kasus-dugaan-pelanggaran-netralitas-asn-salah",
@@ -67488,7 +67545,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota nasional, foto/pose/medsos ASN-kades-lurah-camat",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 12,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-05128",
@@ -67984,7 +68042,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://media.alkhairaat.id/satu-kasus-dugaan-pelanggaran-netralitas-asn-di-palu-berpotensi-lanjut-ke-pihak-berwenang/",
@@ -68377,7 +68435,7 @@
   "lokasi_tingkat": null,
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://setkab.go.id/usai-pemilu-badan-kepegawaian-negara-rekapitulasi-data-pelanggaran-netralitas-asn/",
@@ -68407,7 +68465,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.detik.com/sumut/hukum-dan-kriminal/d-7541401/menanti-hasil-pemeriksaan-dugaan-pelanggaran-netralitas-asn-di-binjai",
@@ -69012,7 +69070,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://jabar.antaranews.com/berita/224308/bawaslu-karawang-temukan-dugaan-politik-uang-dan-pelanggaran-pns",
@@ -69042,7 +69100,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.liputan6.com/pemilu/read/4428422/bawaslu-depok-limpahkan-1-asn-ke-pengadilan-terkait-pelanggaran-pilkada",
@@ -70045,7 +70103,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://kumparan.com/kepripedia/bawaslu-teruskan-2-kasus-dugaan-pelanggaran-netralitas-asn-di-lingga-ke-kasn-1uKBmmDLy5n",
@@ -70075,7 +70133,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://poskomalut.com/pemberhentian-plt-camat-taliabu-utara-tidak-memenuhi-unsur-pelanggaran/",
@@ -70316,7 +70374,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://banten.antaranews.com/berita/260250/bawaslu-panggil-wakil-walikota-cilegon-soal-dugaan-pelanggaran-pemilu-2024",
@@ -70378,7 +70436,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://banten.tribunnews.com/2024/01/23/bawaslu-kota-cilegon-beri-rekomendasi-pelanggaran-netralitas-asn-camat-cibeber-ke-kasn",
@@ -70499,7 +70557,7 @@
   "lokasi_tingkat": "provinsi",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://regional.kompas.com/read/2024/02/16/190229978/sederet-dugaan-pelanggaran-pemilu-di-jateng-ada-surat-suara-tercoblos-dan",
@@ -70590,7 +70648,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://kabarsingaparna.pikiran-rakyat.com/kabar-singaparna/pr-3239164124/bawaslu-selidiki-dugaan-pelanggaran-netralitas-asn-jelang-psu-pilkada-tasikmalaya",
@@ -70620,7 +70678,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.wowbabel.com/lokal/59811751299/bawaslu-babel-pantau-dugaan-pelanggaran-tidak-netralitas-asn-yang-sedang-ditangani-bawaslu-kota",
@@ -70803,7 +70861,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.suarasurabaya.net/politik/2024/bawaslu-surabaya-telusuri-camat-dampingi-calon-tunggal-pilwali-takziah-ke-warga-soal-pontensi-pelanggaran/",
@@ -70984,7 +71042,7 @@
   "lokasi_tingkat": "provinsi",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://lombokpost.jawapos.com/politika/2409060047/dugaan-pelanggaran-netralitas-puluhan-asn-di-ntb-dilaporkan-ke-bkn",
@@ -72077,13 +72135,13 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://channelsulawesi.id/2024/09/20/bawaslu-banggai-tindak-lanjuti-kasus-dugaan-pelanggaran-netralitas-asn/",
   "sumber_1_outlet": "channelsulawesi.id",
-  "sumber_2_url": null,
-  "status_verifikasi": "satu sumber",
+  "sumber_2_url": "https://kabarluwuk.com/bawaslu-kabupaten-banggai-umumkan-hasil-penanganan-dugaan-pelanggaran-netralitas-asn/",
+  "status_verifikasi": "dua sumber",
   "status_kurasi": "otomatis",
   "periode_pilpres": "Periode V",
   "gelombang_pilkada": "2024",
@@ -72094,7 +72152,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan kab/kota, kades/lurah/camat dukung-deklarasi-kampanye paslon",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 19,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "kemiripan_pasangan": 0.33
  },
  {
   "insiden_id": "AUTO-05447",
@@ -73075,7 +73134,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://radartarakan.jawapos.com/malinau/2410140049/bawaslu-tindak-lanjut-dugaan-pelanggaran-netralitas-asn-di-malinau",
@@ -73225,7 +73284,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://jubi.id/mamta/2024/bawaslu-papua-terima-laporan-dugaan-pelanggaran-pilkada-pj-wali-kota-jayapura/",
@@ -73379,7 +73438,7 @@
   "lokasi_tingkat": "provinsi",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://www.jpnn.com/news/begini-respons-bawaslu-soal-dugaan-pelanggaran-netralitas-asn-dan-polri-di-psu-papua",
@@ -73439,7 +73498,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://teraspapua.com/2024/11/06/pj-walikota-jayapura-dipanggil-bawaslu-papua-terkait-dugaan-pelanggaran-pemilu/",
@@ -73683,7 +73742,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://koreri.com/2024/11/06/bawaslu-papua-terima-2-alat-bukti-dugaan-pelanggaran-pj-wali-kota-jayapura/",
@@ -73775,7 +73834,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://klikpapua.com/papua-barat/manokwari/bawaslu-manokwari-temukan-dugaan-pelanggaran-netralitas-asn-di-kampanye-pilkada.html",
@@ -74173,7 +74232,7 @@
   "lokasi_tingkat": "kab_kota",
   "pelaku_jabatan": null,
   "sasaran_jenis": null,
-  "mekanisme": "pengalihan sumber daya",
+  "mekanisme": "paksaan aparat sipil",
   "ringkasan_satu_kalimat": null,
   "hasil": null,
   "sumber_1_url": "https://tv.sinpo.id/detail/krpp-laporkan-dugaan-pelanggaran-pemilu-oleh-pj-bupati-sorong-ke-bawaslu",
@@ -74190,7 +74249,8 @@
   "kueri": "Google News (peramban, halaman pencarian): peramban: sapuan per tempat x topik, PBD/Papua Tengah/Pegunungan/Selatan/Kaltara",
   "lingkup_dasar": "konteks elektoral di judul",
   "_path": 22,
-  "saluran": "gnews-peramban"
+  "saluran": "gnews-peramban",
+  "catatan_duplikat": "kandidat sumber kedua ditolak: judulnya bukan peristiwa yang sama"
  },
  {
   "insiden_id": "AUTO-05955",
