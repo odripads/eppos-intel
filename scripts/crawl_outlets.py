@@ -195,10 +195,15 @@ def main():
                             if cid not in done: grid.append((cid, wave, d, mek, q))
     else:
         # Pemilu 2009/2014 first: "back to 2009" had 1 and 5 rows because the sweep started at Pilkada 2015
+        # Only outlets whose archives reach that far (scripts/probe_arsip_lama.py, 10 Nov: 5 for 2009, 19 for 2014
+        # of 304); the rest were founded later and would cost ~59k empty requests.
+        lama_p = ROOT / "scripts" / "outlet_arsip_lama.json"
+        lama = json.loads(lama_p.read_text()) if lama_p.exists() else {}
         for wave in list(getattr(cc, "PEMILU", {})) + cc.WAVE_ORDER:
+            sasaran = [d for d in outlets if d in set(lama.get(wave, outlets))] if wave in getattr(cc, "PEMILU", {}) else outlets
             for mek, qs in CARI.items():
                 for q in qs:
-                    for d in outlets:
+                    for d in sasaran:
                         cid = f"wp|{wave}|{d}|{q}"
                         if cid not in done: grid.append((cid, wave, d, mek, q))
     todo = grid[: a.cells]
