@@ -29,6 +29,9 @@ Terakhir diperbarui: 10 Nov 2026 (sesi 3, 19.00 WIB).
 - Hadar Nafis Gumay (NETGRIT, mantan komisioner KPU), 29 Okt: jumlah anggota KPU dan Bawaslu "tidak perlu ditambah";
   menunda timsel sampai UU baru selesai dinilai "Tidak tepat sama sekali" ([Kompas.com, 30 Okt](https://nasional.kompas.com/read/2026/10/30/13081451/eks-komisioner-jumlah-anggota-kpu-dan-bawaslu-tidak-perlu-ditambah)).
   Kompas juga menautkan berita "Koalisi Masyarakat Tolak Pembentukan Pansel KPU-Bawaslu Ditunda". **[belum dibaca]**
+- Titi Anggraini, 28 Okt (Menara Kompas): belum dibentuknya timsel "adalah preseden buruk"; "Presiden harus menjelaskan
+  mengapa sampai hari ini tidak dibentuk tim seleksi"; "Tidak boleh kemudian tim seleksi tidak dibentuk, di saat yang
+  sama undang-undang pemilunya masih berlaku" ([Kompas.com, 30 Okt](https://nasional.kompas.com/read/2026/10/30/09461141/uu-pemilu-belum-disahkan-seberapa-siap-indonesia-menghadapi-pemilu-2029?page=2)).
 - Bawaslu: belum dicari terpisah. **[belum dicek]**
 
 ## 3. Pembanding: seleksi 2022–2027
@@ -64,6 +67,8 @@ partai, PDIP/Aria Bima 20–30%, PDIP/Said Abdullah, Demokrat/Dede Yusuf); penol
 masih menunggu Panja.
 
 ## Catatan metode (untuk dicek Odri / tim Beckham)
+- Sikap yang berubah dicatat sebagai baris terpisah, tidak ditimpa: Khozin (PKB) 5% pada 18 Sep (POS-0007) lalu 6% pada
+  28 Sep (POS-0039); Said Abdullah (PDIP) tanpa angka/berbasis kursi pada 30 Jan (POS-0041) lalu 6% pada 24 Sep (POS-0003).
 - Pengurus partai yang punya kursi DPR (mis. Sugiono, Viva Yoga) saya masukkan **elit parlemen** walau belum tentu duduk
   di DPR. Partai tanpa kursi DPR (Perindo, PSI, Gerakan Rakyat, GKSR) masuk **elit non-parlemen**.
 - Sikap "menolak kenaikan" tanpa angka pengganti tidak ada di daftar tertutup, jadi dicatat **lainnya** + catatan.

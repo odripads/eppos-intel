@@ -578,5 +578,51 @@
   "diisi_oleh": "bot-posisi",
   "status": "otomatis",
   "catatan": "Menolak 7% tetapi menyebut ambang batas tetap dibutuhkan; angka diserahkan ke DPR."
+ },
+ {
+  "id": "POS-0039",
+  "tanggal": "2026-09-28",
+  "aktor": "Muhammad Khozin",
+  "jenis_aktor": "elit parlemen",
+  "lembaga": "PKB (Anggota Komisi II DPR)",
+  "isu": "ambang batas parlemen",
+  "sikap": "naikkan",
+  "angka": "6%",
+  "kutipan": "PT 6% mempertahankan pluralitas pada pilihan politik, tetapi (sekaligus) seleksi representasi pada tahap konversi suara menjadi kursi",
+  "sumber_url": "https://katadata.co.id/indepth/telaah/6abce48d97b00/pertarungan-ambang-batas-parlemen-kepentingan-partai-dan-nasib-psi-pada-2029",
+  "outlet": "katadata.co.id (dikutip dari Antara)",
+  "catatan": "Berbeda dari 5% yang ia sebut pada 18 Sep (POS-0007). Kata dalam kurung dari redaksi.",
+  "diisi_oleh": "bot-posisi",
+  "status": "otomatis"
+ },
+ {
+  "id": "POS-0040",
+  "tanggal": "2026-09-27",
+  "aktor": "Joko Widodo",
+  "jenis_aktor": "elit non-parlemen",
+  "lembaga": "PSI (kader; Presiden ke-7 RI)",
+  "isu": "ambang batas parlemen",
+  "sikap": "lainnya",
+  "kutipan": "Mau 5% tidak masalah, mau 6% tidak masalah, mau 7% tidak masalah, mau 8% tidak masalah",
+  "sumber_url": "https://katadata.co.id/indepth/telaah/6abce48d97b00/pertarungan-ambang-batas-parlemen-kepentingan-partai-dan-nasib-psi-pada-2029",
+  "outlet": "katadata.co.id",
+  "catatan": "Tidak mempersoalkan besaran; disampaikan ke kader PSI di Rakorda Bandung.",
+  "diisi_oleh": "bot-posisi",
+  "status": "otomatis"
+ },
+ {
+  "id": "POS-0041",
+  "tanggal": "2026-01-30",
+  "aktor": "Said Abdullah",
+  "jenis_aktor": "elit parlemen",
+  "lembaga": "PDI Perjuangan (Ketua DPP; Ketua Banggar DPR)",
+  "isu": "ambang batas parlemen",
+  "sikap": "lainnya",
+  "kutipan": "Kalau saya berpandangan memang tidak lagi berpangku pada nominal PT yang perlu dituangkan angkanya dalam undang-undang",
+  "sumber_url": "https://rri.co.id/sumenep/info-parlemen/2147056/said-abdullah-usulkan-syarat-minal-21-kursi-parlemen",
+  "outlet": "rri.co.id",
+  "catatan": "Usul syarat minimal kursi DPR (judul: 21 kursi) ganti persentase; kemudian PDIP resmi usul 6% (POS-0003).",
+  "diisi_oleh": "bot-posisi",
+  "status": "otomatis"
  }
 ]
