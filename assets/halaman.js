@@ -449,7 +449,7 @@
   function ruu() {
     return '<section class="kertas blok"><div class="lebar">' +
       kepala("Fokus 2", "RUU Pemilu", "Studi baru tentang revisi aturan pemilu, khususnya ambang batas parlemen dan syarat pencapresan, sebagai konteks relevansi peta politik 2027–2029.") +
-      '<div class="status-ruu"><span class="kicker">Status</span><p>Per 24 September 2026, pimpinan DPR menyebut pembahasan RUU Pemilu <a href="https://www.rctiplus.com/news/detail/inews/5479608/dasco-sebut-pembahasan-ruu-pemilu-masih-dinamis--jamin-tampung-semua-usulan" target="_blank" rel="noopener">masih dinamis</a>. Halaman ini diperbarui mengikuti naskah.</p></div>' +
+      '<div class="status-ruu"><span class="kicker">Status</span><p>Per 7 November 2026, Ketua Komisi II DPR menyebut rapat Panja RUU Pemilu <a href="https://kumparan.com/kumparannews/komisi-ii-dpr-sodorkan-2-opsi-skenario-ke-pemerintah-soal-pembentukan-timsel-kpu-28Wo9zmWus0" target="_blank" rel="noopener">mulai 11 November 2026</a>, setelah rapat perdana batal digelar di masa reses. Angka ambang batas belum diputuskan. Halaman ini diperbarui mengikuti naskah.</p></div>' +
       palang("Gambar 9", "Tiga putusan yang memaksa revisi") +
       '<div class="tiga putusan">' + [E.PATAH[7], E.PATAH[8], E.PATAH[9]].map(function (p) {
         return '<article class="kartu-put"><time>' + esc(p.t) + '</time><h3 class="j3"><a href="' + E.url(p.url) + '" target="_blank" rel="noopener">' + esc(p.j) + "</a></h3><p>" + esc(p.k) + "</p></article>";
