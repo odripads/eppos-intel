@@ -6,7 +6,9 @@ REPO="$HOME/eppos-intel"
 LOG="$REPO/data/rutin.log"
 CELLS="${1:-40}"
 cd "$REPO" || exit 1
-PY="$(command -v python3 || echo /opt/homebrew/bin/python3)"
+# Always the system Python: it has requests and openpyxl. Homebrew's python3 (first on PATH when a bot starts this
+# by hand) lacks both, so verify_titles.py and build_data.py failed silently. launchd already uses /usr/bin.
+PY=/usr/bin/python3; [ -x "$PY" ] || PY="$(command -v python3)"
 
 {
   echo "════════ $(date '+%Y-%m-%d %H:%M:%S') · rutin harian ($CELLS sel) ════════"

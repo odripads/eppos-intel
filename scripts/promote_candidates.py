@@ -615,8 +615,9 @@ def main():
     kand = json.loads((DATA / "kandidat.json").read_text())
     wd = json.loads((ROOT / "scripts" / "wikidata_id_regions.json").read_text())
     pp = json.loads((DATA / "provinsi_path.json").read_text())
-    html = (ROOT / "index.html").read_text()
-    ds = re.findall(r'<path class="prov"[^>]*\sd="([^"]+)"', re.search(r'<g id="provs">(.*?)</g>', html, re.S).group(1))
+    # the province shapes left index.html when the site became the Outlook (4 Nov 2026); the same 32 paths, in the
+    # same order, live in data/peta_dasar.json. Reading index.html crashed every daily promote after that.
+    ds = json.loads((DATA / "peta_dasar.json").read_text())["paths"]
     prings = [rings(d) for d in ds]
     path_names = {L["path_index"]: L["provinsi_wikidata"] for L in pp["paths"]}
 

@@ -123,7 +123,9 @@ def main():
             insiden.append({
                 "insiden_id": rid, "tanggal": tgl, "tanggal_asli": cell(rec.get("tanggal")),
                 "provinsi": cell(rec.get("provinsi")), "kab_kota": cell(rec.get("kab_kota")),
-                "pelaku_jabatan": pj or None, "pelaku_nama": cell(rec.get("pelaku_nama")),
+                # PROJECT-SPEC v2: pelaku_nama only publishes on `dua sumber` + `masuk` rows. Rows here are always
+                # `ragu` (unread by Odri), so the name never passes the gate; this file is public on GitHub.
+                "pelaku_jabatan": pj or None, "pelaku_nama": None,
                 "sasaran_jenis": cell(rec.get("sasaran_jenis")),
                 "mekanisme": mek, "mekanisme_asli": cell(rec.get("mekanisme")),
                 "ringkasan_satu_kalimat": cell(rec.get("ringkasan_satu_kalimat")),
