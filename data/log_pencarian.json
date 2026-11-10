@@ -341,15 +341,15 @@
    "tanggal_pencarian": "2026-11-10",
    "alat": "Google News RSS (skrip)",
    "dijalankan_oleh": "rutin otomatis",
-   "sel": 160,
+   "sel": 200,
    "hasil_masuk": 0
   },
   {
    "tanggal_pencarian": "2026-11-10",
    "alat": "WordPress REST (skrip)",
    "dijalankan_oleh": "rutin otomatis",
-   "sel": 3278,
-   "hasil_masuk": 1
+   "sel": 5890,
+   "hasil_masuk": 45
   }
  ]
 }

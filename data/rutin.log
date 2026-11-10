@@ -973,3 +973,39 @@ semua kandidat sudah punya URL
 ── bangun ulang bundel situs
 /Users/odripads/eppos-intel/dist/eppos-outlook.html 2.04 MB
 ── selesai · 0 kandidat menunggu tinjauan · buka tinjau.html
+════════ 2026-11-10 20:17:11 · rutin harian (40 sel) ════════
+── sapuan arsip outlet (WordPress REST, tanpa batas laju bersama)
+  ... 2460 sel, 43 kandidat baru
+  2014 acehkita.com           ASN dukung calon             5→1
+  ... 2520 sel, 44 kandidat baru
+  ... 2580 sel, 44 kandidat baru
+
+44 kandidat baru · 44 menunggu tinjauan
+── sapuan Google News (dibatasi laju; pelan)
+  2017 Sumatera Utara     paksaan kepala desa dan   0 hasil → 0 kandidat
+  2017 Sumatera Utara     paksaan warga penerima p  0 hasil → 0 kandidat
+  2017 Sumatera Utara     paksaan warga penerima p  0 hasil → 0 kandidat
+  2017 Sumatera Utara     tekanan terhadap kritik   0 hasil → 0 kandidat
+
+0 kandidat baru · 44 menunggu tinjauan · 463815/469355 sel grid selesai
+── selesaikan URL kandidat (bertahap, endpoint Google membatasi laju)
+semua kandidat sudah punya URL
+── verifikasi judul sumber baru
+[7/8] gagal         https://kaltim.tribunnews.com/2021/02/27/bkpsdm-nunukan-tepis-isu-pemb  →  
+[8/8] gagal         https://www.tempo.co/politik/bawaslu-catat-3-daerah-ini-paling-banyak-  →  
+106 terverifikasi, 8 gagal → /Users/odripads/eppos-intel/data/judul_terverifikasi.json
+── terima kandidat baru (izin berdiri Odri, 29 Sep 2026)
+44 kandidat ditandai · 35 tertahan tanpa URL · 0 belum ditandai
+── masukkan temuan otomatis ke lapisan peta
+3750 kandidat disisihkan sebagai di luar lingkup (tercatat, tidak dibuang)
+2574 baris otomatis · 2126 punya kab/kota · 190 tanpa lokasi · 229 dua sumber
+38 provinsi tersentuh: Jawa Timur(367), Jawa Tengah(288), Sulawesi Selatan(267), Jawa Barat(178), Banten(144), Kepulauan Riau(95), Maluku Utara(73), Sulawesi Tenggara(70), Kalimantan Tengah(60), Sulawesi Utara(59), Sumatera Utara(58), Sulawesi Tengah(53)
+── bangun ulang data dari xlsx
+ "insiden": 53,
+ "kasus_resmi": 72,
+  "insiden": 9,
+ "judul_terverifikasi": 93,
+ "koordinat": 92,
+── bangun ulang bundel situs
+/Users/odripads/eppos-intel/dist/eppos-outlook.html 2.06 MB
+── selesai · 0 kandidat menunggu tinjauan · buka tinjau.html
