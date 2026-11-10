@@ -834,3 +834,39 @@ AttributeError: 'NoneType' object has no attribute 'group'
 ── bangun ulang bundel situs
 /Users/odripads/eppos-intel/dist/eppos-outlook.html 2.01 MB
 ── selesai · 0 kandidat menunggu tinjauan · buka tinjau.html
+════════ 2026-11-10 09:30:05 · rutin harian (40 sel) ════════
+── sapuan arsip outlet (WordPress REST, tanpa batas laju bersama)
+  GAGAL indonesiadefense.com 'ASN terlibat politik praktis' 2024: HTTPError
+  GAGAL depoknews.id 'ASN terlibat politik praktis' 2024: JSONDecodeError
+  GAGAL indonesiadefense.com 'sanksi disiplin ASN pilkada' 2024: HTTPError
+  GAGAL depoknews.id 'sanksi disiplin ASN pilkada' 2024: JSONDecodeError
+
+0 kandidat baru · 0 menunggu tinjauan
+── sapuan Google News (dibatasi laju; pelan)
+  2017 Papua Tengah       paksaan aparat sipil      0 hasil → 0 kandidat
+  2017 Papua Tengah       paksaan aparat sipil      0 hasil → 0 kandidat
+  2017 Papua Tengah       paksaan kepala desa dan   0 hasil → 0 kandidat
+  2017 Papua Tengah       paksaan kepala desa dan   0 hasil → 0 kandidat
+
+0 kandidat baru · 0 menunggu tinjauan · 457765/463465 sel grid selesai
+── selesaikan URL kandidat (bertahap, endpoint Google membatasi laju)
+semua kandidat sudah punya URL
+── verifikasi judul sumber baru
+[7/8] gagal         https://kaltim.tribunnews.com/2021/02/27/bkpsdm-nunukan-tepis-isu-pemb  →  
+[8/8] gagal         https://www.tempo.co/politik/bawaslu-catat-3-daerah-ini-paling-banyak-  →  
+106 terverifikasi, 8 gagal → /Users/odripads/eppos-intel/data/judul_terverifikasi.json
+── terima kandidat baru (izin berdiri Odri, 29 Sep 2026)
+0 kandidat ditandai · 35 tertahan tanpa URL · 0 belum ditandai
+── masukkan temuan otomatis ke lapisan peta
+  File "/Users/odripads/eppos-intel/scripts/promote_candidates.py", line 619, in main
+    ds = re.findall(r'<path class="prov"[^>]*\sd="([^"]+)"', re.search(r'<g id="provs">(.*?)</g>', html, re.S).group(1))
+AttributeError: 'NoneType' object has no attribute 'group'
+── bangun ulang data dari xlsx
+ "insiden": 53,
+ "kasus_resmi": 72,
+  "insiden": 9,
+ "judul_terverifikasi": 93,
+ "koordinat": 92,
+── bangun ulang bundel situs
+/Users/odripads/eppos-intel/dist/eppos-outlook.html 2.01 MB
+── selesai · 0 kandidat menunggu tinjauan · buka tinjau.html
