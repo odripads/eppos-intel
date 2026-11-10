@@ -12,3 +12,4 @@ Untuk mengembalikan versi sebelumnya: `cd dist/eppos-outlook && vercel rollback`
 - 2026-11-10 19:03 · bot-posisi: sprint 2026-11-10 19:00, +7 baris · data 2026-11-10 · https://eppos-outlook-5ilaqk0i8-odripads.vercel.app
 - 2026-11-10 19:05 · bot-posisi: sprint 2026-11-10 19:30, cek fakta E.PATAH ke dokumen resmi · data 2026-11-10 · https://eppos-outlook-emkqrwnu5-odripads.vercel.app
 - 2026-11-10 19:13 · bot-posisi: +3 posisi (41), riset timsel · data 2026-11-10 · https://eppos-outlook-llp58i3vg-odripads.vercel.app
+- 2026-11-10 19:18 · bot-posisi: +4 posisi (45): Bahlil, OSO, Cak Imin, Dede Yusuf · data 2026-11-10 · https://eppos-outlook-6166m0yqi-odripads.vercel.app
