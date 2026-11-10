@@ -155,17 +155,22 @@ CH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 1. Map cut-off: keep 2022-06-14 and rename the maps ("Sebelum siklus 2024" / "Siklus 2024 dan sesudahnya"), or
    switch to 2024-01-01? Rows (Peta I / Peta II): 754 / 1,822 now, 998 / 1,578 with 1 Jan 2024. 189 of the 244
    rows in between are from the second half of 2023.
-2. Mislabelled mechanism: 134 of the 145 "pengalihan sumber daya" rows are ASN stories, because `SUMBER` in
-   `scripts/impor_peramban.py` matches "anggaran" inside "pelanggaran" (flagged on the site by `E.keandalan`).
-   When approved: change it to `\banggaran`, relabel the rows in `kandidat.json` with `kandidat_io.ubah`, run
-   `promote_candidates.py`, diff `insiden_otomatis.json` before and after, then publish and re-export the plates.
+2. ~~Mislabelled mechanism~~ **Done 10 Nov (sprint, "adjust for best"):** `SUMBER` now uses `\banggaran` and
+   `(?<!o)peras`; 256 browser-import candidates relabelled, 134 map rows moved to "paksaan aparat sipil"; the
+   two-source pairing then found 20 more `dua sumber` rows (one weak pair: AUTO-00254 Batam, camat vs Diskominfo
+   head, similarity 0.29; the pairing threshold is untouched). Published and plates re-exported.
 3. Redirect `eppos-peta.vercel.app`? · Plates count single-source rows, but the spec says only `dua sumber` rows
    publish: which version goes on stage? · A real corrections email (the Metode page has a placeholder).
 
-**bot-media:** the daily audit-and-publish loop (`bot/media.md`). Then the small checks: "Camat Batu Ampar" is
-misplaced in Kota Batu, Jawa Timur; 22 "Jayapura" rows need a city vs regency check; 35 candidates have no URL.
-"Back to 2009": the 2009 and 2014 cycles have 1 and 5 rows, because search windows start at Pilkada 2015.
-Propose crawl windows, but don't run them while crawling is paused.
+**bot-media:** the daily audit-and-publish loop (`bot/media.md`). Small checks done 10 Nov: "Camat Batu Ampar"
+no longer reads as Kota Batu (alias narrowed; the row is now unplaced, since Batu Ampar exists in Batam and Kubu
+Raya); the 22 "Jayapura" rows need nothing, because same-named kab and kota share one map unit by design
+(`build_kisi.py`); the 35 candidates without URL are duplicates (`status_url = duplikat`), not missing sources.
+"Back to 2009": the 2009 and 2014 cycles had 1 and 5 rows, because search windows started at Pilkada 2015.
+**10 Nov (sprint):** windows `PEMILU` added in `crawl_candidates.py` (2009: 2008-10-09..2009-08-08, 2014:
+2013-10-09..2014-08-09), outlet-archive sweep only (Google News ignores dates), queued first; periode I / II in
+`promote_candidates.py`. `scripts/sprint_crawl_loop.sh` runs 3,000 outlet cells per round (~59k new cells, about
+20 rounds). Scope rules unchanged: Pemilu windows are not in `JENDELA_PILKADA`, so rows need explicit election words.
 
 **bot-posisi:** fill the position map and `riset/ruu-pemilu.md` (`bot/posisi.md`); import Beckham's merged sheet;
 check the legal facts in `E.PATAH` (`assets/grafik.js`) against official documents (the current links are news

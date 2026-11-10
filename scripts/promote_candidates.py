@@ -873,7 +873,9 @@ def main():
                     "2017": "Periode III", "2015": "Periode III", "2026": "Periode V", "2025": "Periode V",
                     "2023": "Periode IV", "2022": "Periode IV", "2021": "Periode IV", "2019b": "Periode III",
                     "2016": "Periode III", "kontrol-2024": "Periode IV", "kontrol-2020": "Periode IV",
-                    "kontrol-2018": "Periode IV", "kontrol-2017": "Periode III"}
+                    "kontrol-2018": "Periode IV", "kontrol-2017": "Periode III",
+                    # Pemilu windows sit before each 20 Oct inauguration: 2009 in Periode I, 2014 in Periode II
+                    "2009": "Periode I", "2014": "Periode II"}
     for r in rows: r["periode_pilpres"] = WAVE_PERIODE.get(r["gelombang_pilkada"])
 
     # corroboration: same place + mechanism, different outlet domains, within 7 days

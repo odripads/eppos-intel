@@ -58,7 +58,12 @@ ANTARA = {
     "2021": ("2021-01-10", "2021-12-31"), "2019b": ("2019-01-01", "2019-06-08"),
     "2016": ("2016-01-10", "2016-08-14"),
 }
-GELOMBANG.update(KONTROL); GELOMBANG.update(ANTARA)
+# "Back to 2009" (team decision): national elections before the 2015 pilkada waves, six months before
+# legislative voting day through one month after the presidential vote (Pemilu 2009: 9 Apr / 8 Jul;
+# Pemilu 2014: 9 Apr / 9 Jul). Outlet-archive sweep only (crawl_outlets.py): Google News ignores date
+# filters, so they are deliberately left out of WAVE_ORDER and KK_URUT. Added 10 Nov 2026, sprint.
+PEMILU = {"2009": ("2008-10-09", "2009-08-08"), "2014": ("2013-10-09", "2014-08-09")}
+GELOMBANG.update(KONTROL); GELOMBANG.update(ANTARA); GELOMBANG.update(PEMILU)
 WAVE_ORDER = ["2024", "2020", "2018", "2017", "2015"] + list(ANTARA) + list(KONTROL)
 PROVINSI = ["Aceh", "Sumatera Utara", "Sumatera Barat", "Riau", "Kepulauan Riau", "Jambi", "Sumatera Selatan",
     "Kepulauan Bangka Belitung", "Bengkulu", "Lampung", "Banten", "DKI Jakarta", "Jawa Barat", "Jawa Tengah",

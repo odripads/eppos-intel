@@ -6,8 +6,9 @@ REPO="$HOME/eppos-intel"
 AKHIR=$(TZ=Asia/Jakarta date -j -f "%Y-%m-%d %H:%M" "2026-11-13 23:59" +%s)
 while [ "$(date +%s)" -lt "$AKHIR" ]; do
   if ! pgrep -f "[r]utin_harian.sh" >/dev/null; then
-    "$REPO/scripts/rutin_harian.sh" 40
+    # 3000 outlet cells ≈ 18 min at 20 workers: the 2009/2014 windows (~59k cells) finish in about 20 rounds
+    OUTLET_CELLS=3000 OUTLET_WORKERS=20 "$REPO/scripts/rutin_harian.sh" 40
   fi
-  sleep 2400
+  sleep 1200
 done
 echo "$(date '+%F %T') sprint crawl loop selesai (batas Jumat 13 Nov)" >> "$REPO/data/rutin.log"

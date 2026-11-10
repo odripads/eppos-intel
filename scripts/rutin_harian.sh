@@ -13,7 +13,8 @@ PY=/usr/bin/python3; [ -x "$PY" ] || PY="$(command -v python3)"
 {
   echo "════════ $(date '+%Y-%m-%d %H:%M:%S') · rutin harian ($CELLS sel) ════════"
   echo "── sapuan arsip outlet (WordPress REST, tanpa batas laju bersama)"
-  "$PY" scripts/crawl_outlets.py --cells 150 2>&1 | tail -6
+  # OUTLET_CELLS: the sprint loop raises this (one worker per outlet, so no single site gets more requests)
+  "$PY" scripts/crawl_outlets.py --cells "${OUTLET_CELLS:-150}" --workers "${OUTLET_WORKERS:-10}" 2>&1 | tail -6
   echo "── sapuan Google News (dibatasi laju; pelan)"
   "$PY" scripts/crawl_candidates.py --cells "$CELLS" 2>&1 | tail -6
   echo "── selesaikan URL kandidat (bertahap, endpoint Google membatasi laju)"

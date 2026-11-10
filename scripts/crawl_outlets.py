@@ -194,7 +194,8 @@ def main():
                             cid = f"wpkk|{wave}|{d}|{q}"
                             if cid not in done: grid.append((cid, wave, d, mek, q))
     else:
-        for wave in cc.WAVE_ORDER:
+        # Pemilu 2009/2014 first: "back to 2009" had 1 and 5 rows because the sweep started at Pilkada 2015
+        for wave in list(getattr(cc, "PEMILU", {})) + cc.WAVE_ORDER:
             for mek, qs in CARI.items():
                 for q in qs:
                     for d in outlets:
