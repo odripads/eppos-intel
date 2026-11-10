@@ -1,0 +1,9 @@
+{
+ "catatan": "Daftar tertutup untuk data/posisi_aktor.json. Dibaca oleh situs (assets/inti.js) dan oleh scripts/cek_posisi.py, jadi satu sumber kebenaran. Ubah hanya dengan persetujuan Odri dan tim Beckham.",
+ "jenis_aktor": ["masyarakat sipil", "elit parlemen", "elit non-parlemen"],
+ "isu": [
+  {"id": "ambang batas parlemen", "sikap": ["naikkan", "pertahankan", "turunkan", "hapus", "lainnya", "belum jelas"]},
+  {"id": "syarat pencapresan", "sikap": ["tanpa ambang", "ambang baru", "batasi koalisi", "lainnya", "belum jelas"]}
+ ],
+ "status": ["otomatis", "dicek tim"]
+}
