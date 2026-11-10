@@ -5,11 +5,14 @@ GROUP** under **PolGov** (Research Center for Politics and Government), Departem
 Odri's previous assistant (Claude) is near its usage limit, so two **OpenBot** agents take over. This file
 replaces that assistant's memory. Last updated 10 Nov 2026.
 
-The two agents (how to create them in OpenBot: `bot/OPENBOT-SETUP.md`):
+The three agents (how to create them in OpenBot: `bot/OPENBOT-SETUP.md`):
 - **EPPOS Media** keeps Fokus 1 (executive intervention) fresh. Its full instructions: `bot/media.md`.
 - **EPPOS Posisi** builds Fokus 2: positions of civil society, parliamentary elites and non-parliamentary elites on
   the RUU Pemilu. Its full instructions: `bot/posisi.md`.
-Each agent has its own OpenBot workspace folder, but **all project work happens in `~/eppos-intel`**. Both publish
+- **EPPOS Desain** (added 10 Nov) owns the web design: layout, typography, responsive behaviour, chart styling and
+  plate rendering, never the data. Its full instructions: `bot/desain.md`. It tells a page's owner before changing
+  that page's structure; the other bots send it design requests with openbot.send_message.
+Each agent has its own OpenBot workspace folder, but **all project work happens in `~/eppos-intel`**. All publish
 to the same Vercel site, only through `scripts/terbitkan.sh`.
 
 ## 0. Hard stops — your permission is "allow", so you are the only brake
