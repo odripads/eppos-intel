@@ -49,7 +49,7 @@ window.EPPOS = (function () {
   E.tenang = E.cetak || (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches);
 
   /* ---------- pemuatan ---------- */
-  var BERKAS = ["manifest", "periode", "insiden", "kasus_resmi", "insiden_otomatis", "usaha_pencarian", "kemajuan", "kisi", "qr", "ringkas", "posisi_aktor", "posisi_skema", "lambang", "sikap_pt", "logo_aktor"];
+  var BERKAS = ["manifest", "periode", "insiden", "kasus_resmi", "insiden_otomatis", "usaha_pencarian", "kemajuan", "kisi", "qr", "ringkas", "posisi_aktor", "posisi_skema", "lambang", "sikap_pt", "logo_aktor", "enp"];
   E.muat = function () {
     var ambil = window.EPPOS_DATA
       ? Promise.resolve(BERKAS.map(function (n) { return window.EPPOS_DATA[n]; }))

@@ -744,3 +744,14 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;paddin
   .ln-kendali .pil{flex:1 1 100%}
   .kons-detail{flex-direction:column}
 }
+
+/* ── jumlah partai efektif (Gambar 9c) ── */
+.enp{width:100%;min-width:560px;height:auto;overflow:visible}
+polyline.enp-suara{fill:none;stroke:var(--a);stroke-width:2.5}
+polyline.enp-kursi{fill:none;stroke:var(--b);stroke-width:2.5}
+circle.enp-suara{fill:var(--a);stroke:var(--kertas);stroke-width:2}
+circle.enp-kursi{fill:var(--b);stroke:var(--kertas);stroke-width:2}
+.enp-n{font:600 11.5px var(--data);fill:var(--tinta-2)}
+.enp-l{font:700 13px var(--teks)}
+.enp-l.enp-suara{fill:var(--a)}.enp-l.enp-kursi{fill:var(--b)}
+.enp-t th a{font-weight:600}

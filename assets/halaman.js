@@ -548,6 +548,32 @@
     return '<article class="rdpu"><time>' + esc(E.tgl(R.tanggal)) + '</time><h3 class="j3">' + esc(R.judul) + '</h3><ul>' + R.butir.map(function (b) { return "<li>" + esc(b) + "</li>"; }).join("") + "</ul><p>" + esc(R.catatan_rapat) +
       ' <a href="' + E.ASET + esc(R.berkas) + '" target="_blank" rel="noopener">Laporan singkat Komisi II DPR (PDF)</a></p></article>';
   }
+  /* Gambar 9c: jumlah partai efektif (Laakso-Taagepera 1979), suara (ENEP) dan kursi (ENPP), 1999-2024.
+     Selisih keduanya adalah fragmentasi yang disaring aturan pemilu, termasuk ambang batas. Data: data/enp.json. */
+  function enpHtml() {
+    var D = E.D.enp;
+    if (!D) return "";
+    var T = D.tahun, W = 760, H = 300, kiri = 78, kanan = 70, atas = 20, bawah = 40, maks = 10;
+    var x = function (i) { return kiri + i * (W - kiri - kanan) / (T.length - 1); }, y = function (v) { return H - bawah - v / maks * (H - atas - bawah); };
+    var s = "";
+    [0, 2, 4, 6, 8, 10].forEach(function (v) { s += '<line class="ln-grid" x1="' + kiri + '" x2="' + (W - kanan) + '" y1="' + y(v) + '" y2="' + y(v) + '"/><text class="ln-sb" x="' + (kiri - 6) + '" y="' + (y(v) + 4) + '" text-anchor="end">' + v + "</text>"; });
+    [["enep", "enp-suara", "suara"], ["enpp", "enp-kursi", "kursi"]].forEach(function (g) {
+      s += '<polyline class="' + g[1] + '" points="' + T.map(function (t, i) { return x(i) + "," + y(t[g[0]]); }).join(" ") + '"/>';
+      T.forEach(function (t, i) { s += '<circle class="' + g[1] + '" cx="' + x(i) + '" cy="' + y(t[g[0]]) + '" r="4.5"><title>' + t.tahun + " " + g[0].toUpperCase() + ": " + t[g[0]] + "</title></circle>" +
+        '<text class="enp-n" x="' + x(i) + '" y="' + (y(t[g[0]]) + (g[0] === "enep" ? -10 : 18)) + '" text-anchor="middle">' + String(t[g[0]]).replace(".", ",") + "</text>"; });
+      var l = T[T.length - 1];
+      s += '<text class="enp-l ' + g[1] + '" x="' + (x(T.length - 1) + 12) + '" y="' + (y(l[g[0]]) + 4) + '">' + g[2] + "</text>";
+    });
+    T.forEach(function (t, i) { s += '<text class="ln-th" x="' + x(i) + '" y="' + (H - bawah + 18) + '" text-anchor="middle">' + t.tahun + "</text>"; });
+    var tab = '<table class="tabel enp-t"><thead><tr><th scope="col">Pemilu</th><th scope="col" class="r">Ambang</th><th scope="col" class="r">Peserta</th><th scope="col" class="r">Berkursi</th><th scope="col" class="r">ENEP (suara)</th><th scope="col" class="r">ENPP (kursi)</th><th scope="col" class="r">Suara tanpa kursi</th></tr></thead><tbody>' +
+      T.map(function (t) { var c = function (v) { return String(v).replace(".", ","); };
+        return '<tr><th scope="row"><a href="' + E.url(t.sumber) + '" target="_blank" rel="noopener">' + t.tahun + '</a></th><td class="r">' + (t.ambang == null ? "tidak ada" : c(t.ambang) + "%") + '</td><td class="r">' + t.peserta + '</td><td class="r">' + t.berkursi + '</td><td class="r">' + c(t.enep) + '</td><td class="r">' + c(t.enpp) + '</td><td class="r">' + c(t.suara_tanpa_kursi) + "%</td></tr>"; }).join("") + "</tbody></table>";
+    return '<div class="palang-jarak">' + palang("Gambar 9c", "Jumlah partai efektif, 1999–2024") + "</div>" +
+      '<div class="dua-kol"><h2 class="j2">Seberapa terfragmentasi DPR?</h2><p class="lead">Indeks Laakso dan Taagepera (1979) menghitung berapa partai yang "efektif" bersaing: <b>N = 1 / Σ pᵢ²</b>, dengan pᵢ pangsa tiap partai. Dihitung atas suara (ENEP) dan atas kursi (ENPP). Jarak antara keduanya adalah fragmentasi yang disaring aturan pemilu: makin lebar, makin banyak pilihan pemilih yang tidak sampai ke parlemen.</p></div>' +
+      '<div class="dua-kol ruu-kol"><figure class="gbr tanpa-garis"><div class="gulir"><svg class="enp" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="ENEP dan ENPP DPR 1999-2024">' + s + "</svg></div></figure>" +
+      '<div class="gulir">' + tab + '<p class="rel-cat">' + esc(D.catatan) + " Ambang batas parlemen: 2,5% (2009), 3,5% (2014), 4% (2019, 2024).</p></div></div>";
+  }
+
   function setelahRuu() {
     $$(".k-chip[data-i]").forEach(function (c) { c.onclick = function () { detailAktor(+c.dataset.i); }; });
     if ($("#kons-detail")) detailAktor(0);
@@ -571,7 +597,7 @@
       '<p class="rel-cat">Setiap logo diletakkan pada angka yang diusulkan aktornya; garis menunjukkan rentang usulan. Klik logo untuk sumbernya.</p>' + konstelasi() +
       '<p class="rel-cat">Sumber: analisis terpadu tim RUU Pemilu EPPOS (Nov 2026) dan pemberitaan yang dihimpunnya; RDPU Komisi II DPR 12 Nov 2026. Angka mengikuti materi sumber. Logo dari Wikipedia/Wikimedia Commons; organisasi tanpa logo publik tampil sebagai monogram.</p>' +
       '<div class="palang-jarak">' + palang("Gambar 9b", "Simulasi ambang 4–7%") + '</div>' +
-      '<div class="dua-kol ruu-kol"><div class="gulir">' + simulasi() + '<p class="rel-cat">' + esc(E.D.sikap_pt ? E.D.sikap_pt.simulasi.catatan : "") + ' Hanya delapan partai parlemen; partai di bawah 4% pada 2024 tidak tercantum di materi sumber.</p></div>' + rdpu() + "</div>" +
+      '<div class="dua-kol ruu-kol"><div class="gulir">' + simulasi() + '<p class="rel-cat">' + esc(E.D.sikap_pt ? E.D.sikap_pt.simulasi.catatan : "") + ' Hanya delapan partai parlemen; partai di bawah 4% pada 2024 tidak tercantum di materi sumber.</p></div>' + rdpu() + "</div>" + enpHtml() +
     "</div></section>" +
 
     '<section class="kertas blok pendek" id="posisi"><div class="lebar">' + petaPosisi() + "</div></section>" +
