@@ -857,3 +857,6 @@ span.sim-logo{display:inline-block;height:20px;width:24px;margin-right:8px;verti
 .tabel.sim .sim-tidak{background:transparent;color:#a3a9b5;font-weight:400}
 .tabel.sim .sim-lolos{background:#e7ecf6;color:var(--tinta);font-weight:500}
 .tabel.sim .sim-tipis{background:#f9e6bb}
+.sim-kab.eks{background:transparent;border:1px dashed var(--garis-2);color:#6b7280}
+.sim-kabinet .kicker+ul{margin-top:6px}
+.sim-kabinet ul+.kicker{margin-top:14px}

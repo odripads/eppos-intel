@@ -414,9 +414,30 @@
    "pbb": "Yusril Ihza Mahendra, Menko Hukum, HAM, Imigrasi, dan Pemasyarakatan",
    "gelora": "Anis Matta, Wakil Menteri Luar Negeri; Fahri Hamzah, Wakil Menteri Perumahan dan Kawasan Permukiman",
    "perindo": "Veronica Tan, Wakil Menteri Pemberdayaan Perempuan dan Perlindungan Anak",
-   "psi": "Raja Juli Antoni, Menteri Kehutanan (berbicara atas nama PSI di pemberitaan; daftar kabinet di Wikipedia mencatatnya independen)"
+   "gerindra": "18 menteri, wakil menteri, dan pejabat setingkat menteri, a.l. Sugiono (Menko PMK), Prasetyo Hadi (Mensesneg), Supratman Andi Agtas (Menkum)",
+   "golkar": "12 menteri dan wakil menteri, a.l. Airlangga Hartarto (Menko Perekonomian), Bahlil Lahadalia (Menteri ESDM), Meutya Hafid (Menkomdigi)",
+   "pan": "9 menteri dan wakil menteri, a.l. Zulkifli Hasan (Menko Pangan), Budi Santoso (Mendag), Yandri Susanto (Mendes PDT)",
+   "demokrat": "6 menteri dan wakil menteri, a.l. Agus Harimurti Yudhoyono (Menko IPK), Dody Hanggodo (Menteri PU)",
+   "pkb": "5 menteri dan wakil menteri, a.l. Muhaimin Iskandar (Menko Pemberdayaan Masyarakat), Saifullah Yusuf (Mensos)"
   },
-  "kabinet_sumber": "https://en.wikipedia.org/wiki/Red_and_White_Cabinet"
+  "kabinet_sumber": "https://en.wikipedia.org/wiki/Red_and_White_Cabinet",
+  "eks_kabinet": {
+   "psi": "Tidak lagi punya kader di kabinet sejak 9 Nov 2026: Raja Juli Antoni (Menteri Kehutanan, sebelumnya Sekjen PSI), Giring Ganesha (Wamenbud), dan Isyana Bagoes Oka (Wamen Kependudukan) keluar dari PSI tetapi tetap menjabat. Keluarnya terjadi enam hari setelah Bareskrim menetapkan Listyo Sigit Prabowo tersangka kasus penyadapan (3 Nov 2026); kaitan keduanya adalah tafsiran pengamat, dibantah DPW PSI Jateng. Raja Juli menyebut alasan fokus bekerja sebagai menteri."
+  },
+  "eks_kabinet_sumber": [
+   [
+    "Kompas, 9 Nov 2026",
+    "https://nasional.kompas.com/read/2026/11/09/20395101/tak-ada-lagi-kader-psi-di-kabinet-prabowo-gibran"
+   ],
+   [
+    "Tirto",
+    "https://tirto.id/eks-elite-psi-di-kabinet-prabowo-ramai-ramai-mundur-ada-apa-idCj"
+   ],
+   [
+    "TribunSolo",
+    "https://solo.tribunnews.com/solo/353342/di-solo-dpw-psi-jateng-tak-mau-kaitkan-mundurnya-3-kader-kabinet-dengan-kasus-penyadapan"
+   ]
+  ]
  },
  "rdpu": {
   "tanggal": "2026-11-12",

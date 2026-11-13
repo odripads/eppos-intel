@@ -543,13 +543,20 @@
     P.forEach(function (r, i) {
       var kab = S.kabinet[r[0]];
       h += '<tr' + (i === 8 ? ' class="sim-batas"' : "") + '><th scope="row">' + (L[r[0]] ? '<img class="sim-logo" src="' + E.ASET + "logo-aktor/" + esc(L[r[0]].gambar) + '" alt="">' : '<span class="sim-logo"></span>') + esc(r[1]) +
-        (kab ? '<span class="sim-kab" title="' + esc(kab) + '">di kabinet</span>' : "") + '</th><td class="r">' + c(r[2]) + '%</td><td class="r">' + (r[3] || "–") + "</td>" +
+        (kab ? '<span class="sim-kab" title="' + esc(kab) + '">di kabinet</span>' : (S.eks_kabinet || {})[r[0]] ? '<span class="sim-kab eks" title="' + esc(S.eks_kabinet[r[0]]) + '">eks-kabinet</span>' : "") + '</th><td class="r">' + c(r[2]) + '%</td><td class="r">' + (r[3] || "–") + "</td>" +
         S.ambang.map(function (t) { var x = st(r[2], t); return '<td class="sim-' + x[0] + '">' + x[1] + "</td>"; }).join("") + "</tr>";
     });
     h += '<tr class="sim-jumlah"><th scope="row">Partai yang lolos</th><td></td><td></td>' + S.ambang.map(function (t) { return "<td>" + P.filter(function (r) { return r[2] >= t; }).length + " dari " + P.length + "</td>"; }).join("") + "</tr>";
     h += '<tr class="sim-jumlah"><th scope="row">Suara tanpa kursi</th><td></td><td></td>' + S.ambang.map(function (t) { var v = 0; P.forEach(function (r) { if (r[2] < t) v += r[2]; }); return "<td>" + c(v) + "%</td>"; }).join("") + "</tr>";
-    var kabL = P.filter(function (r) { return S.kabinet[r[0]]; }).map(function (r) { return "<li><b>" + esc(r[1]) + "</b> · " + esc(S.kabinet[r[0]]) + "</li>"; }).join("");
-    return h + "</tbody></table>" + (kabL ? '<div class="sim-kabinet"><p class="kicker">Di kabinet, tanpa kursi DPR</p><ul>' + kabL + '</ul><p class="rel-cat">Sumber: <a href="' + E.url(S.kabinet_sumber) + '" target="_blank" rel="noopener">daftar Kabinet Merah Putih</a>, diperiksa 13 Nov 2026. Hanya partai peserta Pemilu 2024.</p></div>' : "");
+    var li = function (r) { return "<li><b>" + esc(r[1]) + "</b> · " + esc(S.kabinet[r[0]]) + "</li>"; };
+    var dg = P.filter(function (r) { return S.kabinet[r[0]] && r[3]; }).map(li).join(""), tk = P.filter(function (r) { return S.kabinet[r[0]] && !r[3]; }).map(li).join("");
+    var eks = P.filter(function (r) { return (S.eks_kabinet || {})[r[0]]; }).map(function (r) { return "<li><b>" + esc(r[1]) + "</b> · " + esc(S.eks_kabinet[r[0]]) + "</li>"; }).join("");
+    var a = function (x) { return '<a href="' + E.url(x[1]) + '" target="_blank" rel="noopener">' + esc(x[0]) + "</a>"; };
+    return h + "</tbody></table>" + '<div class="sim-kabinet">' +
+      (dg ? '<p class="kicker">Di kabinet, dengan kursi DPR</p><ul>' + dg + "</ul>" : "") +
+      (tk ? '<p class="kicker">Di kabinet, tanpa kursi DPR</p><ul>' + tk + "</ul>" : "") +
+      (eks ? '<p class="kicker">Tak lagi punya kader di kabinet</p><ul>' + eks + "</ul>" : "") +
+      '<p class="rel-cat">Sumber: ' + a(["daftar Kabinet Merah Putih", S.kabinet_sumber]) + ", pejabat aktif per 13 Nov 2026 menurut afiliasi partai yang tercatat" + ((S.eks_kabinet_sumber || []).length ? "; PSI: " + S.eks_kabinet_sumber.map(a).join(", ") : "") + ". Hanya partai peserta Pemilu 2024.</p></div>";
   }
   function rdpu() {
     var R = E.D.sikap_pt.rdpu;
