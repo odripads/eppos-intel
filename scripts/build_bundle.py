@@ -12,7 +12,7 @@ js = "\n".join((ROOT / "assets" / n).read_text() for n in ("inti.js", "kisi.js",
 # small derived figures the Metode page reads; kandidat.json itself is far too large to ship
 kandidat = json.loads((ROOT / "data/kandidat.json").read_text())
 (ROOT / "data/ringkas.json").write_text(json.dumps({"kandidat": len(kandidat)}))
-data = {n: json.loads((ROOT / "data" / f"{n}.json").read_text()) for n in ("manifest", "periode", "insiden", "kasus_resmi", "insiden_otomatis", "kemajuan", "usaha_pencarian", "kisi", "qr", "ringkas", "posisi_aktor", "posisi_skema", "lambang", "sikap_pt", "logo_aktor", "enp")}
+data = {n: json.loads((ROOT / "data" / f"{n}.json").read_text()) for n in ("manifest", "periode", "insiden", "kasus_resmi", "insiden_otomatis", "kemajuan", "usaha_pencarian", "kisi", "qr", "ringkas", "posisi_aktor", "posisi_skema", "lambang", "sikap_pt", "logo_aktor", "enp", "kasus_pilkada_lama")}
 
 # the single-file bundle carries only what the page renders. The full rows, including the query that
 # found each one, stay in data/*.json in the repo — the bundle is a viewer, not the dataset release.

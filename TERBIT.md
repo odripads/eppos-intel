@@ -22,3 +22,4 @@ Untuk mengembalikan versi sebelumnya: `cd dist/eppos-outlook && vercel rollback`
 - 2026-11-13 15:30 · Claude: panel abu lembut di belakang grafik · data 2026-11-13 · https://eppos-outlook-gzh1l6cpw-odripads.vercel.app
 - 2026-11-13 15:35 · Claude: simulasi ambang 1-7% semua 18 partai (suara resmi KPU), tanda partai di kabinet tanpa kursi DPR; koreksi PAN/NasDem · data 2026-11-13 · https://eppos-outlook-5l4vpqynj-odripads.vercel.app
 - 2026-11-13 15:39 · Claude: Gambar 9b tanda di kabinet untuk Gerindra/Golkar/PAN/Demokrat/PKB; PSI eks-kabinet sejak 9 Nov 2026 (bersumber) · data 2026-11-13 · https://eppos-outlook-joyyg3i14-odripads.vercel.app
+- 2026-11-13 15:42 · Claude: Gambar 3b kasus 2009-2014 (kompilasi Inan, diperiksa ulang ke putusan MK); PKS di kabinet (Yassierli, usulan PKS) · data 2026-11-13 · https://eppos-outlook-8x42uxyiv-odripads.vercel.app

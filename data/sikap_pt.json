@@ -418,7 +418,8 @@
    "golkar": "12 menteri dan wakil menteri, a.l. Airlangga Hartarto (Menko Perekonomian), Bahlil Lahadalia (Menteri ESDM), Meutya Hafid (Menkomdigi)",
    "pan": "9 menteri dan wakil menteri, a.l. Zulkifli Hasan (Menko Pangan), Budi Santoso (Mendag), Yandri Susanto (Mendes PDT)",
    "demokrat": "6 menteri dan wakil menteri, a.l. Agus Harimurti Yudhoyono (Menko IPK), Dody Hanggodo (Menteri PU)",
-   "pkb": "5 menteri dan wakil menteri, a.l. Muhaimin Iskandar (Menko Pemberdayaan Masyarakat), Saifullah Yusuf (Mensos)"
+   "pkb": "5 menteri dan wakil menteri, a.l. Muhaimin Iskandar (Menko Pemberdayaan Masyarakat), Saifullah Yusuf (Mensos)",
+   "pks": "Yassierli, Menteri Ketenagakerjaan: guru besar ITB yang diusulkan PKS sebagai satu-satunya calon menterinya, bukan kader partai (daftar kabinet mencatatnya independen)"
   },
   "kabinet_sumber": "https://en.wikipedia.org/wiki/Red_and_White_Cabinet",
   "eks_kabinet": {
@@ -436,6 +437,16 @@
    [
     "TribunSolo",
     "https://solo.tribunnews.com/solo/353342/di-solo-dpw-psi-jateng-tak-mau-kaitkan-mundurnya-3-kader-kabinet-dengan-kasus-penyadapan"
+   ]
+  ],
+  "kabinet_sumber_tambahan": [
+   [
+    "PKS: Antara Jabar",
+    "https://jabar.antaranews.com/berita/550453/aher-ungkap-prof-yassierli-dipanggil-prabowo-sebagai-calon-menteri-dari-pks"
+   ],
+   [
+    "Jawa Pos",
+    "https://www.jawapos.com/politik/2509290185/presiden-prabowo-kagum-pks-sodorkan-profesor-itb-jadi-menteri-bukan-kader-politik"
    ]
   ]
  },

@@ -860,3 +860,14 @@ span.sim-logo{display:inline-block;height:20px;width:24px;margin-right:8px;verti
 .sim-kab.eks{background:transparent;border:1px dashed var(--garis-2);color:#6b7280}
 .sim-kabinet .kicker+ul{margin-top:6px}
 .sim-kabinet ul+.kicker{margin-top:14px}
+.tabel.kl{min-width:980px;font-size:13.5px}
+.tabel.kl td{vertical-align:top;padding-top:10px;padding-bottom:10px}
+.tabel.kl td:nth-child(3){max-width:340px}
+.kl-ringkas{margin:4px 0 0;line-height:1.45}
+.kl-kecil{margin:4px 0 0;font-size:12px;color:#5b6270;line-height:1.4}
+.kl-jenis{display:inline-block;font:600 10.5px var(--teks);color:var(--tinta);background:#eef1f6;border-radius:3px;padding:1px 6px;margin-right:4px}
+.kl-cek{display:inline-block;font:600 10.5px var(--teks);border-radius:10px;padding:1px 8px;border:1px solid}
+.kl-cek.terverifikasi{color:#1f5f3a;border-color:#9cc8ad;background:#eef7f1}
+.kl-cek.sebagian{color:#7a5300;border-color:#e3c37a;background:#fdf6e4}
+.kl-cek.belum{color:#6b7280;border-color:var(--garis-2)}
+.tabel.kl tr.kl-luar td{opacity:.6}

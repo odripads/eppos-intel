@@ -1,0 +1,285 @@
+{
+ "judul": "Kasus penyalahgunaan kekuasaan di sekitar pilkada 2009–2014",
+ "penyusun": "Inan (tim media EPPOS), lembar 13 Nov 2026; diperiksa ulang Claude 13 Nov 2026 terhadap naskah putusan MK, risalah, dan berita yang ditautkan",
+ "catatan": "Baris MK memuat dalil pemohon atau kesaksian di sengketa hasil pemilukada, bukan temuan terbukti; hampir semua permohonan ditolak. Nama terduga pelaku tidak ditampilkan. Data ini terpisah dari peta dan belum masuk seri kasus resmi.",
+ "kasus": [
+  {
+   "kode": "ADM-001",
+   "tahun": 2015,
+   "provinsi": "Papua",
+   "wilayah": "Biak Numfor",
+   "jenis": "Kekerasan terhadap wartawan oleh kepala daerah",
+   "jenis_sumber": "Laporan media",
+   "ringkas": "Bupati diberitakan memukul wartawan Cenderawasih Pos setelah memberitakan kebakaran Pasar Biak; jaringan jurnalis mengecam dan polisi didesak bertindak.",
+   "hasil": "Tidak ada putusan hukum ditemukan; bupati meminta maaf tertulis kepada pers.",
+   "cek": "terverifikasi",
+   "catatan_cek": "Tiga artikel Jakarta Post (11–12 Mei 2015) cocok. Di luar rentang 2009–2014.",
+   "sumber": [
+    [
+     "Jakarta Post, 11 Mei 2015",
+     "https://www.thejakartapost.com/news/2015/05/11/journalists-condemn-violence-against-journalist-biak"
+    ],
+    [
+     "Jakarta Post, 12 Mei 2015",
+     "https://www.thejakartapost.com/news/2015/05/12/biak-numfor-regent-seeks-forgiveness-ri-press"
+    ]
+   ]
+  },
+  {
+   "kode": "ADM-002",
+   "tahun": 2010,
+   "provinsi": "Sulawesi Selatan",
+   "wilayah": "Luwu Utara",
+   "jenis": "Mutasi/demosi PNS",
+   "jenis_sumber": "Dalil di MK",
+   "ringkas": "Pemohon mendalilkan bupati petahana memutasi guru ke lokasi jauh dan mencopot kepala sekolah yang menolak masuk tim pemenangan (SK Bupati 12 Agustus 2010).",
+   "hasil": "Ditolak seluruhnya, diucapkan 28 September 2010.",
+   "cek": "terverifikasi",
+   "catatan_cek": "Dalil dan amar cocok dengan naskah putusan. Koreksi: tanggal ucap 28 September 2010 (lembar Inan: 27 September, dari register).",
+   "sumber": [
+    [
+     "Putusan MK 162/PHPU.D-VIII/2010",
+     "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_Putusan%20162%20PHPUD%202010.pdf"
+    ]
+   ]
+  },
+  {
+   "kode": "ADM-003",
+   "tahun": 2010,
+   "provinsi": "Kalimantan Timur",
+   "wilayah": "Kutai Timur",
+   "jenis": "Mobilisasi aparat desa dan ASN",
+   "jenis_sumber": "Dalil di MK",
+   "ringkas": "Pemohon mendalilkan camat di 18 kecamatan dan kepala desa di 135 desa diperintahkan memenangkan paslon petahana; MK menilai keterlibatan aparat itu ranah Panwas.",
+   "hasil": "Ditolak seluruhnya, diucapkan 29 Desember 2010.",
+   "cek": "terverifikasi",
+   "catatan_cek": "Amar kini dibaca dari naskah putusan, bukan cuplikan register.",
+   "sumber": [
+    [
+     "Putusan MK 217/PHPU.D-VIII/2010",
+     "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_Putusan%20Perkara%20217%20Pemilukada%20Kabupaten%20Kutai%20Timur_telah%20baca%2029%20Desember%202010.pdf"
+    ]
+   ]
+  },
+  {
+   "kode": "ADM-004",
+   "tahun": 2011,
+   "provinsi": "Sumatera Selatan",
+   "wilayah": "Musi Banyuasin",
+   "jenis": "Pemecatan/mutasi/demosi PNS dan honorer",
+   "jenis_sumber": "Dalil di MK",
+   "ringkas": "Pemohon mengajukan surat bupati tentang mutasi, demosi, dan pemecatan PNS serta honorer; ada dalil PNS diancam dimutasi bila keluarganya mendukung penantang.",
+   "hasil": "Permohonan I dan II ditolak seluruhnya, diucapkan 18 Oktober 2011.",
+   "cek": "terverifikasi",
+   "catatan_cek": "Amar dan tanggal cocok dengan naskah putusan.",
+   "sumber": [
+    [
+     "Putusan MK 98-99/PHPU.D-IX/2011",
+     "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_PUT%2098-99%20MUBA%20TELAH%20BACA.pdf"
+    ]
+   ]
+  },
+  {
+   "kode": "ADM-005",
+   "tahun": 2011,
+   "provinsi": "Riau",
+   "wilayah": "Rokan Hulu",
+   "jenis": "Mobilisasi kades dan honorer; pemecatan kades",
+   "jenis_sumber": "Dalil di MK",
+   "ringkas": "Pemohon mendalilkan keterlibatan camat, kades, RT/RW, ancaman pemecatan RT dan guru honorer, serta pemecatan seorang kepala desa.",
+   "hasil": "Ditolak seluruhnya, diucapkan 24 Maret 2011.",
+   "cek": "terverifikasi",
+   "catatan_cek": "Amar dan tanggal cocok dengan naskah putusan.",
+   "sumber": [
+    [
+     "Putusan MK 27/PHPU.D-IX/2011",
+     "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_Putusan%20Perkara%2027-PHPU.D-IX-2011.pdf"
+    ]
+   ]
+  },
+  {
+   "kode": "ADM-006",
+   "tahun": 2011,
+   "provinsi": "Riau",
+   "wilayah": "Rokan Hilir",
+   "jenis": "Ancaman terhadap honorer dan perangkat desa",
+   "jenis_sumber": "Dalil di MK",
+   "ringkas": "Pemohon mendalilkan PNS dan honorer diancam dimutasi atau diberhentikan bila tidak mendukung paslon petahana; seorang kepala dusun diberhentikan setelah pemilihan.",
+   "hasil": "Ditolak seluruhnya, diucapkan 11 Mei 2011.",
+   "cek": "terverifikasi",
+   "catatan_cek": "Amar dibaca dari naskah putusan; tanggal ucap (belum ada di lembar Inan) 11 Mei 2011.",
+   "sumber": [
+    [
+     "Putusan MK 46/PHPU.D-IX/2011",
+     "https://s.mkri.id/public/content/persidangan/putusan/putusan_sidang_46-PHPU.D-IX-2011%20ROKAN%20HILIR%20telah%20baca.pdf"
+    ]
+   ]
+  },
+  {
+   "kode": "ADM-007",
+   "tahun": 2011,
+   "provinsi": "Riau",
+   "wilayah": "Pelalawan",
+   "jenis": "Ancaman pemecatan guru honorer",
+   "jenis_sumber": "Kesaksian di MK",
+   "ringkas": "Saksi pemohon mengaku diancam kepala sekolah agar memilih pihak terkait dan diberhentikan sebagai guru honorer dua minggu setelah pemilukada.",
+   "hasil": "Perkara 28/PHPU.D-IX/2011 ditolak, 31 Maret 2011. MK: pemecatan itu tidak dapat dibuktikan karena tidak ada surat keputusan pemberhentian.",
+   "cek": "terverifikasi",
+   "catatan_cek": "Kesaksian dan penilaian MK ada di bagian putusan perkara 28/PHPU.D-IX/2011 dalam risalah 31 Maret 2011 (pertanyaan terbuka Inan, perkara 26 atau 28, terjawab: 28).",
+   "sumber": [
+    [
+     "Risalah sidang MK, 31 Maret 2011",
+     "https://www.mkri.id/public/content/persidangan/risalah/risalah_sidang_Putusan%2024.PUU-VII.2009,%2075.PUU-VIII.2010,%2028,%2029.PHPU.D-IX.2011,%2031%20Maret%202011.pdf"
+    ]
+   ]
+  },
+  {
+   "kode": "ADM-008",
+   "tahun": 2011,
+   "provinsi": "Riau",
+   "wilayah": "Kuantan Singingi",
+   "jenis": "Mutasi massal PNS",
+   "jenis_sumber": "Gugatan PTUN (bukan sengketa pemilukada)",
+   "ringkas": "Bupati memutasi 137 jabatan PNS (14 Juli 2011) dan 62 orang empat hari kemudian; 60 PNS menggugat ke PTUN Pekanbaru. Terjadi sekitar tiga bulan setelah pemilukada, bukan menjelang.",
+   "hasil": "Putusan PTUN belum ditemukan.",
+   "cek": "terverifikasi",
+   "catatan_cek": "Angka 137, 60 PNS, dan gugatan PTUN cocok dengan Kompas 26 September 2011.",
+   "sumber": [
+    [
+     "Kompas, 26 Sep 2011",
+     "https://bola.kompas.com/read/2011/09/26/1607447/dimutasi-sewenang-wenang-pns-menggugat"
+    ],
+    [
+     "detikNews",
+     "https://news.detik.com/berita/d-1613819/pemilukada-kuansing-berakhir-rusuh-diduga-massa-yang-kalah-ngamuk"
+    ]
+   ]
+  },
+  {
+   "kode": "ADM-009",
+   "tahun": 2012,
+   "provinsi": "Aceh",
+   "wilayah": "Aceh Tenggara",
+   "jenis": "Mutasi PNS, pemecatan kades dan honorer, bansos",
+   "jenis_sumber": "Dalil di MK",
+   "ringkas": "Pemohon mendalilkan mutasi puluhan PNS (2011–2012), pemakaian gaji ke-13 PNS dan bansos untuk kampanye, serta pemberhentian kepala desa yang tidak mendukung.",
+   "hasil": "Dikabulkan sebagian, diucapkan 13 Agustus 2012: SK KIP 25/2012 dibatalkan dan perolehan suara satu paslon dikoreksi; pemenang tidak berubah.",
+   "cek": "terverifikasi",
+   "catatan_cek": "Amar cocok dengan naskah putusan. Belum dipastikan apakah dalil mutasi menjadi dasar putusan.",
+   "sumber": [
+    [
+     "Putusan MK 56/PHPU.D-X/2012",
+     "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_56%20PHPU%202012%20ACEH%20TENGGARA_telah%20baca%2013-8-2012.pdf"
+    ]
+   ]
+  },
+  {
+   "kode": "ADM-010",
+   "tahun": 2012,
+   "provinsi": "Aceh",
+   "wilayah": "Gayo Lues",
+   "jenis": "Intimidasi perangkat desa oleh kades",
+   "jenis_sumber": "Dalil di MK",
+   "ringkas": "Saksi pemohon menyebut kepala desa mengancam memberhentikan perangkat desa setelah pilkada bila tidak memilih kandidat tertentu.",
+   "hasil": "Tidak dapat diterima (objek permohonan keliru), diucapkan 4 Juni 2012.",
+   "cek": "terverifikasi",
+   "catatan_cek": "Amar kini dibaca dari naskah putusan, cocok dengan pasal.id.",
+   "sumber": [
+    [
+     "Putusan MK 36/PHPU.D-X/2012",
+     "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_36%20PHPU%202012%20GAYO%20LUES-telah%20BACA%204-6-2012.pdf"
+    ]
+   ]
+  },
+  {
+   "kode": "ADM-011",
+   "tahun": 2013,
+   "provinsi": "Maluku",
+   "wilayah": "Kota Tual",
+   "jenis": "Mutasi PNS yang dianggap tidak mendukung",
+   "jenis_sumber": "Dalil di MK",
+   "ringkas": "Pemohon mendalilkan wali kota petahana memutasi PNS yang dianggap tidak mendukung; MK menilai surat mutasi itu sama dengan surat mutasi pada umumnya.",
+   "hasil": "Ditolak (perkara 83/PHPU.D-XI/2013), Juli 2013.",
+   "cek": "sebagian",
+   "catatan_cek": "Cocok dengan BeritaHUKUM 19 Juli 2013; naskah putusan belum dibuka.",
+   "sumber": [
+    [
+     "BeritaHUKUM, 19 Jul 2013",
+     "http://m.beritahukum.com/detail_berita.php?judul=MK+Tolak+Sengketa+Pemilukada%2C+Petahana+Kembali+Pimpin+Kota+Tual"
+    ]
+   ]
+  },
+  {
+   "kode": "ADM-012",
+   "tahun": 2013,
+   "provinsi": "Sulawesi Tengah",
+   "wilayah": "Parigi Moutong",
+   "jenis": "Ancaman pemecatan honorer, mutasi ke daerah terpencil",
+   "jenis_sumber": "Dalil di MK",
+   "ringkas": "Pemohon mendalilkan honorer diancam dipecat dan perangkat desa dimutasi ke tempat terpencil; seorang honorer dinas diberhentikan lisan.",
+   "hasil": "Ditolak seluruhnya, diucapkan 29 Agustus 2013.",
+   "cek": "terverifikasi",
+   "catatan_cek": "Amar dan tanggal cocok dengan naskah putusan.",
+   "sumber": [
+    [
+     "Putusan MK 102/PHPU.D-XI/2013",
+     "https://s.mkri.id/public/content/persidangan/putusan/putusan_sidang_102%20PHPU%202013-Parigi%20Moutong-telah%20ucap%2029%20Agustus%202013.pdf"
+    ]
+   ]
+  },
+  {
+   "kode": "ADM-013",
+   "tahun": 2010,
+   "provinsi": "Aceh",
+   "wilayah": "Simeulue",
+   "jenis": "Ancaman terhadap wartawan oleh kepala daerah",
+   "jenis_sumber": "Catatan AJI",
+   "ringkas": "Kontributor televisi nasional diteror dan diancam; pelaku tercatat bupati, dipicu ketidaksenangan atas pemberitaan (18 September 2010).",
+   "hasil": "Tidak tercantum.",
+   "cek": "sebagian",
+   "catatan_cek": "Entri AJI cocok, tetapi kolom lokasi AJI menulis Jakarta Barat.",
+   "sumber": [
+    [
+     "Advokasi AJI",
+     "https://advokasi.aji.or.id/aktif/teror-0"
+    ]
+   ]
+  },
+  {
+   "kode": "ADM-014",
+   "tahun": 2010,
+   "provinsi": "Gorontalo",
+   "wilayah": "Kota Gorontalo",
+   "jenis": "Ancaman terhadap wartawan oleh kepala daerah",
+   "jenis_sumber": "Catatan AJI",
+   "ringkas": "Wartawan harian lokal diancam lewat telepon oleh wali kota setelah memberitakan dugaan korupsi di DPRD kota (23 Juli 2010).",
+   "hasil": "Tidak tercantum.",
+   "cek": "sebagian",
+   "catatan_cek": "Entri AJI cocok, tetapi kolom lokasi AJI menulis Bandar Lampung.",
+   "sumber": [
+    [
+     "Advokasi AJI",
+     "https://advokasi.aji.or.id/aktif/ancaman-dan-intimidasi"
+    ]
+   ]
+  },
+  {
+   "kode": "ADM-015",
+   "tahun": 2012,
+   "provinsi": "Maluku Utara",
+   "wilayah": "Kota Tidore Kepulauan",
+   "jenis": "Ancaman pidana terhadap wartawan",
+   "jenis_sumber": "Catatan AJI",
+   "ringkas": "Jurnalis diancam dipidanakan setelah memberitakan dugaan perjalanan dinas fiktif Rp1,2 miliar (11 Maret 2012). Pelaku tidak disebut.",
+   "hasil": "Tidak tercantum.",
+   "cek": "belum",
+   "catatan_cek": "Halaman AJI tidak bisa dibuka dari sini; belum dicek.",
+   "sumber": [
+    [
+     "Advokasi AJI",
+     "https://www.advokasi.aji.or.id/index.php/data-kekerasan?page=45"
+    ]
+   ]
+  }
+ ]
+}

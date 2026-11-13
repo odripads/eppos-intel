@@ -149,9 +149,30 @@
       '<div class="siklus" id="siklus"></div>' +
     "</div></section>" +
 
+    kasusLama() +
+
     '<section class="kertas blok pendek" id="laju"><div class="lebar">' + palang("Gambar 4", "Perbandingan yang sah") +
       '<div class="dua-kol"><div><h2 class="j2">Laju temuan per 1.000 pencarian.</h2><p class="lead">Hanya temuan dari sapuan arsip yang sama di semua jendela. Yang diukur seberapa banyak yang diberitakan, bukan seberapa banyak yang terjadi.</p></div>' +
       '<figure class="gbr tanpa-garis">' + E.lajuHtml() + "<figcaption><b>Sumber:</b> sapuan arsip outlet (wp-grid). Pembagi: jumlah pencarian per jendela waktu. Jendela pembanding: panjang sama, tanpa pilkada.</figcaption></figure></div>" +
+    "</div></section>";
+  }
+
+  /* Gambar 3b: kasus 2009-2014 kompilasi Inan (data/kasus_pilkada_lama.json), terpisah dari peta. Baris MK adalah
+     dalil atau kesaksian, bukan temuan; nama terduga pelaku sengaja tidak dimuat (aturan pelaku_nama). */
+  function kasusLama() {
+    var K = E.D.kasus_pilkada_lama; if (!K) return "";
+    var CEK = { terverifikasi: "cocok dengan sumber", sebagian: "sebagian dicek", belum: "belum dicek" };
+    var n = function (s) { return K.kasus.filter(function (k) { return k.cek === s; }).length; };
+    var baris = K.kasus.slice().sort(function (a, b) { return a.tahun - b.tahun || a.kode.localeCompare(b.kode); }).map(function (k) {
+      return '<tr' + (k.tahun > 2014 ? ' class="kl-luar"' : "") + '><td class="r">' + k.tahun + "</td><td><b>" + esc(k.wilayah) + "</b><br><span class=\"kl-kecil\">" + esc(k.provinsi) + "</span></td>" +
+        "<td><span class=\"kl-jenis\">" + esc(k.jenis_sumber) + "</span> " + esc(k.jenis) + '<p class="kl-ringkas">' + esc(k.ringkas) + "</p></td>" +
+        "<td>" + esc(k.hasil) + "</td>" +
+        '<td><span class="kl-cek ' + k.cek + '">' + CEK[k.cek] + '</span><p class="kl-kecil">' + esc(k.catatan_cek) + "</p>" +
+        '<p class="kl-kecil">' + k.sumber.map(function (s) { return '<a href="' + E.url(s[1]) + '" target="_blank" rel="noopener">' + esc(s[0]) + "</a>"; }).join(" · ") + "</p></td></tr>";
+    }).join("");
+    return '<section class="kertas blok" id="kasus-lama"><div class="lebar">' + palang("Gambar 3b", "Kasus 2009–2014, data baru") +
+      '<div class="dua-kol"><h2 class="j2">Sebelum arsip media menebal: jejak di putusan MK dan catatan AJI.</h2><p class="lead">' + K.kasus.length + " kasus dihimpun " + esc(K.penyusun) + ". " + n("terverifikasi") + " cocok dengan sumbernya, " + n("sebagian") + " sebagian, " + n("belum") + " belum bisa dicek. " + esc(K.catatan) + "</p></div>" +
+      '<div class="sim-wadah"><div class="gulir"><table class="tabel kl"><thead><tr><th scope="col" class="r">Tahun</th><th scope="col">Wilayah</th><th scope="col">Dugaan dan sumber</th><th scope="col">Hasil</th><th scope="col">Pemeriksaan ulang</th></tr></thead><tbody>' + baris + "</tbody></table></div></div>" +
     "</div></section>";
   }
 
@@ -556,7 +577,7 @@
       (dg ? '<p class="kicker">Di kabinet, dengan kursi DPR</p><ul>' + dg + "</ul>" : "") +
       (tk ? '<p class="kicker">Di kabinet, tanpa kursi DPR</p><ul>' + tk + "</ul>" : "") +
       (eks ? '<p class="kicker">Tak lagi punya kader di kabinet</p><ul>' + eks + "</ul>" : "") +
-      '<p class="rel-cat">Sumber: ' + a(["daftar Kabinet Merah Putih", S.kabinet_sumber]) + ", pejabat aktif per 13 Nov 2026 menurut afiliasi partai yang tercatat" + ((S.eks_kabinet_sumber || []).length ? "; PSI: " + S.eks_kabinet_sumber.map(a).join(", ") : "") + ". Hanya partai peserta Pemilu 2024.</p></div>";
+      '<p class="rel-cat">Sumber: ' + a(["daftar Kabinet Merah Putih", S.kabinet_sumber]) + ", pejabat aktif per 13 Nov 2026 menurut afiliasi partai yang tercatat" + ((S.kabinet_sumber_tambahan || []).length ? "; " + S.kabinet_sumber_tambahan.map(a).join(", ") : "") + ". Jumlah pos menurut afiliasi partai di daftar itu; menteri profesional usulan partai tercatat independen" + ((S.eks_kabinet_sumber || []).length ? "; PSI: " + S.eks_kabinet_sumber.map(a).join(", ") : "") + ". Hanya partai peserta Pemilu 2024.</p></div>";
   }
   function rdpu() {
     var R = E.D.sikap_pt.rdpu;
