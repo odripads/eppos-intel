@@ -1,0 +1,1994 @@
+{
+"62.12": {
+"label": "Murung Raya",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Murung Raya.png",
+"gambar": "62.12.png"
+},
+"62.05": {
+"label": "Barito Utara",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Barito Utara.png",
+"gambar": "62.05.png"
+},
+"62.11": {
+"label": "Pulang Pisau",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Pulang Pisau.webp",
+"gambar": "62.11.webp"
+},
+"62.08": {
+"label": "Sukamara",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Sukamara.png",
+"gambar": "62.08.png"
+},
+"62.07": {
+"label": "Seruyan",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Seruyan.png",
+"gambar": "62.07.png"
+},
+"62.04": {
+"label": "Barito Selatan",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Barito Selatan.webp",
+"gambar": "62.04.webp"
+},
+"62.01": {
+"label": "Kotawaringin Barat",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Kotawaringin Barat.png",
+"gambar": "62.01.png"
+},
+"65.01": {
+"label": "Bulungan",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Bulungan.png",
+"gambar": "65.01.png"
+},
+"65.02": {
+"label": "Malinau",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Malinau.jpeg",
+"gambar": "65.02.jpg"
+},
+"65.03": {
+"label": "Nunukan",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Nunukan.gif",
+"gambar": "65.03.gif"
+},
+"65.04": {
+"label": "Tana Tidung",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Tana Tidung.jpg",
+"gambar": "65.04.jpg"
+},
+"75.02": {
+"label": "Boalemo",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Boalemo.jpg",
+"gambar": "75.02.jpg"
+},
+"75.03": {
+"label": "Bone Bolango",
+"jenis": "kabupaten",
+"berkas": "Logo Kabupaten Bone Bolango.jpg",
+"gambar": "75.03.jpg"
+},
+"75.01": {
+"label": "Gorontalo",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Gorontalo.jpg",
+"gambar": "75.01.jpg"
+},
+"75.05": {
+"label": "Gorontalo Utara",
+"jenis": "kabupaten",
+"berkas": "Kabupaten Gorontalo Utara.jpg",
+"gambar": "75.05.jpg"
+},
+"75.04": {
+"label": "Pohuwato",
+"jenis": "kabupaten",
+"berkas": "Logo kabupaten pohuwato.jpg",
+"gambar": "75.04.jpg"
+},
+"73.08": {
+"label": "Bone",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Bone.jpeg",
+"gambar": "73.08.jpg"
+},
+"73.02": {
+"label": "Bulukumba",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Bulukumba.svg",
+"gambar": "73.02.png"
+},
+"73.06": {
+"label": "Gowa",
+"jenis": "kabupaten",
+"berkas": "New Coat of Arms of Gowa.png",
+"gambar": "73.06.png"
+},
+"73.26": {
+"label": "Toraja Utara",
+"jenis": "kabupaten",
+"berkas": "Coat of Arms of Toraja Utara Regency.png",
+"gambar": "73.26.png"
+},
+"73.01": {
+"label": "Kepulauan Selayar",
+"jenis": "kabupaten",
+"berkas": "Logo Kabupaten Kepulauan Selayar.png",
+"gambar": "73.01.png"
+},
+"73.18": {
+"label": "Tana Toraja",
+"jenis": "kabupaten",
+"berkas": "Coat of Arms, Tana Toraja Regency.png",
+"gambar": "73.18.png"
+},
+"76.05": {
+"label": "Majene",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Majene.png",
+"gambar": "76.05.png"
+},
+"76.03": {
+"label": "Mamasa",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Mamasa.jpg",
+"gambar": "76.03.jpg"
+},
+"76.02": {
+"label": "Mamuju",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Mamuju.jpg",
+"gambar": "76.02.jpg"
+},
+"76.01": {
+"label": "Pasangkayu",
+"jenis": "kabupaten",
+"berkas": "Kabupaten Pasangkayu.png",
+"gambar": "76.01.png"
+},
+"76.04": {
+"label": "Polewali Mandar",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Polewali Mandar.png",
+"gambar": "76.04.png"
+},
+"74.06": {
+"label": "Bombana",
+"jenis": "kabupaten",
+"berkas": "Flag Bombana Regency.jpg",
+"gambar": "74.06.jpg"
+},
+"74.01": {
+"label": "Kolaka",
+"jenis": "kabupaten",
+"berkas": "Lambang Kab Kolaka.png",
+"gambar": "74.01.png"
+},
+"74.02": {
+"label": "Konawe",
+"jenis": "kabupaten",
+"berkas": "New Flag Konawe Regency.jpg",
+"gambar": "74.02.jpg"
+},
+"74.08": {
+"label": "Kolaka Utara",
+"jenis": "kabupaten",
+"berkas": "Flag North Kolaka Regency.jpg",
+"gambar": "74.08.jpg"
+},
+"74.09": {
+"label": "Konawe Utara",
+"jenis": "kabupaten",
+"berkas": "Logo konawe utara.jpg",
+"gambar": "74.09.jpg"
+},
+"74.05": {
+"label": "Konawe Selatan",
+"jenis": "kabupaten",
+"berkas": "Flag South Konawe Regency.jpg",
+"gambar": "74.05.jpg"
+},
+"72.01": {
+"label": "Banggai",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Banggai.tif",
+"gambar": "72.01.png"
+},
+"72.05": {
+"label": "Buol",
+"jenis": "kabupaten",
+"berkas": "Coat of arms of Buol Regency.png",
+"gambar": "72.05.png"
+},
+"81.03": {
+"label": "Kepulauan Tanimbar",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Maluku Tenggara Barat Lama.jpg",
+"gambar": "81.03.jpg"
+},
+"92.03": {
+"label": "Fakfak",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Fak-fak.gif",
+"gambar": "92.03.gif"
+},
+"92.08": {
+"label": "Kaimana",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Kaimana.jpg",
+"gambar": "92.08.jpg"
+},
+"92.02": {
+"label": "Manokwari",
+"jenis": "kabupaten",
+"berkas": "Regency Flag of Manokwari.png",
+"gambar": "92.02.png"
+},
+"33.23": {
+"label": "Temanggung",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Temanggung.png",
+"gambar": "33.23.png"
+},
+"33.07": {
+"label": "Wonosobo",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Wonosobo.webp",
+"gambar": "33.07.webp"
+},
+"35.26": {
+"label": "Bangkalan",
+"jenis": "kabupaten",
+"berkas": "Seal of Bangkalan Regency.svg",
+"gambar": "35.26.png"
+},
+"35.10": {
+"label": "Banyuwangi",
+"jenis": "kabupaten",
+"berkas": "Banyuwangi Regency coat of arms.svg",
+"gambar": "35.10.png"
+},
+"35.05": {
+"label": "Blitar",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Blitar.webp",
+"gambar": "35.05.webp"
+},
+"35.22": {
+"label": "Bojonegoro",
+"jenis": "kabupaten",
+"berkas": "Logo Kabupaten Bojonegoro.png",
+"gambar": "35.22.png"
+},
+"35.11": {
+"label": "Bondowoso",
+"jenis": "kabupaten",
+"berkas": "Lambang Bondowoso.png",
+"gambar": "35.11.png"
+},
+"35.25": {
+"label": "Gresik",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Gresik.png",
+"gambar": "35.25.png"
+},
+"35.09": {
+"label": "Jember",
+"jenis": "kabupaten",
+"berkas": "Lambang-kabupaten-jember.png",
+"gambar": "35.09.png"
+},
+"35.17": {
+"label": "Jombang",
+"jenis": "kabupaten",
+"berkas": "Seal of Jombang Regency.svg",
+"gambar": "35.17.png"
+},
+"35.06": {
+"label": "Kediri",
+"jenis": "kabupaten",
+"berkas": "Logo Kabupaten Kediri (Seal of Kediri Regency).svg",
+"gambar": "35.06.png"
+},
+"35.24": {
+"label": "Lamongan",
+"jenis": "kabupaten",
+"berkas": "Coat of arms of Lamongan Regency.svg",
+"gambar": "35.24.png"
+},
+"35.08": {
+"label": "Lumajang",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Lumajang.png",
+"gambar": "35.08.png"
+},
+"35.19": {
+"label": "Madiun",
+"jenis": "kabupaten",
+"berkas": "Logo kabupaten madiun.gif",
+"gambar": "35.19.gif"
+},
+"35.20": {
+"label": "Magetan",
+"jenis": "kabupaten",
+"berkas": "Logo Kabupaten Magetan Vector.jpg",
+"gambar": "35.20.jpg"
+},
+"35.07": {
+"label": "Malang",
+"jenis": "kabupaten",
+"berkas": "Logo Kabupaten Malang - Seal of Malang Regency.svg",
+"gambar": "35.07.png"
+},
+"35.16": {
+"label": "Mojokerto",
+"jenis": "kabupaten",
+"berkas": "Seal of Mojokerto Regency.svg",
+"gambar": "35.16.png"
+},
+"35.18": {
+"label": "Nganjuk",
+"jenis": "kabupaten",
+"berkas": "NganjukLogoNew.png",
+"gambar": "35.18.png"
+},
+"35.21": {
+"label": "Ngawi",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Ngawi (svg).svg",
+"gambar": "35.21.png"
+},
+"35.01": {
+"label": "Pacitan",
+"jenis": "kabupaten",
+"berkas": "Lambang Pacitan.png",
+"gambar": "35.01.png"
+},
+"35.28": {
+"label": "Pamekasan",
+"jenis": "kabupaten",
+"berkas": "Logo kabupaten pamekasan.gif",
+"gambar": "35.28.gif"
+},
+"35.14": {
+"label": "Pasuruan",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Pasuruan.png",
+"gambar": "35.14.png"
+},
+"35.02": {
+"label": "Ponorogo",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Ponorogo.png",
+"gambar": "35.02.png"
+},
+"35.13": {
+"label": "Probolinggo",
+"jenis": "kabupaten",
+"berkas": "Logo Kabupaten Probolinggo - Seal of Probolinggo Regency.svg",
+"gambar": "35.13.png"
+},
+"35.27": {
+"label": "Sampang",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Sampang.png",
+"gambar": "35.27.png"
+},
+"35.15": {
+"label": "Sidoarjo",
+"jenis": "kabupaten",
+"berkas": "Coat of Arms of Sidoarjo Regency.png",
+"gambar": "35.15.png"
+},
+"35.12": {
+"label": "Situbondo",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Situbondo.png",
+"gambar": "35.12.png"
+},
+"35.29": {
+"label": "Sumenep",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Sumenep.png",
+"gambar": "35.29.png"
+},
+"35.03": {
+"label": "Trenggalek",
+"jenis": "kabupaten",
+"berkas": "Trenggalek coat of arms.png",
+"gambar": "35.03.png"
+},
+"35.23": {
+"label": "Tuban",
+"jenis": "kabupaten",
+"berkas": "Coat of arms of Tuban Regency.svg",
+"gambar": "35.23.png"
+},
+"35.04": {
+"label": "Tulungagung",
+"jenis": "kabupaten",
+"berkas": "Lambang-tulungagung.png",
+"gambar": "35.04.png"
+},
+"34.02": {
+"label": "Bantul",
+"jenis": "kabupaten",
+"berkas": "Seal of Bantul Regency.svg",
+"gambar": "34.02.png"
+},
+"34.03": {
+"label": "Gunungkidul",
+"jenis": "kabupaten",
+"berkas": "Seal of Gunungkidul Regency (2026).png",
+"gambar": "34.03.png"
+},
+"34.01": {
+"label": "Kulon Progo",
+"jenis": "kabupaten",
+"berkas": "Kulonprogo Seal.svg",
+"gambar": "34.01.png"
+},
+"34.04": {
+"label": "Sleman",
+"jenis": "kabupaten",
+"berkas": "Seal of Sleman Regency.svg",
+"gambar": "34.04.png"
+},
+"51.03": {
+"label": "Badung",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Badung.png",
+"gambar": "51.03.png"
+},
+"51.06": {
+"label": "Bangli",
+"jenis": "kabupaten",
+"berkas": "Lambang Kab Bangli.png",
+"gambar": "51.06.png"
+},
+"51.08": {
+"label": "Buleleng",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Buleleng.png",
+"gambar": "51.08.png"
+},
+"51.04": {
+"label": "Gianyar",
+"jenis": "kabupaten",
+"berkas": "Lambang Kab Gianyar.png",
+"gambar": "51.04.png"
+},
+"51.01": {
+"label": "Jembrana",
+"jenis": "kabupaten",
+"berkas": "Lambang Kab Jembrana.png",
+"gambar": "51.01.png"
+},
+"51.07": {
+"label": "Karangasem",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Karangasem.png",
+"gambar": "51.07.png"
+},
+"51.05": {
+"label": "Klungkung",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Klungkung.png",
+"gambar": "51.05.png"
+},
+"51.02": {
+"label": "Tabanan",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Tabanan.png",
+"gambar": "51.02.png"
+},
+"52.06": {
+"label": "Bima",
+"jenis": "kabupaten",
+"berkas": "Coat of arms of West Nusa Tenggara.svg",
+"gambar": "52.06.png"
+},
+"52.05": {
+"label": "Dompu",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Dompu.gif",
+"gambar": "52.05.gif"
+},
+"52.08": {
+"label": "Lombok Utara",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Lombok Utara.png",
+"gambar": "52.08.png"
+},
+"53.18": {
+"label": "Sumba Barat Daya",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Sumba Barat Daya.jpg",
+"gambar": "53.18.jpg"
+},
+"61.08": {
+"label": "Landak",
+"jenis": "kabupaten",
+"berkas": "Regency Flag of Landak.png",
+"gambar": "61.08.png"
+},
+"61.01": {
+"label": "Sambas",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Sambas.jpeg",
+"gambar": "61.01.jpg"
+},
+"63.11": {
+"label": "Balangan",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Balangan.png",
+"gambar": "63.11.png"
+},
+"63.03": {
+"label": "Banjar",
+"jenis": "kabupaten",
+"berkas": "Coats of arms of Banjar Regency.svg",
+"gambar": "63.03.png"
+},
+"63.07": {
+"label": "Hulu Sungai Tengah",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Hulu Sungai Tengah.png",
+"gambar": "63.07.png"
+},
+"63.08": {
+"label": "Hulu Sungai Utara",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Hulu Sungai Utara.png",
+"gambar": "63.08.png"
+},
+"63.06": {
+"label": "Hulu Sungai Selatan",
+"jenis": "kabupaten",
+"berkas": "Coats of arms of Hulu Sungai Selatan Regency.svg",
+"gambar": "63.06.png"
+},
+"63.09": {
+"label": "Tabalong",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Tabalong.png",
+"gambar": "63.09.png"
+},
+"63.01": {
+"label": "Tanah Laut",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Tanah Laut.svg",
+"gambar": "63.01.png"
+},
+"63.10": {
+"label": "Tanah Bumbu",
+"jenis": "kabupaten",
+"berkas": "Coats of arms of Tanah Bumbu.svg",
+"gambar": "63.10.png"
+},
+"63.05": {
+"label": "Tapin",
+"jenis": "kabupaten",
+"berkas": "Coats of arms of Tapin Regency.svg",
+"gambar": "63.05.png"
+},
+"62.13": {
+"label": "Barito Timur",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Barito Timur.tif",
+"gambar": "62.13.png"
+},
+"62.02": {
+"label": "Kotawaringin Timur",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Kotawaringin Timur.tif",
+"gambar": "62.02.png"
+},
+"62.10": {
+"label": "Gunung Mas",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Gunung Mas.tif",
+"gambar": "62.10.png"
+},
+"62.03": {
+"label": "Kapuas",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Kapuas.png",
+"gambar": "62.03.png"
+},
+"62.09": {
+"label": "Lamandau",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Lamandau.jpeg",
+"gambar": "62.09.jpg"
+},
+"36.73": {
+"label": "Serang",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Serang.jpg",
+"gambar": "36.73.jpg"
+},
+"36.71": {
+"label": "Tangerang",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Tangerang.png",
+"gambar": "36.71.png"
+},
+"36.74": {
+"label": "Tangerang Selatan",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Tangerang Selatan.svg",
+"gambar": "36.74.png"
+},
+"32.73": {
+"label": "Bandung",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Bandung.svg",
+"gambar": "32.73.png"
+},
+"32.79": {
+"label": "Banjar",
+"jenis": "kota di Indonesia",
+"berkas": "Seal of the City of Banjar.svg",
+"gambar": "32.79.png"
+},
+"32.75": {
+"label": "Bekasi",
+"jenis": "kota di Indonesia",
+"berkas": "Coat of arms of Bekasi.svg",
+"gambar": "32.75.png"
+},
+"32.71": {
+"label": "Bogor",
+"jenis": "kota di Indonesia",
+"berkas": "Emblem of Bogor.svg",
+"gambar": "32.71.png"
+},
+"32.77": {
+"label": "Cimahi",
+"jenis": "kota di Indonesia",
+"berkas": "Kota Cimahi.svg",
+"gambar": "32.77.png"
+},
+"32.74": {
+"label": "Cirebon",
+"jenis": "kota di Indonesia",
+"berkas": "Seal of the City of Cirebon.svg",
+"gambar": "32.74.png"
+},
+"32.76": {
+"label": "Depok",
+"jenis": "kota di Indonesia",
+"berkas": "Coat of arms of Depok City.svg",
+"gambar": "32.76.png"
+},
+"32.72": {
+"label": "Sukabumi",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Sukabumi Vektor.svg",
+"gambar": "32.72.png"
+},
+"32.78": {
+"label": "Tasikmalaya",
+"jenis": "kota di Indonesia",
+"berkas": "Logo Kota Tasikmalaya.png",
+"gambar": "32.78.png"
+},
+"33.71": {
+"label": "Magelang",
+"jenis": "kota di Indonesia",
+"berkas": "Seal of the City of Magelang.svg",
+"gambar": "33.71.png"
+},
+"33.73": {
+"label": "Salatiga",
+"jenis": "kota di Indonesia",
+"berkas": "Seal of the City of Salatiga.svg",
+"gambar": "33.73.png"
+},
+"33.74": {
+"label": "Semarang",
+"jenis": "kota di Indonesia",
+"berkas": "Seal of the City of Semarang.svg",
+"gambar": "33.74.png"
+},
+"33.75": {
+"label": "Pekalongan",
+"jenis": "kota di Indonesia",
+"berkas": "Coat of arms of the City of Pekalongan.svg",
+"gambar": "33.75.png"
+},
+"33.76": {
+"label": "Tegal",
+"jenis": "kota di Indonesia",
+"berkas": "Shield of the city of Tegal.svg",
+"gambar": "33.76.png"
+},
+"35.79": {
+"label": "Batu",
+"jenis": "kota di Indonesia",
+"berkas": "Logo Kota Batu, Jawa Timur (Seal of Batu, East Java).svg",
+"gambar": "35.79.png"
+},
+"35.72": {
+"label": "Blitar",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Blitar.jpeg",
+"gambar": "35.72.jpg"
+},
+"35.71": {
+"label": "Kediri",
+"jenis": "kota di Indonesia",
+"berkas": "Logo Kota Kediri - Seal of Kediri City.svg",
+"gambar": "35.71.png"
+},
+"35.77": {
+"label": "Madiun",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Madiun.png",
+"gambar": "35.77.png"
+},
+"35.73": {
+"label": "Malang",
+"jenis": "kota di Indonesia",
+"berkas": "Seal of Malang City (Logo Kota Malang).svg",
+"gambar": "35.73.png"
+},
+"35.76": {
+"label": "Mojokerto",
+"jenis": "kota di Indonesia",
+"berkas": "Coat of arms of the City of Mojokerto.svg",
+"gambar": "35.76.png"
+},
+"35.75": {
+"label": "Pasuruan",
+"jenis": "kota di Indonesia",
+"berkas": "Logo Kota Pasuruan.png",
+"gambar": "35.75.png"
+},
+"35.74": {
+"label": "Probolinggo",
+"jenis": "kota di Indonesia",
+"berkas": "Coat of arms of the City of Probolinggo.svg",
+"gambar": "35.74.png"
+},
+"35.78": {
+"label": "Surabaya",
+"jenis": "kota di Indonesia",
+"berkas": "City of Surabaya Logo.svg",
+"gambar": "35.78.png"
+},
+"51.71": {
+"label": "Denpasar",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Denpasar City.png",
+"gambar": "51.71.png"
+},
+"52.71": {
+"label": "Mataram",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Mataram.png",
+"gambar": "52.71.png"
+},
+"53.71": {
+"label": "Kupang",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Kupang.jpg",
+"gambar": "53.71.jpg"
+},
+"61.71": {
+"label": "Pontianak",
+"jenis": "kota di Indonesia",
+"berkas": "Seal of Pontianak.svg",
+"gambar": "61.71.png"
+},
+"61.72": {
+"label": "Singkawang",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang KotaSingkawang.png",
+"gambar": "61.72.png"
+},
+"63.72": {
+"label": "Banjarbaru",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Banjarbaru.svg",
+"gambar": "63.72.png"
+},
+"63.71": {
+"label": "Banjarmasin",
+"jenis": "kota di Indonesia",
+"berkas": "Banjarmasin Logo.svg",
+"gambar": "63.71.png"
+},
+"62.71": {
+"label": "Palangka Raya",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Palangka Raya.gif",
+"gambar": "62.71.gif"
+},
+"64.71": {
+"label": "Balikpapan",
+"jenis": "kota di Indonesia",
+"berkas": "Coat of arms of Balikpapan.svg",
+"gambar": "64.71.png"
+},
+"64.74": {
+"label": "Bontang",
+"jenis": "kota di Indonesia",
+"berkas": "Bontang City Vector Logo.svg",
+"gambar": "64.74.png"
+},
+"64.72": {
+"label": "Samarinda",
+"jenis": "kota di Indonesia",
+"berkas": "Coats of arms of Samarinda City.svg",
+"gambar": "64.72.png"
+},
+"65.71": {
+"label": "Tarakan",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Tarakan.gif",
+"gambar": "65.71.gif"
+},
+"75.71": {
+"label": "Gorontalo",
+"jenis": "kota di Indonesia",
+"berkas": "LOGO KOTA GORONTALO.png",
+"gambar": "75.71.png"
+},
+"73.71": {
+"label": "Makassar",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Makassar.jpeg",
+"gambar": "73.71.jpg"
+},
+"73.72": {
+"label": "Parepare",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Parepare (2012).png",
+"gambar": "73.72.png"
+},
+"74.72": {
+"label": "Bau Bau",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Bau-Bau.png",
+"gambar": "74.72.png"
+},
+"74.71": {
+"label": "Kendari",
+"jenis": "kota di Indonesia",
+"berkas": "Flag of Kendari City.png",
+"gambar": "74.71.png"
+},
+"72.71": {
+"label": "Palu",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Palu.png",
+"gambar": "72.71.png"
+},
+"71.72": {
+"label": "Bitung",
+"jenis": "kota di Indonesia",
+"berkas": "LOGO KOTA BITUNG SULAWESI UTARA.png",
+"gambar": "71.72.png"
+},
+"71.73": {
+"label": "Tomohon",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Tomohon.png",
+"gambar": "71.73.png"
+},
+"81.71": {
+"label": "Ambon",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Ambon.png",
+"gambar": "81.71.png"
+},
+"82.71": {
+"label": "Ternate",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Ternate.png",
+"gambar": "82.71.png"
+},
+"82.72": {
+"label": "Tidore Kepulauan",
+"jenis": "kota di Indonesia",
+"berkas": "City Flag of Tidore Kepulauan.png",
+"gambar": "82.72.png"
+},
+"96.71": {
+"label": "Sorong",
+"jenis": "kota di Indonesia",
+"berkas": "City Flag of Sorong.png",
+"gambar": "96.71.png"
+},
+"91.71": {
+"label": "Jayapura",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Jayapura.jpeg",
+"gambar": "91.71.jpg"
+},
+"14.03": {
+"label": "Bengkalis",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Bengkalis.png",
+"gambar": "14.03.png"
+},
+"14.04": {
+"label": "Indragiri Hilir",
+"jenis": "kabupaten",
+"berkas": "Logo kabupaten indragiri hilir.jpg",
+"gambar": "14.04.jpg"
+},
+"14.02": {
+"label": "Indragiri Hulu",
+"jenis": "kabupaten",
+"berkas": "Lambang Kab Indragiri Hulu.png",
+"gambar": "14.02.png"
+},
+"14.01": {
+"label": "Kampar",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Kampar.png",
+"gambar": "14.01.png"
+},
+"14.09": {
+"label": "Kuantan Singingi",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Kuantan Singingi.PNG",
+"gambar": "14.09.png"
+},
+"14.10": {
+"label": "Kepulauan Meranti",
+"jenis": "kabupaten",
+"berkas": "Lambang kab Kepulauan Meranti.png",
+"gambar": "14.10.png"
+},
+"14.05": {
+"label": "Pelalawan",
+"jenis": "kabupaten",
+"berkas": "Pelalawan logo.png",
+"gambar": "14.05.png"
+},
+"14.06": {
+"label": "Rokan Hulu",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Rokan Hulu.jpg",
+"gambar": "14.06.jpg"
+},
+"14.07": {
+"label": "Rokan Hilir",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Rokan Hilir.png",
+"gambar": "14.07.png"
+},
+"14.08": {
+"label": "Siak",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Siak.png",
+"gambar": "14.08.png"
+},
+"17.09": {
+"label": "Bengkulu Tengah",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Bengkulu Tengah.png",
+"gambar": "17.09.png"
+},
+"17.08": {
+"label": "Kepahiang",
+"jenis": "kabupaten",
+"berkas": "Kabupaten Kepahiang.png",
+"gambar": "17.08.png"
+},
+"17.03": {
+"label": "Bengkulu Utara",
+"jenis": "kabupaten",
+"berkas": "Logo Bengkulu Utara.png",
+"gambar": "17.03.png"
+},
+"17.02": {
+"label": "Rejang Lebong",
+"jenis": "kabupaten",
+"berkas": "Rejang Lebong.png",
+"gambar": "17.02.png"
+},
+"17.05": {
+"label": "Seluma",
+"jenis": "kabupaten",
+"berkas": "Seluma.png",
+"gambar": "17.05.png"
+},
+"17.01": {
+"label": "Bengkulu Selatan",
+"jenis": "kabupaten",
+"berkas": "Bengkulu Selatan.png",
+"gambar": "17.01.png"
+},
+"16.07": {
+"label": "Banyuasin",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Banyuasin.jpg",
+"gambar": "16.07.jpg"
+},
+"19.01": {
+"label": "Bangka",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Bangka.png",
+"gambar": "19.01.png"
+},
+"19.02": {
+"label": "Belitung",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Belitung.png",
+"gambar": "19.02.png"
+},
+"19.04": {
+"label": "Bangka Tengah",
+"jenis": "kabupaten",
+"berkas": "Coat of arms of Bangka Belitung.png",
+"gambar": "19.04.png"
+},
+"19.06": {
+"label": "Belitung Timur",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Belitung Timur.jpeg",
+"gambar": "19.06.jpg"
+},
+"19.05": {
+"label": "Bangka Barat",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Bangka Barat.jpg",
+"gambar": "19.05.jpg"
+},
+"21.01": {
+"label": "Bintan",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Bintan.png",
+"gambar": "21.01.png"
+},
+"21.02": {
+"label": "Karimun",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Karimun.gif",
+"gambar": "21.02.gif"
+},
+"21.04": {
+"label": "Lingga",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Lingga.png",
+"gambar": "21.04.png"
+},
+"21.03": {
+"label": "Natuna",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Natuna.png",
+"gambar": "21.03.png"
+},
+"36.02": {
+"label": "Lebak",
+"jenis": "kabupaten",
+"berkas": "Coat of arms of Lebak.svg",
+"gambar": "36.02.png"
+},
+"36.01": {
+"label": "Pandeglang",
+"jenis": "kabupaten",
+"berkas": "Coat of arms of Pandeglang.png",
+"gambar": "36.01.png"
+},
+"36.04": {
+"label": "Serang",
+"jenis": "kabupaten",
+"berkas": "Logo kabupaten serang.png",
+"gambar": "36.04.png"
+},
+"36.03": {
+"label": "Tangerang",
+"jenis": "kabupaten",
+"berkas": "Logo kabupaten tangerang.jpg",
+"gambar": "36.03.jpg"
+},
+"32.04": {
+"label": "Bandung",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Bandung, Jawa Barat, Indonesia.svg",
+"gambar": "32.04.png"
+},
+"32.16": {
+"label": "Bekasi",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Bekasi.svg",
+"gambar": "32.16.png"
+},
+"32.01": {
+"label": "Bogor",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Bogor.svg",
+"gambar": "32.01.png"
+},
+"32.07": {
+"label": "Ciamis",
+"jenis": "kabupaten",
+"berkas": "LAMBANG KABUPATEN CIAMIS.svg",
+"gambar": "32.07.png"
+},
+"32.03": {
+"label": "Cianjur",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Cianjur.svg",
+"gambar": "32.03.png"
+},
+"32.09": {
+"label": "Cirebon",
+"jenis": "kabupaten",
+"berkas": "Coat of arms of Cirebon Regency.svg",
+"gambar": "32.09.png"
+},
+"32.05": {
+"label": "Garut",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Garut.svg",
+"gambar": "32.05.png"
+},
+"32.12": {
+"label": "Indramayu",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Indramayu.png",
+"gambar": "32.12.png"
+},
+"32.15": {
+"label": "Karawang",
+"jenis": "kabupaten",
+"berkas": "LAMBANG KABUPATEN KARAWANG.svg",
+"gambar": "32.15.png"
+},
+"32.08": {
+"label": "Kuningan",
+"jenis": "kabupaten",
+"berkas": "Logo Kabupaten kuningan.jpg",
+"gambar": "32.08.jpg"
+},
+"32.10": {
+"label": "Majalengka",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Majalengka.svg",
+"gambar": "32.10.png"
+},
+"32.14": {
+"label": "Purwakarta",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Purwakarta.jpg",
+"gambar": "32.14.jpg"
+},
+"32.13": {
+"label": "Subang",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Subang.jpeg",
+"gambar": "32.13.jpg"
+},
+"32.02": {
+"label": "Sukabumi",
+"jenis": "kabupaten",
+"berkas": "Lambang Kab Sukabumi.svg",
+"gambar": "32.02.png"
+},
+"32.11": {
+"label": "Sumedang",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Sumedang.gif",
+"gambar": "32.11.gif"
+},
+"32.06": {
+"label": "Tasikmalaya",
+"jenis": "kabupaten",
+"berkas": "Tasikmalaya Regency Seal.png",
+"gambar": "32.06.png"
+},
+"32.17": {
+"label": "Bandung Barat",
+"jenis": "kabupaten",
+"berkas": "Kab Bandung Barat.svg",
+"gambar": "32.17.png"
+},
+"33.04": {
+"label": "Banjarnegara",
+"jenis": "kabupaten",
+"berkas": "Seal of Banjarnegara Regency (2022).svg",
+"gambar": "33.04.png"
+},
+"33.02": {
+"label": "Banyumas",
+"jenis": "kabupaten",
+"berkas": "Emblem of Banyumas Regency.svg",
+"gambar": "33.02.png"
+},
+"33.25": {
+"label": "Batang",
+"jenis": "kabupaten",
+"berkas": "Seal of Batang Regency.svg",
+"gambar": "33.25.png"
+},
+"33.16": {
+"label": "Blora",
+"jenis": "kabupaten",
+"berkas": "Seal of Blora Regency.svg",
+"gambar": "33.16.png"
+},
+"33.09": {
+"label": "Boyolali",
+"jenis": "kabupaten",
+"berkas": "Seal of Boyolali Regency.svg",
+"gambar": "33.09.png"
+},
+"33.29": {
+"label": "Brebes",
+"jenis": "kabupaten",
+"berkas": "Seal of Brebes Regency.svg",
+"gambar": "33.29.png"
+},
+"33.01": {
+"label": "Cilacap",
+"jenis": "kabupaten",
+"berkas": "Seal of Cilacap Regency.svg",
+"gambar": "33.01.png"
+},
+"33.21": {
+"label": "Demak",
+"jenis": "kabupaten",
+"berkas": "Seal of Demak Regency.svg",
+"gambar": "33.21.png"
+},
+"33.15": {
+"label": "Grobogan",
+"jenis": "kabupaten",
+"berkas": "Coat of arms of Grobogan Regency.svg",
+"gambar": "33.15.png"
+},
+"33.20": {
+"label": "Jepara",
+"jenis": "kabupaten",
+"berkas": "Seal of Jepara Regency.svg",
+"gambar": "33.20.png"
+},
+"33.13": {
+"label": "Karanganyar",
+"jenis": "kabupaten",
+"berkas": "Seal of Karanganyar Regency.svg",
+"gambar": "33.13.png"
+},
+"33.05": {
+"label": "Kebumen",
+"jenis": "kabupaten",
+"berkas": "Seal of Kebumen Regency.svg",
+"gambar": "33.05.png"
+},
+"33.24": {
+"label": "Kendal",
+"jenis": "kabupaten",
+"berkas": "Emblem of Kendal Regency (2011).svg",
+"gambar": "33.24.png"
+},
+"33.10": {
+"label": "Klaten",
+"jenis": "kabupaten",
+"berkas": "Seal of Klaten Regency.svg",
+"gambar": "33.10.png"
+},
+"33.19": {
+"label": "Kudus",
+"jenis": "kabupaten",
+"berkas": "Seal of Kudus Regency.svg",
+"gambar": "33.19.png"
+},
+"33.08": {
+"label": "Magelang",
+"jenis": "kabupaten",
+"berkas": "Seal of Magelang Regency.svg",
+"gambar": "33.08.png"
+},
+"33.18": {
+"label": "Pati",
+"jenis": "kabupaten",
+"berkas": "Seal of Pati Regency.svg",
+"gambar": "33.18.png"
+},
+"33.26": {
+"label": "Pekalongan",
+"jenis": "kabupaten",
+"berkas": "Coat of arms of Pekalongan Regency.svg",
+"gambar": "33.26.png"
+},
+"33.27": {
+"label": "Pemalang",
+"jenis": "kabupaten",
+"berkas": "Logo Kabupaten Pemalang.png",
+"gambar": "33.27.png"
+},
+"33.03": {
+"label": "Purbalingga",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Purbalingga.png",
+"gambar": "33.03.png"
+},
+"33.06": {
+"label": "Purworejo",
+"jenis": "kabupaten",
+"berkas": "Seal of Purworejo Regency.svg",
+"gambar": "33.06.png"
+},
+"33.17": {
+"label": "Rembang",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Rembang.webp",
+"gambar": "33.17.webp"
+},
+"33.22": {
+"label": "Semarang",
+"jenis": "kabupaten",
+"berkas": "Seal of Semarang Regency.svg",
+"gambar": "33.22.png"
+},
+"33.14": {
+"label": "Sragen",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Sragen.tif",
+"gambar": "33.14.png"
+},
+"33.11": {
+"label": "Sukoharjo",
+"jenis": "kabupaten",
+"berkas": "Seal of Sukoharjo Regency.svg",
+"gambar": "33.11.png"
+},
+"33.28": {
+"label": "Tegal",
+"jenis": "kabupaten",
+"berkas": "Shield of Tegal Regency.svg",
+"gambar": "33.28.png"
+},
+"33.72": {
+"label": "Surakarta",
+"jenis": "kota di Indonesia",
+"berkas": "Seal of the City of Surakarta.svg",
+"gambar": "33.72.png"
+},
+"11.71": {
+"label": "Banda Aceh",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Banda Aceh.png",
+"gambar": "11.71.png"
+},
+"11.74": {
+"label": "Langsa",
+"jenis": "kota di Indonesia",
+"berkas": "Pemko langsa.jpg",
+"gambar": "11.74.jpg"
+},
+"11.73": {
+"label": "Lhokseumawe",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Lhokseumawe.gif",
+"gambar": "11.73.gif"
+},
+"11.72": {
+"label": "Sabang",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Sabang.png",
+"gambar": "11.72.png"
+},
+"11.75": {
+"label": "Subulussalam",
+"jenis": "kota di Indonesia",
+"berkas": "Flag of Subulussalam City.png",
+"gambar": "11.75.png"
+},
+"12.75": {
+"label": "Binjai",
+"jenis": "kota di Indonesia",
+"berkas": "Logobinjai.jpg",
+"gambar": "12.75.jpg"
+},
+"12.71": {
+"label": "Medan",
+"jenis": "kota di Indonesia",
+"berkas": "Logo Kota Medan (Seal of Medan).svg",
+"gambar": "12.71.png"
+},
+"12.73": {
+"label": "Sibolga",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Sibolga.png",
+"gambar": "12.73.png"
+},
+"13.75": {
+"label": "Bukittinggi",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Bukittinggi.jpeg",
+"gambar": "13.75.jpg"
+},
+"13.71": {
+"label": "Padang",
+"jenis": "kota di Indonesia",
+"berkas": "Logo Padang.svg",
+"gambar": "13.71.png"
+},
+"13.74": {
+"label": "Padang Panjang",
+"jenis": "kota di Indonesia",
+"berkas": "Padang Panjang coa.png",
+"gambar": "13.74.png"
+},
+"13.77": {
+"label": "Pariaman",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Pariaman.png",
+"gambar": "13.77.png"
+},
+"13.76": {
+"label": "Payakumbuh",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Payakumbuh.png",
+"gambar": "13.76.png"
+},
+"13.73": {
+"label": "Kota Sawahlunto",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Sawahlunto.jpg",
+"gambar": "13.73.jpg"
+},
+"13.72": {
+"label": "Solok",
+"jenis": "kota di Indonesia",
+"berkas": "Logo Kota Solok.png",
+"gambar": "13.72.png"
+},
+"34.71": {
+"label": "Yogyakarta",
+"jenis": "kota di Indonesia",
+"berkas": "Seal of the City of Yogyakarta.svg",
+"gambar": "34.71.png"
+},
+"15.71": {
+"label": "Jambi",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Jambi.jpg",
+"gambar": "15.71.jpg"
+},
+"15.72": {
+"label": "Sungai Penuh",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Sungai Penuh.png",
+"gambar": "15.72.png"
+},
+"14.72": {
+"label": "Dumai",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Dumai.png",
+"gambar": "14.72.png"
+},
+"14.71": {
+"label": "Pekanbaru",
+"jenis": "kota di Indonesia",
+"berkas": "Pekanbaru coa.GIF",
+"gambar": "14.71.gif"
+},
+"17.71": {
+"label": "Bengkulu",
+"jenis": "kota di Indonesia",
+"berkas": "Kota Bengkulu.png",
+"gambar": "17.71.png"
+},
+"16.73": {
+"label": "Lubuk Linggau",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Lubuklinggau.jpeg",
+"gambar": "16.73.jpg"
+},
+"16.72": {
+"label": "Pagar Alam",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Pagar Alam.gif",
+"gambar": "16.72.gif"
+},
+"16.71": {
+"label": "Palembang",
+"jenis": "kota di Indonesia",
+"berkas": "Palembang CoA.svg",
+"gambar": "16.71.png"
+},
+"16.74": {
+"label": "Prabumulih",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang kota prabumulih.png",
+"gambar": "16.74.png"
+},
+"18.71": {
+"label": "Bandar Lampung",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Bandar Lampung.jpg",
+"gambar": "18.71.jpg"
+},
+"18.72": {
+"label": "Metro",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Metro.jpeg",
+"gambar": "18.72.jpg"
+},
+"19.71": {
+"label": "Pangkal Pinang",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Pangkalpinang.png",
+"gambar": "19.71.png"
+},
+"21.71": {
+"label": "Batam",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Batam.png",
+"gambar": "21.71.png"
+},
+"21.72": {
+"label": "Tanjungpinang",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Tanjungpinang.png",
+"gambar": "21.72.png"
+},
+"36.72": {
+"label": "Cilegon",
+"jenis": "kota di Indonesia",
+"berkas": "Lambang Kota Cilegon.png",
+"gambar": "36.72.png"
+},
+"91.06": {
+"label": "Biak Numfor",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Biak Numfor.png",
+"gambar": "91.06.png"
+},
+"91.03": {
+"label": "Jayapura",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Jayapura.jpeg",
+"gambar": "91.03.jpg"
+},
+"95.01": {
+"label": "Jayawijaya",
+"jenis": "kabupaten",
+"berkas": "Regency Flag of Jayawijaya.png",
+"gambar": "95.01.png"
+},
+"93.01": {
+"label": "Merauke",
+"jenis": "kabupaten",
+"berkas": "Regency Flag of Merauke.png",
+"gambar": "93.01.png"
+},
+"94.01": {
+"label": "Nabire",
+"jenis": "kabupaten",
+"berkas": "Regency Flag of Nabire.png",
+"gambar": "94.01.png"
+},
+"94.02": {
+"label": "Puncak Jaya",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Puncak Jaya.png",
+"gambar": "94.02.png"
+},
+"32.18": {
+"label": "Pangandaran",
+"jenis": "kabupaten",
+"berkas": "Logo-pangandaran-perbup.no.4.thn.2013.png",
+"gambar": "32.18.png"
+},
+"17.04": {
+"label": "Kaur",
+"jenis": "kabupaten",
+"berkas": "Kabupaten Kaur.png",
+"gambar": "17.04.png"
+},
+"62.06": {
+"label": "Katingan",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Katingan.png",
+"gambar": "62.06.png"
+},
+"72.11": {
+"label": "Banggai Laut",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Banggai Laut.tif",
+"gambar": "72.11.png"
+},
+"76.06": {
+"label": "Mamuju Tengah",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Mamuju Tengah.png",
+"gambar": "76.06.png"
+},
+"74.12": {
+"label": "Konawe Kepulauan",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Konawe Kepulauan.png",
+"gambar": "74.12.png"
+},
+"74.11": {
+"label": "Kolaka Timur",
+"jenis": "kabupaten",
+"berkas": "Flag East Kolaka Regency.jpg",
+"gambar": "74.11.jpg"
+},
+"21.05": {
+"label": "Kepulauan Anambas",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Kepulauan Anambas.jpg",
+"gambar": "21.05.jpg"
+},
+"11": {
+"label": "Aceh",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of Aceh.svg",
+"gambar": "11.png"
+},
+"19": {
+"label": "Kepulauan Bangka Belitung",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of Bangka Belitung Islands.svg",
+"gambar": "19.png"
+},
+"17": {
+"label": "Bengkulu",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of Bengkulu.svg",
+"gambar": "17.png"
+},
+"15": {
+"label": "Jambi",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of Jambi.svg",
+"gambar": "15.png"
+},
+"18": {
+"label": "Lampung",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of Lampung.svg",
+"gambar": "18.png"
+},
+"12": {
+"label": "Sumatera Utara",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of North Sumatra.svg",
+"gambar": "12.png"
+},
+"14": {
+"label": "Riau",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of Riau.svg",
+"gambar": "14.png"
+},
+"21": {
+"label": "Kepulauan Riau",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of Riau Islands.svg",
+"gambar": "21.png"
+},
+"16": {
+"label": "Sumatera Selatan",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of South Sumatra.svg",
+"gambar": "16.png"
+},
+"13": {
+"label": "Sumatera Barat",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of West Sumatra.svg",
+"gambar": "13.png"
+},
+"36": {
+"label": "Banten",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of Banten.svg",
+"gambar": "36.png"
+},
+"33": {
+"label": "Jawa Tengah",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of Central Java.svg",
+"gambar": "33.png"
+},
+"35": {
+"label": "Jawa Timur",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of East Java.svg",
+"gambar": "35.png"
+},
+"31": {
+"label": "Jakarta",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of Jakarta.svg",
+"gambar": "31.png"
+},
+"32": {
+"label": "Jawa Barat",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of West Java.svg",
+"gambar": "32.png"
+},
+"34": {
+"label": "Yogyakarta",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of Yogyakarta.svg",
+"gambar": "34.png"
+},
+"62": {
+"label": "Kalimantan Tengah",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of Central Kalimantan.svg",
+"gambar": "62.png"
+},
+"64": {
+"label": "Kalimantan Timur",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of East Kalimantan.svg",
+"gambar": "64.png"
+},
+"65": {
+"label": "Kalimantan Utara",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of North Kalimantan (2021 version).svg",
+"gambar": "65.png"
+},
+"63": {
+"label": "Kalimantan Selatan",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of South Kalimantan.svg",
+"gambar": "63.png"
+},
+"61": {
+"label": "Kalimantan Barat",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of West Kalimantan.svg",
+"gambar": "61.png"
+},
+"53": {
+"label": "Nusa Tenggara Timur",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of Arms of East Nusa Tenggara NEW.png",
+"gambar": "53.png"
+},
+"52": {
+"label": "Nusa Tenggara Barat",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of West Nusa Tenggara.svg",
+"gambar": "52.png"
+},
+"72": {
+"label": "Sulawesi Tengah",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of Central Sulawesi.svg",
+"gambar": "72.png"
+},
+"75": {
+"label": "Gorontalo",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of Gorontalo.svg",
+"gambar": "75.png"
+},
+"71": {
+"label": "Sulawesi Utara",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of North Sulawesi.svg",
+"gambar": "71.png"
+},
+"74": {
+"label": "Sulawesi Tenggara",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of Southeast Sulawesi.svg",
+"gambar": "74.png"
+},
+"73": {
+"label": "Sulawesi Selatan",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of South Sulawesi.svg",
+"gambar": "73.png"
+},
+"76": {
+"label": "Sulawesi Barat",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of West Sulawesi.svg",
+"gambar": "76.png"
+},
+"81": {
+"label": "Maluku",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of Maluku.svg",
+"gambar": "81.png"
+},
+"82": {
+"label": "Maluku Utara",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of North Maluku.svg",
+"gambar": "82.png"
+},
+"91": {
+"label": "Papua",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of Papua 2.svg",
+"gambar": "91.png"
+},
+"92": {
+"label": "Papua Barat",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of West Papua.svg",
+"gambar": "92.png"
+},
+"11.14": {
+"label": "Aceh Jaya",
+"jenis": "kabupaten",
+"berkas": "Coat of arms of Aceh Jaya.jpg",
+"gambar": "11.14.jpg"
+},
+"11.18": {
+"label": "Pidie Jaya",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Pidie Jaya.png",
+"gambar": "11.18.png"
+},
+"11.09": {
+"label": "Simeulue",
+"jenis": "kabupaten",
+"berkas": "LOGO KABUPATEN SIMEULUE.png",
+"gambar": "11.09.png"
+},
+"11.12": {
+"label": "Aceh Barat Daya",
+"jenis": "kabupaten",
+"berkas": "Lambang-abdya.jpg",
+"gambar": "11.12.jpg"
+},
+"11.05": {
+"label": "Aceh Barat",
+"jenis": "kabupaten",
+"berkas": "Seal of Aceh Barat Regency.svg",
+"gambar": "11.05.png"
+},
+"12.11": {
+"label": "Dairi",
+"jenis": "kabupaten",
+"berkas": "Dairi Regency Emblem.png",
+"gambar": "12.11.png"
+},
+"12.07": {
+"label": "Deli Serdang",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Deli Serdang.jpg",
+"gambar": "12.07.jpg"
+},
+"12.16": {
+"label": "Humbang Hasundutan",
+"jenis": "kabupaten",
+"berkas": "Lambang Humbang Hasundutan.png",
+"gambar": "12.16.png"
+},
+"12.10": {
+"label": "Labuhanbatu",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Labuhanbatu.png",
+"gambar": "12.10.png"
+},
+"12.13": {
+"label": "Mandailing Natal",
+"jenis": "kabupaten",
+"berkas": "Mandailing-natal.jpg",
+"gambar": "12.13.jpg"
+},
+"12.23": {
+"label": "Labuhanbatu Utara",
+"jenis": "kabupaten",
+"berkas": "Lambang Labuhanbatu Utara.jpg",
+"gambar": "12.23.jpg"
+},
+"12.21": {
+"label": "Padang Lawas",
+"jenis": "kabupaten",
+"berkas": "Padang-Lawas-logo.jpg",
+"gambar": "12.21.jpg"
+},
+"12.18": {
+"label": "Serdang Bedagai",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Serdang Bedagai.png",
+"gambar": "12.18.png"
+},
+"12.14": {
+"label": "Nias Selatan",
+"jenis": "kabupaten",
+"berkas": "Logo Nias Selatan.JPG",
+"gambar": "12.14.jpg"
+},
+"13.06": {
+"label": "Agam",
+"jenis": "kabupaten",
+"berkas": "Logo Agam Regency.PNG",
+"gambar": "13.06.png"
+},
+"13.10": {
+"label": "Dharmasraya",
+"jenis": "kabupaten",
+"berkas": "Flag of Pagaruyung Kingdom.svg",
+"gambar": "13.10.png"
+},
+"13.09": {
+"label": "Kepulauan Mentawai",
+"jenis": "kabupaten",
+"berkas": "Logo Mentawai.jpg",
+"gambar": "13.09.jpg"
+},
+"13.05": {
+"label": "Padang Pariaman",
+"jenis": "kabupaten",
+"berkas": "Lambang Kabupaten Padang Pariaman.gif",
+"gambar": "13.05.gif"
+},
+"13.08": {
+"label": "Pasaman",
+"jenis": "kabupaten",
+"berkas": "Wapen Pasaman.png",
+"gambar": "13.08.png"
+},
+"13.03": {
+"label": "Sijunjung",
+"jenis": "kabupaten",
+"berkas": "Coat of arms of Sijunjung Regency.svg",
+"gambar": "13.03.png"
+},
+"13.01": {
+"label": "Pesisir Selatan",
+"jenis": "kabupaten",
+"berkas": "Coat of arms of Pesisir Selatan Regency.svg",
+"gambar": "13.01.png"
+},
+"51": {
+"label": "Bali",
+"jenis": "provinsi di Indonesia",
+"berkas": "Coat of arms of Bali.svg",
+"gambar": "51.png"
+},
+"94": {
+"label": "Papua Tengah",
+"jenis": "provinsi di Indonesia",
+"berkas": "Lambang Papua Tengah.png",
+"gambar": "94.png"
+},
+"93": {
+"label": "Papua Selatan",
+"jenis": "provinsi di Indonesia",
+"berkas": "Lambang Papua Selatan.png",
+"gambar": "93.png"
+},
+"95": {
+"label": "Papua Pegunungan",
+"jenis": "provinsi di Indonesia",
+"berkas": "Lambang Papua Pegunungan.svg",
+"gambar": "95.png"
+},
+"96": {
+"label": "Papua Barat Daya",
+"jenis": "provinsi di Indonesia",
+"berkas": "Logo Papua Barat Daya1.png",
+"gambar": "96.png"
+},
+"74.10": {
+"label": "Buton Utara",
+"jenis": "kabupaten",
+"berkas": "Lambang_Kabupaten_Buton_Utara.jpg",
+"gambar": "74.10.jpg"
+}
+}

@@ -142,4 +142,54 @@
     { t: "2 Jan 2025", j: "Putusan MK 62/PUU-XXII/2024", k: "Ambang pencalonan presiden (20 persen kursi DPR atau 25 persen suara sah nasional) dihapus.", url: "https://www.mkri.id/public/content/persidangan/putusan/putusan_mkri_11344_1735807848.pdf" },
     { t: "26 Jun 2025", j: "Putusan MK 135/PUU-XXII/2024", k: "Pemilu nasional dan daerah dipisah mulai 2029, dengan jeda 2 sampai 2,5 tahun.", url: "https://www.mkri.id/public/content/persidangan/putusan/putusan_mkri_12830_1750924073.pdf", kunci: 1 }
   ];
+
+  /* Lintasan waktu satu wilayah: batang per tahun, jangkauan (%) atau jumlah catatan. Tahun pemilu dan pilkada ditandai
+     di bawah sumbu, karena laporan memang memuncak di sana: puncak di tahun pemilihan adalah musim, bukan temuan. */
+  E.lintasanSvg = function (h, metrik) {
+    var W = 1240, H = 230, kiri = 44, bawah = 46, atas = 22, n = E.TAHUN.length, b = (W - kiri) / n, maks = 0;
+    var nilai = function (t) { return metrik === "catatan" ? h[t].n : h[t].p; };
+    E.TAHUN.forEach(function (t) { maks = Math.max(maks, nilai(t)); });
+    maks = metrik === "catatan" ? Math.max(5, maks) : Math.max(10, Math.ceil(maks / 10) * 10);
+    var y = function (v) { return H - bawah - v / maks * (H - bawah - atas); }, s = "";
+    [0, 0.5, 1].forEach(function (k) {
+      var v = maks * k;
+      s += '<line class="ln-grid" x1="' + kiri + '" x2="' + W + '" y1="' + y(v) + '" y2="' + y(v) + '"/><text class="ln-sb" x="' + (kiri - 6) + '" y="' + (y(v) + 4) + '" text-anchor="end">' + (metrik === "catatan" ? E.f(Math.round(v)) : Math.round(v) + "%") + "</text>";
+    });
+    var pemilu = [2009, 2014, 2019, 2024], pilkada = [2015, 2017, 2018, 2020, 2024];
+    E.TAHUN.forEach(function (t, i) {
+      var v = nilai(t), x = kiri + i * b, rez = t < 2022 ? "a" : t > 2022 ? "b" : "ab";
+      if (v > 0) s += '<rect class="ln-bar ' + rez + '" x="' + (x + b * 0.18) + '" y="' + y(v) + '" width="' + (b * 0.64) + '" height="' + (H - bawah - y(v)) + '" rx="2"><title>' + t + ": " + h[t].jangkau + " dari " + h.unitTotal + " kab/kota (" + Math.round(h[t].p) + "%), " + h[t].n + " catatan</title></rect>" +
+        '<text class="ln-n" x="' + (x + b / 2) + '" y="' + (y(v) - 5) + '" text-anchor="middle">' + (metrik === "catatan" ? E.f(v) : Math.round(v) + "%") + "</text>";
+      s += '<text class="ln-th" x="' + (x + b / 2) + '" y="' + (H - bawah + 16) + '" text-anchor="middle">' + t + "</text>";
+      if (pemilu.indexOf(t) >= 0) s += '<rect class="ln-pip p" x="' + (x + b / 2 - 9) + '" y="' + (H - bawah + 24) + '" width="8" height="6"/>';
+      if (pilkada.indexOf(t) >= 0) s += '<rect class="ln-pip k" x="' + (x + b / 2 + 1) + '" y="' + (H - bawah + 24) + '" width="8" height="6"/>';
+    });
+    return '<svg class="lintasan" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Lintasan per tahun">' + s + "</svg>";
+  };
+
+  /* Peta panas provinsi × tahun. Satu rona, terang ke gelap (sekuensial), skala akar supaya tahun tipis tetap terbaca. */
+  E.petaPanasHtml = function (metrik, pilih) {
+    var data = {}, maks = 0;
+    E.PULAU.forEach(function (g) { g[1].forEach(function (p) {
+      var h = E.perTahun([p]); data[p] = h;
+      E.TAHUN.forEach(function (t) { maks = Math.max(maks, metrik === "catatan" ? h[t].n : h[t].p); });
+    }); });
+    function warna(v) {
+      if (!v) return "";
+      var k = Math.sqrt(v / maks), a = [239, 230, 212], b = [143, 42, 26];
+      return "background:rgb(" + a.map(function (c, i) { return Math.round(c + (b[i] - c) * (0.12 + 0.88 * k)); }).join(",") + ")" + (k > 0.55 ? ";color:#fff" : "");
+    }
+    var h = '<table class="panas"><thead><tr><th scope="col"></th>' + E.TAHUN.map(function (t) { return '<th scope="col">' + (t % 5 === 4 ? t : "'" + String(t).slice(2)) + "</th>"; }).join("") + "</tr></thead><tbody>";
+    E.PULAU.forEach(function (g) {
+      h += '<tr class="pn-grup"><th colspan="' + (E.TAHUN.length + 1) + '" scope="rowgroup">' + esc(g[0]) + "</th></tr>";
+      g[1].forEach(function (p) {
+        var d = data[p];
+        h += '<tr class="' + (pilih === p ? "on" : "") + '"><th scope="row"><button class="pn-p" data-p="' + esc(p) + '">' + esc(p) + "</button></th>" + E.TAHUN.map(function (t) {
+          var v = metrik === "catatan" ? d[t].n : d[t].p;
+          return '<td style="' + warna(v) + '" title="' + esc(p) + " " + t + ": " + d[t].jangkau + " dari " + d.unitTotal + " kab/kota, " + d[t].n + ' catatan">' + (v ? (metrik === "catatan" ? d[t].n : Math.round(v)) : "") + "</td>";
+        }).join("") + "</tr>";
+      });
+    });
+    return h + "</tbody></table>";
+  };
 })(window.EPPOS);

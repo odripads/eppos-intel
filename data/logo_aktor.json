@@ -1,0 +1,98 @@
+{
+ "pdip": {
+  "nama": "PDI Perjuangan",
+  "gambar": "pdip.png",
+  "sumber": "Logo Partai Pemilu 2024 (set dari Odri)"
+ },
+ "golkar": {
+  "nama": "Partai Golkar",
+  "gambar": "golkar.png",
+  "sumber": "Logo Partai Pemilu 2024 (set dari Odri)"
+ },
+ "gerindra": {
+  "nama": "Partai Gerindra",
+  "gambar": "gerindra.png",
+  "sumber": "Logo Partai Pemilu 2024 (set dari Odri)"
+ },
+ "pkb": {
+  "nama": "Partai Kebangkitan Bangsa",
+  "gambar": "pkb.png",
+  "sumber": "Logo Partai Pemilu 2024 (set dari Odri)"
+ },
+ "nasdem": {
+  "nama": "Partai NasDem",
+  "gambar": "nasdem.png",
+  "sumber": "Logo Partai Pemilu 2024 (set dari Odri)"
+ },
+ "pks": {
+  "nama": "Partai Keadilan Sejahtera",
+  "gambar": "pks.png",
+  "sumber": "Logo Partai Pemilu 2024 (set dari Odri)"
+ },
+ "demokrat": {
+  "nama": "Partai Demokrat",
+  "gambar": "demokrat.png",
+  "sumber": "Logo Partai Pemilu 2024 (set dari Odri)"
+ },
+ "pan": {
+  "nama": "Partai Amanat Nasional",
+  "gambar": "pan.png",
+  "sumber": "Logo Partai Pemilu 2024 (set dari Odri)"
+ },
+ "psi": {
+  "nama": "Partai Solidaritas Indonesia",
+  "gambar": "psi.png",
+  "sumber": "Logo Partai Pemilu 2024 (set dari Odri)"
+ },
+ "perindo": {
+  "nama": "Partai Perindo",
+  "gambar": "perindo.png",
+  "sumber": "Logo Partai Pemilu 2024 (set dari Odri)"
+ },
+ "ppp": {
+  "nama": "Partai Persatuan Pembangunan",
+  "gambar": "ppp.png",
+  "sumber": "Logo Partai Pemilu 2024 (set dari Odri)"
+ },
+ "ummat": {
+  "nama": "Partai Ummat",
+  "gambar": "ummat.png",
+  "sumber": "Logo Partai Pemilu 2024 (set dari Odri)"
+ },
+ "pbb": {
+  "nama": "Partai Bulan Bintang",
+  "gambar": "pbb.png",
+  "sumber": "Logo Partai Pemilu 2024 (set dari Odri)"
+ },
+ "berkarya": {
+  "nama": "Partai Berkarya",
+  "gambar": "berkarya.png",
+  "berkas": "Logo.Partai_Berkarya_(2026).png",
+  "sumber": "https://id.wikipedia.org/wiki/Partai_Berkarya"
+ },
+ "gelora": {
+  "nama": "Partai Gelora Indonesia",
+  "gambar": "gelora.png",
+  "sumber": "Logo Partai Pemilu 2024 (set dari Odri)"
+ },
+ "garuda": {
+  "nama": "Partai Garuda",
+  "gambar": "garuda.png",
+  "sumber": "Logo Partai Pemilu 2024 (set dari Odri)"
+ },
+ "buruh": {
+  "nama": "Partai Buruh",
+  "gambar": "buruh.png",
+  "sumber": "Logo Partai Pemilu 2024 (set dari Odri)"
+ },
+ "pkn": {
+  "nama": "Partai Kebangkitan Nusantara",
+  "gambar": "pkn.png",
+  "sumber": "Logo Partai Pemilu 2024 (set dari Odri)"
+ },
+ "hanura": {
+  "nama": "Partai Hanura",
+  "gambar": "hanura.png",
+  "sumber": "Logo Partai Pemilu 2024 (set dari Odri)"
+ }
+}

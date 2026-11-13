@@ -49,7 +49,7 @@ window.EPPOS = (function () {
   E.tenang = E.cetak || (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches);
 
   /* ---------- pemuatan ---------- */
-  var BERKAS = ["manifest", "periode", "insiden", "kasus_resmi", "insiden_otomatis", "usaha_pencarian", "kemajuan", "kisi", "qr", "ringkas", "posisi_aktor", "posisi_skema"];
+  var BERKAS = ["manifest", "periode", "insiden", "kasus_resmi", "insiden_otomatis", "usaha_pencarian", "kemajuan", "kisi", "qr", "ringkas", "posisi_aktor", "posisi_skema", "lambang", "sikap_pt", "logo_aktor"];
   E.muat = function () {
     var ambil = window.EPPOS_DATA
       ? Promise.resolve(BERKAS.map(function (n) { return window.EPPOS_DATA[n]; }))
@@ -187,6 +187,58 @@ window.EPPOS = (function () {
     var grid = E.baris.filter(function (r) { return r.saluran === "wp-grid"; }), u = E.D.usaha_pencarian || {};
     function r(g) { var n = grid.filter(function (x) { return x.gel === g; }).length; return u[g] ? { n: n, c: u[g], laju: n / u[g] * 1000 } : null; }
     return E.GELOMBANG.map(function (g) { return { id: g[0], musim: r(g[0]), kontrol: g[1] ? r(g[1]) : null }; });
+  };
+
+  /* gambar yang tidak ikut dibundel (lambang daerah, logo aktor, dokumen): di repo di assets/, di situs terbit di akar */
+  E.ASET = window.EPPOS_DATA ? "" : "assets/";
+
+  /* gugus wilayah untuk lintasan waktu; urutannya juga urutan baris peta panas */
+  E.PULAU = [
+    ["Sumatera", ["Aceh", "Sumatera Utara", "Sumatera Barat", "Riau", "Kepulauan Riau", "Jambi", "Sumatera Selatan", "Kepulauan Bangka Belitung", "Bengkulu", "Lampung"]],
+    ["Jawa", ["Jakarta", "Banten", "Jawa Barat", "Jawa Tengah", "Yogyakarta", "Jawa Timur"]],
+    ["Bali–Nusa Tenggara", ["Bali", "Nusa Tenggara Barat", "Nusa Tenggara Timur"]],
+    ["Kalimantan", ["Kalimantan Barat", "Kalimantan Tengah", "Kalimantan Selatan", "Kalimantan Timur", "Kalimantan Utara"]],
+    ["Sulawesi", ["Sulawesi Utara", "Gorontalo", "Sulawesi Tengah", "Sulawesi Barat", "Sulawesi Selatan", "Sulawesi Tenggara"]],
+    ["Maluku", ["Maluku", "Maluku Utara"]],
+    ["Papua", ["Papua", "Papua Barat", "Papua Barat Daya", "Papua Tengah", "Papua Pegunungan", "Papua Selatan"]]
+  ];
+  E.TAHUN = [];
+  for (var th = 2009; th <= 2026; th++) E.TAHUN.push(th);
+
+  /* Per tahun untuk sekumpulan provinsi: jumlah catatan dan jangkauan, yaitu bagian kab/kota wilayah itu yang punya
+     sedikitnya satu catatan pada tahun itu. Jangkauan lebih tahan bias kepadatan pers daripada jumlah, tapi tetap laporan. */
+  E.perTahun = function (provs) {
+    var ada = {}, unitTotal = 0, K = E.D.kisi, h = {};
+    (provs || E.PROVINSI).forEach(function (p) { ada[p] = 1; });
+    K.unit.forEach(function (u) { if (ada[u[1]]) unitTotal++; });
+    E.TAHUN.forEach(function (t) { h[t] = { n: 0, media: 0, resmi: 0, unit: {} }; });
+    E.baris.forEach(function (r) {
+      if (!r.th || !h[r.th] || !r.prov || !ada[r.prov]) return;
+      var x = h[r.th]; x.n++; x[r.seri]++;
+      r.unit.forEach(function (u) { x.unit[u] = 1; });
+    });
+    E.TAHUN.forEach(function (t) { var x = h[t]; x.jangkau = Object.keys(x.unit).length; x.p = unitTotal ? x.jangkau / unitTotal * 100 : 0; });
+    h.unitTotal = unitTotal;
+    return h;
+  };
+
+  /* lambang resmi (Wikidata P94, cadangan P41), dipetakan ke unit peta lewat provinsi + nama; kab dan kota senama
+     berbagi satu unit, jadi satu unit bisa punya dua lambang */
+  E.lambangUnit = function (u) { return (E._lambang || siapLambang()).unit[u] || []; };
+  E.lambangProv = function (p) { return (E._lambang || siapLambang()).prov[p] || null; };
+  function siapLambang() {
+    var L = E.D.lambang || {}, kodeProv = {}, out = { unit: {}, prov: {} };
+    Object.keys(L).forEach(function (k) { if (k.indexOf(".") < 0) { kodeProv[k] = L[k].label; out.prov[L[k].label] = L[k]; } });
+    Object.keys(L).forEach(function (k) {
+      if (k.indexOf(".") < 0) return;
+      var u = E.indeksUnit[kodeProv[k.slice(0, 2)] + "|" + L[k].label];
+      if (u != null) (out.unit[u] = out.unit[u] || []).push(L[k]);
+    });
+    E._lambang = out;
+    return out;
+  }
+  E.gambarLambang = function (x, kls) {
+    return x ? '<img class="' + (kls || "lambang") + '" src="' + E.ASET + "lambang/" + E.esc(x.gambar) + '" alt="Lambang ' + E.esc(x.label) + '" loading="lazy">' : "";
   };
 
   return E;

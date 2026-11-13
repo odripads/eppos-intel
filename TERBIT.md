@@ -16,3 +16,4 @@ Untuk mengembalikan versi sebelumnya: `cd dist/eppos-outlook && vercel rollback`
 - 2026-11-10 20:15 · bot-media: sprint 2026-11-10 20:15, +0 baris (periode 2009 terisi) · data 2026-11-10 · https://eppos-outlook-p0aj89k32-odripads.vercel.app
 - 2026-11-10 21:06 · bot-posisi: sprint 2026-11-10 21:06, +6 baris · data 2026-11-10 · https://eppos-outlook-occixd33e-odripads.vercel.app
 - 2026-11-10 21:09 · bot-posisi: sprint 2026-11-10 21:08, +0 baris, cek fakta UU 20/2023 di linimasa · data 2026-11-10 · https://eppos-outlook-ne2zp3efp-odripads.vercel.app
+- 2026-11-13 15:14 · Claude: konstelasi sikap ambang batas (logo partai), kerangka efektivitas–keterwakilan, simulasi 4–7%, RDPU Komisi II 12 Nov; lintasan waktu nasional/pulau/provinsi + peta panas; lambang daerah · data 2026-11-13 · https://eppos-outlook-8ub5ddcxm-odripads.vercel.app

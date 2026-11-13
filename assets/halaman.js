@@ -136,6 +136,14 @@
       '<figure class="waktu"><figcaption><b id="waktu-j">Catatan per tahun</b><span>Pilih satu tahun untuk menyaring kedua peta. Tinggi batang memakai skala akar supaya tahun-tahun awal tetap terbaca.</span></figcaption><div class="gulir" id="waktu"></div></figure>' +
     "</div></section>" +
 
+    '<section class="kertas blok" id="lintasan"><div class="lebar">' + palang("Gambar 3a", "Lintasan waktu") +
+      '<div class="dua-kol"><h2 class="j2">Kapan, dan di mana paling sering dilaporkan?</h2><p class="lead">Pilih nasional, gugus pulau, atau satu provinsi. <b>Jangkauan</b> adalah bagian kab/kota di wilayah itu yang punya sedikitnya satu catatan pada tahun tersebut; ia lebih tahan bias kepadatan pers daripada jumlah catatan, tetapi tetap laporan, bukan kejadian. Arsip menipis sebelum 2015.</p></div>' +
+      '<div class="ln-kendali"><label class="pil"><span>Wilayah</span><select id="ln-cakupan"></select></label><div class="seg terang" id="ln-metrik"></div></div>' +
+      '<figure class="gbr tanpa-garis"><div class="gulir" id="ln-grafik"></div><figcaption><b id="ln-judul"></b> <span class="ln-ket"><i class="p"></i>pemilu nasional <i class="k"></i>pilkada serentak · batang biru Peta I, merah Peta II</span></figcaption></figure>' +
+      '<div class="palang-jarak">' + palang("Peta panas", "38 provinsi × 18 tahun") + '</div><p class="rel-cat">Klik nama provinsi untuk melihat lintasannya di atas. Angka di sel: ' + '<span id="ln-satuan">persen kab/kota tersentuh</span>.</p>' +
+      '<div class="gulir" id="ln-panas"></div>' +
+    "</div></section>" +
+
     '<section class="kertas blok"><div class="lebar">' + palang("Gambar 3", "Peta per siklus pemilu") +
       '<div class="dua-kol"><h2 class="j2">Dari 2009 sampai 2024, siklus demi siklus.</h2><p class="lead">Rapat tim meminta peta sampai 2009. Yang terlihat di bawah adalah kondisi data saat ini: dua siklus awal hampir kosong karena arsipnya belum disapu, bukan karena tidak ada kejadian. Sapuan untuk jendela pilkada dimulai dari 2015.</p></div>' +
       '<div class="siklus" id="siklus"></div>' +
@@ -184,7 +192,7 @@
     tip.style.transform = "translate(" + x + "px," + y + "px)";
     E.sorotSemua(pv);
   }
-  function pilih(i) { F.prov = E.D.kisi.unit[E.D.kisi.sel[i * 3 + 2]][1]; gambarRel(); }
+  function pilih(i) { F.unit = E.D.kisi.sel[i * 3 + 2]; F.prov = E.D.kisi.unit[F.unit][1]; gambarRel(); }
 
   function bangunPapan() {
     E.Papan.lepasSemua();
@@ -258,7 +266,11 @@
   function relProv(p) {
     var x = E.tally(E.saring({ rez: "A", prov: p, mek: F.mek, dua: F.dua, tahun: F.tahun })), y = E.tally(E.saring({ rez: "B", prov: p, mek: F.mek, dua: F.dua, tahun: F.tahun }));
     var u = E.D.kisi.prov[p].unit, rows = E.saring({ prov: p, mek: F.mek, dua: F.dua, tahun: F.tahun }).slice(0, 3);
+    var un = F.unit != null && E.D.kisi.unit[F.unit][1] === p ? F.unit : null;
+    var lb = un != null ? E.lambangUnit(un) : [];
     return '<div class="rel-prov"><header><h3 class="j-rel">' + esc(p) + '</h3><button id="rel-tutup" aria-label="Tutup">×</button></header>' +
+      '<div class="lambang-baris">' + E.gambarLambang(E.lambangProv(p)) + (un != null ? lb.map(function (x) { return E.gambarLambang(x); }).join("") +
+        '<span><b>' + esc(E.D.kisi.unit[un][0]) + "</b>" + (lb.length ? esc(lb.map(function (x) { return /kota/i.test(x.jenis) ? "Kota" : "Kabupaten"; }).join(" dan ")) : "lambang belum tersedia") + "</span>" : "") + "</div>" +
       '<table class="banding"><thead><tr><th></th><th scope="col">Peta I</th><th scope="col">Peta II</th></tr></thead><tbody>' +
       baris3("Catatan media", f(x.media), f(y.media)) + baris3("Kasus resmi", f(x.resmi), f(y.resmi)) +
       baris3("Kab/kota tersentuh", f(x.unit), f(y.unit), "dari " + u) + "</tbody></table>" +
@@ -276,8 +288,37 @@
     pasangPapan($("#siklus"));
   }
 
+  var LN = { cakupan: "nasional", metrik: "jangkau" };
+  function provCakupan(c) {
+    if (c === "nasional") return E.PROVINSI;
+    var g = E.PULAU.filter(function (x) { return "pulau:" + x[0] === c; })[0];
+    return g ? g[1] : [c];
+  }
+  function gambarLintasan() {
+    var sel = $("#ln-cakupan");
+    if (!sel) return;
+    sel.innerHTML = '<option value="nasional">Nasional (38 provinsi)</option>' + E.PULAU.map(function (g) {
+      return '<optgroup label="' + esc(g[0]) + '"><option value="pulau:' + esc(g[0]) + '">Seluruh ' + esc(g[0]) + "</option>" +
+        g[1].map(function (p) { return '<option value="' + esc(p) + '">' + esc(p) + "</option>"; }).join("") + "</optgroup>";
+    }).join("");
+    sel.value = LN.cakupan;
+    sel.onchange = function () { LN.cakupan = sel.value; gambarLintasan(); };
+    $("#ln-metrik").innerHTML = '<span class="seg-j">Ukuran</span>' + [["jangkau", "Jangkauan kab/kota"], ["catatan", "Jumlah catatan"]].map(function (o) {
+      return '<button data-v="' + o[0] + '" aria-pressed="' + (LN.metrik === o[0]) + '">' + o[1] + "</button>";
+    }).join("");
+    $$("#ln-metrik button").forEach(function (b) { b.onclick = function () { LN.metrik = b.dataset.v; gambarLintasan(); }; });
+    var h = E.perTahun(provCakupan(LN.cakupan)), nama = LN.cakupan === "nasional" ? "Nasional" : LN.cakupan.replace("pulau:", "Seluruh ");
+    $("#ln-grafik").innerHTML = E.lintasanSvg(h, LN.metrik);
+    $("#ln-judul").textContent = nama + " · " + (LN.metrik === "catatan" ? "catatan per tahun" : "jangkauan per tahun, dari " + h.unitTotal + " kab/kota");
+    $("#ln-satuan").textContent = LN.metrik === "catatan" ? "jumlah catatan" : "persen kab/kota tersentuh";
+    $("#ln-panas").innerHTML = E.petaPanasHtml(LN.metrik, LN.cakupan);
+    $$("#ln-panas .pn-p").forEach(function (b) {
+      b.onclick = function () { LN.cakupan = b.dataset.p; gambarLintasan(); $("#lintasan").scrollIntoView({ behavior: E.tenang ? "auto" : "smooth" }); };
+    });
+  }
+
   function setelahIntervensi() {
-    gambarKendali(); bangunPapan(); gambarSiklus();
+    gambarKendali(); bangunPapan(); gambarSiklus(); gambarLintasan();
     var b = $("#kendali-buka");
     b.onclick = function () { var buka = $("#kendali").classList.toggle("buka"); b.setAttribute("aria-expanded", String(buka)); };
   }
@@ -365,15 +406,18 @@
     var kabU = Object.keys(kab).sort(function (x, y) { return kab[y] - kab[x]; }).slice(0, 8);
     var dek = a.media + b.media + " catatan media dan " + (a.resmi + b.resmi) + " kasus resmi. " + (a.resmi + b.resmi && a.media + b.media ? "Dua deret hadir di provinsi ini." : a.resmi + b.resmi ? "Hanya kasus resmi: pengawas mencatat, berita tidak ditemukan." : "Hanya pemberitaan: belum ada perkara resmi yang ditemukan.");
     return '<section class="malam blok"><div class="lebar"><p class="remah"><a href="#/provinsi">Berkas Provinsi</a> / ' + esc(p) + "</p>" +
+      E.gambarLambang(E.lambangProv(p), "lambang besar") +
       kepala("Berkas provinsi", p, esc(dek)) +
       '<div class="berkas-papan">' + ["A", "B"].map(function (k) {
         var R = E.REZIM[k], x = k === "A" ? a : b;
         return '<figure class="papan-bingkai"><figcaption class="papan-kap"><span class="no">Peta ' + R.no + "</span><b>" + esc(R.judul) + '</b><span class="kanan">' + x.unit + " / " + u + " kab/kota</span></figcaption>" +
           '<div class="papan prov" data-papan="' + k + '" data-prov="' + esc(p) + '" data-vb="' + vb + '"></div></figure>';
       }).join("") + "</div></div></section>" +
-      '<section class="kertas blok pendek"><div class="lebar"><div class="berkas-isi"><div>' + palang("Mekanisme") +
+      '<section class="kertas blok pendek"><div class="lebar">' + palang("Lintasan waktu", "jangkauan per tahun") +
+      '<figure class="gbr tanpa-garis"><div class="gulir">' + E.lintasanSvg(E.perTahun([p]), "jangkau") + '</div><figcaption>Bagian kab/kota di ' + esc(p) + ' yang punya sedikitnya satu catatan per tahun. Bandingkan dengan provinsi lain di <a href="#/intervensi/lintasan">peta panas</a>.</figcaption></figure>' +
+      '<div class="berkas-isi" style="margin-top:clamp(36px,4vw,56px)"><div>' + palang("Mekanisme") +
       '<div class="mek-ringkas">' + E.MEKANISME.map(function (m, i) { return ma[i].n + mb[i].n ? '<div><span>' + esc(m.pendek) + "</span>" + E.batangPasang(ma[i], mb[i]) + "</div>" : ""; }).join("") + "</div>" +
-      palang("Kab/kota paling sering disebut") + '<ol class="kab-daftar">' + kabU.map(function (n) { return "<li><span>" + esc(n) + "</span><b>" + kab[n] + "</b></li>"; }).join("") + "</ol>" +
+      palang("Kab/kota paling sering disebut") + '<ol class="kab-daftar">' + kabU.map(function (n) { return "<li><span>" + E.gambarLambang(E.lambangUnit(E.indeksUnit[p + "|" + n])[0], "lambang kecil") + esc(n) + "</span><b>" + kab[n] + "</b></li>"; }).join("") + "</ol>" +
       menyusul("Catatan analis", "Konteks politik provinsi ini.") +
       "</div><div>" + palang("Semua catatan", f(rows.length)) + '<ul class="cat-daftar">' + rows.slice(0, 60).map(bukaBaris).join("") + "</ul>" +
       (rows.length > 60 ? '<p class="rel-cat">' + f(rows.length - 60) + ' catatan lain ada di <a href="#/arsip">arsip</a>.</p>' : "") +
@@ -446,6 +490,69 @@
     return h + "</div>" + '<p class="rel-cat">' + f(P.length) + " pernyataan · " + f(P.filter(function (x) { return x.status === "dicek tim"; }).length) + " sudah dicek tim. Sikap diambil dari kutipan, bukan ditafsirkan.</p>";
   }
 
+  /* Konstelasi sikap ambang batas parlemen (Gambar 9a-9b). Data: data/sikap_pt.json, dari analisis terpadu tim RUU
+     Pemilu dan laporan singkat Komisi II DPR. Logo dari Wikipedia/Wikidata (scripts/ambil_logo_aktor.py); yang tidak
+     punya logo tampil sebagai monogram. Sumbu 0-7,5%: kiri keterwakilan, kanan efektivitas. */
+  var KEL = [["masyarakat sipil", "Masyarakat sipil"], ["partai nonparlemen", "Partai nonparlemen"], ["partai parlemen", "Partai parlemen"]];
+  function chipAktor(a, i) {
+    var L = (E.D.logo_aktor || {})[a.kode];
+    return '<button class="k-chip' + (L ? "" : " mono") + '" data-i="' + i + '" title="' + esc(a.nama + " · " + (a.label || "tanpa angka")) + '">' +
+      (L ? '<img src="' + E.ASET + "logo-aktor/" + esc(L.gambar) + '" alt="' + esc(a.nama) + '">' : "<span>" + esc(a.pendek || a.nama) + "</span>") + "</button>";
+  }
+  function konstelasi() {
+    var S = E.D.sikap_pt;
+    if (!S) return "";
+    var semua = S.aktor.concat(S.tanpa_angka), X = function (v) { return (v / 7.5 * 100).toFixed(2) + "%"; };
+    var h = '<div class="kons"><div class="kons-isi">';
+    KEL.forEach(function (k) {
+      var grup = {};
+      S.aktor.forEach(function (a, i) { if (a.kelompok !== k[0]) return; var t = a.titik != null ? a.titik : (a.min + a.maks) / 2; (grup[t] = grup[t] || []).push(i); });
+      var baris = 1, isi = "";
+      Object.keys(grup).forEach(function (t) {
+        var ids = grup[t], kol = ids.length > 3 ? 2 : 1, br = Math.ceil(ids.length / kol);
+        baris = Math.max(baris, br);
+        ids.forEach(function (i) {
+          var a = S.aktor[i];
+          if (a.min < a.maks) isi += '<span class="k-rentang" style="left:' + X(a.min) + ";width:" + X(a.maks - a.min) + '"></span>';
+        });
+        isi += '<div class="k-klaster" style="left:' + X(+t) + ";width:" + (kol * 50) + 'px">' + ids.map(function (i) { return chipAktor(S.aktor[i], i); }).join("") + "</div>";
+      });
+      h += '<div class="kons-lajur"><span class="kl-j">' + esc(k[1]) + '</span><div class="kl-area" style="height:' + (baris * 50 + 8) + 'px">' + isi + "</div></div>";
+    });
+    h += '<div class="kons-sumbu"><span class="ks-pita"></span>' + [0, 1, 2, 3, 4, 5, 6, 7].map(function (v) { return '<span class="ks-t" style="left:' + X(v) + '">' + v + "%</span>"; }).join("") +
+      '<span class="ks-ujung kiri">← Keterwakilan: inklusif, lebih sedikit suara terbuang</span><span class="ks-ujung kanan">Efektivitas: lebih sedikit partai, pemerintahan lebih lincah →</span></div>';
+    h += '</div></div><div class="kons-tanpa"><span class="kl-j">Tanpa angka</span>' + S.tanpa_angka.map(function (a, j) { return chipAktor(a, S.aktor.length + j); }).join("") + "</div>";
+    return h + '<div class="kons-detail" id="kons-detail" aria-live="polite"></div>';
+  }
+  function detailAktor(i) {
+    var S = E.D.sikap_pt, a = S.aktor.concat(S.tanpa_angka)[i], L = (E.D.logo_aktor || {})[a.kode];
+    $("#kons-detail").innerHTML = (L ? '<img src="' + E.ASET + "logo-aktor/" + esc(L.gambar) + '" alt="">' : '<span class="k-chip mono statis"><span>' + esc(a.pendek || a.nama) + "</span></span>") +
+      '<div><p class="kicker">' + esc(a.kelompok) + (a.tanggal ? " · " + esc(E.tgl(a.tanggal)) : "") + '</p><h3 class="j3">' + esc(a.nama) + ' <span class="sikap">' + esc(a.label || "tanpa angka") + "</span></h3><p>" + esc(a.catatan) + "</p>" +
+      (a.sumber.length ? '<p class="k-sumber">' + a.sumber.map(function (x) { return '<a href="' + (/^https?:/.test(x[1]) ? E.url(x[1]) : E.ASET + esc(x[1])) + '" target="_blank" rel="noopener">' + esc(x[0]) + "</a>"; }).join(" · ") + "</p>" : '<p class="k-sumber">Sumber: ' + esc(S.sumber_tim) + "</p>") + "</div>";
+    $$(".k-chip[data-i]").forEach(function (c) { c.classList.toggle("on", +c.dataset.i === i); });
+  }
+  function simulasi() {
+    var S = E.D.sikap_pt.simulasi, L = E.D.logo_aktor || {};
+    var st = function (v, t) { return v < t ? ["tidak", "tidak lolos"] : v - t < 0.5 ? ["tipis", "lolos tipis"] : ["lolos", "lolos"]; };
+    var h = '<table class="tabel sim"><thead><tr><th scope="col">Partai</th><th scope="col" class="r">Suara 2024</th><th scope="col" class="r">Kursi</th>' + S.ambang.map(function (t) { return '<th scope="col">Ambang ' + t + "%</th>"; }).join("") + "</tr></thead><tbody>";
+    S.partai.forEach(function (r) {
+      h += '<tr><th scope="row">' + (L[r[0]] ? '<img class="sim-logo" src="' + E.ASET + "logo-aktor/" + esc(L[r[0]].gambar) + '" alt="">' : "") + esc(r[1]) + '</th><td class="r">' + String(r[2]).replace(".", ",") + '%</td><td class="r">' + r[3] + "</td>" +
+        S.ambang.map(function (t) { var x = st(r[2], t); return '<td class="sim-' + x[0] + '">' + x[1] + "</td>"; }).join("") + "</tr>";
+    });
+    h += '<tr class="sim-jumlah"><th scope="row">Partai yang lolos</th><td></td><td></td>' + S.ambang.map(function (t) { return "<td>" + S.partai.filter(function (r) { return r[2] >= t; }).length + " dari " + S.partai.length + "</td>"; }).join("") + "</tr>";
+    h += '<tr class="sim-jumlah"><th scope="row">Suara partai-partai ini yang hilang</th><td></td><td></td>' + S.ambang.map(function (t) { var v = 0; S.partai.forEach(function (r) { if (r[2] < t) v += r[2]; }); return "<td>" + (v ? String(v.toFixed(1)).replace(".", ",") + "%" : "0") + "</td>"; }).join("") + "</tr>";
+    return h + "</tbody></table>";
+  }
+  function rdpu() {
+    var R = E.D.sikap_pt.rdpu;
+    return '<article class="rdpu"><time>' + esc(E.tgl(R.tanggal)) + '</time><h3 class="j3">' + esc(R.judul) + '</h3><ul>' + R.butir.map(function (b) { return "<li>" + esc(b) + "</li>"; }).join("") + "</ul><p>" + esc(R.catatan_rapat) +
+      ' <a href="' + E.ASET + esc(R.berkas) + '" target="_blank" rel="noopener">Laporan singkat Komisi II DPR (PDF)</a></p></article>';
+  }
+  function setelahRuu() {
+    $$(".k-chip[data-i]").forEach(function (c) { c.onclick = function () { detailAktor(+c.dataset.i); }; });
+    if ($("#kons-detail")) detailAktor(0);
+  }
+
   function ruu() {
     return '<section class="kertas blok"><div class="lebar">' +
       kepala("Fokus 2", "RUU Pemilu", "Studi baru tentang revisi aturan pemilu, khususnya ambang batas parlemen dan syarat pencapresan, sebagai konteks relevansi peta politik 2027–2029.") +
@@ -454,6 +561,17 @@
       '<div class="tiga putusan">' + [E.PATAH[7], E.PATAH[8], E.PATAH[9]].map(function (p) {
         return '<article class="kartu-put"><time>' + esc(p.t) + '</time><h3 class="j3"><a href="' + E.url(p.url) + '" target="_blank" rel="noopener">' + esc(p.j) + "</a></h3><p>" + esc(p.k) + "</p></article>";
       }).join("") + "</div>" +
+    "</div></section>" +
+
+    '<section class="kertas blok" id="konstelasi"><div class="lebar">' + palang("Gambar 9a", "Konstelasi sikap ambang batas parlemen") +
+      '<div class="dua-kol"><h2 class="j2">Efektif, atau mewakili?</h2><p class="lead">Ambang batas parlemen memaksa pilihan antara dua nilai yang sama-sama sah. Outlook ini memakai pendekatan eklektik: tidak memilih satu kutub, tetapi menimbang keduanya.</p></div>' +
+      '<div class="tiga kutub"><div class="ktb wakil"><p class="kicker">Kutub keterwakilan</p><h3 class="j3">Inklusif, sampai 0%</h3><p>Makin rendah ambang, makin sedikit suara yang tidak menjadi kursi dan makin beragam aspirasi yang terwakili. Harganya: parlemen lebih terfragmentasi. Dipegang masyarakat sipil dan partai nonparlemen.</p></div>' +
+      '<div class="ktb tengah"><p class="kicker">Pendekatan Outlook ini</p><h3 class="j3">Eklektik: menimbang keduanya</h3><p>Putusan MK 116/PUU-XXI/2023 meminta angka ambang ditata ulang dengan menimbang proporsionalitas hasil pemilu, penyederhanaan partai, dan partisipasi bermakna, lewat perhitungan yang terbuka. Ukurannya: berapa efektivitas yang dibeli dengan berapa suara yang hilang.</p></div>' +
+      '<div class="ktb efektif"><p class="kicker">Kutub efektivitas</p><h3 class="j3">Ramping: 5–7%</h3><p>Makin tinggi ambang, makin sedikit partai dan fraksi, negosiasi legislasi lebih sederhana, dan pemerintahan lebih stabil. Harganya: jutaan suara tidak menjadi kursi, 17,3 juta pada 2024 menurut Perindo. Dipegang sebagian besar partai parlemen.</p></div></div>' +
+      '<p class="rel-cat">Setiap logo diletakkan pada angka yang diusulkan aktornya; garis menunjukkan rentang usulan. Klik logo untuk sumbernya.</p>' + konstelasi() +
+      '<p class="rel-cat">Sumber: analisis terpadu tim RUU Pemilu EPPOS (Nov 2026) dan pemberitaan yang dihimpunnya; RDPU Komisi II DPR 12 Nov 2026. Angka mengikuti materi sumber. Logo dari Wikipedia/Wikimedia Commons; organisasi tanpa logo publik tampil sebagai monogram.</p>' +
+      '<div class="palang-jarak">' + palang("Gambar 9b", "Simulasi ambang 4–7%") + '</div>' +
+      '<div class="dua-kol ruu-kol"><div class="gulir">' + simulasi() + '<p class="rel-cat">' + esc(E.D.sikap_pt ? E.D.sikap_pt.simulasi.catatan : "") + ' Hanya delapan partai parlemen; partai di bawah 4% pada 2024 tidak tercantum di materi sumber.</p></div>' + rdpu() + "</div>" +
     "</div></section>" +
 
     '<section class="kertas blok pendek" id="posisi"><div class="lebar">' + petaPosisi() + "</div></section>" +
@@ -592,7 +710,7 @@
       case "skema": html = skema(); break;
       case "provinsi": html = bagian[1] ? berkasProv(bagian[1]) : provinsi(); setelah = function () { pasangPapan(isi); }; break;
       case "arsip": html = arsip(); setelah = setelahArsip; break;
-      case "ruu-pemilu": html = ruu(); break;
+      case "ruu-pemilu": html = ruu(); setelah = setelahRuu; titik = bagian[1] || null; break;
       case "metode": html = metode(); break;
       case "presentasi": html = presentasi(bagian[1]); setelah = setelahPresentasi; break;
       default: html = '<section class="kertas blok"><div class="lebar"><h1 class="j-hal">Halaman tidak ditemukan</h1><p><a href="#/">Kembali ke beranda</a></p></div></section>';

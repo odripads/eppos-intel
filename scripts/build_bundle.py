@@ -12,7 +12,7 @@ js = "\n".join((ROOT / "assets" / n).read_text() for n in ("inti.js", "kisi.js",
 # small derived figures the Metode page reads; kandidat.json itself is far too large to ship
 kandidat = json.loads((ROOT / "data/kandidat.json").read_text())
 (ROOT / "data/ringkas.json").write_text(json.dumps({"kandidat": len(kandidat)}))
-data = {n: json.loads((ROOT / "data" / f"{n}.json").read_text()) for n in ("manifest", "periode", "insiden", "kasus_resmi", "insiden_otomatis", "kemajuan", "usaha_pencarian", "kisi", "qr", "ringkas", "posisi_aktor", "posisi_skema")}
+data = {n: json.loads((ROOT / "data" / f"{n}.json").read_text()) for n in ("manifest", "periode", "insiden", "kasus_resmi", "insiden_otomatis", "kemajuan", "usaha_pencarian", "kisi", "qr", "ringkas", "posisi_aktor", "posisi_skema", "lambang", "sikap_pt", "logo_aktor")}
 
 # the single-file bundle carries only what the page renders. The full rows, including the query that
 # found each one, stay in data/*.json in the repo — the bundle is a viewer, not the dataset release.
@@ -51,3 +51,10 @@ deskripsi = re.search(r'<meta name="description" content="[^"]*">', html).group(
                                   f'{deskripsi}\n{out}</html>\n')
 (situs / "vercel.json").write_text(json.dumps({"headers": [{"source": "/(.*)", "headers": [
     {"key": "X-Robots-Tag", "value": "noindex, nofollow"}]}]}, indent=1) + "\n")
+
+# gambar yang tidak dibundel: lambang daerah (sekitar 550), logo aktor, dokumen sumber. Disalin ke akar situs terbit
+# karena ukurannya akan membengkakkan satu berkas HTML; halaman memuatnya saat dibutuhkan (E.ASET di inti.js).
+import shutil
+for d in ("lambang", "logo-aktor", "dokumen"):
+    asal = ROOT / "assets" / d
+    if asal.exists(): shutil.copytree(asal, situs / d, dirs_exist_ok=True)
