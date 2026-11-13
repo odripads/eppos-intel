@@ -1009,3 +1009,51 @@ semua kandidat sudah punya URL
 ── bangun ulang bundel situs
 /Users/odripads/eppos-intel/dist/eppos-outlook.html 2.06 MB
 ── selesai · 0 kandidat menunggu tinjauan · buka tinjau.html
+════════ 2026-11-10 21:07:01 · rutin harian (40 sel) ════════
+── sapuan arsip outlet (WordPress REST, tanpa batas laju bersama)
+  ... 960 sel, 5 kandidat baru
+  GAGAL innews.co.id 'petahana bantuan sosial' 2020: timeout
+  ... 1020 sel, 5 kandidat baru
+  ... 1080 sel, 5 kandidat baru
+  GAGAL innews.co.id 'hibah jelang pilkada' 2020: timeout
+  ... 1140 sel, 5 kandidat baru
+── 2026-11-10 21:16:13 dihentikan atas permintaan Odri (istirahat malam); 5 kandidat baru tersimpan, belum dipromosikan, dilanjutkan besok 10:00
+════════ 2026-11-12 09:30:00 · rutin harian (40 sel) ════════
+── sapuan arsip outlet (WordPress REST, tanpa batas laju bersama)
+════════ 2026-11-13 09:41:58 · rutin harian (40 sel) ════════
+── sapuan arsip outlet (WordPress REST, tanpa batas laju bersama)
+  GAGAL depoknews.id 'ASN terlibat politik praktis' 2024: JSONDecodeError
+  GAGAL indonesiadefense.com 'sanksi disiplin ASN pilkada' 2024: HTTPError
+  GAGAL joglosemarnews.com 'sanksi disiplin ASN pilkada' 2014: HTTPError
+  GAGAL depoknews.id 'sanksi disiplin ASN pilkada' 2024: JSONDecodeError
+
+0 kandidat baru · 5 menunggu tinjauan
+── sapuan Google News (dibatasi laju; pelan)
+  2017 Jawa Tengah        tekanan terhadap kritik   0 hasil → 0 kandidat
+  2017 Jawa Tengah        pengalihan sumber daya    0 hasil → 0 kandidat
+  2017 Jawa Tengah        pengalihan sumber daya    0 hasil → 0 kandidat
+  2017 Jawa Timur         paksaan aparat sipil      0 hasil → 0 kandidat
+
+1 kandidat baru · 6 menunggu tinjauan · 464995/470495 sel grid selesai
+── selesaikan URL kandidat (bertahap, endpoint Google membatasi laju)
+  OK    KAN-08823 https://beritacikarang.com/gara-gara-salam-5-jari-sejumlah-camat-terkena
+0 terselesaikan, 0 gagal, 36 masih menunggu
+── verifikasi judul sumber baru
+[7/8] gagal         https://kaltim.tribunnews.com/2021/02/27/bkpsdm-nunukan-tepis-isu-pemb  →  
+[8/8] gagal         https://www.tempo.co/politik/bawaslu-catat-3-daerah-ini-paling-banyak-  →  
+106 terverifikasi, 8 gagal → /Users/odripads/eppos-intel/data/judul_terverifikasi.json
+── terima kandidat baru (izin berdiri Odri, 29 Sep 2026)
+5 kandidat ditandai · 36 tertahan tanpa URL · 0 belum ditandai
+── masukkan temuan otomatis ke lapisan peta
+3751 kandidat disisihkan sebagai di luar lingkup (tercatat, tidak dibuang)
+2578 baris otomatis · 2129 punya kab/kota · 191 tanpa lokasi · 229 dua sumber
+38 provinsi tersentuh: Jawa Timur(367), Jawa Tengah(288), Sulawesi Selatan(267), Jawa Barat(178), Banten(144), Kepulauan Riau(95), Maluku Utara(76), Sulawesi Tenggara(70), Kalimantan Tengah(60), Sulawesi Utara(59), Sumatera Utara(58), Sulawesi Tengah(53)
+── bangun ulang data dari xlsx
+ "insiden": 53,
+ "kasus_resmi": 72,
+  "insiden": 9,
+ "judul_terverifikasi": 93,
+ "koordinat": 92,
+── bangun ulang bundel situs
+/Users/odripads/eppos-intel/dist/eppos-outlook.html 2.06 MB
+── selesai · 0 kandidat menunggu tinjauan · buka tinjau.html

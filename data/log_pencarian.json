@@ -350,6 +350,13 @@
    "dijalankan_oleh": "rutin otomatis",
    "sel": 5890,
    "hasil_masuk": 45
+  },
+  {
+   "tanggal_pencarian": "2026-11-13",
+   "alat": "Google News RSS (skrip)",
+   "dijalankan_oleh": "rutin otomatis",
+   "sel": 40,
+   "hasil_masuk": 1
   }
  ]
 }
