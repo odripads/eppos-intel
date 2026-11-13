@@ -18,3 +18,4 @@ Untuk mengembalikan versi sebelumnya: `cd dist/eppos-outlook && vercel rollback`
 - 2026-11-10 21:09 · bot-posisi: sprint 2026-11-10 21:08, +0 baris, cek fakta UU 20/2023 di linimasa · data 2026-11-10 · https://eppos-outlook-ne2zp3efp-odripads.vercel.app
 - 2026-11-13 15:14 · Claude: konstelasi sikap ambang batas (logo partai), kerangka efektivitas–keterwakilan, simulasi 4–7%, RDPU Komisi II 12 Nov; lintasan waktu nasional/pulau/provinsi + peta panas; lambang daerah · data 2026-11-13 · https://eppos-outlook-8ub5ddcxm-odripads.vercel.app
 - 2026-11-13 15:20 · Claude: Gambar 9c jumlah partai efektif (ENEP/ENPP) DPR 1999-2024 · data 2026-11-13 · https://eppos-outlook-8yq5hxfxl-odripads.vercel.app
+- 2026-11-13 15:27 · Claude: tampilan putih dan lebih tenang (label, kartu, navigasi, tombol), pita angka menyatu dengan hero · data 2026-11-13 · https://eppos-outlook-1o8rohfah-odripads.vercel.app

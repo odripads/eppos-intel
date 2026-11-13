@@ -2,41 +2,400 @@
  "catatan": "Peta sikap ambang batas parlemen. Sumber: analisis terpadu tim RUU Pemilu EPPOS (Nov 2026), yang menghimpun pemberitaan Mei-Okt 2026 (tautan per aktor), dan Laporan Singkat RDPU Komisi II DPR RI 12 Nov 2026. Angka mengikuti materi sumber dan tidak diverifikasi ulang.",
  "sumber_tim": "Analisis Terpadu Sikap Aktor: Dinamika Kenaikan Ambang Batas dalam Pembahasan RUU Pemilu (EPPOS, 2026)",
  "aktor": [
-  {"kode": "kms", "nama": "Koalisi Masyarakat Sipil untuk Kodifikasi UU Pemilu", "pendek": "Koalisi Kodifikasi", "kelompok": "masyarakat sipil", "min": 0, "maks": 0, "label": "hapus (0%)", "tanggal": "2026-11-12", "catatan": "Dalam RDPU Panja RUU Pemilu, 12 Nov 2026: hapus ambang batas parlemen, konversi suara tetap Sainte-Laguë, sistem proporsional campuran. Menggeser usulan 1% sebelumnya.", "sumber": [["Laporan Singkat Komisi II DPR RI, 12 Nov 2026", "dokumen/laporan-singkat-komisi2-2026-11-12.pdf"]]},
-  {"kode": "perludem", "nama": "Perludem dan draf RUU versi masyarakat sipil", "pendek": "Perludem", "kelompok": "masyarakat sipil", "min": 1, "maks": 1, "label": "1%", "tanggal": "2025-11-03", "catatan": "Draf versi masyarakat sipil (3 Nov 2025) didukung Themis, KPI, Puskapol UI, PSHK, ICW, PUSaKO, NETGRIT, Migrant CARE, Remotivi, PPDI.", "sumber": [["Perludem: Idealnya ambang batas parlemen 1 persen", "https://perludem.or.id/id/perludem-idealnya-ambang-batas-parlemen-di-indonesia-1-persen/"], ["Draf RUU Pemilu versi masyarakat sipil", "https://bijakmemantau.id/kebijakan/ruu-pemilihan-umum"]]},
-  {"kode": "koalisi", "nama": "Koalisi pemerintah", "pendek": "Koalisi pemerintah", "kelompok": "partai parlemen", "min": 5, "maks": 5, "label": "5%", "tanggal": "2026-09-17", "catatan": "Disebut kesepakatan ketua umum partai koalisi; menurut Dasco opsi ini belum final.", "sumber": [["CNN Indonesia, 17 Sep 2026", "https://www.cnnindonesia.com/nasional/20260917131239-32-1405000/dasco-sebut-opsi-ambang-batas-parlemen-5-persen-belum-final"]]},
-  {"kode": "gerindra", "nama": "Gerindra", "pendek": "Gerindra", "kelompok": "partai parlemen", "min": 5, "maks": 5, "label": "5%", "catatan": "Masih mengkaji besaran angka, terbuka terhadap berbagai usulan.", "sumber": []},
-  {"kode": "golkar", "nama": "Golkar", "pendek": "Golkar", "kelompok": "partai parlemen", "min": 5, "maks": 6, "label": "5–6%", "catatan": "Kenaikan moderat dalam rentang 5 sampai 6 persen.", "sumber": []},
-  {"kode": "pdip", "nama": "PDI Perjuangan", "pendek": "PDIP", "kelompok": "partai parlemen", "min": 6, "maks": 6, "label": "6%", "catatan": "Usul penerapan berjenjang, dari DPR RI sampai DPRD provinsi dan kabupaten/kota.", "sumber": []},
-  {"kode": "pkb", "nama": "PKB", "pendek": "PKB", "kelompok": "partai parlemen", "min": 6, "maks": 6, "label": "6%", "catatan": "Disampaikan dalam pembahasan di Komisi II DPR.", "sumber": []},
-  {"kode": "nasdem", "nama": "NasDem", "pendek": "NasDem", "kelompok": "partai parlemen", "min": 7, "maks": 7, "label": "7%", "catatan": "Usulan tertinggi di antara partai parlemen.", "sumber": []},
-  {"kode": "pks", "nama": "PKS", "pendek": "PKS", "kelompok": "partai parlemen", "min": 3.5, "maks": 4.5, "label": "3,5–4,5%", "catatan": "Rentang yang dekat dengan ketentuan saat ini.", "sumber": []},
-  {"kode": "pan", "nama": "PAN", "pendek": "PAN", "kelompok": "partai parlemen", "min": 0, "maks": 4, "label": "≤4% (pernah 0%)", "titik": 4, "catatan": "Pernah mendorong penghapusan; belakangan cenderung 4 persen atau lebih rendah.", "sumber": [["Detik, 10 Jun 2020 (latar historis)", "https://news.detik.com/berita/d-5051944/ragam-tanggapan-partai-politik-di-tengah-isu-kenaikan-ambang-batas-parlemen"]]},
-  {"kode": "gelora", "nama": "Partai Gelora", "pendek": "Gelora", "kelompok": "partai nonparlemen", "min": 0, "maks": 0, "label": "0%", "tanggal": "2026-10-04", "catatan": "Posisi paling tegas: hapus ambang batas. Fahri Hamzah menilai rentang 4–7% kompromi yang menguntungkan partai besar.", "sumber": [["Sindonews, 4 Okt 2026", "https://nasional.sindonews.com/read/1756841/12/fahri-hamzah-kritisi-wacana-ambang-batas-parlemen-5-bukan-untuk-kepentingan-rakyat-1791112234"]]},
-  {"kode": "perindo", "nama": "Perindo", "pendek": "Perindo", "kelompok": "partai nonparlemen", "min": 1, "maks": 1, "label": "1% (GKSR)", "tanggal": "2026-10-14", "catatan": "Ambang batas yang berlaku membuat sekitar 13 juta (2019) dan 17,3 juta (2024) suara tidak menjadi kursi.", "sumber": [["ANTARA, 14 Okt 2026", "https://www.antaranews.com/berita/5785073/perindo-usul-ambang-batas-satu-persen-agar-suara-pemilih-tak-terbuang"]]},
-  {"kode": "hanura", "nama": "Hanura", "pendek": "Hanura", "kelompok": "partai nonparlemen", "min": 1, "maks": 1, "label": "1% (GKSR)", "tanggal": "2026-09-22", "catatan": "Menolak 5 persen dan memperkirakan ketentuan itu akan kembali digugat ke MK.", "sumber": [["RM.id, 22 Sep 2026", "https://rm.id/baca-berita/parpol/327206/wacana-parliamentary-threshold-5-persen-hanura-pasti-digugat-lagi"], ["ANTARA, 27 Sep 2026", "https://www.antaranews.com/berita/5760897/hanura-gksr-perjuangkan-parliamentary-threshold-1-persen"]]},
-  {"kode": "ppp", "nama": "PPP", "pendek": "PPP", "kelompok": "partai nonparlemen", "min": 1, "maks": 1, "label": "1% (GKSR)", "catatan": "Pernah mengusulkan 2–3 persen (Juli 2026) sebelum bergabung dalam usulan 1 persen GKSR.", "sumber": [["ANTARA, 4 Jul 2026", "https://www.antaranews.com/berita/5635747/ketum-ppp-mardiono-usul-ambang-batas-parlemen-2-atau-3-persen"]]},
-  {"kode": "buruh", "nama": "Partai Buruh", "pendek": "Buruh", "kelompok": "partai nonparlemen", "min": 1, "maks": 1, "label": "1% (GKSR)", "catatan": "Sebelumnya mendorong penghapusan ambang batas.", "sumber": [["RM.id, 26 Sep 2026", "https://rm.id/baca-berita/parpol/327786/hut-pertama-gksr-delapan-partai-usul-parliamentary-threshold-1-persen"]]},
-  {"kode": "ummat", "nama": "Partai Ummat", "pendek": "Ummat", "kelompok": "partai nonparlemen", "min": 1, "maks": 1, "label": "1% (GKSR)", "catatan": "Menolak 5 persen bila tidak didasarkan metodologi kuat, simulasi terbuka, dan pelibatan partai nonparlemen.", "sumber": [["RM.id, 26 Sep 2026", "https://rm.id/baca-berita/parpol/327786/hut-pertama-gksr-delapan-partai-usul-parliamentary-threshold-1-persen"]]},
-  {"kode": "pkn", "nama": "PKN", "pendek": "PKN", "kelompok": "partai nonparlemen", "min": 1, "maks": 1, "label": "1% (GKSR)", "catatan": "Anggota GKSR.", "sumber": [["ANTARA, 18 Sep 2026", "https://www.antaranews.com/berita/5747116/gksr-nilai-ambang-batas-parlemen-5-persen-sebaiknya-dihindari"]]},
-  {"kode": "pbb", "nama": "PBB", "pendek": "PBB", "kelompok": "partai nonparlemen", "min": 1, "maks": 1, "label": "1% (GKSR)", "catatan": "Meminta angka berdasar perhitungan rasional suara yang tidak menjadi kursi; menawarkan penggabungan partai yang sudah mendapat kursi di dapil.", "sumber": [["RCTI+, 17 Sep 2026", "https://www.rctiplus.com/news/detail/nasional/5475032/soal-usulan-ambang-batas-parlemen-5--partai-bulan-bintang-tawarkan-jalan-tengah"]]},
-  {"kode": "berkarya", "nama": "Partai Berkarya", "pendek": "Berkarya", "kelompok": "partai nonparlemen", "min": 1, "maks": 1, "label": "1% (GKSR)", "catatan": "Anggota GKSR.", "sumber": [["ANTARA, 18 Sep 2026", "https://www.antaranews.com/berita/5747116/gksr-nilai-ambang-batas-parlemen-5-persen-sebaiknya-dihindari"]]}
+  {
+   "kode": "kms",
+   "nama": "Koalisi Masyarakat Sipil untuk Kodifikasi UU Pemilu",
+   "pendek": "Koalisi Kodifikasi",
+   "kelompok": "masyarakat sipil",
+   "min": 0,
+   "maks": 0,
+   "label": "hapus (0%)",
+   "tanggal": "2026-11-12",
+   "catatan": "Dalam RDPU Panja RUU Pemilu, 12 Nov 2026: hapus ambang batas parlemen, konversi suara tetap Sainte-Laguë, sistem proporsional campuran. Menggeser usulan 1% sebelumnya.",
+   "sumber": [
+    [
+     "Laporan Singkat Komisi II DPR RI, 12 Nov 2026",
+     "dokumen/laporan-singkat-komisi2-2026-11-12.pdf"
+    ]
+   ]
+  },
+  {
+   "kode": "perludem",
+   "nama": "Perludem dan draf RUU versi masyarakat sipil",
+   "pendek": "Perludem",
+   "kelompok": "masyarakat sipil",
+   "min": 1,
+   "maks": 1,
+   "label": "1%",
+   "tanggal": "2025-11-03",
+   "catatan": "Draf versi masyarakat sipil (3 Nov 2025) didukung Themis, KPI, Puskapol UI, PSHK, ICW, PUSaKO, NETGRIT, Migrant CARE, Remotivi, PPDI.",
+   "sumber": [
+    [
+     "Perludem: Idealnya ambang batas parlemen 1 persen",
+     "https://perludem.or.id/id/perludem-idealnya-ambang-batas-parlemen-di-indonesia-1-persen/"
+    ],
+    [
+     "Draf RUU Pemilu versi masyarakat sipil",
+     "https://bijakmemantau.id/kebijakan/ruu-pemilihan-umum"
+    ]
+   ]
+  },
+  {
+   "kode": "koalisi",
+   "nama": "Koalisi pemerintah",
+   "pendek": "Koalisi",
+   "kelompok": "partai parlemen",
+   "min": 5,
+   "maks": 5,
+   "label": "5%",
+   "tanggal": "2026-09-17",
+   "catatan": "Disebut kesepakatan ketua umum partai koalisi; menurut Dasco opsi ini belum final.",
+   "sumber": [
+    [
+     "CNN Indonesia, 17 Sep 2026",
+     "https://www.cnnindonesia.com/nasional/20260917131239-32-1405000/dasco-sebut-opsi-ambang-batas-parlemen-5-persen-belum-final"
+    ]
+   ]
+  },
+  {
+   "kode": "gerindra",
+   "nama": "Gerindra",
+   "pendek": "Gerindra",
+   "kelompok": "partai parlemen",
+   "min": 5,
+   "maks": 5,
+   "label": "5%",
+   "catatan": "Masih mengkaji besaran angka, terbuka terhadap berbagai usulan.",
+   "sumber": []
+  },
+  {
+   "kode": "golkar",
+   "nama": "Golkar",
+   "pendek": "Golkar",
+   "kelompok": "partai parlemen",
+   "min": 5,
+   "maks": 6,
+   "label": "5–6%",
+   "catatan": "Kenaikan moderat dalam rentang 5 sampai 6 persen.",
+   "sumber": []
+  },
+  {
+   "kode": "pdip",
+   "nama": "PDI Perjuangan",
+   "pendek": "PDIP",
+   "kelompok": "partai parlemen",
+   "min": 6,
+   "maks": 6,
+   "label": "6%",
+   "catatan": "Usul penerapan berjenjang, dari DPR RI sampai DPRD provinsi dan kabupaten/kota.",
+   "sumber": []
+  },
+  {
+   "kode": "pkb",
+   "nama": "PKB",
+   "pendek": "PKB",
+   "kelompok": "partai parlemen",
+   "min": 6,
+   "maks": 6,
+   "label": "6%",
+   "catatan": "Disampaikan dalam pembahasan di Komisi II DPR.",
+   "sumber": []
+  },
+  {
+   "kode": "nasdem",
+   "nama": "NasDem",
+   "pendek": "NasDem",
+   "kelompok": "partai parlemen",
+   "min": 7,
+   "maks": 7,
+   "label": "7%",
+   "catatan": "Usulan tertinggi di antara partai parlemen.",
+   "sumber": []
+  },
+  {
+   "kode": "pks",
+   "nama": "PKS",
+   "pendek": "PKS",
+   "kelompok": "partai parlemen",
+   "min": 3.5,
+   "maks": 4.5,
+   "label": "3,5–4,5%",
+   "catatan": "Rentang yang dekat dengan ketentuan saat ini.",
+   "sumber": []
+  },
+  {
+   "kode": "pan",
+   "nama": "PAN",
+   "pendek": "PAN",
+   "kelompok": "partai parlemen",
+   "min": 0,
+   "maks": 4,
+   "label": "≤4% (pernah 0%)",
+   "titik": 4,
+   "catatan": "Pernah mendorong penghapusan; belakangan cenderung 4 persen atau lebih rendah.",
+   "sumber": [
+    [
+     "Detik, 10 Jun 2020 (latar historis)",
+     "https://news.detik.com/berita/d-5051944/ragam-tanggapan-partai-politik-di-tengah-isu-kenaikan-ambang-batas-parlemen"
+    ]
+   ]
+  },
+  {
+   "kode": "gelora",
+   "nama": "Partai Gelora",
+   "pendek": "Gelora",
+   "kelompok": "partai nonparlemen",
+   "min": 0,
+   "maks": 0,
+   "label": "0%",
+   "tanggal": "2026-10-04",
+   "catatan": "Posisi paling tegas: hapus ambang batas. Fahri Hamzah menilai rentang 4–7% kompromi yang menguntungkan partai besar.",
+   "sumber": [
+    [
+     "Sindonews, 4 Okt 2026",
+     "https://nasional.sindonews.com/read/1756841/12/fahri-hamzah-kritisi-wacana-ambang-batas-parlemen-5-bukan-untuk-kepentingan-rakyat-1791112234"
+    ]
+   ]
+  },
+  {
+   "kode": "perindo",
+   "nama": "Perindo",
+   "pendek": "Perindo",
+   "kelompok": "partai nonparlemen",
+   "min": 1,
+   "maks": 1,
+   "label": "1% (GKSR)",
+   "tanggal": "2026-10-14",
+   "catatan": "Ambang batas yang berlaku membuat sekitar 13 juta (2019) dan 17,3 juta (2024) suara tidak menjadi kursi.",
+   "sumber": [
+    [
+     "ANTARA, 14 Okt 2026",
+     "https://www.antaranews.com/berita/5785073/perindo-usul-ambang-batas-satu-persen-agar-suara-pemilih-tak-terbuang"
+    ]
+   ]
+  },
+  {
+   "kode": "hanura",
+   "nama": "Hanura",
+   "pendek": "Hanura",
+   "kelompok": "partai nonparlemen",
+   "min": 1,
+   "maks": 1,
+   "label": "1% (GKSR)",
+   "tanggal": "2026-09-22",
+   "catatan": "Menolak 5 persen dan memperkirakan ketentuan itu akan kembali digugat ke MK.",
+   "sumber": [
+    [
+     "RM.id, 22 Sep 2026",
+     "https://rm.id/baca-berita/parpol/327206/wacana-parliamentary-threshold-5-persen-hanura-pasti-digugat-lagi"
+    ],
+    [
+     "ANTARA, 27 Sep 2026",
+     "https://www.antaranews.com/berita/5760897/hanura-gksr-perjuangkan-parliamentary-threshold-1-persen"
+    ]
+   ]
+  },
+  {
+   "kode": "ppp",
+   "nama": "PPP",
+   "pendek": "PPP",
+   "kelompok": "partai nonparlemen",
+   "min": 1,
+   "maks": 1,
+   "label": "1% (GKSR)",
+   "catatan": "Pernah mengusulkan 2–3 persen (Juli 2026) sebelum bergabung dalam usulan 1 persen GKSR.",
+   "sumber": [
+    [
+     "ANTARA, 4 Jul 2026",
+     "https://www.antaranews.com/berita/5635747/ketum-ppp-mardiono-usul-ambang-batas-parlemen-2-atau-3-persen"
+    ]
+   ]
+  },
+  {
+   "kode": "buruh",
+   "nama": "Partai Buruh",
+   "pendek": "Buruh",
+   "kelompok": "partai nonparlemen",
+   "min": 1,
+   "maks": 1,
+   "label": "1% (GKSR)",
+   "catatan": "Sebelumnya mendorong penghapusan ambang batas.",
+   "sumber": [
+    [
+     "RM.id, 26 Sep 2026",
+     "https://rm.id/baca-berita/parpol/327786/hut-pertama-gksr-delapan-partai-usul-parliamentary-threshold-1-persen"
+    ]
+   ]
+  },
+  {
+   "kode": "ummat",
+   "nama": "Partai Ummat",
+   "pendek": "Ummat",
+   "kelompok": "partai nonparlemen",
+   "min": 1,
+   "maks": 1,
+   "label": "1% (GKSR)",
+   "catatan": "Menolak 5 persen bila tidak didasarkan metodologi kuat, simulasi terbuka, dan pelibatan partai nonparlemen.",
+   "sumber": [
+    [
+     "RM.id, 26 Sep 2026",
+     "https://rm.id/baca-berita/parpol/327786/hut-pertama-gksr-delapan-partai-usul-parliamentary-threshold-1-persen"
+    ]
+   ]
+  },
+  {
+   "kode": "pkn",
+   "nama": "PKN",
+   "pendek": "PKN",
+   "kelompok": "partai nonparlemen",
+   "min": 1,
+   "maks": 1,
+   "label": "1% (GKSR)",
+   "catatan": "Anggota GKSR.",
+   "sumber": [
+    [
+     "ANTARA, 18 Sep 2026",
+     "https://www.antaranews.com/berita/5747116/gksr-nilai-ambang-batas-parlemen-5-persen-sebaiknya-dihindari"
+    ]
+   ]
+  },
+  {
+   "kode": "pbb",
+   "nama": "PBB",
+   "pendek": "PBB",
+   "kelompok": "partai nonparlemen",
+   "min": 1,
+   "maks": 1,
+   "label": "1% (GKSR)",
+   "catatan": "Meminta angka berdasar perhitungan rasional suara yang tidak menjadi kursi; menawarkan penggabungan partai yang sudah mendapat kursi di dapil.",
+   "sumber": [
+    [
+     "RCTI+, 17 Sep 2026",
+     "https://www.rctiplus.com/news/detail/nasional/5475032/soal-usulan-ambang-batas-parlemen-5--partai-bulan-bintang-tawarkan-jalan-tengah"
+    ]
+   ]
+  },
+  {
+   "kode": "berkarya",
+   "nama": "Partai Berkarya",
+   "pendek": "Berkarya",
+   "kelompok": "partai nonparlemen",
+   "min": 1,
+   "maks": 1,
+   "label": "1% (GKSR)",
+   "catatan": "Anggota GKSR.",
+   "sumber": [
+    [
+     "ANTARA, 18 Sep 2026",
+     "https://www.antaranews.com/berita/5747116/gksr-nilai-ambang-batas-parlemen-5-persen-sebaiknya-dihindari"
+    ]
+   ]
+  }
  ],
  "tanpa_angka": [
-  {"kode": "psi", "nama": "PSI", "kelompok": "partai nonparlemen", "catatan": "Mengakui perlunya formula agar suara tidak terbuang, tetapi siap dengan berapa pun angka yang diputuskan DPR.", "sumber": [["ANTARA, 24 Sep 2026", "https://www.antaranews.com/berita/5757381/raja-juli-psi-siap-dengan-berapa-pun-ambang-batas-parlemen"]]},
-  {"kode": "demokrat", "nama": "Demokrat", "kelompok": "partai parlemen", "catatan": "Materi sumber tidak memuat usulan angka. Perolehan suara 2024: 7,4%.", "sumber": []},
-  {"kode": "garuda", "nama": "Partai Garuda", "kelompok": "partai nonparlemen", "catatan": "Pernah mengkritik ambang batas (gugatan ke MK, 2018); sikap atas wacana 5% belum tercatat.", "sumber": [["CNN Indonesia, 26 Apr 2018", "https://www.cnnindonesia.com/nasional/20180426183359-12-293889/mk-tolak-gugatan-partai-garuda-soal-ambang-batas-parlemen"]]}
+  {
+   "kode": "psi",
+   "nama": "PSI",
+   "kelompok": "partai nonparlemen",
+   "catatan": "Mengakui perlunya formula agar suara tidak terbuang, tetapi siap dengan berapa pun angka yang diputuskan DPR.",
+   "sumber": [
+    [
+     "ANTARA, 24 Sep 2026",
+     "https://www.antaranews.com/berita/5757381/raja-juli-psi-siap-dengan-berapa-pun-ambang-batas-parlemen"
+    ]
+   ]
+  },
+  {
+   "kode": "demokrat",
+   "nama": "Demokrat",
+   "kelompok": "partai parlemen",
+   "catatan": "Materi sumber tidak memuat usulan angka. Perolehan suara 2024: 7,4%.",
+   "sumber": []
+  },
+  {
+   "kode": "garuda",
+   "nama": "Partai Garuda",
+   "kelompok": "partai nonparlemen",
+   "catatan": "Pernah mengkritik ambang batas (gugatan ke MK, 2018); sikap atas wacana 5% belum tercatat.",
+   "sumber": [
+    [
+     "CNN Indonesia, 26 Apr 2018",
+     "https://www.cnnindonesia.com/nasional/20180426183359-12-293889/mk-tolak-gugatan-partai-garuda-soal-ambang-batas-parlemen"
+    ]
+   ]
+  }
  ],
- "simulasi": {"catatan": "Kelolosan partai pada ambang 4–7% berdasarkan perolehan suara Pemilu 2024, dari materi sumber. Simulasi kemungkinan matematis, bukan prediksi Pemilu 2029.",
-  "ambang": [4, 5, 6, 7],
-  "partai": [["pdip", "PDIP", 16.7, 110], ["golkar", "Golkar", 15.3, 102], ["gerindra", "Gerindra", 13.2, 86], ["pkb", "PKB", 10.6, 68], ["nasdem", "NasDem", 9.0, 69], ["pks", "PKS", 8.4, 53], ["demokrat", "Demokrat", 7.4, 44], ["pan", "PAN", 6.8, 48]]},
- "rdpu": {"tanggal": "2026-11-12", "judul": "RDPU Panja RUU Pemilu Komisi II DPR dengan Koalisi Masyarakat Sipil untuk Kodifikasi UU Pemilu",
+ "simulasi": {
+  "catatan": "Kelolosan partai pada ambang 4–7% berdasarkan perolehan suara Pemilu 2024, dari materi sumber. Simulasi kemungkinan matematis, bukan prediksi Pemilu 2029.",
+  "ambang": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "partai": [
+   [
+    "pdip",
+    "PDIP",
+    16.7,
+    110
+   ],
+   [
+    "golkar",
+    "Golkar",
+    15.3,
+    102
+   ],
+   [
+    "gerindra",
+    "Gerindra",
+    13.2,
+    86
+   ],
+   [
+    "pkb",
+    "PKB",
+    10.6,
+    68
+   ],
+   [
+    "nasdem",
+    "NasDem",
+    9.0,
+    69
+   ],
+   [
+    "pks",
+    "PKS",
+    8.4,
+    53
+   ],
+   [
+    "demokrat",
+    "Demokrat",
+    7.4,
+    44
+   ],
+   [
+    "pan",
+    "PAN",
+    6.8,
+    48
+   ]
+  ]
+ },
+ "rdpu": {
+  "tanggal": "2026-11-12",
+  "judul": "RDPU Panja RUU Pemilu Komisi II DPR dengan Koalisi Masyarakat Sipil untuk Kodifikasi UU Pemilu",
   "berkas": "dokumen/laporan-singkat-komisi2-2026-11-12.pdf",
-  "butir": ["Satukan UU Pemilu dan UU Pilkada dalam satu kodifikasi (usulan 726 pasal, enam buku).",
+  "butir": [
+   "Satukan UU Pemilu dan UU Pilkada dalam satu kodifikasi (usulan 726 pasal, enam buku).",
    "Hapus ambang batas pencalonan presiden; koalisi pengusung paling banyak 30% partai peserta (alternatif 50%), dan partai wajib mengusung pasangan calon.",
    "Sistem proporsional campuran: 50% kursi lewat daftar tertutup, 50% lewat dapil berwakil tunggal.",
    "Hapus ambang batas parlemen; konversi suara tetap dengan Sainte-Laguë.",
    "Pemilu nasional April 2029, pemilu daerah (kepala daerah dan DPRD) Oktober 2031.",
-   "Badan Ajudikasi Pemilu (Badilu) menggantikan Bawaslu; KPU tetap tujuh anggota; tahapan inti dipangkas dari 20 menjadi 12 bulan."],
-  "catatan_rapat": "Komisi II mencatat masukan ini sebagai bahan awal dan bagian dari inventarisasi isu penyusunan RUU."}
+   "Badan Ajudikasi Pemilu (Badilu) menggantikan Bawaslu; KPU tetap tujuh anggota; tahapan inti dipangkas dari 20 menjadi 12 bulan."
+  ],
+  "catatan_rapat": "Komisi II mencatat masukan ini sebagai bahan awal dan bagian dari inventarisasi isu penyusunan RUU."
+ }
 }

@@ -176,7 +176,7 @@
     }); });
     function warna(v) {
       if (!v) return "";
-      var k = Math.sqrt(v / maks), a = [239, 230, 212], b = [143, 42, 26];
+      var k = Math.sqrt(v / maks), a = [244, 245, 247], b = [143, 42, 26];
       return "background:rgb(" + a.map(function (c, i) { return Math.round(c + (b[i] - c) * (0.12 + 0.88 * k)); }).join(",") + ")" + (k > 0.55 ? ";color:#fff" : "");
     }
     var h = '<table class="panas"><thead><tr><th scope="col"></th>' + E.TAHUN.map(function (t) { return '<th scope="col">' + (t % 5 === 4 ? t : "'" + String(t).slice(2)) + "</th>"; }).join("") + "</tr></thead><tbody>";
