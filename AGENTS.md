@@ -78,6 +78,14 @@ to the same Vercel site, only through `scripts/terbitkan.sh`.
 - **Position map** (`petaPosisi()` in `assets/halaman.js`): a grid of three actor groups by two issues, read from
   `data/posisi_aktor.json`. Each row shows its stance, a verbatim quote and a source link. Rows not checked by
   Beckham's team show "belum dicek tim". It is empty until bot-posisi adds rows.
+- **Added 13 Nov by Claude (Odri's request):** RUU page sections `#konstelasi` (Gambar 9a–9b: threshold
+  constellation with party logos, effectiveness vs representativeness framing, 4–7% simulation, 12 Nov Komisi II
+  RDPU) from `data/sikap_pt.json` (owner: bot-posisi; keep it in step with Beckham's team). Logos: `assets/logo-aktor/`
+  (parties from Odri's set `~/Desktop/ASPIRASI RESEARCH & CONSULTING/Logo Partai Pemilu 2024/`, map in
+  `data/logo_aktor.json`). Intervensi `#lintasan` (Gambar 3a): per-year trajectory and province × year heatmap
+  (`E.perTahun`, `E.lintasanSvg`, `E.petaPanasHtml`). Coats of arms in `assets/lambang/` + `data/lambang.json`
+  (`scripts/ambil_lambang.py`; 38/38 provinces, 273/484 map units). `build_bundle.py` copies `lambang/`,
+  `logo-aktor/`, `dokumen/` next to the page.
 - **Static version:** 10 plates in `dist/pelat/` (PNG at 3840×2160, plus `EPPOS-Political-Outlook-pelat.pdf` for
   WhatsApp), rendered from the same page as the site.
 - **Logo rule:** EPPOS and PolGov are equal. No white box behind either, both keep their tagline, sized by ink
