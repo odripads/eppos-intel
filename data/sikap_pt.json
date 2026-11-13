@@ -326,63 +326,97 @@
   }
  ],
  "simulasi": {
-  "catatan": "Kelolosan partai pada ambang 4–7% berdasarkan perolehan suara Pemilu 2024, dari materi sumber. Simulasi kemungkinan matematis, bukan prediksi Pemilu 2029.",
+  "catatan": "Kelolosan tiap partai pada ambang 1–7% menurut perolehan suara sah DPR Pemilu 2024 (data KPU, tabel yang sama dengan Gambar 9c). Simulasi kemungkinan matematis, bukan prediksi Pemilu 2029. Koreksi atas materi sumber tim: suara resmi PAN 7,24% (bukan 6,8%) dan NasDem 9,66% (bukan 9,0%), sehingga pada ambang 7% PAN masih lolos tipis.",
   "ambang": [
+   1,
+   2,
+   3,
    4,
    5,
    6,
    7
   ],
-  "partai": [
-   [
+  "kode": {
+   "Indonesian Democratic Party of Struggle": [
     "pdip",
-    "PDIP",
-    16.7,
-    110
+    "PDIP"
    ],
-   [
+   "Golkar": [
     "golkar",
-    "Golkar",
-    15.3,
-    102
+    "Golkar"
    ],
-   [
+   "Gerindra Party": [
     "gerindra",
-    "Gerindra",
-    13.2,
-    86
+    "Gerindra"
    ],
-   [
+   "National Awakening Party": [
     "pkb",
-    "PKB",
-    10.6,
-    68
+    "PKB"
    ],
-   [
+   "NasDem Party": [
     "nasdem",
-    "NasDem",
-    9.0,
-    69
+    "NasDem"
    ],
-   [
+   "Prosperous Justice Party": [
     "pks",
-    "PKS",
-    8.4,
-    53
+    "PKS"
    ],
-   [
+   "Democratic Party (Indonesia)": [
     "demokrat",
-    "Demokrat",
-    7.4,
-    44
+    "Demokrat"
    ],
-   [
+   "National Mandate Party": [
     "pan",
-    "PAN",
-    6.8,
-    48
+    "PAN"
+   ],
+   "United Development Party": [
+    "ppp",
+    "PPP"
+   ],
+   "Indonesian Solidarity Party": [
+    "psi",
+    "PSI"
+   ],
+   "Perindo Party": [
+    "perindo",
+    "Perindo"
+   ],
+   "Gelora Party": [
+    "gelora",
+    "Gelora"
+   ],
+   "People's Conscience Party": [
+    "hanura",
+    "Hanura"
+   ],
+   "Labour Party (Indonesia, 2021)": [
+    "buruh",
+    "Partai Buruh"
+   ],
+   "Ummah Party": [
+    "ummat",
+    "Ummat"
+   ],
+   "Crescent Star Party (Indonesia)": [
+    "pbb",
+    "PBB"
+   ],
+   "Garuda Party": [
+    "garuda",
+    "Garuda"
+   ],
+   "Nusantara Awakening Party": [
+    "pkn",
+    "PKN"
    ]
-  ]
+  },
+  "kabinet": {
+   "pbb": "Yusril Ihza Mahendra, Menko Hukum, HAM, Imigrasi, dan Pemasyarakatan",
+   "gelora": "Anis Matta, Wakil Menteri Luar Negeri; Fahri Hamzah, Wakil Menteri Perumahan dan Kawasan Permukiman",
+   "perindo": "Veronica Tan, Wakil Menteri Pemberdayaan Perempuan dan Perlindungan Anak",
+   "psi": "Raja Juli Antoni, Menteri Kehutanan (berbicara atas nama PSI di pemberitaan; daftar kabinet di Wikipedia mencatatnya independen)"
+  },
+  "kabinet_sumber": "https://en.wikipedia.org/wiki/Red_and_White_Cabinet"
  },
  "rdpu": {
   "tanggal": "2026-11-12",

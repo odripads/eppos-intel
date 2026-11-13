@@ -20,3 +20,4 @@ Untuk mengembalikan versi sebelumnya: `cd dist/eppos-outlook && vercel rollback`
 - 2026-11-13 15:20 · Claude: Gambar 9c jumlah partai efektif (ENEP/ENPP) DPR 1999-2024 · data 2026-11-13 · https://eppos-outlook-8yq5hxfxl-odripads.vercel.app
 - 2026-11-13 15:27 · Claude: tampilan putih dan lebih tenang (label, kartu, navigasi, tombol), pita angka menyatu dengan hero · data 2026-11-13 · https://eppos-outlook-1o8rohfah-odripads.vercel.app
 - 2026-11-13 15:30 · Claude: panel abu lembut di belakang grafik · data 2026-11-13 · https://eppos-outlook-gzh1l6cpw-odripads.vercel.app
+- 2026-11-13 15:35 · Claude: simulasi ambang 1-7% semua 18 partai (suara resmi KPU), tanda partai di kabinet tanpa kursi DPR; koreksi PAN/NasDem · data 2026-11-13 · https://eppos-outlook-5l4vpqynj-odripads.vercel.app

@@ -844,3 +844,16 @@ body{background:#fff;font-size:16.5px}
 .kertas .gbr figcaption{border-top-color:var(--garis-2)}
 .panas td{background:#eceef2}
 .kertas .kons-detail{margin-top:14px}
+.kertas .sim-wadah{background:#f7f8fa;border:1px solid var(--garis);border-radius:6px;padding:10px 20px 14px;box-shadow:0 1px 2px rgba(16,24,40,.04),0 4px 14px -6px rgba(16,24,40,.08)}
+.tabel.sim{min-width:900px}
+.tabel.sim td:not(.r){text-align:center}
+.tabel.sim tr.sim-batas th,.tabel.sim tr.sim-batas td{border-top:2px solid var(--tinta-3)}
+span.sim-logo{display:inline-block;height:20px;width:24px;margin-right:8px;vertical-align:middle}
+.sim-kab{display:inline-block;margin-left:8px;font:600 10.5px var(--teks);color:var(--bata);border:1px solid var(--bata);border-radius:10px;padding:1px 7px;vertical-align:middle;cursor:help}
+.sim-kabinet{margin-top:14px;padding-top:12px;border-top:1px solid var(--garis)}
+.sim-kabinet ul{margin:6px 0 0;font-size:14px;line-height:1.5}
+.sim-kabinet li{margin-bottom:4px}
+.rdpu-wadah{margin-top:22px}
+.tabel.sim .sim-tidak{background:transparent;color:#a3a9b5;font-weight:400}
+.tabel.sim .sim-lolos{background:#e7ecf6;color:var(--tinta);font-weight:500}
+.tabel.sim .sim-tipis{background:#f9e6bb}

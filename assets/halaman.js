@@ -531,17 +531,25 @@
       (a.sumber.length ? '<p class="k-sumber">' + a.sumber.map(function (x) { return '<a href="' + (/^https?:/.test(x[1]) ? E.url(x[1]) : E.ASET + esc(x[1])) + '" target="_blank" rel="noopener">' + esc(x[0]) + "</a>"; }).join(" · ") + "</p>" : '<p class="k-sumber">Sumber: ' + esc(S.sumber_tim) + "</p>") + "</div>";
     $$(".k-chip[data-i]").forEach(function (c) { c.classList.toggle("on", +c.dataset.i === i); });
   }
+  /* Gambar 9b: semua 18 partai nasional Pemilu 2024 pada ambang 1-7%, suara resmi KPU dari data/enp.json (sama dengan
+     Gambar 9c). Partai tanpa kursi DPR yang punya menteri atau wakil menteri di Kabinet Merah Putih diberi tanda. */
   function simulasi() {
-    var S = E.D.sikap_pt.simulasi, L = E.D.logo_aktor || {};
+    var S = E.D.sikap_pt.simulasi, L = E.D.logo_aktor || {}, T = (E.D.enp.tahun.filter(function (t) { return t.tahun === 2024; })[0] || {});
+    var P = (T.partai || []).map(function (r) { var k = S.kode[r[0]] || [null, r[0]]; return [k[0], k[1], r[1] / T.suara * 100, r[2]]; })
+      .sort(function (a, b) { return b[2] - a[2]; });
+    var c = function (v) { return v.toFixed(2).replace(".", ","); };
     var st = function (v, t) { return v < t ? ["tidak", "tidak lolos"] : v - t < 0.5 ? ["tipis", "lolos tipis"] : ["lolos", "lolos"]; };
-    var h = '<table class="tabel sim"><thead><tr><th scope="col">Partai</th><th scope="col" class="r">Suara 2024</th><th scope="col" class="r">Kursi</th>' + S.ambang.map(function (t) { return '<th scope="col">Ambang ' + t + "%</th>"; }).join("") + "</tr></thead><tbody>";
-    S.partai.forEach(function (r) {
-      h += '<tr><th scope="row">' + (L[r[0]] ? '<img class="sim-logo" src="' + E.ASET + "logo-aktor/" + esc(L[r[0]].gambar) + '" alt="">' : "") + esc(r[1]) + '</th><td class="r">' + String(r[2]).replace(".", ",") + '%</td><td class="r">' + r[3] + "</td>" +
+    var h = '<table class="tabel sim"><thead><tr><th scope="col">Partai</th><th scope="col" class="r">Suara 2024</th><th scope="col" class="r">Kursi</th>' + S.ambang.map(function (t) { return '<th scope="col">' + t + "%</th>"; }).join("") + "</tr></thead><tbody>";
+    P.forEach(function (r, i) {
+      var kab = S.kabinet[r[0]];
+      h += '<tr' + (i === 8 ? ' class="sim-batas"' : "") + '><th scope="row">' + (L[r[0]] ? '<img class="sim-logo" src="' + E.ASET + "logo-aktor/" + esc(L[r[0]].gambar) + '" alt="">' : '<span class="sim-logo"></span>') + esc(r[1]) +
+        (kab ? '<span class="sim-kab" title="' + esc(kab) + '">di kabinet</span>' : "") + '</th><td class="r">' + c(r[2]) + '%</td><td class="r">' + (r[3] || "–") + "</td>" +
         S.ambang.map(function (t) { var x = st(r[2], t); return '<td class="sim-' + x[0] + '">' + x[1] + "</td>"; }).join("") + "</tr>";
     });
-    h += '<tr class="sim-jumlah"><th scope="row">Partai yang lolos</th><td></td><td></td>' + S.ambang.map(function (t) { return "<td>" + S.partai.filter(function (r) { return r[2] >= t; }).length + " dari " + S.partai.length + "</td>"; }).join("") + "</tr>";
-    h += '<tr class="sim-jumlah"><th scope="row">Suara partai-partai ini yang hilang</th><td></td><td></td>' + S.ambang.map(function (t) { var v = 0; S.partai.forEach(function (r) { if (r[2] < t) v += r[2]; }); return "<td>" + (v ? String(v.toFixed(1)).replace(".", ",") + "%" : "0") + "</td>"; }).join("") + "</tr>";
-    return h + "</tbody></table>";
+    h += '<tr class="sim-jumlah"><th scope="row">Partai yang lolos</th><td></td><td></td>' + S.ambang.map(function (t) { return "<td>" + P.filter(function (r) { return r[2] >= t; }).length + " dari " + P.length + "</td>"; }).join("") + "</tr>";
+    h += '<tr class="sim-jumlah"><th scope="row">Suara tanpa kursi</th><td></td><td></td>' + S.ambang.map(function (t) { var v = 0; P.forEach(function (r) { if (r[2] < t) v += r[2]; }); return "<td>" + c(v) + "%</td>"; }).join("") + "</tr>";
+    var kabL = P.filter(function (r) { return S.kabinet[r[0]]; }).map(function (r) { return "<li><b>" + esc(r[1]) + "</b> · " + esc(S.kabinet[r[0]]) + "</li>"; }).join("");
+    return h + "</tbody></table>" + (kabL ? '<div class="sim-kabinet"><p class="kicker">Di kabinet, tanpa kursi DPR</p><ul>' + kabL + '</ul><p class="rel-cat">Sumber: <a href="' + E.url(S.kabinet_sumber) + '" target="_blank" rel="noopener">daftar Kabinet Merah Putih</a>, diperiksa 13 Nov 2026. Hanya partai peserta Pemilu 2024.</p></div>' : "");
   }
   function rdpu() {
     var R = E.D.sikap_pt.rdpu;
@@ -596,8 +604,9 @@
       '<div class="ktb efektif"><p class="kicker">Kutub efektivitas</p><h3 class="j3">Ramping: 5–7%</h3><p>Makin tinggi ambang, makin sedikit partai dan fraksi, negosiasi legislasi lebih sederhana, dan pemerintahan lebih stabil. Harganya: jutaan suara tidak menjadi kursi, 17,3 juta pada 2024 menurut Perindo. Dipegang sebagian besar partai parlemen.</p></div></div>' +
       '<p class="rel-cat">Setiap logo diletakkan pada angka yang diusulkan aktornya; garis menunjukkan rentang usulan. Klik logo untuk sumbernya.</p>' + konstelasi() +
       '<p class="rel-cat">Sumber: analisis terpadu tim RUU Pemilu EPPOS (Nov 2026) dan pemberitaan yang dihimpunnya; RDPU Komisi II DPR 12 Nov 2026. Angka mengikuti materi sumber. Logo dari Wikipedia/Wikimedia Commons; organisasi tanpa logo publik tampil sebagai monogram.</p>' +
-      '<div class="palang-jarak">' + palang("Gambar 9b", "Simulasi ambang 4–7%") + '</div>' +
-      '<div class="dua-kol ruu-kol"><div class="gulir">' + simulasi() + '<p class="rel-cat">' + esc(E.D.sikap_pt ? E.D.sikap_pt.simulasi.catatan : "") + ' Hanya delapan partai parlemen; partai di bawah 4% pada 2024 tidak tercantum di materi sumber.</p></div>' + rdpu() + "</div>" + enpHtml() +
+      '<div class="palang-jarak">' + palang("Gambar 9b", "Simulasi ambang 1–7%, semua partai Pemilu 2024") + '</div>' +
+      '<div class="sim-wadah"><div class="gulir">' + simulasi() + '</div><p class="rel-cat">' + esc(E.D.sikap_pt ? E.D.sikap_pt.simulasi.catatan : "") + "</p></div>" +
+      '<div class="rdpu-wadah">' + rdpu() + "</div>" + enpHtml() +
     "</div></section>" +
 
     '<section class="kertas blok pendek" id="posisi"><div class="lebar">' + petaPosisi() + "</div></section>" +
