@@ -834,3 +834,13 @@ body{background:#fff;font-size:16.5px}
 .seg-j{font:600 11.5px var(--teks);letter-spacing:.03em}
 .seg button{font:500 13.5px/1 var(--teks);font-stretch:100%;letter-spacing:0;border-radius:3px}
 .kendali-buka{font:600 14px var(--teks);letter-spacing:0;text-transform:none;border-radius:3px}
+
+/* grafik di halaman putih duduk di panel abu lembut, supaya tidak mengambang */
+.kertas .gbr,.kertas .kons,.kertas #ln-panas,.kertas .dua-kol.ruu-kol>.gulir{background:#f7f8fa;border:1px solid var(--garis);border-radius:6px;box-shadow:0 1px 2px rgba(16,24,40,.04),0 4px 14px -6px rgba(16,24,40,.08)}
+.kertas .gbr{padding:22px 24px 16px}
+.kertas .kons{padding:16px 0 10px;border-top:1px solid var(--garis)}
+.kertas #ln-panas{padding:14px 16px}
+.kertas .dua-kol.ruu-kol>.gulir{padding:8px 18px 12px}
+.kertas .gbr figcaption{border-top-color:var(--garis-2)}
+.panas td{background:#eceef2}
+.kertas .kons-detail{margin-top:14px}
