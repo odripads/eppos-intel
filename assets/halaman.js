@@ -495,20 +495,32 @@
     var h = palang("Gambar 10", "Peta posisi aktor") +
       '<div class="dua-kol"><h2 class="j2">Siapa mendorong apa?</h2><p class="lead">Posisi masyarakat sipil, elit parlemen, dan elit non-parlemen soal ambang batas parlemen dan syarat pencapresan. Setiap posisi menaut ke pernyataan aslinya.</p></div>';
     if (!S || !P.length) return h + menyusul("Peta posisi sedang disusun", "Tim sedang memetakan tiga kelompok aktor. Setiap baris nanti memuat kutipan, tanggal, dan tautan sumber.");
+    /* Satu isu sekaligus, tiga kelompok berdampingan; tiap pernyataan satu baris ringkas, kutipan dibuka saat diklik.
+       Diminta Odri 13 Nov: ketiga sisi terlihat tanpa menggulir jauh. */
+    var WARNA = { naikkan: "n", "ambang baru": "n", "batasi koalisi": "n", pertahankan: "p", turunkan: "t", hapus: "h", "tanpa ambang": "h", lainnya: "l", "belum jelas": "l" };
     function baris(x) {
-      return '<li><span class="sikap">' + esc(x.sikap) + (x.angka ? " " + esc(x.angka) : "") + "</span><b>" + esc(x.aktor) + "</b>" +
-        (x.lembaga ? '<span class="ps-lbg">' + esc(x.lembaga) + "</span>" : "") + "<q>" + esc(x.kutipan) + "</q>" +
+      return '<li><details><summary><b class="ps-nama">' + esc(x.aktor) + "</b><time>" + esc(E.tgl(x.tanggal)) + "</time>" +
+        '<span class="ps-meta"><span class="sikap s-' + (WARNA[x.sikap] || "l") + '">' + esc(x.sikap) + (x.angka ? " " + esc(x.angka) : "") + "</span>" +
+        (x.lembaga ? '<span class="ps-lbg">' + esc(x.lembaga.split(" (")[0]) + "</span>" : "") + "</span></summary>" +
+        '<div class="ps-buka">' + (x.lembaga ? '<p class="ps-lbg">' + esc(x.lembaga) + "</p>" : "") + "<q>" + esc(x.kutipan) + "</q>" +
         '<a href="' + E.url(x.sumber_url) + '" target="_blank" rel="noopener">' + esc(x.outlet || "sumber") + " · " + esc(E.tgl(x.tanggal)) + "</a>" +
-        (x.status !== "dicek tim" ? '<span class="ps-oto">belum dicek tim</span>' : "") + "</li>";
+        (x.status === "dicek tim" ? '<span class="ps-oto ok">dicek tim</span>' : "") + "</div></details></li>";
     }
-    h += '<div class="posisi"><div class="ps-kepala"><span></span>' + S.isu.map(function (i) { return "<span>" + esc(i.id) + "</span>"; }).join("") + "</div>";
-    S.jenis_aktor.forEach(function (j) {
-      h += '<div class="ps-baris"><b>' + esc(j) + "</b>" + S.isu.map(function (i) {
+    h += '<div class="posisi"><div class="seg terang ps-isu" role="tablist">' + S.isu.map(function (i, k) {
+      return '<button role="tab" data-isu="' + esc(i.id) + '" aria-selected="' + (k ? "false" : "true") + '">' + esc(i.id) + " <span>" + P.filter(function (x) { return x.isu === i.id; }).length + "</span></button>";
+    }).join("") + "</div>";
+    S.isu.forEach(function (i, k) {
+      h += '<div class="ps-tiga" data-isu="' + esc(i.id) + '"' + (k ? " hidden" : "") + ">" + S.jenis_aktor.map(function (j) {
         var r = P.filter(function (x) { return x.jenis_aktor === j && x.isu === i.id; });
-        return '<ul class="ps-sel" data-isu="' + esc(i.id) + '">' + (r.length ? r.map(baris).join("") : '<li class="ps-kosong">belum ada catatan</li>') + "</ul>";
+        var hit = {}; r.forEach(function (x) { hit[x.sikap] = (hit[x.sikap] || 0) + 1; });
+        var ada = i.sikap.filter(function (s) { return hit[s]; });
+        var bar = ada.map(function (s) { return '<i class="s-' + (WARNA[s] || "l") + '" style="flex:' + hit[s] + '" title="' + esc(s) + ": " + hit[s] + '"></i>'; }).join("");
+        var ket = ada.map(function (s) { return esc(s) + " " + hit[s]; }).join(" · ");
+        return '<section class="ps-kol"><header><h3>' + esc(j) + "</h3><span>" + r.length + ' pernyataan</span><div class="ps-bar">' + bar + '</div><p class="ps-ket">' + ket + "</p></header>" +
+          '<ul class="ps-sel">' + (r.length ? r.map(baris).join("") : '<li class="ps-kosong">belum ada catatan</li>') + "</ul></section>";
       }).join("") + "</div>";
     });
-    return h + "</div>" + '<p class="rel-cat">' + f(P.length) + " pernyataan · " + f(P.filter(function (x) { return x.status === "dicek tim"; }).length) + " sudah dicek tim. Sikap diambil dari kutipan, bukan ditafsirkan.</p>";
+    return h + "</div>" + '<p class="rel-cat">Klik satu baris untuk membaca kutipan dan sumbernya. ' + f(P.length) + " pernyataan · " + f(P.filter(function (x) { return x.status === "dicek tim"; }).length) + " sudah dicek tim. Sikap diambil dari kutipan, bukan ditafsirkan.</p>";
   }
 
   /* Konstelasi sikap ambang batas parlemen (Gambar 9a-9b). Data: data/sikap_pt.json, dari analisis terpadu tim RUU
@@ -613,6 +625,12 @@
   function setelahRuu() {
     $$(".k-chip[data-i]").forEach(function (c) { c.onclick = function () { detailAktor(+c.dataset.i); }; });
     if ($("#kons-detail")) detailAktor(0);
+    $$(".ps-isu button").forEach(function (b) {
+      b.onclick = function () {
+        $$(".ps-isu button").forEach(function (x) { x.setAttribute("aria-selected", x === b ? "true" : "false"); });
+        $$(".ps-tiga").forEach(function (d) { d.hidden = d.dataset.isu !== b.dataset.isu; });
+      };
+    });
   }
 
   function ruu() {

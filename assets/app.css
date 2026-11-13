@@ -871,3 +871,44 @@ span.sim-logo{display:inline-block;height:20px;width:24px;margin-right:8px;verti
 .kl-cek.sebagian{color:#7a5300;border-color:#e3c37a;background:#fdf6e4}
 .kl-cek.belum{color:#6b7280;border-color:var(--garis-2)}
 .tabel.kl tr.kl-luar td{opacity:.6}
+/* peta posisi, tata ulang 13 Nov: satu isu, tiga kolom berdampingan, baris ringkas */
+.ps-isu{margin:14px 0 16px}
+.ps-isu button span{font:500 11px var(--data);color:var(--tinta-3);margin-left:4px}
+.ps-tiga{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.ps-tiga[hidden]{display:none}
+.ps-kol{background:#f7f8fa;border:1px solid var(--garis);border-radius:6px;padding:14px 14px 6px;display:flex;flex-direction:column;min-width:0}
+.ps-kol header{padding-bottom:10px;border-bottom:1px solid var(--garis-2)}
+.ps-kol h3{font:700 16px/1.2 var(--judul);margin:0;text-transform:capitalize;display:inline}
+.ps-kol header>span{font:500 11.5px var(--data);color:var(--tinta-3);margin-left:8px}
+.ps-bar{display:flex;height:6px;border-radius:3px;overflow:hidden;margin:9px 0 5px;background:var(--garis)}
+.ps-bar i{display:block;min-width:4px}
+.ps-ket{margin:0;font:400 11.5px/1.4 var(--data);color:var(--tinta-3)}
+.ps-kol .ps-sel{max-height:460px;overflow-y:auto;margin:0;padding:0 2px 0 0;list-style:none}
+.ps-kol .ps-sel li{padding:0;border-top:1px solid var(--garis);font-size:13.5px}
+.ps-kol .ps-sel li:first-child{border-top:0}
+.ps-sel summary{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:8px;align-items:baseline;padding:8px 0;cursor:pointer;list-style:none}
+.ps-sel summary::-webkit-details-marker{display:none}
+.ps-sel summary:hover b{text-decoration:underline}
+.ps-nama{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ps-nama b{font-weight:600;margin-right:6px}
+.ps-sel time{font:400 11px var(--data);color:var(--tinta-3);white-space:nowrap}
+.ps-sel .sikap{font:600 10.5px var(--teks);padding:1px 7px;border-radius:9px;white-space:nowrap;border:1px solid transparent}
+.ps-buka{padding:0 0 10px}
+.ps-buka .ps-lbg{margin:0 0 4px;font-size:12.5px}
+.ps-buka q{display:block;margin:0 0 6px;color:var(--tinta-2);font-style:italic;line-height:1.45}
+.ps-oto.ok{color:#1f5f3a}
+.s-n{background:#dfe6f3;color:#1d3461}.ps-bar .s-n{background:#3b5b9a}
+.s-p{background:#ece8f6;color:#4b3a7a}.ps-bar .s-p{background:#8c7bc0}
+.s-t{background:#fbe9d2;color:#7a4300}.ps-bar .s-t{background:#e39b45}
+.s-h{background:#f7dcd6;color:#7d2716}.ps-bar .s-h{background:#c2543d}
+.s-l{background:#eef0f3;color:#4b5260}.ps-bar .s-l{background:#b9bfca}
+@media (max-width:900px){.ps-tiga{grid-template-columns:minmax(0,1fr)}.ps-kol .ps-sel{max-height:none}}
+.ps-sel summary{grid-template-columns:minmax(0,1fr) auto;row-gap:3px;padding:8px 0 9px}
+.ps-nama{font-weight:600}
+.ps-meta{grid-column:1/-1;display:flex;gap:8px;align-items:baseline;min-width:0}
+.ps-meta .ps-lbg{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:12px}
+.ps-isu button{cursor:pointer}
+.ps-isu button[aria-selected="true"]{background:var(--tinta);color:#fff;border-color:var(--tinta)}
+.ps-isu button[aria-selected="true"] span{color:#c9d0dc}
+.ps-meta .sikap{flex:0 1 auto;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.ps-meta .ps-lbg{flex:1 1 0}
