@@ -218,7 +218,7 @@ def periode_dari(tanggal, gelombang, periode_rows):
     if m:
         y = m.group(1)
         return {"2015": "Periode III", "2017": "Periode III", "2018": "Periode III",
-                "2013": "Periode II", "2012": "Periode II",
+                "2013": "Periode II", "2012": "Periode II", "2011": "Periode II", "2010": "Periode II",
                 "2020": "Periode IV", "2019": "Periode III", "2024": "Periode V"}.get(y)
     return None
 

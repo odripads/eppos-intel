@@ -6,6 +6,27 @@
   "alasan": "multi kab/kota, ditempatkan di centroid provinsi: “Banda Aceh, Aceh Barat, Aceh Barat Daya, Nagan Raya, Aceh Tengah, Bireuen, Langsa, Lhokseumawe, Aceh Tenggara”",
   "sumber": "wikidata:Q1823 (Aceh)"
  },
+ "Aceh|Kabupaten Aceh Tenggara": {
+  "lat": 3.47307993,
+  "lon": 97.819210378,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q5763 (Aceh Tenggara)"
+ },
+ "Aceh|Kabupaten Gayo Lues": {
+  "lat": 4.0,
+  "lon": 97.0,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q5666 (Gayo Lues)"
+ },
+ "Aceh|Kabupaten Simeulue": {
+  "lat": 2.61667,
+  "lon": 96.08333,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q5757 (Simeulue)"
+ },
  "Banten|Kabupaten Lebak": {
   "lat": -6.65,
   "lon": 106.21667,
@@ -61,6 +82,13 @@
   "tingkat": "kab_kota",
   "alasan": null,
   "sumber": "wikidata:Q8035 (Rejang Lebong)"
+ },
+ "Gorontalo|Kota Gorontalo": {
+  "lat": 0.666667,
+  "lon": 123.0,
+  "tingkat": "provinsi",
+  "alasan": "kab_kota sama dengan provinsi",
+  "sumber": "wikidata:Q5067 (Gorontalo)"
  },
  "Jakarta|DKI Jakarta": {
   "lat": -6.175277777,
@@ -412,6 +440,13 @@
   "alasan": "kab_kota kosong: agregat provinsi",
   "sumber": "wikidata:Q3891 (Kalimantan Tengah)"
  },
+ "Kalimantan Timur|Kabupaten Kutai Timur": {
+  "lat": 1.03769,
+  "lon": 117.83112,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q14468 (Kutai Timur)"
+ },
  "Kalimantan Timur|Kabupaten Penajam Paser Utara": {
   "lat": -1.291709,
   "lon": 116.513796,
@@ -447,12 +482,26 @@
   "alasan": null,
   "sumber": "wikidata:Q18970 (Ambon)"
  },
+ "Maluku|Kota Tual": {
+  "lat": -5.64257741,
+  "lon": 132.742992993,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q18975 (Tual)"
+ },
  "Maluku Utara|Halmahera Selatan": {
   "lat": -0.3955,
   "lon": 127.90833,
   "tingkat": "kab_kota",
   "alasan": null,
   "sumber": "wikidata:Q19148 (Halmahera Selatan)"
+ },
+ "Maluku Utara|Kota Tidore Kepulauan": {
+  "lat": 0.609444444,
+  "lon": 127.569722222,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q19153 (Tidore Kepulauan)"
  },
  "Nusa Tenggara Timur|Flores Timur": {
   "lat": -8.341208303,
@@ -524,6 +573,34 @@
   "alasan": null,
   "sumber": "wikidata:Q27693 (Merauke)"
  },
+ "Riau|Kabupaten Kuantan Singingi": {
+  "lat": -0.47532,
+  "lon": 101.45857,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q7626 (Kuantan Singingi)"
+ },
+ "Riau|Kabupaten Pelalawan": {
+  "lat": 0.20822,
+  "lon": 102.18607,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q7641 (Pelalawan)"
+ },
+ "Riau|Kabupaten Rokan Hilir": {
+  "lat": 2.16599,
+  "lon": 100.82514,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q7759 (Rokan Hilir)"
+ },
+ "Riau|Kabupaten Rokan Hulu": {
+  "lat": 0.933333333,
+  "lon": 100.5,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q7744 (Rokan Hulu)"
+ },
  "Riau|Kota Pekanbaru": {
   "lat": 0.533333333,
   "lon": 101.45,
@@ -544,6 +621,20 @@
   "tingkat": "kab_kota",
   "alasan": null,
   "sumber": "wikidata:Q14590 (Bantaeng)"
+ },
+ "Sulawesi Selatan|Kabupaten Luwu Utara": {
+  "lat": -2.6,
+  "lon": 120.25,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q14606 (Luwu Utara)"
+ },
+ "Sulawesi Tengah|Kabupaten Parigi Moutong": {
+  "lat": 0.3368,
+  "lon": 120.17841,
+  "tingkat": "kab_kota",
+  "alasan": null,
+  "sumber": "wikidata:Q15816 (Parigi Moutong)"
  },
  "Sulawesi Tenggara|": {
   "lat": -3.95,
