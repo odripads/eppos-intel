@@ -1,7 +1,15 @@
 # Riset RUU Pemilu (bot-posisi)
 
 Catatan bersumber untuk Fokus 2. Setiap butir punya tautan. Yang belum pasti ditandai **[belum pasti]**.
-Terakhir diperbarui: 10 Nov 2026 (sesi 4, 21.00 WIB).
+Terakhir diperbarui: 18 Nov 2026 (lanjutan riset; perubahan lokal, belum diterbitkan).
+
+## Pembaruan 18 November 2026
+- **RDPU sudah berlangsung:** Laporan Singkat Komisi II yang tersimpan di `assets/dokumen/laporan-singkat-komisi2-2026-11-12.pdf` dibaca langsung. Rapat terbuka dengan Koalisi Masyarakat Sipil untuk Kodifikasi UU Pemilu berlangsung Kamis 12 Nov 2026, dibuka 10.20 dan ditutup 13.13 WIB. Catatan rapat menyebut masukan sebagai bahan awal penyusunan, bukan keputusan mengadopsi usulan.
+- **Ambang batas parlemen:** Heroik M Pratama (Perludem, mewakili koalisi) menyatakan penghapusan dalam kutipan langsung [Hukumonline, hlm. 2](https://www.hukumonline.com/berita/a/koalisi-masyarakat-sipil-sodorkan-726-pasal-ruu-pemilu-ke-dpr--usul-hapus-dua-ambang-batas-lt6af6926a843ca?page=2), dibaca penuh. Ditambahkan sebagai POS-0052. Artikel terbit 13 Nov tetapi menulis “Kamis (13/11/2026) kemarin”; tanggal rapat 12 Nov mengikuti laporan Komisi II lokal. Tautan asal PDF DPR belum diverifikasi ulang sesi ini.
+- **Pencapresan:** laporan rapat hlm. 2 mencatat penghapusan ambang bawah dan batas atas koalisi 30% dari **jumlah partai peserta pemilu**, alternatif 50%. Ini bukan persentase kursi atau suara. Hukumonline hlm. 2 juga memuatnya, tetapi sebagai uraian wartawan, bukan kutipan langsung aktor; tidak ditambah sebagai baris kutipan pribadi.
+- **Usul 60 kursi:** Agun Gunandjar Sudarsa (Golkar) mengusulkan ambang berbasis kursi seusai kunjungan kerja di Bogor 13 Nov; [TVR Parlemen, terbit 15 Nov](https://tvrparlemen.dpr.go.id/berita/agun-gunandjar-tak-persoalkan-dosen-asn-non-aktif-sementara-maju-nyaleg-rss-b04fb3cce6f7f420a9a3636a1ca4a211f28b8447b23444e28738c84f0f1a9878) dibaca langsung. POS-0053 memakai kutipan 17 kata yang menyebut enam puluh kursi; tidak dikonversi ke persen dan tidak dianggap posisi resmi seluruh Golkar. Sumber resmi itu juga memuat target penyelesaian **draf** akhir Desember, bukan target pengesahan.
+- **Penyelarasan tampilan:** status RUU lokal diperbarui dari jadwal rapat menjadi rapat yang sudah berlangsung. `data/sikap_pt.json` sudah memuat usul koalisi 0% tanggal 12 Nov, tetapi sejumlah entri partai tidak mempunyai sumber per aktor; perlu pemeriksaan lanjutan dengan materi tim. Tidak menimpa sintesis tim dengan pernyataan individu Agun.
+- **Batas pemeriksaan:** belum menuntaskan semua pernyataan 14–18 Nov, seleksi Bawaslu, atau angka “sekitar 270 daerah” pada linimasa. Dua baris baru berstatus `otomatis`, belum dicek tim. Pemeriksaan sesi ini tidak mengubah klasifikasi baris lama atau daftar tertutup.
 
 ## 1. Status dan linimasa RUU Pemilu di DPR
 - 24 Sep 2026: pimpinan DPR menyebut pembahasan "masih dinamis" ([RCTI+/iNews](https://www.rctiplus.com/news/detail/inews/5479608/dasco-sebut-pembahasan-ruu-pemilu-masih-dinamis--jamin-tampung-semua-usulan)).

@@ -779,6 +779,37 @@
   "outlet": "liputan6.com",
   "diisi_oleh": "bot-posisi",
   "status": "otomatis",
-  "catatan": "Diucapkan di NasDem Tower, Selasa 11 Nov 2025."
- }
+    "catatan": "Diucapkan di NasDem Tower, Selasa 11 Nov 2025."
+  },
+  {
+    "id": "POS-0052",
+    "tanggal": "2026-11-12",
+    "aktor": "Heroik M Pratama",
+    "jenis_aktor": "masyarakat sipil",
+    "lembaga": "Perludem; Koalisi Masyarakat Sipil untuk Kodifikasi UU Pemilu",
+    "isu": "ambang batas parlemen",
+    "sikap": "hapus",
+    "kutipan": "Meminimalisir suara yang terbuang secara signifikan dari variabel-variabel sistem pemilu lain, maka kami berkesimpulan menghilangkan ambang batas parlemen",
+    "sumber_url": "https://www.hukumonline.com/berita/a/koalisi-masyarakat-sipil-sodorkan-726-pasal-ruu-pemilu-ke-dpr--usul-hapus-dua-ambang-batas-lt6af6926a843ca?page=2",
+    "outlet": "hukumonline.com",
+    "diisi_oleh": "bot-posisi",
+    "status": "otomatis",
+    "catatan": "Kutipan langsung di halaman 2 berita terbit 13 Nov 2026. Berita menulis Kamis (13/11/2026) kemarin; tanggal rapat 12 Nov mengikuti Laporan Singkat Komisi II yang tersimpan di assets/dokumen/laporan-singkat-komisi2-2026-11-12.pdf, hlm. 1–2. Usulan disampaikan bersama sistem pemilu proporsional campuran; bukan keputusan DPR."
+  },
+  {
+    "id": "POS-0053",
+    "tanggal": "2026-11-13",
+    "aktor": "Agun Gunandjar Sudarsa",
+    "jenis_aktor": "elit parlemen",
+    "lembaga": "Partai Golkar (Wakil Ketua Komisi II DPR)",
+    "isu": "ambang batas parlemen",
+    "sikap": "lainnya",
+    "angka": "60 kursi DPR",
+    "kutipan": "Kalau dua kali tiga puluh harus enam puluh kursi katakan. Kalau punya enam puluh kursi boleh lolos",
+    "sumber_url": "https://tvrparlemen.dpr.go.id/berita/agun-gunandjar-tak-persoalkan-dosen-asn-non-aktif-sementara-maju-nyaleg-rss-b04fb3cce6f7f420a9a3636a1ca4a211f28b8447b23444e28738c84f0f1a9878",
+    "outlet": "tvrparlemen.dpr.go.id",
+    "diisi_oleh": "bot-posisi",
+    "status": "otomatis",
+    "catatan": "Pernyataan seusai kunjungan kerja di Bogor 13 Nov, diberitakan 15 Nov 2026. Usul berbasis jumlah kursi dan alat kelengkapan dewan, bukan persentase suara. Tidak dikonversi menjadi persentase dan bukan keputusan DPR atau posisi resmi seluruh Golkar."
+  }
 ]
