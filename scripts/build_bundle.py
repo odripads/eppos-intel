@@ -12,6 +12,13 @@ js = "\n".join((ROOT / "assets" / n).read_text() for n in ("inti.js", "kisi.js",
 # small derived figures the Metode page reads; kandidat.json itself is far too large to ship
 kandidat = json.loads((ROOT / "data/kandidat.json").read_text())
 (ROOT / "data/ringkas.json").write_text(json.dumps({"kandidat": len(kandidat)}))
+
+def aman_skrip(s):
+    """Data hasil crawl dan kutipan disisipkan ke <script>; '</script>' di dalam teks akan memutus tag. Escape JSON-nya
+    supaya tetap sama saat dibaca JavaScript tetapi tidak pernah bisa menutup tag atau memutus baris skrip."""
+    return (s.replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
+             .replace("\u2028", "\\u2028").replace("\u2029", "\\u2029"))
+
 data = {n: json.loads((ROOT / "data" / f"{n}.json").read_text()) for n in ("manifest", "periode", "insiden", "kasus_resmi", "insiden_otomatis", "kemajuan", "usaha_pencarian", "kisi", "qr", "ringkas", "posisi_aktor", "posisi_skema", "lambang", "sikap_pt", "logo_aktor", "enp", "kasus_pilkada_lama")}
 
 # Peta elit boleh kosong saat tim masih menyiapkan catatan sumbernya.
@@ -37,7 +44,7 @@ fonts = re.search(r'<link rel="stylesheet" href="https://fonts[^>]*>', html).gro
 out = (
     f"<title>{JUDUL}</title>\n{fonts}\n"
     f"<style>{css}</style>\n<body>{body}\n"
-    f"<script>window.EPPOS_DATA={json.dumps(data, ensure_ascii=False, separators=(',', ':'))};"
+    f"<script>window.EPPOS_DATA={aman_skrip(json.dumps(data, ensure_ascii=False, separators=(',', ':')))};"
     f"window.EPPOS_LOGO={json.dumps({'biasa': logo, 'inverse': logo_inv, 'polgov': logo_pg, 'polgovInverse': logo_pg_inv})};</script>\n"
     f"<script>{js}</script>\n</body>\n"
 )

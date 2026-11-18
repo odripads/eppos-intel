@@ -27,3 +27,4 @@ Untuk mengembalikan versi sebelumnya: `cd dist/eppos-outlook && vercel rollback`
 - 2026-11-13 15:50 · Claude: peta posisi aktor ditata ulang: satu isu per tab, tiga kelompok berdampingan, baris ringkas yang dibuka untuk kutipan · data 2026-11-13 · https://eppos-outlook-12em99okk-odripads.vercel.app
 - 2026-11-18 15:24 · bot-posisi: +2 posisi November, status RDPU dan target draf · data 2026-11-18 · https://eppos-outlook-5dstsyw94-odripads.vercel.app
 - 2026-11-18 16:00 · bot-posisi (lanjutan Claude): Peta Elit pencalonan 2029, 17 pernyataan bersumber · data 2026-11-18 · https://eppos-outlook-alhzz74fp-odripads.vercel.app
+- 2026-11-18 16:02 · Claude: escape data JSON yang disisipkan ke <script> (cegah XSS dari teks hasil crawl) · data 2026-11-18 · https://eppos-outlook-gyzytcuh8-odripads.vercel.app
