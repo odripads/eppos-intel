@@ -45,6 +45,8 @@ logo_pg, logo_pg_inv = b64("assets/lockup/polgov.png"), b64("assets/lockup/polgo
 body = re.search(r"<body>(.*)</body>", html, re.S).group(1)
 body = re.sub(r'<script src="assets/[a-z]+\.js"></script>\n?', "", body)
 body = body.replace('src="assets/lockup/eppos-inverse.png"', f'src="{logo_inv}"').replace('src="assets/lockup/polgov-inverse.png"', f'src="{logo_pg_inv}"')
+# kepala situs putih sejak 18 Nov memakai logo asli (bukan inverse)
+body = body.replace('src="assets/lockup/eppos.png"', f'src="{logo}"').replace('src="assets/lockup/polgov.png"', f'src="{logo_pg}"')
 fonts = re.search(r'<link rel="stylesheet" href="https://fonts[^>]*>', html).group(0)
 out = (
     f"<title>{JUDUL}</title>\n{fonts}\n"

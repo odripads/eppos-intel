@@ -490,44 +490,55 @@
   }
 
   /* ---------- BERANDA ---------- */
+  /* 18 Nov (Odri: "ikuti bahasa desain bijakmemilih"): beranda menjadi pintu masuk. Satu gagasan per blok, judul di
+     tengah, satu tombol per blok, tiga langkah bernomor untuk mulai membaca, lalu panel besar per jalur. Gambar tetap
+     dari data kita sendiri (peta, kalender), tanpa ilustrasi pinjaman. */
   function beranda() {
-    var s = totalSemua(), t = s.t;
+    var s = totalSemua(), t = s.t, R = E.D.peta_elit || [];
+    var nSikap = R.filter(function (r) { return r.jenis !== "isu"; }).length;
     var pintu = [
-      ["intervensi", "Fokus 1", "Intervensi Eksekutif", "Dua peta: sebelum dan sesudah pemilu dan pilkada bertemu dalam satu tahun. " + f(t.media) + " catatan media, " + f(t.resmi) + " kasus resmi."],
-      ["ruu-pemilu", "Fokus 2", "RUU Pemilu", "Ambang batas parlemen, syarat pencapresan, dan pemisahan pemilu sebagai konteks peta politik 2027–2029."],
       ["skema", "Rangka", "Skema Rekayasa Elektoral", "Lima mekanisme yang dilaporkan, dan aturan main yang berubah di sekitarnya."],
-      ["provinsi", "Rujukan", "38 Berkas Provinsi", "Tiap provinsi punya halaman sendiri, dengan perbandingan dua peta dan semua catatannya."],
-      ["arsip", "Rujukan", "Arsip Catatan", "Cari semua catatan menurut kata, wilayah, mekanisme, dan tingkat bukti, lengkap dengan tautan sumber."],
+      ["provinsi", "Rujukan", "38 Berkas Provinsi", "Tiap provinsi punya halaman sendiri, dengan dua peta dan semua catatannya."],
+      ["arsip", "Rujukan", "Arsip Catatan", "Cari catatan menurut kata, wilayah, mekanisme, dan tingkat bukti."],
       ["metode", "Rujukan", "Metode dan Batasan", "Apa yang dihitung, apa yang tidak, dan bagaimana mengoreksi kami."]
     ];
-    return '<div class="layar-depan"><section class="hero malam">' +
-      '<div class="lebar"><p class="kicker">Rilis 2 Desember 2026</p><h1 class="hero-j lebar-penuh">EPPOS Political<br>Outlook</h1></div>' +
-      '<div class="lebar hero-bawah"><div class="hero-sisi"><p class="hero-tesis">Satu tahun, dua pemilihan.</p>' +
-        '<p class="hero-dek">Baru sekali pemilu nasional dan pilkada se-Indonesia jatuh di tahun yang sama: 2024. Mulai 2029 keduanya dipisah lagi. Outlook ini membaca apa yang dilaporkan terjadi pada birokrasi dan desa di antara dua aturan main itu, dan apa artinya bagi peta politik 2027–2029.</p>' +
-        '<div class="aksi"><a class="btn utama" href="#/intervensi">Buka dua peta</a><a class="btn" href="#/ruu-pemilu">RUU Pemilu</a></div></div>' +
-        '<div class="hero-kanan"><div class="hero-papan papan" data-papan="B" data-hidup="1" data-label="1"></div>' + E.pitaTahun() +
-        '<p class="pita-ket"><span><i class="p"></i>pemilu nasional</span><span><i class="k"></i>pilkada serentak</span><span><i class="d"></i>keduanya</span><span class="sisi">Peta II. Sel menyala menandai wilayah dengan laporan, bukan jumlah laporan.</span></p></div>' +
-      "</div>" +
+    var langkah = [
+      ["intervensi", "Lihat dua peta", "Bandingkan laporan intervensi eksekutif sebelum dan sesudah pemilu dan pilkada jatuh di tahun yang sama.", '<div class="papan langkah-papan" data-papan="B"></div>'],
+      ["skema", "Kenali lima mekanisme", "Dari mutasi ASN sampai tekanan pada kritik: cara intervensi yang paling sering dilaporkan.", '<ul class="langkah-mek">' + E.MEKANISME.map(function (m) { return "<li>" + esc(m.pendek) + "</li>"; }).join("") + "</ul>"],
+      ["provinsi", "Telusuri provinsimu", "Setiap provinsi punya berkasnya sendiri, lengkap dengan sumber tiap catatan.", '<p class="langkah-angka"><b>' + E.PROVINSI.length + "</b>provinsi<br><b>" + f(t.unit) + "</b>kab/kota bercatatan</p>"]
+    ];
+    return '<section class="depan">' +
+      '<div class="lebar depan-isi"><p class="pil-kicker">Rilis 2 Desember 2026</p>' +
+        '<h1 class="depan-j"><span>2024:</span> satu tahun, <em>dua pemilihan.</em></h1>' +
+        '<p class="depan-dek">Baru sekali pemilu nasional dan pilkada se-Indonesia jatuh di tahun yang sama. Outlook ini membaca apa yang dilaporkan terjadi pada birokrasi dan desa di antara dua aturan main itu, dan apa artinya bagi 2027–2029.</p>' +
+        '<div class="aksi tengah"><a class="btn utama" href="#/intervensi">Buka dua peta</a><a class="btn" href="#/peta-elit">Peta Elit</a></div></div>' +
+      '<div class="lebar"><figure class="depan-peta"><div class="papan" data-papan="B" data-hidup="1" data-label="1"></div>' +
+        '<figcaption>' + keterangan("baris") + "</figcaption></figure></div>" +
+      '<div class="lebar"><ul class="depan-angka">' +
+        [[t.media, "catatan media"], [t.resmi, "kasus resmi"], [t.unit, "dari " + E.nUnit + " kab/kota punya catatan"], [E.D.kemajuan ? E.D.kemajuan.sel_selesai : 0, "pencarian dijalankan"]].map(function (x) {
+          return '<li><b data-naik="' + x[0] + '">' + f(x[0]) + "</b><span>" + esc(x[1]) + "</span></li>";
+        }).join("") + "</ul></div>" +
     "</section>" +
 
-    '<section class="pita-angka"><div class="lebar pita-isi">' +
-      [[t.media, "catatan media"], [t.resmi, "kasus resmi"], [E.PROVINSI.length, "provinsi"], [t.unit, "dari " + E.nUnit + " kab/kota punya catatan"], [E.D.kemajuan ? E.D.kemajuan.sel_selesai : 0, "pencarian dijalankan"]].map(function (x) {
-        return '<div class="angka"><b data-naik="' + x[0] + '">' + f(x[0]) + "</b><span>" + esc(x[1]) + "</span></div>";
-      }).join("") +
-    "</div></section></div>" +
-
-    '<section class="kertas blok"><div class="lebar">' + palang("Gambar 1", "Mengapa ada dua peta") +
-      '<div class="dua-kol"><div><h2 class="j2">Hanya 2024 yang menyatukan keduanya.</h2></div>' +
-      '<p class="lead">Sebelum 2024, kepala daerah dipilih di tahun yang berbeda dari pemilu nasional. Pada 2024, keduanya jatuh di tahun yang sama, sementara sekitar 270 daerah dipimpin penjabat yang ditunjuk pusat. Putusan MK 135/PUU-XXII/2024 memisahkannya lagi mulai 2029. Itu membuat 2024 bukan sekadar yang pertama, tetapi mungkin satu-satunya.</p></div>' +
-      '<figure class="gbr"><div class="gulir">' + E.kalender() + "</div>" +
-      '<figcaption><b>Kalender pemilu nasional dan pilkada, 2009–2032.</b> Segi enam merah: pemungutan suara 2024. Segi enam berongga: rencana menurut putusan MK, menunggu RUU Pemilu.</figcaption></figure>' +
+    '<section class="kertas blok"><div class="lebar">' +
+      '<div class="judul-tengah"><h2 class="j2">Tiga cara membaca Outlook</h2><p class="lead">Mulai dari mana saja. Setiap langkah membuka halaman sendiri, dan setiap catatan menaut ke sumbernya.</p></div>' +
+      '<ol class="langkah">' + langkah.map(function (l, i) {
+        return '<li><a href="#/' + l[0] + '"><span class="langkah-no">' + (i + 1) + '</span><div class="langkah-gbr">' + l[3] + '</div><h3>' + esc(l[1]) + "</h3><p>" + esc(l[2]) + '</p><span class="langkah-lanjut">Pelajari →</span></a></li>';
+      }).join("") + "</ol>" +
     "</div></section>" +
+
+    '<section class="kertas blok"><div class="lebar"><div class="panel panel-tint">' +
+      '<div class="judul-tengah"><p class="pil-kicker">' + palangTeks("Gambar 1", "Mengapa ada dua peta") + '</p><h2 class="j2">Hanya 2024 yang menyatukan keduanya</h2>' +
+      '<p class="lead">Sebelum 2024, kepala daerah dipilih di tahun yang berbeda dari pemilu nasional. Pada 2024 keduanya bertemu, sementara sekitar 270 daerah dipimpin penjabat yang ditunjuk pusat. Putusan MK 135/PUU-XXII/2024 memisahkannya lagi mulai 2029.</p></div>' +
+      '<figure class="gbr panel-gbr"><div class="gulir">' + E.kalender() + "</div>" +
+      '<figcaption><b>Kalender pemilu nasional dan pilkada, 2009–2032.</b> Segi enam merah: pemungutan suara 2024. Segi enam berongga: rencana menurut putusan MK, menunggu RUU Pemilu.</figcaption></figure>' +
+    "</div></div></section>" +
 
     '<section class="malam blok"><div class="lebar">' + palang("Gambar 2", "Dua peta") +
       '<div class="pasang">' +
         '<div class="pasang-papan">' + ["A", "B"].map(function (k) {
-          var R = E.REZIM[k], x = k === "A" ? s.a : s.b;
-          return '<figure class="papan-bingkai"><figcaption class="papan-kap"><span class="no">Peta ' + R.no + "</span><b>" + esc(R.judul) + "</b><span>" + esc(R.sub) + '</span><span class="kanan">' + f(x.unit) + " kab/kota</span></figcaption>" +
+          var Rz = E.REZIM[k], x = k === "A" ? s.a : s.b;
+          return '<figure class="papan-bingkai"><figcaption class="papan-kap"><span class="no">Peta ' + Rz.no + "</span><b>" + esc(Rz.judul) + "</b><span>" + esc(Rz.sub) + '</span><span class="kanan">' + f(x.unit) + " kab/kota</span></figcaption>" +
             '<div class="papan" data-papan="' + k + '" data-label="1"></div></figure>';
         }).join("") + "</div>" +
         '<aside class="pasang-sisi"><h3 class="j3">Yang menyala bukan yang terburuk, tetapi yang terlaporkan.</h3>' +
@@ -536,19 +547,29 @@
       "</div>" +
     "</div></section>" +
 
-    '<section class="kertas blok"><div class="lebar">' + palang("Isi", "Dalam Outlook ini") +
-      '<ol class="indeks">' + pintu.map(function (p, i) {
-        return '<li><a href="#/' + p[0] + '"><span class="i-no">' + String(i + 1).padStart(2, "0") + '</span><span class="i-kat">' + esc(p[1]) + '</span><span class="i-j">' + esc(p[2]) + '</span><span class="i-k">' + esc(p[3]) + '</span><span class="i-p" aria-hidden="true">→</span></a></li>';
-      }).join("") + "</ol>" +
+    '<section class="kertas blok"><div class="lebar"><div class="dua-panel">' +
+      '<a class="panel panel-tint panel-jalur" href="#/ruu-pemilu"><p class="pil-kicker">Fokus 2 · RUU Pemilu</p><h2 class="j2">Berapa suara yang boleh terbuang?</h2>' +
+        '<p>Ambang batas parlemen, syarat pencapresan, dan pemisahan pemilu sebagai konteks peta politik 2027–2029.</p><span class="btn utama">Baca kajian RUU</span></a>' +
+      '<a class="panel panel-gelap panel-jalur" href="#/peta-elit"><p class="pil-kicker">Peta Elit · pembaruan harian</p><h2 class="j2">Siapa menyebut siapa sesudah 3 November?</h2>' +
+        "<p>" + f(R.length) + " pernyataan elit partai yang bersumber, " + f(nSikap) + " di antaranya menyatakan sikap: dukungan 2029, kursi wapres, dan kasus Listyo.</p><span class=\"btn utama\">Buka Peta Elit</span></a>" +
+    "</div></div></section>" +
+
+    '<section class="kertas blok"><div class="lebar">' +
+      '<div class="judul-tengah"><h2 class="j2">Bagian lain Outlook</h2></div>' +
+      '<ul class="kartu-pintu">' + pintu.map(function (p) {
+        return '<li><a href="#/' + p[0] + '"><span class="pil-kicker">' + esc(p[1]) + "</span><h3>" + esc(p[2]) + "</h3><p>" + esc(p[3]) + '</p><span class="langkah-lanjut">Buka →</span></a></li>';
+      }).join("") + "</ul>" +
     "</div></section>" +
 
-    '<section class="kertas blok pendek"><div class="lebar">' + palang("Sebelum membaca", "Tiga hal") +
+    '<section class="kertas blok pendek"><div class="lebar"><div class="panel panel-garis">' +
+      '<div class="judul-tengah"><h2 class="j2">Sebelum membaca, tiga hal</h2></div>' +
       '<div class="tiga">' +
       "<div><h3 class=\"j3\">Ini peta laporan, bukan peta kejadian.</h3><p>Media adalah sensor, bukan objek kajian. Sel redup bisa berarti tidak ada kejadian, bisa juga berarti tidak ada yang meliput.</p></div>" +
-      "<div><h3 class=\"j3\">Warna tidak menunjukkan jumlah.</h3><p>Menghitung laporan per wilayah akan menggambar kepadatan pers. Jawa memerah karena wartawannya banyak. Karena itu kami memetakan deret yang hadir.</p></div>" +
-      '<div><h3 class="j3">Jumlah antarperiode tidak setara.</h3><p>Arsip daring menipis ke belakang dan pencarian lebih dalam di 2024. Perbandingan yang sah ada di <a href="#/intervensi/laju">laju per 1.000 pencarian</a>.</p></div>' +
-      "</div></div></section>";
+      "<div><h3 class=\"j3\">Warna tidak menunjukkan jumlah.</h3><p>Menghitung laporan per wilayah akan menggambar kepadatan pers. Karena itu kami memetakan deret yang hadir.</p></div>" +
+      '<div><h3 class="j3">Jumlah antarperiode tidak setara.</h3><p>Arsip daring menipis ke belakang. Perbandingan yang sah ada di <a href="#/intervensi/laju">laju per 1.000 pencarian</a>.</p></div>' +
+      "</div></div></div></section>";
   }
+  function palangTeks(no, judul) { return esc(no) + " · " + esc(judul); }
 
   /* ---------- INTERVENSI ---------- */
   function intervensi() {
@@ -1202,6 +1223,36 @@
     });
   }
 
+  /* "Di halaman ini": bilah pil yang menempel di bawah kepala situs pada halaman panjang, dibangun dari label palang
+     tiap bagian (judul pendeknya), supaya pembaca bisa melompat tanpa menggulir jauh. Bagian tanpa palang dilewati. */
+  function pasangLompat(isi) {
+    var bag = [];
+    $$(":scope > section", isi).forEach(function (sec, i) {
+      var b = sec.querySelector(".palang b"); if (!b || i === 0) return;
+      if (!sec.id) sec.id = "bag-" + i;
+      bag.push([sec.id, b.textContent]);
+    });
+    if (bag.length < 3) return;
+    var nav = document.createElement("nav");
+    nav.className = "lompat-bilah"; nav.setAttribute("aria-label", "Di halaman ini");
+    nav.innerHTML = '<div class="lebar"><span class="lompat-j">Di halaman ini</span><ol>' + bag.map(function (x) { return '<li><button type="button" data-ke="' + x[0] + '">' + esc(x[1]) + "</button></li>"; }).join("") + "</ol></div>";
+    var pertama = $(":scope > section", isi); pertama.parentNode.insertBefore(nav, pertama.nextSibling);
+    var tombol = $$("button", nav);
+    nav.addEventListener("click", function (e) {
+      var b = e.target.closest("[data-ke]"), el = b && document.getElementById(b.dataset.ke); if (!el) return;
+      var y0 = window.scrollY, y = Math.max(0, el.getBoundingClientRect().top + y0 - 64 - nav.offsetHeight - 8);
+      window.scrollTo({ top: y, behavior: "smooth" });
+      setTimeout(function () { if (window.scrollY === y0 && Math.abs(y0 - y) > 4) window.scrollTo(0, y); }, 450);
+    });
+    function sorot() {
+      if (!document.body.contains(nav)) { window.removeEventListener("scroll", sorot); return; }
+      var kini = null, batas = 64 + nav.offsetHeight + 40;
+      tombol.forEach(function (b) { var el = document.getElementById(b.dataset.ke); if (el && el.getBoundingClientRect().top < batas) kini = b; });
+      tombol.forEach(function (b) { b.classList.toggle("kini", b === kini); });
+      if (kini) { var ol = kini.closest("ol"); if (ol.scrollWidth > ol.clientWidth) ol.scrollLeft = kini.parentNode.offsetLeft - 16; }
+    }
+    window.addEventListener("scroll", sorot, { passive: true });
+  }
   function jalankan() {
     var bagian = location.hash.replace(/^#\/?/, "").split("/"), rute = bagian[0] || "", isi = $("#isi");
     if (E.lepasHal) { E.lepasHal(); E.lepasHal = null; }
@@ -1223,6 +1274,7 @@
     document.body.className = "hal-" + (rute || "beranda") + (E.cetak ? " cetak" : "");
     isi.innerHTML = html;
     if (setelah) setelah();
+    if (["intervensi", "skema", "ruu-pemilu"].indexOf(rute) >= 0) pasangLompat(isi);
     var berkas = rute === "provinsi" && bagian[1] ? E.PROVINSI.filter(function (x) { return E.slug(x) === bagian[1]; })[0] : null;
     document.title = rute ? (berkas || (rute === "peta-elit" ? "Peta Elit" : JUDUL[rute]) || "Halaman tidak ditemukan") + " · EPPOS Political Outlook" : JUDUL[""];
     $$(".navi a, .navi-bawah a").forEach(function (a) {
