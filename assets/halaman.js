@@ -197,11 +197,13 @@
     if (ip >= 0) h += '<rect class="et-sesudah" x="' + X(ip) + '" y="' + atas + '" width="' + (X(hari.length - 1) - X(ip)) + '" height="' + (H - atas - bawah) + '"/><line class="et-patah" x1="' + X(ip) + '" x2="' + X(ip) + '" y1="' + atas + '" y2="' + (H - bawah) + '"/>';
     elitPeristiwa().forEach(function (e) { var i = hari.indexOf(e.tanggal); if (i >= 0) h += '<path class="ed-ev" d="M' + X(i) + " " + (atas - 2) + 'l-4 -7h8z"><title>' + esc(E.tgl(e.tanggal) + " · " + e.label) + "</title></path>"; });
     var ujung = V.map(function (v, k) { return { k: k, y: Y(v[v.length - 1]) }; }).sort(function (a, b) { return a.y - b.y; });
-    for (var u = 1; u < ujung.length; u++) if (ujung[u].y - ujung[u - 1].y < 15) ujung[u].y = ujung[u - 1].y + 15;
+    for (var u = 1; u < ujung.length; u++) if (ujung[u].y - ujung[u - 1].y < 16) ujung[u].y = ujung[u - 1].y + 16;
+    var lebih = ujung.length ? ujung[ujung.length - 1].y - (H - bawah) : 0;  // label terbawah melewati sumbu: geser semua ke atas
+    if (lebih > 0) ujung.forEach(function (o) { o.y -= lebih; });
     V.forEach(function (v, k) {
       h += '<path fill="none" stroke="' + ED_WARNA[k] + '" stroke-width="2" stroke-linejoin="round" d="' + v.map(function (n, i) { return (i ? "L" : "M") + X(i).toFixed(1) + " " + Y(n).toFixed(1); }).join("") + '"/>';
     });
-    ujung.forEach(function (o) { h += '<text class="et-ujung" x="' + (W - kanan + 8) + '" y="' + (o.y + 4) + '" fill="' + ED_WARNA[o.k] + '">' + esc(T[o.k].nama) + "</text>"; });
+    ujung.forEach(function (o) { h += '<text class="et-ujung" x="' + (W - kanan + 8) + '" y="' + (o.y + 4) + '" fill="' + ED_WARNA[o.k] + '">' + esc(T[o.k].nama.split(" ")[0]) + "</text>"; });
     h += '<line class="ed-garis-baca" x1="-10" x2="-10" y1="' + atas + '" y2="' + (H - bawah) + '"/><rect class="ed-tangkap" x="' + kiri + '" y="' + atas + '" width="' + (W - kiri - kanan) + '" height="' + (H - atas - bawah) + '" fill="transparent"/></svg>';
     var leg = '<div class="et-leg">' + T.map(function (tm, k) { return '<span><i class="ed-leg-garis" style="background:' + ED_WARNA[k] + '"></i>' + esc(tm.nama) + "</span>"; }).join("") + '<span class="et-leg-patah"><i></i>3 Nov: Listyo Sigit tersangka</span></div>';
     return '<div class="ek-atas"><p class="ek-besar">Apa yang sedang dibicarakan</p><p>Unggahan asli per hari di X untuk lima tema, tanpa memandang siapa yang disebut. Satu skala untuk semua tema, jadi tinggi garis bisa dibandingkan langsung.</p></div>' + leg +
