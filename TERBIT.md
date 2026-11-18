@@ -25,3 +25,4 @@ Untuk mengembalikan versi sebelumnya: `cd dist/eppos-outlook && vercel rollback`
 - 2026-11-13 15:42 · Claude: Gambar 3b kasus 2009-2014 (kompilasi Inan, diperiksa ulang ke putusan MK); PKS di kabinet (Yassierli, usulan PKS) · data 2026-11-13 · https://eppos-outlook-8x42uxyiv-odripads.vercel.app
 - 2026-11-13 15:45 · Claude: 15 kasus 2009-2014 (Inan, diperiksa ulang) masuk peta: 11 kasus resmi MK/PTUN, 4 laporan media AJI · data 2026-11-13 · https://eppos-outlook-blwqdtu3d-odripads.vercel.app
 - 2026-11-13 15:50 · Claude: peta posisi aktor ditata ulang: satu isu per tab, tiga kelompok berdampingan, baris ringkas yang dibuka untuk kutipan · data 2026-11-13 · https://eppos-outlook-12em99okk-odripads.vercel.app
+- 2026-11-18 15:24 · bot-posisi: +2 posisi November, status RDPU dan target draf · data 2026-11-18 · https://eppos-outlook-5dstsyw94-odripads.vercel.app
