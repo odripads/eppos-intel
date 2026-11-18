@@ -34,3 +34,4 @@ Untuk mengembalikan versi sebelumnya: `cd dist/eppos-outlook && vercel rollback`
 - 2026-11-18 17:48 · Claude: Peta Elit Gambar 15 diskursus publik di X (X Post Counts API, 5 tema + 10 tokoh, Jan-18 Nov) dan 191 pernyataan elit terverifikasi · data 2026-11-18 · https://eppos-outlook-p7xuy6u4m-odripads.vercel.app
 - 2026-11-18 17:50 · ui: catatan internal keluar dari teks publik, Peta Elit diringkas, irama bagian · data 2026-11-18 · https://eppos-outlook-388ytwex5-odripads.vercel.app
 - 2026-11-18 19:24 · ui: Peta Elit lewat pertanyaan, ritme mingguan, daftar partai, isu tersembunyi · data 2026-11-18 · https://eppos-outlook-cl1n01fjc-odripads.vercel.app
+- 2026-11-18 20:03 · ui: bahasa desain baru, beranda pintu masuk, kepala putih, panel membulat, bilah Di halaman ini · data 2026-11-18 · https://eppos-outlook-4nm1r6io4-odripads.vercel.app

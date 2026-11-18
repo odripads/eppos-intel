@@ -26,7 +26,7 @@ echo "2/5 bangun situs";      python3 scripts/build_bundle.py >/dev/null || gaga
 echo "3/5 uji halaman";        CH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 SITUS="file://$PWD/dist/eppos-outlook/index.html"
 # rute|penanda yang harus ada di DOM sesudah JavaScript jalan
-for uji in "|class=\"pita-angka\"" "intervensi|id=\"papan-A\"" "skema|class=\"mek-daftar\"" "provinsi/papua|class=\"berkas-isi\"" \
+for uji in "|class=\"depan-angka\"" "intervensi|id=\"papan-A\"" "skema|class=\"mek-daftar\"" "provinsi/papua|class=\"berkas-isi\"" \
            "arsip|id=\"a-daftar\"" "ruu-pemilu|id=\"posisi\"" "metode|class=\"alur\"" "presentasi/5|class=\"plat malam\"" \
            "peta-elit|class=\"elit-relasi\""; do
   rute="${uji%%|*}"; tanda="${uji#*|}"
