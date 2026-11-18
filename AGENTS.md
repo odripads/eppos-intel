@@ -39,7 +39,11 @@ to the same Vercel site, only through `scripts/terbitkan.sh`.
   as the PolGov logo.
 - **Commit** after each publish, staging only the files you changed (plus `TERBIT.md` if you published). During
   the sprint (until Fri 13 Nov 23:59 WIB), then `git push origin main`; never force-push. After the sprint: commit
-  locally only, never push.
+  locally only, never push. **Update 18 Nov 2026 (Odri): publish-and-push is back on, as during the sprint.** After
+  your checks pass, publish with `terbitkan.sh` on your own judgement, then commit your files and
+  `git push origin main` (on rejection `git pull --rebase` once and retry; never force-push). This covers the new
+  peta elit track too (fact layer only; the interpretation layer stays unpublished until Odri decides). Data rules
+  (§0 Never, §6) still hold.
 - **Never:** classify the media corpus with a language model (that includes you), because the spec forbids it, and
   scope, mechanism and place come from written regex rules only; invent a number, date, name, quote or source;
   publish `pelaku_nama` (alleged perpetrators' names); open `~/Documents/EPPOS-master/` unless asked; edit the
