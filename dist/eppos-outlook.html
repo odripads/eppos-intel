@@ -1333,6 +1333,33 @@ main > section.malam.blok{padding-block:clamp(32px,4vw,60px)}
 .langkah-gbr{display:block}
 .langkah-gbr .papan{width:100%;height:100%;max-width:100%;overflow:hidden}
 .langkah-gbr:has(.langkah-mek),.langkah-gbr:has(.langkah-angka){display:grid}
+
+/* hero satu panel (18 Nov, Odri: "terlalu kikuk"): judul dan peta digabung dalam satu panel navy, judul lebih kecil */
+.depan{padding:clamp(16px,2vw,28px) 0 clamp(24px,3vw,40px);text-align:left}
+.depan-panel{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(20px,3vw,48px);align-items:center;padding:clamp(28px,4vw,56px);background:var(--malam);border-radius:var(--r-panel);color:var(--mt)}
+.depan-panel .pil-kicker{background:rgba(255,255,255,.08);color:var(--bata-t)}
+.depan-j{font-size:clamp(34px,4.2vw,60px);line-height:1.04;color:#fff;letter-spacing:-.015em}
+.depan-j span,.depan-j em{color:var(--bata-t)}
+.depan-dek{margin:18px 0 0;max-width:46ch;font-size:clamp(16px,1.2vw,18px);color:var(--mt2)}
+.depan-panel .aksi{margin-top:26px}
+.depan-panel .btn:not(.utama){color:#fff;border-color:rgba(255,255,255,.35)}
+.depan-panel .btn:not(.utama):hover{background:#fff;color:var(--malam);border-color:#fff}
+.depan-peta{margin:0;padding:0;background:none;border-radius:0}
+.depan-peta .papan{aspect-ratio:2.1/1}
+.depan-peta figcaption{justify-content:flex-start;margin-top:10px}
+.depan-peta .ket.baris{justify-content:flex-start;gap:6px 18px}
+.depan-peta .ket.baris li b{font-size:13px}
+.depan-angka{margin-top:14px}
+@media(max-width:900px){
+  .depan-panel{grid-template-columns:minmax(0,1fr);padding:28px 22px}
+  .depan-peta .papan{aspect-ratio:1.8/1}
+}
+@media(max-width:600px){
+  .depan-panel{border-radius:var(--r-kartu);padding:24px 16px}
+  .depan-j{font-size:34px}
+  .depan .aksi .btn{flex:1;justify-content:center}
+  .depan-peta{padding:0}
+}
 </style>
 <body>
 <a class="lompat" href="#isi">Lewati ke isi</a>
@@ -2549,13 +2576,14 @@ window.EPPOS = (function () {
       ["skema", "Kenali lima mekanisme", "Dari mutasi ASN sampai tekanan pada kritik: cara intervensi yang paling sering dilaporkan.", '<ul class="langkah-mek">' + E.MEKANISME.map(function (m) { return "<li>" + esc(m.pendek) + "</li>"; }).join("") + "</ul>"],
       ["provinsi", "Telusuri provinsimu", "Setiap provinsi punya berkasnya sendiri, lengkap dengan sumber tiap catatan.", '<p class="langkah-angka"><b>' + E.PROVINSI.length + "</b>provinsi<br><b>" + f(t.unit) + "</b>kab/kota bercatatan</p>"]
     ];
+    // hero satu panel: teks di kiri, peta di kanan, supaya judul dan peta terbaca sebagai satu gagasan di layar pertama
     return '<section class="depan">' +
-      '<div class="lebar depan-isi"><p class="pil-kicker">Rilis 2 Desember 2026</p>' +
+      '<div class="lebar"><div class="depan-panel"><div class="depan-teks"><p class="pil-kicker">Rilis 2 Desember 2026</p>' +
         '<h1 class="depan-j"><span>2024:</span> satu tahun, <em>dua pemilihan.</em></h1>' +
         '<p class="depan-dek">Baru sekali pemilu nasional dan pilkada se-Indonesia jatuh di tahun yang sama. Outlook ini membaca apa yang dilaporkan terjadi pada birokrasi dan desa di antara dua aturan main itu, dan apa artinya bagi 2027–2029.</p>' +
-        '<div class="aksi tengah"><a class="btn utama" href="#/intervensi">Buka dua peta</a><a class="btn" href="#/peta-elit">Peta Elit</a></div></div>' +
-      '<div class="lebar"><figure class="depan-peta"><div class="papan" data-papan="B" data-hidup="1" data-label="1"></div>' +
-        '<figcaption>' + keterangan("baris") + "</figcaption></figure></div>" +
+        '<div class="aksi"><a class="btn utama" href="#/intervensi">Buka dua peta</a><a class="btn" href="#/peta-elit">Peta Elit</a></div></div>' +
+      '<figure class="depan-peta"><div class="papan" data-papan="B" data-hidup="1" data-label="1"></div>' +
+        '<figcaption>' + keterangan("baris") + "</figcaption></figure></div></div>" +
       '<div class="lebar"><ul class="depan-angka">' +
         [[t.media, "catatan media"], [t.resmi, "kasus resmi"], [t.unit, "dari " + E.nUnit + " kab/kota punya catatan"], [E.D.kemajuan ? E.D.kemajuan.sel_selesai : 0, "pencarian dijalankan"]].map(function (x) {
           return '<li><b data-naik="' + x[0] + '">' + f(x[0]) + "</b><span>" + esc(x[1]) + "</span></li>";

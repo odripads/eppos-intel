@@ -507,13 +507,14 @@
       ["skema", "Kenali lima mekanisme", "Dari mutasi ASN sampai tekanan pada kritik: cara intervensi yang paling sering dilaporkan.", '<ul class="langkah-mek">' + E.MEKANISME.map(function (m) { return "<li>" + esc(m.pendek) + "</li>"; }).join("") + "</ul>"],
       ["provinsi", "Telusuri provinsimu", "Setiap provinsi punya berkasnya sendiri, lengkap dengan sumber tiap catatan.", '<p class="langkah-angka"><b>' + E.PROVINSI.length + "</b>provinsi<br><b>" + f(t.unit) + "</b>kab/kota bercatatan</p>"]
     ];
+    // hero satu panel: teks di kiri, peta di kanan, supaya judul dan peta terbaca sebagai satu gagasan di layar pertama
     return '<section class="depan">' +
-      '<div class="lebar depan-isi"><p class="pil-kicker">Rilis 2 Desember 2026</p>' +
+      '<div class="lebar"><div class="depan-panel"><div class="depan-teks"><p class="pil-kicker">Rilis 2 Desember 2026</p>' +
         '<h1 class="depan-j"><span>2024:</span> satu tahun, <em>dua pemilihan.</em></h1>' +
         '<p class="depan-dek">Baru sekali pemilu nasional dan pilkada se-Indonesia jatuh di tahun yang sama. Outlook ini membaca apa yang dilaporkan terjadi pada birokrasi dan desa di antara dua aturan main itu, dan apa artinya bagi 2027–2029.</p>' +
-        '<div class="aksi tengah"><a class="btn utama" href="#/intervensi">Buka dua peta</a><a class="btn" href="#/peta-elit">Peta Elit</a></div></div>' +
-      '<div class="lebar"><figure class="depan-peta"><div class="papan" data-papan="B" data-hidup="1" data-label="1"></div>' +
-        '<figcaption>' + keterangan("baris") + "</figcaption></figure></div>" +
+        '<div class="aksi"><a class="btn utama" href="#/intervensi">Buka dua peta</a><a class="btn" href="#/peta-elit">Peta Elit</a></div></div>' +
+      '<figure class="depan-peta"><div class="papan" data-papan="B" data-hidup="1" data-label="1"></div>' +
+        '<figcaption>' + keterangan("baris") + "</figcaption></figure></div></div>" +
       '<div class="lebar"><ul class="depan-angka">' +
         [[t.media, "catatan media"], [t.resmi, "kasus resmi"], [t.unit, "dari " + E.nUnit + " kab/kota punya catatan"], [E.D.kemajuan ? E.D.kemajuan.sel_selesai : 0, "pencarian dijalankan"]].map(function (x) {
           return '<li><b data-naik="' + x[0] + '">' + f(x[0]) + "</b><span>" + esc(x[1]) + "</span></li>";
