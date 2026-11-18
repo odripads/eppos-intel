@@ -14,6 +14,10 @@ kandidat = json.loads((ROOT / "data/kandidat.json").read_text())
 (ROOT / "data/ringkas.json").write_text(json.dumps({"kandidat": len(kandidat)}))
 data = {n: json.loads((ROOT / "data" / f"{n}.json").read_text()) for n in ("manifest", "periode", "insiden", "kasus_resmi", "insiden_otomatis", "kemajuan", "usaha_pencarian", "kisi", "qr", "ringkas", "posisi_aktor", "posisi_skema", "lambang", "sikap_pt", "logo_aktor", "enp", "kasus_pilkada_lama")}
 
+# Peta elit boleh kosong saat tim masih menyiapkan catatan sumbernya.
+elit = ROOT / "data/peta_elit.json"
+data["peta_elit"] = json.loads(elit.read_text()) if elit.exists() else []
+
 # the single-file bundle carries only what the page renders. The full rows, including the query that
 # found each one, stay in data/*.json in the repo — the bundle is a viewer, not the dataset release.
 def trim_auto(rows):

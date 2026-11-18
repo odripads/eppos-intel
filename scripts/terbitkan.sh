@@ -21,12 +21,14 @@ echo "$PESAN · mulai $(date '+%F %T')" > "$KUNCI/siapa"
 gagal() { echo "GAGAL: $1. Tidak ada yang diterbitkan."; exit 1; }
 
 echo "1/5 cek data posisi";   python3 scripts/cek_posisi.py || gagal "data/posisi_aktor.json tidak lolos cek"
+                         python3 scripts/cek_peta_elit.py || gagal "data/peta_elit.json tidak lolos cek"
 echo "2/5 bangun situs";      python3 scripts/build_bundle.py >/dev/null || gagal "build_bundle.py"
 echo "3/5 uji halaman";        CH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 SITUS="file://$PWD/dist/eppos-outlook/index.html"
 # rute|penanda yang harus ada di DOM sesudah JavaScript jalan
 for uji in "|class=\"pita-angka\"" "intervensi|id=\"papan-A\"" "skema|class=\"mek-daftar\"" "provinsi/papua|class=\"berkas-isi\"" \
-           "arsip|id=\"a-daftar\"" "ruu-pemilu|id=\"posisi\"" "metode|class=\"alur\"" "presentasi/5|class=\"plat malam\""; do
+           "arsip|id=\"a-daftar\"" "ruu-pemilu|id=\"posisi\"" "metode|class=\"alur\"" "presentasi/5|class=\"plat malam\"" \
+           "peta-elit|class=\"elit-relasi\""; do
   rute="${uji%%|*}"; tanda="${uji#*|}"
   # hanya isi <main> yang sudah dirender: bundel menyisipkan JavaScript-nya, jadi teks dan penanda yang sama juga ada di sumber skrip
   DOM=$("$CH" --headless=new --disable-gpu --no-first-run --user-data-dir="$PROF" --virtual-time-budget=6000 --dump-dom "$SITUS?cetak=1#/$rute" 2>/dev/null |
@@ -35,7 +37,7 @@ for uji in "|class=\"pita-angka\"" "intervensi|id=\"papan-A\"" "skema|class=\"me
   echo "$DOM" | grep -q "Data gagal dimuat" && gagal "#/$rute: data gagal dimuat"
   echo "$DOM" | grep -q "$tanda" || gagal "#/$rute tidak tampil (penanda $tanda tidak ada)"
 done
-echo "    8 halaman tampil"
+echo "    9 halaman tampil"
 if [ "$COBA" = "--coba" ]; then echo "--coba: semua uji lolos, tidak deploy."; exit 0; fi
 
 echo "4/5 deploy"

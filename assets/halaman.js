@@ -3,11 +3,38 @@
 (function (E) {
   "use strict";
   var $ = E.$, $$ = E.$$, esc = E.esc, f = E.f, persen = E.persen;
-  var NAV = [["intervensi", "Intervensi Eksekutif"], ["skema", "Skema"], ["provinsi", "Provinsi"], ["arsip", "Arsip"], ["ruu-pemilu", "RUU Pemilu"], ["metode", "Metode"]];
-  var NAV_HP = [["", "Beranda"], ["intervensi", "Intervensi"], ["skema", "Skema"], ["ruu-pemilu", "RUU"], ["arsip", "Arsip"]];
+  var NAV = [["intervensi", "Intervensi Eksekutif"], ["skema", "Skema"], ["provinsi", "Provinsi"], ["arsip", "Arsip"], ["ruu-pemilu", "RUU Pemilu"], ["peta-elit", "Peta Elit"], ["metode", "Metode"]];
+  var NAV_HP = [["", "Beranda"], ["intervensi", "Intervensi"], ["skema", "Skema"], ["ruu-pemilu", "RUU"], ["peta-elit", "Elit"], ["arsip", "Arsip"]];
   var F = { mek: null, dua: false, tahun: null, wilayah: "semua", tampilan: "tumpuk", prov: null };
   var A = { q: "", rez: "", mek: "", bukti: "", prov: "", n: 40 };
   var URL_SITUS = "eppos-outlook.vercel.app";
+
+  /* Jejak pernyataan, bukan prediksi pencalonan atau pengelompokan orbit. */
+  function petaElit() {
+    return '<div class="wadah elit-halaman">' + kepala('Pencalonan 2029 · lapisan fakta', 'Peta Elit', 'Menelusuri pernyataan publik: siapa menyatakan apa, kepada siapa, dan kapan.') +
+      '<aside class="elit-batas"><b>Baca sebagai jejak pernyataan.</b> Hubungan di bawah hanya merujuk pada kutipan dan sumber bertanggal, bukan prediksi pencalonan. Ketiadaan catatan tidak menunjukkan sikap aktor. <a href="#/ruu-pemilu">Lihat kajian RUU Pemilu ↗</a></aside>' +
+      '<form class="elit-filter" id="elit-filter"><label>Aktor, lembaga, atau sasaran<input id="elit-aktor" type="search" placeholder="Cari nama, partai, atau sasaran"></label><label>Jenis pernyataan<select id="elit-jenis"><option value="">Semua jenis</option>' + ['dukung capres','dukung cawapres','pasangkan','tolak/berbenturan','isu'].map(function (x) { return '<option>' + esc(x) + '</option>'; }).join('') +
+      '</select></label><label>Dari tanggal<input id="elit-dari" type="date"></label><label>Sampai tanggal<input id="elit-sampai" type="date"></label><button type="reset" class="btn">Atur ulang</button></form>' +
+      '<p class="elit-ringkas" id="elit-ringkas" role="status" aria-live="polite"></p><div id="elit-hasil"></div></div>';
+  }
+  function setelahElit() {
+    var semua = (E.D.peta_elit || []).slice().sort(function (a, b) { return b.tanggal.localeCompare(a.tanggal) || a.id.localeCompare(b.id); });
+    function tampil() {
+      var q = $('#elit-aktor').value.trim().toLocaleLowerCase('id'), jenis = $('#elit-jenis').value, dari = $('#elit-dari').value, sampai = $('#elit-sampai').value;
+      var baris = semua.filter(function (r) { return (!q || (r.aktor + ' ' + r.lembaga + ' ' + (r.sasaran || '')).toLocaleLowerCase('id').indexOf(q) !== -1) && (!jenis || r.jenis === jenis) && (!dari || r.tanggal >= dari) && (!sampai || r.tanggal <= sampai); });
+      $('#elit-ringkas').textContent = dari && sampai && dari > sampai ? 'Tanggal awal harus sebelum atau sama dengan tanggal akhir.' : baris.length + ' dari ' + semua.length + ' catatan · terbaru lebih dahulu';
+      $('#elit-hasil').innerHTML = baris.length ? '<ol class="elit-jejak">' + baris.map(function (r) {
+        return '<li class="elit-catatan"><div class="elit-waktu"><time datetime="' + esc(r.tanggal) + '">' + esc(E.tgl(r.tanggal)) + '</time><span>' + esc(r.id) + '</span></div><article><div class="elit-meta"><span>' + esc(r.jenis) + '</span><span class="elit-status">' + (r.status === 'dicek tim' ? 'dicek tim' : 'belum dicek tim') + '</span></div><h2 class="elit-relasi"><span>' + esc(r.aktor) + '<small>' + esc(r.lembaga) + '</small></span><span class="elit-panah" aria-label="kepada">→</span>' + (r.sasaran ? '<span>' + esc(r.sasaran) + '</span>' : '<span class="elit-tanpa">Tidak menyebut orang</span>') + '</h2>' +
+          (r.isu ? '<p class="elit-isu">Isu: ' + esc(r.isu) + '</p>' : '') + '<blockquote>“' + esc(r.kutipan) + '”</blockquote>' +
+          '<a class="elit-sumber" href="' + E.url(r.sumber_url) + '" target="_blank" rel="noopener noreferrer">Baca sumber · ' + esc(r.outlet) + ' ↗</a>' +
+          (r.catatan ? '<p class="elit-catatan-kaki">' + esc(r.catatan) + '</p>' : '') + '</article></li>';
+      }).join('') + '</ol>' : '<div class="elit-kosong"><h2>' + (semua.length ? 'Tidak ada catatan yang cocok' : 'Catatan sedang disiapkan') + '</h2><p>' + (semua.length ? 'Ubah filter untuk melihat catatan lainnya.' : 'Pernyataan bertanggal akan tampil bersama kutipan, sumber, dan status pemeriksaannya.') + '</p></div>';
+    }
+    $('#elit-filter').addEventListener('submit', function (e) { e.preventDefault(); });
+    $('#elit-filter').addEventListener('input', tampil);
+    $('#elit-filter').addEventListener('reset', function () { setTimeout(tampil, 0); });
+    tampil();
+  }
 
   /* ---------- potongan kecil ---------- */
   // dua logo setara, ukurannya dari satu nilai di CSS (--u). Turunan di assets/lockup (scripts/logo_turunan.py): di permukaan
@@ -791,6 +818,7 @@
       case "skema": html = skema(); break;
       case "provinsi": html = bagian[1] ? berkasProv(bagian[1]) : provinsi(); setelah = function () { pasangPapan(isi); }; break;
       case "arsip": html = arsip(); setelah = setelahArsip; break;
+      case "peta-elit": html = petaElit(); setelah = setelahElit; break;
       case "ruu-pemilu": html = ruu(); setelah = setelahRuu; titik = bagian[1] || null; break;
       case "metode": html = metode(); break;
       case "presentasi": html = presentasi(bagian[1]); setelah = setelahPresentasi; break;
@@ -800,7 +828,7 @@
     isi.innerHTML = html;
     if (setelah) setelah();
     var berkas = rute === "provinsi" && bagian[1] ? E.PROVINSI.filter(function (x) { return E.slug(x) === bagian[1]; })[0] : null;
-    document.title = rute ? (berkas || JUDUL[rute] || "Halaman tidak ditemukan") + " · EPPOS Political Outlook" : JUDUL[""];
+    document.title = rute ? (berkas || (rute === "peta-elit" ? "Peta Elit" : JUDUL[rute]) || "Halaman tidak ditemukan") + " · EPPOS Political Outlook" : JUDUL[""];
     $$(".navi a, .navi-bawah a").forEach(function (a) {
       var aktif = a.getAttribute("href") === "#/" + rute;
       if (aktif) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");

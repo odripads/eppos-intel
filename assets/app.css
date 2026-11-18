@@ -74,6 +74,32 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;paddin
 .aksi{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
 .aksi.tengah{justify-content:center}
 
+/* Peta elit: satu pernyataan bersumber per baris, tanpa bobot atau orbit. */
+.elit-halaman{padding:36px var(--tepi) 72px;max-width:1440px;margin:auto}
+.elit-batas{border-left:3px solid var(--bata);padding:16px 22px;background:var(--kertas-2);max-width:880px;line-height:1.7;margin-bottom:32px}
+.elit-batas a{display:block;margin-top:8px}
+.elit-filter{display:grid;grid-template-columns:2fr 1.4fr 1fr 1fr auto;gap:16px;align-items:end;padding:24px 0;border-block:1px solid var(--garis)}
+.elit-filter label{display:grid;gap:8px;min-width:0;font:500 12px var(--data)}
+.elit-filter input,.elit-filter select{width:100%;min-width:0;box-sizing:border-box;padding:12px;border:1px solid var(--garis-2);background:transparent;color:var(--tinta);font:400 15px var(--teks);border-radius:0}
+.elit-filter :focus-visible{outline:2px solid var(--bata);outline-offset:3px}
+.elit-ringkas{font:400 12px var(--data);padding:20px 0;color:var(--tinta-3)}
+.elit-jejak{list-style:none;padding:0;margin:0}
+.elit-catatan{display:grid;grid-template-columns:160px minmax(0,1fr);gap:32px;padding:32px 0;border-top:1px solid var(--garis-2)}
+.elit-waktu{display:grid;align-content:start;gap:8px;font:500 13px var(--data)}
+.elit-waktu span{font-size:11px;color:var(--tinta-3)}
+.elit-meta{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font:500 12px var(--data)}
+.elit-status{border:1px solid var(--garis-2);padding:3px 8px}
+.elit-relasi{display:grid;grid-template-columns:minmax(0,1fr) 40px minmax(0,1fr);gap:16px;font:700 clamp(24px,3vw,38px)/1.15 var(--judul);margin:22px 0;overflow-wrap:anywhere}
+.elit-relasi small{display:block;font:400 14px/1.5 var(--teks);margin-top:8px;color:var(--tinta-3)}
+.elit-panah{color:var(--bata)}
+.elit-catatan blockquote{margin:18px 0;font:400 clamp(18px,2vw,23px)/1.6 var(--teks);max-width:840px;overflow-wrap:anywhere}
+.elit-sumber,.elit-isu,.elit-catatan-kaki{font:400 13px/1.6 var(--teks);overflow-wrap:anywhere}
+.elit-catatan-kaki{margin-top:12px;color:var(--tinta-3)}
+.elit-kosong{padding:56px 24px;border-block:1px solid var(--garis-2);text-align:center}
+.elit-kosong h2{font:700 32px var(--judul);margin-bottom:12px}
+@media(max-width:1100px){.elit-filter{grid-template-columns:1fr 1fr}.elit-filter .btn{justify-self:start}}
+@media(max-width:600px){.elit-filter{gap:16px 10px}.elit-filter label:first-child{grid-column:1/-1}.elit-catatan{grid-template-columns:1fr;gap:16px}.elit-waktu{display:flex;justify-content:space-between}.elit-relasi{grid-template-columns:minmax(0,1fr) 22px minmax(0,1fr);gap:10px}.elit-batas{padding:14px}.elit-meta{font-size:11px}}
+
 /* bilah atas */
 .atas{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:clamp(16px,2.6vw,40px);height:64px;padding-inline:var(--tepi);background:var(--malam);color:var(--mt);border-bottom:1px solid var(--malam-garis)}
 .merek{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
@@ -912,3 +938,6 @@ span.sim-logo{display:inline-block;height:20px;width:24px;margin-right:8px;verti
 .ps-isu button[aria-selected="true"] span{color:#c9d0dc}
 .ps-meta .sikap{flex:0 1 auto;max-width:100%;overflow:hidden;text-overflow:ellipsis}
 .ps-meta .ps-lbg{flex:1 1 0}
+.elit-tanpa{color:var(--tinta-3);font-style:italic;font-weight:400;font-size:.62em;align-self:center}
+/* enam tab sejak Peta Elit (18 Nov): satu baris, huruf sedikit lebih kecil */
+@media (max-width:1023px){.navi-bawah{grid-template-columns:repeat(6,minmax(0,1fr))}.navi-bawah a{font-size:11.5px;letter-spacing:0}}
