@@ -123,6 +123,13 @@ to the same Vercel site, only through `scripts/terbitkan.sh`.
 - Penemuan unggahan masih lewat pencarian web (jangkauannya terbatas). Pelacakan sistematis akun tertentu butuh X API
   berbayar (keputusan Odri/tim; akun developer dibuat Odri sendiri).
 
+## 3c. Pengodean sikap (keputusan Odri, 18 Nov 2026)
+- Untuk sikap (mendukung/menentang/netral/tidak jelas) pada pernyataan Peta Elit dan sampel unggahan X: AI BOLEH
+  memberi SARAN, manusia MEMUTUSKAN. Yang dianalisis dan diterbitkan hanya kolom manusia, dan hanya sebagai angka
+  agregat. Lembar kerja: Google Sheet "EPPOS – Verifikasi sikap, 7 pengode" (Lembar 1–7 + Ganda 1–7, kode ganda buta).
+- Larangan klasifikasi AI di §0 tetap berlaku untuk korpus media Fokus 1 (lingkup, mekanisme, tempat).
+- Teks unggahan publik X tidak pernah masuk repo (repo publik): sampel ada di ~/.eppos/sampel_x.json.
+
 ## 4. Media pipeline
 `crawl_outlets.py` + `crawl_candidates.py` → `data/kandidat.json` (written only through `scripts/kandidat_io.py`)
 → `resolve_urls.py` → `verify_titles.py` → `confirm_queue.py` (stamps `diterima otomatis`) →
