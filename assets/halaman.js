@@ -10,30 +10,174 @@
   var URL_SITUS = "eppos-outlook.vercel.app";
 
   /* Jejak pernyataan, bukan prediksi pencalonan atau pengelompokan orbit. */
+  /* Peta Elit (#/peta-elit), lapisan fakta saja: tiap tanda adalah satu baris data/peta_elit.json berkutipan verbatim.
+     Gambar 11: kursi DPR 2024 (data/enp.json) per partai; ditandai bila ada baris "dukung capres" untuk Prabowo.
+     Gambar 12: lintasan pernyataan per partai sepanjang 2026. Warna jenis memakai token --a/--st3/--st2/--b (lolos
+     validator buta warna, 18 Nov) dan setiap jenis punya bentuk sendiri, jadi tidak bergantung pada warna saja. */
+  var EJ = [["dukung capres", "a"], ["dukung cawapres", "c"], ["pasangkan", "p"], ["tolak/berbenturan", "b"], ["isu", "i"]];
+  var EJ_KODE = {}; EJ.forEach(function (j) { EJ_KODE[j[0]] = j[1]; });
+  var E_LUAR = { psi: "PSI", buruh: "Partai Buruh", gemabangsa: "Partai Gema Bangsa" };
+  // fakta di luar jendela 2026 yang mengubah cara membaca satu partai; bersumber, ditampilkan di kartunya
+  var E_SEBELUM = { gerindra: ["Kongres luar biasa Gerindra, 13 Februari 2025, meminta Prabowo bersedia maju lagi pada 2029. Keputusan itu sebelum jendela data 2026.", "https://news.detik.com/berita/d-7777027/kongres-luar-biasa-gerindra-minta-prabowo-maju-capres-lagi-di-2029"] };
+  var E_BELUM = "Hanura, Perindo, PPP, Gelora, Ummat, PBB, Garuda, PKN";
+  function elitBentuk(kode, x, y, s) {
+    s = s || 6;
+    if (kode === "c") return '<path d="M' + x + " " + (y - s - 1) + "L" + (x + s + 1) + " " + y + "L" + x + " " + (y + s + 1) + "L" + (x - s - 1) + " " + y + 'Z"/>';
+    if (kode === "p") return '<rect x="' + (x - s + 1) + '" y="' + (y - s + 1) + '" width="' + (2 * s - 2) + '" height="' + (2 * s - 2) + '" rx="1.5"/>';
+    if (kode === "b") return '<path d="M' + x + " " + (y - s - 1) + "L" + (x + s + 1) + " " + (y + s) + "L" + (x - s - 1) + " " + (y + s) + 'Z"/>';
+    return '<circle cx="' + x + '" cy="' + y + '" r="' + (kode === "i" ? s - 1 : s) + '"/>';
+  }
+  function elitIkon(kode) { return '<svg class="ej ej-' + kode + '" viewBox="-8 -8 16 16" aria-hidden="true">' + elitBentuk(kode, 0, 0, 5) + "</svg>"; }
+  function elitNamaPartai(k) {
+    if (!k) return "Perorangan";
+    if (E_LUAR[k]) return E_LUAR[k];
+    var K = E.D.sikap_pt.simulasi.kode, n = k.toUpperCase();
+    Object.keys(K).forEach(function (x) { if (K[x][0] === k) n = K[x][1]; });
+    return n;
+  }
+  function elitKursi() {
+    var T = E.D.enp.tahun.filter(function (t) { return t.tahun === 2024; })[0] || {}, K = E.D.sikap_pt.simulasi.kode, R = E.D.peta_elit || [];
+    return (T.partai || []).filter(function (p) { return p[2]; }).map(function (p) {
+      var k = (K[p[0]] || [])[0], baris = R.filter(function (r) { return r.partai === k; }).sort(function (a, b) { return a.tanggal.localeCompare(b.tanggal); });
+      return { kode: k, nama: elitNamaPartai(k), kursi: p[2], baris: baris,
+        dukung: baris.filter(function (r) { return r.jenis === "dukung capres" && /Prabowo/.test(r.sasaran); })[0] };
+    }).sort(function (a, b) { return (!!b.dukung - !!a.dukung) || b.kursi - a.kursi; });
+  }
+  function elitPotong(s, n) { var w = s.split(/\s+/); return w.length > n ? w.slice(0, n).join(" ") + " …" : s; }
+  function elitLogo(k, kls) {
+    var L = (E.D.logo_aktor || {})[k];
+    return L ? '<img class="' + kls + '" src="' + E.ASET + "logo-aktor/" + esc(L.gambar) + '" alt="">' : '<span class="' + kls + ' kosong" aria-hidden="true"></span>';
+  }
+  function elitKartu(p) {
+    var akhir = p.baris[p.baris.length - 1], isi;
+    if (p.dukung) isi = '<p class="ek-status on">' + elitIkon("a") + " Mendukung Prabowo untuk 2029</p><p class=\"ek-kutip\">“" + esc(elitPotong(p.dukung.kutipan, 14)) + "”</p><p class=\"ek-oleh\">" + esc(p.dukung.aktor) + " · " + esc(E.tgl(p.dukung.tanggal)) + "</p>";
+    else if (akhir) isi = '<p class="ek-status">' + elitIkon(EJ_KODE[akhir.jenis]) + " Pernyataan terakhir: " + esc(akhir.jenis) + "</p><p class=\"ek-kutip\">“" + esc(elitPotong(akhir.kutipan, 14)) + "”</p><p class=\"ek-oleh\">" + esc(akhir.aktor) + " · " + esc(E.tgl(akhir.tanggal)) + "</p>";
+    else isi = '<p class="ek-status">Belum ada pernyataan dalam data</p>';
+    var seb = E_SEBELUM[p.kode];
+    return '<li class="ek-kartu' + (p.dukung ? " on" : "") + '" data-p="' + esc(p.kode) + '"><header>' + elitLogo(p.kode, "ek-logo") + "<b>" + esc(p.nama) + "</b><span>" + p.kursi + " kursi</span></header>" + isi +
+      (seb ? '<p class="ek-sebelum">' + esc(seb[0]) + ' <a href="' + E.url(seb[1]) + '" target="_blank" rel="noopener noreferrer">Sumber ↗</a></p>' : "") + "</li>";
+  }
+  function elitGambarKursi(P) {
+    var tot = 0, dk = 0, nDk = 0;
+    P.forEach(function (p) { tot += p.kursi; if (p.dukung) { dk += p.kursi; nDk++; } });
+    var pct = (dk / tot * 100).toFixed(1).replace(".", ",");
+    var bar = P.map(function (p) {
+      return '<div class="ek-seg' + (p.dukung ? " on" : "") + '" data-p="' + esc(p.kode) + '" style="flex:' + p.kursi + ' 1 0" tabindex="0" aria-label="' + esc(p.nama + ", " + p.kursi + " kursi" + (p.dukung ? ", tercatat mendukung Prabowo" : "")) + '"><b>' + esc(p.nama) + "</b><span>" + p.kursi + "</span></div>";
+    }).join("");
+    var luar = Object.keys(E_LUAR).map(function (k) {
+      var b = (E.D.peta_elit || []).filter(function (r) { return r.partai === k; }).sort(function (a, c) { return a.tanggal.localeCompare(c.tanggal); });
+      if (!b.length) return "";
+      var jenis = []; b.forEach(function (r) { if (jenis.indexOf(r.jenis) < 0) jenis.push(r.jenis); });
+      return '<li>' + elitLogo(k, "ek-logo") + "<b>" + esc(E_LUAR[k]) + "</b><span>" + jenis.map(function (j) { return elitIkon(EJ_KODE[j]) + esc(j) + (j === "dukung cawapres" || j === "pasangkan" ? " (" + esc(b.filter(function (r) { return r.jenis === j; })[0].sasaran.split(" ")[0]) + ")" : ""); }).join(" · ") + "</span></li>";
+    }).join("");
+    return '<figure class="ek-fig"><div class="ek-atas"><p class="ek-besar"><b>' + dk + "</b> dari " + tot + " kursi DPR</p><p>milik " + nDk + " partai yang tercatat menyatakan mendukung Prabowo maju lagi pada 2029 (" + pct + "%).</p></div>" +
+      '<div class="ek-bar" role="img" aria-label="Kursi DPR hasil Pemilu 2024 per partai">' + bar + "</div>" +
+      '<div class="ek-leg"><span><i class="on"></i>tercatat mendukung Prabowo untuk 2029</span><span><i></i>belum ada pernyataan dukungan dalam data 2026</span></div>' +
+      '<ul class="ek-kartu-daftar">' + P.map(elitKartu).join("") + "</ul>" +
+      '<div class="ek-luar"><p class="kicker">Di luar DPR</p><ul>' + luar + '</ul><p class="ek-belum">Ditelusuri 18 November, belum ditemukan pernyataan 2026 tentang Pilpres 2029: ' + E_BELUM + ".</p></div>" +
+      "<figcaption><b>Sumber:</b> kursi DPR hasil Pemilu 2024 (KPU, sama dengan Gambar 9c); status dari baris berkutipan di daftar bawah. Dukungan pada pemerintahan sampai 2029 tidak dihitung sebagai dukungan pencalonan.</figcaption></figure>";
+  }
+  function elitLajur() {
+    var R = E.D.peta_elit || [], ada = {}, urut = elitKursi().slice().sort(function (a, b) { return b.kursi - a.kursi; }).map(function (p) { return p.kode; });
+    R.forEach(function (r) { ada[r.partai || ""] = 1; });
+    var lajur = urut.filter(function (k) { return ada[k]; });
+    var luar = Object.keys(E_LUAR).filter(function (k) { return ada[k]; });
+    if (ada[""]) luar.push("");
+    return { dpr: lajur, luar: luar };
+  }
+  function elitGambarLintasan() {
+    var R = E.D.peta_elit || [], L = elitLajur(), semua = L.dpr.concat(L.luar);
+    var W = 1000, kiri = 168, kanan = 18, atas = 30, tinggi = 34, sela = L.luar.length ? 22 : 0, H = atas + semua.length * tinggi + sela + 10;
+    var t0 = Date.UTC(2026, 0, 1), t1 = Date.UTC(2026, 11, 1), X = function (s) { var d = s.split("-"); return kiri + (Date.UTC(+d[0], d[1] - 1, +d[2]) - t0) / (t1 - t0) * (W - kiri - kanan); };
+    var Y = function (k) { var i = semua.indexOf(k); return atas + i * tinggi + tinggi / 2 + (i >= L.dpr.length ? sela : 0); };
+    var BLN = ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agu", "Sep", "Okt", "Nov"];
+    var h = '<svg class="et-svg" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Lintasan pernyataan per partai, Januari sampai November 2026">';
+    BLN.forEach(function (b, i) {
+      var x = X("2026-" + (i < 9 ? "0" : "") + (i + 1) + "-01");
+      h += '<line class="et-grid" x1="' + x + '" x2="' + x + '" y1="' + (atas - 6) + '" y2="' + (H - 6) + '"/><text class="et-bln" x="' + (x + 4) + '" y="' + (atas - 12) + '">' + b + "</text>";
+    });
+    semua.forEach(function (k, i) {
+      var y = Y(k);
+      h += '<line class="et-lajur" x1="' + kiri + '" x2="' + (W - kanan) + '" y1="' + y + '" y2="' + y + '"/>';
+      var L2 = (E.D.logo_aktor || {})[k];
+      if (L2) h += '<image href="' + E.ASET + "logo-aktor/" + esc(L2.gambar) + '" x="0" y="' + (y - 10) + '" width="20" height="20" preserveAspectRatio="xMidYMid meet"/>';
+      h += '<text class="et-nama" x="' + (L2 ? 28 : 0) + '" y="' + (y + 4) + '">' + esc(elitNamaPartai(k)) + "</text>";
+    });
+    if (L.luar.length) { var yl = atas + L.dpr.length * tinggi + sela / 2 + 3; h += '<text class="et-kel" x="0" y="' + yl + '">DI LUAR DPR</text><line class="et-pisah" x1="96" x2="' + (W - kanan) + '" y1="' + (yl - 4) + '" y2="' + (yl - 4) + '"/>'; }
+    var akhir = R.reduce(function (m, r) { return r.tanggal > m ? r.tanggal : m; }, "2026-01-01"), xa = X(akhir);
+    h += '<line class="et-kini" x1="' + xa + '" x2="' + xa + '" y1="' + (atas - 6) + '" y2="' + (H - 6) + '"/>';
+    var tumpuk = {};
+    R.slice().sort(function (a, b) { return a.tanggal.localeCompare(b.tanggal) || a.id.localeCompare(b.id); }).forEach(function (r) {
+      var kunci = (r.partai || "") + r.tanggal, n = tumpuk[kunci] = (tumpuk[kunci] || 0) + 1;
+      var x = X(r.tanggal) + (n - 1) * 15, y = Y(r.partai || ""), j = EJ_KODE[r.jenis] || "i";
+      h += '<g class="et-m ej-' + j + '" data-id="' + esc(r.id) + '" tabindex="0" role="button" aria-label="' + esc(E.tgl(r.tanggal) + ", " + r.aktor + ", " + r.jenis + (r.sasaran ? " " + r.sasaran : "")) + '">' +
+        '<circle class="et-hit" cx="' + x + '" cy="' + y + '" r="9"/>' + elitBentuk(j, x, y, 6) + "</g>";
+    });
+    return h + "</svg>";
+  }
   function petaElit() {
-    return '<div class="wadah elit-halaman">' + kepala('Pencalonan 2029 · lapisan fakta', 'Peta Elit', 'Menelusuri pernyataan publik: siapa menyatakan apa, kepada siapa, dan kapan.') +
-      '<aside class="elit-batas"><b>Baca sebagai jejak pernyataan.</b> Hubungan di bawah hanya merujuk pada kutipan dan sumber bertanggal, bukan prediksi pencalonan. Ketiadaan catatan tidak menunjukkan sikap aktor. <a href="#/ruu-pemilu">Lihat kajian RUU Pemilu ↗</a></aside>' +
-      '<form class="elit-filter" id="elit-filter"><label>Aktor, lembaga, atau sasaran<input id="elit-aktor" type="search" placeholder="Cari nama, partai, atau sasaran"></label><label>Jenis pernyataan<select id="elit-jenis"><option value="">Semua jenis</option>' + ['dukung capres','dukung cawapres','pasangkan','tolak/berbenturan','isu'].map(function (x) { return '<option>' + esc(x) + '</option>'; }).join('') +
+    var R = E.D.peta_elit || [], P = elitKursi(), dk = P.filter(function (p) { return p.dukung; });
+    var akhir = R.reduce(function (m, r) { return r.tanggal > m ? r.tanggal : m; }, "");
+    var hitung = {}; R.forEach(function (r) { hitung[r.jenis] = (hitung[r.jenis] || 0) + 1; });
+    var dek = R.length ? "Per " + esc(E.tgl(akhir)) + ", " + dk.map(function (p) { return esc(p.nama); }).join(", ").replace(/, ([^,]*)$/, " dan $1") + " sudah tercatat menyatakan mendukung Prabowo maju lagi pada 2029. Halaman ini mengumpulkan pernyataan publik elit partai tentang Pilpres 2029: siapa mengatakan apa, tentang siapa, dan kapan. Setiap tanda di grafik menaut ke kutipan dan sumbernya." : "Pernyataan bertanggal tentang Pilpres 2029 akan tampil di sini bersama kutipan dan sumbernya.";
+    return '<div class="wadah elit-halaman">' + kepala("Pencalonan 2029 · lapisan fakta", "Peta Elit", dek) +
+      (R.length ? '<section class="elit-bagian">' + palang("Gambar 11", "Kursi DPR dan dukungan untuk 2029") + elitGambarKursi(P) + "</section>" +
+        '<section class="elit-bagian">' + palang("Gambar 12", "Lintasan pernyataan, Januari–November 2026") +
+        '<div class="et-leg">' + EJ.map(function (j) { return '<span>' + elitIkon(j[1]) + esc(j[0]) + " <em>" + (hitung[j[0]] || 0) + "</em></span>"; }).join("") + '<span class="et-leg-kini"><i></i>data terakhir ' + esc(E.tgl(akhir)) + "</span></div>" +
+        '<div class="et-wadah"><div class="gulir">' + elitGambarLintasan() + '</div><div class="et-tip" id="et-tip" role="tooltip" hidden></div></div>' +
+        '<p class="rel-cat">Satu tanda satu pernyataan. Arahkan atau sentuh tanda untuk membaca kutipannya; klik untuk membukanya di daftar.</p></section>' : "") +
+      '<section class="elit-bagian" id="elit-daftar">' + palang("Daftar", "Semua pernyataan") +
+      '<aside class="elit-batas"><b>Baca sebagai jejak pernyataan.</b> Hubungan di sini hanya merujuk pada kutipan dan sumber bertanggal, bukan prediksi pencalonan. Partai yang tidak muncul belum tentu tidak bersikap; bisa jadi pernyataannya belum terjangkau penelusuran. <a href="#/ruu-pemilu">Kajian RUU Pemilu ↗</a></aside>' +
+      '<form class="elit-filter" id="elit-filter"><label>Aktor, lembaga, atau sasaran<input id="elit-aktor" type="search" placeholder="Cari nama, partai, atau sasaran"></label><label>Jenis pernyataan<select id="elit-jenis"><option value="">Semua jenis</option>' + EJ.map(function (x) { return "<option>" + esc(x[0]) + "</option>"; }).join("") +
       '</select></label><label>Dari tanggal<input id="elit-dari" type="date"></label><label>Sampai tanggal<input id="elit-sampai" type="date"></label><button type="reset" class="btn">Atur ulang</button></form>' +
-      '<p class="elit-ringkas" id="elit-ringkas" role="status" aria-live="polite"></p><div id="elit-hasil"></div></div>';
+      '<p class="elit-ringkas" id="elit-ringkas" role="status" aria-live="polite"></p><div id="elit-hasil"></div></section></div>';
   }
   function setelahElit() {
     var semua = (E.D.peta_elit || []).slice().sort(function (a, b) { return b.tanggal.localeCompare(a.tanggal) || a.id.localeCompare(b.id); });
+    var per = {}; semua.forEach(function (r) { per[r.id] = r; });
     function tampil() {
-      var q = $('#elit-aktor').value.trim().toLocaleLowerCase('id'), jenis = $('#elit-jenis').value, dari = $('#elit-dari').value, sampai = $('#elit-sampai').value;
-      var baris = semua.filter(function (r) { return (!q || (r.aktor + ' ' + r.lembaga + ' ' + (r.sasaran || '')).toLocaleLowerCase('id').indexOf(q) !== -1) && (!jenis || r.jenis === jenis) && (!dari || r.tanggal >= dari) && (!sampai || r.tanggal <= sampai); });
-      $('#elit-ringkas').textContent = dari && sampai && dari > sampai ? 'Tanggal awal harus sebelum atau sama dengan tanggal akhir.' : baris.length + ' dari ' + semua.length + ' catatan · terbaru lebih dahulu';
-      $('#elit-hasil').innerHTML = baris.length ? '<ol class="elit-jejak">' + baris.map(function (r) {
-        return '<li class="elit-catatan"><div class="elit-waktu"><time datetime="' + esc(r.tanggal) + '">' + esc(E.tgl(r.tanggal)) + '</time><span>' + esc(r.id) + '</span></div><article><div class="elit-meta"><span>' + esc(r.jenis) + '</span><span class="elit-status">' + (r.status === 'dicek tim' ? 'dicek tim' : 'belum dicek tim') + '</span></div><h2 class="elit-relasi"><span>' + esc(r.aktor) + '<small>' + esc(r.lembaga) + '</small></span><span class="elit-panah" aria-label="kepada">→</span>' + (r.sasaran ? '<span>' + esc(r.sasaran) + '</span>' : '<span class="elit-tanpa">Tidak menyebut orang</span>') + '</h2>' +
-          (r.isu ? '<p class="elit-isu">Isu: ' + esc(r.isu) + '</p>' : '') + '<blockquote>“' + esc(r.kutipan) + '”</blockquote>' +
-          '<a class="elit-sumber" href="' + E.url(r.sumber_url) + '" target="_blank" rel="noopener noreferrer">Baca sumber · ' + esc(r.outlet) + ' ↗</a>' +
-          (r.catatan ? '<p class="elit-catatan-kaki">' + esc(r.catatan) + '</p>' : '') + '</article></li>';
-      }).join('') + '</ol>' : '<div class="elit-kosong"><h2>' + (semua.length ? 'Tidak ada catatan yang cocok' : 'Catatan sedang disiapkan') + '</h2><p>' + (semua.length ? 'Ubah filter untuk melihat catatan lainnya.' : 'Pernyataan bertanggal akan tampil bersama kutipan, sumber, dan status pemeriksaannya.') + '</p></div>';
+      var q = $("#elit-aktor").value.trim().toLocaleLowerCase("id"), jenis = $("#elit-jenis").value, dari = $("#elit-dari").value, sampai = $("#elit-sampai").value;
+      var baris = semua.filter(function (r) { return (!q || (r.id + " " + r.aktor + " " + r.lembaga + " " + (r.sasaran || "")).toLocaleLowerCase("id").indexOf(q) !== -1) && (!jenis || r.jenis === jenis) && (!dari || r.tanggal >= dari) && (!sampai || r.tanggal <= sampai); });
+      $("#elit-ringkas").textContent = dari && sampai && dari > sampai ? "Tanggal awal harus sebelum atau sama dengan tanggal akhir." : baris.length + " dari " + semua.length + " pernyataan · terbaru lebih dahulu";
+      $("#elit-hasil").innerHTML = baris.length ? '<ol class="elit-jejak">' + baris.map(function (r) {
+        return '<li class="elit-catatan" id="' + esc(r.id) + '"><div class="elit-waktu"><time datetime="' + esc(r.tanggal) + '">' + esc(E.tgl(r.tanggal)) + "</time><span>" + esc(r.id) + '</span></div><article><div class="elit-meta"><span>' + elitIkon(EJ_KODE[r.jenis] || "i") + esc(r.jenis) + '</span><span class="elit-status">' + (r.status === "dicek tim" ? "dicek tim" : "belum dicek tim") + '</span></div><h2 class="elit-relasi"><span>' + esc(r.aktor) + "<small>" + esc(r.lembaga) + '</small></span><span class="elit-panah" aria-label="tentang">→</span>' + (r.sasaran ? "<span>" + esc(r.sasaran) + "</span>" : '<span class="elit-tanpa">Tidak menyebut orang</span>') + "</h2>" +
+          (r.isu ? '<p class="elit-isu">Isu: ' + esc(r.isu) + "</p>" : "") + "<blockquote>“" + esc(r.kutipan) + "”</blockquote>" +
+          '<a class="elit-sumber" href="' + E.url(r.sumber_url) + '" target="_blank" rel="noopener noreferrer">Baca sumber · ' + esc(r.outlet) + " ↗</a>" +
+          (r.catatan ? '<p class="elit-catatan-kaki">' + esc(r.catatan) + "</p>" : "") + "</article></li>";
+      }).join("") + "</ol>" : '<div class="elit-kosong"><h2>' + (semua.length ? "Tidak ada pernyataan yang cocok" : "Pernyataan sedang disiapkan") + "</h2><p>" + (semua.length ? "Ubah saringan untuk melihat pernyataan lain." : "Pernyataan bertanggal akan tampil bersama kutipan, sumber, dan status pemeriksaannya.") + "</p></div>";
     }
-    $('#elit-filter').addEventListener('submit', function (e) { e.preventDefault(); });
-    $('#elit-filter').addEventListener('input', tampil);
-    $('#elit-filter').addEventListener('reset', function () { setTimeout(tampil, 0); });
+    $("#elit-filter").addEventListener("submit", function (e) { e.preventDefault(); });
+    $("#elit-filter").addEventListener("input", tampil);
+    $("#elit-filter").addEventListener("reset", function () { setTimeout(tampil, 0); });
     tampil();
+    // Gambar 11: batang dan kartu saling menyorot
+    function sorot(k, on) { $$('[data-p="' + k + '"]').forEach(function (n) { n.classList.toggle("sorot", on); }); }
+    $$(".ek-seg,.ek-kartu").forEach(function (n) {
+      ["mouseenter", "focus"].forEach(function (ev) { n.addEventListener(ev, function () { sorot(n.dataset.p, true); }); });
+      ["mouseleave", "blur"].forEach(function (ev) { n.addEventListener(ev, function () { sorot(n.dataset.p, false); }); });
+    });
+    // Gambar 12: tooltip per tanda, klik membuka barisnya di daftar
+    var tip = $("#et-tip"), wadah = $(".et-wadah");
+    if (!tip) return;
+    function buka(g) {
+      var r = per[g.dataset.id]; if (!r) return;
+      tip.innerHTML = '<p class="et-tip-meta">' + elitIkon(EJ_KODE[r.jenis] || "i") + esc(r.jenis) + (r.sasaran ? " → " + esc(r.sasaran) : "") + "</p><b>" + esc(r.aktor) + "</b> <span>" + esc(r.lembaga) + "</span><q>" + esc(elitPotong(r.kutipan, 24)) + '</q><p class="et-tip-tgl">' + esc(E.tgl(r.tanggal)) + " · " + esc(r.outlet) + "</p>";
+      tip.hidden = false;
+      var a = g.getBoundingClientRect(), b = wadah.getBoundingClientRect(), lebar = tip.offsetWidth;
+      var x = Math.min(Math.max(a.left - b.left + a.width / 2 - lebar / 2, 0), b.width - lebar);
+      tip.style.left = x + "px"; tip.style.top = (a.top - b.top - tip.offsetHeight - 10) + "px";
+      if (a.top - b.top - tip.offsetHeight - 10 < 0) tip.style.top = (a.bottom - b.top + 10) + "px";
+    }
+    $$(".et-m").forEach(function (g) {
+      ["mouseenter", "focus"].forEach(function (ev) { g.addEventListener(ev, function () { buka(g); }); });
+      ["mouseleave", "blur"].forEach(function (ev) { g.addEventListener(ev, function () { tip.hidden = true; }); });
+      function pilih() {
+        $("#elit-jenis").value = $("#elit-dari").value = $("#elit-sampai").value = ""; $("#elit-aktor").value = g.dataset.id; tampil();
+        var li = document.getElementById(g.dataset.id); if (li) { li.scrollIntoView({ block: "center" }); li.classList.add("sorot"); }
+      }
+      g.addEventListener("click", pilih);
+      g.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pilih(); } });
+    });
   }
 
   /* ---------- potongan kecil ---------- */

@@ -11,7 +11,8 @@
   "outlet": "kompas.com",
   "status": "otomatis",
   "wilayah": "Nasional",
-  "diisi_oleh": "Claude (lanjutan bot-posisi)"
+  "diisi_oleh": "Claude (lanjutan bot-posisi)",
+  "partai": "pkb"
  },
  {
   "id": "ELIT-0002",
@@ -26,7 +27,8 @@
   "outlet": "kompas.com",
   "status": "otomatis",
   "wilayah": "Nasional",
-  "diisi_oleh": "Claude (lanjutan bot-posisi)"
+  "diisi_oleh": "Claude (lanjutan bot-posisi)",
+  "partai": "pkb"
  },
  {
   "id": "ELIT-0003",
@@ -42,7 +44,8 @@
   "status": "otomatis",
   "wilayah": "Nasional",
   "diisi_oleh": "Claude (lanjutan bot-posisi)",
-  "catatan": "Target presiden atau wakil presiden; tidak dicatat sebagai dukungan capres atau cawapres."
+  "catatan": "Target presiden atau wakil presiden; tidak dicatat sebagai dukungan capres atau cawapres.",
+  "partai": "pkb"
  },
  {
   "id": "ELIT-0004",
@@ -58,7 +61,8 @@
   "status": "otomatis",
   "wilayah": "Nasional",
   "diisi_oleh": "Claude (lanjutan bot-posisi)",
-  "catatan": "Pidato HUT ke-25 Partai Demokrat. Tidak menyebut pencalonan atau nama orang."
+  "catatan": "Pidato HUT ke-25 Partai Demokrat. Tidak menyebut pencalonan atau nama orang.",
+  "partai": "demokrat"
  },
  {
   "id": "ELIT-0005",
@@ -74,7 +78,8 @@
   "status": "otomatis",
   "wilayah": "Nasional",
   "diisi_oleh": "Claude (lanjutan bot-posisi)",
-  "catatan": "Kritik terbuka atas pidato AHY 5 September."
+  "catatan": "Kritik terbuka atas pidato AHY 5 September.",
+  "partai": "golkar"
  },
  {
   "id": "ELIT-0006",
@@ -90,7 +95,8 @@
   "status": "otomatis",
   "wilayah": "Nasional",
   "diisi_oleh": "Claude (lanjutan bot-posisi)",
-  "catatan": "Bantahan atas tafsir bahwa pidato AHY menyiapkan pencalonan."
+  "catatan": "Bantahan atas tafsir bahwa pidato AHY menyiapkan pencalonan.",
+  "partai": "demokrat"
  },
  {
   "id": "ELIT-0007",
@@ -106,7 +112,8 @@
   "status": "otomatis",
   "wilayah": "Nasional",
   "diisi_oleh": "Claude (lanjutan bot-posisi)",
-  "catatan": "Disampaikan menanggapi keakraban Prabowo dan Pramono Anung."
+  "catatan": "Disampaikan menanggapi keakraban Prabowo dan Pramono Anung.",
+  "partai": "gerindra"
  },
  {
   "id": "ELIT-0008",
@@ -122,7 +129,8 @@
   "status": "otomatis",
   "wilayah": "Nasional",
   "diisi_oleh": "Claude (lanjutan bot-posisi)",
-  "catatan": "Tidak menyatakan pencalonan atau pasangan."
+  "catatan": "Tidak menyatakan pencalonan atau pasangan.",
+  "partai": "pdip"
  },
  {
   "id": "ELIT-0009",
@@ -153,7 +161,8 @@
   "status": "otomatis",
   "wilayah": "Nasional",
   "diisi_oleh": "Claude (lanjutan bot-posisi)",
-  "catatan": "Diucapkan Kamis 8 Oktober, terbit 9 Oktober."
+  "catatan": "Diucapkan Kamis 8 Oktober, terbit 9 Oktober.",
+  "partai": "golkar"
  },
  {
   "id": "ELIT-0011",
@@ -169,7 +178,8 @@
   "status": "otomatis",
   "wilayah": "Nasional",
   "diisi_oleh": "Claude (lanjutan bot-posisi)",
-  "catatan": "Bersyarat pada keberhasilan pemerintahan; Golkar menyebut cawapres diputuskan menjelang pendaftaran."
+  "catatan": "Bersyarat pada keberhasilan pemerintahan; Golkar menyebut cawapres diputuskan menjelang pendaftaran.",
+  "partai": "golkar"
  },
  {
   "id": "ELIT-0012",
@@ -184,7 +194,8 @@
   "outlet": "cnnindonesia.com",
   "status": "otomatis",
   "wilayah": "Nasional",
-  "diisi_oleh": "Claude (lanjutan bot-posisi)"
+  "diisi_oleh": "Claude (lanjutan bot-posisi)",
+  "partai": "demokrat"
  },
  {
   "id": "ELIT-0013",
@@ -199,7 +210,8 @@
   "outlet": "detik.com",
   "status": "otomatis",
   "wilayah": "Nasional",
-  "diisi_oleh": "Claude (lanjutan bot-posisi)"
+  "diisi_oleh": "Claude (lanjutan bot-posisi)",
+  "partai": "nasdem"
  },
  {
   "id": "ELIT-0014",
@@ -213,7 +225,8 @@
   "outlet": "detik.com",
   "status": "otomatis",
   "wilayah": "Nasional",
-  "diisi_oleh": "Claude (lanjutan bot-posisi)"
+  "diisi_oleh": "Claude (lanjutan bot-posisi)",
+  "partai": "pkb"
  },
  {
   "id": "ELIT-0015",
@@ -228,7 +241,8 @@
   "status": "otomatis",
   "wilayah": "Nasional",
   "diisi_oleh": "Claude (lanjutan bot-posisi)",
-  "catatan": "Dimuat ulang situs resmi PAN 10 November 2026; dihitung satu pernyataan."
+  "catatan": "Dimuat ulang situs resmi PAN 10 November 2026; dihitung satu pernyataan.",
+  "partai": "pan"
  },
  {
   "id": "ELIT-0016",
@@ -243,7 +257,8 @@
   "outlet": "detik.com",
   "status": "otomatis",
   "wilayah": "Nasional",
-  "diisi_oleh": "Claude (lanjutan bot-posisi)"
+  "diisi_oleh": "Claude (lanjutan bot-posisi)",
+  "partai": "pan"
  },
  {
   "id": "ELIT-0017",
@@ -259,6 +274,89 @@
   "status": "otomatis",
   "wilayah": "Nasional",
   "diisi_oleh": "Claude (lanjutan bot-posisi)",
-  "catatan": "Dukungan pada pemerintahan berjalan, bukan pada pencalonan 2029."
+  "catatan": "Dukungan pada pemerintahan berjalan, bukan pada pencalonan 2029.",
+  "partai": "pks"
+ },
+ {
+  "id": "ELIT-0018",
+  "aktor": "Ahmad Rofiq",
+  "lembaga": "Partai Gema Bangsa (Ketua Umum)",
+  "tanggal": "2026-01-17",
+  "jenis": "dukung capres",
+  "sasaran": "Prabowo Subianto",
+  "kutipan": "Partai Gema Bangsa juga mendukung Bapak Prabowo Subianto maju kembali untuk Pilpres di 2029",
+  "sumber_url": "https://kumparan.com/kumparannews/deklarasi-partai-gema-bangsa-beri-dukungan-prabowo-maju-pilpres-2029-26ePNiM0OI7",
+  "outlet": "kumparan.com",
+  "status": "otomatis",
+  "wilayah": "Nasional",
+  "diisi_oleh": "Claude (lanjutan bot-posisi)",
+  "partai": "gemabangsa",
+  "catatan": "Disampaikan saat deklarasi partai di JCC Senayan. Partai baru, belum peserta pemilu."
+ },
+ {
+  "id": "ELIT-0019",
+  "aktor": "Ahmad Ali",
+  "lembaga": "PSI (Ketua Harian DPP)",
+  "tanggal": "2026-10-07",
+  "jenis": "dukung cawapres",
+  "sasaran": "Gibran Rakabuming Raka",
+  "kutipan": "kenapa saya katakan tidak ada cawapres yang lebih baik dari Gibran",
+  "sumber_url": "https://wartaekonomi.co.id/read639500/psi-tidak-ada-cawapres-lebih-baik-dari-gibran",
+  "outlet": "wartaekonomi.co.id",
+  "status": "otomatis",
+  "wilayah": "Nasional",
+  "diisi_oleh": "Claude (lanjutan bot-posisi)",
+  "partai": "psi",
+  "catatan": "Sumber menulis 'dikutip Kamis (7/10/2026)'; artikel terbit Kamis 8 Oktober."
+ },
+ {
+  "id": "ELIT-0020",
+  "aktor": "Ahmad Ali",
+  "lembaga": "PSI (Ketua Harian DPP)",
+  "tanggal": "2026-10-07",
+  "jenis": "pasangkan",
+  "sasaran": "Gibran Rakabuming Raka",
+  "isu": "pasangan Prabowo–Gibran periode kedua",
+  "kutipan": "Kenapa tidak kita kemudian berpikir untuk menyandingkan kembali di periode kedua",
+  "sumber_url": "https://wartaekonomi.co.id/read639500/psi-tidak-ada-cawapres-lebih-baik-dari-gibran",
+  "outlet": "wartaekonomi.co.id",
+  "status": "otomatis",
+  "wilayah": "Nasional",
+  "diisi_oleh": "Claude (lanjutan bot-posisi)",
+  "partai": "psi"
+ },
+ {
+  "id": "ELIT-0021",
+  "aktor": "Said Iqbal",
+  "lembaga": "Partai Buruh (Presiden Partai); KSPPB",
+  "tanggal": "2026-11-07",
+  "jenis": "isu",
+  "sasaran": "Prabowo Subianto",
+  "isu": "dukungan pemerintahan hingga 2029",
+  "kutipan": "Kami akan menjaga Prabowo Subianto yang telah terpilih secara sah dan konstitusional karena kebijakannya antineoliberal",
+  "sumber_url": "https://www.kabarbursa.com/makro/serikat-dan-partai-buruh-dukung-prabowo-hingga-2029-buruh-menanti-janji-pemenuhan-kesejahteraan",
+  "outlet": "kabarbursa.com",
+  "status": "otomatis",
+  "wilayah": "Nasional",
+  "diisi_oleh": "Claude (lanjutan bot-posisi)",
+  "partai": "buruh",
+  "catatan": "Deklarasi KSPPB di Monas. Dukungan pada pemerintahan berjalan, bukan pada pencalonan 2029."
+ },
+ {
+  "id": "ELIT-0022",
+  "aktor": "Grace Natalie",
+  "lembaga": "PSI (Wakil Ketua Dewan Pembina)",
+  "tanggal": "2026-11-16",
+  "jenis": "isu",
+  "sasaran": "",
+  "isu": "dukungan pemerintahan",
+  "kutipan": "PSI selalu pro-Jokowi. PSI selalu berkomitmen penuh untuk mengawal Prabowo–Gibran sampai tuntas",
+  "sumber_url": "https://kumparan.com/kumparannews/hut-ke-11-psi-singgung-dukungan-jokowi-hingga-target-2029-26FwhToNXqs",
+  "outlet": "kumparan.com",
+  "status": "otomatis",
+  "wilayah": "Nasional",
+  "diisi_oleh": "Claude (lanjutan bot-posisi)",
+  "partai": "psi",
+  "catatan": "Sambutan HUT ke-11 PSI."
  }
 ]

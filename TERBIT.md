@@ -28,3 +28,4 @@ Untuk mengembalikan versi sebelumnya: `cd dist/eppos-outlook && vercel rollback`
 - 2026-11-18 15:24 · bot-posisi: +2 posisi November, status RDPU dan target draf · data 2026-11-18 · https://eppos-outlook-5dstsyw94-odripads.vercel.app
 - 2026-11-18 16:00 · bot-posisi (lanjutan Claude): Peta Elit pencalonan 2029, 17 pernyataan bersumber · data 2026-11-18 · https://eppos-outlook-alhzz74fp-odripads.vercel.app
 - 2026-11-18 16:02 · Claude: escape data JSON yang disisipkan ke <script> (cegah XSS dari teks hasil crawl) · data 2026-11-18 · https://eppos-outlook-gyzytcuh8-odripads.vercel.app
+- 2026-11-18 16:18 · Claude: Peta Elit dirombak: Gambar 11 kursi DPR dan dukungan 2029, Gambar 12 lintasan 2026; 22 pernyataan (tambah PSI, Gema Bangsa, Partai Buruh) · data 2026-11-18 · https://eppos-outlook-cbitt7web-odripads.vercel.app

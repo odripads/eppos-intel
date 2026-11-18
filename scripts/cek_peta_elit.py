@@ -14,7 +14,7 @@ JENIS = ("dukung capres", "dukung cawapres", "pasangkan", "tolak/berbenturan", "
 BERSASARAN = JENIS[:4]
 STATUS = ("otomatis", "dicek tim")
 WAJIB = ("id", "aktor", "lembaga", "tanggal", "jenis", "sasaran", "kutipan", "sumber_url", "outlet", "status")
-OPSIONAL = ("isu", "catatan", "wilayah", "kode_bps", "diisi_oleh")
+OPSIONAL = ("isu", "catatan", "wilayah", "kode_bps", "diisi_oleh", "partai")
 hari_ini = datetime.date.today().isoformat()
 salah, ids, kembar = [], set(), set()
 if not isinstance(rows, list): sys.exit("peta_elit.json harus berupa daftar []")
