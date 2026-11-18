@@ -182,14 +182,21 @@
     for (; d.toISOString().slice(0, 10) <= sampai; d.setUTCDate(d.getUTCDate() + 7)) t.push([d.toISOString().slice(0, 10), d.getUTCDate() + " " + B[d.getUTCMonth()]]);
     return t;
   }
+  function elitKronologi() {
+    var EV = elitPeristiwa(); if (!EV.length) return "";
+    return '<section class="elit-kron" aria-label="Kronologi"><p class="kicker">Kronologi</p><ol>' + EV.map(function (e) {
+      return '<li' + (e.mendatang ? ' class="mendatang"' : "") + (e.tanggal === E_PATAH ? ' class="titik"' : "") + '><time datetime="' + esc(e.tanggal) + '">' + esc(E.tgl(e.tanggal)) + "</time><span>" + esc(e.label) + (e.mendatang ? " <em>(dijadwalkan)</em>" : "") + ' <a href="' + E.url(e.sumber_url) + '" target="_blank" rel="noopener noreferrer">' + esc(e.outlet) + " ↗</a></span></li>";
+    }).join("") + "</ol></section>";
+  }
   function petaElit() {
     var R = E.D.peta_elit || [], P = elitKursi(), dk = P.filter(function (p) { return p.dukung; });
     var akhir = R.reduce(function (m, r) { return r.tanggal > m ? r.tanggal : m; }, "");
     var nSes = R.filter(function (r) { return r.tanggal >= E_PATAH; }).length, nW = R.filter(function (r) { return eTopik(r) === "wapres 2026"; }).length;
-    var dek = R.length ? "Peta elit berubah sesudah 3 November 2026, ketika mantan Kapolri Listyo Sigit Prabowo ditetapkan tersangka penyadapan terhadap Presiden. Seminggu kemudian Wakil Presiden Gibran mengundurkan diri dan kursinya kosong sampai MPR bersidang. Halaman ini mencatat pernyataan publik elit partai sebelum dan sesudah titik itu: tentang Pilpres 2029 dan tentang siapa yang mengisi kursi wapres. Setiap tanda menaut ke kutipan dan sumbernya." : "Pernyataan bertanggal tentang Pilpres 2029 akan tampil di sini bersama kutipan dan sumbernya.";
+    var dek = R.length ? "<b>3 November 2026</b>: Bareskrim menetapkan mantan Kapolri Listyo Sigit Prabowo tersangka penyadapan ilegal terhadap Presiden dan menahannya; dugaan makar diselidiki terpisah sejak 12 November. <b>11–12 November</b>: Wakil Presiden Gibran Rakabuming Raka mengundurkan diri, dua pekan sesudah MA membatalkan surat penyetaraan ijazah SMA-nya. Kursi wakil presiden kosong sampai MPR bersidang 9 Desember. Halaman ini mencatat pernyataan publik elit partai sebelum dan sesudah 3 November: tentang Pilpres 2029, tentang siapa yang mengisi kursi wapres, dan tentang kasus Listyo. Setiap tanda menaut ke kutipan dan sumbernya." : "Pernyataan bertanggal tentang Pilpres 2029 akan tampil di sini bersama kutipan dan sumbernya.";
     var hari = Date.UTC(+akhir.slice(0, 4), +akhir.slice(5, 7) - 1, +akhir.slice(8, 10));
     var zoomSampai = "2026-12-12", zoomDari = "2026-10-27";
     return '<div class="wadah elit-halaman">' + kepala("Pencalonan 2029 dan kursi wapres · lapisan fakta", "Peta Elit", dek) +
+      elitKronologi() +
       (R.length ? '<section class="elit-bagian">' + palang("Gambar 11", "Kursi DPR, sebelum dan sesudah 3 November") + elitGambarKursi(P) + "</section>" +
         '<section class="elit-bagian">' + palang("Gambar 12", "Lintasan pernyataan sepanjang 2026") + elitLegenda(R) +
         '<div class="et-wadah"><div class="gulir">' + elitLintasan({ dari: "2026-01-01", sampai: "2026-12-15", tik: elitTikBulan("2026-12-15"), aria: "Lintasan pernyataan per partai sepanjang 2026" }) + '</div><div class="et-tip" hidden></div></div>' +

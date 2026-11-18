@@ -1054,3 +1054,15 @@ span.sim-logo{display:inline-block;height:20px;width:24px;margin-right:8px;verti
 .ew-atas{margin-bottom:14px}
 .et-m.ej-i.t-listyo>circle:not(.et-hit){stroke:var(--bata)}
 .et-leg-listyo svg circle{fill:#fff;stroke:var(--bata);stroke-width:2}
+/* Peta Elit: kronologi di bawah pengantar */
+.elit-halaman .hal-kepala .dek{max-width:72ch}
+.elit-kron{margin-top:26px;border-top:2px solid var(--tinta);padding-top:14px}
+.elit-kron ol{list-style:none;margin:10px 0 0;padding:0;columns:2;column-gap:40px}
+.elit-kron li{break-inside:avoid;display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px;padding:7px 0;border-bottom:1px solid var(--garis);font:400 13.5px/1.5 var(--teks)}
+.elit-kron time{font:500 12px/1.9 var(--data);color:var(--tinta-3)}
+.elit-kron li a{font-size:12px;color:var(--tinta-3);white-space:nowrap}
+.elit-kron li.titik time,.elit-kron li.titik span{color:var(--bata)}
+.elit-kron li.titik span{font-weight:600}
+.elit-kron li.mendatang span{color:var(--tinta-3)}
+.elit-kron em{font-style:italic}
+@media(max-width:800px){.elit-kron ol{columns:1}}
