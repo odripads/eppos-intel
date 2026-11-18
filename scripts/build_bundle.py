@@ -24,6 +24,8 @@ data = {n: json.loads((ROOT / "data" / f"{n}.json").read_text()) for n in ("mani
 # Peta elit boleh kosong saat tim masih menyiapkan catatan sumbernya.
 elit = ROOT / "data/peta_elit.json"
 data["peta_elit"] = json.loads(elit.read_text()) if elit.exists() else []
+peristiwa = ROOT / "data/peta_elit_peristiwa.json"
+data["peta_elit_peristiwa"] = json.loads(peristiwa.read_text()) if peristiwa.exists() else []
 
 # the single-file bundle carries only what the page renders. The full rows, including the query that
 # found each one, stay in data/*.json in the repo — the bundle is a viewer, not the dataset release.

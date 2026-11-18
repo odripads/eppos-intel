@@ -1021,3 +1021,36 @@ span.sim-logo{display:inline-block;height:20px;width:24px;margin-right:8px;verti
 @media(max-width:1100px){.ek-kartu-daftar{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.ek-seg b{display:none}.ek-seg{padding:0 4px;align-items:center}.ek-fig{padding:18px 14px 14px}.et-wadah{padding:10px 8px 6px}}
 @media(max-width:520px){.ek-kartu-daftar{grid-template-columns:minmax(0,1fr)}}
+/* Peta Elit, titik patah 3 Nov dan kursi wapres (18 Nov) */
+.ej-w{fill:#2a8a57}
+.et-sesudah{fill:rgba(22,34,74,.045)}
+.et-patah{stroke:var(--bata);stroke-width:1.5}
+.et-ev{cursor:pointer;outline:none}
+.et-ev path{fill:var(--tinta)}
+.et-ev text{font:500 11.5px var(--teks);fill:var(--tinta-2)}
+.et-ev.mendatang path{fill:none;stroke:var(--tinta-3);stroke-width:1.3;stroke-dasharray:2 1.5}
+.et-ev.mendatang text{fill:var(--tinta-3);font-style:italic}
+.et-ev:focus-visible .et-hit{stroke:var(--tinta)!important;stroke-width:1.5;stroke-dasharray:2 2}
+.et-leg-patah i{display:inline-block;width:0;height:14px;border-left:2px solid var(--bata);margin-right:7px}
+.et-leg-ev svg{width:12px;height:12px;margin-right:6px;fill:var(--tinta)}
+.et-leg-kini{display:none}
+.ek-fase{padding:8px 0 0}
+.ek-fase>span{display:block;font:500 10.5px var(--data);letter-spacing:.05em;text-transform:uppercase;color:var(--tinta-3);margin-bottom:3px}
+.ek-fase.sesudah{margin-top:8px;border-top:1px solid var(--garis);padding-top:8px}
+.ek-fase.sesudah>span{color:var(--bata)}
+.ek-kosong{margin:0;font:400 12.5px var(--teks);color:var(--tinta-3);font-style:italic}
+.elit-masa{font:500 10.5px var(--data)!important;color:var(--tinta-3);border:1px solid var(--garis-2);padding:1px 6px;justify-self:start}
+.elit-masa.ses{color:var(--bata);border-color:var(--bata)}
+.ew-wadah{background:#f7f8fa;border:1px solid var(--garis);border-radius:6px;padding:8px 14px}
+.tabel.ew{min-width:640px;font-size:13.5px}
+.tabel.ew th[scope=col]{font:600 12.5px var(--teks);text-align:center;vertical-align:bottom}
+.tabel.ew th[scope=col]:first-child{text-align:left}
+.tabel.ew th[scope=row]{display:flex;align-items:center;gap:8px;font:600 13.5px var(--teks);white-space:nowrap}
+.tabel.ew td{text-align:center;vertical-align:middle;border-left:1px solid var(--garis)}
+.tabel.ew tr.ew-kosong td{text-align:left;color:var(--tinta-3);font-style:italic;font-size:12.5px}
+.ew-m{background:none;border:0;padding:3px;cursor:pointer;border-radius:4px}
+.ew-m:hover,.ew-m:focus-visible{background:#e3e6ec;outline:none}
+.ew-m .ej{width:16px;height:16px;margin:0}
+.ew-atas{margin-bottom:14px}
+.et-m.ej-i.t-listyo>circle:not(.et-hit){stroke:var(--bata)}
+.et-leg-listyo svg circle{fill:#fff;stroke:var(--bata);stroke-width:2}
