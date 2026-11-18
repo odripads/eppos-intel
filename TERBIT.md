@@ -32,3 +32,4 @@ Untuk mengembalikan versi sebelumnya: `cd dist/eppos-outlook && vercel rollback`
 - 2026-11-18 16:38 · Claude: Peta Elit titik patah 3 Nov (kasus Listyo) dan kursi wapres kosong: 78 pernyataan, 11 peristiwa bersumber, Gambar 13 dan 14 · data 2026-11-18 · https://eppos-outlook-oiqikyp1k-odripads.vercel.app
 - 2026-11-18 16:44 · Claude: Peta Elit pengantar bertanggal (Listyo ditahan 3 Nov, Gibran mundur 11-12 Nov) dan kotak kronologi · data 2026-11-18 · https://eppos-outlook-bdji5lz6y-odripads.vercel.app
 - 2026-11-18 17:48 · Claude: Peta Elit Gambar 15 diskursus publik di X (X Post Counts API, 5 tema + 10 tokoh, Jan-18 Nov) dan 191 pernyataan elit terverifikasi · data 2026-11-18 · https://eppos-outlook-p7xuy6u4m-odripads.vercel.app
+- 2026-11-18 17:50 · ui: catatan internal keluar dari teks publik, Peta Elit diringkas, irama bagian · data 2026-11-18 · https://eppos-outlook-388ytwex5-odripads.vercel.app
