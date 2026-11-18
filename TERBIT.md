@@ -35,3 +35,4 @@ Untuk mengembalikan versi sebelumnya: `cd dist/eppos-outlook && vercel rollback`
 - 2026-11-18 17:50 · ui: catatan internal keluar dari teks publik, Peta Elit diringkas, irama bagian · data 2026-11-18 · https://eppos-outlook-388ytwex5-odripads.vercel.app
 - 2026-11-18 19:24 · ui: Peta Elit lewat pertanyaan, ritme mingguan, daftar partai, isu tersembunyi · data 2026-11-18 · https://eppos-outlook-cl1n01fjc-odripads.vercel.app
 - 2026-11-18 20:03 · ui: bahasa desain baru, beranda pintu masuk, kepala putih, panel membulat, bilah Di halaman ini · data 2026-11-18 · https://eppos-outlook-4nm1r6io4-odripads.vercel.app
+- 2026-11-18 20:16 · ui: hero beranda satu panel, judul kiri peta kanan · data 2026-11-18 · https://eppos-outlook-n8du2fqsp-odripads.vercel.app
