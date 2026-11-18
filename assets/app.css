@@ -1094,3 +1094,27 @@ span.sim-logo{display:inline-block;height:20px;width:24px;margin-right:8px;verti
 .ed-garis-baca{stroke:var(--tinta-3);stroke-width:1;stroke-dasharray:2 2}
 .ed-leg-garis{display:inline-block;width:16px;height:3px;border-radius:2px;margin-right:7px;vertical-align:3px}
 .ed-baca-tema{padding:4px 2px 0;font-size:12px}
+
+/* ui-optimasi 18 Nov: Peta Elit lebih ringkas. Daftar dipotong 12 baris + tombol; kartu pernyataan lebih rapat. */
+.elit-catatan{padding:22px 0;gap:28px}
+.elit-catatan blockquote{margin:12px 0;font-size:clamp(17px,1.5vw,19px);line-height:1.55}
+.elit-catatan .elit-relasi{margin:8px 0}
+.elit-lagi{margin:28px 0 0;color:var(--tinta)}
+.elit-lagi span{font-weight:400;opacity:.7;text-transform:none;letter-spacing:0}
+.ed-grid.sedikit{grid-template-columns:minmax(0,1fr)}
+.ed-grid.sedikit .ed-svg{max-height:200px;width:100%}
+.ed-belum{margin-top:-12px}
+
+/* ui-optimasi 18 Nov: irama bagian. Varian .tumpuk = judul lebar di atas, teks di bawahnya, supaya tidak setiap
+   bagian berbentuk judul-kiri/teks-kanan. Grafik di halaman putih tidak lagi dibungkus kartu abu berbayang:
+   garis tinta di atas + ruang kosong, gaya meja grafis koran. */
+.dua-kol.tumpuk{grid-template-columns:minmax(0,1fr);gap:0;align-items:start}
+.dua-kol.tumpuk .j2{max-width:20ch;font-size:clamp(32px,4.2vw,58px);line-height:1.04}
+.dua-kol.tumpuk .lead{max-width:62ch;margin-top:18px}
+.kertas .gbr,.kertas .kons,.kertas #ln-panas,.kertas .dua-kol.ruu-kol>.gulir{background:none;border:0;border-top:2px solid var(--tinta);border-radius:0;box-shadow:none}
+.kertas .gbr{padding:18px 0 0}
+.kertas #ln-panas{padding:14px 0 0}
+.kertas .dua-kol.ruu-kol>.gulir{padding:10px 0 0}
+.kertas .sim-wadah,.et-wadah,.ew-wadah{background:none;border:0;border-top:2px solid var(--tinta);border-radius:0;box-shadow:none;padding-left:0;padding-right:0}
+.lead+.lead{margin-top:14px}
+.ek-fig{background:none;border:0;border-top:2px solid var(--tinta);border-radius:0;padding:20px 0 0}

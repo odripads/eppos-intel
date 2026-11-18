@@ -230,7 +230,10 @@
     if (!akhir) return "";
     var hari = []; for (var t = eDtgl(ED_DARI); t <= eDtgl(akhir); t += 864e5) hari.push(new Date(t).toISOString().slice(0, 10));
     var EV = elitPeristiwa().filter(function (e) { return e.tanggal >= ED_DARI && e.tanggal <= akhir; });
-    var panel = K.tokoh.map(function (tk) {
+    // tokoh tanpa hitungan tidak digambar sebagai panel datar; namanya disebut dalam satu baris
+    var adaSeri = function (tk) { var s = D.seri[tk.id] || {}; return Object.keys(s).some(function (d) { return s[d] > 0; }); };
+    var TK = K.tokoh.filter(adaSeri), TK0 = K.tokoh.filter(function (tk) { return !adaSeri(tk); });
+    var panel = TK.map(function (tk) {
       var s = D.seri[tk.id] || {}, v = hari.map(function (d) { return s[d] || 0; });
       var maks = Math.max.apply(null, v.concat([1])), W = 300, H = 96, kiri = 4, kanan = 4, atas = 8, bawah = 16;
       var X = function (i) { return kiri + i / (hari.length - 1) * (W - kiri - kanan); }, Yv = function (n) { return atas + (1 - n / maks) * (H - atas - bawah); };
@@ -250,7 +253,7 @@
     var jumlah = function (k, dari, ke) { var s = D.seri[k] || {}, n = 0; Object.keys(s).forEach(function (d) { if (d >= dari && d < ke) n += s[d]; }); return n; };
     var seb0 = "2026-10-01", ses1 = "9999";
     var sel = function (p) { var a = Math.min(p / 0.5, 1); return '<td style="background:rgba(47,74,160,' + (0.06 + a * 0.84).toFixed(2) + ");color:" + (a > 0.5 ? "#fff" : "var(--tinta)") + '">' + (p >= 0.995 ? "99" : p < 0.005 && p > 0 ? "<1" : Math.round(p * 100)) + "%</td>"; };
-    var baris = K.tokoh.map(function (tk) {
+    var baris = TK.map(function (tk) {
       var b0 = jumlah(tk.id, seb0, E_PATAH), b1 = jumlah(tk.id, E_PATAH, ses1);
       return '<tr><th scope="row">' + esc(tk.nama) + '<span>' + E.f(b0) + " → " + E.f(b1) + "</span></th>" + K.topik.map(function (tp) {
         var k = tk.id + "+" + tp.id, a0 = jumlah(k, seb0, E_PATAH), a1 = jumlah(k, E_PATAH, ses1);
@@ -261,7 +264,8 @@
     return '<section class="elit-bagian" id="diskursus">' + palang("Gambar 15", "Diskursus publik di X") +
       elitTema(D, K, hari) +
       '<p class="rel-cat">Jumlah unggahan asli per hari yang menyebut nama tokoh, 1 Oktober sampai ' + esc(E.tgl(akhir)) + '. Tiap panel memakai skalanya sendiri: bandingkan bentuk dan waktunya, bukan tingginya.</p>' +
-      '<div class="ed-grid">' + panel + "</div>" +
+      '<div class="ed-grid' + (TK.length < 3 ? " sedikit" : "") + '">' + panel + "</div>" +
+      (TK0.length ? '<p class="rel-cat ed-belum">Belum ada hitungan untuk ' + TK0.map(function (tk) { return esc(tk.nama); }).join(", ").replace(/, ([^,]*)$/, " dan $1") + ".</p>" : "") +
       '<div class="palang-jarak">' + palang("Topik", "Apa yang dibicarakan bersama nama itu") + '</div><p class="rel-cat">Persentase unggahan tentang tokoh yang juga memuat kata topik, sebelum (1 Okt–2 Nov) dan sesudah 3 November. Satu unggahan bisa memuat lebih dari satu topik. Kata kunci: ' + K.topik.map(function (tp) { return esc(tp.nama) + " = " + esc(tp.q.replace(/"/g, "")); }).join("; ") + ".</p>" + tabel +
       '<p class="rel-cat"><b>Sumber:</b> X Post Counts API, jumlah per hari UTC, diperbarui ' + esc(D.diperbarui || "") + ". Hanya angka: isi unggahan dan identitas pengguna tidak diambil. Nama umum bisa tercampur dengan orang lain bernama sama (Sugiono dibatasi dengan kata Gerindra, menteri, wapres, atau Prabowo). Hitungan X bisa sedikit berbeda dari hasil pencarian di aplikasi.</p></section>";
   }
@@ -324,21 +328,25 @@
     var semua = (E.D.peta_elit || []).slice().sort(function (a, b) { return b.tanggal.localeCompare(a.tanggal) || a.id.localeCompare(b.id); });
     var per = {}; semua.forEach(function (r) { per[r.id] = r; });
     var EV = elitPeristiwa();
-    function tampil() {
+    var batas = 12; // daftar dipotong supaya halaman tidak memanjang puluhan layar; saringan mengembalikan ke 12
+    function tampil(tambah) {
+      batas = tambah === true ? batas + 24 : 12;
       var q = $("#elit-aktor").value.trim().toLocaleLowerCase("id"), jenis = $("#elit-jenis").value, topik = $("#elit-topik").value, masa = $("#elit-masa").value;
       var baris = semua.filter(function (r) { return (!q || (r.id + " " + r.aktor + " " + r.lembaga + " " + (r.sasaran || "")).toLocaleLowerCase("id").indexOf(q) !== -1) && (!jenis || r.jenis === jenis) && (!topik || eTopik(r) === topik) && (!masa || (masa === "seb" ? r.tanggal < E_PATAH : r.tanggal >= E_PATAH)); });
       $("#elit-ringkas").textContent = baris.length + " dari " + semua.length + " pernyataan · terbaru lebih dahulu";
-      $("#elit-hasil").innerHTML = baris.length ? '<ol class="elit-jejak">' + baris.map(function (r) {
+      var sisa = Math.max(0, baris.length - batas);
+      $("#elit-hasil").innerHTML = baris.length ? '<ol class="elit-jejak">' + baris.slice(0, batas).map(function (r) {
         return '<li class="elit-catatan" id="' + esc(r.id) + '"><div class="elit-waktu"><time datetime="' + esc(r.tanggal) + '">' + esc(E.tgl(r.tanggal)) + "</time><span>" + esc(r.id) + '</span><span class="elit-masa' + (r.tanggal >= E_PATAH ? " ses" : "") + '">' + (r.tanggal >= E_PATAH ? "sesudah 3 Nov" : "sebelum 3 Nov") + '</span></div><article><div class="elit-meta"><span>' + elitIkon(EJ_KODE[r.jenis] || "i") + esc(r.jenis) + " · " + esc(eTopik(r)) + '</span><span class="elit-status">' + (r.kanal === "x" || r.kanal === "threads" ? '<b class="elit-kanal">' + (r.kanal === "x" ? "X" : "Threads") + " " + esc(r.akun || "") + "</b> " : "") + (r.status === "dicek tim" ? "dicek tim" : "belum dicek tim") + '</span></div><h2 class="elit-relasi"><span>' + esc(r.aktor) + "<small>" + esc(r.lembaga) + '</small></span><span class="elit-panah" aria-label="tentang">→</span>' + (r.sasaran ? "<span>" + esc(r.sasaran) + "</span>" : '<span class="elit-tanpa">Tidak menyebut orang</span>') + "</h2>" +
           (r.isu ? '<p class="elit-isu">Isu: ' + esc(r.isu) + "</p>" : "") + "<blockquote>“" + esc(r.kutipan) + "”</blockquote>" +
           '<a class="elit-sumber" href="' + E.url(r.sumber_url) + '" target="_blank" rel="noopener noreferrer">Baca sumber · ' + esc(r.outlet) + " ↗</a>" +
           (r.catatan ? '<p class="elit-catatan-kaki">' + esc(r.catatan) + "</p>" : "") + "</article></li>";
-      }).join("") + "</ol>" : '<div class="elit-kosong"><h2>' + (semua.length ? "Tidak ada pernyataan yang cocok" : "Pernyataan sedang disiapkan") + "</h2><p>" + (semua.length ? "Ubah saringan untuk melihat pernyataan lain." : "Pernyataan bertanggal akan tampil bersama kutipan, sumber, dan status pemeriksaannya.") + "</p></div>";
+      }).join("") + "</ol>" + (sisa ? '<button type="button" class="btn elit-lagi" id="elit-lagi">Tampilkan ' + Math.min(sisa, 24) + " pernyataan lagi <span>(" + sisa + " tersisa)</span></button>" : "") : '<div class="elit-kosong"><h2>' + (semua.length ? "Tidak ada pernyataan yang cocok" : "Pernyataan sedang disiapkan") + "</h2><p>" + (semua.length ? "Ubah saringan untuk melihat pernyataan lain." : "Pernyataan bertanggal akan tampil bersama kutipan, sumber, dan status pemeriksaannya.") + "</p></div>";
     }
     $("#elit-filter").addEventListener("submit", function (e) { e.preventDefault(); });
-    $("#elit-filter").addEventListener("input", tampil);
-    $("#elit-filter").addEventListener("change", tampil);
+    $("#elit-filter").addEventListener("input", function () { tampil(); });
+    $("#elit-filter").addEventListener("change", function () { tampil(); });
     $("#elit-filter").addEventListener("reset", function () { setTimeout(tampil, 0); });
+    $("#elit-hasil").addEventListener("click", function (e) { if (e.target.closest("#elit-lagi")) tampil(true); });
     tampil();
     function bukaBaris(id) {
       $("#elit-jenis").value = $("#elit-topik").value = $("#elit-masa").value = ""; $("#elit-aktor").value = id; tampil();
@@ -513,7 +521,7 @@
     "</div></section>" +
 
     '<section class="kertas blok"><div class="lebar">' + palang("Gambar 3", "Peta per siklus pemilu") +
-      '<div class="dua-kol"><h2 class="j2">Dari 2009 sampai 2024, siklus demi siklus.</h2><p class="lead">Rapat tim meminta peta sampai 2009. Yang terlihat di bawah adalah kondisi data saat ini: dua siklus awal hampir kosong karena arsipnya belum disapu, bukan karena tidak ada kejadian. Sapuan untuk jendela pilkada dimulai dari 2015.</p></div>' +
+      '<div class="dua-kol tumpuk"><h2 class="j2">Dari 2009 sampai 2024, siklus demi siklus.</h2><p class="lead">Dua siklus awal hampir kosong karena arsip media sebelum 2015 belum disapu, bukan karena tidak ada kejadian. Sapuan untuk jendela pilkada dimulai dari 2015.</p></div>' +
       '<div class="siklus" id="siklus"></div>' +
     "</div></section>" +
 
@@ -539,7 +547,7 @@
         '<p class="kl-kecil">' + k.sumber.map(function (s) { return '<a href="' + E.url(s[1]) + '" target="_blank" rel="noopener">' + esc(s[0]) + "</a>"; }).join(" · ") + "</p></td></tr>";
     }).join("");
     return '<section class="kertas blok" id="kasus-lama"><div class="lebar">' + palang("Gambar 3b", "Kasus 2009–2014, data baru") +
-      '<div class="dua-kol"><h2 class="j2">Sebelum arsip media menebal: jejak di putusan MK dan catatan AJI.</h2><p class="lead">' + K.kasus.length + " kasus dihimpun " + esc(K.penyusun) + ". " + n("terverifikasi") + " cocok dengan sumbernya, " + n("sebagian") + " sebagian, " + n("belum") + " belum bisa dicek. " + esc(K.catatan) + "</p></div>" +
+      '<div class="dua-kol"><h2 class="j2">Sebelum arsip media menebal: jejak di putusan MK dan catatan AJI.</h2><div><p class="lead">' + K.kasus.length + " kasus dari putusan MK dan PTUN serta catatan AJI dan media, dicek ulang terhadap naskah putusan, risalah, dan berita yang ditautkan: " + n("terverifikasi") + " cocok dengan sumbernya, " + n("sebagian") + " sebagian, " + n("belum") + " belum bisa dicek.</p><p class=\"lead\">Baris MK memuat dalil pemohon atau kesaksian, bukan temuan terbukti; hampir semua permohonan ditolak. Nama terduga pelaku tidak ditampilkan. Kasus pengadilan masuk Peta I sebagai kasus resmi, catatan AJI dan media sebagai laporan media.</p></div></div>" +
       '<div class="sim-wadah"><div class="gulir"><table class="tabel kl"><thead><tr><th scope="col" class="r">Tahun</th><th scope="col">Wilayah</th><th scope="col">Dugaan dan sumber</th><th scope="col">Hasil</th><th scope="col">Pemeriksaan ulang</th></tr></thead><tbody>' + baris + "</tbody></table></div></div>" +
     "</div></section>";
   }
@@ -749,7 +757,7 @@
     "</div></section>" +
 
     '<section class="malam blok"><div class="lebar">' + palang("Gambar 7", "Aturan main yang berubah") +
-      '<div class="dua-kol"><h2 class="j2">Sepuluh titik patah, 2014–2025.</h2><p class="lead">Peta tidak berdiri sendiri. Setiap titik di bawah mengubah siapa yang memegang kuasa di daerah menjelang pemungutan suara, atau siapa yang mengawasinya.</p></div>' +
+      '<div class="dua-kol tumpuk"><h2 class="j2">Sepuluh titik patah, 2014–2025.</h2><p class="lead">Peta tidak berdiri sendiri. Setiap titik di bawah mengubah siapa yang memegang kuasa di daerah menjelang pemungutan suara, atau siapa yang mengawasinya.</p></div>' +
       '<ol class="patah">' + E.PATAH.map(function (p) {
         return '<li class="' + (p.kunci ? "kunci" : "") + '"><time>' + esc(p.t) + "</time><div><b>" + (p.url ? '<a href="' + E.url(p.url) + '" target="_blank" rel="noopener">' + esc(p.j) + "</a>" : esc(p.j)) + "</b><p>" + esc(p.k) + "</p></div></li>";
       }).join("") + "</ol>" +
@@ -1012,7 +1020,7 @@
     "</div></section>" +
 
     '<section class="kertas blok" id="konstelasi"><div class="lebar">' + palang("Gambar 9a", "Konstelasi sikap ambang batas parlemen") +
-      '<div class="dua-kol"><h2 class="j2">Efektif, atau mewakili?</h2><p class="lead">Ambang batas parlemen memaksa pilihan antara dua nilai yang sama-sama sah. Outlook ini memakai pendekatan eklektik: tidak memilih satu kutub, tetapi menimbang keduanya.</p></div>' +
+      '<div class="dua-kol tumpuk"><h2 class="j2">Efektif, atau mewakili?</h2><p class="lead">Ambang batas parlemen memaksa pilihan antara dua nilai yang sama-sama sah. Outlook ini memakai pendekatan eklektik: tidak memilih satu kutub, tetapi menimbang keduanya.</p></div>' +
       '<div class="tiga kutub"><div class="ktb wakil"><p class="kicker">Kutub keterwakilan</p><h3 class="j3">Inklusif, sampai 0%</h3><p>Makin rendah ambang, makin sedikit suara yang tidak menjadi kursi dan makin beragam aspirasi yang terwakili. Harganya: parlemen lebih terfragmentasi. Dipegang masyarakat sipil dan partai nonparlemen.</p></div>' +
       '<div class="ktb tengah"><p class="kicker">Pendekatan Outlook ini</p><h3 class="j3">Eklektik: menimbang keduanya</h3><p>Putusan MK 116/PUU-XXI/2023 meminta angka ambang ditata ulang dengan menimbang proporsionalitas hasil pemilu, penyederhanaan partai, dan partisipasi bermakna, lewat perhitungan yang terbuka. Ukurannya: berapa efektivitas yang dibeli dengan berapa suara yang hilang.</p></div>' +
       '<div class="ktb efektif"><p class="kicker">Kutub efektivitas</p><h3 class="j3">Ramping: 5–7%</h3><p>Makin tinggi ambang, makin sedikit partai dan fraksi, negosiasi legislasi lebih sederhana, dan pemerintahan lebih stabil. Harganya: jutaan suara tidak menjadi kursi, 17,3 juta pada 2024 menurut Perindo. Dipegang sebagian besar partai parlemen.</p></div></div>' +
@@ -1038,7 +1046,7 @@
     "</div></section>" +
 
     '<section class="kertas blok pendek"><div class="lebar">' + palang("Bagian 3", "Peta politik 2027–2029") +
-      '<div class="dua-kol"><h2 class="j2">Bagaimana peta intervensi membaca RUU?</h2><p class="lead">Kalau pemilu nasional dan pilkada dipisah lagi, kepala daerah tidak lagi menghadapi dua pemilihan sekaligus. Peta I dan Peta II memberi gambaran awal tentang apa yang bisa berubah.</p></div>' +
+      '<div class="dua-kol tumpuk"><h2 class="j2">Bagaimana peta intervensi membaca RUU?</h2><p class="lead">Kalau pemilu nasional dan pilkada dipisah lagi, kepala daerah tidak lagi menghadapi dua pemilihan sekaligus. Peta I dan Peta II memberi gambaran awal tentang apa yang bisa berubah.</p></div>' +
       '<div class="tiga tahun">' + ["2027", "2028", "2029"].map(function (t) { return '<div class="kol-tahun"><b>' + t + "</b>" + menyusul("Yang perlu dipantau", "") + "</div>"; }).join("") + "</div>" +
     "</div></section>";
   }
