@@ -1118,3 +1118,82 @@ span.sim-logo{display:inline-block;height:20px;width:24px;margin-right:8px;verti
 .kertas .sim-wadah,.et-wadah,.ew-wadah{background:none;border:0;border-top:2px solid var(--tinta);border-radius:0;box-shadow:none;padding-left:0;padding-right:0}
 .lead+.lead{margin-top:14px}
 .ek-fig{background:none;border:0;border-top:2px solid var(--tinta);border-radius:0;padding:20px 0 0}
+
+/* ui-optimasi 18 Nov, putaran 2: Peta Elit dibaca lewat pertanyaan. Bilah pertanyaan menempel di bawah kepala situs;
+   Gambar 12 = ritme per tujuh hari (satu tanda satu pernyataan); Gambar 13 = daftar partai yang bisa dibuka. */
+.tautan{background:none;border:0;padding:0;font:inherit;color:var(--tinta);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.tautan:hover{color:var(--bata)}
+.elit-tanya{position:sticky;top:64px;z-index:30;display:flex;align-items:center;gap:16px;margin:8px 0 28px;padding:10px 0;background:#fff;border-bottom:1px solid var(--garis)}
+.elit-tanya ol{display:flex;gap:6px;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
+.elit-tanya ol::-webkit-scrollbar{display:none}
+.elit-tanya button{white-space:nowrap;min-height:40px;padding:0 14px;border:1px solid var(--garis-2);border-radius:999px;background:#fff;font:500 14px/1 var(--teks);color:var(--tinta);cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.elit-tanya button:hover{border-color:var(--tinta)}
+.elit-tanya button.kini{background:var(--tinta);border-color:var(--tinta);color:#fff}
+.elit-saklar{display:flex;align-items:center;gap:8px;flex:none;font:500 13.5px var(--teks);color:var(--tinta-2);cursor:pointer;white-space:nowrap}
+.elit-saklar input{width:18px;height:18px;accent-color:var(--tinta)}
+.elit-saklar span{color:var(--tinta-3)}
+.elit-bagian{scroll-margin-top:140px}
+.elit-q{font:750 clamp(26px,3vw,40px)/1.1 var(--judul);letter-spacing:-.015em;color:var(--tinta);margin:6px 0 22px;max-width:24ch}
+
+.er{display:flex;flex-direction:column}
+.er-baris{display:grid;grid-template-columns:132px minmax(0,1fr);align-items:start;gap:16px;padding:7px 0;border-bottom:1px solid var(--garis)}
+.er-baris.ses{background:linear-gradient(90deg,transparent 0,transparent 132px,rgba(196,64,44,.035) 132px)}
+.er-baris.pilih{background:#f3f4f7}
+.er-label{display:flex;justify-content:space-between;align-items:center;gap:8px;min-height:30px;padding:0 10px 0 0;background:none;border:0;font:500 13.5px var(--data);color:var(--tinta-2);cursor:pointer;text-align:left}
+.er-label span{font-weight:600;color:var(--tinta)}
+.er-label:hover,.er-label[aria-pressed="true"]{color:var(--bata)}
+.er-unit{display:flex;flex-wrap:wrap;gap:3px;min-height:30px;align-items:center}
+.er-g{display:inline-grid;place-items:center;width:24px;height:24px;padding:0;background:none;border:0;border-radius:4px;cursor:pointer}
+.er-g:hover,.er-g:focus-visible{background:#e9ecf2}
+.er-g .ej{width:15px;height:15px;margin:0}
+.er-g.t-listyo .ej-i{stroke:var(--bata)}
+.er-nol{font:400 13px var(--teks);color:var(--tinta-3);font-style:normal}
+.er-patah{position:relative;height:30px;border-bottom:2px solid var(--bata)}
+.er-patah span{position:absolute;left:148px;bottom:6px;font:600 12.5px var(--teks);color:var(--bata)}
+
+.ep-daftar{border-top:2px solid var(--tinta)}
+.ep{border-bottom:1px solid var(--garis)}
+.ep summary{display:grid;grid-template-columns:28px minmax(150px,220px) minmax(0,1fr) auto;align-items:center;gap:14px;min-height:56px;padding:8px 0;cursor:pointer;list-style:none}
+.ep summary::-webkit-details-marker{display:none}
+.ep summary:hover .ep-nama b{color:var(--bata)}
+.ep summary .ek-logo{width:26px;height:26px}
+.ep-nama b{display:block;font:700 17px/1.2 var(--judul);color:var(--tinta)}
+.ep-nama small{font:400 12.5px var(--teks);color:var(--tinta-3)}
+.ep-chips{display:flex;flex-wrap:wrap;gap:6px}
+.ep-chip{display:inline-flex;align-items:center;gap:2px;padding:3px 9px;border:1px solid var(--garis);border-radius:999px;font:500 12.5px var(--teks);color:var(--tinta-2);white-space:nowrap}
+.ep-chip .ej{width:11px;height:11px;margin-right:4px}
+.ep-chip.isu{border-style:dashed;color:var(--tinta-3)}
+.ep-n{display:flex;align-items:center;gap:8px;font:600 14px var(--data);color:var(--tinta)}
+.ep-n::after{content:"";width:8px;height:8px;border-right:2px solid var(--tinta-3);border-bottom:2px solid var(--tinta-3);transform:rotate(45deg) translateY(-3px);transition:transform .2s}
+.ep[open] .ep-n::after{transform:rotate(-135deg) translateY(-1px)}
+.ep-isi{list-style:none;margin:0 0 14px;padding:0 0 0 42px}
+.ep-isi li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;padding:10px 0;border-top:1px dashed var(--garis)}
+.ep-isi time{font:500 12.5px var(--data);color:var(--tinta-3);padding-top:2px}
+.ep-jenis{margin:0 0 4px;font:500 13px var(--teks);color:var(--tinta-2)}
+.ep-jenis .ej{width:12px;height:12px}
+.ep-isi q{font:400 15.5px/1.5 var(--teks);color:var(--tinta)}
+.ep-isi a{font:500 12.5px var(--teks);color:var(--tinta-3);white-space:nowrap}
+.ep-tersembunyi,.ep-saring{margin:0 0 14px 42px;font:400 13.5px var(--teks);color:var(--tinta-3)}
+.ep-saring{margin:14px 0}
+
+@media(max-width:700px){
+  .elit-tanya{flex-direction:column;align-items:stretch;gap:8px;margin-inline:calc(var(--tepi,16px) * -1);padding-inline:var(--tepi,16px)}
+  .elit-q{font-size:26px}
+  .er-baris{grid-template-columns:84px minmax(0,1fr);gap:8px}
+  .er-baris.ses{background:none}
+  .er-label{font-size:12px}
+  .er-g{width:22px;height:22px}
+  .er-patah span{left:0}
+  .ep summary{grid-template-columns:26px minmax(0,1fr) auto;row-gap:6px}
+  .ep-chips{grid-column:2/-1;grid-row:2}
+  .ep-isi{padding-left:0}
+  .ep-isi li{grid-template-columns:52px minmax(0,1fr);gap:10px}
+  .ep-tersembunyi{margin-left:0}
+}
+.er-label{white-space:nowrap}
+@media(max-width:700px){
+  .er-baris{grid-template-columns:104px minmax(0,1fr)}
+  .er-label{font-size:11.5px;padding-right:6px}
+  .elit-tanya{flex-direction:row;padding-block:8px}
+  .elit-saklar{display:none}
+}
