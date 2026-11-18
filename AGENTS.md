@@ -113,6 +113,16 @@ to the same Vercel site, only through `scripts/terbitkan.sh`.
 | `~/Desktop/EPPOS GROUP /` | Team folder: briefs, logos, intake sheets, speech analyses |
 | `~/Documents/EPPOS-master/eppos-media-intake-LENGKAP.xlsx` | Full workbook **with names**. Do not copy it anywhere |
 
+## 3b. Peta Elit: unggahan X dan Threads (18 Nov)
+- Teks unggahan publik diambil HANYA lewat oEmbed resmi: `publish.x.com/oembed` dan `graph.threads.net/v1.0/oembed`
+  (tanpa akun, tanpa kunci). Tempel tautan ke `data/sosmed_antrian.txt`, jalankan `python3 scripts/ambil_sosmed.py`,
+  hasilnya `data/sosmed_kandidat.json`. Jangan login, jangan memakai endpoint X/Threads lain, jangan menggaruk timeline.
+- Baris dari unggahan masuk `data/peta_elit.json` dengan `"kanal": "x"|"threads"`, `"akun": "@nama"`, `sumber_url` =
+  tautan unggahan, kutipan 3-40 kata persis dari teks oEmbed. Akun harus jelas resmi milik tokohnya (centang/ditaut situs
+  partai/dikutip media sebagai akunnya); catat buktinya di `catatan`. Tanggal Threads berasal dari ID unggahan (WIB).
+- Penemuan unggahan masih lewat pencarian web (jangkauannya terbatas). Pelacakan sistematis akun tertentu butuh X API
+  berbayar (keputusan Odri/tim; akun developer dibuat Odri sendiri).
+
 ## 4. Media pipeline
 `crawl_outlets.py` + `crawl_candidates.py` → `data/kandidat.json` (written only through `scripts/kandidat_io.py`)
 → `resolve_urls.py` → `verify_titles.py` → `confirm_queue.py` (stamps `diterima otomatis`) →

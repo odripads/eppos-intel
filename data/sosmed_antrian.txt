@@ -1,0 +1,3 @@
+# Satu tautan unggahan X atau Threads per baris (tokoh atau akun resmi partai). Lalu jalankan:
+#   python3 scripts/ambil_sosmed.py
+# Hasil: data/sosmed_kandidat.json (teks persis lewat oEmbed resmi). Belum masuk peta sampai dipilih dan dicek.

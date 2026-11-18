@@ -50,7 +50,7 @@ window.EPPOS = (function () {
 
   /* ---------- pemuatan ---------- */
   var BERKAS = ["manifest", "periode", "insiden", "kasus_resmi", "insiden_otomatis", "usaha_pencarian", "kemajuan", "kisi", "qr", "ringkas", "posisi_aktor", "posisi_skema", "lambang", "sikap_pt", "logo_aktor", "enp", "kasus_pilkada_lama"];
-  BERKAS.push("peta_elit", "peta_elit_peristiwa");
+  BERKAS.push("peta_elit", "peta_elit_peristiwa", "diskursus_x", "diskursus_kueri");
   E.muat = function () {
     var ambil = window.EPPOS_DATA
       ? Promise.resolve(BERKAS.map(function (n) { return window.EPPOS_DATA[n]; }))

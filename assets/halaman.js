@@ -175,6 +175,114 @@
     return ringkas + '<div class="ew-wadah"><div class="gulir"><table class="tabel ew"><thead><tr><th scope="col">Partai / aktor</th>' + kol.map(function (n) { return '<th scope="col">' + (n === "—" ? "Tidak mengusulkan nama" : esc(n)) + "</th>"; }).join("") + "</tr></thead><tbody>" + rows + "</tbody></table></div></div>" +
       '<p class="rel-cat">Kolom terakhir memuat pernyataan yang menyerahkan pilihan kepada Presiden atau menyatakan tidak mengusulkan nama. Satu partai bisa berada di dua kolom karena elitnya berbeda suara. Klik tanda untuk membuka kutipannya di daftar. Presiden mengajukan dua nama ke MPR; MPR memilih satu (Pasal 8 ayat 2 UUD 1945).</p>';
   }
+  /* Gambar 15: percakapan publik di X dari X Post Counts API (scripts/hitung_x.py). Hanya jumlah unggahan asli per hari;
+     tidak ada isi unggahan atau nama pengguna. Panel kecil per tokoh dengan skala sumbu-y sendiri (Prabowo jauh lebih
+     besar dan akan meratakan yang lain); tabel topik = bagian unggahan tentang tokoh itu yang juga memuat kata topik. */
+  var ED_DARI = "2026-10-01";
+  function eDtgl(s) { return Date.UTC(+s.slice(0, 4), +s.slice(5, 7) - 1, +s.slice(8, 10)); }
+  // Grafik tema (pembuka Gambar 15): percakapan umum per tema, skala bersama supaya volumenya bisa dibandingkan.
+  // Lima warna = palet jenis yang sudah lolos validator; label di ujung garis supaya tidak bergantung warna.
+  var ED_WARNA = ["#2f4aa0", "#c4402c", "#bf8200", "#2c93c6", "#2a8a57"];
+  function elitTema(D, K, hari) {
+    var T = (K.tema || []).filter(function (tm) { return D.seri["tema:" + tm.id]; });
+    if (!T.length) return "";
+    var W = 1000, H = 280, kiri = 46, kanan = 190, atas = 18, bawah = 26;
+    var V = T.map(function (tm) { var s = D.seri["tema:" + tm.id]; return hari.map(function (d) { return s[d] || 0; }); });
+    var maks = Math.max.apply(null, [].concat.apply([1], V)), langkah = Math.pow(10, Math.floor(Math.log10(maks))), atasY = Math.ceil(maks / langkah) * langkah;
+    var X = function (i) { return kiri + i / (hari.length - 1) * (W - kiri - kanan); }, Y = function (n) { return atas + (1 - n / atasY) * (H - atas - bawah); };
+    var h = '<svg viewBox="0 0 ' + W + " " + H + '" class="et-tema" role="img" aria-label="Unggahan per hari per tema, 1 Oktober sampai ' + esc(E.tgl(hari[hari.length - 1])) + '">';
+    for (var g = 0; g <= 4; g++) { var nv = atasY * g / 4, y = Y(nv); h += '<line class="et-grid" x1="' + kiri + '" x2="' + (W - kanan) + '" y1="' + y + '" y2="' + y + '"/><text class="et-bln" x="' + (kiri - 6) + '" y="' + (y + 4) + '" text-anchor="end">' + E.f(nv) + "</text>"; }
+    hari.forEach(function (d, i) { if (d.slice(8) === "01" || d.slice(8) === "15") h += '<text class="et-bln" x="' + X(i) + '" y="' + (H - 8) + '" text-anchor="middle">' + esc(String(E.tgl(d)).replace(/ 2026$/, "")) + "</text>"; });
+    var ip = hari.indexOf(E_PATAH);
+    if (ip >= 0) h += '<rect class="et-sesudah" x="' + X(ip) + '" y="' + atas + '" width="' + (X(hari.length - 1) - X(ip)) + '" height="' + (H - atas - bawah) + '"/><line class="et-patah" x1="' + X(ip) + '" x2="' + X(ip) + '" y1="' + atas + '" y2="' + (H - bawah) + '"/>';
+    elitPeristiwa().forEach(function (e) { var i = hari.indexOf(e.tanggal); if (i >= 0) h += '<path class="ed-ev" d="M' + X(i) + " " + (atas - 2) + 'l-4 -7h8z"><title>' + esc(E.tgl(e.tanggal) + " · " + e.label) + "</title></path>"; });
+    var ujung = V.map(function (v, k) { return { k: k, y: Y(v[v.length - 1]) }; }).sort(function (a, b) { return a.y - b.y; });
+    for (var u = 1; u < ujung.length; u++) if (ujung[u].y - ujung[u - 1].y < 15) ujung[u].y = ujung[u - 1].y + 15;
+    V.forEach(function (v, k) {
+      h += '<path fill="none" stroke="' + ED_WARNA[k] + '" stroke-width="2" stroke-linejoin="round" d="' + v.map(function (n, i) { return (i ? "L" : "M") + X(i).toFixed(1) + " " + Y(n).toFixed(1); }).join("") + '"/>';
+    });
+    ujung.forEach(function (o) { h += '<text class="et-ujung" x="' + (W - kanan + 8) + '" y="' + (o.y + 4) + '" fill="' + ED_WARNA[o.k] + '">' + esc(T[o.k].nama) + "</text>"; });
+    h += '<line class="ed-garis-baca" x1="-10" x2="-10" y1="' + atas + '" y2="' + (H - bawah) + '"/><rect class="ed-tangkap" x="' + kiri + '" y="' + atas + '" width="' + (W - kiri - kanan) + '" height="' + (H - atas - bawah) + '" fill="transparent"/></svg>';
+    var leg = '<div class="et-leg">' + T.map(function (tm, k) { return '<span><i class="ed-leg-garis" style="background:' + ED_WARNA[k] + '"></i>' + esc(tm.nama) + "</span>"; }).join("") + '<span class="et-leg-patah"><i></i>3 Nov: Listyo Sigit tersangka</span></div>';
+    return '<div class="ek-atas"><p class="ek-besar">Apa yang sedang dibicarakan</p><p>Unggahan asli per hari di X untuk lima tema, tanpa memandang siapa yang disebut. Satu skala untuk semua tema, jadi tinggi garis bisa dibandingkan langsung.</p></div>' + leg +
+      '<div class="et-wadah ed-tema-wadah"><div class="gulir">' + h + '</div><output class="ed-baca ed-baca-tema" aria-live="polite"></output></div>' +
+      '<p class="rel-cat">Kata kunci tema: ' + T.map(function (tm) { return "<b>" + esc(tm.nama) + "</b>: " + esc(tm.q.replace(/"/g, "")); }).join("; ") + ".</p>" +
+      '<div class="palang-jarak">' + palang("Tokoh", "Siapa yang terbawa dalam percakapan itu") + "</div>";
+  }
+  function setelahTema() {
+    var D = E.D.diskursus_x, K = E.D.diskursus_kueri, svg = $(".et-tema"); if (!svg || !D) return;
+    var T = (K.tema || []).filter(function (tm) { return D.seri["tema:" + tm.id]; }), akhir = "";
+    T.forEach(function (tm) { Object.keys(D.seri["tema:" + tm.id]).forEach(function (d) { if (d > akhir) akhir = d; }); });
+    var hari = []; for (var t = eDtgl(ED_DARI); t <= eDtgl(akhir); t += 864e5) hari.push(new Date(t).toISOString().slice(0, 10));
+    var garis = svg.querySelector(".ed-garis-baca"), baca = $(".ed-baca-tema");
+    svg.querySelector(".ed-tangkap").addEventListener("mousemove", function (ev) {
+      var r = svg.getBoundingClientRect(), x = (ev.clientX - r.left) / r.width * 1000, i = Math.max(0, Math.min(hari.length - 1, Math.round((x - 46) / (1000 - 46 - 190) * (hari.length - 1))));
+      var gx = 46 + i / (hari.length - 1) * (1000 - 46 - 190); garis.setAttribute("x1", gx); garis.setAttribute("x2", gx);
+      baca.innerHTML = "<b>" + esc(E.tgl(hari[i])) + "</b> · " + T.map(function (tm, k) { return '<span style="color:' + ED_WARNA[k] + '">' + esc(tm.nama) + "</span> " + E.f(D.seri["tema:" + tm.id][hari[i]] || 0); }).join(" · ");
+    });
+    svg.querySelector(".ed-tangkap").addEventListener("mouseleave", function () { garis.setAttribute("x1", -10); garis.setAttribute("x2", -10); baca.textContent = ""; });
+  }
+  function elitDiskursus() {
+    var D = E.D.diskursus_x, K = E.D.diskursus_kueri;
+    if (!D || !K || !D.seri) return "";
+    var akhir = "", nama = {};
+    K.tokoh.forEach(function (t) { nama[t.id] = t.nama; var s = D.seri[t.id] || {}; Object.keys(s).forEach(function (d) { if (d > akhir) akhir = d; }); });
+    if (!akhir) return "";
+    var hari = []; for (var t = eDtgl(ED_DARI); t <= eDtgl(akhir); t += 864e5) hari.push(new Date(t).toISOString().slice(0, 10));
+    var EV = elitPeristiwa().filter(function (e) { return e.tanggal >= ED_DARI && e.tanggal <= akhir; });
+    var panel = K.tokoh.map(function (tk) {
+      var s = D.seri[tk.id] || {}, v = hari.map(function (d) { return s[d] || 0; });
+      var maks = Math.max.apply(null, v.concat([1])), W = 300, H = 96, kiri = 4, kanan = 4, atas = 8, bawah = 16;
+      var X = function (i) { return kiri + i / (hari.length - 1) * (W - kiri - kanan); }, Yv = function (n) { return atas + (1 - n / maks) * (H - atas - bawah); };
+      var garis = v.map(function (n, i) { return (i ? "L" : "M") + X(i).toFixed(1) + " " + Yv(n).toFixed(1); }).join("");
+      var ip = hari.indexOf(E_PATAH), puncak = Math.max(0, v.indexOf(maks)), adaData = v.some(function (x) { return x > 0; });
+      var seb = 0, ses = 0, nSeb = 0, nSes = 0; hari.forEach(function (d, i) { if (d < E_PATAH) { seb += v[i]; nSeb++; } else { ses += v[i]; nSes++; } });
+      var rasio = nSeb && seb ? (ses / nSes) / (seb / nSeb) : 0;
+      var svg = '<svg viewBox="0 0 ' + W + " " + H + '" class="ed-svg" data-k="' + esc(tk.id) + '" role="img" aria-label="' + esc(tk.nama + ": unggahan per hari, puncak " + maks + " pada " + E.tgl(hari[puncak])) + '">' +
+        (ip >= 0 ? '<rect class="et-sesudah" x="' + X(ip) + '" y="' + atas + '" width="' + (X(hari.length - 1) - X(ip)) + '" height="' + (H - atas - bawah) + '"/><line class="et-patah" x1="' + X(ip) + '" x2="' + X(ip) + '" y1="' + atas + '" y2="' + (H - bawah) + '"/>' : "") +
+        EV.map(function (e) { var i = hari.indexOf(e.tanggal); return i < 0 ? "" : '<path class="ed-ev" d="M' + X(i) + " " + (H - bawah + 9) + "l-3 -5h6z" + '"/>'; }).join("") +
+        '<path class="ed-area" d="' + garis + "L" + X(hari.length - 1) + " " + (H - bawah) + "L" + X(0) + " " + (H - bawah) + 'Z"/><path class="ed-garis" d="' + garis + '"/>' +
+        '<circle class="ed-titik" r="3" cx="-10" cy="-10"/></svg>';
+      return '<figure class="ed-panel"><figcaption><b>' + esc(tk.nama) + "</b><span>" + (adaData ? "puncak " + E.f(maks) + " · " + esc(String(E.tgl(hari[puncak])).replace(/ 2026$/, "")) : "belum ada data") + "</span></figcaption>" + svg +
+        '<p class="ed-rasio">' + (rasio ? "Sesudah 3 Nov: <b>" + (rasio >= 1 ? rasio.toFixed(1).replace(".", ",") + "×" : Math.round(rasio * 100) + "%") + "</b> rata-rata harian sebelumnya" : "") + '</p><output class="ed-baca" aria-live="polite"></output></figure>';
+    }).join("");
+    // tabel topik: bagian unggahan tentang tokoh yang memuat kata topik, sebelum dan sesudah 3 Nov
+    var jumlah = function (k, dari, ke) { var s = D.seri[k] || {}, n = 0; Object.keys(s).forEach(function (d) { if (d >= dari && d < ke) n += s[d]; }); return n; };
+    var seb0 = "2026-10-01", ses1 = "9999";
+    var sel = function (p) { var a = Math.min(p / 0.5, 1); return '<td style="background:rgba(47,74,160,' + (0.06 + a * 0.84).toFixed(2) + ");color:" + (a > 0.5 ? "#fff" : "var(--tinta)") + '">' + (p >= 0.995 ? "99" : p < 0.005 && p > 0 ? "<1" : Math.round(p * 100)) + "%</td>"; };
+    var baris = K.tokoh.map(function (tk) {
+      var b0 = jumlah(tk.id, seb0, E_PATAH), b1 = jumlah(tk.id, E_PATAH, ses1);
+      return '<tr><th scope="row">' + esc(tk.nama) + '<span>' + E.f(b0) + " → " + E.f(b1) + "</span></th>" + K.topik.map(function (tp) {
+        var k = tk.id + "+" + tp.id, a0 = jumlah(k, seb0, E_PATAH), a1 = jumlah(k, E_PATAH, ses1);
+        return (b0 ? sel(a0 / b0) : "<td>–</td>") + (b1 ? sel(a1 / b1) : "<td>–</td>");
+      }).join("") + "</tr>";
+    }).join("");
+    var tabel = '<div class="gulir"><table class="tabel ed-tabel"><thead><tr><th scope="col" rowspan="2">Tokoh<span>unggahan sebelum → sesudah</span></th>' + K.topik.map(function (tp) { return '<th scope="colgroup" colspan="2">' + esc(tp.nama) + "</th>"; }).join("") + "</tr><tr>" + K.topik.map(function () { return '<th scope="col">seb.</th><th scope="col">ses.</th>'; }).join("") + "</tr></thead><tbody>" + baris + "</tbody></table></div>";
+    return '<section class="elit-bagian" id="diskursus">' + palang("Gambar 15", "Diskursus publik di X") +
+      elitTema(D, K, hari) +
+      '<p class="rel-cat">Jumlah unggahan asli per hari yang menyebut nama tokoh, 1 Oktober sampai ' + esc(E.tgl(akhir)) + '. Tiap panel memakai skalanya sendiri: bandingkan bentuk dan waktunya, bukan tingginya.</p>' +
+      '<div class="ed-grid">' + panel + "</div>" +
+      '<div class="palang-jarak">' + palang("Topik", "Apa yang dibicarakan bersama nama itu") + '</div><p class="rel-cat">Persentase unggahan tentang tokoh yang juga memuat kata topik, sebelum (1 Okt–2 Nov) dan sesudah 3 November. Satu unggahan bisa memuat lebih dari satu topik. Kata kunci: ' + K.topik.map(function (tp) { return esc(tp.nama) + " = " + esc(tp.q.replace(/"/g, "")); }).join("; ") + ".</p>" + tabel +
+      '<p class="rel-cat"><b>Sumber:</b> X Post Counts API, jumlah per hari UTC, diperbarui ' + esc(D.diperbarui || "") + ". Hanya angka: isi unggahan dan identitas pengguna tidak diambil. Nama umum bisa tercampur dengan orang lain bernama sama (Sugiono dibatasi dengan kata Gerindra, menteri, wapres, atau Prabowo). Hitungan X bisa sedikit berbeda dari hasil pencarian di aplikasi.</p></section>";
+  }
+  function setelahDiskursus() {
+    var D = E.D.diskursus_x; if (!D) return;
+    var hari = []; var akhir = ""; Object.keys(D.seri).forEach(function (k) { Object.keys(D.seri[k]).forEach(function (d) { if (d > akhir) akhir = d; }); });
+    for (var t = eDtgl(ED_DARI); t <= eDtgl(akhir); t += 864e5) hari.push(new Date(t).toISOString().slice(0, 10));
+    setelahTema();
+    $$(".ed-svg").forEach(function (svg) {
+      var s = D.seri[svg.dataset.k] || {}, v = hari.map(function (d) { return s[d] || 0; }), maks = Math.max.apply(null, v.concat([1]));
+      var titik = svg.querySelector(".ed-titik"), baca = svg.parentNode.querySelector(".ed-baca");
+      function gerak(ev) {
+        var r = svg.getBoundingClientRect(), x = ((ev.touches ? ev.touches[0].clientX : ev.clientX) - r.left) / r.width * 300;
+        var i = Math.max(0, Math.min(hari.length - 1, Math.round((x - 4) / 292 * (hari.length - 1))));
+        titik.setAttribute("cx", 4 + i / (hari.length - 1) * 292); titik.setAttribute("cy", 8 + (1 - v[i] / maks) * 72);
+        baca.textContent = E.tgl(hari[i]) + ": " + E.f(v[i]) + " unggahan";
+      }
+      svg.addEventListener("mousemove", gerak); svg.addEventListener("touchmove", gerak, { passive: true });
+      svg.addEventListener("mouseleave", function () { titik.setAttribute("cx", -10); baca.textContent = ""; });
+    });
+  }
   function elitTikBulan(sampai) { var B = ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agu", "Sep", "Okt", "Nov", "Des"], t = []; for (var i = 0; i < 12; i++) { var s = "2026-" + (i < 9 ? "0" : "") + (i + 1) + "-01"; if (s <= sampai) t.push([s, B[i]]); } return t; }
   function elitTikMinggu(dari, sampai) {
     var t = [], d = new Date(dari + "T00:00:00Z"), B = ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Agu", "Sep", "Okt", "Nov", "Des"];
@@ -204,8 +312,9 @@
         (nSes ? '<section class="elit-bagian">' + palang("Gambar 13", "Sesudah 3 November, diperbesar") +
           '<div class="et-wadah"><div class="gulir">' + elitLintasan({ dari: zoomDari, sampai: zoomSampai, tik: elitTikMinggu(zoomDari, zoomSampai), labelPeristiwa: true, tinggi: 36, sela: 16, aria: "Pernyataan dan peristiwa 27 Oktober sampai 12 Desember 2026" }) + '</div><div class="et-tip" hidden></div></div>' +
           '<p class="rel-cat">' + nSes + " pernyataan sesudah 3 November. Peristiwa bertanda pudar belum terjadi saat data ini disusun (" + esc(E.tgl(akhir)) + ").</p></section>" : "") +
-        (nW ? '<section class="elit-bagian">' + palang("Gambar 14", "Kursi wapres yang kosong: siapa mengusulkan siapa") + elitGambarWapres() + "</section>" : "") : "") +
+        (nW ? '<section class="elit-bagian">' + palang("Gambar 14", "Kursi wapres yang kosong: siapa mengusulkan siapa") + elitGambarWapres() + "</section>" : "") + elitDiskursus() : "") +
       '<section class="elit-bagian" id="elit-daftar">' + palang("Daftar", "Semua pernyataan") +
+      (function () { var s = R.filter(function (r) { return r.kanal === "x" || r.kanal === "threads"; }).length; return '<p class="elit-kanal-ringkas">' + (R.length - s) + " pernyataan dari pemberitaan media, " + s + " dari unggahan X atau Threads milik tokohnya sendiri (teks diambil lewat embed resmi platform).</p>"; })() +
       '<aside class="elit-batas"><b>Baca sebagai jejak pernyataan.</b> Hubungan di sini hanya merujuk pada kutipan dan sumber bertanggal, bukan prediksi pencalonan atau tafsir motif. Partai yang tidak muncul belum tentu tidak bersikap; bisa jadi pernyataannya belum terjangkau penelusuran. <a href="#/ruu-pemilu">Kajian RUU Pemilu ↗</a></aside>' +
       '<form class="elit-filter" id="elit-filter"><label>Aktor, lembaga, atau sasaran<input id="elit-aktor" type="search" placeholder="Cari nama, partai, atau sasaran"></label><label>Jenis pernyataan<select id="elit-jenis"><option value="">Semua jenis</option>' + EJ.map(function (x) { return "<option>" + esc(x[0]) + "</option>"; }).join("") +
       '</select></label><label>Topik<select id="elit-topik"><option value="">Semua topik</option><option>pilpres 2029</option><option>wapres 2026</option><option>kasus Listyo</option></select></label><label>Masa<select id="elit-masa"><option value="">Seluruh 2026</option><option value="seb">Sebelum 3 Nov</option><option value="ses">Sesudah 3 Nov</option></select></label><button type="reset" class="btn">Atur ulang</button></form>' +
@@ -220,7 +329,7 @@
       var baris = semua.filter(function (r) { return (!q || (r.id + " " + r.aktor + " " + r.lembaga + " " + (r.sasaran || "")).toLocaleLowerCase("id").indexOf(q) !== -1) && (!jenis || r.jenis === jenis) && (!topik || eTopik(r) === topik) && (!masa || (masa === "seb" ? r.tanggal < E_PATAH : r.tanggal >= E_PATAH)); });
       $("#elit-ringkas").textContent = baris.length + " dari " + semua.length + " pernyataan · terbaru lebih dahulu";
       $("#elit-hasil").innerHTML = baris.length ? '<ol class="elit-jejak">' + baris.map(function (r) {
-        return '<li class="elit-catatan" id="' + esc(r.id) + '"><div class="elit-waktu"><time datetime="' + esc(r.tanggal) + '">' + esc(E.tgl(r.tanggal)) + "</time><span>" + esc(r.id) + '</span><span class="elit-masa' + (r.tanggal >= E_PATAH ? " ses" : "") + '">' + (r.tanggal >= E_PATAH ? "sesudah 3 Nov" : "sebelum 3 Nov") + '</span></div><article><div class="elit-meta"><span>' + elitIkon(EJ_KODE[r.jenis] || "i") + esc(r.jenis) + " · " + esc(eTopik(r)) + '</span><span class="elit-status">' + (r.status === "dicek tim" ? "dicek tim" : "belum dicek tim") + '</span></div><h2 class="elit-relasi"><span>' + esc(r.aktor) + "<small>" + esc(r.lembaga) + '</small></span><span class="elit-panah" aria-label="tentang">→</span>' + (r.sasaran ? "<span>" + esc(r.sasaran) + "</span>" : '<span class="elit-tanpa">Tidak menyebut orang</span>') + "</h2>" +
+        return '<li class="elit-catatan" id="' + esc(r.id) + '"><div class="elit-waktu"><time datetime="' + esc(r.tanggal) + '">' + esc(E.tgl(r.tanggal)) + "</time><span>" + esc(r.id) + '</span><span class="elit-masa' + (r.tanggal >= E_PATAH ? " ses" : "") + '">' + (r.tanggal >= E_PATAH ? "sesudah 3 Nov" : "sebelum 3 Nov") + '</span></div><article><div class="elit-meta"><span>' + elitIkon(EJ_KODE[r.jenis] || "i") + esc(r.jenis) + " · " + esc(eTopik(r)) + '</span><span class="elit-status">' + (r.kanal === "x" || r.kanal === "threads" ? '<b class="elit-kanal">' + (r.kanal === "x" ? "X" : "Threads") + " " + esc(r.akun || "") + "</b> " : "") + (r.status === "dicek tim" ? "dicek tim" : "belum dicek tim") + '</span></div><h2 class="elit-relasi"><span>' + esc(r.aktor) + "<small>" + esc(r.lembaga) + '</small></span><span class="elit-panah" aria-label="tentang">→</span>' + (r.sasaran ? "<span>" + esc(r.sasaran) + "</span>" : '<span class="elit-tanpa">Tidak menyebut orang</span>') + "</h2>" +
           (r.isu ? '<p class="elit-isu">Isu: ' + esc(r.isu) + "</p>" : "") + "<blockquote>“" + esc(r.kutipan) + "”</blockquote>" +
           '<a class="elit-sumber" href="' + E.url(r.sumber_url) + '" target="_blank" rel="noopener noreferrer">Baca sumber · ' + esc(r.outlet) + " ↗</a>" +
           (r.catatan ? '<p class="elit-catatan-kaki">' + esc(r.catatan) + "</p>" : "") + "</article></li>";
@@ -265,6 +374,7 @@
       });
     });
     $$(".ew-m").forEach(function (b) { b.addEventListener("click", function () { bukaBaris(b.dataset.id); }); b.title = (per[b.dataset.id] || {}).aktor || ""; });
+    setelahDiskursus();
   }
 
   /* ---------- potongan kecil ---------- */

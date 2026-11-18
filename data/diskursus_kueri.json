@@ -1,0 +1,110 @@
+{
+ "catatan": "Daftar tertutup kueri X Post Counts untuk Peta Elit: tema (percakapan umum) dan tokoh x topik. Ubah hanya dengan persetujuan Odri: tiap kueri baru menambah biaya riwayat (~$0.11) dan pembaruan.",
+ "mulai": "2026-01-01",
+ "tokoh": [
+  {
+   "id": "dasco",
+   "nama": "Sufmi Dasco Ahmad",
+   "q": "Dasco OR \"Sufmi Dasco\""
+  },
+  {
+   "id": "gibran",
+   "nama": "Gibran Rakabuming Raka",
+   "q": "Gibran"
+  },
+  {
+   "id": "kdm",
+   "nama": "Dedi Mulyadi (KDM)",
+   "q": "\"Dedi Mulyadi\" OR KDM"
+  },
+  {
+   "id": "muzani",
+   "nama": "Ahmad Muzani",
+   "q": "Muzani"
+  },
+  {
+   "id": "sugiono",
+   "nama": "Sugiono",
+   "q": "Sugiono (Gerindra OR menko OR menteri OR wapres OR cawapres OR Prabowo)"
+  },
+  {
+   "id": "prabowo",
+   "nama": "Prabowo Subianto",
+   "q": "Prabowo"
+  },
+  {
+   "id": "jokowi",
+   "nama": "Joko Widodo",
+   "q": "Jokowi OR \"Joko Widodo\""
+  },
+  {
+   "id": "listyo",
+   "nama": "Listyo Sigit Prabowo",
+   "q": "Listyo"
+  },
+  {
+   "id": "ahy",
+   "nama": "Agus Harimurti Yudhoyono",
+   "q": "AHY OR \"Agus Harimurti\""
+  },
+  {
+   "id": "cakimin",
+   "nama": "Muhaimin Iskandar",
+   "q": "\"Cak Imin\" OR Muhaimin"
+  }
+ ],
+ "topik": [
+  {
+   "id": "wapres",
+   "nama": "wapres",
+   "q": "wapres OR cawapres OR \"wakil presiden\""
+  },
+  {
+   "id": "2029",
+   "nama": "2029",
+   "q": "2029"
+  },
+  {
+   "id": "ijazah",
+   "nama": "ijazah",
+   "q": "ijazah"
+  },
+  {
+   "id": "sadap",
+   "nama": "penyadapan/makar",
+   "q": "sadap OR penyadapan OR makar"
+  },
+  {
+   "id": "mundur",
+   "nama": "mundur",
+   "q": "mundur"
+  }
+ ],
+ "tema": [
+  {
+   "id": "wapres",
+   "nama": "Kursi wapres dan penggantinya",
+   "q": "(wapres OR cawapres OR \"wakil presiden\") (pengganti OR kosong OR MPR OR mundur)"
+  },
+  {
+   "id": "sadap",
+   "nama": "Penyadapan dan makar",
+   "q": "penyadapan OR disadap OR makar"
+  },
+  {
+   "id": "ijazah",
+   "nama": "Ijazah Gibran",
+   "q": "ijazah Gibran OR \"ijazah wapres\" OR suket Gibran"
+  },
+  {
+   "id": "2029",
+   "nama": "Pilpres 2029",
+   "q": "\"pilpres 2029\" OR \"capres 2029\" OR \"cawapres 2029\" OR \"pemilu 2029\""
+  },
+  {
+   "id": "jokowi",
+   "nama": "Jokowi dan keluarganya",
+   "q": "Jokowi (Gibran OR Kaesang OR Bobby OR PSI OR dinasti)"
+  }
+ ]
+}
