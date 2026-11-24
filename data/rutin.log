@@ -1381,3 +1381,39 @@ semua kandidat sudah punya URL
 ── bangun ulang bundel situs
 /Users/odripads/eppos-intel/dist/eppos-outlook.html 2.75 MB
 ── selesai · 0 kandidat menunggu tinjauan · buka tinjau.html
+════════ 2026-11-24 09:30:00 · rutin harian (40 sel) ════════
+── sapuan arsip outlet (WordPress REST, tanpa batas laju bersama)
+  GAGAL indonesiadefense.com 'ASN terlibat politik praktis' 2024: HTTPError
+  GAGAL depoknews.id 'ASN terlibat politik praktis' 2024: JSONDecodeError
+  GAGAL indonesiadefense.com 'sanksi disiplin ASN pilkada' 2024: HTTPError
+  GAGAL depoknews.id 'sanksi disiplin ASN pilkada' 2024: JSONDecodeError
+
+0 kandidat baru · 0 menunggu tinjauan
+── sapuan Google News (dibatasi laju; pelan)
+  2015 Sumatera Utara     paksaan aparat sipil      0 hasil → 0 kandidat
+  2015 Sumatera Utara     paksaan aparat sipil      0 hasil → 0 kandidat
+  2015 Sumatera Utara     paksaan kepala desa dan   0 hasil → 0 kandidat
+  2015 Sumatera Utara     paksaan kepala desa dan   0 hasil → 0 kandidat
+
+0 kandidat baru · 0 menunggu tinjauan · 465492/470592 sel grid selesai
+── selesaikan URL kandidat (bertahap, endpoint Google membatasi laju)
+semua kandidat sudah punya URL
+── verifikasi judul sumber baru
+[17/18] gagal         https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_  →  
+[18/18] gagal         https://s.mkri.id/public/content/persidangan/putusan/putusan_sidang_10  →  
+111 terverifikasi, 18 gagal → /Users/odripads/eppos-intel/data/judul_terverifikasi.json
+── terima kandidat baru (izin berdiri Odri, 29 Sep 2026)
+0 kandidat ditandai · 36 tertahan tanpa URL · 0 belum ditandai
+── masukkan temuan otomatis ke lapisan peta
+3751 kandidat disisihkan sebagai di luar lingkup (tercatat, tidak dibuang)
+2578 baris otomatis · 2129 punya kab/kota · 191 tanpa lokasi · 229 dua sumber
+38 provinsi tersentuh: Jawa Timur(367), Jawa Tengah(288), Sulawesi Selatan(267), Jawa Barat(178), Banten(144), Kepulauan Riau(95), Maluku Utara(76), Sulawesi Tenggara(70), Kalimantan Tengah(60), Sulawesi Utara(59), Sumatera Utara(58), Sulawesi Tengah(53)
+── bangun ulang data dari xlsx
+ "insiden": 57,
+ "kasus_resmi": 83,
+  "insiden": 13,
+ "judul_terverifikasi": 93,
+ "koordinat": 105,
+── bangun ulang bundel situs
+/Users/odripads/eppos-intel/dist/eppos-outlook.html 2.75 MB
+── selesai · 0 kandidat menunggu tinjauan · buka tinjau.html
