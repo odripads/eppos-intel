@@ -469,7 +469,7 @@
   "status": "terverifikasi"
  },
  "https://www.mkri.id/berita/pelanggaran-netralitas-asn-dalam-pilkada-tanah-datar-22485": {
-  "diambil": "2026-11-24T09:39:28",
+  "diambil": "2026-11-25T09:40:10",
   "http": 403,
   "url_akhir": "https://www.mkri.id/berita/pelanggaran-netralitas-asn-dalam-pilkada-tanah-datar-22485",
   "judul": null,
@@ -518,14 +518,14 @@
   "status": "terverifikasi"
  },
  "https://jatim.jpnn.com/politik/32783": {
-  "diambil": "2026-11-24T09:39:30",
+  "diambil": "2026-11-25T09:40:12",
   "http": 200,
   "url_akhir": "https://jatim.jpnn.com/politik/32783",
   "judul": null,
   "status": "gagal"
  },
  "https://timesindonesia.co.id/politik/518152": {
-  "diambil": "2026-11-24T09:39:32",
+  "diambil": "2026-11-25T09:40:14",
   "http": 200,
   "url_akhir": "https://timesindonesia.co.id/politik/518152",
   "judul": null,
@@ -616,21 +616,21 @@
   "status": "terverifikasi"
  },
  "https://ternate.tribunnews.com/2024/12/10/bawaslu-proses-dugaan-pelanggaran-tsm-di-pilkada-halmahera-selatan-2024": {
-  "diambil": "2026-11-24T09:39:36",
+  "diambil": "2026-11-25T09:40:17",
   "http": 202,
   "url_akhir": "https://ternate.tribunnews.com/2024/12/10/bawaslu-proses-dugaan-pelanggaran-tsm-di-pilkada-halmahera-selatan-2024",
   "judul": null,
   "status": "gagal"
  },
  "https://papua.tribunnews.com/2024/11/13/dua-pejabat-publik-papua-dilaporkan-ke-bawaslu-terkait-pelanggaran-netralitas-asn": {
-  "diambil": "2026-11-24T09:39:38",
+  "diambil": "2026-11-25T09:40:19",
   "http": 202,
   "url_akhir": "https://papua.tribunnews.com/2024/11/13/dua-pejabat-publik-papua-dilaporkan-ke-bawaslu-terkait-pelanggaran-netralitas-asn",
   "judul": null,
   "status": "gagal"
  },
  "https://bantuanhukum.or.id/5-tahun-uu-ite-1-pasal-represif-25-korban-lalu-berapa-lagi-yang-akan-di-prita-kan/": {
-  "diambil": "2026-11-24T09:39:23",
+  "diambil": "2026-11-25T09:40:05",
   "http": 403,
   "url_akhir": "https://bantuanhukum.or.id/5-tahun-uu-ite-1-pasal-represif-25-korban-lalu-berapa-lagi-yang-akan-di-prita-kan/",
   "judul": null,
@@ -714,14 +714,14 @@
   "status": "terverifikasi"
  },
  "https://kaltim.tribunnews.com/2021/02/27/bkpsdm-nunukan-tepis-isu-pemberhentian-24-honorer-akibat-dendam-kesumat-pilkada-2020": {
-  "diambil": "2026-11-24T09:39:40",
+  "diambil": "2026-11-25T09:40:21",
   "http": 202,
   "url_akhir": "https://kaltim.tribunnews.com/2021/02/27/bkpsdm-nunukan-tepis-isu-pemberhentian-24-honorer-akibat-dendam-kesumat-pilkada-2020",
   "judul": null,
   "status": "gagal"
  },
  "https://www.tempo.co/politik/bawaslu-catat-3-daerah-ini-paling-banyak-kasus-asn-tak-netral--904454": {
-  "diambil": "2026-11-24T09:39:43",
+  "diambil": "2026-11-25T09:40:24",
   "http": 403,
   "url_akhir": "https://www.tempo.co/politik/bawaslu-catat-3-daerah-ini-paling-banyak-kasus-asn-tak-netral--904454",
   "judul": null,
@@ -819,49 +819,49 @@
   "status": "terverifikasi"
  },
  "https://www.advokasi.aji.or.id/index.php/data-kekerasan?page=45": {
-  "diambil": "2026-11-24T09:39:26",
+  "diambil": "2026-11-25T09:40:08",
   "http": null,
   "judul": null,
   "status": "gagal",
   "error": "ConnectionError"
  },
  "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_Putusan%20162%20PHPUD%202010.pdf": {
-  "diambil": "2026-11-24T09:39:45",
+  "diambil": "2026-11-25T09:40:26",
   "http": 200,
   "url_akhir": "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_Putusan%20162%20PHPUD%202010.pdf",
   "judul": null,
   "status": "gagal"
  },
  "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_Putusan%20Perkara%20217%20Pemilukada%20Kabupaten%20Kutai%20Timur_telah%20baca%2029%20Desember%202010.pdf": {
-  "diambil": "2026-11-24T09:39:48",
+  "diambil": "2026-11-25T09:40:28",
   "http": 200,
   "url_akhir": "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_Putusan%20Perkara%20217%20Pemilukada%20Kabupaten%20Kutai%20Timur_telah%20baca%2029%20Desember%202010.pdf",
   "judul": null,
   "status": "gagal"
  },
  "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_PUT%2098-99%20MUBA%20TELAH%20BACA.pdf": {
-  "diambil": "2026-11-24T09:39:51",
+  "diambil": "2026-11-25T09:40:31",
   "http": 200,
   "url_akhir": "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_PUT%2098-99%20MUBA%20TELAH%20BACA.pdf",
   "judul": null,
   "status": "gagal"
  },
  "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_Putusan%20Perkara%2027-PHPU.D-IX-2011.pdf": {
-  "diambil": "2026-11-24T09:39:53",
+  "diambil": "2026-11-25T09:40:33",
   "http": 200,
   "url_akhir": "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_Putusan%20Perkara%2027-PHPU.D-IX-2011.pdf",
   "judul": null,
   "status": "gagal"
  },
  "https://s.mkri.id/public/content/persidangan/putusan/putusan_sidang_46-PHPU.D-IX-2011%20ROKAN%20HILIR%20telah%20baca.pdf": {
-  "diambil": "2026-11-24T09:39:56",
+  "diambil": "2026-11-25T09:40:35",
   "http": 200,
   "url_akhir": "https://s.mkri.id/public/content/persidangan/putusan/putusan_sidang_46-PHPU.D-IX-2011%20ROKAN%20HILIR%20telah%20baca.pdf",
   "judul": null,
   "status": "gagal"
  },
  "https://www.mkri.id/public/content/persidangan/risalah/risalah_sidang_Putusan%2024.PUU-VII.2009,%2075.PUU-VIII.2010,%2028,%2029.PHPU.D-IX.2011,%2031%20Maret%202011.pdf": {
-  "diambil": "2026-11-24T09:39:59",
+  "diambil": "2026-11-25T09:40:38",
   "http": 200,
   "url_akhir": "https://www.mkri.id/public/content/persidangan/risalah/risalah_sidang_Putusan%2024.PUU-VII.2009,%2075.PUU-VIII.2010,%2028,%2029.PHPU.D-IX.2011,%2031%20Maret%202011.pdf",
   "judul": null,
@@ -875,14 +875,14 @@
   "status": "terverifikasi"
  },
  "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_56%20PHPU%202012%20ACEH%20TENGGARA_telah%20baca%2013-8-2012.pdf": {
-  "diambil": "2026-11-24T09:40:02",
+  "diambil": "2026-11-25T09:40:40",
   "http": 200,
   "url_akhir": "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_56%20PHPU%202012%20ACEH%20TENGGARA_telah%20baca%2013-8-2012.pdf",
   "judul": null,
   "status": "gagal"
  },
  "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_36%20PHPU%202012%20GAYO%20LUES-telah%20BACA%204-6-2012.pdf": {
-  "diambil": "2026-11-24T09:40:05",
+  "diambil": "2026-11-25T09:40:42",
   "http": 200,
   "url_akhir": "https://www.mkri.id/public/content/persidangan/putusan/putusan_sidang_36%20PHPU%202012%20GAYO%20LUES-telah%20BACA%204-6-2012.pdf",
   "judul": null,
@@ -896,7 +896,7 @@
   "status": "terverifikasi"
  },
  "https://s.mkri.id/public/content/persidangan/putusan/putusan_sidang_102%20PHPU%202013-Parigi%20Moutong-telah%20ucap%2029%20Agustus%202013.pdf": {
-  "diambil": "2026-11-24T09:40:07",
+  "diambil": "2026-11-25T09:40:45",
   "http": 200,
   "url_akhir": "https://s.mkri.id/public/content/persidangan/putusan/putusan_sidang_102%20PHPU%202013-Parigi%20Moutong-telah%20ucap%2029%20Agustus%202013.pdf",
   "judul": null,
