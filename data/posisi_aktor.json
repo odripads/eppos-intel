@@ -811,5 +811,53 @@
     "diisi_oleh": "bot-posisi",
     "status": "otomatis",
     "catatan": "Pernyataan seusai kunjungan kerja di Bogor 13 Nov, diberitakan 15 Nov 2026. Usul berbasis jumlah kursi dan alat kelengkapan dewan, bukan persentase suara. Tidak dikonversi menjadi persentase dan bukan keputusan DPR atau posisi resmi seluruh Golkar."
+  },
+  {
+    "id": "POS-0054",
+    "tanggal": "2026-11-12",
+    "aktor": "Heroik M Pratama",
+    "jenis_aktor": "masyarakat sipil",
+    "lembaga": "Perludem; Koalisi Masyarakat Sipil untuk Kodifikasi UU Pemilu",
+    "isu": "syarat pencapresan",
+    "sikap": "batasi koalisi",
+    "angka": "maks. 30% (alt. 50%) parpol peserta",
+    "kutipan": "Koalisi juga mengusulkan pembatasan jumlah partai politik dalam koalisi pengusung pasangan calon maksimal 30 persen dari jumlah partai peserta pemilu. Sebagai alternatif, koalisi menawarkan batas maksimal 50 persen",
+    "sumber_url": "https://rumahpemilu.or.id/rdpu-ruu-pemilu-koalisi-usulkan-penghapusan-presidential-dan-parliamentary-threshold/",
+    "outlet": "rumahpemilu.or.id",
+    "diisi_oleh": "bot-posisi",
+    "status": "otomatis",
+    "catatan": "RDPU Komisi II DPR 12 Nov 2026 (diterbitkan 13 Nov 2026). Koalisi juga mengusulkan penghapusan ambang bawah pencalonan presiden; batas atas dihitung dari jumlah partai peserta pemilu, bukan kursi atau suara."
+  },
+  {
+    "id": "POS-0055",
+    "tanggal": "2026-11-11",
+    "aktor": "Valina Singka Subekti",
+    "jenis_aktor": "masyarakat sipil",
+    "lembaga": "Universitas Indonesia, FISIP (Guru Besar Ilmu Politik)",
+    "isu": "ambang batas parlemen",
+    "sikap": "lainnya",
+    "angka": "maks. 4% DPR; 0% DPRD",
+    "kutipan": "Menurut kami, PT4% ini diberlakukan hanya untuk tingkat DPR pusat, tidak diberlakukan untuk DPRD. Baik itu provinsi maupun kabupaten/kota, ini tidak lain adalah untuk melindungi suara rakyat",
+    "sumber_url": "https://nasional.kontan.co.id/news/ruu-pemilu-pakar-ui-usulkan-ambang-batas-parlemen-maksimal-4",
+    "outlet": "kontan.co.id",
+    "diisi_oleh": "bot-posisi",
+    "status": "otomatis",
+    "catatan": "RDPU Komisi II DPR 11 Nov 2026. Mengusulkan batas atas maksimal 4% hanya untuk DPR RI dan tidak diberlakukan bagi DPRD provinsi maupun kabupaten/kota. Ia juga merupakan anggota DKPP RI, tetapi hadir sebagai guru besar UI."
+  },
+  {
+    "id": "POS-0056",
+    "tanggal": "2026-11-20",
+    "aktor": "Muhammad Rifqinizamy Karsayuda",
+    "jenis_aktor": "elit parlemen",
+    "lembaga": "Partai NasDem (Ketua Komisi II DPR)",
+    "isu": "ambang batas parlemen",
+    "sikap": "naikkan",
+    "angka": ">4%",
+    "kutipan": "Nah, karena itu ide parliamentary threshold itu merupakan keniscayaan. Berapa angkanya itu masih akan dibahas, tetapi kecenderungannya di atas parliamentary threshold yang ada sekarang, yaitu di atas 4 persen",
+    "sumber_url": "https://emedia.dpr.go.id/news/2026/11/22/bidik-reformasi-sistem-pemilu-rifqinizamy-pembenahan-tak-bisa-parsial",
+    "outlet": "emedia.dpr.go.id",
+    "diisi_oleh": "bot-posisi",
+    "status": "otomatis",
+    "catatan": "Kunjungan kerja Panja RUU Pemilu di Banjarbaru 20 Nov 2026 (terbit 22 Nov 2026). Sebelumnya menyebut 7% atas nama NasDem (POS-0005); di sini menyebut angka final masih dibahas dengan kecenderungan di atas 4%."
   }
 ]

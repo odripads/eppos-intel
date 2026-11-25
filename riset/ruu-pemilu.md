@@ -1,7 +1,20 @@
 # Riset RUU Pemilu (bot-posisi)
 
 Catatan bersumber untuk Fokus 2. Setiap butir punya tautan. Yang belum pasti ditandai **[belum pasti]**.
-Terakhir diperbarui: 18 Nov 2026 (lanjutan riset; perubahan lokal, belum diterbitkan).
+Terakhir diperbarui: 25 Nov 2026 (lanjutan riset dan pembaruan posisi; diterbitkan).
+
+## Pembaruan 25 November 2026
+- **Agenda Panja RUU Pemilu (11–24 Nov 2026):**
+  - 11 Nov: RDPU perdana Panja dengan pimpinan/akademisi 10 PTN, termasuk UI, UGM, Unpad, Unand, Unair, Unlam, Unila, Unsrat, Unipa, dan Unpatti ([Kompas.com, 11 Nov](https://nasional.kompas.com/read/2026/11/11/11095381/panja-dpr-mulai-bahas-ruu-pemilu-undang-rektor-ui-ugm-hingga-unpad)). Wakil Ketua Komisi II Dede Yusuf menyebut ada **22 putusan MK** terkait kepemiluan yang harus diakomodasi dan bersinggungan dengan UU Pemda, UU Pilkada, serta UU Parpol ([Kompas.com, 11 Nov](https://nasional.kompas.com/read/2026/11/11/16184211/komisi-ii-dpr-kesulitan-terjemahkan-22-putusan-mk-dalam-ruu-pemilu)).
+  - 17 Nov: Komisi II menerima masukan Koalisi Perempuan Indonesia soal kuota keterwakilan perempuan 30% dan usia pemilih; Ketua Panja Bahtra Banong menegaskan masukan ambang batas parlemen dan pencapresan belum menjadi keputusan ([Todaynews, 17–18 Nov](https://todaynews.id/revisi-uu-pemilu-mulai-bahas-ambang-batas-parlemen-dan-keterwakilan-perempuan/)).
+  - 20 Nov: Kunjungan kerja spesifik Panja ke tiga provinsi — Kalimantan Selatan (Banjarbaru), Bali (Denpasar), dan Sumatera Utara (Medan) — menghimpun masukan akademisi, pemda, Bawaslu daerah, dan DKPP ([E-Media DPR RI, 22 Nov](https://emedia.dpr.go.id/news/2026/11/22/aria-bima-minta-evaluasi-pemilu-2019-dan-2024-jadi-pijakan-revisi-uu-pemilu), [25 Nov](https://emedia.dpr.go.id/news/2026/11/25/ruu-pemilu-didorong-bervisi-jangka-panjang-pertimbangkan-demokrasi-asimetris); [detikBali, 20 Nov](https://www.detik.com/bali/berita/d-8762600/panja-dpr-serap-masukan-akademisi-bali-untuk-revisi-uu-pemilu); [DKPP, 21 Nov](https://dkpp.go.id/dkpp-sampaikan-tiga-usulan-strategis-penguatan-kelembagaan-dalam-penyusunan-ruu-pemilu/)). DKPP menyampaikan tiga usulan penguatan kelembagaan (Sekretariat menjadi Setjen, pencegahan/pendidikan etika).
+  - 24 Nov: Kapoksi PKB Komisi II Muhammad Khozin menilai pengaturan e-rekap (penyempurnaan Sirekap) lebih mendesak daripada e-voting karena kerentanan keamanan digital ([Kompas.com, 24 Nov](https://nasional.kompas.com/read/2026/11/24/18374641/ruu-pemilu-anggota-dpr-nilai-aturan-e-rekap-lebih-mendesak-daripada-e-voting)).
+- **Tambahan baris posisi (+3 baris, total 56 baris):**
+  - **Heroik M Pratama** (`POS-0054`, Perludem/Koalisi Masyarakat Sipil, `syarat pencapresan` = `batasi koalisi`, 12 Nov): ditemukan kutipan langsung di [Rumah Pemilu, 13 Nov](https://rumahpemilu.or.id/rdpu-ruu-pemilu-koalisi-usulkan-penghapusan-presidential-dan-parliamentary-threshold/) mengenai usul batas atas koalisi capres maks. 30% (alternatif 50%) dari jumlah partai peserta pemilu.
+  - **Valina Singka Subekti** (`POS-0055`, Guru Besar FISIP UI, `ambang batas parlemen` = `lainnya`, 11 Nov): dalam RDPU 11 Nov mengusulkan ambang batas paling tinggi 4% hanya untuk DPR RI dan ditiadakan untuk DPRD provinsi/kabupaten/kota ([Kontan, 11 Nov](https://nasional.kontan.co.id/news/ruu-pemilu-pakar-ui-usulkan-ambang-batas-parlemen-maksimal-4); [RM.id](https://rm.id/baca-berita/nasional/334204/usulan-akademisi-threshold-empat-persen-hanya-untuk-di-senayan)).
+  - **Muhammad Rifqinizamy Karsayuda** (`POS-0056`, Ketua Komisi II/NasDem, `ambang batas parlemen` = `naikkan`, 20 Nov): menyatakan angka final masih dibahas dengan kecenderungan di atas 4% ([E-Media DPR RI, 22 Nov](https://emedia.dpr.go.id/news/2026/11/22/bidik-reformasi-sistem-pemilu-rifqinizamy-pembenahan-tak-bisa-parsial)).
+  - **Taufan Pawe** (Golkar, Anggota Komisi II/Panja, 20 Nov): menyatakan opsi 4%, 5%, 6%, bahkan lebih masih terbuka untuk dikaji bersama akademisi; belum menyatakan sikap angka tertentu sehingga dicatat di riset saja ([E-Media DPR RI, 22 Nov](https://emedia.dpr.go.id/news/2026/11/22/taufan-pawe-parliamentary-threshold-dan-desain-pemilu-nasional-lokal-perlu-dikaji)).
+- **Batas pemeriksaan:** Rilis Puskapol UI tentang Panja RUU Pemilu tertahan verifikasi peramban sehingga tidak dibaca penuh; situs ICW, KoDe Inisiatif, dan PUSaKO untuk pernyataan 18–25 Nov belum diperiksa langsung. Ketiga baris baru berstatus `otomatis`, belum dicek tim.
 
 ## Pembaruan 18 November 2026
 - **RDPU sudah berlangsung:** Laporan Singkat Komisi II yang tersimpan di `assets/dokumen/laporan-singkat-komisi2-2026-11-12.pdf` dibaca langsung. Rapat terbuka dengan Koalisi Masyarakat Sipil untuk Kodifikasi UU Pemilu berlangsung Kamis 12 Nov 2026, dibuka 10.20 dan ditutup 13.13 WIB. Catatan rapat menyebut masukan sebagai bahan awal penyusunan, bukan keputusan mengadopsi usulan.
@@ -33,7 +46,7 @@ Terakhir diperbarui: 18 Nov 2026 (lanjutan riset; perubahan lokal, belum diterbi
   bulan sebelum masa jabatan KPU berakhir, sehingga tenggatnya Oktober 2026. Komisi II menawarkan dua skenario ke
   pemerintah: (1) seleksi jalan sekarang dengan UU 7/2017 tetapi nama diajukan ke DPR setelah UU baru disahkan;
   (2) pemerintah menunggu UU baru dulu baru membentuk timsel ([kumparan](https://kumparan.com/kumparannews/komisi-ii-dpr-sodorkan-2-opsi-skenario-ke-pemerintah-soal-pembentukan-timsel-kpu-28Wo9zmWus0)).
-- Belum ada Keppres timsel 2027–2032 yang saya temukan. **[belum pasti]**
+- Belum ada pengumuman resmi Keppres timsel 2027–2032 yang ditemukan hingga 25 Nov 2026. **[belum pasti]** Menurut Anggota Panja Mardani Ali Sera, Keppres pembentukan timsel KPU–Bawaslu disebut sudah diteken Presiden tetapi belum diumumkan ([Kompas.id, 23 Okt](https://www.kompas.id/artikel/keppres-timsel-kpu-dan-bawaslu-disebut-sudah-diteken-tetapi-tak-kunjung-diumumkan)); Koalisi Masyarakat Sipil pada 25 Okt mendesak Presiden segera membuka nama-nama timsel ke publik ([Carapandang, 25 Okt](https://carapandang.com/news/read/presiden-didesak-buka-nama-pansel-kpu-bawaslu-koalisi-masyarakat-sipil-soroti-keterlambatan)).
 - Hadar Nafis Gumay (NETGRIT, mantan komisioner KPU), 29 Okt: jumlah anggota KPU dan Bawaslu "tidak perlu ditambah";
   menunda timsel sampai UU baru selesai dinilai "Tidak tepat sama sekali" ([Kompas.com, 30 Okt](https://nasional.kompas.com/read/2026/10/30/13081451/eks-komisioner-jumlah-anggota-kpu-dan-bawaslu-tidak-perlu-ditambah)).
   Kompas juga menautkan berita "Koalisi Masyarakat Tolak Pembentukan Pansel KPU-Bawaslu Ditunda". **[belum dibaca]**
@@ -49,12 +62,11 @@ Terakhir diperbarui: 18 Nov 2026 (lanjutan riset; perubahan lokal, belum diterbi
     dan masa jabatan KPU 2022–2027 berakhir 12 Apr 2027 ([Kompas.com](https://nasional.kompas.com/read/2026/10/29/15295221/pansel-kpu-tak-kunjung-terbentuk-pks-minta-pemerintah-patuhi-uu)).
   - Usul mantan komisioner KPU I Gusti Putu Artha (7 Nov, HUT KPU): pansel 17 orang dibentuk Presiden, komisioner
     dilantik langsung tanpa uji kelayakan DPR ([detik](https://news.detik.com/berita/d-8742625/muncul-usulan-komisioner-dipilih-presiden-lewat-pansel-di-hut-ke-73-kpu)).
-- Bawaslu: belum dicari terpisah. **[belum dicek]**
+- Bawaslu: diatur oleh UU 7/2017 yang sama (Pasal 118, timsel dibentuk paling lambat 6 bulan sebelum akhir jabatan 12 Apr 2027); belum ada Keppres/pengumuman terpisah yang ditemukan hingga 25 Nov 2026. **[belum pasti]**
 
 ## 3. Pembanding: seleksi 2022–2027
 - Anggota KPU 2022–2027 dilantik Presiden Joko Widodo pada 12 April 2022 ([kumparan](https://kumparan.com/kumparannews/komisi-ii-dpr-sodorkan-2-opsi-skenario-ke-pemerintah-soal-pembentukan-timsel-kpu-28Wo9zmWus0)).
-- Hasil pencarian menyebut Keppres timsel 120/P Tahun 2021, pendaftaran 18 Okt–15 Nov 2021, lalu uji kelayakan 24
-  calon di Komisi II pada Februari 2022. **[belum pasti: belum dibaca langsung]**
+- Keppres timsel **120/P Tahun 2021** tentang Pembentukan Tim Seleksi Calon Anggota KPU dan Bawaslu Masa Jabatan 2022–2027 ditandatangani Presiden Joko Widodo pada 8 Oktober 2021 (11 anggota, diketuai Juri Ardiantoro), menindaklanjuti tenggat 6 bulan sebelum masa jabatan periode sebelumnya berakhir pada 11 April 2022 ([BeritaSatu](https://www.beritasatu.com/), [Suara](https://www.suara.com/), [Hukumonline](https://www.hukumonline.com/) via penelusuran 25 Nov; pendaftaran 18 Okt–15 Nov 2021 dan uji kelayakan 24 calon di Komisi II pada Februari 2022 belum dibaca langsung di berkas Keppres/Setneg). **[belum baca PDF Keppres langsung]**
 
 ## 4. Poin advokasi masyarakat sipil (yang sudah bersumber)
 - Perludem: kenaikan ke 5% menambah suara terbuang (17,3 juta suara pada 2024); syarat dua fraksi dinilai ambang batas
